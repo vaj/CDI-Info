@@ -17,6 +17,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
   - [Table of Contents](#table-of-contents)
   - [2017](#2017)
     - [AMD](#amd)
+    - [Gen-Z Consortium](#gen-z-consortium)
   - [2018](#2018)
     - [Cray Inc](#cray-inc)
     - [HPE](#hpe)
@@ -201,6 +202,14 @@ Brad Benton
 [YouTube](https://www.youtube.com/watch?v=w-rAj1liqrw)
 
 [Text](./22)
+
+### Gen-Z Consortium
+
+(unknown)
+
+[YouTube](https://www.youtube.com/watch?v=OTsk8B-EnmM)
+
+[Text](./233)
 
 ## 2018
 
