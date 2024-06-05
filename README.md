@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 233 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 234 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -210,6 +210,10 @@ Brad Benton
 [YouTube](https://www.youtube.com/watch?v=OTsk8B-EnmM)
 
 [Text](./233)
+
+[YouTube](https://www.youtube.com/watch?v=raed9Xxvj8Y)
+
+[Text](./234)
 
 ## 2018
 
