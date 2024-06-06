@@ -192,6 +192,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
     - [Micron Technology](#micron-technology-4)
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
     - [TetraMem](#tetramem)
+    - [VMWare](#vmware-2)
     - [ZeroPoint](#zeropoint-1)
 
 ## 2017
@@ -2517,6 +2518,20 @@ Glenn Ge
 [YouTube](https://www.youtube.com/watch?v=KPZzzsaIX4Y)
 
 [Text](./223)
+
+### VMWare
+
+Arvind Jagannath
+
+[YouTube](https://www.youtube.com/watch?v=Wun0TAlBgEI)
+
+[Text](./236)
+
+Sudhir Balasubramanian
+
+[YouTube](https://www.youtube.com/watch?v=Wun0TAlBgEI)
+
+[Text](./236)
 
 ### ZeroPoint
 
