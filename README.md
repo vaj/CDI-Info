@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 234 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 235 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -20,6 +20,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
     - [Gen-Z Consortium](#gen-z-consortium)
   - [2018](#2018)
     - [Cray Inc](#cray-inc)
+    - [Gen-Z Consortium](#gen-z-consortium-1)
     - [HPE](#hpe)
     - [Microsoft](#microsoft)
   - [2019](#2019)
@@ -224,6 +225,14 @@ Paul Grun
 [YouTube](https://www.youtube.com/watch?v=WmvVIdBgZQY)
 
 [Text](./24)
+
+### Gen-Z Consortium
+
+(unknown)
+
+[YouTube](https://www.youtube.com/watch?v=mHJeQF183Zw)
+
+[Text](./235)
 
 ### HPE
 
