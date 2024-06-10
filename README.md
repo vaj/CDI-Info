@@ -2370,6 +2370,10 @@ William Koss
 
 [Text](./226)
 
+[YouTube](https://www.youtube.com/watch?v=4yiCDA-dQOo)
+
+[Text](./238)
+
 ### IBM
 
 Christian Pinto
