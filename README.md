@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 239 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 240 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -193,6 +193,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
     - [Supermicro](#supermicro)
     - [TetraMem](#tetramem)
+    - [University of Wisconsin-Madison](#university-of-wisconsin-madison)
     - [VMWare](#vmware-2)
     - [ZeroPoint](#zeropoint-1)
 
@@ -2535,6 +2536,14 @@ Glenn Ge
 [YouTube](https://www.youtube.com/watch?v=KPZzzsaIX4Y)
 
 [Text](./223)
+
+### University of Wisconsin-Madison
+
+Wentao Hou
+
+[YouTube](https://www.youtube.com/watch?v=6C_LwaXRqDw)
+
+[Text](./240)
 
 ### VMWare
 
