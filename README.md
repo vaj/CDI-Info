@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 241 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 242 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -191,6 +191,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
     - [Meta](#meta-3)
     - [Micron Technology](#micron-technology-4)
     - [Rambus](#rambus-3)
+    - [Samsung](#samsung-5)
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
     - [Supermicro](#supermicro)
     - [TetraMem](#tetramem)
@@ -2516,6 +2517,14 @@ Larrie Carr
 
 [Text](./241)
 
+### Samsung
+
+David McIntyre
+
+[YouTube](https://www.youtube.com/watch?v=UUoscQvXOCs)
+
+[Text](./242)
+
 ### Sandia National Laboratories
 
 Catherine Appleby
@@ -2562,11 +2571,19 @@ Arvind Jagannath
 
 [Text](./236)
 
+[YouTube](https://www.youtube.com/watch?v=UUoscQvXOCs)
+
+[Text](./242)
+
 Sudhir Balasubramanian
 
 [YouTube](https://www.youtube.com/watch?v=Wun0TAlBgEI)
 
 [Text](./236)
+
+[YouTube](https://www.youtube.com/watch?v=UUoscQvXOCs)
+
+[Text](./242)
 
 ### ZeroPoint
 
