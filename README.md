@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 242 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 243 disaggregated computing-related talks published on YouTube between March 2017 and May 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -179,6 +179,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
     - [AMD](#amd-5)
     - [Amphenol](#amphenol-1)
     - [Apex Semiconductors](#apex-semiconductors)
+    - [Astera Labs](#astera-labs-3)
     - [CXL Consortium](#cxl-consortium-3)
     - [Drut Technologies](#drut-technologies)
     - [IBM](#ibm-1)
@@ -2351,6 +2352,14 @@ Suresh Subramaniam
 
 [Text](./216)
 
+### Astera Labs
+
+Sandeep Dattaprasad
+
+[YouTube](https://www.youtube.com/watch?v=_VjZh39CW9c)
+
+[Text](./243)
+
 ### CXL Consortium
 
 Kurtis Bowman
@@ -2358,6 +2367,10 @@ Kurtis Bowman
 [YouTube](https://www.youtube.com/watch?v=VebLqQrqFTI)
 
 [Text](./211)
+
+[YouTube](https://www.youtube.com/watch?v=_VjZh39CW9c)
+
+[Text](./243)
 
 Siamak Tavallaei
 
@@ -2474,6 +2487,10 @@ Steve Scargall
 [YouTube](https://www.youtube.com/watch?v=qlKXxUjXCBg)
 
 [Text](./214)
+
+[YouTube](https://www.youtube.com/watch?v=_VjZh39CW9c)
+
+[Text](./243)
 
 ### Meta
 
