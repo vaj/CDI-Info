@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 248 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 249 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -181,6 +181,7 @@ In the case of talks by several speakers, the same link is duplicated for each s
     - [Apex Semiconductors](#apex-semiconductors)
     - [Astera Labs](#astera-labs-3)
     - [CXL Consortium](#cxl-consortium-3)
+    - [Dell](#dell-1)
     - [Drut Technologies](#drut-technologies)
     - [IBM](#ibm-1)
     - [Intel](#intel-9)
@@ -2386,6 +2387,14 @@ Siamak Tavallaei
 [YouTube](https://www.youtube.com/watch?v=0pa2w-1DnIo)
 
 [Text](./220)
+
+### Dell
+
+Shyamkumar Iyer
+
+[YouTube](https://www.youtube.com/watch?v=l89_KobC2YM)
+
+[Text](./249)
 
 ### Drut Technologies
 
