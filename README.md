@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 249 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 250 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -2363,6 +2363,12 @@ Ahmed Medhioub
 [YouTube](https://www.youtube.com/watch?v=J0qXte-taLk)
 
 [Text](./244)
+
+Richard Ward
+
+[YouTube](https://www.youtube.com/watch?v=1VQGP0xKouU)
+
+[Text](./250)
 
 Sandeep Dattaprasad
 
