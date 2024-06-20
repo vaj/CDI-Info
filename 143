@@ -1,1 +1,74 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Good afternoon, everyone.I guess one of the challenges having the presentation towards the end of the conference is most of the folks are gone, but on the other hand, whoever is left is a diehard engineer.So we hope to make the next 15 minutes productive.I'm Kiran Vemuri, hardware engineer at Meta.This is my co-presenter, Chenyu Xu, mechanical engineer at Meta.So we'll be presenting the next generation server platform called Yosemite V4.
+
+Looking back a little bit, Yosemite was the flagship single socket platform that Meta started deploying a few years back, and it's been quite successful.We started with the Yosemite V1, which is a high density, low power CPU, and then progressively moved to a slightly higher CPU power with each generation, and density of the rack also went down with each generation.But if you look at the three generations, it's been quite successful.A huge volume deployed in six generations of CPU.Now we have come to the point where the industry is also going in a direction where the Moore's Law is coming to an inflection point in the sense the gains with each generation are not that much.So the power of the CPU is going up.
+
+So we started looking at the use cases that we have in the data center and also what kind of a platform we need to build to adapt to the changing landscape.And came up with the requirements.So the big one would be the CPU TDP itself, which is already going north of 500 watts in the latest ones.In our use case, we were looking at, okay, let's start with how we can best support 300 and then scale up as the CPU generations go.So we wanted the platform to be a long lasting one.And as we increase the CPU TDP, we need to also support a lot more DIMMs for the memory bandwidth.So supporting up to 16 DIMMs.And at the same time, we wanted to keep it modular so that we can adapt multiple use cases into the same platform.Then also support the OCP DCMHS, the DNO form factor, so that we can quickly prototype and deploy anything new if needed.And to keep the same philosophy of shared infrastructure.So the power, NICs, BMC, and thermals are shared among the servers.So we wanted to leverage that.And then all DCs, the service is important, so it has to be a blind mate for easy front service.And then at Meta, we also have an aggressive sustainability goal to be carbon neutral by 2030.So to meet that, we started looking at what we can do in this platform to plan ahead for that.
+
+So keeping all those in mind, we went through a few iterations.And this is a simplistic drawing, a block diagram of the server.Chenyu Xu will go into the detail of the architecture in a minute.But from a high level, the architecture looks like this.It's eight servers, all supported by one BMC.And the power to all of them is coming from one power conversion board, which is a Medusa power board.And the fans are all hanging off the Medusa board.Then all the NIC connections are done through a spider board, which is essentially like a crossbar board.And up to four NICs could be supported on the chassis.One of the goals was also to keep it efficient in the sense, in terms of performance per watt.So which means as we designed the new platform, we wanted to keep it somewhat close to cost parity with the Yosemite V3, which means we had to do a lot more of sharing of resources, which is one of the reasons why we scaled it up to the eight servers.All right.I'll pass it over to Chenyu.
+
+All right.Thanks, Kevin.So I will walk through how Yosemite V4 looks like.Let's start from a short video.The chassis itself is about 6.5 OU tall, which features a customized rack rail.The rack rail is about 0.5 OU tall to support the heavy weight of the chassis.Yosemite V4 hosts eight server plates per chassis, and it supports multiple configurations, including compute, memory, flash, and accelerator.It is compatible with ORV3 and utilizes air cooling.The platform is also designed for sustainability and circularity, which I will explain in more details in the following slides.
+
+Yosemite V4 chassis is a very modular design, breaking a large, heavy chassis into multiple sub-assemblies for the ease of handling and the serviceability.This exploded view shows the detailed components in Yosemite V4.The blades and the NIC trays can be serviced from the chassis front, where the blades host the server boards and the expansion for PCI devices.And the NIC tray serves as a shared infrastructure tray for NIC, BMC, and power sharing.The Medusa module, fan modules, and fan trays can be removed and serviced from the rear of the chassis, which provides power and airflow to the system.
+
+By putting a Yosemite V4 chassis into the ORV3 rack, each ORV3 rack can support up to five Yosemite V4 chassis and 40 servers.It optimized the use of rack space for compute with high TDP CPUs.The fans are pushed to the back, leveraging the open space on the sides of the ORV3 rack busbar to get more space for the servers.The switch is positioned in the middle of the rack to standardize the DAC cable length and also optimize for cable management.The ORV3 power systems are positioned in the bottom of the rack to lower the center of the gravity for rack stability.
+
+Now let's take away all the issue metals.This slide shows the interconnect of the PCBs and the cables in Yosemite V4, forming the mechanical architecture of the platform.The Medusa cable plugs into the ORV3 rack busbar, and the other end connects to the Medusa board, drawing 48-volt power from the ORV3 rack to the chassis.The server boards plug into the Medusa board orthogonally, and the power module on the Medusa board converts 48-volt power to 12 volts and delivers the power to the server boards.The BMC is located on the management board.The management board and the NICs are all plugged into the spider board.The spider board connects to the server boards through the NIC cable, sending the NIC and the BMC signals through this cable to the servers.The Medusa management cable also connects the spider board to the Medusa board, which provides the power for the spider board and also sending the BMC signals to the Medusa board.The Medusa board also connects to two fan boards on the back, which supports all the fans.There are also optional sidecar PCIe cables for the sidecar expansion.
+
+Speaking of expansion, Yosemite V4 offers two expansion options, front expansion and the sidecar expansion.Front expansion is leveraging the open space in front of the server boards for PCIe devices, and the sidecar expansion is turning an adjacent plate into a sidecar expansion plate and connecting to the host plate through the sidecar PCIe cable on the back.The sidecar expansion provides flexibility for additional PCIe devices, and it decouples from the host plate for improved serviceability.
+
+With the front expansion and the sidecar expansion, Yosemite V4 can do a lot of things.So we will showcase Yosemite V4 with different server plate configs.The high compute server type is the basic server type in Yosemite V4 for compute-heavy workload, which has the server boards only.For compute workload with high memory needs, we have the high memory and the flash server type, which features a bunch of the CXL memories and just a few E1.S drives in the front expansion.For workloads with higher flash storage needs, we have the direct attached flash server type and the disaggregated flash server type.The direct attached flash server type features the E1.S drives and the CXL memories in the front expansion.Aggregated flash server type features a lot more E1.S drives in both front and sidecar expansion and shared by CPUs.For accelerator workload, the ASIC modules are essentially the larger version of the E1.S drives due to higher power and the silicon size.The accelerator server type features the ASIC modules in the front expansion, and in the sidecar expansion, we also have the ASIC modules as well as the E1.S drives as flash storage.
+
+Yosemite V4 is also designed with sustainability and circularity in mind.The platform is designed to support a wide range of CPU TDPs to accommodate the growing power needs.With a higher CPU TDP and air cooling, a larger blade envelope is required to ensure effective cooling.Therefore, we designed the chassis to be configurable to support eight blades, six blades, and four blades for future proof.When reconfiguring the chassis, majority of the chassis mechanical stays the same, and the chassis can be reused between generations of CPUs by easily replacing the parts and assemblies with simple operations.Additionally, Yosemite V4 chassis will also be made of recycled steel and recycled plastics to reduce carbon emission.Now I will pass the presentation back to Kiran to talk about the flexibility in the server blade design.
+
+Thanks, Chengyu.Looking at the server blade with the evolving CPU trends, we wanted to have flexibility in the server blade size.For example, the width can start from 210mm and go all the way to 255mm.That is to support 12 DIMMs to 16 DIMMs.In terms of the length, also we can go between 310mm and 335mm to support more power supplies required for bigger CPUs, for example.And the reason we didn't go log to the biggest board is the server boards with the layer count going quite high are also getting quite expensive.So the goal always is to build the smallest board that's possible for a given generation.The flexibility in length also means the front expansion could change from generation to generation, so we are planning that also as we build the expansion boards.
+
+This is an example of how we plan to support the DNO on YV4.So this is the MDNO, which could be up to 255mm wide.The standard DNO has the NIC and DCSCM in the front.So in this case, we are flipping the board 180 degrees, so the DNO's NIC and DCSCM are connecting to an adapter card that will have the NIC connection would go through the cable to the NIC we have in the front.And the BMC signals would be also sent over the same cable.And the cable that's shown is the power cable that would be used to provide the power to the DNO.And there's also provision for a boot drive in case it's not already on the DNO.So with this configuration, we can easily pick a readily available DNO and with the adapter card, get it into the YV4.
+
+The next slide shows what would be on that adapter card.So it would be pretty much a re-timer and the power connector, and the small bridge IC that is going to go between the BMC that is managing multiple servers and the DNO server.
+
+So with that, I wanted to quickly see how we meet all the OCP tenets in terms of openness, efficiency, impact, and scale.It's pretty clear based on how it's being deployed and designed.One thing I wanted to quickly touch on is the sustainability.Chenyu mentioned about the materials and the chassis.On the electrical hardware, with the sharing of all the resources, we reduce the number of components, which would help in being more sustainable.The second aspect is the power.Some things we cannot really control, like the CPU and the memory power.But the rest of the components we try to optimize for power wherever we can, including, for example, the fan speed to be at the optimal point to keep it less than 4% overall power.
+
+So the spec is going to be wrapped up and submitted to the OCP.And once the spec is accepted, we'll have the design collateral shared in six months.So we'd like to see if anybody is interested to collaborate and build your service on YV4, and would be ready for adoption.So the mechanical chassis was at Meta booth until a couple of hours ago.So I hope folks got a chance to take a look at it.
+
+All right.I think that's all we have.I think we have a couple of minutes for questions.
+
+Yeah, I just saw that there are four OCP cards.
+
+All right.Yeah.So on the bottom row, we have four NIC cards.We have eight servers.So the NICs would be shared by servers.It will be one to two in one scenario.If it is a high bandwidth NIC, it could be shared one to four.If there is a sidecar, it could be one to one.So we wanted to give that flexibility with four NICs.
+
+And it's being configurable and managed by the VNCs?
+
+Right.Yeah, VNC would be managing the NIC cards.
+
+And configuring the NCSI.
+
+Right.
+
+And I'm not getting that automatically.
+
+That's right.
+
+And you have one VNC card and four NICs.
+
+Yeah.It will be managed by one VNC.
+
+What is the interface of the VNC on the back?
+
+So on the back, two of the NICs have NCSI.All four have I2C for management.Then going back from there to the host, we have I2C, I3C, and USB.
+
+What is the interface you're using for the VNC?Is it DCSCI?
+
+Oh, that interface.So it is similar to DCSCI, but because we have eight servers, we have a 4C and a 1C connector to accommodate more GPIOs.
+
+All right.
+
+Maybe a little follow-up question on that.How do you reconfigure from going one to four, one to two, one to one, and all these configurations?Do you put new cables in?How do you change that around?
+
+Right.So one dependency would be the NIC cables that are shown there.Okay, not this one.Yeah.So if you look at the bottom view, so we have a spider board, which will help route the signals appropriately between the NIC and the 4C connector on the spider board.So as the configurations of NIC change, the spider board would be changing.And then the NIC cable, in this case it is shown as a one to one.It would be a Y cable in case of one to two.So the NIC cable and the spider board would change to accommodate those.
+
+And then one to four, four.
+
+Right.So the spider board would be a Y cable in that case.All right.Okay.I think that's all for Yv4 today.Thank you very much.
+
+Yes, thank you, Kiran.Thank you, Chun-Yu.

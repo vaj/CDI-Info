@@ -1,1 +1,122 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hey, welcome, everybody, to the AI track. We're super excited to have a whole range of talks on a keynote from the illustrious -- there's so many accolades of Andy. And then followed by some really great talks on academic collaboration. We have AI use cases, hardware architecture evolution, a lot of great stuff on memory, on fabrics, and networking congestion signaling. So it's going to be a jam-packed afternoon. Without further ado, the cofounder of Sun, cofounder of Arista, cofounder of OCP. So Andy Bechtolsheim.
+
+Thank you. And thank you for joining us. So we heard in all the great keynotes this morning how generative AI changes everything. So I'm not going to repeat that. But the main point of this slide is that the demand in the AI space in terms of both model size and computational requirements is around 10x per year. And as we also heard this morning, this is far ahead from where the hardware is in the current trajectory. So what I want to talk about is how we can close this gap.
+
+And as an example, I'm going to use Google here, which has published some benchmarks over the years. And with each generation of TPU, the cluster, the system performance actually did scale by 10x. This is a logarithmic chart here. And it's a combination of the chips going faster by 2 or 2.5x and the cluster getting bigger by, say, roughly 4x on each generation. And so this has scaled tremendously over the years.
+
+So the question is now, how do we get the next 100x performance? And the logical thing to do is to see if we can get a 10x on the GPU and a 10x on the bigger cluster. Because going to do a 100 times bigger cluster gets a little unwieldy. So the first question is, can we actually get a 10x in the next generation? And I believe the answer is actually yes. But let me explain this. So the performance gains architecturally, process technology, silicon area, packaging are all multiplicative. So if you have better architecture, better data types, better bandwidth, and so on, and you make a bigger chip, and you have a more advanced process, all this multiplies out.
+
+And obviously, a lot of the historical gains have been due to improvements at the architectural level, including better number of presentations, brain flops, micro scaling formats, et cetera. There's higher bandwidth memories coming, HBM4 in 2025. The speed of the fabrics goes up all the time.
+
+But focusing just on the process technology, which is the TSMC roadmap here-- and this is-- this makes references to IsoSpeed and IsoPower, which obviously means what's the relative power at the same speed or the performance at the same power. Between the current 5-nanometer technology and the 2-nanometer, it's a dramatic improvement. Basically, a factor of 2 on power, maybe 33% on the speed, 50% on chip density. So if you multiply this all out, you get roughly twice the density speed in the same area at the same power, which is a good achievement. It gets us a factor of 2, right?
+
+Well, the next big thing is, of course, this bigger package. The current limit on the CoWoS is 2x maximum radical size. So if you look at a NVIDIA H100 chip, it's double the size of the maximum radical. The TSMC roadmap leads to a 4x next year, I believe. And what I did is I did a copy and paste of tying two of these chips together. So that's kind of what the future hamburger-sized chip would look like. And there are people working on even bigger type of 2.5D, 3D packaging. So that would get us another factor of 2.
+
+And then let's throw in some architectural gains. And I'm assuming that there's more possible here, but making a very modest assumption of 25%. If you multiply it all out, it would implicate a 5x performance gain at double the power, because we doubled the silicon area. So if the current chip was 750 watts, it would be a 1,500-watt chip. And that seems well predictable. So that's a 5x.
+
+But one can go further. And this has to do with power. So to get more performance, obviously, there has to be more activity on the chip, more function units, more higher clock rates, better power delivery, whatever, that pushes up the ultimate question how to cool these chips, but also how to get the power into the chip. And the ultimate limit is actually the junction to the liquid thermal resistance, because you cannot run the chip hotter than the underlying material supports.
+
+So assuming for a second that we could double the power-- and I'll explain in a second how this can be made to work-- that would be the final 2x factor to get us a 10x cumulative gain in performance and a total of 4x power, which would be the 3,000-watt chip.
+
+Now, I'm not saying this lightly. It's actually not that hard to cool a 3,000-watt chip, because what matters is not the total power, which is sort of the TDP number that you may remember from interlore AMD data sheets, but it's rather the heat flux per silicon area. Because this chip is much, much bigger than before it was just something like 15 square centimeters here, active area. If you divide 3,000 watts by 15 square centimeters, it's 200 watts heat flux per square centimeter, which is actually less than the previous generation Intel CPU. So cooling by itself is not the problem. But there are these problems around hot spots, which are the areas that have the most activity, and how to just get rid of the heat.
+
+So this is a picture of a traditional CPU chip where I guess the floating point unit or something gets really active, and it makes the hottest part of the chip. So the fact that the rest of the die is much cooler doesn't help, because you're limited by that one square millimeter that is the hottest part of the chip.
+
+So there is this new technology to get the heat out better, which has to do with changing the underlying silicon structure and thinning it out so that the passive part of the silicon becomes ultra thin and bonding it to a diamond substrate to provide the mechanical stability and get much, much better thermal connectivity. Diamond has an order of magnitude better thermal connectivity than silicon, which means that the heat that's building up in the active layer gets transmitted much more easily to the liquid cooling layer.
+
+And one should be able to get at least a doubling in power dissipation, perhaps even more. So diamond is five times better conducting than copper, eight times better than aluminum, and six times better than the silicon.
+
+And the way this works is that the active silicon area on a silicon wafer is actually only the top 1%. It's a few micrometers, basically. The rest is just for structural support. And the problem with that is that the hot spot heats up laterally and defects the whole thing.
+
+With a diamond sandwiched below, the hot spots just go away, and the heat gets conducted away to the liquid cooling infrastructure.
+
+And as an example of this, this is actually measured data of a case of RF-- I don't know the pronouns. This is called the Qorvo-- a gallium nitride chip. You can run these chips much hotter than silicon. So the gallium nitride on silicon had a die temperature, which you can see this here, of 189 Celsius, like burning hot. If you put it on silicon carbide, it drops to 78 Celsius, much better. But if you put it on diamond, it runs at 40 degrees. And let's compute an ambient of 20. So what this is saying is for the same physical chip, you could actually run it six times hotter if it was on top of a diamond substrate than if it was on silicon.
+
+Now, the stack up here gets really fancy. So basically, the diamond wave is on the backside of the GPU chip, and then it has to have a very interesting low impedance thermal interface to the microchannel heat sink.
+
+And talking about microchannel heat sinks, water is good. Two phases better. So water has 2,000 times the volumetric heat capacity of air. Two phases is another factor of eight more. And there's different fluids being developed, of course, that can handle this.
+
+And this thing looks like this. So there's this microchannel flow that's right over the copper slug.
+
+And there's one important concept here, which is the critical heat flux, or CHF, which you cannot exceed. If you exceed it, then it boils more quickly than you're supplying more liquid. And then the efficiency, of course, drops down. So one has to stay below that number.
+
+But the bottom line is direct liquid cooling to the chip can easily cool three kilowatts, whether it's one phase liquid like water. You would need about eight liters of minute per water for a five degree temperature rise or two phase cooling, which performs thermally much even better. And on top of that, of course, it saves energy compared to air cooling.
+
+But the bottom, bottom line is the advanced packaging at the chip level, at the wafer level goes hand in hand with advanced cooling that then is able to extract the heat out of this package. And it is true that two phase liquids provide by far the highest treatment source. And they can perhaps even eliminate the pumps in the process.
+
+This is a picture of-- there's demos on the show floor here that you can see of such things.
+
+So the second part of my talk, I want to talk about what this means for the racks and the whole data center.
+
+And what is changing here is that I think until now, liquid cooling was sort of a curiosity, you know, bespoke custom designs driven by vendors who wanted to sell the solution and differentiate it in various ways. But what's changing now is people actually want to deploy very large data center designs that are based around liquid cooling. And there are gigawatts, many gigawatts in plant capacity of liquid cooling data centers in various stages of development. And for mass deployment, we do need solutions that are more standardized, that are readily deployable and that perform the best cooling from the chip to the rack to the building. And the question is, of course, what's the best way of doing that? And there may not be just a single answer.
+
+So as an example, this is the latest and greatest NVIDIA DGX 200 cluster, which is the state of the art H100 chip, sorry, the Grace Hopper chip connected with NVSwitch fabric, 24 air cooled racks, total power consumption, 400 kilowatts, basically 256 GPUs, average 1.5 kilowatts, which is a remarkable bleeding-edge achievement.
+
+Now, if this system was water cooled, it would literally shrink down to just two racks. And it's hard to believe, but you can do water cooling at a density of 200 kilowatts per rack. So in theory, you could combine the same payload as 24 air cooled racks.
+
+And the focus, of course, is how to do this in the context of OCP 2.0. And one of the, how do you say this, not the thesis, one of the requirements is to make this open to any kind of chip, any kind of GPU, CPU configuration and target, in my mind, densities between 100 and 200 kilowatts per rack, which supports anywhere from 128 to 1.5 kilowatts or 64 of these three kilowatt CPUs. Personally, I would start with the ORV3 footprint and all the existing components, power shelves, rack management, et cetera, and add one crucial ingredient, which is a copper based, passive copper cable midplane that provides the fabric interconnect within the racks. So all the connections in the rack would be copper, anything out of the rack would be optics.
+
+And as an example of a 100 kilowatt rack, as you may know, the power shelves are getting very dense. You're getting next generation 50 kilowatts in just a one U power shelf. So if you do full redundant, you know, 100 kilowatts, two by two power shelves, it's just four U out of the 44 U. This room for 16 two U GPU plates and four two U switch plates. And this is obviously using either hybrid or fully liquid cooling. It's like a really nice cool rack. To get to 20 kilowatts, it would have to be more around the one U form factor or doubling up the power in a two U context. And again, it's not that we have to pick a single number here, but it's important is the context of 100 to 20 kilowatt racks, which defines the direction of the solution.
+
+Just one word on copper cabled midplanes. They are much cheaper, much lower power and also lower latency than anything optical. You're saving between 10 and 20 picojoule per bit end to end compared to LPO, which is even lower power than traditional optics. And it's also high reliability. Passive optics basically don't fail if you don't touch it. And because it's hidden in the midplane, it has, you know, press fit, not press fit, sorry, spring loaded connectors. It is not something one would touch. One can remove the items to the front for serviceability. So I do believe these high density racks are the future, not just because of the chips, but just because it's the easiest way to install service and maintain these kind of systems. And with copper cables in the rack and this greatly reduced real estate footprint, you know, we're in good space. But going back to the cooling, oh, sorry, the action I'm here, call for action.
+
+So how do we get closure on this open AI rack that we don't end up doing the same thing multiple times in different companies and so on?
+
+And it's not as easy as it sounds because it starts with the hard requirements, thermal, electrical, signal integrity, telemetry requirements, you know, how to do the unified back-end fabric and most importantly, low risk predictable path to mass production.
+
+And then there's constraints, you know, is there like water available? Because without abundant water, evaporative cooling, for example, is not an option. You know, does this have to be deployed in existing equal data centers? You know, may require a less density kind of rack design. What's the climate at the location, et cetera.
+
+But what I want to do here is give you a quick overview of all the options and talk about the things that make the most sense to me. So there is, of course, a market for all air-cooled racks because 99% of data centers are air-cooled today. And this is, of course, the programmatic solution. The question is how far can you push it? And there's the hybrid or air-assisted liquid cooling racks where you have a cold plate for the GPU, CPU, and air cooling for the rest. There's full liquid cooling with cold plates for everything and immersion cooling, take, you know, the whole thing into the top.
+
+Air-cooled racks are actually not limited contrary to popular perception, do the 20 or 30 kilowatts. You can go much higher if you just dial up the fans, but there's two problems. One is the fan power keeps going up and up, but second, you still have to absorb that heated air somewhere else to get it out of the building. So the practical limit for conventional air-cooled racks is in this 20, 30 kilowatt range. If you have a rear heat exchanger, which there's many on this show floor, you can probably double that because you're absorbing most of the heat in that heat exchanger. So that kind of keeps the liquid plumbing out of the rack, which has the advantage it can't leak there, but you still have the expense of the fan power, of course.
+
+And this is an example of such a system seen from the rack, you know, what are cabled up there.
+
+The hybrid cooled racks are focusing on cold plates on the GPU CPU, which is probably 80 to 90% of the heat and the rest is done by air cooling. So this means you don't have to cool every single component on the card. The disadvantage is you still need fans and you still have to neutralize that hot air, but it is far less than the air-cooled case, of course.
+
+And this is a rough estimate. The GPU CPU power is probably 70%. The VRM is another 10. Out of 100, the memory is another 10 and the fabric interface and everything else is another 10. So if you pick up the heat from all the components, of course, full liquid cooling makes more sense.
+
+And people have built such systems and they can easily go up to 200 kilowatts.
+
+An example is the HPE Cray supercomputer, which is being installed at Livermore Labs, known as the Cray EX. So they have these fairly large plates that have liquid cooling for the DIMMs and so on.
+
+And this is how the whole system snaps together. So in this picture, each rack is 200 kilowatts and there's a one megawatt CDU that handles the liquid.
+
+And then there is immersion cooling, where all heat is removed through the immersion liquid and this certainly simplifies the system design. But there is one limitation, which is in pure immersion, you cannot simply cool at three kilowatt or even a two kilowatt CPU. You still need a defined flow that carries the liquid across this heat sink, essentially. And by the time you do the cold plate and a dedicated flow, why not just go back to cold plates? And then there's the question on the environmental and chemical interactions. But it does have the highest sort of total capacity.
+
+People talk about 400 kilowatts per bathtub and this is a picture of one of these things.
+
+So comparing these thermal capabilities, air cooled, I have in there at like 20, 30 kilowatts max. If you had the heat exchanger door, you can probably double that. If you do the hybrid thing, you can probably target 100 kilowatts. If you do full liquid, cooling everything, you're probably at 200 kilowatts and beyond. And needless to say, liquid moves more heat than air.
+
+Now going back to the choice of liquids and especially on the primary loop in the data center, water has very high thermal heat capacity. So that's good. Also, it's fairly low viscosity. That's good. One has to manage the quality of the water, contamination, et cetera. But otherwise, water is a low-risk kind of approach. Mineral oil is not nearly as efficient as water and has much higher viscosity, although it's being told on the show floor that it depends on the temperature. The hotter it gets, the more lower viscosity. And then the fluorinate or these kind of PFAS fluids are somewhere in between. I'm sorry, they actually have very good viscosity, lower than water, but they're not as efficient in the heat-carrying capacity. However, if you do two-phase, they carry a lot more heat because the two-phase, which is not captured on the slide, is of course the thing that gets it ahead of the water in terms of the heat capability.
+
+And water loops, despite it sounds easy, like why not just run the water through the system, you know, you're starting with the quality of the water and contamination. And this can be inorganic or organic particles. I'm talking about 25 micrometer mesh things to keep the dirt out. Because the worst case is the dirt clogs up the microchannel heat sink. And sooner or later, all your microcycle heat sinks don't work anymore because they're contaminated. And you have to take the whole thing apart and start cleaning these heat sinks. So the finer mesh, of course, increases the pump power and the resistance. Then you need anti-corrosion, antibacterial treatments, and all of this has to be maintained and so on.
+
+The OCP has done a lot of great work over the years to write requirements documents for the quality of the water. So I've just copied out some pages from these documents.
+
+It's kind of a laundry list. It can be done. OK. And so on.
+
+Two phase dielectric cooling has one big attraction, which is if you design it right, which is the gas goes up and the liquid comes down, in many cases, you can actually avoid pumps. So cooling the pumps is avoiding one key failure point and reduces power. In addition, you don't need antibacterial treatment. Nothing grows in a two phase dielectric. And if there was a leak, it kind of evaporates, but it certainly doesn't cause any kind of water damage. Now, the chemical interactions are minimized if it's a closed loop system. In other words, everything is stainless steel. That's predictable. It gets much harder in the immersion tank.
+
+And this is kind of a picture of what happens between the manifold and the so-called CDU. The CDU is the heat exchanger. If it's water-based, you need pumps on both sides, of course, to keep the water moving along.
+
+And this is what's in one of the CDUs. You know, a lot of little parts that have to work.
+
+If you do two phase with on the secondary in the primary water loop, you can actually put the heat exchanger system on top of the rack and it may work without pumps.
+
+But the bottom line is on the primary cooling site, water coolers are very efficient, but they assume you have abundant water. In any area where there's no abundant water, you can try adiabatic coolers, which save about 80% of that water, or you have to go to dry coolers, which work best if the climate is cold, or you just do two phase, which doesn't need any water, of course.
+
+And this is a picture of a two-phase primary system, which uses a water secondary system. And there's no pumps in the system going up to the roof to exchange the heat with the environment.
+
+So the bottom line is liquid cooling is more complex than air cooling. No question about that. It takes a lot of time of upfront planning, investment, validation of components. Today this has been a fairly unique design process, and we need to get ready for mass production here.
+
+So in my mind, Open Compute will play a very important role here to validate these types of solutions and to, oh, sorry, I was going to mention there are 30 talks at OCP today, tomorrow, and on Thursday, that if you're interested in liquid cooling, please pay attention to all in aqua color on the schedule.
+
+And then there was many documents published by Open Compute contributors over the years. I think over the last four to five years, that are great reading for those of you who are not kept up with these things. And I wanted to thank all the people who contributed to both the working groups and all of these documents that are kind of the basis of what we know today about liquid cooling. And I think this was my last slide.
+
+Do we have room for questions? Two minutes past, but do you want to do two questions? Two questions, okay.
+
+I think there's the mics at the... Can we get the mic going here?
+
+Yeah, that's a much harder question to answer, because this comes back to how much work is accomplished per power, right? The one thing that's clear is that liquid cooling saves power. So compared to air cooling, which uses fans to move air around, it is lower power. But the productivity or the efficiency of the silicon itself is in the design of the chip and the process technology, and how one can optimize that. So I'm afraid I can answer this better. But one thing I wanted to mention here is that when OCP started, it actually started around the notion of a rack. Back then, it was the triple-wide rack and getting rid of unnecessary complexity. And I feel a little bit like we're back to that stage with liquid-cooled racks. Today, liquid-cooled racks are fairly complicated, and some of the Windows peps make it out to be more complex than they need to be. But we need to simplify it and make it like the equivalent of the original air-cooled rack, except it's now all liquid. So that's my hope for OCP going forward.

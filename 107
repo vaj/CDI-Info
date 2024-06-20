@@ -1,1 +1,102 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Good to be here. Everybody's ready to go, right? Okay, again, this is Siamak Tabalai with DJ. We're going to try to look at the same kind of content that you saw with the OCP lens. It might be a repeat of some of the content, but we will tease out some of the topics that are important to OCP folks.
+
+So we are all aware of CXL as a technology which is used for moving data through cache coherent environment. We also need to realize this technology into something which is practical with reference systems, and that's where Open Compute plays a very important role. It's a vehicle to bring these kind of technologies to realize something which is practical, which people can use in their data centers.
+
+Yeah, I think we can skip this slide.
+
+So a very quick overview of the CXL slides, again, with particular points that we want to bring out, and then with some use cases in a system level, and overview of the CXL-related topics within OCP.
+
+So as you probably know, CXL organization, the CXL Consortium, is organized around a board of directors, technical task force, marketing work group, and a number of work groups. I encourage everybody to join. They come up with use cases, come up with solutions to address those use cases, and put them to the specifications.
+
+In parallel, within OCP, specifically OCP Server Project, we do have a number of work streams and subprojects that are doing good work. They're all trying to bring in technologies from outside of OCP into realized systems. Please, again, engage in those activities. We will touch on some of these elements a little bit later in the slide deck.
+
+One big overview, you have heard about CXL, CXL 1.1, 2.0, and 3.0. This chart is just trying to show the progression and the fact that CXL 3.0 is a proper superset of the other, basically backward compatible.
+
+We did talk about the three different protocols for CXL. CXL.io is basically emulating the concept of first, do no harm. CXL is based on PCIe. CXL.io emulates most of the things that you expect from PCIe. That's a very important factor, especially the type of things that Jeff talked about. We are organizing, managing, enumerating, discovery, all those protocols for CXL today. Then projecting that one in the future, that by itself is very valuable. The lines and feeds and how the protocol works is important, but managing and keeping that one constant is also important. Of course, CXL adds two more protocols, .mem and .cache. Once we do that, we come up with a converged memory system. Once we have a converged memory system, then ...
+
+We heard throughout the last two days how AI, especially Gen AI, is requiring converged memory environment. This approach allows us to build this environment, which is easily programmable, which allows for an efficient data movement. This is a critical step in solving for bottleneck, which people have been talking for the last two days for all new workloads, which have been emerging.
+
+Very good. Another rehash, CXL devices, type one, type two, type three. Type one is focused around accelerators. That provides the heterogeneous computing for us. Type three device is basically a memory device for expansion. A type two device combines the two for this memory converged environment. That makes it easier for software developers and reduces power and cost of moving data.
+
+So a simple rehash again, CXL 2.0 added certain features for storage, for security, and defined memory pooling. It allowed one layer of switching. Having one layer of switching, it allows fan out of devices.
+
+And again, the key drivers are the challenges which a lot of large companies, hyperscalers are facing. And they can be classified in three basic categories. One is capacity, which goes under the nomenclature of memory wall or memory gap. Second is a problem of unutilized memory and having the ability to access and increase utilization. And then third is having increased bandwidth for your access to memory, which is also very critical. So these are the three critical challenges which are in front of us. And CXL as a technology has an approach which addresses each of these three challenges and Siamak will go in detail.
+
+Right. Basically, those were the challenges and CXL 3.0 team got together to address them, to increase the available bandwidth, to provide more capacity, to provide better access to the available memory through memory pooling and memory sharing, and remove the bottlenecks by allowing peer-to-peer access. So those are the essential elements. Again, as use cases, you guys can participate, determine use cases, and the team will address those with specifications.
+
+So basically, CXL 3.0 then doubled the bandwidth through PCIe physical layer, provided better connectivity using multi-layer switching, and came up with a concept of fabric to create a composable system. New capabilities were enabled then through memory pooling, memory sharing, and better security. All of those are still backward compatible. So if you're building a device today, it can be a 3.0 device and you pick and choose which features you'd like to implement.
+
+And again, the idea is we need to have a mechanism to introduce heterogeneity in the data center. We are moving from the traditional approach of having one common architecture to many different domain-specific architectures. And also, this leads to the problem of having increased connectivity across all of these different types of devices, accelerators, CPUs, GPUs, video transcoders, and whatnot. And that, again, is something which CXL is addressing in a very effective manner.
+
+So on the connectivity side, one layer of switches for CXL 2.0 could fan out to many memory devices. With CXL 3.0, we're introducing the concept of heterogeneous connection of many different types of devices that could be either memory or caching devices.
+
+To increase the efficiency of data movement, the concept of peer-to-peer was introduced. Devices can interconnect to each other, enabling reduced power and reduced energy and time by moving data, removing the bottleneck. You don't need to go to the host; peer-to-peer devices directly.
+
+So all of these provide some new capabilities.
+
+It allows the memory to be pooled across multiple hosts or even shared. The region of memory associated with one particular memory device can be mapped to more than one host. By doing that, we enable actually peer-to-peer, host-to-host communication through shared memory, again, for more efficient data movement, less time, easier software development.
+
+Once we put these together, then we can have a composable system out of this aggregated components. Global fabric-attached memory is a concept that one memory device can be accessed by many, many host or accelerator devices.
+
+That enables a very large fabric.
+
+As an example of it, you could have a rack of different components. Each chassis can be responsible for one particular function, networking function, memory appliance function, storage function, GPU or XPU functions. And using two layers of switching in a spine-and-leaf format, you can have a very large system integrated as one.
+
+So again, the idea is how can we realize heterogeneous systems which are composable because that improves your manageability of these systems, that improves time-to-market for introducing different types of systems into data center. So creating a composable architecture is something which now is enabled through this disaggregation which CXL is envisioning.
+
+So the concept of first do no harm is very important. I'm going to repeat that several times today. From the point of view of software developers, a server is a processor, has some local memory, it has access to networking devices, and it needs storage.
+
+With CXL, we can extend that capability. The same notion persists, but we provide more memory and at a different distance.
+
+With CXL, we can have support for emerging memory, different kinds of memory, different tiers of memory.
+
+With CXL memory controllers that are on the floor now, you could have a device with multiple ports. Each port can be connected to a different host. It's very similar to sharing a network device across two different hosts. Now we can share memory across multiple hosts.
+
+These devices, again, a number of companies are working diligently in enabling these solutions.
+
+We can do more. A multi-ported memory controller can be connected to multiple systems. As an example, eight host servers connected to eight memory using by eight links.
+
+By having switches, we can extend that connectivity from one chassis to multiple chassis.
+
+As Jeff discussed, CXL Fabric Manager is the one to put it all together. But we do have some challenges.
+
+Systems can be complex.
+
+So the challenges basically fall under a set of categories. You need to have switches, as you saw Siamak present a whole bunch of foils where disaggregation is enabled through introduction of these switches. These obviously are new components which come in the system. They introduce power, they introduce space, and you need to pass through the switch, which introduces your latency issues. Availability is something which also requires power, whether you're running it through copper or optical. And then at the end of the day, especially for AI-centric workloads, high availability is very important. I think I heard some statistics which Microsoft mentioned where even with 0.1% packet drop, your jobs get delayed in a substantial manner. So those things are something which have to be addressed for disaggregation to work.
+
+Right. So our approach in responding to those challenges is to divide and conquer, basically. So first, do no harm.
+
+Whatever we're doing should be compatible, whatever software guys expect. We have a composable system, but the system needs to look like just a server as before.
+
+For putting things where they belong, we basically partition systems in the right way. And that's what OCP can come in, because our teams are the ones that realize systems. And then for the next concept, push the envelope, but if it hurts, don't do that. In other words, reduce the impact of new development. If it is too hard, find a different way. So first, do no harm. Put things where they belong. And if it hurts, don't do that. These are very powerful concepts.
+
+So yeah, so again, the idea is, as we mentioned right in the beginning, you have a very promising technology which has mechanism to address a lot of challenges. You got to realize that technology with a real system, a reference system, which is where OCP and the community and all of you play a very important role. And once you have a reference system, then you can develop software on top of it. Almost like when the first iPhone was introduced, and then you develop apps on top of that, something on those lines. And then you iterate your reference systems, and then you use the same software to kind of drive. And then that basically is a flywheel, which is going to get in motion to make all of this work.
+
+So as an example, this is a diagram for a reference system that enables memory pooling and memory sharing. It is good to start with some blueprints and building momentum around it. It needs to be balanced because nowadays the systems and applications are diverse. We have talked about AI, for example. They need sometimes more memory, more compute, more IO. So having a balanced system is a good starting point. But specifically, interconnect is a challenge. So we do need some device, interconnect mechanism, like a copper backbone to interconnect all of these devices together. So we're working with cable and connector manufacturers on that.
+
+Copper has benefits. It is not as expensive, but it has limitations as well. With photonics, we can extend that reach, and we can reduce the physical dimensions of these connectors and cables. That seems to be very promising.
+
+So having done all of that, we also need mechanical features for power and cooling. And that's basically what OCP does. So having all of this together, you can have a tightly connected chassis that all of the devices are point-to-point connected, and they can be connected through extended connectivity to a different chassis. It is very similar to having basically a tree structure, roots feeding the leaves and leaves feeding the roots.
+
+To do that, there's a concept of fat pipe, in other words, interconnect that is very high speed, but it is okay for it to have a little bit more latency as compared to the tightly connected devices that are within one chassis. Latency is very important. Robustness is very important. Fault tolerance is very important.
+
+So Jeff discussed a number of these aspects through software layers that we need to have to enable all of these capabilities.
+
+So again, I think repeating the message, we have to now start looking at a common software architecture as well as have reference designs built through OCP, and then we can find a way to realize these systems in the incoming future.
+
+Right. And basically, OCP is where we realize these technologies into systems.
+
+Within OCP, we have a number of projects, composable memory systems, touches on the first do no harm part, making the software, all of the features and frameworks for the software to be consistent across multiple hardware layers. DCMHS, data center ready modular hardware system, is the mechanical feature hardware aspect of the commonality we're driving. And extended connectivity is a work stream that is defining interconnect between multiple chassis or within a chassis to extend the features. Yeah. And one quick point, there's an experience center which is actually showcasing many of these things. So if you haven't had a chance, you should take a look at and walk around in the experience center upstairs.
+
+Right. There are simple diagrams over here. You can go into the websites and get the wikis. DCMHS is very active. They have produced their specifications. It is publicly available.
+
+Extended connectivity is another active group that is extending the reach between multiple chassis.
+
+And based on OAI, open accelerator infrastructure, that's what we have defined in the past.
+
+You can build large chassis with multiple processing elements, FPGAs, XPUs, GPUs. It could be heterogeneous. Those are defined and available for you guys to access.
+
+Once you build a chassis, you can interconnect all those chassis using the extended connectivity we just talked about to come up with large, large, large systems. And nowadays with AI and ML, people are simply asking for, 'Hey, give me multiple 256 GPU clusters.
+
+Yeah, I think this slide speaks for itself. So I think we are out of time. We would like to thank all of you for your time this morning. And if you want to learn more about it, you know how to reach Siamak or any of us here. Thank you very much.

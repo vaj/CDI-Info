@@ -1,1 +1,176 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+We're going to take questions from the audience in a few minutes, but I would like just to start with you sharing your impressions from OCP so far. Anything new that you saw, anything that impressed you during the session or at the exhibit? Loi, why don't we start with you?
+
+Okay, so let me start. I thought that the industry has made quite a bit of progress on the LPO. I was impressed with the OIF demo at ECOC two weeks ago, and today, this very session, we had engineering evaluation for Meta on LPO. But still, I think that there are a number of challenges that LPO needs to overcome. So like in the Meta paper today, I assume it's on single mode. Multi-mode is still more challenging. Single mode, I think some of the data is presented encouraging. So I think the jury is still out whether this can be an open multi-vendor ecosystem into all. I think that given the progress that's been made, I think end-to-end closed system I think is more possible. That's my impression just today after seeing everything in the last two weeks in the paper today.
+
+All right. Manish, any impressions from you?
+
+This one is on, right? Okay. I think what I've been most excited about is the continued growth of all the chiplet work that's taking place. The progression of multi-chip modules, including optical chiplets, is going to require a pretty massive investment by the OSA community, by the Foundry community. And I think the more applications and opportunities there are for companies to deliver return within chiplets and optics will just drive faster innovation in the space.
+
+Andy?
+
+Obviously, the big topic for the conference was AI and AI driving this incredible amount of bandwidth. But going back to LPO, clearly we need an ecosystem of multiple vendors. Nobody's going to deploy LPO if only one company makes the module. And that is a work in progress. So I think by OFC next year, which is what, five, six months from now, you will see a lot of announcements from vendors that will demonstrate interoperability.
+
+All right. Manish, do you think LPOs will work with VCSEL-based transceivers, or is it going to be more challenging?
+
+It is a little more challenging. There are some linearity, some key linearity challenges with the VCSELs and anything that's directly modulated. There may be some specific use cases in AOCs that do have some deployment. Certainly as Broadcom, we'd like to see that be quite prominent. But I think there will be challenges there, and it will have some specific limited use cases.
+
+All right. So I would like to kind of share my personal story. First time I met Andy was about 10 years ago. He invited me for lunch at Arista. And of course we discussed market forecast, compared the numbers. But I was very impressed with his knowledge of optics, his enthusiasm. There were like two optical startups waiting for my meeting to end so they can talk to Andy. And I asked him, "Don't you have more important things to do? Why are you so involved in the optics?" And that was 10 years ago. Andy said, "You know, the industry has solutions to all other problems. Optics is the only area that doesn't have a solution. It's going to be a bottleneck." So 10 years later, here we are sitting at the stage, and we are seeing this bottleneck live now that AI is exploding and optics is proving to be too expensive, too costly. Loi cannot make DSPs fast enough to satisfy the demand. But I would argue that over the last 10 years, the industry has not taken a risk. It hasn't deviated from a predictable path. Yes, we've been trying to develop co-package, trying this and that, but we're still sticking with what works, what's produced massively. So where's the problem? Why aren't customers taking enough risk and deploying?
+
+Let me try to answer this. So clearly optics are hard. And it is true that most vendors that make the modules prefer to stick with what they're doing because it works for them. If they were to change even the technology inside the module, they would have to get it re-qualified, and it doesn't mean they can't sell anymore. So people are naturally continuing what they have been doing literally for the last 10 years. Now, that doesn't mean that there aren't better technologies coming, okay? But the real inflection point would be much more higher reliability, lower power, lower cost, and that would drive rapid adoption. And for all the promise, for example, of silicon photonics, it did not by itself drive lower power or lower cost, right? Maybe a little bit, but not enough to change the needle. So the technology we are all waiting for is optics that are much more reliable, much lower power, and much lower cost. And just as a side note, if you look at the cost of a complete fabric deployment, the switches and the optics combined, the optics cost more to the end user than all the switches in that fabric. So the fact that the optics are dominating the investment that the large end customers make in their infrastructure continues to astonish me, but it is really an opportunity to focus on the cost reduction.
+
+Right. Loi, any comments?
+
+So I think that we are facing the challenges, not just 10,000 optics, 100,000 optics, but we're talking about millions, millions of optics. The scale is very different, and I think that is why the field-proven technology, whatever that is, is going to be the preferred path for everybody. Because as you can see today, AI, a GPU lifetime used to be, I don't know, two or three years, now we're talking about maybe 18 months, and so it's very, very fast. So the hyperscale end users, they want to get GPU, they're going to get now. And once they have the answer on the GPU, they want to deploy. So if it's going to take three or four or six months to qualify any new technology, regardless whether LPO or chiplet or whatever, that's the time that they cannot afford to spend. I think that's one of the reasons. We went through the transition to push the industry to transition from NRZ to PAM. It was very painful. For five years, we got no customer. We got zero customer. Why do we need this PAM? NRZ is good enough. We can do 50 gig NRZ. We can do 100 gig NRZ. Why do we need to 50 gig PAM4? It took quite a while to make that transition. So at the end, a technology that can make that leap, other technology that can deliver the performance, good enough power, good enough cost, and it can scale.
+
+But it's still possible to make a change. So PAM 4 was a big change over a decade.
+
+Very big. PAM 4 was a very huge change.
+
+Manish?
+
+Yeah, I think, I know personally I can't keep going and asking for another reactor every time an operator wants to deploy another 32K cluster of GPUs. The CAPEX requirements for traditional optics are getting quite challenging. Something has to change. However, I think the silicon industry over the last 10 years was looking for whether this is a space in which to spend money and do development projects and invest in CAPEX. It has to move to a Fabless model to come out of this. That doesn't have to be immediate. I think you're going to have very conventional technology shipped for some period of time. But if you want to get to that low cost, low TCO solution, it has to transition to Fabless.
+
+So we're going to start taking questions from the audience. So please line up. Ali is, of course, running to the microphone already. Go ahead, Ali.
+
+Yeah, thank you. This is a question probably more for Andy. This morning from Meta, they were asking for like a three-pico joule that includes the host service on the switch plus the optics, which is beyond the realm of possibility of I don't know how many generations from now. I guess the question, and obviously there's demand for it, there's a new elephant in the room, the AI. But are we trying to push the technology much faster than what is feasible? And are we going, for example, the success of Ethernet and OCP has been because it's been volume and also high quantity. But are we going to a very steep curve that this will become more like a traditional IBM mainframe and Krakum supercomputers and HPCs?
+
+I don't know. The volume is clearly there with AI. I think it's safe to assume that the majority of optics will actually be in AI clusters in a few years. Let's start with that. And I personally don't think three-pico joule is actually that hard, but it does mean a change to the way these systems are built. You're not going to get there with the conventional module. You have to minimize the electrical energy and what may be even harder is to minimize the optical effort as well. Because that comes down to the modulation voltage of the driver, which is the rest of sort of where the power goes. And there are other optics technologies that have much lower VP square things and they're just not in production. So there's an opportunity to innovate.
+
+Right. But if you say optics consumes no power, the electrical service consumes more than that.
+
+No, you've got to flip chip the optical chip right on the CoWoS wafer stack. But you've got to minimize the electrical distance involved clearly to reduce the electrical power. There's no alternative. And then we need a fiber connector so you can build these chips with fibers sticking out. If there's no fiber connector, it will never work. But Intel, who is not here today, has made a pretty good progress on the fiber connector. So I'm being told the fiber connectors will be there. So that's one key element that has to be there.
+
+Okay. Thank you.
+
+Go ahead.
+
+So Andy, are you saying that you would need to do some level of co-packaged optics in order to achieve that target?
+
+This is where the Ethernet world, which is highly backwards compatibility required, completely differs from the AI world. So in the AI world, NVLink, which changes like every generation, it's a better version of it. They call it the same thing, but it keeps getting upgraded. NVIDIA could optimize the optics just for that use case. And that's where most of the bits will go. It has nothing to do with IEEE standards at all. So there is opportunity to innovate because you're not tied to a legacy install base.
+
+So innovate in the packaging of the optics then, yeah?
+
+You have to look at the use case. I'm talking about NVLink, the tightly coupled backend fabric will be the majority of the bits clearly. Now there's Ethernet, but there will be other proprietary interfaces. And there is opportunities to innovate in particular in that area. The frontend Ethernet is standard.
+
+I see. Go ahead.
+
+Yes, question. So to the panel, what do you think the predominant memory interconnect standard is going to be? There's probably half a dozen leading contenders out there, but for an optical memory interconnect, where do you see, who do you see as leading?
+
+If I can comment on this. So one of the regrets that I have with standards group is they go incrementally, fairly slowly, generation of generation. And in particular, on the PCIe consortium, I'm not trying to call this out, it is true that the bulk of the PCIe demand historically has been desktop and server motherboards, you know, and was stuck at PCIe 3 for the last 15 years or whatever. And now they're jumping from PCIe 4 to 5 and 6 is on the drawing board. But what you really need for AI is PCIe 7. So defining CXL over the slower links isn't actually very helpful because it's actually too slow. I mean, whatever effort people are spending there, they would almost be better off waiting for the next highest speed version to cut on the latency, increase the bandwidth and have a solution that actually scales to the demands of the AI application, given how long it takes to build these things. So maybe it's good to make sure the protocol works, but the real deployment is going to be at highest speed links. There's no question on that, on my mind at least. Which by the way, leads back to optics, right? I mean, the slowest speed stuff you can do with copper cables, even in a rack. But when you go to 112 gig or 120 gig NRZ or whatever they're working on, that gets a lot harder. So then optics has a role to play.
+
+Yeah, I mean, I'm very, very focused on networking in Broadcom. However, I would say I love what Avicena is doing. microLEDs go for the simplest solution for that very short interconnect.
+
+Loi, any insights on optics for memory connectivity?
+
+Well, it is the same thing that I'm saying, right? To try to displace what is working is very hard. HBM is working and people are working on HBM3, HBM4, and in terms of adding memory to the servers, yesterday in my keynote I showed a slide that showed a scale-up model where a GPU can go out maybe using NVLink and then you add a more server to it, all the GPU can be connected and operating as a single supercomputer. I mean, NVIDIA showed that it works.
+
+Right.
+
+Thank you.
+
+Okay, any more questions from the audience?
+
+There's one more coming. All right, so with all the customization that we're hearing about with all the optics, we saw today Google building their own, are we going to enter an age where white box becomes white optics and the traditional components vendors get cut out of this business?
+
+Well, Google had to do their own optics to overcome some of the challenges with the optical switching here, right? So to be clear, I don't think they really wanted to do this, but they had to do to enable the optical switching. So that was a unique kind of situation. But I'm not quite sure I understand what you mean by, I mean, the demands are driven by these large cloud customers, right?
+
+Right, but if you're a really large cloud customer and you're looking at right now, I'm paying margin of a couple of different stacks, I could go buy Loi's DSP and buy somebody else's front end and go to one of the standard manufacturers and say, 'Just build me a million of these.'
+
+You mean the cloud companies making their own optics?
+
+Yeah, they're doing it with switch.
+
+In many cases, designing their own optics and specifying the components the suppliers should use to build those optics, that's true. But being in the contract manufacturing business is not something I don't think anybody in the cloud aspires to be in.
+
+Right, but there's a difference between going directly to Fabrinet and going to Intelite.
+
+Well, the highest volume optics module companies have their own manufacturing facilities as an observation, otherwise they couldn't compete.
+
+I don't think anything's changing from what it's been like for the last 10 years. Efficiencies are going to come through innovation, higher levels of integration, getting rid of material in the system. That's what's got to drive the cost down, make it simpler.
+
+You know, we sell, we're an arm merchant, right? We sell chips to everybody, right? I think that the optics today is a $10 billion open ecosystem. The volume is just huge, the efficiencies is just amazing. Sure, I mean, anybody could say, "Okay, I'm a big end user, I can go and specify my optics and go into Fabrinet, we'll see them." But at the end, is it the right way for that vendor to get the return on their investment, on their engineering resources? It's not free, right? It is absolutely not free. There's a lot of engineering resources that need to go into that optics.
+
+And one more comment here. I mean, unfortunately, a lot of the cost of optics modules is yield loss that happens during the manufacturing. Not because the components are bad, because the fiber wasn't attached quite right and it doesn't produce the right output power and you have to toss the whole part, you cannot repair it, right? So one of the urgent improvements needed is actually to improve the yield of the assembly process. And that's not something you get just by signing up with Fabrinet. You need better machines, better equipment. I don't know what it takes, but they have to improve the yield urgently because way too much money is being wasted on bad modules that get tossed.
+
+Right. Go ahead, Chris.
+
+Thank you, Loi. I'll ask Loi, because you said five years to get PAM4 up, and that was quite a coup for your company, because now you're the only one that can solve it. But it's probably one of the worst decisions in the optics industry, because it's twice the power and twice the cost. So to me, it seems like the simplest way to reduce power is to go back to NRZ, which would cut power in half and cut cost in half. Do you think that may happen?
+
+So that's a very interesting thought. You just heard the 224 gig today. The only reason that we were able to finally convince the whole ecosystem, everybody from my competitor to my customers to the end users out there, is because of future-proofing. In optics, you don't just do one little niche product, point product for today. You need to look at two, three, four generations ahead. Has anyone tried to do 224 NRZ? You know how hard that is? Try it.
+
+If I had one wish, we had skipped 50 gig PAM4 and gone straight to 100 gig PAM4, that would have saved a lot of headaches. But the PAM coding solved both the electrical distance problem, meaning a lot of cables are being put within the rack with PAM4, and it wouldn't actually have worked well with NRZ even at the 100 gig speed today.
+
+Well, I mean, Shannon tells you PAM4 makes sense for copper and makes no sense for optics. So mixing up copper and optics is totally misunderstanding the copper channel versus the optics channel.
+
+Yeah, the problem is that copper is not going away anytime soon.
+
+So my rule, I have three rules of optics. Number one, whatever you can do in copper, do in copper. Otherwise, you're going to lose. Number two, whatever you can do with a pluggable, do in pluggable. Otherwise, you're going to lose. And if you cannot do the first two, yes, look for alternative technology.
+
+All right, we have another question. Go ahead.
+
+Yeah, regarding the co-packaged optics, if you put all the optics in the chip inside the package, you're increasing the power density and hotspots, right? And you might end up spending more time on thermals and cooling. How do you balance out the whole thing?
+
+It's not a problem. We've been able to build systems where we can get the entire system operating at 20 to 30% lower power consumption while keeping the core ASIC at the temperature it needs to be at. And I'm not saying it won't-- it will be that way forever, but at least for the initial instances of CPO, placing the optical engines next to the core ASIC has not been a challenge. A key part of that is using a remote laser module where you do take the lasers, you disaggregate them, plug them into the front panel. And the combination of the two has led to viable systems in terms of thermal and mechanical.
+
+So the overall cost is still going to be better, even though you're going to spend more on the thermals? You're not going to spend more on the thermals.
+
+You might have extra $10 on a heat sink or something, but it's in the noise. You're not going to be spending more on the thermals.
+
+So I have one more question, just for the clarity. We talk about this linear drive optics, and we can remove the DSP from the optical module because the SerDes in the chip can drive long distance, right? And what's the alternative? The alternative would be to make the SerDes low power, and they just drive to the optical modules and keep the DSP in the module as is. Is that a better approach overall in terms of power savings?
+
+What she's saying is one could have taped out a separate chip with much lower power service. But I promise the economics are not there because the tape would cost a fortune, and there was no market, right? So that never happened.
+
+For the future generation of the chips, like, you know?
+
+Well, that chip is never going to be ref because the next chip is twice the density. I mean, these chips are taped out and they're in production.
+
+Yes, the SerDes has been kind of driving the optics in the direction that they prefer. And in fact, you know, the LPO surprises all due to the SerDes performance. So optics like a distant cousin at the table, if you will.
+
+If I can make one other comment on core package. So cooling is not the issue. The real issue is testability at the system level. And the problem is that the front panel connector is not an active test point. So if the port doesn't work, you don't have any visibility or insight of what happened. And people going with the cleaning kit and try to figure out was it the dirty connector or whatnot. You know, for us as a system vendor, you know, getting a box back because the port didn't work and then we cleaned the port and send it back. That's not a viable business model.
+
+Yeah, unfortunately, it often comes to the same problem, dust and dirty connectors. Go ahead, Frank.
+
+Yeah, I have a quick question regarding the CPO. I think we talked about different optics there. So maybe a question for the panelists and also for Manish. How do you think the LPO we are talking will impact the CPO for the next three to five years?
+
+How will LPO impact CPO for the next three to five years? Well, it's definitely taken a lot of the mind share over the last six months. There's no question about that. Look, there's a place for both of them. Firmly believe that the CPO will be the lowest TCO, lowest power solution. And let's take, for example, the 51T product that we're planning to release. If you're looking for a 51T all optical solution and you can go single mode, then you want the lowest cost, you want lowest power. It's a viable solution. If you want something intermediate, then LPO makes a lot of sense. We'll continue to support lasers, components for those modules as well. But ultimately, if we are going to get there, someone is going to have to do it earlier than it's absolutely necessary. And that's the lean in we're making and trying to get customers on board with that.
+
+I was going to add that LPO gives you basically the same power advantage as a CPO. It's the same service that was designed to drive the CPO can drive the LPO. And the difference is really whether you add up the power.
+
+No, no, no, no. It's the same. Not at all. Because you can do the CPO with CMOS drivers and TIAs right next to the ASIC. Right now, you cannot do that for LPO. You will have silicon germanium drivers and TIAs in the module. You know, there is per 800 gig, say, three, four watt delta.
+
+Okay. That's a fair point. We need better CMOS drivers.
+
+Go ahead, Stephan.
+
+Probably shouldn't have said that. So, I haven't heard the three of you talk too much about multimode. And the rule that I didn't hear, which was if it can be done with a VCSEL, it should be done with a VCSEL. I think that rule was left out. What about multimode CPO? Because you've all been talking about single mode CPO. And I think there's a potentially big space there.
+
+So, I think for the experiences that we've had on CPO, there is an important and large ecosystem that's necessary for this to deploy over time. I think the silicon industry has far more capability to achieve that than you can achieve in just compound semiconductor and compound packaging. So, I think that it would... Not to mention that the ability of your VCSEL to achieve a reach of say 200 gig per lane is when those VCSELs are available being more than 20, 30 meters is very unlikely. So, your use case is highly limited, could have some volumes, but put in a module for the next few generations and then let's all move on to proper CPO, single mode silicon.
+
+Well, if I could add, it's about scaling and future proofing as well. So with single mode in silicon photonics, you can continue to scale for a long time. With VCSEL, 224 gig VCSEL, it could be very difficult.
+
+And VCSELs are hitting the speed limit. Having said that, you know, AOC cables is a huge market today. And it's actually one reason that CPO didn't happen because the cheapest optics today are AOC cables.
+
+Right. So we have one more minute left for the panel. And I would like to sort of go back to what Loi said about getting the industry to adopt PAM4. So it was success for your company. What kind of... What advice would you give to Manish in bringing CPO to the market based on your experience?
+
+Wow. Well, you have to go and win a customer who will be willing to deploy the thing at scale. Right. I mean, the reason that we want the PAM is not about is PAM4 versus NRZ, which one have lower pico jule per bit. We got a customer. We got a committed customer who has very specific needs and our PAM4 solution, even 50 gig. Solved it.
+
+All right. Fantastic. So we have to find the customer. I think...
+
+Customers are there. Some more committed than others, for sure. But look, you can't beat the value proposition. It's going to be the lowest cost. Integration is the first step to getting to lower cost. The second is getting it co-designing as my... Co-developing, co-designing, not as one company, but as an industry with what's being developed in the ASICs. And if you do that, then the solution is just going to be so compelling for customers. They're going to adopt it. And you've got enough guys seeing it. Not everybody. There are folk. We're going to have our detractors, but it's... There are proponents.
+
+And there may be a new opening in the AI world.
+
+Excellent. We'll work together on that.
+
+Yeah. You know, when I listen to customers who are very large companies with a lot of legacy infrastructures, they have so many concerns. They have so much risk jumping on new technologies. On the other hand, there's so much money in this country. Somebody should start a new company and say, 'Okay, we're going to build AI using all the new technologies. We're not using any legacy.' A small company can take a risk, and it's investors' money. Who cares? All right. So I see one more person standing. Okay.
+
+We'll honor one more question from the audience. So in the CPO ecosystem, then, what is the analog to the direct attached cable, the DAC? It's kind of an important component into this current ecosystem.
+
+There's no such thing, right? It's all optics. I think your point is that, as of today, if you look at the average switch port utilization, a large percentage is copper cable and AOCs, and then the single mode. But it's rare for a switch to be 100% optically connected.
+
+There's one on the trade show floor I saw at the Meta booth.
+
+I think, though, there has been one thing we have seen in the change with the AI deployments. There were two things limiting CPO in the past. First was a significant amount of copper. The second was the initial population of the optics and the ability to pay as you go. That second part of it has actually been addressed heavily in AI networks where they're heavily loaded day one. With regards to copper, we are closely approaching the limit where you're going to have to do something that's potentially more expensive than optics, flyovers, or other more expensive materials in order to achieve the reach. And that's part of the TCO. But hey, you get your costs low enough on high density engines, and that can definitely start to compete with AECs or other alternatives in the copper world.
+
+All right. Well, we're going to stop here. And let us thank all the speakers and thank the panelists.
