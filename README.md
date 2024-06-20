@@ -10,6 +10,8 @@ Please note that although the transcription has been prepared with the utmost ca
 Each entry consists of the speaker's name, a link to the YouTube content ("YouTube") and a link to the transcribed text ("Text").  
 In the case of talks by several speakers, the same link is duplicated for each speaker.
 
+The copyright of each transcribed text belongs to the respective YouTube channel.
+
 ## Table of Contents
 
 - [Disaggregated computing related talks](#disaggregated-computing-related-talks)
