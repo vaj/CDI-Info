@@ -1,1 +1,102 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+All right.OK, so this is the adding RAS support for CXL port devices.
+
+This presentation was put together by Robert Richter, my co-worker, and myself.Robert was not able to attend today, so here I am presenting.
+
+All right, so CXL and RAS.As we all know, CXL can support three different protocols.That would be CXL.IO, CXL.MEM, and CXL.CACHE.And as you can see here, we have a table from the CXL spec, and it shows the different RAS requirements for each protocol.In general, it's analogous to the PCI protocol errors.
+
+And so protocol errors detected by CXL components are escalated and reported to the host through PCI errors.And they're using-- I'm sorry-- the CXL.IO protocol.And specifically, they use uncorrectable, incorrectable internal AER errors.The delivery is actually using messages over CXL.IO.And the RAS protocol errors are handled differently than the device errors.Device errors are actually using the event log in the mailbox, and it uses a totally different interrupt.And so that's not covered here, and we don't want to get those confused.
+
+So we have the PCIe port bus driver.It's used to bind to port devices, specifically bridge class ID.And in the-- I'm sorry-- in the probe routine, the driver actually filters out for root ports, event collectors, upstream ports, and downstream ports.And if it is one of these subtypes, then it returns an error.The PCI port bus probe routine then actually reads the capabilities of that device, and it's looking for services that it can support.And this includes the AER, the power management event, the hot plug, and the virtual channel.And so the bus driver actually includes service drivers for each one of these services, if you will.And I also wanted to point out that the AER service driver itself is not usable unless you have your BIOS set up for a native AER platform, or OS first handling.And also, the kernel must be built or compiled with PCIe AER config option.
+
+So this brings us to the AER error handling flow.Once the device detects a protocol error, it actually delivers a message to the root port, as we mentioned earlier.The root port actually saves off the bus device function of the error device, and it writes it to the AER error source register.The root port then notifies the OS through the AER interrupt.And so we have the AER port service driver that is bound to that interrupt.And it handles the interrupt, if you will.And it reads the AER service, AER source ID, and it extracts the BDF, the bus device function.And that's the information, if you will, for the error device.And then the AER port service driver, first thing it'll do is log the AER error.And then it'll call the callbacks if they're registered for that device.And that could be for correctable or incorrectable errors.And then finally, that service driver, if it's necessary in the case of a fatal error, it can quiesce the device, or it could do a logical disconnect as well.
+
+So we have a recent upstream from Robert Richter and myself.And it addressed the CXL 1.1 downstream port error handling.And this was necessary because the RCH CXL 1.1 mode uses a downstream port implemented as a root complex register block.We call it an RCRB, right?The RCRB doesn't have a bus device function.And that's what causes the requirement for this patch set.The PCIe spec defines the RCRB without a bus device function.And that's not going to actually work with the AER port driver because of what we discussed earlier.The AER port service driver expects a real PCI device.
+
+So as a result, the AER flow is a bit different, right?The detection in the downstream port is the same.It sends the notification to the RCEC.And the next thing that happens, though, is the RCEC's bus device function is written to the AER source ID.Now, it doesn't quite make sense because it's the RCEC BDF.It's not the AER device because the AER device does not have a bus device function.So what happens next is the AER service driver recognizes this special case that has a RCEC BDF.It has internal errors.And it's a CXL device type.And in this case, the AER port driver, from the changes in this patch set, it'll actually parse the RCiEP.That's the children endpoint of the event collector.And then it'll actually call the error handler for that to handle this case.So I should note that this patch needs to be-- I'm sorry.The patch was actually accepted.It's in 6.7.
+
+OK, so this brings us to 2.0, also known as VH mode.And what I mentioned about CXL 1.1 does not apply here because it's a different topology.And so this is looking forward into the future with what needs to be done.And so we have some constraints that we'd like to consider.First of all, we would like to maintain the PCIe bus driver and the service drivers.And the reason is that we need this other functionality.For instance, we need hotplug.We need the virtual channel.We need the power management events.So we don't want to get rid of that.And the second consideration or constraint is that internal errors are device-specific.Yes?
+
+So is Bjorn here?Bjorn Helges?No.Unpleasant.Because I don't know, but Bjorn has talked about not liking the PCIe port service driver and wanting to get away from that model.I haven't seen a proposal for how to get away from it, but there's some danger there.And I feel like CXL is going to make this break one way or the other.They're really going to say, grin and bear it and keep it, or somebody's got to bite the bullet and retract to this stuff.
+
+Yeah, John had mentioned this as well.It would probably be one of the options, but it's a much heavier lift.It's significant because it touches everything and more invasively, if you will.
+
+Bjorn did accept a performance monitoring driver that had a similar requirement doing a fairly hacky solution to it very recently purely on the basis that he didn't want to delay that for ages.So it may be a case of an intermediate solution and then come around again later.
+
+OK.So this may be something we want to revisit with the option or solution you're talking about then.OK.We'll keep that in mind.Thank you.I'll go through and discuss what we found.We have three options with the understanding that we want to consider this.So we also want to look at our requirements.The first is scalability.AER is not a CXL protocol.It's actually a PCIe error protocol.And so we don't want to limit ourselves with whatever we implement.We don't want it to be CXL-specific necessarily.Also, we need to remember that these are reported using internal errors, correctable and uncorrectable internal errors.As far as handling goes, we also need the handlers to be able to implement logic specific to that technology or device, which gives us the flexibility to handle that specific need.Then finally, we have enablement.We need the driver to be able to be enabled or disabled on a per-device basis.
+
+So our first solution was to add a CXL-RAS port service.We actually created a proof of concept.And so we were able to begin some of the testing.So what we started with was adding the CXL service driver next to the other service drivers.So if you will, parallel with AER, the hot plug power management, and the virtual channel.We modified the probe routine to actually look for a CXL DVSEC capability.And if it was present, then you know you have a CXL port device.So the first challenge that we ran into is that there was a lot of required code for mapping, for discovering and mapping the RAS register block.And so we were faced with, do we export this from the existing CXL driver, or do we copy it over?So we didn't want to add or increase coupling between a CXL driver and the PCIe bus driver, so we copied it over.And it got deeper and deeper and deeper.And we were going to have to do the same thing for the logging as well, right?There's already logging in the CXL driver.And how were we going to handle that?We would have the same problem with this new CXL RAS service driver.So quickly found this wasn't the best solution.Not only that, it doesn't meet all the requirements.This is just addressing CXL devices, right?And we said that one of our requirements is that we would like for it to work for all PCIe devices.So we moved on to solution two.
+
+Solution two was to actually update the existing AER service driver.What we did is we added an internal error callback.This is for the correctable and uncorrectable errors.And we added it to the existing struct aer_rpc.And this actually added the generic callback functionality for the port devices.But it wasn't for PCIe devices, right?We actually limited ourselves when we put it into the aer_rpc structure.It was an improvement in that it didn't add as much code.It reused the logic from the AER service driver.But again, it was just port specific, not PCIe specific.So we learned a little bit more.And then we looked at solution three.
+
+It's a variation of two.And it allows any PCIe device to take advantage of the internal error callbacks.And what we did is we moved the callbacks away from the aer_rpc struct.And we actually put it into the PCI driver error handler.So this is where all the correctable, uncorrectable callbacks are.So again, yeah, we put that in there.And so we also had to add a registration function.It's important to note that in order to assign this, it has to be done at runtime.Because remember, you're actually a PCIe port bus driver.And so when you're predefining using the macros for your PCIe device type, you don't necessarily know if it's a CXL card or not.So this is one caveat.It's not great.But it's better than option one and two issues.And so for this example, you would have a CXL port device.It's still bound to the PCIe bus port, as it is done today, right?But you would have the internal error handlers that you could actually register, such that you would get your logging for your port device error handling.So what we have here is a comparison for solutions three and two.Solution two was limited to port devices, which doesn't, again, meet all the requirements.Solution three was actually supporting all PCIe devices, which we found met all the requirements.
+
+So that is it.It's a quick presentation.Discussion, feedback, Q&A?
+
+Was there any other consumers on the PCIe side of the AER handlers?The CXL used to hold it.But is there any other ones inside of the kernel right now?
+
+No, right now, AER, for the most part, is consumed by the AER service driver.And in fact, you'll find very little AER logic outside of that.And this was something that we ran into in our patch set, if you will.
+
+OK.
+
+It's not totally true.It's true that the actual handling of the AER is at that level.But there are a bunch of callbacks on correct-- yeah, correctable errors that are still-- 
+
+This is true.And if you look at the parameter, it's passed.It's not AER-related.And so we had to change the exporting of the data in our patch set for that, because there was actually a delineation that AER was not exported logically or available in drivers themselves.And in fact, I don't know if you remember, there was a patch set that went through review.And that was one of the changes.
+
+Yeah, sure.But it's not true that AER errors don't end up processed by drivers.They just do it at a lower level after you've done some interpretation of what was going on and issued-- Yeah,
+
+and the callback is-- the handler is-- I'm sorry, the callback handler is invoked as well.It allows the driver to do some processing.Yeah.
+
+Is there any-- it's a bit of a dodgy route.But is there any possibility that you could use a child device of the PCI port and basically search for whoever knows to handle the error to avoid-- I mean, at the moment, you're trying to set a callback one layer up in the tree.And that feels a little strange.But I wonder if it's possible to basically go look for a handler in the device model.You don't want to search everything, but if you could search children-- I can't remember if the thing is a child.
+
+So the root port children?
+
+Well, it would be the root port or switch port.Yes.I'm not sure.I'm not sure what it looks like in the device model.
+
+So are you asking when the AER handler runs, how does it handle the children devices?
+
+Not so much that, but whether there was a path that would avoid you-- so at the moment from the description, if I understood it correctly, you're basically going in and replacing the handler in the PCI port driver.
+
+Well, we're actually introducing a new internal AER handler.
+
+But you're writing it from a lower level.
+
+A registration function.
+
+Yeah, it sort of feels like it's almost going the wrong way up the device model.Maybe I'm interpreting it wrong, but that was sort of where I was going.And the question was whether you could go find the raw in the right direction.
+
+So I guess the question is during registration, how do you know when to register the callback?So maybe that's something we-- 
+
+The callback is in the PCI port driver.
+
+No, it's in the device driver, whichever one binds to the device.Any, yeah, whatever, the endpoint or anything that-- 
+
+How does it work for a switch port?There's nothing bound to it.
+
+So this is a question that I think is open.And basically, because all entities in the topology, at least for CXL, they have CXL RAS capability.I think it's a requirement, right?So we need something to bind to them to do this.I think the simplest method maybe that Terry was explaining is if they have a driver, then we can add handlers to them.And so whenever the AER handler walks the topology, like let's say you say on a special case like this, you walk the topology.And if it's an internal error, now you call this special callback for internal errors that's specific to that device.This might be something that could be broken out from the CXL core, something that I was asking about earlier, where at least this part could be common.And any sort of CXL entity could have this loaded.
+
+I think we're definitely going to get to the point where I think register discovery and probably mailboxes are going to be broken out so that anybody can use them as a library.So if that changes your calculus on solution one, like as I was raising my hand to say, like oh, I think we should break that stuff out and make it a library.Because you're going to have to duplicate it and all of a sudden-- 
+
+That was a consideration as well.But it seemed like a large change.
+
+It's a large change, but I think we have to do it.I think there's enough people that are interested in like, oh, we can just copy the way CXL does it is a refrain I've heard.
+
+Another option to consider is that the current PCI capability functions, again, rely on PCI config space mapped registers.And if it could somehow work on MMIO, it would shrink a lot of the logic in order to find the register blocks.
+
+Have you thought about how this interacts with CXL port objects?And I know we talked about, oh, maybe we could put something in the-- but that kind of has the same problem as a PCI port driver.But in these error handlers-- because the error handlers are mostly just reporting which link had which problem.Do you think you're going to want to report the CXL port object name in those reports?Or you only care about this BDF had this event, and oh, it also happened to have this CXL RAS capability attached to it too.And let other people figure out, oh, this BDF means this CXL port.
+
+No, I think you should be able to provide the port information as well.
+
+That's crossing driver boundaries.Your generic PCI-E error handler driver doesn't know anything about the CXL port to probably think inside.
+
+Well, also, there's another question as well is when do you do the registration, which Yazan mentioned.We don't have CXL port PCI discovery, right?So we would have to choose where to do that.One place you could do it is in the port discovery and underneath the ACPI enumeration when that happens.
+
+Yeah, part of how we ended up with the CXL port on the side was so we didn't have to bother anybody.And we could just build this topology.And this makes me wonder if we need to reverse that and actually go be PCI core integrated.
+
+That's what John and I were talking about this morning.Because right now, we don't have any CXL port PCI devices.
+
+Yeah, we have a lot of PCI problems to solve to do that because there is no way of having a driver other than the PCI port driver for downstream ports.That needs re-architecting for a whole bunch of other reasons around performance monitoring and other standards that are expanding PCI on the only applied ports.But it's a big job.We're going to be a while before we get there.Yeah, you could do that.
+
+Jonathan, I think you had a good point, though, on looking at top down from the port once you have the AER error and then possibly from there searching.And there's actually merit in that because of scalability and that you could actually find the right device, if you will.Because otherwise, we actually have-- this is probably an issue with the design that something that would have to be resolved is that right now, we're talking about a callback per port.Right.
+
+I mean, building on Jonathan's idea of broadcasting these things, the recovery is already kind of a broadcast to apology.Hey, somebody downstream of me handle this.Would it be terrible to say, I'm going to broadcast this all the way to the-- I guess you don't want to have to depend on the endpoint driver being there to say, oh, endpoint, do you have any ports up-- yeah, all the way down.You've got to stop at the thing that caused the error.

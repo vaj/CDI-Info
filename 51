@@ -1,1 +1,118 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hello, everyone. I'm Heekwon Park from Samsung Electronics. I'm going to talk about the auto-caching for byte addressable CXL storage devices. The auto-caching can support the DAX and the page cache at the same time for different blocks on the VFS layer so that the application can use the page cache for the hot data and the DAX for the cold data.
+
+Okay, this is the agenda today. I'm going to talk about the motivation first and then discuss the design and implementation of auto-caching and then challenges. After that, I will show the preliminary results and our next plan.
+
+Okay, let me start with the motivation. So with the CXL, we're gonna have many new types of storage devices like dual interface CXL SSD, byte addressable storage devices, or many different kinds of computational devices. This slide shows the dual interface CXL SSD and the byte addressable storage devices. Left-hand shows the dual interface CXL SSD. As you can see, it can support the .io and .mem at the same time. So application can use the .io for throughput-oriented workloads, while it can use the .mem for the latency-sensitive data.
+
+For both case, auto-caching can handle .io efficiently because it can leverage the DRAM and the device memory at the same time.
+
+So we conducted some performance measurements with using the Optane. Actually, unfortunately, this CXL SSD cannot support the .mem write yet. So we're gonna have a plan to implement the .mem write next quarter. So next year, it will be available to test. So I use Optane for the test because Optane is a byte addressable storage device. Optane is a byte addressable and it is pretty much the same to the functionality. So as you can see the left side, the page cache can show the better performance than the DAX, regardless of the number of threads. The right-hand side shows the performance number with different working size. As you can see, the DAX shows the almost the same performance regardless of working size. However, the page cache case, the performance is dropped down dramatically, more than 90% when the system is under memory pressure. So from this experiment, we learned that the page cache may be a better option when if the system has enough memory, but if the system is under memory pressure, then it's better to use a DAX.
+
+So the next test is a write test. So unlike the read test, DAX can show better performance than page cache, even the system has enough memory. This is because the flash daemon continues to write back 30 pages to the device and interferes with the applications because it can hold the pages to write back. So the DAX continues to write the data to the Optane, and in the Optane case, it also pollutes the CPU cache. However, we increased the number of threads, then DAX shows poorer performance than the page cache. This is because Optane could not support concurrent write efficiently. This is very well known in the community. The left side shows the performance number with the different working size. The trend is exactly the same as the read performance. However, the page cache still shows better performance than the DAX because DAX cannot support concurrent write efficiently. So from this experiment, we learned that even if the system is under memory pressure, if concurrent write happens, then the page cache may be a better option than the DAX.
+
+This slide shows the simplified block diagram of page cache and DAX.
+
+I think I don't need to explain all the tests, but what we want to is that we want to merge them into a single layer and to support the DAX and the page cache at the same time. So hot data can be placed in the DRAM and the access to the page cache, and the cold data can be placed in the PRAM and the access to the DAX.
+
+Fortunately, it is very simple to implement because the Linux kernel already have most of the data structure, and we just use the data structure to implement the auto caching. For example, the Linux kernel already create the device page structure and also create the direct mapping area in the kernel virtual memory. So that what we need to do is that we simply insert the device folio into the file map instead of page cache to use the DAX.
+
+This is a little bit detail architecture of the auto caching. So we mainly focused on the auto caching layer and the cache transition. And the auto caching layer manage the device pages and in order to manage the device pages, you need to know the device memory physical address, right? So that the PRAM driver can provide that range when it is initialized. After that, the auto caching knows the device memory range and manage it internally. After that, whenever file system is mounted on the system, we don't the auto caching option, then the file system try to figure out the file system can use the auto caching or not. So if the file system can, if the file system is built on the PRAM, then it can use the auto caching. So auto caching layer returns the auto caching range to the file system and the file system kept that range in the super block memory object. That means the, but the, we don't need to add the auto caching range into the super block device format. That means the, we don't need to change the super block device format. We only keep the auto caching range in the super block memory object. After that, the file system knows whether it can use the auto caching or not. If so, and then whenever the user send the read write the system, call the read write system call or page port handler request the page, then VFS try to find out the page in the file map. If file map node is empty, then the VFS try to allocate the page or folio. But the, if file system has the auto caching feature, then it try to get the device folio first. But the auto caching layer have a responsibility to determine whether the page cache is better or the device page is better. If auto caching layer decide that the page cache is better, then it just simply returns null. Then VFS will allocate the page cache and insert the page cache into the file map. Otherwise, if auto caching decide that the device is better option for current situation, then it takes the block number from the file system and the convert the block number to the physical address and the device page and the return the device page to the VFS. And then VFS can simply insert that the device page into the file map. After that, everything's the same. It just like got the page cache because the page cache can be converted to the physical memory of the DRAM page, DRAM memory. And the device page also can be converted to physical address of the device memory. So I explained about the framework so far and that the framework itself is very simple to implement. So the total number of the lines to be changed is less than 200 lines. And the VFS layer and the file layer modification is less than the 40 lines. And we also need to implement the caching transition layer. But I gonna explain about that later.
+
+But we have three challenges. The first one is the space overhead of device page structure. And the second one is a cache transition. And the last one is allocation policy.
+
+Okay, space overhead of device page structure. First of all, the page structure, as a size of a page, a struct page is 64 bytes per the 4K bytes the page. So that if we add a four terabyte storage devices, then we have to reserve the 64 gigabyte DRAM because the page structure is metadata and kind of hot data. So we need to keep the page structure page, we want to keep the structure page in the DRAM. But most of the device page structure is not actively used. Only opened page can use the device structure page. Otherwise, if the file is not opened or block is not mapped to the file, then the page is never used by the system.
+
+So our solution is that we want to allocate the page structure dynamically. So in order to do that, but before that, if we allocate the page structure dynamically without any information, then it is very hard to convert the physical memory to page structure or page structure to physical memory. It's gonna be very challenging. We may need to use the hash table or something like that. In order to avoid that, the complication, we use the thumbnail page. For that, we create the page structure for two megabytes. So that means the single page structure can cover the two megabytes, which is equal to the huge page size. So if the file system uses huge page, then the device system can directly use that two megabytes structure page. But so if we use a two megabytes page, then we only need 128 megabytes for the four terabyte storage devices.
+
+And if the file system want to use a four kbyte page structure, then we need to extend the two megabytes structure to the 512 structured pages. So that we dynamically allocate the 512 structured pages and convert the two megabyte structure to the thumbnail page. So the thumbnail page can point to the base address of the 512 structured pages. In order to access the four kbyte structure page, we need to divide the PFN into two parts. The first part can be used as the index for the thumbnail page. And the other part, the nine bits, can be used for the four kbyte page index.
+
+And we also change the information in the file map node. Actually for file map node, keep the struct page address, but we store the page frame number instead of the address of struct page. Because we want to use a sum of bits for the one page detection. I'm going to talk about that part later.
+
+This is address conversion macro. So originally it's very simple. They're just the page minus mem or mem plus PFN. We can convert the PFN to page or page to PFN. So we change the structure of the page structure so we need to change this conversion macro. So the PFN to page is pretty much simple, but page to PFN, little challenge. So in order to convert the page to PFN, the first simple solution is that the page, we can simply add the PFN into the page structure. That is the simplest way, but you can increase the size of a page structure. In order to avoid the increase of size, the change of the size, the increase of size, we can use reverse mapping. So the page structure have address mapping and offset. So it can find the file mem node and the file mem node have the PFN, but it is a little bit complicated. So instead of that, we can reserve the virtual memory area in the vmalloc, but we don't need to allocate the physical memory immediately. We just allocate the 64 gigabyte virtual memory only. And then after that, if the application or kernel need to the physical memory, then we allocate the 32 kilobyte physical memory for 512 page structure and the create mapping. After that, if it doesn't need to, used by the system anymore, then we can free the physical memory only while keep the virtual memory. So the virtual memory can, if we made up that kinds of virtual memory, then we don't need to, we can use the macro as of now.
+
+
+I was gonna ask back a couple of slides. You said, you're talking about the classic four terabytes, takes up 64 gigabytes of RAM problem. And dynamic page allocation is one way to solve it. The other way that PMEM solved it is to allocate the structured data from the devices adding that much capacity. So if you're, yes, 64 gigs of RAM is a lot, but if you allocate that page structures from the NVMe devices, that's the one that's bringing on the four terabytes or multiple terabytes, then the relative overhead is less because it's coming from a cheap device. Did you explore that?
+
+Yeah, so yes, we get that, but the CXL SSD is extra challenging from a media perspective. So like rough implementation, there's DRAM behind the NAND. Like NAND is slower media than DRAM. And you present that memory interface and writes are even more challenging for NAND. So I get it, but putting them on the device is probably not gonna be the solution for this. Right? Yeah. Does that make sense? Based on the device properties.
+
+The device is too slow for structured data. Got it.
+
+Let me continue. So basically you want to use the mechanism that used in the tiered memory. So for the demotion, it's a very reasonable and very effective. And the tiered memory, we also use the sub-out mechanism. So we simply select the victim page from the inactive list, where system is under memory pressure. And then we need to get the LBA or block number from the file system, and then convert the block number to the physical address. And after that, we update the mapping. This procedure is a little bit different from the tiered memory, because tiered memory have to locate the slow memory first and copy the data to the slow memory and the change mapping. But this is a file system and the file already have a block number and that block already have a contents if the page is not dirty, right? So we simply change the mapping to the device. We don't need to copy the data to the device and or allocation page. But the most important thing in the auto-caching that we want to keep the one page inside the device, but the autonomous mechanism may not good solution for our purpose.
+
+So we device a new solution that name is Flex zone. So Flex zone try to keep the one page inside the device. So a promotion daemon, virtually promote access the page to the Flex zone, but not physically move the data to the host memory. And keep watching whether the page is really hot or warm, or cold. In order to realize this one, the Flex zone has a limited number of pages. For example, the Flex zone have the threshold of 10, but if the number of pages increased over the 10, then the differences will be promoted to the host memory. But the page can ping pong, right? So it can be demoted again. So if it demoted again, then we detect the ping pong happens, right? In that case, we increase the Flex zone and keep the more page inside the Flex zone to keep the more warm pages. But if the Flex zone is very stable, there is no movement anymore, that means if so, then we decrease the Flex zone size and promote some of the page. So we want to keep the warm page as much as possible inside the device. But another thing is that we need to detect which page is warm, right? So in order to detect which page is warm, we use four metrics. So first one is the IO type, second is the access cycle, and the third one is the access frequency, and last one is recently accessed page. In order to get this information, we use some bits in the Filemap node. Filemap node can contain the write ID and the access count. Write ID can be used for the identify the concurrent write, so different ID can be written to the device at the same time, right? And we use 12-bit for access count, but it divided by the four, and each reason indicate the specific period. So we pretty much keep the history, right? So if the current period to third period have some valid value, that means the application periodically access the page. If so, then we give our highest priority to promote for the page. And we also consider the access frequency, so each period have a three bits, so maximum you can count to the eight access, but if the application access the more than eight times, then the page can be promoted immediately because the page is heavily used by the application. And we also consider the essentially access the page. 
+
+Does that solution need to be separate? Like we have everybody working on memory tiering, like does this engine need to be separate from the memory tiering engine? That's how people are building, like shouldn't it be integrated? Or it needs to be separate?
+
+This is a good question that, yeah. Why would this be any different than any other memory tiering, but just with different properties, right? Is kind of asking the same thing, right? Why would this be separate than any tiering out there? What would be the difference, right?
+
+Here the memory mechanism is working for the system memory, right? It doesn't have any persistency or something like that. It doesn't relate to the file system. So what's the caching is similar to the tiered memory, but the target is different. Our target is a file, not the memory.
+
+So maybe is there, does there need to be a separation for page cache specific tiering in any way? I think that's more of the general question.
+
+Yeah, is all the tiering now based on anonymous memory? Like do we need file back tier?
+
+I would look for you, Dan, I'm not as sure, right?
+
+It was for the room, it was for the conference. Like maybe this is a concept we need to think about as a community.
+
+Yeah.
+
+Time for questions.
+
+Okay.
+
+So first of all, I believe that this technique cannot be extensible for another file system. And mostly it's dedicated to EXT4. And if you're talking about SSD, a lot of file system, it's using copy and write policy. And it means that this technique cannot be used at all. Can we, how do we see that? Because on slide 10, it mentioned file system without any particular file system type. Or it can be, maybe it can work for EXT4, but it cannot work for other file system. How it can be extended?
+
+So actually, we, you're right, we implemented on the EXT4 file system, but I think it can extend it to any other file systems.
+
+No, it cannot.
+
+Why?
+
+I file system developer, you cannot, for example, extend it for copy and write policy.
+
+Copy and write policy?
+
+F2FS, it can be extended for F2FS. It cannot be extended for NILFS2.
+
+Okay. Well, actually the auto-caching layer is pretty much isolated in the separate layer. And actually, we don't need to change the file system so much.
+
+Again, every file system is very specific. And for example, if the file system is in a copy and write policy, it means that the application doesn't know where the real data is located. Only the file system knows. And it's not so easy to simply take something from an SSD. It'll be some garbage, and you don't know what it is.
+
+I think the point is not for this to generically work for everything, right? So the model where this makes sense is where you fallocate ahead of time, right? And you carved out the space that you're using and then use it afterwards. In other words, more like a DAX based approach too, right? Where you map to the physical address ranges and you generally know that more ahead of time, right? Like that it's used to carve out address ranges that is not as dynamic, right? So I think that kind of model should work for this.
+
+Yeah, you need to surprise it, it's DAX based.
+
+It's DAX based, yeah, that's definitely shown here.
+
+One of the observations about like, yeah, it's means like BtrFS and things that have not been DAX enabled, but people are working on it. But one of the observations is that for reads, this would be okay. Like a DAX access for reads is, but yeah, so certainly on the right side, DAX is not there yet for copy and write file systems.
+
+I think we should probably move on a little bit and try to wrap up.
+
+So yeah, a little bit over time.
+
+So, okay. We need to consider the device characteristic because each device has a different choice of our characteristic. So I think it is better to provide the policy control parameter to use space. Okay. And I just want to skip the other allocation policies because it is very intuitive and there's no arguing, I think.
+
+And this is a performance result. And actually it's very uninteresting that the auto-caching just shows the same performance as the one that shows the better performance between the DAX and the page cache because the auto-caching can use both of them depending on the situation. So, for example, if the system has enough memory, then the auto-caching can allocate the page cache for the read-intensive data.
+
+And this is the write results. And there is a little performance differences between the DAX and the auto-caching. And actually I wrote the reason below the table so you can read it.
+
+Okay, so we implemented the framework so far and we need to implement a dynamic structure page allocation or cache transition or something like that. And our target RFC date is end of Q4 this year. That's it.
+
+Any questions?
+
+Look at the folio. Because like folio is also trying to like long-term.
+
+Yeah, so actually we use the 5.18. It already has a folio feature, and we actually allocate the folio. Yeah, for folio device page.
+
+Yeah, for dynamic page allocation also, like for dynamic folio allocation, I guess. Because we also, it's on the roadmap too, I know.
+
+Yeah, yeah. So yeah, we have to consider that and we adopt that changes.
+
+And I can, like one of the things when you said page2pfn, one easy way to solve it, page2pfn, is like, because you always have this two megabyte strict page, it means when you allocate 512, you have the first one that is free for you. So you have a strict page for the zero page that you can use to solve the PFN. Just, again, we can do that offline. It's like on the graph, it's very easy to.
+
+Let's thank the speaker.
+
+Okay, thank you.
+

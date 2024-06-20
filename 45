@@ -1,1 +1,99 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+All right, well, thank you. You're in luck, this isn't a terribly long presentation, so we'll probably be able to make up some time. Okay. All right. So this is going to be a little bit different than some of the talks. It's not gonna be as deep in the guts. It's much more about talking about implementation that we have in the kernel, what's actually happening in CPU host roadmaps, enablement, and how does that align with the spec, and how do we manage this giant mess when people actually want to build actual CXL devices? So it's really more of a, where are we seeing it from our use cases? How is it affecting us? And trying to spawn some collective group thing to think about how do we actually address this if we think we can? So my name is PJ Waskiewicz. It's been a number of years since I've actually gotten up to speak at one of these. So this is kind of exciting to be back in person and seeing half of people's faces. And yeah, so I also work for Jump Trading.
+
+So brief overview. I won't bore everyone with the obligatory, what is CXL slide. I have one. We'll look at it, but I'll focus specifically on certain things because hopefully everyone in this room knows what CXL is at this point. But more importantly, I'd like to look more at the roadmaps versus spec roadmaps, kind of where we are for those of you who aren't in the consortium and don't really track that very closely, kind of cover where those are and then cover where do we think some of these features are actually going to intercept on host CPUs? Because that's really the important thing. We can talk about all these great features all the way through CXL 3.0 and beyond, but if we're not gonna see them in six years, then it's just exciting slide where at that point. Then to kind of bring that together, I'd like to talk about our use cases that we're currently looking at with the use of FPGAs and testing CXL and playing with it. And we suspect that other people would be in the exact same use case issues. So we thought it would be pretty important to bring up and then go to some proposals, specifically around hot plug. And that's really what this is about, supporting CXL hot plug and I'll get to it there.
+
+So everyone probably has seen this slide multiple times throughout this entire week. Jonathan had a wonderful presentation yesterday on CXL and met his use of that and slides are over here. And so why I'm actually here is I think the majority of the world has been focusing a lot on type three devices. So building memory expanders, the whole tiered memory push, ways to build DDR4 shelves over CXL because DDR5 is very expensive and we can get it very dense and very cheap. These are all things that have been getting demoed over the past year, right? Supercomputing had a bunch of demos last year on this. So that's really been where a lot of the focus is. If we look more at this first one in type one, there hasn't been a lot of focus there. It's been a lot, if there has been, it's been a lot quieter. And this would be like network cards, right? NICs that I can actually have a CXL.io, potentially have a cache accelerator, do some various exotic things with that. But we do have an issue if we want to look at that and then merge that with today's use cases.
+
+And one big issue is this table right here. So take a lot of these with like hand wavy grains of salt. I didn't even attempt to put dates down because they seem to change constantly. But today we have three versions of the spec that are ratified and released, right? We have CXL 1.1, 2.0 and 3.0. 3.0 was a few months ago and we're actively working on next generation stuff, pulling Gen-Z IP in there. So it's really cool stuff, right? But we're like light years beyond what the reality is and the reality hasn't even happened yet, right? So CXL 1.1 is supposed to be showing up on the x86 side in Sapphire Rapids, which has not shipped yet. AMD's Genoa has also not shipped yet. And oddly enough, NVIDIA with their grace, CPU has announced that they will support CXL, but they'll support CXL 2.0. And they have not shipped yet. Then when things actually get interesting, right? CXL 2 has a lot of, I would call more core features that are making it much more useful. That's not until Granite Rapids. That's not until Turin. The Ampere, next generation Ampere might have it. And then CXL 3.0, which is where a lot of the work has been going on. We have no clue where that shows up, right? That requires PCI Express 6. So roadmap wise, we're looking at least six years for that. So anyone wanna dispute that at all?
+
+There's some all in character, right? Like you could run some CXL 3.0 software features talking to a 1.1 protocol on some of these platforms.
+
+I didn't catch the first part of Dan's comment.
+
+The comment was about the software features in CXL 3.0 could be deployed on older protocols.
+
+An awful lot of stuff is back portable. So we'll start seeing stuff that's in the CXL 3 spec 'cause you can implement it only on the end point. You don't need anything on the hope. So hopefully we won't have to wait that long for some of it.
+
+Yes, yes. We have been finding that things that are officially in CXL 2.0, 3.0 magically sort of work on 1.1. And I'll get to a little bit about that later.
+
+So our use case, why am I here? Why is this something that I feel pretty passionate about? So today in high frequency trading, cloud service providers, telco, anyone who's using FPGAs to do any sort of traffic filtering, network filtering, computational stuff, anything that they have application logic running on an FPGA, typically reprogram those fairly often, right? So I have a new network protocol that I need to look for. I need to have a new field and a header. I have a new widget that I need to go ahead and implement. I go ahead and create a new bit file, ram it down into the chip, and then we're off and running. Typically our programming workflow is, we have some mechanism to write to the flash down on the board with the FPGA, whether it's memory mapped interface, JTAG, whatever, and then we tell the FPGA to initiate a reprogram of the fabric. So at that point, we've told the FPGA to basically rewrite itself. As that happens, usually also the host interface, like the PCI Express block, also gets overwritten. So the way we get around that today is we issue a PCI hot plug, pull the thing off the bus, and then wait for it to finish, and waiting is kind of like, I think it'll take about 30 seconds or whatever, and then we go ahead and rescan the bus, and then hopefully the device is back, it's powered on, and then we can go ahead and link train. The drivers get poked again, and then we go through re-initialization. The big benefit here is that process can be like 30 seconds to a minute, depending on the chip, depending on the bit file size. The other way to do this is you put something into your flash, and then you reboot your host. And then that process happens on boot, and on, as anyone knows, on modern systems with a lot of RAM, a reboot can take like five to 10 minutes. So practically speaking, in an environment where you have a lot of churn and a lot of change, rebooting is not an option, unless it crashes during the reprogram, and then you have to reboot anyway.
+
+So why is that important? So in CXL 1.1, it's very explicitly stated in the spec that it does not support hot plug. That is, I think, very intentional, because a lot of the focus has been on .mem, out of the gate, you don't really think that you're going to be hot plugging your disk shelves or your memory shelves, so it wasn't very important. However, now that we have seen some life with CXL, and we start going down this path of how do we work this into our ecosystem, without that hot plug support, we're kind of at a standstill, or we have some issues that we need to work through. So this was brought up at the Software Working Group and the Consortium a number of months ago, I brought it up, was told that this was an implementation problem, not a spec problem, and that I should go talk to an implementation group, so that's why I'm here. But this did actually spawn some other questions from members in the Consortium and other vendors that may have not realized putting the two and two together that this was actually going to be an issue if they wanted to build a .io or a .cache device. That would need to be hot plugged.
+
+So, Jonathan's point, and to Dan's point, there are some rumblings out of some of the vendors that the host side support in the CPUs might be 1.1 plus, and they have still yet to define what plus means. And there has been some hints that limited hot plug support might be there, as in, we might have a timeout period of a snoop to a device that we can go ahead and hot plug, and if we can get back in time before that snoop hits again, then we'll be fine. So there's a lot of hand waviness and a lot of loose requirements here, but the whole point here is, that's great to know, but between 1.1 and 2.0, I think it's gonna be a bit of a bumpy mess with, like, say, Intel has one 1.1 implementation, and AMD has another 1.1 implementation, and it's going to put a lot of pressure on endpoint developers and designers and software developers to accommodate for all of these little quirks. So I hope that that's not the case, but we're already kind of seeing it a little bit right now.
+
+So, proposal. I have two ideas. I don't know how anyone will take either of them. One of them would be on the kernel side to expose a best effort hot plug hook, and say, you can go ahead and try to do what we do in PCI Express today and hot plug it and re-scan it, and it may not work, and put on, like, you know, use at your own risk, use at your own peril, but at least it would be something that, given some of the quirks on the host side CPUs, we might be able to make this work. Obviously, some thoughts that came to mind for me is CXL.cache could be tricky, because that's effectively doing a CPU hot plug, more or less, if you are actually participating in the cache coherency. And mem would be a little bit tricky, and this was actually brought up yesterday in the meta presentation about how we would have to quiesce any transactions before we make any changes, that all makes sense. That can all be handled in software. So, this is one thought.
+
+The other thought, and this is actually pushing the responsibility onto the FPGA designers, and that's why I don't think this is actually going to fly, because I've been told by my FPGA designers this is not going to fly. But we can implement partial reconfiguration. So, this is another method of building your bit file that goes onto an FPGA, where you actually have segregated out parts of the IP, not necessarily having hardened IP, like in a PCIe core, but you could have a soft PCIe core that's fully separate from the area that you actually program. I think some of the Intel FPGAs have this as part of their HLS environment, but it is something that would be a major change to how people architect their bit files. And if it's only the stopgap to get in between today and 2.0, it may not be something that people look as worthwhile to spend the time on. So, this is one option. I did feel like I needed to be honest and put it out there that we could actually work around this without worrying about a use at your own risk, kernel hook, but obviously this is not the most ideal.
+
+And with that, I said it was going to be shorter and give you a use case, and then people can start firing questions and terrify me.
+
+This is good, that's a good targeting question. So, I have some comments on this. So, I'm Jonathan from Facebook. Meta, we changed the name. So, a difficulty with CXL, CXL doesn't manage support of this hotplug is that memory is a part of the critical computing infrastructure. So, the host processor has to deal with cleansing the memory stuff and the flashing things out and make sure apps also deal with correctly. But in this case, you don't have this problem because you are only CXL.cache. Now, when it is CXL.cache, that means there are caches in the CXL device that could cache the memory from the processor, right? So, if the processor has the latest data, cache data, you unplug the device, doesn't matter, who cares, right? Now, the problem is only when the cache in the processor side is stale, but the cache in the device side has the newest data. Then you unplug, if you don't do anything, the data is gone, right? So, if we just make sure that doesn't happen, then we are actually good.
+
+Yeah, no, I agree.
+
+So, how to make that happen? One is that from the usage side, you can say, oh, if you are just doing firmware upgrade, firmware upgrade, so in that case, when you finish the firmware upgrade, you can invalidate your cache on the device side. That's something the device can do before you do the hotfix. So, that would be my suggestion. Another thing about what you said about the CCFS stuff, maybe you can, I don't know much about BPF, but you could use that for your own purpose. 'Cause you won't be able to get that into a producting system, right? And you know it's not for a producting system. It's for developers' efficiency. In that case, why not just use your own patch or use BPF?
+
+So, the hotplug actually, in this case, is something that we use in production quite often. 
+
+So, that's my misunderstanding. So, in your case, you want to use in production.
+
+Yes.
+
+You want to use in production that you have full control of FPGA. Then you can avoid the situation I was talking about, where device has the latest cache.
+
+Yeah, so if we do have something like a device-biased cache or device-biased memory, having the FPGA and any of the software around it guarantee, or at least do its best effort, to make sure all of that's flushed and invalidated is a perfectly reasonable assumption to make sure that that device does that. But the piece that we need then is the kernel side to be able to support the hotplug after we've gotten all of that flushed out.
+
+Yeah, I think, as you said, PCIe also have the infrastructure where, like for example, you have the PCIe uncorrect for error handling.
+
+Yep.
+
+You have the, what, the, see, EDPC?
+
+Mm-hmm.
+
+It's enhanced with, I forgot the full thing, but basically, yeah, yeah, yeah, thank you. It has a downstream port containment, right? So basically means if there's an incorrect error happen, it actually, it actually take care of the aftermath dealing correctly and then reset, re-initialize the link, and then rescan and re-add it to the slot. So all I'm saying is those need, today, it needs some firmware support, needs some SMI handlers. But all I'm saying is the technology is already there. We just need to make sure it also supports CXL, that's it. I don't think that should be a lot of work. But make sure your firmware already supports it.
+
+Well, and this was also more of a, if we were to start pushing patches to kind of put these together, would people be screaming into the night that this is a terrible idea? And it sounds like probably not, so.
+
+Yeah. Turner upstream always has this, right? So that's good. (laughs) We debate.
+
+Just from a practical point of view, if you're dealing with a type one device, far as I can remember, there is absolutely nothing guaranteeing the host won't issue a snoop. Doesn't matter if there's any, you've even had the address, it could have lost tracking. In which case, there's nothing CXL can do or software. So, I mean, there may well be, the way of these things, there's probably somewhere in those hosts, a register somewhere that will let you turn that off. We could look at defining something like a firmware interface to actually expose that, if the host had it, thus allowing the host to hide away its magic chicken bits. But I can't see any other way we can solve that problem.
+
+Yes, that is.
+
+I mean, unless you actually, to be honest, even a host, yeah, even if you told the host it had gone away, DPC is, yeah, interesting with CXL1 devices.
+
+I mean, if it was able to catch the NMI that was coming and we could reset the device that way and kind of get a cheap for free hot plug, I don't know, that's something to look into.
+
+I think you need the FPGA to guarantee to return a miss under all circumstances if it's not booted, et cetera, which means some hard IP, or it means partial reconfigurability. Otherwise, good luck.
+
+Yeah, thank you. Yeah. No, I think having some of those restrictions on the FPGA is perfectly reasonable for what we're trying to do.
+
+We had a vote online, by the way, and we've decided that reconfigurability is the right solution and we should do nothing at all in the kernel. It's on the chat. Strangely, there are no FPGA types here today. Yeah, there are only two votes. Yeah.
+
+I just wanted you to find pushing that upstream, I think, because people know upstream that if you're doing hot plug, it's your mess and very low expectation of it working, so.
+
+Fair enough. It's the bet that we made.
+
+But I missed the beginning premise of this where the fact that the link is down causes those snoops to be a miss. That's why you're trying to get to hot plug?
+
+Yes.
+
+Would this simply have- - Timeout.
+
+The assumption is you wouldn't, yeah. Ideally, the host wouldn't be sending snoops anywhere near something where the link's down. Guarantees will be host-specific.
+
+Isn't that the fundamental thing here? When you say that it's like CPU, a hot removal, like a removal run, it is, but at the same time, is the OS aware of that compute resource on the device? Isn't that the more important, who was the one that initiated the compute on the device and can they stop it and guarantee that it's not using it anymore? Does it boil down to this at all?
+
+Well, there's really, maybe that was a little bit of a much hand wavier statement. So that's not assuming that you might have a CPU on the device that is also contributing or participating in the cache coherency with the host CPU. That could just be that the device itself is placing stuff in the cache on the host. So it could be tracking cache lines, but it doesn't necessarily mean that it actually has a caching entity on the device. If it did, that would be way harder to deal with because then yeah, you would have to do like all of the invalidates, flush them, go ahead and disconnect the compute resources and rip it out.
+
+The characteristics of the CXL caching mechanism is actually asynchronous. What that means is the processor is the master and device is slave. So the processor has the downing job on making sure the caching MESI operation is correct. Today's the Intel, Safari, and the Genova let us through a lot of work. We worked with them for a long time. So they're pretty good.
+
+Yeah, we've kicked the tires as well.
+
+Yeah.
+
+Thank you for the-- - Yeah, thank you for your time.
+

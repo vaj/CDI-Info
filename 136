@@ -1,1 +1,118 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hello, everyone. My name is Ravi Kiran Gummaluri. I work for Micron Technology as a system architect for CXL Group. Today we are going to talk about CXL memory tiering for heterogeneous computing. Along with me, my colleague, John Groves, will also talk about various kernel patches that we are pushing and how important it is for CXL 2.0 adoption.
+
+So I'll start quickly on the agenda topic. I'll not be touching all the slide contents. I'll try to keep more focused on the kernel patches and solutions, what we are looking at help from the Linux community. We'll talk about memory demand and scaling challenges. We know the industry has this challenge, what CXL memory expansion is going to solve with these problems. Specifically, I'll talk about hardware-based interleaving policies that today we have, which is solving the bandwidth expansion use cases. But we feel strongly that software-based interleaving will solve, and it is more flexible. That's where the Linux kernel patches, RFCs, which are under review, is very important for us to get into mainline. We'll talk about how we are enabling the software interleaving, and we'll talk about next steps and call for action.
+
+I'll quickly go through the memory problem here. We all know the memory demand in data center applications, it is growing 26% year over year, and the memory capacity is not doubling. So there is a huge gap between the demand and the memory scaling. The processor speed is actually increasing with every two years, and memory latencies are improving only 1.1 times. The memory wall problem, and you can see a huge gap between CPU performance and memory performance. The third one is basically talking about the capacity per core. It's not really scaling, as you see the graph there. So there is a lot of demand in bandwidth and capacity requirements, which the current systems are not able to scale. How CXL is going to solve it, that we'll see in the next slide.
+
+CXL memory expansion gives you additional capacity when you attach it to the CXL system. There is a no-brainer there, you are adding more capacity to the system. And it can be achieved in various ways. This memory can be exposed to the application transparent way, where applications are not aware of this memory models, and OS is managing or user space libraries are managing an app, that is app transparent way. And applications are also aware of this number of memory topologies, and they can use libnuma if application is aware of those topologies. And applications can also be modified with libmemkind in order to utilize this new CXL memory nodes. And CXL switch gives us flexibility of scaling more number of CXL nodes, that can have additional capacity to the system. So capacity expansion is a no-brainer, you are attaching more capacity to the system. Now coming to the CXL memory bandwidth expansion, today we have multiple solutions to solve bandwidth expansion, especially the hardware-based interleaving is the easiest way to deploy. The software interleaving is also there in our Linux kernel with interleaving between various tiers today, but they have some limitations, that's where we are trying to propose. There are a lot of RFCs that work need to be done as soon as possible for CXL 2.0. We'll talk about each individual CXL bandwidth use cases today, how we are using today, what are the background, what are the drawbacks of it, and how software interleaving is solving those problems.
+
+This is one of the ways that today the CXL 2.0 is getting adopted for bandwidth expansion use cases, where the system address space is interleaved between local DRAM and the CXL memory.  An example is if you have a 12-channel DDR on the host, and you have 4 CXL cards, the system address map is chunked into 16 chunks, and then you are distributing complete system address map with these 16 chunks.  The process is it is easy, easy way to configure in your BIOS configuration, you just configure it, that's it, it will work.  But the problem is kernel is not managing the memory allocations here, it affects the kernel memory, it hides NUMA topology, it's a flat memory model basically.  It is a fixed configuration and it will not be applicable for all the workloads, so it's a constraint there.  And one of the other requirements for this is the CMM module has to be IsoCapacity towards the DRAMs, meaning if you have 64 DIMMs, 64 GB DIMMs or 96 GB DIMMs, even though your CXL memory is 256 gigabit memory, it has to be IsoCapacity.  So you are not really utilizing the higher capacity of CXL memory here.  So those are the existing challenges today, the kernel is not able to really involve here, we are adding additional bandwidth to the system, we have lots of limitations here.
+
+On the other side, we have also utilized the existing software interleaving model, but we have tuned that to in a way between hardware and software to extract better performance out of it.  Here we are trying to do instead of 12 DRAM channels on the host, looking like a one NUMA node, we are trying to split a NUMA node per socket, we are splitting that into four NUMA sockets per node, so that we get four NUMAs in the given local node instead of one CXL node, and CXL node is seen as another NUMA node.  So basically we are splitting, if you are not doing this hardware configuration in BIOS to split the 12 channels into four NUMA nodes, you will be left with one NUMA node on the local and one NUMA node on the CXL, where you will be interleaving between one is to one configuration.  So with this configuration, we are trying to have more number of NUMA nodes in the local, and CXL is four is to one ratio.  This is one of the sweet spot we saw with this configuration that we are extracting maximum bandwidth out of the system.  So the process, it is NUMA topology is enabled, kernel is able to manage the memory allocations, overcomes the capacity limitations imposed by hardware interleave in the previous slide.  The cons is it has fixed configuration again, because once the BIOS configures this as four NUMA nodes, you cannot change it.  And with each workload, you have to tune normally these ratios, and you cannot really change those ratios with this kind of configuration.
+
+The next one was a software heterogeneous interleave.  Today, the kernel, if you see, you have two tiers, and if you want to interleave between those two today, it just asks you what nodes needs to be part of interleaving, but it doesn't talk about weightages of each interleaving.  Earlier, what we did is in given NUMA node, local NUMA node, we split that into four.  So we are able to play with the ratios of four is to one.  In this, software is giving actually a flexibility that each node is now you're giving a weightage.  So instead of splitting the hardware into four is to one, I can achieve same kind of configuration here with 80 pages on the local and 20 pages on, which is four is to one kind of ratio with simple software interleave.  Today, the kernel doesn't support the weighted interleave.  What is our proposal is there are various methods for supporting weighted interleave, which is benefiting for the overall system bandwidth improvement.  So those are things that we are looking.  My colleague, John Groves, will talk about a various patch set that has went into the kernel patches, which are in under review, and we would like to have a discussion around that.
+
+Yes. So I'm a software guy who works at a hardware company.  And yeah, yeah, yeah.  Who's with me? And so, you know, I don't know, starting maybe even two years ago, it was pointed out correctly that a balanced interleave with regular DDR and CXL memory would help for bandwidth constrained applications.  For latency constrained applications, that's a whole different ballgame.  But so being a hardware company, they were all interested.  And I know some other hardware companies that are interested in this too.  And, you know, having the BIOS menu configure balanced interleaves.  And so, and I don't speak for anybody, but I feel certain this is going to be available.  But what really makes sense is to do it in software at the, you know, allocate pages for lazy VMAs level.  Because if we do that, then we don't affect the kernel, which if the BIOS sets it up, it's going to affect the kernel too, unless they think ahead and fix that somehow.  And it's not going to affect the applications that you don't want to apply the policy to.  And so that's a thing that we really think that as a community we should address.  Yes, Yazan. Got the mic?
+
+I just wanted to ask maybe for clarification.  So when you say interleave here, do you mean like actually interleaving the physical memory?  Or you're leaving them separate NUMA nodes and you're doing just like you said, the allocators, just choosing?
+
+So what I'm saying is the, yeah, the get free page call that happens when an address gets touched that hasn't been allocated yet for a VMA, we should apply weights then.  And there's a sequence of patches that actually, I guess this is the slide for that, they've changed a little bit.  So there was a, yeah, Meta put out a patch, Johannes, is he in here?  I saw him earlier today.  Johannes Wiener submitted it as an RFC like June of last year.  It just took two NUMA nodes, but you could apply a weight for the two.  And if you set the mem policy to interleave before that patch and still today, because that patch isn't in, you just get one to one across whatever nodes you wanted to interleave across.  With that one, you could set a weight.  That was well received, but Anish was working on the mem tier support.  Big details about that are out of scope here, but mem tiers are groups of NUMA nodes.  And so I reached out to Johannes a few months ago and he said, well, we're not working on that now, but why don't you pick it up?  I started looking at it, but then I was talking to Greg and some of the developers at Micron and Greg picked it up and ran with it.  But we've been through some iterations.  V1 was mem tier based because that's what we thought the community wanted.  So that means weights for mem tiers.  Each mem tier is a collection of NUMA nodes, one or more.  And so but the feedback was that that didn't look right.  And feel free to start chiming in if you want to, Greg.  So V2 is NUMA node based.  And I think one of the questions for the community at large is what are mem tiers for if not this?  It seems like they're for something a little different.  And I don't think I understand the answer to that completely, but it doesn't particularly matter to me which it is.  And my understanding was that mem tiers made sense if you expected to have an accumulation of NUMA nodes that were really similar.  So then that kind of aggregates those.  If we're not expecting that, then I'm not sure tiers apply here.  And then V3 is cgroup based, which I love because it's hierarchical and you don't have to have just one set of weights for the whole system.  But there's an ongoing discussion on the list right now and there's some pushback from the maintainer who would have been affected by it.
+
+V3 was actually memory control group based.  And there's actually a V0 that was based on mem policies.  So there's actually five implementations.
+
+Thank you, sir.
+
+Do you think hardware interleave only makes sense on subpage granularity?
+
+Well, so there's hardware interleave and there's heterogeneous interleave.  So we're talking about heterogeneous interleave where your DDR is interleaved with CXL memory.  And that's fraught with some stuff.
+
+My point is, though, like, so software can do something at the page level, like whatever the memory management unit can address, right?  Like at that point, it doesn't really matter.  But I think subpage is that you hope you can light up more channels, right, with a smaller granularity, right?
+
+Don't do that.  Because if you do everything page based in the page tables, your TLB pressure is going to kill you.  Because you really don't want to read them.  You want nice big, huge pages for the simple case.  In this particular case, perhaps not.  So, yeah, with the software interleave at the allocate pages for VMAs level, I don't know why I especially care that it's page granularity or even huge page granularity. 
+
+So you're saying, I guess, is that a problem there?  Like if you want to interleave across NUMA nodes, page granularity, you're going to have a problem there, right?  Because you have to -- the fault will never be contiguous, right?  There's no way around that.
+
+Today, probably, there's nothing stopping you deciding that you're going to do it at, say, 2 meg level.  Other than working out how on earth to configure it.  But, I mean, theoretically, it works just as well if your data sets are way bigger than 2 meg anyway. 
+
+Yeah, so -- Traditionally, hardware interleave was always subpage granularity, though, right?  Like for DDR?  Yeah.
+
+I've seen it be larger than that when I worked for a server vendor.
+
+But typically, it is.  So moving on, I mean, you know, Robbie might want to talk to the particular details of this data.  But the net is that if you get the balance right, you know, we've got tests that show 35, 40% performance improvement on purely bandwidth constrained applications.  And clearly that, you know, if I've got -- this is made up numbers -- 3 gigasecond of DRAM, regular DRAM, DDR bandwidth, and 1 gigasecond of CXL, then the right ratio is 3 to 1 as a starting point, and then see whether the data matches that.  And that should give you a third additional bandwidth in terms of napkin arithmetic.  And what we're trying to do, why we're in favor of this patch set is two reasons -- whatever, it's going to evolve a little more.  But two reasons.  One, we want to enable the ability to do this aggregated bandwidth thing.  And two, we want to talk people out of doing it in hardware where it's going to affect apps that don't benefit from that.  And so, yeah.  And this is short-term, you know, CXL2 kind of stuff.  Do we have -- whoops.  Oh, yeah.  Just acknowledging the people that worked on it.  Did I miss another one?
+
+Yeah, so in the presentation, which is up on the Plumber site, there are links to the patch sets that have gone so far.  You know, and we would ask anybody who agrees with us that this is good to help us promote it. 
+
+So I was wondering about -- I don't know.  I've lost it.  Come back to me in a second.
+
+Okay.
+
+I have a question about your results.  So you had the six CXL devices.  Can you share the CPU server like platform, like the server that you were using and the form factors?  I'm just curious about the six devices on there.
+
+We cannot share the platform.
+
+Okay.
+
+Certain people in this room will --  
+
+Okay.  Yeah, you know, for reference, I was thinking of the OCP where it was like four CXL devices on the super micro server.  But that was publicly displayed, right?
+
+So that's why I was kind of curious.
+
+Okay.  Okay.  More, more.  Okay.  Okay.  Thank you.
+
+This goes back to Tajan's comments on the group.  How do we determine the minimum viable product for this?  Like the fact that -- I don't know.  You talked to Johannes.  Why Johannes stopped -- because he was somebody who could talk to the application side.  Because there's a lot of stuff we could do here, but it's not clear what we have to do and what is the front use case that some application might have.  Like we need this in the kernel because we need to distribute it.
+
+So Greg and I were talking to Johannes about this earlier, but not trying to close the sale, right?  To my understanding, that he works at the same company as one of the cgroup maintainers who doesn't like it currently, but he just doesn't know it well enough yet.  That's what I'm thinking.  So there's a discussion to be had there.
+
+So there's a big world outside of cgroups.  If the -- if the weighted interleaving kind of thing works only -- not only for cgroups, but also like for NUMA nodes, that would be transparent to everyone.  cgroups may or may not be used.
+
+Well, so you're right about that.  And Greg has something to add.  But what I like about cgroups is given the hierarchy, I can override the weightings for some applications.  And that's kind of beautiful, right?  I mean, I don't know that -- I certainly don't know that same -- you know, that one set of weightings will be good for all.  But I do know that, you know, at least one set of weightings as opposed to one to one to one is a huge thing.
+
+I'll add one thing to that, and then I'll pass.  There's two features, really.  There's the control of who gets the interleaving and who gets the weights, and then there is the attribute of the weight itself.  And I don't think those two things necessarily have to be co-located.  But that's kind of the debate as to where do these things belong at the moment.  It feels like weights should be more node, and the control should be more mem policy or cgroups.  And it's just a matter of figuring out who's willing to take the maintenance cost.
+
+Right.
+
+Yeah, I mean, I guess my ask is what's the ask for, let's say, the hardware vendors?  So you're saying, like, maybe doing all the interleaving and hardware is not the right best approach here.  So does that mean we kind of go back to some of the earlier ideas of just having the topology and everything just very clearly describe the hardware as it is, giving proper weights, and then leave everything to the software and keep the hardware basically simpler?
+
+Yeah, well, so I'm not trying to talk the hardware vendors out of doing this.  I know of unnamed industry companies who want it.  So they can have it.  It's just that CXL is not going to look good all the time if that's all you got.  And CXL will look better if it's got something flexible.  So if you have one set of weights for a system, because you still opt in with the interleave policy, that's a MEM policy, right?  So if the MEM policy for interleave is set and there's one set of weights, that's pretty good, and that's probably MVP.  If we could get it into cgroups, then there's a hierarchy and you could override it and some things could have a different policy than others.  That sounds better.  We might find out in practice you never need to do that.  I don't know. Right?
+
+So with the hardware interleaving set, we have analyzed multiple workloads.  It's suiting to one or two use cases, but not scaling for all, especially if you have a capacity-sensitive applications and bandwidth-sensitive.  It's not scaling for capacity.  So this software interleave gives us flexibility.  If you want a bandwidth expansion to bandwidth-sensitive application, you use interleave.  If you don't want, you don't use it.  That kind of flexibility we have.  But the hardware interleaving is forcing us to have a specific configuration, not scaling for most of the applications.
+
+Right. And something's going to behave weird in the kernel, too.
+
+Just for a comparison point, on traditional many-socket systems, there's always a BIOS option to interleave across all of the DDR channels in the whole system.  Not one ever turns it on.  A few applications do.
+
+Some people do turn it on.
+
+Okay. A few people have.
+
+Yeah, yeah. It's hard to implement.  Right.  Some things are just to show you why they're a bad idea.  But anyway.  Yeah, so I call you to action to help us get to the right solution that can get in and get it in.
+
+How many more?
+
+Oh. Infinity?
+
+But what are you willing to, like, if you had to ruthlessly pick the minimum thing you wanted to build, would it be global system weights, like 80/20? Would that be the first thing you would build?
+
+It would be configurable one global set of weights, I think. Configurable, though.
+
+But what if there's weights with zero control? Would that be a viable product at all?
+
+Are they set stupidly or well?
+
+I mean, yeah, they're set statically.
+
+So control in this case really just means you have some ability to opt in.  In this case, it's mPull, interleave.  You set for your task, and then it is inherited by all the subtasks.  To what extent you expand that control to be able to turn it on or off or change the weights, that's a different question.  That's why I said a single global node base, like the weight becomes an attribute of the node, and then mempolicy eats that as input is probably sufficient as an MVP with the optional control extension of being able to override those weights using mempolicy.  And so mempolicy having an optional weights array, for example.  And that is basically the combination between two patch sets that have already been put up.  But barring the ability to get the weights into a global setting, just having mempolicy with the optional weights is probably sufficient to prove the point.  And then if you want to apply it more globally, you could either expand it in the cgroups or node, I suppose.
+
+I'm basically trying to play the role of Teijin and his comfort level. And so if you get-- it feels like if the control is on or off, and then there's a static policy on the platform, that's not great, but it's progress, right?
+
+And it's as flexible as if the hardware did it. Which is not very flexible, but-- actually more so, because you still don't have to apply it to everything.
+
+And that's why I said throughout the entire thing, it's always an opt-in policy, which is, I'll say, probably the best of all worlds, because it doesn't affect anyone unless they want it to.
+
+Have we got enough information to set the weights?  Because one of the classic things when HMAT was added is that we only advertise nearest.  So, nearest initiated to a given memory.  And I worry a little that that's obscuring half the data you need.
+
+I'll jump after this.  So, part of the node version of the patch set was to touch on the accessors.  Like, what if I have a task on node zero, and it's accessing weights across a socket?  And that's very complicated, and I think we've all determined that's probably too much for an MVP, and probably we need to think on that problem a little bit more.
+
+And an assumption that a balance that seemed obvious would be the best balance isn't necessarily valid either.  For a given workload, you might play with the balance in order to figure out what worked well.  Thank you, everybody.

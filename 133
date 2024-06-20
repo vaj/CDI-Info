@@ -1,1 +1,55 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+I'm going to talk a little bit about Type 2. When I proposed this talk, I hoped that there would be a little bit more interest in the community going forward. All right, so when I proposed this talk, I was really hoping that there would be some interest in the community as we talked on the mailing list. And unfortunately, that really hasn't materialized. So I'm just going to talk a little bit about what we're driving at towards the core and let people get some information about if their companies are planning a Type 2 device but they just can't talk about it or whatever, we can hope to have a more seamless merge into the main core. As maintainers, Dan and I have talked about this a lot. And so, we're looking for, number one, general interest. Is anybody in the community looking at Type 1 or Type 2 devices? Basically, accelerator devices, as the title of the talk was, you know, beyond memory.
+
+And so, go ahead and flip to the next page. And then we'll go through Type 1 and 2 current work. And then, since I'm also presenting a little bit of DCD, I thought I'd just give a little bit of time back to DCD because that seems to need a lot more discussion. There's a lot more going on in the community there, a lot more moving parts and participants. So, you know, for those who don't know, Type 1 has direct access to main memory with .cache and Type 2 has both direct access. And so, we're really targeting in the core Type 2, which will cover effectively both of these protocols and allowing accelerators to leverage core support within the core drivers that, you know, drivers CXL and that code. So, we can kind of ignore Type 1 unless somebody has a specific need for that. But, you know, those are going to be mainly driven by the drivers and the accelerator itself. So, I guess flip to the next slide.
+
+So, now we're going to get into really the point. So, for those of you who may be interested in Type 2, you might have known that Dan already posted some RFC work. Some work for Type 2 devices has actually landed. There's some splitting of data structures that's in the upstream kernel that will allow the core to better support accelerators and their .mem usage to be able to create regions. But that was only the patches that we really needed to, you know, clean up the core as it stands today. Because without a good use case, we haven't tried to upstream all of that work. Dan threw the series at me and I've recently rebased it and I plan to post that. There is one fix that I think should actually land upstream relatively quickly. Even though the fix doesn't materialize without a test driver, I still think it's appropriate to get upstream to clarify some of that data structure splitting that was done and is currently upstream. And we're focusing on a number of things. Number one is coordinating between any accelerator drivers in the core. So, you know, what we're driving towards is what does the core need to do to make sure that any accelerator drivers leverage the core kernel code, creating regions, managing addresses space for those memories that accelerators are going to have. We don't want to see accelerators go off and try to reimplement what's currently in the CXL core. We also want to provide facilities to check and enumerate the link capabilities and allow drivers to focus on driving their hardware, not trying to manage walking the CXL trees or switches and links and doing that type of work. We want that to be in the core, so the patch set covers that type of support. And then any user space interactions that may need to be done. I'm still a little bit on the fence on this one because right now the patch set is targeting accelerator drivers to create regions. I feel like, and of course this is totally up in the air, but I feel like there might be a use case for accelerator drivers to leverage the current region DAX control device support. But I think that's all going to only materialize once we actually have a device and we know what the use cases for those devices are. So that's just a gut feeling on my part at this point. And then of course, as I'll mention in the DCD talk as well, anything that goes upstream, Dan and I have talked about this and Dan is a very big believer in CXL tests for those of you who don't know. But I've kind of converted with my work on DCD, I've really converted over to really liking CXL tests. And we feel that any features that go upstream need to have some sort of CXL test or a good reason that say, QEMU needs to be used to test it instead or in addition. So moving on to QEMU support, I did throw a very quick accelerator device out onto the mailing list a few months back. And it was relatively easy to derive a dummy accelerator device from a . memory device. Those devices are already available, obviously. And the idea there was really just to emulate the type of support in the hardware that the core was going to check, such that the core code could be tested. At this point, we probably could do that with CXL test. So I really don't know how far we should really go with QEMU or not. You know, it's really kind of a what's best. You know, with some work, you know, I implemented testing for event processing in both CXL test and QEMU. And, you know, QEMU offered a lot of interesting test cases. But strictly speaking, it's not it wasn't required. So I'm leaning towards that with QEMU, but, you know, or I'm leaning towards that with type 2 support is that potentially QEMU support may not be needed just to get the testing in the core that we need for the core. Because most of the testing, quote unquote, for accelerators will really be based on the devices that are being developed. So, you know, that's a place where QEMU support would be more advantageous. And I think that's up to the device vendors who are building these devices and what they'll need. So I don't really see QEMU support going too much further than what I've hacked together.
+
+I have a question. So at OCP, I saw Intel type 2 kernel same page merging. Right. Have you seen this? Okay, Dan doesn't know about this. Okay. I forgot the guy's name. I don't know. Ira, have you heard about this?
+
+No, I have not.
+
+Okay, there's someone at Intel working on for the FPGA. Right. And so, yeah, they it's not what is the same same page merging? What is it called? What is the kernel same page merging? Yeah, they offloaded it to the FPGA. Okay. Anyway, heads up. So you might want to find out who that is and what they're working on.
+
+Right.
+
+But yeah, I was gonna say like, yeah, the FPGA people. Yeah, but in terms of like open market upstream drivers, I feel like FPGAs are kind of more prototyping or not even prototyping, but like custom drivers. People kind of build their thing out in the field. Field programmable to get erased.
+
+I talked to this person and he did say that he was leveraging the type 2 support and the kernel now though. So it was like an example of someone actually using it for hardware.
+
+Was he was he leveraging what Dan posted or what's actually because because what's upstream is very minimal, so it might have just been what Dan posted originally.
+
+The summary is for everybody in the room like first mover advantage is open. If you want to come to the community with your accelerator driver, you get to define how this integrates to the CXL core. Until then, we just have like pretend patches that are guessing.
+
+And you know what? That sums up my talk really well. So are there any other comments?
+
+I just have a. I have a question about so figuring out use cases specific to like type one that or, you know, that wouldn't require type three. So one of them I think is probably RAS handling, so we might be talking about that later. But, you know, CXL .cache. Technically you can handle RAS events through the RAS capability structure without requiring all the men. Infrastructure right now talking about through the mailbox. So right now the current infrastructure, I think we rely on all the memory. You know parts of it. So is there any plans or thoughts to at least bring that piece out into the core so that any CXL entity could leverage it?
+
+So this is also kind of aligned with the work that Jonathan started. I think I think Jonathan's patches to refactor the CCI stuff out of the core is going. There's other people that are going. So the word MMPT was mentioned. You talk about RAS. I know OCP has this RAS API thing, so I think it's going to be people that want to all use this core. So it needs to become a library.
+
+To that, you know, looking at the current patch set, I think that more separation might be warranted because I think like this one fix that I'm looking at that's upstream, but only really breaks when you have an accelerator device, which is our test device. I feel like the split needs to be like done now so that we're a little bit cleaner in the core, but it's not strictly necessary because nobody's using that code path. So. Yeah, I see where you're going.
+
+I mean, you brought up, I think you brought up, was it MCTP or?
+
+MMPT.
+
+I see. And is that, that's in band still? And that's covering the CXL RAS capabilities that's built on top of it?
+
+It's more closely related to the mailbox.
+
+Well, so I guess this is what I'm trying to drive at. So we're focusing on the mailbox and what's in the devices or the switches or whatever. But we're still neglecting the CXL RAS capability that's not part of the mailbox. So things that capture the protocol errors. So I think that is still important, probably more so for the hardware vendors and for the host developers. And there's a lot of people that still want to do that stuff in band and OS first. We could say firmware ways to do it, but a lot of folks don't always want to do that.
+
+I'll move on, but take a look at the work that AMD landed recently that was plumbing a lot of the protocol error support with some core support. Right now it is tied to that memory device, but I think it's, that gives a pathway to directly supporting it in other places.
+
+Yeah, I don't, I'm going to actually defer the rest of my time to DCD so we can get started on that. This is basically what we have. And I'd rather spend the time talking about that because it seems like we have a lot more interest in that.
+
+I just had a comment regarding the type two stuff. Would it make sense to try to push more for back invalidation, considering that it's for type two and type three?
+
+Yes, I think so. But again, I think we're going to need some use case for it.
+
+Yeah, what I would love to have is somebody saying that they're going to put back invalidate in a generic type three device, because right now we have this call called CXL CPU cache and validate, which is terrible. And it uses the right back invalidate instruction, but everybody hates. I would love if any kind of type three side operation that invalidates, like I could just, if I change the decoder, I can hit a button on the decoder and it's just back invalidate. So that's my wishlist item. So I hope that would be the path to get HDMDB into the kernel is to piggyback on what type three needs for it.
+That's in the category of watch this space.
+
+Jonathan, we're going to have you kick this off. All right.
+
+Okay.

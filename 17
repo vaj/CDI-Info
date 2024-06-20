@@ -1,1 +1,169 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Okay, thank you very much.My name is Yasunori Goto from Fujitsu.Today, I'd like to talk about the forefront of the development for NVDIMM on Linux.
+
+Here is the agenda.At first, I'd like to talk about summary of current status of development for NVDIMM.First, the basis of NVDIMM on Linux and issues of Filesystem-DAX .DAX means direct access mode.And next, Ruan-San will talk about deep dive to solve the issues of Filesystem-DAX.It supports reflink and dedupe for FSDAX and fixes NVDIMM-based reverse mapping.Then we will make a conclusion.
+
+Let me introduce myself.I have worked for Linux and related OSS since 2002.I developed for memory for future of Linux kernel and worked for technical support for troubles of Linux kernel and etc.And currently, I am a leader of Fujitsu Linux kernel development team.In the last few years, I have mainly worked for NVDIMM.For example, I worked for some enhancement for RAS of NVDIMM, like fault location or fault prediction feature.
+
+Let's start the basis of NVDIMM on Linux.
+
+At first, I'd like to talk about characteristics of Non-Volatile DIMM.It's a persistence memory device which can be inserted to DIMM-slot-like DRAM.So CPU can read and write NVDIMM directly, but it can keep data persistency even if system is powered down or rebooted.So latency, capacity, and cost have characteristics between DRAM and NVMe.So use case is, for example, in-memory database, hierarchical storage, distributed storage, key-value-store, and etc.And the famous product is Intel data center-persistent memory module, as you know.
+
+So the impact of NVDIMM is very huge because traditional I/O layer becomes redundant for NVDIMM.At first, page cache is redundant because it was created for slow I/O storage, but NVDIMM is fast enough without page cache.Next is sync system call or fsync or msync system call.If user process calls CPU flash instruction, then it's enough to make persistency.The third is system call.It means switch to kernel mode.Applications can read or write to NVDIMM directly, as I said.Even system call may be a waste of time due to switching between kernel mode and user mode.So new interface is expected for NVDIMM.
+
+However, NVDIMM is difficult for traditional software.Many software assume that memory is volatile yet.What will be necessary for software to use NVDIMM.At first, it's needed to prepare for sudden power down.Especially in older CPU, its cache is still volatile.If system power down suddenly, then some data may not be stored.Next is it needs data structure compatibility on NVDIMM.It should not change data structure in NVDIMM.If the structures are changed, software update will be a cause of disaster.The third is it needs to detect and correct collasping data.If the data is broken, software needs to detect it and correct it.And finally, software needs data area management.Software needs to assign not only free area, but also user area for reuse its data, even if it's rebooted.In addition, kernel must assigns the area to a suitable process with authority check.
+
+So there is a confliction of requirements.At first, the file system is still useful.File system gives many solutions for the previous consideration, format composability of file system, data correction, journaling or copy and write, region management, authority check, and et cetera.So it's useful for current software.But the file system is too slow, as I said.Traditional I/O stack is too heavy.So CPU cache flush is enough to make persistency.So it needs a new access interface to enable it for next generation software.
+
+Because of previous reasons, Linux provides some interface for applications.First is green lines, storage access.Applications can access and NVDIMM with traditional I/O interface like SSD or HDD on this mode.So applications can use this mode without any modification.Next is filesystem-DAX.Page cache is skipped when you use read or write on filesystem-DAX.And applications can access NVDIMM area directly if it calls mmap for file.But it needs file system support like XFS or EXT4.And this mode is suitable for modifying current application for NVDIMM.
+
+The third mode is device DAX.Application can access NVDIMM area directly if it calls mmap for /dev/dax device.This device allows only open, mmap, and close.In other words, you cannot use read or write nor any other system code.So it's for innovative new applications with NVDIMM.In addition, PMDK is provided.It's a set of convenient libraries and tools for file system DAX and device DAX.Some libraries support transactions for PMEM applications.And some tools provide tools management in the DAX file or device, and et cetera.
+
+So NVDIMM is shown as a device file like storage when you use your created namespace.For storage access, /dev/pmem and number and s is created.For file system DAX, /dev/pmem is created.For device DAX, /dev/dax is created.ndctl can create this device when it's created namespace.Here is an example of file system DAX operating.In addition, you can make file system on /dev/pmem##s or /dev/pmem.Please note one point.Device DAX is a character device.So since you cannot use read or write for device DAX, you cannot use dd command for backup.So you need to daxio command of PMDK instead of it.
+
+Unfortunately, file system DAX is still experimental status.I believe file system DAX is a very expected interface.The management way of NVDIMM is almost the same with traditional file system.So operator can use traditional command to manage NVDIMM area.Not only application can access NVDIMM area directly, but also it can use traditional system code.In contrast, device DAX requires pool management by tools of PMDK.Otherwise, a software needs to posses whole of the namespace.In addition, application cannot use many system call in device DAX.However, file system DAX is still experimental.Its message is shown when the file system is mounted with DAX option.There are difficult issues in kernel layer for some years.So I'll talk what is the reason.
+
+So issues of file system DAX, what is solved and what is current issues.
+
+In summary, there are two big reasons.The first is file system DAX combines storage and memory characteristics.This causes corner case issues of file system DAX.They are often difficult problems.Second is more additional features were required, but they were difficult to make.First feature is configuration DAX on and off for each inode.And next is coexistence with copy and write file system.
+
+First corner case issue is update metadata problem.In file system DAX, we expected that application can make consistency of data with only CPU cache flush as I said.However, this also means there is no chance to update metadata by kernel or file system.So update time of the file may not be correct.In addition, if application use or write some data to file on the file system DAX and a user removes some blocks of the file by truncate system call, the kernel cannot negotiate it.So data of the file may be lost.So if data transferred by DMA or RDMA to the page, which is allocated as a file system DAX, similar problem may occur.
+
+So current status of update metadata problem.For general write access like normal application, it was solved by introducing new MAP_SYNC flag of mmap.When this flag is specified, page fault occurs every write access.Then kernel can update metadata this time.PMDK specifies this flag already.For DMA or RDMA data access occurs in kernel or driver area, It's solved by waiting truncate until finishing RDMA or DMA.But there is some card like InfiniBand or video card.It's DMA or RDMA is occurring in user process layer.In this case, it's not solved.Truncate cannot wait completion of transfer because it's made too long time.
+
+Fortunately, there's a work current.It's on-demand pageing.In ODP, usually a driver or hardware does not map the pages of DMA or RDMA area for application.And it maps the page when application access them.So kernel or driver can coordinate metadata access time.Now Mellanox(NVIDIA) newer card has such feature.
+
+Next is new problem.It's unbind problem.Unbind is a sysfs interface to disconnect or hot remove a device.This device driver provides its handles for it.Though NVDIMM is not hot plug device physically, its interface can be used to disable and switch the mode of NVDIMM namespace.For example, to change namespace mode from file system DAX to Devices DAX.Next is to allow that user can NVDIMM write normal.This is example how to use device DAX namespace like normal RAM.This uses unbind sysfs interface like this.
+
+But unbind is likely "surprising remove" interface.There's no way to fail of unbind even if a user is using it.So it must be disabled forcibly.So a race condition was reported between file system DAX and unbind in February 2021.To solve this problem, file system DAX needed to disable a range of NVDIMM immediately.Currently, this is not solved yet.It will be solved after the end of Ruan's work which will be talked by him today.His new code will help to solve it.
+
+Next issue is DAX on and off for each inode.Its expected use case is the following.The first is need more fine-grained settings.Users may want to change the DAX mode depending on each file.Change DAX attribute by application is the next use case.Confiration is always painful for administrator.So if application can detect and change it, it will be helpful for them.The third use case is performance tuning.Since the write latency of NVDIMM is a bit slower than RAM, user may want to use page cache by DAX offsetting.Finally, final use case is work around when file system DAX has a bug.
+
+What is the problem of this issue?If file system change DAX attribute, file system needs to change method of file system between DAX and normal file.But they may be executed yet.In addition, data of the page cache must be moved silently when the DAX attribute becomes.These problems were very difficult.
+
+Fortunately, this issue was solved.The DAX attribute is changed only when its inode cache is not loaded on memory.File system can load suitable methods for each attribute when it reloads inode to memory.Page caches of the file are also dropped.Users can use this feature with the new mount option, mount -o dax=inode.DAX attribute is changed by command.Here is an XFS example.Please note one point.All of applications which use the target file must close it to change the DAX attribute.File system will postpone changing the DAX attribute until dropping inode cache and page cache of the file.
+
+Next issue is coexisting with copy-on-write file system.Copy-on-write feature of file system is here.If there is the same data block on different files, file system can merge it to the same block.So far, if only file system manages such a block, it was enough.Since page cache is allocated for each file of the block, memory management layer don't need to know it.But in filesystem DAX, it becomes a problem.Merged block equals merged memory itself, so it affects the memory failure case.
+
+There are two problems to solve these issues.The first is it needs actual copy-on-write implementation for file system DAX.Currently, there is no implementation of reflink and dedupe for file system DAX.IOMAP, which is a new I/O block layer instead of a buffer head, has interface for copy-on-write file system already.And XFS file system DAX also use IOMAP.But there is no code to use copy-on-write and DAX at the same time.Next issue is very difficult.It needs to change plural files from a merged page or a merged block.When a memory failure occurs, it needs to kill processes which use the memory.To achieve it, kernel needs to find all processes from the merged page or merged block.But a merged page has only one struct page.There is no space in the struct page for plural files in it.So, Ruan-San will talk how to solve them.
+
+Ruan-San will talk from here.
+
+I'm going to show you how we deep dive to solve the issues of five system DAX.I will do it in two parts.The first one is how to support reflink/dedupe for FSDAX.And the second one is how to improve the NVDIMM-based reverse mapping.
+
+My name is Ruan Shiyang.I'm a software engineer of Fujitsu Nanda.I used to work in the embedded development and the current I'm focusing on the Linux file system persistent memory.
+
+Here is the background.For the issue we need to solve out, fsdax is still in experimental statutes on XFS file system.It is because the reflink and FSDAX cannot work together.We can try to use them together and see what will happen.Firstly, create a new XFS file system with reflink feature enabled and then try to mount it with DAX option.Then we will see the other message.And the more detailed reason is showing the dmesg.DAX and XFS is experimental.They cannot be used together.So what are the FSDAX and the reflink?And why they cannot work together?I will explain them in the next page.
+
+The first one, what is reflink?It is a file system feature that files can share their extents for same data blocks.The figure in the right shows the comparison between normal copy and reflink copy.The above part is normal copy.It costs time and storage space to duplicate data extent.The below part is reflink copy.It won't actually duplicate any data extent.Instead, it just remaps the original data extent to a new file.So without data duplication, reflink has these two advantages.Fast copy and safe storage.Since these two files are sharing data extents to prevent both from being modified, we need a copy-on-write mechanism here.It copies shared extent to new destination before user data is written.So this is reflink.
+
+And then what is FSDAX, also called file system DAX?It is the mode of NVDIMM namespace.In this mode, page cache will be removed from the I/O path.It allows main map to establish direct mappings to persistent memory media.
+
+So why on earth reflink and FSDAX cannot work together?We have investigated this problem in deep and have found two main issues.The first one is we need to support copy-on-write and dedupe mechanism in FSDAX.The mmap interface needs to be extended to support copy-on-write.The implementation of copy-on-write and dedupe should be added in FSDAX.Another one is we need to improve the current NVDIMM based reverse mapping by supporting 1-to-N reverse mapping for NVDIMM.
+
+Let's start from the first issue.Support reflink/dedupe for FSDAX.Firstly, I'd like to compare what's the difference between the normal buffered I/O with FSDAX.
+
+Here is a simplified write process of buffered I/O.The main purpose is to describe what it does in IOMAP framework.Create a write from user space and then come to IOMAP framework.We will get the destination from iomap_begin in XFS.In buffered I/O case, it allocates delay extents.Then in actor, destination data is read from disk to page cache.User data is written from user space to page cache.Then mark the page cache dirty.In the last, there is some cleanup work to do in the iomap_end in case of error.The dirty page cache will be synced to disk later.The sync job contains remapping new allocated extents.As is shown in the figure, the process of using page cache indicates the copy-on-write mechanism.But this is quite different in FSDAX, even though it uses IOMAP framework as well.
+
+In FSDAX case, it allocates immediate extents in iomap_begin.The actor also does quite different things.Get NVDIMM address by calling direct access and write user data directly to NVDIMM without any page cache involved.What's more, there is no extra work in iomap_end.Since there is no longer a need for sync, there is no opportunity to remap new extents.By comparing with the previous buffered I/O, we can see that the copy-on-write mechanism is missing in FSDAX.
+
+To solve this issue, what must be implemented?Look into the IOMAP framework, we need to allocate new extents for copy-on-write use and store source extents info somewhere.We introduce srcmap to store the source extents.We copy the source extents data to new extents and write user data into it.This is copy-on-write operation, which is needed in write and mmap paths.mmap is also necessary after copy-on-write.iomap_end is a good place to do that.In the last, we still have to implement a DAX-specific dedupe method.
+
+The first necessary thing is the source info, source extents info.IOMAP framework only uses a structure named IOMAP to tell actor the destination well and how long the data to be written, but it is not enough for copy-on-write mechanism.To implement it, the source extents info is also needed, including its start block number, which means where to copy from, the length, which means how long to be copied, and the flag if needed.Now kernel developer Goldwyn has introduced another structure named srcmap to remember and pass the source extents info.
+
+The next necessary thing is to fill the members of srcmap.XFS only fills IOMAP as the end of iomap_begin.We need to let srcmap to be filled too.As is shown in the flowchart, when it starts to write, we find the destination extents firstly.If it is a shared extent, which means needs copy-on-write, we allocate new extents.The destination we found should be treated as source extents because all changes will be made in the new allocated extents.So the srcmap is filled by destination extents.The IOMAP is filled by new allocated extents.And then set the IOMAP_F_SHARED flag for actor use.
+
+In the DAX actor, adding copy-on-write mechanism is also necessary.The current actor only writes user data to destination by a DAX-specific interface called direct access.It is used to translate IOMAP to NVDIMM address.So before user data is written, we need a pre-copy.See the flowchart.We see the flowchart.We add a copy-on-write branch to get source address from srcmap and copy source data to destination address we get at the beginning.After that, we write user data to destination address.In this way, copy-on-write is able to be executed in write path.
+
+In mmap path, adding copy-on-write is also necessary.Different from normal page cache fault, FSDAX has its own specific fault handler, page fault handler, which uses IOMAP framework too.But for now, it only finds the destination page and associated VMA.To support copy-on-write, we need a pre-copy before associating.We use direct access to get destination address and in addition, the PFN, which is for associating usage.Then, similar with the previous, we get source address from srcmap and copy source data to destination address.After that, associate VMA with PFN we got at the beginning.So at this point, copy-on-write mechanism has been added in FSDAX.
+
+Since FSDAX is synchronization, we need to remap extent we changed before right now.Otherwise, because the new allocated extent is not mapped, the made data will not be updated.As a result, the file will not contain the copy-on-write extent.iomap_end is a perfect place to do this job.In addition, if something wrong happened in actor, it is also a perfect place to clean up those extents.
+
+Besides copy-on-write mechanism, the duplication is also necessary to be adapted to FSDAX.It is used to reduce redundant data on storage costs.The core function is to compare a range of data byte-to-byte from two files to check if they are same.There is a generic compare function for normal files by comparing data read in page cache.However, FSDAX has no page cache.So we need a DAX-specific compare function to compare data by accessing data directly from NVDIMM.As is shown in flowchart, direct access to these two files to get their NVDIMM address.Compare data on it by calling memory compare to get the result, same or not.If same, it means the range of two files can be deduped to share same extents.Till now, we are able to make reflink and FSDAX work together in write and mmap paths.However, it just looks functional on the surface.In depth, there is another issue to be fixed.
+
+With a block device, NVDIMM permits files on it to share same data extents thanks to reflink.Since it is a NVDIMM, we have to think it as a memory device.In other words, files are sharing the same memory pages.So the memory management layer needs to understand the shared block.In the next pages, I will show you how we solve it.
+
+As a memory device, memory pages may fail in hardware level.That means the page could not be accessed anymore.The kernel triggers memory failure to handle this failure.When memory failure occurs, the system will track all processes associated with the broken page and then send signal to kill those processes.The track from memory pages to a file is usually called reverse mapping.In this case, we call it NVDIMM-based reverse mapping.
+
+The current NVDIMM-based reverse mapping can only support one page to one file mapping.However, for reflink, because files are sharing same pages, we need to improve it to support one page to multiple files mapping.
+
+To achieve it, I have thought of many ways.The first idea is described in the right figure.It was simple to be implemented and worked, but it is not a good idea because of the huge overhead.After that, I have tried solving it in many ways, but any of them was not perfect.The current strategy is to trace file system internally to find the one-to-n relationship, but there are still some difficulties that need to be solved.Let's see how memory failure signal works through the associated layers in kernel first.
+
+In the middle of the figure, we can see two processes are sharing one DAX file.Then MCE triggered because the shared page inside the file was broken.Memory failure takes over this exception and initiates a reverse mapping from the top to the bottom.From mm layer, device driver, block device, file system, files, and finally to all processes using the broken page.Finally, send signals to process to kill them by signal bus.
+
+So an enhanced reverse mapping is the key to solve the problem.Since it spans many layers, we need to implement the reverse mapping on each layer.The first one is from NVDIMM driver to DAX device.The second one is from DAX device to file system.This is the most complicated one.We need to introduce DAX holder registration mechanism to deal with different ways of using a storage device.The third one is from file system to files, which requires rmap btree feature.The last but not least thing is the compatibility for no reflink and no rmapbt file system.For example, EXT4 file system.
+
+So we will start from the first issue.The memory failure now accepts the pfn as its argument.It is the page frame number of the system memory.We need to translate it into the offset in NVDIMM firstly.And then, according to the mode in use, the offset needs a further translation by each driver.For FSDAX mode, pmem driver translates the offset linearly.For device DAX mode, the DAX driver needs to calculate offset according to the DAX range property inside.In this session, we only take FSDAX mode into consideration.
+
+So for now, we have got the offset inside the pmem.pmem is also a block device, so it can be used in many ways as other block devices, such as making file system directly, putting in many partitions, creating lbm to combine many pmem devices, or even creating listed partition and mapped devices.To make it suitable for each kind of usage, we introduce a DAX holder registration mechanism to abstract them into one behavior.So the holder represents the inner layer of a pmem.It is registered when the holder is mounted or initialized.The one behavior for each kind of usage is notifying failure into inner layers.They need to implement a notify failure interface.
+
+Let's start from the easiest one.The inner layer is file system.This case is created by mkfs directly on a pmem.There is no partition inside the pmem.The reversed mapping translation only needs to remove the fixed block device header length.The second case is that the inner layer is partition.This is created by partition tools.It could be one or more partitions inside the pmem.We need to find which partition the broken page locates in, so that we can get the offset in inner layer.The translation is to remove the start offset of the partition we have located.
+
+The mapped device case is a bit complex.It is created by LVM toolset or other tools.It creates many dm targets.The dm targets can be used in many ways as well, such as linear target, raid, crypt, and so on.So, before introducing translation method, we need to introduce reverse mapping for each kind of dm target first.This reverse mapping is the reverse process of the exist map interface of dm target.With its help, the reverse mapping for mapped device is able to achieve.We iterate all dm targets in the mapped device to find out which targets contain the broken page and then remove its start offset.After the translation, we need to handle layers inside the mapped device.This is the interesting thing.The inner layer could also be file system or even partition.So thanks to the holder registration mechanism, the inner layer could also be treated as holder, so that the reverse mapping for mapped device is able to go on.
+
+Finally, it comes to file system.Reverse mapping from file system to files requires rmapbt feature, which is by giving an offset and a length, we are able to search for extents containing it.Fortunately, XFS provides the query API.Such results could be file content or file system metadata.For the former case, we need to send signal to kill processes using this file and trying to recover file data.For the later case, it is hard to recover file system online.Just shut down file system and report error.Now that it is possible to find all files by the 1-to-n reverse mapping, and the original page-based process collection and kill function should be modified to file-based.
+
+As we know, EXT4 doesn't support either RefLink or rmapbt feature.So we need to keep the compatibility for file systems like this.Firstly, keep the original 1-page-to-1-file reverse mapping.This relationship is created by associating page's mapping and offset to a file's mapping and offset.It should be only associated once, otherwise error is reported.But to make it compatible with 1-to-n reverse mapping, we make some restrictions to avoid the error.Just make it associate only once and only for the first time.Secondly, keep the original reverse mapping routine.With the support of first compatibility, the original page-based reverse mapping still works.So keep it and fall back to it when we get operational support error in the 1-to-n routine.
+
+So the 1-to-n reverse mapping has been implemented so far.It can be compatible for all NVDIMM modes, compatible for all usage of PMEM, compatible for all file systems with more driver or file system support in the future.Now, we have some future work to do, such as fixing the race condition against unbind.With the help of the 1-to-n reverse mapping, I think this can be fixed.We hope my code can help this case.
+
+Let me make a simple conclusion of today's session.
+
+We have talked about the basics of NVDIMM for Linux and the issues of file system DAX and how we deep dive to solve the issues of file system DAX.Thank you for listening.Thank you very much.
+
+Hi, Derek.
+So I have -- well, since we haven't actually had any other DAX sessions at LSF this year, I was kind of wondering -- all right.
+I was particularly curious about -- to hear from you and Dan.
+Oh, look, there's Dan.
+What's going on about let's completely divorce PMEM from the block layer and rip out all that stuff and then apparently reimplement LVM type things on top of PMEM?
+If anyone else would like to ask a shorter and less loaded question, they're perfectly welcome to go ahead of me.
+But I was kind of wondering, like, does everybody -- is that the plan of record for PMEM going ahead, like, completely disassociate it from the block layer and all of it's gone and, like, I guess we'll just have to rewrite all of XFS2 or what?
+Do you want me to jump in here, Shiang?
+I can try to take that one.
+Like if you look at some of the problems that device mapper cause, like, every time we do anything interesting in DAX, we have to go plum, like, every single device mapper target with new functionality.
+The other thing that, like, this stuff is just memory.
+So remapping it and concatenating it and doing that is pretty trivial.
+So a lot of the complexity of device mapper has for block devices and splicing bios and all that stuff is just not important for this stuff.
+We also have the case that, like, people are wanting to chop these things up and make them discontinuous and discontinuity is not something that block devices have ever done.
+They have had partitions that are contiguous.
+But DAX devices don't really need that.
+It's actually been pretty flexible to do that.
+And then lastly, like, the new CXL stuff is going to allow you to combine devices and interleave devices and basically do a lot of RAID kind of type things at the hardware level.
+So at that point, like, the hardware is replacing device mapper.
+There's cleaner ways to do it.
+And we don't have to keep plumbing.
+Every time we want to do anything interesting in DAX, we don't have to keep plumbing everything all the way through five or six block drivers.
+So I'm worried about all the things that are going to break when we lose block devices.
+But at the same time, like, it's cleaner going forward that we don't have this kind of legacy.
+All right.
+Yeah, because some of the things that have gone on on the list this week have set off a tidal wave of, wait, you guys are going to completely mess the whole thing up again?
+We just barely got it working with, you know, large software, large well-known software project.
+I just got this bucket of bolts back together and I'm going to have to tear it apart again.
+So I think Christoph's plan was like, hey, we'll deprecate it and then we'll delete it in a couple of years.
+I don't think it's going to be deleted.
+I mean, I think we'll add support for DAX mounting and block compatibility will still be there and that will never go away.
+So I think we'll have a legacy block path that will be there forever.
+But it just won't get new features like this shiny reflink stuff, which would only be for the new way.
+At least that's what I'm thinking.
+There's too many people that are mounting on dead PMEM0.
+We're not going to change.
+They've been doing that for five years.
+We can't get rid of that.
+Okay.
+And the other giant question I have was about the other thing that Christoph was complaining about how the memory manager still kind of doesn't know how to deal with this page thinks it's owned by multiple owners.
+And I mean, I am super afraid to wait into that discussion because look how badly Folios has gone.
+But I don't know.
+I mean, I kind of thought that the memory failure patch set was basically an end run around it.
+If you have these magic hooks to do it yourself, then we'll forget about the memory manager because the FS knows better and or something like that.
+And if you don't have it because the EXT4 or whatever, then we just assume you don't get sharing or fancy reflink features, which is fine because the EXT4 doesn't.
+And we'll just use the old MMR map path and be done with it.
+Or I guess given the other session earlier in the week about better error handling, we could also just tear the shut down the entire file system and reboot the note immediately.
+I mean, yeah, but I think that's what I like about Shi Yang's patches is for the first time giving the file system a chance to participate in memory failure versus like if you read the memory failure code, it's trying to guess the state of pages and it kind of gets it right most of the time.
+I think asking the agent that knows about it is I think is a good change in direction.
+Yep.
+All right.
+Well, I guess I'll get well next week, I guess I'll get back to poking around at those patches because I seen that there's been like 100 odd emails that have flown by on the list and the only one I've had time to pay attention to is the RWF clear poison or whatever that is morphed into now.
+So thanks for the discussion.
+I wanted to point out if you want to keep continuing the discussion, you can either move it into a hallway track chat channel, which is not ideal, but it's at least an option.
+The other option is all of the hack rooms are currently empty as well.
+So you can also just join the hack and continue the discussion right there.

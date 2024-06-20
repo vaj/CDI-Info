@@ -1,1 +1,158 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+So my role in this talk, incidentally, is actually really just to give a very brief introduction and introduce the two people who've been really working on the topic from a kernel point of view, who are Ira and Navneet, who hopefully we've got them both online.
+
+Hey, Jonathan.
+
+Hey, Ira has just been speaking. We're good to go.
+
+Okay, so the agenda for this particular talk is pretty straightforward. We're going to have an introduction, which I'll get through nice and quickly. Then we're going to move on to some questions around asynchronous add and release of memory. Partially extents have raised some corner cases. Interleaving, always a challenge. Forced release was asked earlier about the QEMU side of things. This is obviously, what do we do about it from a kernel side of things? Yeah, some stuff on interactions as well. Yeah, apparently we're not going to crash. That's what they're saying in the room. Option one, crash. 
+
+So what are we actually after in this talk? We first of all want to highlight some of the challenges that have been brought by the dynamic capacity feature. We want to identify some use cases because some of these questions are driven by what people actually want to do with it. And while those of us involved can conjecture wildly, we obviously represent only a small corner of the industry and people may have other use cases. Yep, and then the aim really is to get lots and lots of discussion going.
+
+So this slide can be covered really, really quickly because frankly we already had an introduction to what DCD was. But just to recap for anyone who's joined since the first session. It's a CXL3 feature allowing memory to be changed dynamically without any need to do substantial host system changes. Personally, I don't think you need to restart to run without DCD, but it depends on exactly what you implemented to what you do or not. The device can have up to eight regions. They can have different parameters and different settings. It's all about adding and releasing of extents. An extent is a complex word for a base address and a length. That's all it is. Easy way of representing a chunk of memory. The device has to maintain lists per host. As it says here, the Fabric Manager triggers the add and release operations. And hopefully I've got a bar over the bottom one. Oh, yes. And we will come on later to the fact that from a host side of things, it's presented as DAX.
+
+And without further ado, I'm going to hand over to my co-speakers.
+
+Hi. Hello, everyone. This is Navneet. I'm working with Intel. I'm going to cover some of the challenges with what we are facing in implementing the advanced DCD features. So one of them is asynchronous DCD memory release. So if there's a DCD memory release request initiated by the Fabric Manager, which will go to the CXL device. And if that memory is pinned in the host, whether it's a user pin memory or the kernel pin memory. Right. So that memory can't be released immediately. But CXL 3.0 specification allows to asynchronously release the memory. Right. So what is user pin memory? If some if the complete extent or some part of the extent, if host is not able to release the memory, then it is in use. And once memory is free, then it should be written back to the device asynchronously. And whether a device is whether the host is using this memory or not, that is that is based on the use of the device text mapping. Right. On the kernel pin memory side, if some of the kernel components or the device driver has mapped this memory, then this memory can't be released back to the device. Right. And this map, once this mapping is done, is released, then this memory should be released back to the CXL device, which is very unlikely to happen. Can you have to go to the next slide, please?
+
+Questions. Yeah. Previous slide. Previous slide. Yeah. So about this asynchronous release. So if the release is triggered by an event, so this means we will not send a response to the device until the extent it's really released. Right. Will this block all the event in a process in the event log on the device?
+
+So CXL 3.0 allows, there's an option whether to give the response back to the device with zero extent, or a host can avoid sending the response back to the device.
+
+So in short, you've got to respond reasonably quickly, but you don't necessarily have to release the memory, but you can release it later anyway. So you can take the thing off the event log.
+
+So basically we can respond with zero extent, and then later we just release it when we don't need it.
+
+Yeah. We will have lost the information to know that the device asked for it back should the host crash. But that's not critical anyway. You can always ask again.
+
+All right. Ari, you were saying? 
+
+I was just going to say that the event is processed, and then if the memory is in use, the actual release response is sent once the memory is not used anymore.
+
+So. OK.
+
+The one thing I was going to say about that is though, something was already in the contract to get the memory assigned to the host in the first place. That whatever that communication path is, can also make sure that the memory is offline before the before the FM sends the event. Like I feel like I feel like by the time the event comes in, that's too late. Like some in order to keep the kernel, the simplest is the kernel just says no. If you haven't offlined it and it comes in to say no, we're not going to play these games of partially releasing things and walking pages like tables. And so just trying to put that out there like, hey, please don't build your FM with this idea that you can just ask the kernel to give things back because the kernel might say no to everything.
+
+I'll add that was one of the things we wanted industry feedback on. If there are reasons for this, and I agree with Dan, we couldn't think of any. But if there are, it is something that can be supported and patches are always welcome.
+
+Well, but Dan, you also mentioned partial extents, which were on that slide now, which is a little bit different than asking for the whole. Jonathan, you said it very well, that extent is a very overloaded term because there's there's the memory range that was originally given to the host. And then there's the potential of a sub extent or a sub range of that being asked back. And there's going to be, you know, based on our discussion on Discord and Fan agreed that we're going to simplify this and none of this none of this sub extent. Game is going to get played right away. And if that needs to be played, then it's going to make things much more complicated and we need a strong use case for it. So. Anyway, go ahead, Navneet, I didn't mean to steal this, but this is this slide is timely.
+
+OK, so also say it's a 3.0 spec allows to, you know, use the partial extents. It means that extent can be divided into sub extent and it can be partial extent can be released back to the device or, you know, device can accept some part of extent. Right. So let's say if somebody has asked for X amount of memory, but a host can select or accept some part of that memory, then it's allowed to do that. But as of now, we are looking for any strong use case in Linux. And if there's one, then that will help us to support this implementation.
+
+Next slide, please. Next comes the DCD interleaving challenges.
+
+Hang on a second, Navneet, good question. 
+
+Just more. Yeah, just trying to understand the problem there. So with I don't know if this is a real use case yet, but let's say a device recognizes some issue within a sub region of an extent. And it wants to do some sort of maintenance on it. Would that be a good use case for it to request back just that piece from the host to some sort of repair and allow it back? It may not be an urgent thing because that probably be covered with more urgent events. But. Does that make sense? Maybe it's something that might come.
+
+But would it be better for somebody to flag that and have the, you know, the the host software that's that's using the memory also flag that through the FM and tear down the usage of that memory? Yeah. Right. Because right now, I think the idea is that any extent that's handed to the host that you're going to have a user space app mapping that entire extent that we're not going to map huge extents that aren't going to be used just in case we want to take some back. And so if there's any anybody on the host has that map, then the kernel has to assume it's being used, whether it's actually being used or not.
+
+I flex that a little bit. We haven't got far yet into the virtualization use cases, but just because it's a nice big memory map file in the host doesn't mean that we don't have visibility of how it's mapped up into a VM. Well, we may have the visibility, but well, okay, sure. I mean, in that case, the kernels cannot be right. The kernel can react without any assumptions, but still, it's anticipated that that's going to be used or is or whoever asked for it probably wants to use it.
+
+We kind of crossed this bridge a little bit with with PMEM where with the DAX device, you can map it in gigabyte mappings and it will never be broken up. And so if you get one cache line within your one gig is gone, the entire one gig is gone. And that's easiest because we keep everything together. But if we need to talk about splitting, we can. Like a lot of the things are on the table. It's just kind of waiting for that one. And he was like, I really need that. I'm like, OK, but until then, we're like, no, let's just keep it simple.
+
+I want to something simple. Next one.
+
+Shall I move on to the next slide? On the DCD interleaving challenges?
+
+Yep.
+
+OK, so the major challenge here is with the CXL memory device driver that, you know, extents are coming from multiple CXL devices which are participating in the interleaving. Right. And the CXL memory device driver has to keep track of all the extents. And when all the extents are received in that case, it has to compose, it has to transfer all the DPs to the HPA and compose a HPA range and then pass on that extent to the user space. Right. So in case of the extent add, once the interleaving set is complete after receiving the last extent from the interleaving memory device, then its device driver will construct the HPA range and it will surface the extent to the user space. And in case of the extent removed, the very first release extent, which we receive one of the CXL device, which is part of that interleaving set that will lead to removal of the interleaving memory, that complete memory range will be removed from the host.
+
+CXL 3.0 also allows to forcefully remove the dynamic capacity memory. In this case, if memory is pinned for a very long time, then a device can raise a force dynamic capacity release request and it will not wait for the host to respond back, but it will simply remove that memory from the host. And in that case, if any access happens from the host side, then the kernel will lead to the poison or it may crash. So there's a force ignored by the Linux software like dev error rate limit. We can limit the error logs. That extent is leaked and probably we will require the host to reboot to come out of this situation.
+
+Questions coming in?
+
+This sounds like a very similar use case to like the error isolation. So I mean, as these kind of problems are solved and they're overlapping with some other things, I mean, are they being taken into account or are they being treated like very independent features?
+
+Yeah, I have -- you raised memory error isolation. That's in 3.0. My concern with that is that you really need to have a kind of contrived setup where memory cannot be online for memory isolation because you need to be able to reliably and safely take the memory offline, all of it. DAX can do that because it's file backed so you can shoot down everybody that has an inode map. There's no good way to shoot down everybody that has online memory map. I don't see how error isolation can work if the memory is online. And if it's offline, yeah, we can force remove all day. But online memory, you can't -- once you online it, you're basically opting into not ever being able to get it back for any reason.
+
+Well, yeah, so one subtlety here, which is what I implemented the first go around, is that force actually would allow the extent to be removed if it wasn't in use. Are we saying that that is a potential use case? If it's not actually mapped anywhere? I agree with Dan. If it's mapped somewhere, that's a different -- that's more like the memory error isolation. But if the memory is not actually in use, should we go ahead and allow the -- should we recover the extent and not leak it?
+
+My understanding is the hardware is not waiting for us. The kernel ever receiving a removal event in a state where it can process it, I think, is zero or low.
+
+Anything we do here is going to be best effort, maybe, if someone has a use case.
+
+Yeah, it's like -- what color do you want the battleship to be as it's sinking kind of thing?
+
+Okay.
+
+Okay. And force dynamic capacity -- 
+
+One comment regarding the force. I don't think that that would be the case for, like, a CXL reset, where you do have to, like, wait -- 
+
+If you're issuing that to a type 3 device, something's gone horribly wrong.
+
+Yeah, if you're issuing CXL reset, I would have hoped you'd already offline the memory before you tried to do that.
+
+Well, yeah, it has to be offline.
+
+Yeah, so if you're alive enough to offline the memory, then you won't get the force anyway, because you'll be responding to whatever -- like, you can walk in the front door. You don't need to kick down the back door.
+
+I think we're good to carry on.
+
+Okay.
+
+Okay, over to Ina for the sparse DAX region.
+
+Yeah, so this slide, I'm really just trying to go over where traditional DAX regions are without DCD. And DAX regions are created -- they're created on existing memory. These DAX devices are created linearly. They can map different ranges within that, but there's very limited control over where those DAX ranges are. And I wanted to kind of throw this slide up with a little picture to kind of say where we're at, such that my next slide, where I'm talking about DCD, we can start to talk a little bit more -- yeah, you going to the next slide?
+
+There we go. So with this, the current idea is that the DAX region becomes a container. So we're introducing this new concept within the kernel, and this kind of feeds into how user space may use the DCD memory ranges, and we're introducing a Sparks DAX region, where the DAX region is created, but there's no actual memory available inside of it. And then the DAX devices, right now, as a first cut, I'm still using a linear creation of them. So as you create DAX devices, they can use parts of each extent, and they can be packed into extents, and they'll jump over any gaps in the region and to fill into the extents. So the picture here is showing an initial DAX dev on the left that's creating a DAX range that maps part of a region extent, and then supposedly something's come along, created a DAX device that created another DAX range that filled up that first DAX region extent, and then the second DAX device that's actually existing right now -- and I apologize for the photo because this first DAX device should have been a little smaller to the left, but now the second DAX device comes along, and it actually fills up the second extent, and it extends into a third extent, and then that other device goes away, and this third DAX device comes online, and it fills into the third region extent. So you can see that we have three DAX devices here, but they're mapped differently into the various extents, even with a gap in the region itself between extents where they showed up, as well as a gap in the first region extent that's being unused and would potentially be filled in by a subsequent DAX device being created. And the reason that I wanted to go through this is that one of the ideas that we were floating around and was actually in the last patch set that I submitted as an RFC was the idea that tags could be used for DAX devices to be created on specific regions that had specific tags. And so, you know, one of the things I wanted to bring up with this slide is, is that a decent use case? I know tags were specifically created for shared memory, but those tags could be, you know, because the tags are not specified directly for shared memory only, they could be used for various things. So if an FM wanted to create specific extents with specific tags, you know, maybe that's where we want to go. I don't think that the next patch set is going to try to attempt to do anything. In fact, I'm going to remove all labels or tags from the patch set because, but I think that going forward over the next year, I wanted to bring this up as a use case. Where do we want to go as far as how does the user get access into the extents that are surfaced to the region?
+
+I have a comment about that. So tags are going to be essential for sharing. And if the memory was to try to change behind a tag, that breaks sharing. So surfacing shareable memory under tags is essential.
+
+I'll add one other thing, because Dan was shaking his head and he's right on this one, which is that tags actually weren't introduced for sharing. They were introduced for labeling for the purposes of applications. And sharing was a convenient reuse of some infrastructure.
+
+Fair enough.
+
+Oh, okay. I did not know that. Okay. Well, but then the use case that we're discussing here is appropriate. So should I have labels at least shown in SysFS for now? Because it's not too far to go to be able to create a DAX device on a particular region with a particular label. It's not very difficult to extend the patch set to that. But I was going to try to avoid that in the next release to try to get something landed upstream before we go that far.
+
+Yeah, I mean, just as you're talking about it, it feels like something we want to enumerate. I don't think we need to have a dynamic allocation policy around it. Just be like, hey, here's the capacity with this tag available, and you can do with it as you wish. But otherwise, you don't need to relabel it or retag it. We might add some sanity checking because there are some rules about tags turning up later, although they only really apply to shared. So for normal capacity, you can add more capacity with the same tag at any time. Whether we need to enable that doesn't matter.
+
+And also for shared, I don't think shared could touch any of this. I feel like shared needs its own ABI. It's a whole different security model and uses model.
+
+So, OK, but if we export the tags for the extents, but we don't add any support, the DAX device, how will the DAX devices be created onto the particular extents?
+
+Would you at least be able to see the address ranges? Yeah, we can talk about it. I think people are going to want to be able to have a use case where they can at least make sure that one device is bound by one tag domain and be able to have a contract that says, oh, I want to add and release or I want this container or whatever to use memory from this device by tag.
+
+So having again extend the DAX interface to be able to assign a tag to it such that it would take memory from particular extents that are tagged that way.
+
+But I feel like I mean, like already today, like there's already user space code that looks at the address space and knows how to do a complicated allocation policy to get the DAX device on the specific ranges they want. So they could start with that. Like we don't need to solve that problem for them. If that becomes too kludgy, then we can talk about how to do this dynamically. But I think as long as you can see, I need this HPA range for this tag, then you can approximate the rest of the user space.
+
+So how about synchronizing it with the usage and let's say some of the workload which is running on the host can say that give me the memory associated with this tag. And once that memory is surfaced on the host and it can see that that tag is associated with this. So workload can start using that memory, especially specifically for the elasticity case. Right. So that it can use that memory. And once it is done, it can release it back.
+
+Yeah, I mean, but this is where we kind of need like the orchestrator people and the device people to kind of show up and say like, yeah, this is what we want to build together. Because right now I feel like we're in this talking about what we could possibly do without really knowing what people actually want to do in practice.
+
+I mean, as I understand it, can we push the whole thing to be a user space problem from the point of view of doing the matching of the address ranges? Yeah, like right now, like Oracle way back in the day, a couple of years ago added this ability to look at the memory map and do the custom allocation. And people have done things like, oh, let's solve the noisy neighbor problem in user space. And they just it's an ugly bash script to toggle the DAX APIs, but you can get there.
+
+OK, so someone else's problem. We can say someone else's problem until somebody screams, I think.
+
+OK, but we at least need the tags for the extent surface so that people know which tags are-- 
+
+Yeah, the bare minimum. Yeah, we need to be able to enumerate that.
+
+And we probably need to have more information. We need to have the extent starting DPA as well, the offset, so that they can figure that out because that's not surfaced yet. It is indirectly, but it needs to be explicit, I think. OK. All right. Moving on.
+
+Yeah, so just in review, we've got the kernel, the RFC v3 is coming soon. Based on the recent discussions on Discord, I'm going to have to redo the patch set a little bit. Not that anything is particularly hard with creating regions before accepting extents, but the patch set itself was built up in a different order. So in order to get the patch set clean, it's going to have to be reworked. So look for that coming soon. Fan, I believe you've got-- actually, I think this is your latest posting. I'm not sure.
+
+Does somebody have a question?
+
+The get tree is a bit dated. Yeah, the top one's the latest. The get tree needs an update.
+
+OK. Your tree?
+
+Yeah, it's a couple of weeks behind.
+
+OK.
+
+I'll do that after the conference.
+
+So pay attention to the mailing list and Discord.
+
+Discord has been mentioned a few times in this session. This Discord is by word of mouth. But if anybody is currently a member of it, feel free to share an invite link to it. Or if you're not on it and you want to get this, contact me or anybody else on it. Feel free to share the link. I just feel like by word of mouth keeps some of the-- keeps it sane. But it's not a secret club, anybody. But it is.
+
+And it's not sane.
+
+But if you're a plumber, then you're part of the cool kids.
+
+Cool. So we've got maybe three minutes, two minutes left. Any more questions on this topic? We can go to coffee early. OK. Thanks all. All right. Thank you. Thank you.
