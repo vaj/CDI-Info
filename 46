@@ -1,1 +1,110 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+And I'd like to discuss with all of you live migration of virtual machine over CXL memory.
+
+And the BoF preamble is along the lines of, I want to give sort of a high level overview through the slides and then, you know, at the end or whenever I'm interested in brainstorming ideas or discussing. And also, I'd like to point out that I'm just starting to tackle this problem. So I do not have all the answers yet. And another note is the project assumes CXL 3.0 spec devices with shared memory features. And I'm using VM as an example, but this concept could be applied to like containers or processes.
+
+And so here's sort of the optimistic theoretical goal of the project. Comparing it to traditional live migration, it's basically done through four different steps. We have a pre-copy section where we copy the memory over from the source to the target hypervisor. And then we request the VM and we do a secondary copy of, you know, pages that have been hit while the migration is happening. And then we unquiesce on the target hypervisor. The goal is to actually use migrate pages between CXL nodes and then pass the VM by reference through a handoff. So we'd remove like the need to freeze memory, you know, the quiesece and second copy, because we're redirecting where we're taking page faults. And also aim to make VM live migration as instantaneous as multitasking, where VM migration could occur in between allocated process or slices. So for example, the VCPU is done with a slice on the source hypervisor. The next slice would be on the target hypervisor. So those are all like, you know, theoretical goals of the project.
+
+And I just want to sort of introduce the basic topology that I'm referring to throughout this. We have a traditional CPU plus memory NUMA node. And then we have a CXL device, which is seen as a separate compute less NUMA node. And those two are connected over a CXL switch.
+
+So first step of the migration is to decouple the VM memory from the compute. So we migrate the VM memory onto the compute less node through migrate_pages. And then at this point, VM is live and executing and loads and stores from the VCPU could be happening on your CXL device or your traditional NUMA node memory while this is going on.
+
+And then when decoupling is complete, the VM CPU is executed on the traditional NUMA node CPU, but VM memory footprint is on the CPU less NUMA node. And so all the CPU, VCPU loads and stores are redirected to the CXL.mem device. So at this point, the memory is physically stored on a CXL.mem device through a switch. And we use like set_mempolicy or similar to prevent pages from migrating back out of the CXL.mem device. And also at this point in time, the VM is live and executing.
+
+And then this is the second part of the topology. So we throw an additional hypervisor accessing the same CXL.mem device where our VM is stored. So we'll call this new hypervisor, the target and the original one, the source hypervisor.
+
+And so then the next step is the handoff. And this is probably the hairiest of them all and where are the most dragons. No pun intended or intended. And so the steppest is to sort of recreate the compute portion of the VM on the target hypervisor and destroy it on the source. So in a perfect world, that would be as simple as a process context switch. When your processor time slice on the target for the VCPU is done, you're stored in memory and then the context is simply restored on the target hypervisor. This would require the hypervisors to have a way to cooperate on this shared memory. And there would be a need for some kind of in-memory handoff ABI between the hypervisors to hand this VM off.
+
+And then the final step would be to recouple the VM compute and VM memory. So at this point, the VM compute and the memory are still split. The execution is on a traditional NUMA node of memory and CPU, but the load and stores are going to the CXL.mem device. So we want to merge those back and we start migrating pages from the device into on to the traditional CPU plus MEM. And at this point, VM is live migrating. I mean, live and executing.
+
+And then, you know, recouple is complete. So it's fully on the local traditional NUMA nodes. So all of your loads and stores are local to close memory and VM is executing.
+
+And that's sort of the gist of it. I've added some information to the slides for people that are interested in following or contributing or helping or have questions.
+
+And it's open for discussion. And we can go back and forward through the slides. If there's a particular thing that people want to discuss, I'm sure there will be, you know, many flies in the ointment.
+
+I'm going to go back to the slides for my comment. So in CXL 3.0 and forward, available allocations have a tag and by default they will surface as DAX devices that are findable by the tag. And I think the details of that aren't established yet. But so there's a really elegant way to migrate a VM if you have homed that VM on the tagged capacity, which is the same thing as homing, you know, putting a VM backed by a DAX device. Because that DAX device can be surfaced at another node. So the VM, you can actually pause it. You have to make sure the cache gets flushed. And then you can just restart the VM against the memory image on another node. So VMs work this way. Processes in containers much harder because you can't, that I know of, back a process or a container by like a DAX instance.
+
+Yeah, perfect. That's good information. I'll actually read up a little bit on this. I wasn't aware of this. So awesome suggestion.
+
+Cool. I mean, so yeah, you don't, there's this opportunity to not even move the memory on the, if it's, if you can back something like a VM by effectively DAX memory. But the, you know, processes and containers are still much harder.
+
+There's probably some performance implications involved with that. I would agree that's probably a pretty clean mechanism to start with.
+
+I mean, you'd be motivated, you'd be, I'm sorry, one more thought. You'd be motivated not to have hardware cache coherency enabled in this case because that's expensive and you're not really doing something that you need hardware cache coherency for except at the handoff. So you would have to, you might have to do something that makes everybody really smile, lots of right back invalidates in order to get it, to be guaranteed that everything from host one is flushed before host two starts.
+
+Yeah. And so this, yeah, this would be kind of the mechanism of sort of like, for lack of a better word, canning the VM and then dehydrating on the secondary host, right? That's why you'd have, you wouldn't work for like processes or containers.
+
+So yeah, this is David. I was just wondering like what do you think about like pass through devices that would be using VFIO whatsoever and pinning the pages such that you cannot migrate them and how would that work with like in your setup or don't you just not care about like pass through devices?
+
+Yeah, yeah. That's the case. We serve about 200,000 customers but we don't do forms of pass through. So definitely it's not something that you would be able to use if you're using pass through.
+
+Thanks.
+
+The piece of this that we can't do today though, I thought it was interesting, was this idea of starting off in Nil-based normal typical DDR and then migrating to CXL and then migrating back out. Do you see that as a primary use case or do you think these can just live in CXL all the time?
+
+Of course, this is kind of everybody uses their own tools differently but the sort of use case that I'm thinking of, these CXL devices are used primarily for migration in between hosts. There's a, you know, in my slides, I have extra slides at the bottom. There's a, let me just switch to that.
+
+So I have, you know, a clustering and this sort of load balancing and, you know, that, I guess that's what relates to your point. So if, for these slides, anybody that wants them, you can just go to nil-migration.org and scroll all the way to the bottom and you can download the slides. I'm sorry, did that answer your question?
+
+I guess the question more along the lines of do you think that's a primary use case or you're just designing this based on, like, is CXL only a transport for migration and not a place to pull your memory and have consistent, persistent access to it?
+
+Yeah, so, like, first use case is primary migration, yes. And that's the case that I'm focusing on. The case where you persistently have VMs there, you know, which was I was saying in the clustering or the load balancing, I feel that is a little bit of a more difficult and advanced problem than the live migration. So if you have the live migration work seamlessly, then that secondary use case scenario where these sit in CXL memory only or exclusively becomes much easier.
+
+Just a suggestion, probably instead of doing pre-copy cycle, essentially you demote every VM pages to CXL and then promote them back. So probably it would be more efficient to do a cycle of post-copy and then only the cold pages that remain is still not copied using the post-copy migration. Demote only them to CXL and then start moving the CPUs from one host to another. And then you can promote, like, a small piece of data from CXL back to DRAM on the new node.
+
+So you mean to basically do the migration over network and then just synchronize that small piece over CXL?
+
+Yes.
+
+Okay. Yeah, I mean, that's definitely an option. What I'm trying to -- what I'm -- sort of the goal is to have the VM running constantly and decrease the amount of steel that the customer experiences by doing live migration. So I think if we're going through CXL, you know, the VM can be executed most of the time during this migration. And if we're transferring things over the network, then that's, I guess, not necessarily true.
+
+Just now regarding to whether we can make CXL memory persistent for a guest, I was wondering whether it would be a very interesting use case. For example, if we have a memory tiering already for a bare metal. So we have DRAM, we have CXL, always distance, with all the latency or throughput information we can make a decision. It means we have a mixture of memory types on bare metal. And actually, I think maybe it would be interesting to have similar pattern for a guest so that we have a large chunk of CXL memory directly assigned to the guest without -- I mean, permanently. And also some part of DRAM, maybe a few gigs just to pull the kernel pages and import information from the guest. It looks similar to bare metal in this case. And when we migrate, we don't really need to do NUMA balancing to do the extra step. Basically what we need to do is to just deliver the CXL assigned memory to the other host. In the meantime, we just migrate a few gigabytes of the DRAM. I was wondering whether you have thought about that or maybe it would be a good idea or not.
+
+So this is, if I'm understanding correctly, with CXL 2.0, where you would be unplugging or binding different logical devices to virtual ports. Do I understand?
+
+My question was whether we can just have part of the CXL memory being part of the guest memory permanently. Because to me it's really a similar model to when we have CXL memory to the bare metal. Because we have some of the DRAM, some of the CXL, and we can make a decision.
+
+So just to comment on that, I think at S+23 there was a paper on doing exactly that. So you would predict how much cold memory your guest has and you would give it real DRAM and CXL memory and expose it as that to the guest. So the guest would be using auto-numa or whatever.
+
+Yeah, thanks. I think that's just that it can avoid the numa-balancing for most of the memory. So it's probably good.
+
+So we've been actually working on VM live migration of what is aggregated memory, not CXL, but closely related IBM technology for the last year or so. And we have a working prototype and we've evaluated how it works, like from just the one direction. And it's actually quite astounding. The way you describe it, it should work, it will work this way. And we've seen that the performance compared to traditional migrations, especially concerning the performance of the workload within the virtual machine is a great benefit. So CXL and disaggregation as a concept here is really a great benefit for this kind of tech technology. And we have extended QEMU on IBM technology to implement this.
+
+Yeah. And so my goal right now that there's no CXL 3.0 devices, so I want to get to a point where I can emulate a CXL 3.0 MEM device and attach to hypervisors and just try to get this basic migration going, which is just between two instances.
+
+But maybe we can chat afterwards because you might be interested in looking at our setup. It's not CXL but basically the same.
+
+Yeah, absolutely. Please. My contact is in the slides and yes, I will be glad to check that.
+
+I could ask Andreas, is your solution have kernel components that are upstream or is it done without that?
+
+We don't modify the kernel at all. Just custom firmware and then we use, we extend the test to QEMU. Since QEMU, in QEMU you can pass a backing file for the memory and we expose the disaggregated memory through a character device that supports the mmap. So yeah, we do have a kernel module to provide this character device. So that is the only change to the kernel we make. And then you can on both sides of the migration, use shared memory devices for the virtual machine memory and then the rest of the migration works basically out of the box.
+
+This should actually be doable without modification to the kernel at all using shared memory devices. You can back that by a remote node and bind everything to socket zero and have the memory on socket one if you wanted to increase the change span to the model CXL device, for example. I know some other people have already done that, the model CXL devices. I have a quick question and I know we brought this up on the list a little bit. I was curious what your thoughts were about, and I know we have like two minutes left. So the path by copy, we're moving from one host to another host and that means the virtual to physical address mappings are going to be different, at least in theory. There's no guarantee that that CXL memory is going to be mapped at the same physical address range. I was curious what your thoughts were on how you might accomplish that.
+
+Yeah, and that was the, so I guess to kind of scale it back for just the basic test of having this running through QEMU, you can have those addresses matched. And like we talked on the mailing list, the devices can actually present the same mappings. But as Jonathan pointed out, is that you shouldn't rely on that. And that you would need to make these sort of adjustments between the physical spaces. And I haven't solved that problem yet. My first task would have been to just make those in QEMU match, just so I can sort of validate this approach and then deal with these readjustments later. And I also need to dig a little bit deeper into the CXL spec to make sure I fully understand the issue. Sorry to disappoint Gregory, but I haven't figured that out yet.
+
+There's one more follow-up question, which is for moving the actual context, the execution context of the VM from one host to the other, was the plan to use typical TCP or whatever interconnect or were you going to use CXL memory to actually move that context as well?
+
+So this may or may not be possible. But my goal is to be able to pass that through the CXL device. Because I think that can be achieved, that secondary portion of clustering hypervisors or load balancing when you're running X amount of vCPUs from one VM on hypervisor A and X number of vCPUs on hypervisor B kind of becomes free. So that's my sort of preferred method. But at this point in time, I don't know yet whether that will be possible or not. And if not, then we'll have to go the other route.
+
+So linking these two things together, if you were to dump it all to CXL memory, you could also dump the existing page table contents to CXL memory along with the CXL-based memory address of whatever memory you're using. And then on the other side, you can go through and fix up the page tables as needed. And that would potentially solve the problem. Right? And you could do the transport of the context through any medium and do the exact same thing. And going through the page tables is likely expensive. But that would be a first step to fixing that general issue.
+
+Yeah. And that's for pages, right? But not for subpage allocations like any kind of kernel metadata structures or anything like that?
+
+Yes. Yeah, that would be-- yeah, that would be, I would say, the hard part.
+
+Yeah. And that's kind of also what I'm trying to figure out, is migrating the pages will probably be the easiest one. But what do you do with subpage allocations? Do you move them across buckets? Or it's going to be very difficult, because these addresses could be anywhere. So that's the part that I am still struggling with figuring out, whether this cooperation between the hypervisor happens on a page level, or does it happen even on a smaller level? I think I'm over time. But is there any other last question?
+
+Give me a little bit more time, because we had trouble getting you started. So we'll go to the 235 mark. One observation is, I don't see you asking for different ways to identify CXL memory. It seems like the current-- for this use case, is it a correct observation that you don't need CXL nodes and these kinds of things? You can figure it out from the information that's currently available in the kernel?
+
+There is an-- so my goal is to have the switchable CXL memory devices be their own nodes, and then attach a separate sort of sub-tag in SysFS, just for the purposes of migration and figuring out your path of migration.
+
+So if I switch to this slide-- this is in the extra slide-- the way I'm thinking of is, you would have multiple CXL mem switch devices connecting to various hypervisors. And there would be some sort of application on top sitting that would map out this migration graph and determine which nodes you need to pass, or if you want to, quote unquote, 'exit the namespace' and hop onto another rack, which node you have to go.
+
+I think that's the end of our session. I think we lost you at the end. But yeah, thank you. And I think we'll move on to the next session now.
+
+Excellent.
+Thank you so much.
+

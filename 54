@@ -1,1 +1,143 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hi everyone, so this is mostly Dan's session. I'm trying to get this done in a few minutes, a recap of what we talked about last year. I think everything I proposed last year is kind of working as intended. Yes, I will document it and I'll write something up, put it out for review, and then I'll stick it up on OSLabs and add a link to all those irritating emails my scripts send out. I don't think the MM stable concept, giving people a non-rebasing stable tree to develop against, I don't think that's as successful as I hoped because it just takes so long to get stuff stabilized and into the stable tree. So if you're working against MM stable, it's generally two to three weeks out of a day. But that's fine, if people want to work against a non-rebasing tree, please go ahead and develop against MM stable, it should be a good target. Please at least do a test merge with unstable before you send it out, just so I find out how much shit is about to hit my fan. I am getting increasingly active about hurrying people along, please try and get this stuff finished, don't leave it sitting in an unstable state for three weeks. I'm also getting a bit more active about when people send out a patch set and I'm not sure about it and I'm not sure about the person, I just let it go nowadays. I'll often send people a private email saying I'm not going to merge this at this time, please let me know a week from now if you believe there's some action I should take. People seem to be appreciating that, I don't like hearing about maintainers who just send it and nothing happens. I like to provide people some feedback. And fourthly I'll be looking at dragging the mem block and slab trees at least into MM unstable so that other MM developers get additional visibility into upcoming MM work. Anybody?
+
+You asked me if anybody had any concerns about MM process. I'm here to serve you guys and you know my email address, don't be afraid.
+
+Are you just going to kill stable or is there a difference?
+
+No, I'll keep it as it is, but I want to hurry things out of unstable into stable more rapidly than we are doing so that the MM stable tree is more up to date. That's what's going to Linus in the next merge window. So I'd like to fill it up more quickly, that's all. Get it from three weeks down to two weeks would be great.
+
+I do not have concerns, I would just like to give a feedback that I really like how the process has changed, it's much more transparent and I think that was a great step in the right direction I would say.
+
+Just a question, can you clarify that you're expected or what you think is the ideal timeline for patches to stay in MM unstable before they go to MM unstable?
+
+Well say in the worst case it's up to three weeks nowadays and sometimes it's necessary but often I'll see a patch service got some unaddressed review comment or some guy said yeah I'll send v3 and then nothing happens for two weeks. Please don't do that. So I'll be sending people the navy emails. It just sort of holds up the whole pipeline. I end up crunching a whole bunch of stuff into stable just in the last week. I don't think that's good. I'd like to get them flowing more.
+
+Is the implication that if somebody, if you pull something in the unstable and they don't think they're going to update it for the next couple of weeks to ask you to pull it back out?
+
+If it's causing a problem, yes. If it's causing problems I'll drop it out and take the next version. I'll generally hold version 2, waiting for version 3 if it's not causing any problems, just to attempt to keep pushing things forward.
+
+Thank you.
+
+Okay. Yeah, so if you didn't get the implication, this was just to get you in the room to yell at it. But what I want to do is serve a role of mediating between the MM community and the SMDK proposal about that kind of started from this position. And if you think about it, it's actually not -- I mean, so the idea here is CXL needs new MF flags and new memory zones. And of course, last time we added a new memory type, we didn't do any of this, right?
+
+Oh, we did. We did add two new MF flags and we added a new zone. But this was part of the PMEM work. But this was a hard-fought fight. Like, I think -- I basically risked my career to get MAP_SYNC into the kernel. Like, this is not something I would wish on somebody else to go through. So we don't take adding flags lightly. And I think for this discussion to be productive, it really needs to put solutions in the other room and we need to talk about problems.
+
+Problems first. And so the format I like to do with these questions is not assume the solution. And we actually -- Michal and I had a conversation, and he came up with a solution as I was -- I thought it was a problem that couldn't be solved. And he's like, oh, no, what if we do this? So I really believe in -- we have a lot of bright people in the room. I think we can talk through do we need these things or not.
+
+But I want to quickly walk through how CXL looks at the system. This is all the same page. I felt like there were some misconceptions about how do we identify these things. So these window ranges at the top, these are static ranges that your platform vendor puts in an ACPI table. They're static. They never change. And these tell you the possible places your CXL devices could be mapped. So that's platform designer decision. And OS has no say in it. What you typically see is a platform will have multiple host bridges. Just like today your service system has multiple PCI Express host bridges, you'll have multiple CXL host bridges. They're actually the same thing, because PCIe and CXL are the same electrically. In this case, we have four windows. We have three host bridges. And this first window is interleaving accesses across these three host bridges. And the host bridges can have an arbitrary number of -- for now we'll assume arbitrary number of CXL devices beneath them. In these other window cases, these are not interleaved. So this address range will only map something that's coming from beneath host bridge zero. And this window is only for one and two and that kind of thing. So in this case, the operating system would be responsible for picking, like, hey, if I want max performance, max bandwidth, I want to use window zero, because that is interleaved across multiple lanes and multiple CXL devices. Whereas this one is just a single -- these ones are just single pipes. You ask yourself, like, why would I want that? Well, maybe you want -- if you want to maximize bandwidth, you want to pick this window, max interleave. If you want to maximize recoverability, maybe you just want to be able to lose -- like, if we're interleaved and I lose one of the devices, it's just like losing a disk out of your RAID zero, like, the rest of it, your whole thing is gone. But you could conceivably -- if you're using these ones, you could lose a device and the other ones would keep working. So that's a choice that the platform gives you.
+
+But we do have the concept of, like, multiple memory types. And I'm going to call them QOS classes or performance classes. Or properties.
+
+So you could have something like this, where there's a window zero that's interleaved across all these host bridges. And let's just say that this is your volatile memory devices.
+
+And then if you -- then the platform also gives you another window that's also the same interleave. And we'll call these your persistent memory rest in peace devices. CXL does define persistent memory. So even though we're in a post-Optane world, I still think somebody's going to put a battery on a CXL device and call it persistent. But the reason the platform gives you two different windows is for the case where this memory might be slower response than the volatile memory. Go ahead.
+
+So all the devices in the same window will have the same properties? Is this a guarantee?
+
+This is a -- well, so there's hard guarantees, like, if it's, like, persistent versus volatile. Like those actually have different.
+
+But for instance, CXL zero and CXL four may have different latency.
+
+Right. So the properties on the window that the platform tells you is either, like, volatile persistent or a QOS class ID. It will say, like, this is class zero, zero, one, two, three. The numbers don't mean anything, but they're just different QOS classes. But the reason to separate them is if, like, these devices are slower storage class memory, you don't want to have, like, head of line blocking issues while you're trying to talk to the fast devices. So you give them two different traffic lanes to talk through, and the fast stuff can keep talking while the slow stuff is kind of taking its time. And they don't collide with each other.
+
+I think the point, though, is, like, there's nothing in the spec preventing a bad BIOS from taking slow memory and interleaving it with fast memory. So ideally -- yeah, ideally smart decisions are made in interleaving. But there's no guarantee.
+
+And especially with performance classes, it's -- yeah, the operating system can be like, hey, let's say window four is all full when you hot added some device, and the operating system could put it in window zero. So it probably wouldn't be the optimal situation, but it's not mandated. So what Linux does today is just the simple thing. So everything we do in CXL, try to do the simple thing first, because there's so much complexity you could do. The simple thing is just assign a NUMA node per performance class. And so even though we have multiple devices, and this could be, you know, 32 devices, they all get mapped to the same NUMA node.
+
+And so what kind of problems does this impose? And I think these are the main ones. But -- and we can have a discussion if he wants to identify more. But I feel like what people need an ability to -- well, so I think most applications won't care. They say give me memory. But I think administrators or cloud orchestrator people are going to want to say, hey, these people are paying for the -- for coach class. I want to bind them to the coach class memory, and these people are paying out the nodes for the high class stuff, so I'm going to put them in the first class memory. I think that's going to be a policy imposed by the cloud vendor. So I think we need bind by performance class. I think we might need avoid by performance class. Because I think some people -- it seems like memories of lots of different types of capabilities are going to be put behind CXL, and something might be too slow for some applications, and this might be something the kernel wants to avoid. So I think the kernel might need avoid by performance class and maybe migrate. Like they're in coach, and there's a seat available in first class, they want to upgrade. Because the bind by performance class was the one I think, oh, we can't solve that with NUMA nodes, because let's say you're in coach, and you're running in that class, and then more memory gets added. If you've bound yourself to the coach class nodes that were available at the time, this new node comes online, that's also in coach class, how does your application know that it can also now use this as well? But this is when Mihal said just bind to possible nodes. And yeah, so it was obvious to other people in the room, not me, I'm not that smart. But that's an example of, hey, we didn't need to invent a new node for this, we just set a node mask that we classify nodes through some mechanism, and then people learn about their performance class, and then they bind to the nodes that they care about.
+
+So I'm curious, how static is your configuration? You say it comes online, like a node comes online, do you know up front the properties of the node, like characteristics, or can some crazy CXL switchy fabric that I don't get, like add something else, replace something, upgrade performance class, I don't know, or is this completely static?
+
+So I submit to static. Yes, you could put devices of any quality, Joe's backyard CXL device in here, and CXL switches that have crazy latencies, but at the end of the day, they're going to either map to Windows 0 or Windows 1. The degrees of freedom are always limited. And so the way this works in the driver is the driver says, ask the device how fast are you, calculate the performance from the top of the system down through the host bridges, all the links, and then says, hey, platform, this bandwidth and latency of memory I want to map, and then the BIOS gives you back the performance, the QOS class ID, and that's a static set.
+
+Okay. That's perfect. So we're not talking about hot plug of CXL devices yet.
+
+No, but I guess we're not talking about hot plug, but we are talking about, like, these could be dynamic.
+
+Yeah, dynamic, but you're adding up completely new devices with characteristics, new NUMA nodes pop up. That doesn't happen. You know exactly what you have. And what Mike has said is, like, you bind to the possible ones because you can identify the characteristics.
+
+Right. So let's say there was zero devices in the system at the beginning of time. I mean, then we plug all six in. The driver handles that, and then you ask, hey, which Windows are available, and you map it. Yeah. So you should handle dynamic devices, hot plug the same. The NUMA nodes, like, we wanted to make it -- we don't have dynamic NUMA nodes in Linux. We just statically say, okay, there's SRAT nodes, and then we add more for each performance class. And we just pad out the possible nodes, and then that's it.
+
+Makes sense to me. Thanks.
+
+So when the configuration can be done, I mean, the configuration can be made up to OS boot via driver time or BIOS time?
+
+All of the above. Like, the way the driver's designed is -- like, let's say today's BIOSes don't support any level of switching. The BIOS might only map the things that are directly attached to the host bridge. The Linux driver will say, okay, BIOS did those, but I'll do the rest. So right now the driver can do -- the driver will do everything the BIOS won't do. I'll put it that way.
+
+Okay. So I think it is about the requirement that I wanted to address. So if the configuration can be done, I have to OS boot via driver. So I mean, in a software way, flexibly without cold boot system, then I think this makes sense.
+
+I mean, so -- but even if you're dynamically doing it, the only place you can put it is into one of the nodes that was already there. Like, you can't add -- we're not supporting adding new nodes. We're just saying here's all the possible performance classes. And there's also a hardware resource bound on the number of these windows. Because these actually take up -- they're called a TAD decoder register. But these are fixed resources in the memory controller. Because when a device like sends a DMA and it goes to CXL, it goes all the way up, and the system decoder says, oh, this is headed to the CXL space, not the DDR space, and then it sends it back down on the CXL side. And so that logic to do that routing is these decoder registers, and that's a fixed resource. So like the number -- I explained that to say that we're not going to have a whole ton of these. We're not talking about blowing out our 1,024 node numbers. I think it's going to be like in the maybe ten or number of windows that we have to deal with on a system.
+
+Okay. For me, it looks like the mechanism you explained can be smoothly integrated under zones. But yeah, let me start my presentation.
+
+Okay. So by performance class, I feel like that's -- get a set of nodes that are going to be in that classification, and if you plug in a device that's way below that -- because they have to map at some point. And so if you plug in a device that's way too low performance, it's still going to map to the same node. So basically it's kind of your fault as the person who put in a low-quality device kind of thing. Avoid by performance class. This is kind of back to our discussion of like do we need some overrides to tell the kernel like take these nodes out of your fallback list, like don't even bother. Or yes, you can use these nodes for allocation, but like the application has to bind to it. So you can't get this by accident. You have to opt in. But that seems like something we can communicate with a node mask.
+
+Yeah, that's something that we do not allow right now because zone lists are covering all the existing nodes or zones to be more specific. But we do not have a way -- or as far as I remember, we do not have a way to essentially put a node outside of the zone list. So maybe we want to enhance the hot plug API and say that this should be an outside node. And essentially when you bind to that node, then you might still have that fallback list all the way around to other nodes. So if you start there, you eventually get a memory because otherwise we would have terrible problems like ooms and stuff like that that cannot be really resolved. But you start by a slow node, but there is nothing there because you haven't hot plugged anything there, but you still get your normal memory. But when you start with normal memory, you do not end up on that slow thing and get surprised. Because otherwise you would have to use mbind just to avoid that. And that's really clumsy because that's hard to configure properly.
+
+Yeah, I think it would -- yeah, this would have to be something that the driver either does automatically or some other enumeration to say, like, okay, the performance here is just not something that's Linux worthy for the core MM to have to worry about or need opt in.
+
+Yeah, but for that we would need an extension to the hot plug. It wouldn't be hard to do, but we just have to think about how to communicate that to the hot plug code.
+
+Right, yeah. And the idea here is that we're not trying to avoid doing kernel changes, but in terms of would we rather have a new zone type or do these kernel changes for these mechanisms, I haven't -- yeah, I haven't come across why we make that switch. Migrate by performance class seems pretty straightforward. Just migrate pages. Like, I don't think -- if it's nodes, you just migrate nodes. I don't see.
+
+Just for the binding to performance class, it is nice to have another use case just bind to multiple different performance classes at the same time, but with an interleaved ratio input by the users. So that will fully utilize the total bandwidth between the DRAM on the board and the desect device.
+
+That's true, yeah. So the mechanism that got added recently called MPOL_PREFERRED_MANY. The idea would be you can opt into all the performance classes that are okay with you or you bind to the ones that you only want kind of thing. But yeah, you could do an interleaved policy in software and not just in the CXL hardware.
+
+One quick comment. Since you mentioned this is a performance class, I assume it's no longer just a binary value. Basically, it could be multiple different values. You mentioned it could be up to 10, whatever.
+
+It's just an integer. Like a proximity domain number. It has no meaning. It's just an integer.
+
+Yeah, that's fine. My point is that it's not a single value. So basically, if we want to map the performance class to zones, then basically it means we're going to probably introduce multiple zones, not just a single zone. In this particular example, probably means two different type of zones.
+
+Right, right. So think of it like a NUMA node per window. Because each window has one performance class.
+
+Yeah, I think NUMA node is a very natural concept. I think you mentioned in the beginning, should we introduce a new zone for this kind of thing? My comment here is that if we introduce a zone, then it should not be a single zone. It should be a list of zones. One corresponding to each performance class. I think that might be a complexity.
+
+Right. No, I take your point. Like a single zone can't represent the degrees of freedom we want here. Because we want to be able to have gradations of CXL. And NUMA node numbers give us that gradation.
+
+So I just have a comment. Not an idea, just a question to the audience. If we start talking about multiple nodes, would it make sense that we have some kind of policy that tells me, give me the slowest memory possible. Like here's a set of nodes, give me the fastest one. Or is it really just like I'm going to bind to, let's say, two classes and whatever I get is what I get. Is that rather what we want?
+
+So the part I'm not saying is, like, these classes don't have any meaning. I mean, so we have ways to tell user space what they are. But I'm really hesitant to have an API or any kind of way for somebody to say give me fastest because everybody's going to say give me fastest.
+
+No, no. I expressed it the wrong way. It's more like right now when you define an end policy, it's like preferred many. So you prefer multiple ones. But it's not that you can define a hierarchy. Like first try from node 3, then from node 2, and then from node whatever. I'm just wondering if that could be desirable to express something like, yeah, I'm really interested in the slowest possible memory. But if that one node is depleted, then maybe...
+
+Isn't that the fallback order?
+
+But is it? Like, I think, like, with mbind, you can actually run out of memory if one of the nodes is depleted. No?
+
+Is the preference. Go ahead.
+
+Yeah, not with mpole preferred many. Yeah, so essentially you can just say I want all eight of them or whatever the number will be. And you start by... You start somewhere and then go through the zone list order. Yeah. There is no... You want to add something?
+
+I just kind of wanted to dig into the yet that was talked about on hot plug. Different performance classes. The comment about can you have new CXL devices show up of different performance classes. I mean, eventually that would be a desire, right?
+
+Let's say we had. Like, all these windows. Only one window. So all these eight windows are mapped to CXL devices except window four has one little bit of space. And then CXL six comes in and we ask if it's performance and it doesn't match the performance class of window four. We have a choice of leaving it unmapped or just mapping it at the wrong performance class. And right now my policy is just map it at the wrong performance class until somebody screams like. I think having capacity is better than. Having less performance is better than zero performance. So I'm basically putting the onus on system designers to say. Yeah, make sure you have enough window capacity, make sure you plug in devices with compatible things. But if you don't, the kernel will do best effort. And we won't be strict about it. Because being strict is more difficult.
+
+So if they've got a system running on a bunch of switch-attached DDR4-based modules and they're over time upgrading to DDR5 because the DDR4 is dying or whatever, is it practical for them to be able to understand that when they hot-plug? What's the onlining process? How do they make sure it shows up in the right window?
+
+The running with DDR4 and then they swap out those devices with DDR5 kind of thing? I mean, yeah, like, I think that's fine, yeah. Unplug these, the capacity gets freed up out of the window, you bring up the new devices, ask which window has capacity for them, pick that one as your preference, and if it's not available, just pick any other window just to get it mapped. But yeah, that should be fine.
+
+Okay.
+
+I agree with the way to use it, but what if it becomes a new zone? Because the reason we selected zone instead of a node was, you know, zone actually implemented the actual memory-managed algorithms like convection or liquid mark, watermark or migration or anti-flagration, something like that. So but there is no specific algorithm for node scale, so what if we make it as a new zone?
+
+So you're saying that you want to have reclaim policy, like node reclaim policy?
+
+zone reclaim or compaction or migration or anti-flagration, that algorithm's currently applied on zone level. So I think for the CXL needs, we probably need to revisit the algorithms on CXL memory, so when you become a node, the currently used implementation, the algorithms are not applied on node, but zone. So probably it is, yeah, good to apply.
+
+Can anybody else help me out with that question about core migration and compaction policy and whether we would--that would need to grow to become node aware or is it zone aware? Anybody can.
+
+Zones are internal memory management abstraction that shouldn't leak outside of the memory management. It's core memory management. So if there are any API limitations that parts of the kernel would like to work with something and they are forced to use struct zone as an argument, that's a good reason to change that to be node based.
+
+Yeah.
+
+There is a reason, one reason that we choose the zone, because zone is as you told us, is internal algorithm, internal implementation, so--but node is widely coupled with other kernel subsystems and user subsystems, so as you told that even with the performance of window, there will be probably five or ten nodes on the system wide, then if we make it as a single node, then probably, you know, the kernel side could make the abstraction layer to make it single node, then the--where the kernel modification needed is the node level, so which is widely connected to other subsystems. So if we choose the zone level, it is connected to the less kernel subsystems then, so.
+
+Yeah, I mean, I always keep coming back to the observation that node numbers and zone numbers are in the same like bit field of struct page, of page flags and that any operation that you'd want to run on a--on a--like if your zone is a boundary of like a memory of a certain like physical address range, like you can--you can just convert that one number into just a--into a node mask. Like if you want to say, 'I want to migrate all CXL,' you just find--you just make--you just create a node mask of all the CXL--of all the CXL nodes and then do your operation. So I'm missing the part where we can't do it with a node mask. Like I feel like--I feel like a new zone and a node mask number are basically analog or largely the same thing.
+
+Yeah, realistic--realistically speaking with this kind of memory, we are talking about zone normal or zone movable. And most likely zone movable in 90% of cases because you simply do not want to have a lot of your kernel metadata sitting there just without any actual intention to be allocating from that. So you might have both those--of those zones but you define that by how you allocate, right? So...
+
+Yeah. And right now we're really--we're really piggybacking on a lot of David's--David's work in--in virtio-mem about like hot plug policy and reserving a little bit of--like if you're adding a terabyte, maybe you need some percentage of it to be zone normal and the other percentage to be zone movable. So in all these--in all these kind of questions about zone partitioning, I'm like, 'Let's do the exact same thing that virtio-mem is doing.' I see a smile, so...
+
