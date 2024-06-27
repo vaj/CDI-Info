@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 257 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 258 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -191,6 +191,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Light Counting](#light-counting-1)
     - [Lightelligence](#lightelligence-2)
     - [Liqid](#liqid)
+    - [Magnition IO](#magnition-io-1)
     - [MemVerge](#memverge-5)
     - [Meta](#meta-3)
     - [Micron Technology](#micron-technology-4)
@@ -2524,6 +2525,14 @@ Mitch Wright
 [YouTube](https://www.youtube.com/watch?v=VebLqQrqFTI)
 
 [Text](./211)
+
+### Magnition IO
+
+Andy Banta
+
+[YouTube](https://www.youtube.com/watch?v=K9Ck8uzW7t4)
+
+[Text](./258)
 
 ### MemVerge
 
