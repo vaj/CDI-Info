@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 256 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 257 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -2456,6 +2456,12 @@ Apparao Puli
 [YouTube](https://www.youtube.com/watch?v=cxvkCS9BWlE)
 
 [Text](./229)
+
+Ling Liao
+
+[YouTube](https://www.youtube.com/watch?v=Fml3yuPR2AU)
+
+[Text](./257)
 
 Saurabh Kulkarni
 
