@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 258 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 259 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -198,12 +198,14 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Objective Analysis](#objective-analysis-1)
     - [Rambus](#rambus-3)
     - [Samsung](#samsung-5)
+    - [Samtec](#samtec)
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
     - [SNIA](#snia)
     - [Solidigm](#solidigm-1)
     - [StorageX.ai](#storagexai)
     - [Supermicro](#supermicro)
     - [TetraMem](#tetramem)
+    - [UnifabriX](#unifabrix-1)
     - [University of Wisconsin-Madison](#university-of-wisconsin-madison)
     - [VMWare](#vmware-2)
     - [ZeroPoint](#zeropoint-1)
@@ -2368,6 +2370,10 @@ Ahmed Medhioub
 
 [Text](./244)
 
+[YouTUbe](https://www.youtube.com/watch?v=vRvgO3nwtFo)
+
+[Text](./259)
+
 Richard Ward
 
 [YouTube](https://www.youtube.com/watch?v=1VQGP0xKouU)
@@ -2626,6 +2632,14 @@ David McIntyre
 
 [Text](./242)
 
+### Samtec
+
+Matthew Burns
+
+[YouTube](https://www.youtube.com/watch?v=vRvgO3nwtFo)
+
+[Text](./259)
+
 ### Sandia National Laboratories
 
 Catherine Appleby
@@ -2683,6 +2697,14 @@ Glenn Ge
 [YouTube](https://www.youtube.com/watch?v=KPZzzsaIX4Y)
 
 [Text](./223)
+
+### UnifabriX
+
+Oren Benisty
+
+[YouTube](https://www.youtube.com/watch?v=vRvgO3nwtFo)
+
+[Text](./259)
 
 ### University of Wisconsin-Madison
 
