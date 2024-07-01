@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 259 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 260 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -19,6 +19,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [Table of Contents](#table-of-contents)
   - [2017](#2017)
     - [AMD](#amd)
+    - [Dell](#dell)
     - [Gen-Z Consortium](#gen-z-consortium)
   - [2018](#2018)
     - [Cray Inc](#cray-inc)
@@ -106,7 +107,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Credo Semiconductor](#credo-semiconductor)
     - [CXL Consortium](#cxl-consortium-1)
     - [d-Matrix](#d-matrix)
-    - [Dell](#dell)
+    - [Dell](#dell-1)
     - [Dell'Oro Group](#delloro-group)
     - [Enfabrica](#enfabrica-1)
     - [Fraunhofer](#fraunhofer)
@@ -183,7 +184,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Apex Semiconductors](#apex-semiconductors)
     - [Astera Labs](#astera-labs-3)
     - [CXL Consortium](#cxl-consortium-3)
-    - [Dell](#dell-1)
+    - [Dell](#dell-2)
     - [Drut Technologies](#drut-technologies)
     - [IBM](#ibm-1)
     - [Intel](#intel-9)
@@ -219,6 +220,14 @@ Brad Benton
 [YouTube](https://www.youtube.com/watch?v=w-rAj1liqrw)
 
 [Text](./22)
+
+### Dell
+
+Valerie Padilla
+
+[YouTube](https://www.youtube.com/watch?v=jGyj6-aVe2k)
+
+[Text](./260)
 
 ### Gen-Z Consortium
 
