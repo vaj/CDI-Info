@@ -19,7 +19,6 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [Table of Contents](#table-of-contents)
   - [2017](#2017)
     - [AMD](#amd)
-    - [Dell](#dell)
     - [Gen-Z Consortium](#gen-z-consortium)
   - [2018](#2018)
     - [Cray Inc](#cray-inc)
@@ -27,6 +26,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [HPE](#hpe)
     - [Microsoft](#microsoft)
   - [2019](#2019)
+    - [Dell](#dell)
     - [HPE](#hpe-1)
     - [Intel](#intel)
     - [Microsoft](#microsoft-1)
@@ -221,14 +221,6 @@ Brad Benton
 
 [Text](./22)
 
-### Dell
-
-Valerie Padilla
-
-[YouTube](https://www.youtube.com/watch?v=jGyj6-aVe2k)
-
-[Text](./260)
-
 ### Gen-Z Consortium
 
 (unknown)
@@ -276,6 +268,14 @@ Tom Talpey
 [Text](./176)
 
 ## 2019
+
+### Dell
+
+Valerie Padilla
+
+[YouTube](https://www.youtube.com/watch?v=jGyj6-aVe2k)
+
+[Text](./260)
 
 ### HPE
 
