@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 260 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 261 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -43,7 +43,9 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [HPE](#hpe-2)
     - [Intel](#intel-2)
     - [IntelliProp](#intelliprop)
+    - [Microchip](#microchip)
     - [Nanjing Fujitsu Nanda](#nanjing-fujitsu-nanda)
+    - [Samtec](#samtec)
   - [2022](#2022)
     - [AMD](#amd-1)
     - [Ayar Labs](#ayar-labs)
@@ -129,7 +131,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Marvell](#marvell-1)
     - [MemVerge](#memverge-3)
     - [Meta](#meta-2)
-    - [Microchip](#microchip)
+    - [Microchip](#microchip-1)
     - [Micron Technology](#micron-technology-2)
     - [Microsoft](#microsoft-3)
     - [Molex](#molex)
@@ -199,7 +201,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Objective Analysis](#objective-analysis-1)
     - [Rambus](#rambus-3)
     - [Samsung](#samsung-5)
-    - [Samtec](#samtec)
+    - [Samtec](#samtec-1)
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
     - [SNIA](#snia)
     - [Solidigm](#solidigm-1)
@@ -417,11 +419,27 @@ Erich Hanke
 
 [Text](./62)
 
+### Microchip
+
+Tim Symons
+
+[YouTube](https://www.youtube.com/watch?v=5V7cro2NOn4)
+
+[Text](./261)
+
 ### Nanjing Fujitsu Nanda
 
 [Ruan Shiyang](https://www.youtube.com/watch?v=CEtgd4GOYXI)
 
 [Text](./17)
+
+### Samtec
+
+Matthew Burns
+
+[YouTube](https://www.youtube.com/watch?v=5V7cro2NOn4)
+
+[Text](./261)
 
 ## 2022
 
