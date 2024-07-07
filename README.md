@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 261 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 262 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -36,6 +36,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Google](#google)
     - [Intel](#intel-1)
     - [Meta](#meta)
+    - [Microchip](#microchip)
     - [Microsoft](#microsoft-2)
   - [2021](#2021)
     - [Astera Labs](#astera-labs)
@@ -43,7 +44,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [HPE](#hpe-2)
     - [Intel](#intel-2)
     - [IntelliProp](#intelliprop)
-    - [Microchip](#microchip)
+    - [Microchip](#microchip-1)
     - [Nanjing Fujitsu Nanda](#nanjing-fujitsu-nanda)
     - [Samtec](#samtec)
   - [2022](#2022)
@@ -131,7 +132,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Marvell](#marvell-1)
     - [MemVerge](#memverge-3)
     - [Meta](#meta-2)
-    - [Microchip](#microchip-1)
+    - [Microchip](#microchip-2)
     - [Micron Technology](#micron-technology-2)
     - [Microsoft](#microsoft-3)
     - [Molex](#molex)
@@ -337,11 +338,13 @@ Debendra Das Sharma
 
 [Text](./9)
 
-Debendra Das Sharma
-
 [YouTube](https://www.youtube.com/watch?v=RpAshNmpqLQ)
 
 [Text](./208)
+
+[YouTube](https://www.youtube.com/watch?v=98ncoAyvPLk)
+
+[Text](./262)
 
 Mahesh Natu
 
@@ -356,6 +359,14 @@ Chris Petersen
 [YouTube](https://www.youtube.com/watch?v=eI1PhzRau40)
 
 [Text](./209)
+
+### Microchip
+
+Ahmad Danesh
+
+[YouTube](https://www.youtube.com/watch?v=98ncoAyvPLk)
+
+[Text](./262)
 
 ### Microsoft
 
