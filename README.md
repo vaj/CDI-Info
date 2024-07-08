@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 262 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 263 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -422,6 +422,12 @@ Debendra Das Sharma
 
 [Text](./3)
 
+Mahesh Wagh
+
+[YouTube](https://www.youtube.com/watch?v=FaIK_SFe_i8)
+
+[Text](./263)
+
 ### IntelliProp
 
 Erich Hanke
@@ -431,6 +437,12 @@ Erich Hanke
 [Text](./62)
 
 ### Microchip
+
+Rick Sodke
+
+[YouTube](https://www.youtube.com/watch?v=FaIK_SFe_i8)
+
+[Text](./263)
 
 Tim Symons
 
