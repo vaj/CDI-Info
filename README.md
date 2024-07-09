@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 263 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 264 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -47,6 +47,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Microchip](#microchip-1)
     - [Nanjing Fujitsu Nanda](#nanjing-fujitsu-nanda)
     - [Samtec](#samtec)
+    - [SK hynix](#sk-hynix)
   - [2022](#2022)
     - [AMD](#amd-1)
     - [Ayar Labs](#ayar-labs)
@@ -147,7 +148,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Red Hat](#red-hat)
     - [Samsung](#samsung-3)
     - [Seagate](#seagate-1)
-    - [SK hynix](#sk-hynix)
+    - [SK hynix](#sk-hynix-1)
     - [SMART Modular Technologies](#smart-modular-technologies)
     - [Solidigm](#solidigm)
     - [TE Connectivity](#te-connectivity)
@@ -422,6 +423,12 @@ Debendra Das Sharma
 
 [Text](./3)
 
+Mahesh Natu
+
+[YouTube](https://www.youtube.com/watch?v=FSMGQXVpf9M)
+
+[Text](./264)
+
 Mahesh Wagh
 
 [YouTube](https://www.youtube.com/watch?v=FaIK_SFe_i8)
@@ -463,6 +470,14 @@ Matthew Burns
 [YouTube](https://www.youtube.com/watch?v=5V7cro2NOn4)
 
 [Text](./261)
+
+### SK hynix
+
+Thomas Won Ha Choi
+
+[YouTube](https://www.youtube.com/watch?v=FSMGQXVpf9M)
+
+[Text](./264)
 
 ## 2022
 
