@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 264 disaggregated computing-related talks published on YouTube between March 2017 and June 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 265 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -214,6 +214,8 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [University of Wisconsin-Madison](#university-of-wisconsin-madison)
     - [VMWare](#vmware-2)
     - [ZeroPoint](#zeropoint-1)
+  - [2024Q3](#2024q3)
+    - [Samsung](#samsung-6)
 
 ## 2017
 
@@ -2812,3 +2814,13 @@ Nilesh Shah
 [YouTube](https://www.youtube.com/watch?v=T2QYDu7reOY)
 
 [Text](./222)
+
+## 2024Q3
+
+### Samsung
+
+Adam Manzanares
+
+[YouTube](https://www.youtube.com/watch?v=R1MxfAqoFRc)
+
+[Text](./265)
