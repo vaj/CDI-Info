@@ -1,1 +1,98 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Great. Thank you very much for accepting the last minute talk. Honestly, after Adam's emailing the list, I wasn't sure if I was actually presenting or not. But glad that this worked out. So, let me give a very, very quick background. I work with ZeroPoint Technologies. My name is Yiannis Nikolakopoulos. We've been a hardware startup for the last few years. We've been working in main memory compression one way or another for the last few years. Lately, the focus has been CXL type 3 devices and memory expanders.
+
+I'm going to skip all the business side of things. I will just plug in exactly to what Adam said about the OCP, memory expander specification. So, basically this spec defined a requirement for type 3 devices to have compressed memory. And right now we have an IP that actually meets these requirements. And we are working with CXL integrators to get this to market. And so, what I'm looking into from this talk is to really get the community's perspective into how to make this kind of IP as broadly usable as possible. And we are willing to put in the effort to push in an upstream driver. And we would be happy to get the right direction so that we work on this.
+
+ And please interrupt me for questions at any point. So, let me start by the baseline. Conventional tier memory layout. Nothing weird here. We have a host. A directly attached tier memory. And a -- sorry. A directly attached tier 1, which is directly standard DDR. And a tier 2, which is remote memory over CXL. Typically accessed through .mem commands. Obviously I will give an overview of the IP so that I can explain the interfaces we expose and how things change for the host. So, in the baseline, typically both of these two tiers are visible to the host as host physical address space. And I guess this audience knows very well how this works. And typically when the host tries to access part of this physical address space that corresponds to the tier 2, the data will be translated from the HPA to the device physical address space. And then be returned to the device. Going through the entire CXL link and so on. Probably I'm oversimplifying a few things, but that's the way it is.
+
+And what changes with our IP, which is called dense memory, by the way, is that we now introduce what we call a tier 3. Which is still remote memory over CXL. From the host point of view, it's still accessed through standard .mem commands.
+
+But in reality -- to really gain -- but now this is a compressed memory tier. And it's completely managed by our IP and our firmware. So, what changes here is that the address space we expose, the DPA we expose for this tier 3 is actually oversubstribed. It's a larger DPA than what the backing DPA is.
+
+And the way this works is that if the host tries to write some data that corresponds to this HPA, it will go through the CXL controller. And it will go through our IP, will be compressed, compacted, remapped to a different address. And by doing this continuously, that's how we manage to expand the memory capacity of the device.
+
+So, we expect that the host is the one making the decisions in general in the tiered memory system about which pages are migrated to which tier. And so, the host controls the data migration, controls the promotions. But on top of that, the requirement we now want is that we expect the host to react upon the changes in the memory capacity as we reported by the telemetry. Because the actual device physical address space is static in that sense. But we have an additional telemetry where we report back the remaining capacity.
+
+And the basic configuration we have in the IP is basically the size of the compressed address space and then how much we oversubscribe. For example, we can create -- if we were talking about a 1 terabyte media, we could create a 2 terabyte address space on top of that. And this 2 terabyte would be DPA exposed through CXL business as usual.
+
+Now, the additional APIs we provide and all of these, again, they comply with the OCP specs. But we would now like to go through them a little bit more in detail. So, there is a set of .io capacity back pressure APIs as we call them. And first there's telemetry for the remaining actual free space. Not the DPA. But the actual remaining media. Then we have four watermarks that can be configured from high, medium, low to critically low. And the idea is that as the remaining capacity goes through these watermarks, there is an MSI/-X interrupt raised to the host. So that the host can take evasive or mitigating actions depending on which watermark is crossed. At the same time, internally the IP also takes its own evasive actions. And also an additional .io command for freeing capacity. So, we expect that the host software overall is expected to utilize this interface.
+
+So, trying to put all of this together, I mean, the OCP specs is basically what enabled -- what defined the host to see a compressed memory. But this can still be done through an overcommitted address space. So, it's a linear address space. Again, business as usual. The host reads and writes data from the doc. They go through our IP. They are compressed and decompressed in line. We handle the translation from the device address space to the compressed address space, the real address space entirely in hardware. And we report back from the .io channel the remaining capacity and the other APIs that I just mentioned. So, that the host can react accordingly and basically stop sending data if we're running out of capacity or even migrate data out of it.
+
+So, this is really the core of it. At least on how it looks like. I'm not going -- I think this is the most interesting part for this venue. But I'm happy to discuss any questions. And then what we're trying to understand now is how we can help in -- what's the best way to add upstream support for this? I mean, starting from baby steps, it does sound like this is some kind of memory that only user space would like to use at first. One thought that I had, but I'm not really sure of the repercussions is to even allow kernel space but only for zone pages. And overall, yeah, we're thinking right now that, yeah, we should work on a driver that will expose the APIs of these .io nodes. But then we're trying to understand how this will be utilized by anyone that is making migration decisions. So, that's all I had for now. Any thoughts or questions?
+
+I'm just curious, since CXL is all about adding a truckload of memory availability, why do we care about compressing them?
+ 
+So, the business side of it is even more ECO reduction. Even more total cost of ownership reduction, basically. And I mean, I've skipped all the spec features of the IP, but the latency can be pretty low. And of course, there are --  
+
+You're adding latency to something that is already more expensive.
+
+Yes. But it's not as much.
+
+You know, looking at the OCP spec, though, that's not a fight for us to have, if that makes sense. It's been put out there, what they want, right? And if you meet that, it seems like that's fine, right? And you support those algorithms. But I agree, conceptually, you know, but it's a cost savings thing for sure. Now that this memory controller is on this device, if you could compress the memory and get more out of it, why not?
+
+Hi, this is David. So I'm just trying to figure out how that could be used by Linux. And the only thing that really makes sense to me is if you fake as if you would be Cswap, and you avoid the struck page for the memory,  and you even avoid the direct map or whatsoever, and you just use -- you fake like you are Cswap and avoid the metadata for your memory. That might be -- I mean, you don't have to compress yourself, you don't have to allocate memory and do all of that. You would just, like, pass it to the device. And that might be something reasonable.
+ 
+It would be like a Zswap that you could directly map, though. Like if you needed to read it back, you wouldn't have to swap it back in to read it.
+
+Yeah, I mean, the -- it doesn't -- by default, meaning that we are talking about unmapped pages that are on the swap out path.
+
+Matthew, do you remember -- sorry. Matthew, do you remember the file systems that used to compress because the drives were not big enough? So you would store compressed and then uncompress. So we're going back -- yeah, we still have those. And if your link is slow enough, then compressing and sending it over makes sense. Right?
+
+I mean, I don't think the problem is that the CXL link is slow. It's that it's high latency. And I don't see that compression is helping anything at this point.
+
+But if it's a cold memory tier, like if you're just demoting to it, we're basically saying, like, I just want -- I want more capacity. I want it to stick around. I don't want it to go all the way back to disk. Can you -- because disk is even higher latency. Is this a tier?
+
+I mean, for the Cswap use case that I mentioned, it would offload compression to the CXL device. So it would be offloading.
+
+Yeah, I mean, I'm actually really sympathetic to the idea of using CXL as a layer of swap, as a layer of storage. It's just, you know, when people start talking about using CXL for, like, actually direct access CPU stuff. But, I mean, PCIe is fundamentally a storage bus. Right? It's not a memory access bus. And I think the idea of using it as a layer of swap, yeah, I'm all for it. Like transfer an entire page at a time, great idea. But I'm just not convinced that compression is the interesting part of this. But, I mean, that's not up to me, is it?
+
+Okay. Let me try to say -- to cover a couple of things from the comments.
+
+One quick comment. You know, when I look at this, right, it's all a latency play, to be honest. Right? I don't care locally attached. I don't care about compression. Right? Like, those things will all come out if the latency is good enough. This is the way I see it, right? And how much does it impact your application? So it's like the discussions about all those other details kind of wash out in my opinion. Right? It's like how does it impact your end application? And if it's within some tolerance, you would, I believe, tolerate a lot of these things. Right? It's not whether or not it's there. It's what latency does it introduce. But, anyway, okay. That's all.
+
+ I agree with that. And what I would like to add here, and maybe I'm wrong. Please correct me if I'm wrong. But the way I've understood all this space is that -- I mean, sure, we've had very good solutions that are  Zswap based or ZRAM based or of that sort. But these are always unmapped pages. And basically to bring the data back in, you have the page fault latency. And that's the area where to my understanding the memory expanders of type 3 used in tiering mode, under  that restriction at least. This is the gap that they bridge. Right? Because the type 3 devices would allow you to have an extra memory tier that doesn't carry the page fault  latency. Right? Pages are still mapped. They're a little bit higher. But at least it's good enough to keep your look warm or your code pages there. And with the compression, we just expand this additional memory tier. We add an extra memory tier in that hierarchy. I mean, I usually actually have a marketing slide where we just position ourselves right below the  typical .mem. And to give -- I would like to -- I actually on purpose keep the IP feature slides where we talk about  latencies and how things change. I can roughly say that the IP usually carries a pretty large cache which balances out the latency  curves to a big extent. And going back to Adam's comment, yes, the OCP specs are actually pretty stringent on the latency  requirements. And yeah. Long story short, we comply with that.
+ 
+One comment. I think it can answer your questions. Right? I kind of see the character dev-DAX mode. Because you don't need the struct page there. It's all PFN based. Right? And so that seems like a reasonable path to show off this kind of approach.
+
+No. We do have pages in that path. But I mean, we're trying to get rid of it. But like I think you're asking the question, like, hey, where should we upstream this? That may be something we can -- I don't -- like, I think I know where we don't want it to be upstream. We don't want it to be -- we don't want to be in the situation where we are under memory pressure. And if we start writing to memory, we actually make the memory pressure problem worse because we're  writing uncompressible things and now we need even more capacity. So I think this is why people jump to Zswap. Because Z swap is opportunistic. You can say, hey, can you accept the page? That can fail. So having this in a path where you can say -- front cache or something like this to say can you accept it? Can you make this -- take this off my hands and have that be able to fail?
+
+You know, the second thing I think is very interesting for me is that .io interface. Because of -- we've talked about type 2 or type 3 is already kind of restricted, which is reasonable. Right? But the type 2 would be some sort of -- have some other .io interfaces. And we've talked about how the memory would be owned by the current CXL driver, right? For a type 2. You kind of stubbed it out. But what do we do with how to talk to the device? Right? That's very unclear to me. It will take someone to write it and then the discussion to happen, in my opinion.
+
+I think another problem this is running into is the fact that we don't have great promotion interfaces to know when to pull things out of colder memories into higher --  We have the strong swap in signal. But one of the things that -- where PMEM never got to was, well, maybe we can use PMEM as a swap device that we can sometimes skip the swap in path because we can access it in place. And we're like, well, yeah, that kind of works, but then how do we get the signal about when we actually promote it out of there? And so, like, I mean, this is a general MM problem. We don't have a good promotion path for hot pages.
+ 
+I just have a clarifying question. At some point you mentioned address remapping, and I got a little bit scared. What exactly is address remapping? I do a write to a page and I get a new address?
+
+This is actually something that the kernel never sees.
+
+Ah, that's just like internal tracking of the mapping. Okay. But it could mean if I write too much to the device that at some point writing will simply fail because the device is out of memory, right?
+
+ Exactly.
+ 
+How would that manifest? An MCE?
+
+On the very worst case, it manifests as a poison, basically, on that page.
+
+Okay. Thanks.
+
+But hopefully all this should have whoever decides the data migration path should have taken the signals from the interrupts here and never reached that level.
+ 
+But one thought that I have, and I completely agree that the -- I mean, it's -- I think it's quite difficult the fact that we don't have -- sorry, I missed who said that, that we are missing a good promotion path. And this is one of the assumptions we make as an IP vendor, that we can't do everything, right? So we assume that somebody else takes control of the promotion decisions. I mean, I think the same discussion came yesterday when David talked about the memory tiering working group, like would it be daemon, would it be the standard NUMA path? And I understand the problems of adding such kind of memory in the standard NUMA path. I mean, I would be skeptical as well.
+
+Does the device tell you the most -- like the least -- give you a priority, like least compressible memory to migrate for highest benefit kind of thing? Like migrate this page to get the most capacity back? Or is it just kind of running out of memory, please migrate whatever you can?
+
+There are actually -- yes, there are quite a few performance counters that cover this kind of cases. So there is more telemetry than what I show here, yes. And we will be happy to document that.
+ 
+It strikes me that if we're talking about some day devices reporting hot page information, that if this at least followed the same model of like this page is hot because I can't hold it anymore. Like it's literally a hot potato. Maybe it fits into the same model.
+
+Yeah, yeah. It could be. And of course we -- I mean, we hope at least that we will be around for a while. So it's not going to be just one generation. We want to keep improving this over generation by generation. I'm seeing also a few comments on the chat, actually.
+
+What was that?
+
+And in the end he's asking if we're compressing individual cache lines. I didn't cover these parts in the talk. In fact, we -- in this first generation we have two different compression algorithms. Yeah, please.
+
+I was going to say we're running short on time. But -- so I might have to end it here. But I think, yeah, bringing questions up on the list, I also think looking at front swap and Z swap is probably kind of the consensus in the room where we felt most comfortable where this stuff might fit upstream. But, yeah, let's follow up on the mailing list if you have some more.
+
+Okay. I'll be glad to take the discussion there. Thank you very much.
+
+Yeah, thanks for offering this.
