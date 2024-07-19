@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 267 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 268 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -422,6 +422,12 @@ Ben Widawsky
 
 [Text](./58)
 
+David Harriman
+
+[YouTube](https://www.youtube.com/watch?v=PV6FJZ3wJGM)
+
+[Text](./268)
+
 Debendra Das Sharma
 
 [YouTube](https://www.youtube.com/watch?v=-G6NIl6MMjM)
@@ -439,6 +445,12 @@ Mahesh Wagh
 [YouTube](https://www.youtube.com/watch?v=FaIK_SFe_i8)
 
 [Text](./263)
+
+Raghu Makaram
+
+[YouTube](https://www.youtube.com/watch?v=PV6FJZ3wJGM)
+
+[Text](./268)
 
 ### IntelliProp
 
