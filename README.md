@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 269 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 270 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -62,6 +62,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Meta](#meta-1)
     - [Micron Technology](#micron-technology)
     - [NVIDIA](#nvidia)
+    - [Rambus](#rambus)
     - [Samsung](#samsung)
     - [Seagate](#seagate)
     - [UnifabriX](#unifabrix)
@@ -86,7 +87,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [MemVerge](#memverge-1)
     - [Micron Technology](#micron-technology-1)
     - [Panmnesic](#panmnesic)
-    - [Rambus](#rambus)
+    - [Rambus](#rambus-1)
     - [Samsung](#samsung-1)
     - [SiPearl](#sipearl)
     - [Timeplus](#timeplus)
@@ -96,7 +97,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Intel](#intel-6)
     - [MemVerge](#memverge-2)
     - [NVIDIA](#nvidia-1)
-    - [Rambus](#rambus-1)
+    - [Rambus](#rambus-2)
     - [Samsung](#samsung-2)
   - [2023Q4](#2023q4)
     - [AlphaWave IP](#alphawave-ip)
@@ -145,7 +146,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Objective Analysis](#objective-analysis)
     - [OCP](#ocp)
     - [OIF](#oif)
-    - [Rambus](#rambus-2)
+    - [Rambus](#rambus-3)
     - [Red Hat](#red-hat)
     - [Samsung](#samsung-3)
     - [Seagate](#seagate-1)
@@ -202,7 +203,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Meta](#meta-3)
     - [Micron Technology](#micron-technology-4)
     - [Objective Analysis](#objective-analysis-1)
-    - [Rambus](#rambus-3)
+    - [Rambus](#rambus-4)
     - [Samsung](#samsung-5)
     - [Samtec](#samtec-1)
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
@@ -668,6 +669,14 @@ Steve Glaser
 [YouTube](https://www.youtube.com/watch?v=ediIaJwwTiE)
 
 [Text](./27)
+
+### Rambus
+
+Vincent Haché
+
+[YouTube](https://www.youtube.com/watch?v=6TRbkes15Ok)
+
+[Text](./270)
 
 ### Samsung
 
