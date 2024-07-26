@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 271 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 272 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -41,11 +41,14 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2021](#2021)
     - [Astera Labs](#astera-labs)
     - [Broadcom](#broadcom)
+    - [CXL Consortium](#cxl-consortium-1)
     - [Fujitsu](#fujitsu)
     - [HPE](#hpe-2)
     - [Intel](#intel-2)
     - [IntelliProp](#intelliprop)
+    - [Meta](#meta-1)
     - [Microchip](#microchip-1)
+    - [Microsoft](#microsoft-3)
     - [Nanjing Fujitsu Nanda](#nanjing-fujitsu-nanda)
     - [Samtec](#samtec)
     - [SK hynix](#sk-hynix)
@@ -59,7 +62,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Jump Trading](#jump-trading)
     - [KIOXIA](#kioxia)
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory)
-    - [Meta](#meta-1)
+    - [Meta](#meta-2)
     - [Micron Technology](#micron-technology)
     - [NVIDIA](#nvidia)
     - [Rambus](#rambus)
@@ -111,7 +114,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Cisco](#cisco)
     - [Coherent](#coherent)
     - [Credo Semiconductor](#credo-semiconductor)
-    - [CXL Consortium](#cxl-consortium-1)
+    - [CXL Consortium](#cxl-consortium-2)
     - [d-Matrix](#d-matrix)
     - [Dell](#dell-1)
     - [Dell'Oro Group](#delloro-group)
@@ -134,10 +137,10 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Magnition IO](#magnition-io)
     - [Marvell](#marvell-1)
     - [MemVerge](#memverge-3)
-    - [Meta](#meta-2)
+    - [Meta](#meta-3)
     - [Microchip](#microchip-2)
     - [Micron Technology](#micron-technology-2)
-    - [Microsoft](#microsoft-3)
+    - [Microsoft](#microsoft-4)
     - [Molex](#molex)
     - [Montage Technology](#montage-technology)
     - [Nallasway](#nallasway)
@@ -164,7 +167,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2024Q1](#2024q1)
     - [AMD](#amd-4)
     - [Astera Labs](#astera-labs-2)
-    - [CXL Consortium](#cxl-consortium-2)
+    - [CXL Consortium](#cxl-consortium-3)
     - [GigaIO](#gigaio-1)
     - [H3 Platform](#h3-platform-2)
     - [Igalia](#igalia)
@@ -189,7 +192,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Amphenol](#amphenol-1)
     - [Apex Semiconductors](#apex-semiconductors)
     - [Astera Labs](#astera-labs-3)
-    - [CXL Consortium](#cxl-consortium-3)
+    - [CXL Consortium](#cxl-consortium-4)
     - [Dell](#dell-2)
     - [Drut Technologies](#drut-technologies)
     - [IBM](#ibm-1)
@@ -200,7 +203,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Liqid](#liqid)
     - [Magnition IO](#magnition-io-1)
     - [MemVerge](#memverge-5)
-    - [Meta](#meta-3)
+    - [Meta](#meta-4)
     - [Micron Technology](#micron-technology-4)
     - [Objective Analysis](#objective-analysis-1)
     - [Rambus](#rambus-4)
@@ -408,6 +411,14 @@ Manish Mehta
 
 [Text](./269)
 
+### CXL Consortium
+
+Kurtis Bowman
+
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
+
 ### Fujitsu
 
 五島康文
@@ -417,6 +428,12 @@ Manish Mehta
 [Text](./17)
 
 ### HPE
+
+Jim Hull
+
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
 
 Russ Herrell
 
@@ -468,6 +485,12 @@ Raghu Makaram
 
 [Text](./268)
 
+Richelle Ahlvers
+
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
+
 ### IntelliProp
 
 Erich Hanke
@@ -476,7 +499,25 @@ Erich Hanke
 
 [Text](./62)
 
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
+
+### Meta
+
+Bharath Muthiah
+
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
+
 ### Microchip
+
+Ahmad Danesh
+
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
 
 Rick Sodke
 
@@ -489,6 +530,14 @@ Tim Symons
 [YouTube](https://www.youtube.com/watch?v=5V7cro2NOn4)
 
 [Text](./261)
+
+### Microsoft
+
+Glenn Ward
+
+[YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
+
+[Text](./272)
 
 ### Nanjing Fujitsu Nanda
 
