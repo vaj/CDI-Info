@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 272 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 273 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -54,6 +54,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [SK hynix](#sk-hynix)
   - [2022](#2022)
     - [AMD](#amd-1)
+    - [ARM](#arm-1)
     - [Ayar Labs](#ayar-labs)
     - [Google](#google-1)
     - [HPE](#hpe-3)
@@ -107,7 +108,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [AMD](#amd-3)
     - [Amphenol](#amphenol)
     - [Arista](#arista)
-    - [ARM](#arm-1)
+    - [ARM](#arm-2)
     - [Astera Labs](#astera-labs-1)
     - [Ayar Labs](#ayar-labs-1)
     - [Broadcom](#broadcom-1)
@@ -594,6 +595,14 @@ Sayanta Pattanayak
 [YouTube](https://www.youtube.com/watch?v=61wblBZO_o4)
 
 [Text](./48)
+
+### ARM
+
+Parag Beeraka
+
+[YouTube](https://www.youtube.com/watch?v=mumLhBDYSgo)
+
+[Text](./273)
 
 ### Ayar Labs
 
