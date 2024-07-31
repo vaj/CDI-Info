@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 274 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 275 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -56,6 +56,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [AMD](#amd-1)
     - [ARM](#arm-1)
     - [Ayar Labs](#ayar-labs)
+    - [CXL Consortium](#cxl-consortium-2)
     - [Google](#google-1)
     - [HPE](#hpe-3)
     - [Huawei](#huawei)
@@ -115,7 +116,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Cisco](#cisco)
     - [Coherent](#coherent)
     - [Credo Semiconductor](#credo-semiconductor)
-    - [CXL Consortium](#cxl-consortium-2)
+    - [CXL Consortium](#cxl-consortium-3)
     - [d-Matrix](#d-matrix)
     - [Dell](#dell-1)
     - [Dell'Oro Group](#delloro-group)
@@ -168,7 +169,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2024Q1](#2024q1)
     - [AMD](#amd-4)
     - [Astera Labs](#astera-labs-2)
-    - [CXL Consortium](#cxl-consortium-3)
+    - [CXL Consortium](#cxl-consortium-4)
     - [GigaIO](#gigaio-1)
     - [H3 Platform](#h3-platform-2)
     - [Igalia](#igalia)
@@ -193,7 +194,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Amphenol](#amphenol-1)
     - [Apex Semiconductors](#apex-semiconductors)
     - [Astera Labs](#astera-labs-3)
-    - [CXL Consortium](#cxl-consortium-4)
+    - [CXL Consortium](#cxl-consortium-5)
     - [Dell](#dell-2)
     - [Drut Technologies](#drut-technologies)
     - [IBM](#ibm-1)
@@ -611,6 +612,14 @@ Vladimir Stojanovic
 [YouTube](https://www.youtube.com/watch?v=1Om7kQSx6-Q)
 
 [Text](./205)
+
+### CXL Consortium
+
+Siamak Tavallaei
+
+[YouTube](https://youtu.be/i6sO5lrFY50)
+
+[Text](./275)
 
 ### Google
 
