@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 275 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 276 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -682,6 +682,12 @@ Robert Blankenship
 [YouTube](https://www.youtube.com/watch?v=pHuHUeSmGGk)
 
 [Text](./13)
+
+Will Nelson
+
+[YouTube](https://youtu.be/udA2nuBHiHo)
+
+[Text](./276)
 
 ### Jump Trading
 
