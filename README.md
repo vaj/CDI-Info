@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 276 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 277 disaggregated computing-related talks published on YouTube between March 2017 and July 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -585,17 +585,23 @@ Robert Richter
 
 [Text](./52)
 
-Yazen Ghannam
-
-[YouTube](https://www.youtube.com/watch?v=vZVv7n044uo)
-
-[Text](./52)
-
 Sayanta Pattanayak
 
 [YouTube](https://www.youtube.com/watch?v=61wblBZO_o4)
 
 [Text](./48)
+
+Sid Karkare
+
+[YouTube](https://youtu.be/anjz7auFFjk)
+
+[Text](./277)
+
+Yazen Ghannam
+
+[YouTube](https://www.youtube.com/watch?v=vZVv7n044uo)
+
+[Text](./52)
 
 ### ARM
 
