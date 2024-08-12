@@ -237,6 +237,8 @@ Brad Benton
 
 [Text](./22)
 
+[Acronym](./acronym.md): AMD API ARM BlueLink CAPI CCIX CPU DDR DMA DSDA ESM FNVMe FPGA GenZ GPU HPE IBM InfiniBand IP MPI NIC NVLink NVMe OFA OFIWG OpenCAPI OpenPower PCI PCIe PCIE PHY PIM PRI PSL SCM SHMEM
+
 ### Gen-Z Consortium
 
 (unknown)
