@@ -497,6 +497,8 @@ Russ Herrell
 
 [Text](./64)
 
+[Acronyms](./acronym.md): CLI CXL DAX FIFO FM HTTP OFMF POC RESTful SMEM SOC VM ZMM
+
 ### Intel
 
 Ben Widawsky
@@ -505,11 +507,15 @@ Ben Widawsky
 
 [Text](./58)
 
+[Acronyms](./acronym.md): ABI ACPI ARM BIOS CCIX COVID CPU CXL CXL.cache CXL.io CXL.mem DDR DOE DSM EDK2 HCI HDM IG IRC LSA MMIO NDA NFIT NVDIMM NVMe OS OVMF PCI PCIe PMEM PMP0A08 QEMU REST RP USB
+
 David Harriman
 
 [YouTube](https://www.youtube.com/watch?v=PV6FJZ3wJGM)
 
 [Text](./268)
+
+[Acronyms](./acronym.md): AD AES CRC CXL CXL.cache CXL.io CXL.mem DLLP DMTF DOE ECN EDPC GCM IDE IP IV LAI LinkedIn MAC MCTP MEM MLD PCI PCIe RX SMbus SPDM TCB TLP TMAC TX XOR YouTube
 
 Debendra Das Sharma
 
@@ -517,17 +523,23 @@ Debendra Das Sharma
 
 [Text](./3)
 
+[Acronyms](./acronym.md): AI API CPU CXL CXL.cache CXL.io DDR DIMM DMA DRAM GPGPU HBM HMAT HPC IDC IHV InfiniBand IoT ML NAND NIC NUMA NVDIMM PC PCI PCIe PCIe5 PGAS RAID RAS SCM SerDes smartNIC SMP TCO TLB UltraPath UPI VM
+
 Ishwar Agarwal
 
 [YouTube](https://www.youtube.com/watch?v=__iZIBEDOUo)
 
 [Text](./269)
 
+[Acronyms](./acronym.md): ACPI AI BAR BMC CEDT CFMWS CPU CXL CXL_IDE_KM CXL.cache CXL.io CXL.mem DDR DMTF DOE DSP DVSEC ECN FPGA HPA IDE IP MCTP OS PCI PCIe QoS QTG QTG_DSM RAS RCEC RCRB SMBus SPDM USB
+
 Mahesh Natu
 
 [YouTube](https://www.youtube.com/watch?v=FSMGQXVpf9M)
 
 [Text](./264)
+
+[Acronyms](./acronym.md): AI AIC BrightTrack CEM CPU CXL CXL.io CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM DSC EDSFF GPF HPA HPC LinkedIn ML MLD MSI NVM NVMe OS PCI PCIe PMEM QoS RAS RDIMM SK SLD TSV UEFI VDM YouTube
 
 Mahesh Wagh
 
@@ -541,11 +553,15 @@ Raghu Makaram
 
 [Text](./268)
 
+[Acronyms](./acronym.md): API BIOS BMC CDAT CPU CXL CXL.cache CXL.io CXL.mem DDR DRAM FM FMAPI HBM HDM HPA IO LD MCTP MLD OS PCI PCIe PM QoS SLD SMBus SoC TLP USB VM VMM YouTube
+
 Richelle Ahlvers
 
 [YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
 
 [Text](./272)
+
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 ### IntelliProp
 
@@ -555,9 +571,13 @@ Erich Hanke
 
 [Text](./62)
 
+[Acronyms](./acronym.md): ARM CXL CXL.mem HyperX IntelliProp NetworkX PFM SC21 SoC SOL VNC ZMM ZMM0 ZMM1
+
 [YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
 
 [Text](./272)
+
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 ### Meta
 
@@ -567,6 +587,8 @@ Bharath Muthiah
 
 [Text](./272)
 
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
+
 ### Microchip
 
 Ahmad Danesh
@@ -575,17 +597,23 @@ Ahmad Danesh
 
 [Text](./272)
 
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
+
 Rick Sodke
 
 [YouTube](https://www.youtube.com/watch?v=FaIK_SFe_i8)
 
 [Text](./263)
 
+[Acronyms](./acronym.md): API BIOS BMC CDAT CPU CXL CXL.cache CXL.io CXL.mem DDR DRAM FM FMAPI HBM HDM HPA IO LD MCTP MLD OS PCI PCIe PM QoS SLD SMBus SoC TLP USB VM VMM YouTube
+
 Tim Symons
 
 [YouTube](https://www.youtube.com/watch?v=5V7cro2NOn4)
 
 [Text](./261)
+
+[Acronyms](./acronym.md): AI AIC ARM AXI CEM DDR DRAM E2O EDSFF FEC FPGA GPU IntelliProp IP LinkedIn MDC NVIDIA NVMe OCP OEM PAM4 PBRS31 PCB PCI PCIe PECFF PHY PLDA RAM RF SCM SFF SI SIG SNIA SoC SSD TA ZMM ZSFF
 
 ### Microsoft
 
@@ -595,11 +623,15 @@ Glenn Ward
 
 [Text](./272)
 
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
+
 ### Nanjing Fujitsu Nanda
 
 [Ruan Shiyang](https://www.youtube.com/watch?v=CEtgd4GOYXI)
 
 [Text](./17)
+
+[Acronyms](./acronym.md): API CPU CXL DAX DIMM DMA DRAM EXT4 FS FSDAX HDD InfiniBand IOMAP LSF LVM MAP_SYNC MCE NVDIMM NVIDIA NVMe ODP OSS PFN PMDK PMEM RAID RAM RAS RDMA RefLink RWF SSD VMA XFS
 
 ### Samtec
 
@@ -609,6 +641,8 @@ Matthew Burns
 
 [Text](./261)
 
+[Acronyms](./acronym.md): AI AIC ARM AXI CEM DDR DRAM E2O EDSFF FEC FPGA GPU IntelliProp IP LinkedIn MDC NVIDIA NVMe OCP OEM PAM4 PBRS31 PCB PCI PCIe PECFF PHY PLDA RAM RF SCM SFF SI SIG SNIA SoC SSD TA ZMM ZSFF
+
 ### SK hynix
 
 Thomas Won Ha Choi
@@ -616,6 +650,8 @@ Thomas Won Ha Choi
 [YouTube](https://www.youtube.com/watch?v=FSMGQXVpf9M)
 
 [Text](./264)
+
+[Acronyms](./acronym.md): AI AIC BrightTrack CEM CPU CXL CXL.io CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM DSC EDSFF GPF HPA HPC LinkedIn ML MLD MSI NVM NVMe OS PCI PCIe PMEM QoS RAS RDIMM SK SLD TSV UEFI VDM YouTube
 
 ## 2022
 
@@ -627,11 +663,15 @@ Mahesh Wagh
 
 [Text](./13)
 
+[Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
+
 Nathan Kalyanasundharam
 
 [YouTube](https://www.youtube.com/watch?v=pHuHUeSmGGk)
 
 [Text](./13)
+
+[Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
 Robert Richter
 
@@ -639,11 +679,15 @@ Robert Richter
 
 [Text](./52)
 
+[Acronyms](./acronym.md): ACPI AER CPER CPU CXL CXL.mem DDR DOE DRAM EDAC MSI MSIX OBD OS OSC PCI PCIe RAM RAS RCD RCEC UEFI VH
+
 Sayanta Pattanayak
 
 [YouTube](https://www.youtube.com/watch?v=61wblBZO_o4)
 
 [Text](./48)
+
+[Acronyms](./acronym.md): ACPI AP ARM CBR CCG CDAT CDT CEDT CHBS CMN CXL CXL.mem DOE DRAM DSEMTS DSMAS DVSEC DXE EDK2 EFI FVP HDM HID HMAT Neoverse NUMA PCI PCIe QEMU RD RFC SBBR SCP SK SRAT UID
 
 Sid Karkare
 
@@ -651,11 +695,15 @@ Sid Karkare
 
 [Text](./277)
 
+[Acronyms](./acronym.md): AMD CPU CXL DDR DDR4 DDR5 DPU DRAM FPGA GPU HPC IDE NUMA NVMe PCIe
+
 Yazen Ghannam
 
 [YouTube](https://www.youtube.com/watch?v=vZVv7n044uo)
 
 [Text](./52)
+
+[Acronyms](./acronym.md): ACPI AER CPER CPU CXL CXL.mem DDR DOE DRAM EDAC MSI MSIX OBD OS OSC PCI PCIe RAM RAS RCD RCEC UEFI VH
 
 ### ARM
 
@@ -665,6 +713,8 @@ Parag Beeraka
 
 [Text](./273)
 
+[Acronyms](./acronym.md): AMBA ARM CAGR CCIX CHI CXL DDR DDR5 DRAM IoT NOC NVIDIA PCIe PHY QLC SOC TLC
+
 ### Ayar Labs
 
 Vladimir Stojanovic
@@ -672,6 +722,8 @@ Vladimir Stojanovic
 [YouTube](https://www.youtube.com/watch?v=1Om7kQSx6-Q)
 
 [Text](./205)
+
+[Acronyms](./acronym.md): AI CPU CWWDM CXL DDR DDR4 DDR5 GPU HBM HBM3 HPC HPE HyperX IO MSA OS PCI PCIe PLM SC SerDes SOC TCO VCSEL
 
 ### CXL Consortium
 
@@ -681,6 +733,8 @@ Siamak Tavallaei
 
 [Text](./275)
 
+[Acronyms](./acronym.md): CPU CXL DMA DRAM FLIT FPGA GenZ IDE InfiniBand IP MCTP MLD MOU NUMA OMI OpenCAPI PAM PAM4 PCIe PHY RDMA SIG SMP
+
 ### Google
 
 Jérôme Glisse
@@ -689,11 +743,15 @@ Jérôme Glisse
 
 [Text](./50)
 
+[Acronyms](./acronym.md): AMD ARM ATS BIOS CPU CXL GPU HPA IDE IOMMU IOV IP JTAG PCI SR SSL TCB TCP TEE TVM VM
+
 Willam Magro
 
 [YouTube](https://www.youtube.com/watch?v=1Om7kQSx6-Q)
 
 [Text](./205)
+
+[Acronyms](./acronym.md): AI CPU CWWDM CXL DDR DDR4 DDR5 GPU HBM HBM3 HPC HPE HyperX IO MSA OS PCI PCIe PLM SC SerDes SOC TCO VCSEL
 
 ### HPE
 
