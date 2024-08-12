@@ -349,6 +349,8 @@ Thanu Rangarajan
 
 [Text](./5)
 
+[Acronyms](./acronym.md): ACPI AI ARM BIOS CCIX CDAT CPU CXL CXL.cache CXL.io CXL.mem DDI DDR DRAM EDK EFI GPU HBM HMAT HPA HPC IO LER MCFG ML NIC NUMA OS OSC PCI PCIe PEI PHY RAS ROM SIG SP SSDT UEFI YouTube
+
 ### CXL Consortium
 
 Kurtis Bowman
@@ -356,6 +358,8 @@ Kurtis Bowman
 [YouTube](https://www.youtube.com/watch?v=RpAshNmpqLQ)
 
 [Text](./208)
+
+[Acronyms](./acronym.md): AI AMD ARM64 CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLLP DMA DRAM FLIT GPGPU HBM HPC IO IP IPR LinkedIn MESI MUX NIC OpenPower PCI PCIe PGAS PHY SIG SSD TLP USB
 
 ### Google
 
@@ -365,6 +369,8 @@ Prakash Chauhan
 
 [Text](./209)
 
+[Acronyms](./acronym.md): ACPI CPU CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DMA DRAM ECC FLIT HFT HPC IO LinkedIn LR MRAM NOP NRAM NUMA NVDIMM OS PC PCB PCI PCIe PCM RAM RAS ReRAM SAM YouTube
+
 ### Intel
 
 Debendra Das Sharma
@@ -373,19 +379,27 @@ Debendra Das Sharma
 
 [Text](./9)
 
+[Acronyms](./acronym.md): ACK AI BER BGA BIOS CEM CPU CRC CTLE DFE DLLP DLP DSP DWORD ECC FBER FEC FIT FLIT GPGPU IO IoT IP L0P MUX NACK NOP NRZ OS PAM PAM4 PC PCI PCIe PHY REF RTL SD SIG TLP UI USP VMM YouTube
+
 [YouTube](https://www.youtube.com/watch?v=RpAshNmpqLQ)
 
 [Text](./208)
 
+[Acronyms](./acronym.md): AI AMD ARM64 CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLLP DMA DRAM FLIT GPGPU HBM HPC IO IP IPR LinkedIn MESI MUX NIC OpenPower PCI PCIe PGAS PHY SIG SSD TLP USB
+
 [YouTube](https://www.youtube.com/watch?v=98ncoAyvPLk)
 
 [Text](./262)
+
+[Acronyms](./acronym.md): ACPI AI API CPU CXL CXL.cache CXL.io CXL.mem DMA DMTF DRAM FM HMAT IO IoT IP LD LD0 LD15 LinkedIn MEM MLD MMIO NIC NVMe OEM PCI PCIe PHY PPB SMB SMP SPDM SRAT SSD TCO TLB UEFI USB VCS VCS0 VPPB YouTube
 
 Mahesh Natu
 
 [YouTube](https://www.youtube.com/watch?v=jhehXwnu0Ss)
 
 [Text](./5)
+
+[Acronyms](./acronym.md): ACPI AI ARM BIOS CCIX CDAT CPU CXL CXL.cache CXL.io CXL.mem DDI DDR DRAM EDK EFI GPU HBM HMAT HPA HPC IO LER MCFG ML NIC NUMA OS OSC PCI PCIe PEI PHY RAS ROM SIG SP SSDT UEFI YouTube
 
 ### Meta
 
@@ -395,6 +409,8 @@ Chris Petersen
 
 [Text](./209)
 
+[Acronyms](./acronym.md): ACPI CPU CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DMA DRAM ECC FLIT HFT HPC IO LinkedIn LR MRAM NOP NRAM NUMA NVDIMM OS PC PCB PCI PCIe PCM RAM RAS ReRAM SAM YouTube
+
 ### Microchip
 
 Ahmad Danesh
@@ -402,6 +418,8 @@ Ahmad Danesh
 [YouTube](https://www.youtube.com/watch?v=98ncoAyvPLk)
 
 [Text](./262)
+
+[Acronyms](./acronym.md): ACPI AI API CPU CXL CXL.cache CXL.io CXL.mem DMA DMTF DRAM FM HMAT IO IoT IP LD LD0 LD15 LinkedIn MEM MLD MMIO NIC NVMe OEM PCI PCIe PHY PPB SMB SMP SPDM SRAT SSD TCO TLB UEFI USB VCS VCS0 VPPB YouTube
 
 ### Microsoft
 
@@ -411,11 +429,15 @@ Glenn Ward
 
 [Text](./208)
 
+[Acronyms](./acronym.md): AI AMD ARM64 CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLLP DMA DRAM FLIT GPGPU HBM HPC IO IP IPR LinkedIn MESI MUX NIC OpenPower PCI PCIe PGAS PHY SIG SSD TLP USB
+
 Robert Blankenship
 
 [YouTube](https://www.youtube.com/watch?v=OK7_89zm2io)
 
 [Text](./227)
+
+[Acronyms](./acronym.md): CacheFlushed CleanEvict CleanEvictNoData CLFlush CPU CXL CXL.cache CXL.io CXL.mem D2H DDR DDR4 DirtyEvict DRS ECC H2D HBM LinkedIn MESI NDR NIC PCI PGAS RdAny RdCurr RdOwn RdownNoData RdShared YouTube
 
 ## 2021
 
@@ -427,6 +449,8 @@ Casey Morrison
 
 [Text](./65)
 
+[Acronyms](./acronym.md): CPU CXL PCIe RAS SDK SoC
+
 ### Broadcom
 
 Manish Mehta
@@ -434,6 +458,8 @@ Manish Mehta
 [YouTube](https://www.youtube.com/watch?v=__iZIBEDOUo)
 
 [Text](./269)
+
+[Acronyms](./acronym.md): ACPI AI BAR BMC CEDT CFMWS CPU CXL CXL_IDE_KM CXL.cache CXL.io CXL.mem DDR DMTF DOE DSP DVSEC ECN FPGA HPA IDE IP MCTP OS PCI PCIe QoS QTG QTG_DSM RAS RCEC RCRB SMBus SPDM USB
 
 ### CXL Consortium
 
@@ -443,6 +469,8 @@ Kurtis Bowman
 
 [Text](./272)
 
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
+
 ### Fujitsu
 
 五島康文
@@ -451,6 +479,8 @@ Kurtis Bowman
 
 [Text](./17)
 
+[Acronyms](./acronym.md): API CPU CXL DAX DIMM DMA DRAM EXT4 FS FSDAX HDD InfiniBand IOMAP LSF LVM MAP_SYNC MCE NVDIMM NVIDIA NVMe ODP OSS PFN PMDK PMEM RAID RAM RAS RDMA RefLink RWF SSD VMA XFS
+
 ### HPE
 
 Jim Hull
@@ -458,6 +488,8 @@ Jim Hull
 [YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
 
 [Text](./272)
+
+[Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 Russ Herrell
 
