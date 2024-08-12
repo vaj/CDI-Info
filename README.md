@@ -237,7 +237,7 @@ Brad Benton
 
 [Text](./22)
 
-[Acronym](./acronym.md): AMD API ARM BlueLink CAPI CCIX CPU DDR DMA DSDA ESM FNVMe FPGA GenZ GPU HPE IBM InfiniBand IP MPI NIC NVLink NVMe OFA OFIWG OpenCAPI OpenPower PCI PCIe PCIE PHY PIM PRI PSL SCM SHMEM
+[Acronyms](./acronym.md): AMD API ARM BlueLink CAPI CCIX CPU DDR DMA DSDA ESM FNVMe FPGA GenZ GPU HPE IBM InfiniBand IP MPI NIC NVLink NVMe OFA OFIWG OpenCAPI OpenPower PCI PCIe PCIE PHY PIM PRI PSL SCM SHMEM
 
 ### Gen-Z Consortium
 
@@ -247,9 +247,13 @@ Brad Benton
 
 [Text](./233)
 
+[Acronyms](./acronym.md): CCIX CPU DDR DDR4 DIMM DRAM GPU InfiniBand IoT IT NV NVLink NVMe OmniPath OpenCAPI OPM PCI PCIe RDMA SAS SATA SCM SOC SRAM SSD
+
 [YouTube](https://www.youtube.com/watch?v=raed9Xxvj8Y)
 
 [Text](./234)
+
+[Acronyms](./acronym.md): API BIOS CAM CEM CPU DAX DDR DDR5 DragonFly DRAM EDSFF ENIC FatTrees FPGA GPU HMACs HPC HyperCube HyperX IEEE IP IT JEDEC LAN LPD MHS MPI NIC NVDIMM NVM NVMe OCP OEM OFI PCB PCI PCIe PCO PE PGAS PMFS RAM RDMA SCM SIG SNIA SoC SOC SSD SSF TCP TE TIK VLANs
 
 ## 2018
 
