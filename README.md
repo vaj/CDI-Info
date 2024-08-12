@@ -265,6 +265,8 @@ Paul Grun
 
 [Text](./24)
 
+[Acronyms](./acronym.md): AI API CPU DAG DRAM DreamWorks NUMA NVDIMM NVM OFA OFIWG RPM SNIA SSD TWG
+
 ### Gen-Z Consortium
 
 (unknown)
