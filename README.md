@@ -1707,6 +1707,8 @@ Sameh Boujelbene
 
 [Text](./123)
 
+[Acronyms](./acronym.md): AI CEO CXL GPU InfiniBand IO IT ML NVLink PCIe
+
 ### Enfabrica
 
 Rochan Sankar
@@ -1714,6 +1716,8 @@ Rochan Sankar
 [YouTube](https://www.youtube.com/watch?v=lixyNbXzqes)
 
 [Text](./100)
+
+[Acronyms](./acronym.md): ACF AI CPU CXL DDR DPU GPU HBM IP NIC NUMA OCP PCI PCIe RDMA RoCE SerDes SSD TCO TCP UEC
 
 ### Fraunhofer
 
@@ -1723,6 +1727,8 @@ Andy Heinig
 
 [Text](./154)
 
+[Acronyms](./acronym.md): AI AMD BoW CPU CXL D2D DDI DDR5 DRAM GPU HBM IP Jayhawk LLM NIC NVIDIA OCP ODSA OIF PC PCI PCIe PhD PoC SoC SRAM TCO
+
 ### Fujitsu
 
 五島康文
@@ -1731,11 +1737,15 @@ Andy Heinig
 
 [Text](./160)
 
+[Acronyms](./acronym.md): ACPI AMD ARM ATM BISnp BMC CCIX CDAT CPU CXL CXL.cache CXL.io CXL.mem DCOH DDR DMA DPDK DRAM FPGA GPGPU HDM HMAT I2C I3C IDE InfiniBand IP MESI MOESI NUMA NVIDIA ODP OS PBR PCI PCIe RDMA RoCE SmartNIC SMBus TCP TSP VM ZONE_MOVABLE
+
 小口 直樹
 
 [YouTube](https://www.youtube.com/watch?v=YVjM5Vy4KLo&t=4s)
 
 [Text](./162)
+
+[Acronyms](./acronym.md): AI APN ARM CAPEX CDI COTS CPS CPU CXL DCI DPU DRA GPU ICT IOWN IPU KubeCon LF LSN MIMO ML MOU NGINX NTT NVIDIA OCP OpenShift OPEX OPI OS OSS PCE PCI PCIe PoC RDMA TPU UPF US
 
 ### Google
 
@@ -1745,17 +1755,23 @@ Drew Walton
 
 [Text](./150)
 
+[Acronyms](./acronym.md): AMD API BMC CCI CLA CPER CPU CSM CSP CXL EMCA2 FMFM GPU IP JEDEC MCTP ML NVIDIA OCP OS PLDM PPR RAS SMM SoC UUID
+
 Kevin Yasumura
 
 [YouTube](https://www.youtube.com/watch?v=hRFzEkhKGzI)
 
 [Text](./105)
 
+[Acronyms](./acronym.md): CAPEX DC DCN DSP EPS LLM MEMS ML OCS SIGCOMM TPU WDM
+
 Vikram Kasivajhula
 
 [YouTube](https://www.youtube.com/watch?v=2MPqeotTESU)
 
 [Text](./138)
+
+[Acronyms](./acronym.md): AI AWS BARD BertClassifier ChatGPT CMS CPU CTO CXL DRAM GPT GPU HBM IMDB JAX KV OCP OFP8 OpenXLA PCIe PyTorch ResNet TensorFlow TL;DR
 
 ### H3 Platform
 
@@ -1765,6 +1781,8 @@ Brian Pan
 
 [Text](./81)
 
+[Acronyms](./acronym.md): API CDFP CLI CMS CPU CXL DDR DLUT GUI LTS mCPU MLC OS PCIe RESTful
+
 ### HPE
 
 David Emberson
@@ -1773,11 +1791,15 @@ David Emberson
 
 [Text](./75)
 
+[Acronyms](./acronym.md): AI AMD AP API CFD CHIPS CPU CSR CXL DDR DMA DRAM FAM GH200 GitHub HBM HDFS HP HPC HPE IBM IO IOPS IP JCL JEDEC MI300A MMAP MPI NERSC NIC NUMA NumPy NVIDIA NVMe OpenFAM PCI PM RAID RDMA SHMEM SPMV SSD
+
 Jeff Autor
 
 [YouTube](https://www.youtube.com/watch?v=mmPZYLYUP5c)
 
 [Text](./110)
+
+[Acronyms](./acronym.md): API BMC CXL DCSCM DM DMC DMTF GitHub GPU HPE I2C IO MCTP NIC OCP OpenBIC OpenRMC PCIe PLDM PMCI RAS RMC RunBMC SMC SPDM
 
 Jeffrey Hilland
 
@@ -1785,11 +1807,15 @@ Jeffrey Hilland
 
 [Text](./85)
 
+[Acronyms](./acronym.md): BIOS BMC CCI CMS CXL DIMM DMTF EID FAM FMAPI FRU GenZ GitHub HPC HPE I2C InfiniBand IO JEDEC JSON MCTP NVMe NVMeMI NVMeMI OCP OEM OFA OFMF OpenBMC OS PCI PLDM PMCI QOS RDE RDMA RESTful SIG SMC SNIA SPDM UEFI USB VDM YouTube
+
 Mike Witkowski
 
 [YouTube](https://www.youtube.com/watch?v=LF_8JZ1UKAs)
 
 [Text](./145)
+
+[Acronyms](./acronym.md): AI AMI ASPEED BMC CDFP CEM CPLD CPU CRC CRPS CXL DCM DCMHS DCSCI DCSCM DDR DDR5 DDR6 DSSI ECN EDSFF EMC FlexIO FPGA HBM HPE HPM I2C I3C IDE IO Jabil JTAG LTPI MCTP MHS MXIO NIC NVMe PCI PCIe PDB PESTI PIC RAS RTC SCM SGPIO SIF SIG SMB USB USBIF VDM XIO
 
 ### Huawei
 
@@ -1799,11 +1825,15 @@ Jonathan Cameron
 
 [Text](./132)
 
+[Acronyms](./acronym.md): ABI ARM BIOS BMC CCI CDAT CXL DC DCD DMTF DPA EDK2 FAM FM FMAPI GFD HDM I2C I3C KVM LPC MCTP MEM MMPT PCI PMEM PXB QEMU QMP RAS TCG TCP VDM
+
 Jonathan Cameron
 
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=9JyEOumYSGunsEgU&t=3753)
 
 [Text](./134)
+
+[Acronyms](./acronym.md): ABI CXL DAX DCD DPA FM HPA PMEM QEMU RFC SysFS VM
 
 ### Insyde Software
 
@@ -1813,6 +1843,8 @@ Tim Lewis
 
 [Text](./144)
 
+[Acronyms](./acronym.md): ACPI ACS AI ARM BBR BIOS BMC BSA CG1 CPU CTO DPU EDA EDK GH200 GitHub GPU IoT IP IPMI ISA LBBR LS MGX NVIDIA OCP OpenBMC OPF OSF SBBR SBMR SBSA SIE SR TCG TFA TPM UEFI
+
 ### Intel
 
 Anjaneya Chagam
@@ -1821,11 +1853,15 @@ Anjaneya Chagam
 
 [Text](./109)
 
+[Acronyms](./acronym.md): AI CMS CXL DMTF ECN FDI GitHub GPU JEDEC NVM OCP P2P SerDes
+
 Anjaneya Chagam
 
 [YouTube](https://www.youtube.com/watch?v=FdT_2Vu07jA)
 
 [Text](./113)
+
+[Acronyms](./acronym.md): AI API CMS CPU CXL DCMHS DDR DRAM FMS GPU NUMA NVM OCP SK VMM
 
 Anjaneya Chagam
 
@@ -1833,11 +1869,15 @@ Anjaneya Chagam
 
 [Text](./118)
 
+[Acronyms](./acronym.md): AI CacheBench CacheLib CCIX CEPH CMS CPU CXL CXL.io DDR DDR4 DDR5 DMTF DRAM GenZ GPU HBM HPC JEDEC LPDDR ML MLC NIC NUMA NVLink NVMe OCP OCPN OMI OpenCAPI OpenSDS OS PAM4 PCI PCIe RDMA RISC SIG SK SQL SSD TCO UCIe UEC VMware VP
+
 Antonio Hasbun
 
 [YouTube](https://www.youtube.com/watch?v=yKF84FfYBUk)
 
 [Text](./150)
+
+[Acronyms](./acronym.md): AMD API BMC CCI CLA CPER CPU CSM CSP CXL EMCA2 FMFM GPU IP JEDEC MCTP ML NVIDIA OCP OS PLDM PPR RAS SMM SoC UUID
 
 Bhushan Chitlur
 
@@ -1845,17 +1885,23 @@ Bhushan Chitlur
 
 [Text](./96)
 
+[Acronyms](./acronym.md): AI CPU CXL DDR FPGA GPU HBM IP MLC NUMA NVMe SRAM SSD TCO TMO UIUC VM
+
 Chris Gianos
 
 [YouTube](https://www.youtube.com/watch?v=g3-4K1UCpoU)
 
 [Text](./167)
 
+[Acronyms](./acronym.md): AI AMX ARM CPU CXL DDR DIMM DRAM ECC EDA EMIB FP16 HPC IO JEDEC LP MCR MUX PCH PCI PCIe RDIMM RDT UPI VAX
+
 Clara Li
 
 [YouTube](https://www.youtube.com/watch?v=YVjM5Vy4KLo&t=4s)
 
 [Text](./162)
+
+[Acronyms](./acronym.md): AI APN ARM CAPEX CDI COTS CPS CPU CXL DCI DPU DRA GPU ICT IOWN IPU KubeCon LF LSN MIMO ML MOU NGINX NTT NVIDIA OCP OpenShift OPEX OPI OS OSS PCE PCI PCIe PoC RDMA TPU UPF US
 
 Daniel Byrne
 
