@@ -275,6 +275,8 @@ Paul Grun
 
 [Text](./235)
 
+[Acronyms](./acronym.md): ACPI API ASIC BIOS CPU DDR DDR5 DIMM DRAM FPGA GPU HMACs IEEE IT LPD NVDIMM PCB PCI PCIe RAID RDMA SCM SoC SOC TIK TR VLANs ZMMU
+
 ### HPE
 
 Doug Voigt
@@ -283,6 +285,8 @@ Doug Voigt
 
 [Text](./24)
 
+[Acronyms](./acronym.md): AI API CPU DAG DRAM DreamWorks NUMA NVDIMM NVM OFA OFIWG RPM SNIA SSD TWG
+
 ### Microsoft
 
 Tom Talpey
@@ -290,6 +294,8 @@ Tom Talpey
 [YouTube](https://www.youtube.com/watch?v=oeBPzUyZbXo)
 
 [Text](./176)
+
+[Acronyms](./acronym.md): API CPU DAX DIMM GitHub IB IBTA InfiniBand IO JEDEC NIC NVDIMM NVM NVMP PCI PM PMDK PMEM QOS RAM RDMA RNIC RoCE RTL SDC SMB SMB3 SNIA SSD TWG
 
 ## 2019
 
@@ -301,6 +307,8 @@ Valerie Padilla
 
 [Text](./260)
 
+[Acronyms](./acronym.md): API BIOS CEM CPU CTO CXL DAX DDR DDR5 DIMM DRAM EMC ENIC FPGA GPU HPC IEEE InfiniBand IoT IP IT LAN LPD MHS MPI NIC NV NVDIMM NVMe NVMZ NVMz OFI OpenCAPI OS PCB PCI PCIe PECAM RAID RDMA SAS SATA SFF SoC SRAM TCP VLANs
+
 ### HPE
 
 Jim Hull
@@ -308,6 +316,8 @@ Jim Hull
 [YouTube](https://www.youtube.com/watch?v=kgcggdB3vWc)
 
 [Text](./207)
+
+[Acronyms](./acronym.md): CCIX CPU CXL DMTF GCID HPC HPE InfiniBand IOMMU IOV MMU MPI OpenCAPI PASID PCI PCIe PHY RDMA SR TLB UEFI UEPs ZMMU
 
 ### Intel
 
@@ -317,6 +327,8 @@ Alan Bumgarner
 
 [Text](./177)
 
+[Acronyms](./acronym.md): ACPI ADR API ARM CPU DMA DRAM ECN HA HMAT IBTA IETF InfiniBand NIC NVM NVMP OFIWG PCI PCIe PM PMEM QP RAID RAM RDMA RoCE SerDes SIG SMB3 SNIA SSD TWG
+
 ### Microsoft
 
 Tom Talpey
@@ -324,6 +336,8 @@ Tom Talpey
 [YouTube](https://www.youtube.com/watch?v=NJ2Zm2EpK7I)
 
 [Text](./177)
+
+[Acronyms](./acronym.md): ACPI ADR API ARM CPU DMA DRAM ECN HA HMAT IBTA IETF InfiniBand NIC NVM NVMP OFIWG PCI PCIe PM PMEM QP RAID RAM RDMA RoCE SerDes SIG SMB3 SNIA SSD TWG
 
 ## 2020
 
