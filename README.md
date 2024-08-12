@@ -2193,17 +2193,23 @@ Steve Scargall
 
 [Text](./86)
 
+[Acronyms](./acronym.md): AI AMD API ARM AutoNUMA BIOS BMC CLI CMS CPMU CPU CXL DAX DCD DCIM DRAM FM JBOM MemVerge MTCP NUMA OCP OS PCI PCM QEMU RAM RAS TPP VM
+
 Steve Scargall
 
 [YouTube](https://www.youtube.com/watch?v=OEnrIIKNxPQ)
 
 [Text](./116)
 
+[Acronyms](./acronym.md): AMD CDAT CMS CPMU CPU CXL DCIM MemVerge NUMA OCP OS PCI RAM RAS XConn
+
 Svetly Todorov
 
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=_0PHPs6A_1zRfPnG&t=12130)
 
 [Text](./137)
+
+[Acronyms](./acronym.md): CPU CXL DRAM FPGA GPL IBS LLC LSFMM MM NAND NUMA PFN PID PMU RFC SQL SSD VMA
 
 ### Meta
 
@@ -2213,11 +2219,15 @@ Anil Agrawal
 
 [Text](./232)
 
+[Acronyms](./acronym.md): AER AI BMC CPER CPU CRC CTO DC DPC ECRC EINJ GPT GPU IO IOX LCRC META ML NIC NV NVMe OCP ODM OS PCI PCIe PCIE RAS RP_PIO SMI SMM TLP UR
+
 Chenyu Xu
 
 [YouTube](https://www.youtube.com/watch?v=t72H1_4Wv8M)
 
 [Text](./143)
+
+[Acronyms](./acronym.md): ASIC BMC CPU CXL DAC DCMHS DCSCI DCSCM DNO I2C I3C IC MDNO NCSI NIC OCP ORV3 OU PCI PCIe TDP USB VNC YV4
 
 Chris Petersen
 
@@ -2225,11 +2235,15 @@ Chris Petersen
 
 [Text](./80)
 
+[Acronyms](./acronym.md): AI CEM CPU CRC CXL DRAM FEC GFAM GPU HBM OCP PCI PCIe PHY TPU XPU
+
 Damien Chong
 
 [YouTube](https://www.youtube.com/watch?v=dWHF6-88Rh8)
 
 [Text](./141)
+
+[Acronyms](./acronym.md): AMD CLA CXL DCMHS ExaMax HPM I2C I3C IO MHS NIC OCP PCIe PMM SIF USB
 
 Darron Young
 
@@ -2237,11 +2251,15 @@ Darron Young
 
 [Text](./124)
 
+[Acronyms](./acronym.md): AI CPO CWDM4 DSP FEC FR4 FR8 LPO OCP OMA ROI TX UCIe
+
 Dharmesh Jani
 
 [YouTube](https://www.youtube.com/watch?v=j2Ui3mG9wEE)
 
 [Text](./107)
+
+[Acronyms](./acronym.md): AI CXL CXL.io DCMHS GPU IO ML OAI OCP PCIe XPU
 
 Gada Badeer
 
@@ -2249,11 +2267,15 @@ Gada Badeer
 
 [Text](./232)
 
+[Acronyms](./acronym.md): AER AI BMC CPER CPU CRC CTO DC DPC ECRC EINJ GPT GPU IO IOX LCRC META ML NIC NV NVMe OCP ODM OS PCI PCIe PCIE RAS RP_PIO SMI SMM TLP UR
+
 Janet Chen
 
 [YouTube](https://www.youtube.com/watch?v=zU0xhhES5VE)
 
 [Text](./128)
+
+[Acronyms](./acronym.md): AGC AI ASIC BER C2M CPO DCA DSP ER FR FR4 IEEE ISI LMS LPO ML MPN MVP OCP PAM4 RF RLM RX RxFFE TBD TDECQ TECQ TIA TP1 TP1a TP2 TP3 TP4 TP4a TX TxFIR
 
 Jeremy Baumgartner
 
@@ -2261,11 +2283,15 @@ Jeremy Baumgartner
 
 [Text](./231)
 
+[Acronyms](./acronym.md): AC AI AMD BGA CPU DC DCSCM DVT EVT GPU HGX LED LLM ML NVIDIA OAM OCP OU PCB PCIe PDR QR SCM SI TCO UBB
+
 Kiran Vemuri
 
 [YouTube](https://www.youtube.com/watch?v=YWxVJkBKdVs)
 
 [Text](./92)
+
+[Acronyms](./acronym.md): API ASIC BMC CAD CMS CPU CXL DCMHS DCO DDR4 DDR5 DRAM HBM I2C MCIO MSIF OCP PCI PCIe PMM QSFP RDIMM SNIA USB
 
 Kiran Vemuri
 
@@ -2273,11 +2299,15 @@ Kiran Vemuri
 
 [Text](./143)
 
+[Acronyms](./acronym.md): ASIC BMC CPU CXL DAC DCMHS DCSCI DCSCM DNO I2C I3C IC MDNO NCSI NIC OCP ORV3 OU PCI PCIe TDP USB VNC YV4
+
 Manoj Wadekar
 
 [YouTube](https://www.youtube.com/watch?v=AtqYcdHUtOA)
 
 [Text](./109)
+
+[Acronyms](./acronym.md): AI CMS CXL DMTF ECN FDI GitHub GPU JEDEC NVM OCP P2P SerDes
 
 Manoj Wadekar
 
@@ -2285,11 +2315,15 @@ Manoj Wadekar
 
 [Text](./111)
 
+[Acronyms](./acronym.md): AI ARM ChatGPT CMS CPU CXL DDR4 DDR5 DRAM GenAI GPU HBM LLAMA PCI QPS RDMA SLA TCO VM
+
 Manoj Wadekar
 
 [YouTube](https://www.youtube.com/watch?v=hHnLyIouQg4)
 
 [Text](./118)
+
+[Acronyms](./acronym.md): AI CacheBench CacheLib CCIX CEPH CMS CPU CXL CXL.io DDR DDR4 DDR5 DMTF DRAM GenZ GPU HBM HPC JEDEC LPDDR ML MLC NIC NUMA NVLink NVMe OCP OCPN OMI OpenCAPI OpenSDS OS PAM4 PCI PCIe RDMA RISC SIG SK SQL SSD TCO UCIe UEC VMware VP
 
 Manoj Wadekar
 
@@ -2297,11 +2331,15 @@ Manoj Wadekar
 
 [Text](./138)
 
+[Acronyms](./acronym.md): AI AWS BARD BertClassifier ChatGPT CMS CPU CTO CXL DRAM GPT GPU HBM IMDB JAX KV OCP OFP8 OpenXLA PCIe PyTorch ResNet TensorFlow TL;DR
+
 Matt Bowman
 
 [YouTube](https://www.youtube.com/watch?v=fmXfWad-NiA)
 
 [Text](./231)
+
+[Acronyms](./acronym.md): AC AI AMD BGA CPU DC DCSCM DVT EVT GPU HGX LED LLM ML NVIDIA OAM OCP OU PCB PCIe PDR QR SCM SI TCO UBB
 
 Prakash Chauhan
 
@@ -2309,17 +2347,23 @@ Prakash Chauhan
 
 [Text](./80)
 
+[Acronyms](./acronym.md): AI CEM CPU CRC CXL DRAM FEC GFAM GPU HBM OCP PCI PCIe PHY TPU XPU
+
 Qing Wang
 
 [YouTube](https://www.youtube.com/watch?v=zU0xhhES5VE)
 
 [Text](./128)
 
+[Acronyms](./acronym.md): AGC AI ASIC BER C2M CPO DCA DSP ER FR FR4 IEEE ISI LMS LPO ML MPN MVP OCP PAM4 RF RLM RX RxFFE TBD TDECQ TECQ TIA TP1 TP1a TP2 TP3 TP4 TP4a TX TxFIR
+
 Yishen Huang
 
 [YouTube](https://www.youtube.com/watch?v=zU0xhhES5VE)
 
 [Text](./128)
+
+[Acronyms](./acronym.md): AGC AI ASIC BER C2M CPO DCA DSP ER FR FR4 IEEE ISI LMS LPO ML MPN MVP OCP PAM4 RF RLM RX RxFFE TBD TDECQ TECQ TIA TP1 TP1a TP2 TP3 TP4 TP4a TX TxFIR
 
 ### Microchip
 
@@ -2329,11 +2373,15 @@ Sanketh Srinivas
 
 [Text](./97)
 
+[Acronyms](./acronym.md): AI BIST CPU CXL DDR DDR4 DDR5 DIMM DRAM ECC GFAM GFD GPU IOV ML NDA NRZ NVDIMM PAM4 PCB PCI PCIe RAS SoC SR TCO
+
 Tam Do
 
 [YouTube](https://www.youtube.com/watch?v=VCYSzBFCBnQ)
 
 [Text](./97)
+
+[Acronyms](./acronym.md): AI BIST CPU CXL DDR DDR4 DDR5 DIMM DRAM ECC GFAM GFD GPU IOV ML NDA NRZ NVDIMM PAM4 PCB PCI PCIe RAS SoC SR TCO
 
 ### Micron Technology
 
@@ -2343,17 +2391,23 @@ John Groves
 
 [Text](./135)
 
+[Acronyms](./acronym.md): AI API CLI CXL DAX DRAM FAM FSDAX IOMAP MMAP NumPy PMEM POSIX RAMFS RFC S_DAX TLB VFS VMA XFS
+
 John Groves
 
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=VmasazzvHpIVGMgM&t=10546)
 
 [Text](./136)
 
+[Acronyms](./acronym.md): BIOS CMM CPU CXL DDR DRAM HMAT IsoCapacity MEM MVP NUMA OCP OS RFC TLB VMA
+
 Poorna Kale
 
 [YouTube](https://www.youtube.com/watch?v=IxDPEThzgmA)
 
 [Text](./103)
+
+[Acronyms](./acronym.md): AI AIC AMD ASIC CEM CPU CXL CZ120 DDR DDR4 DDR5 DLRM DRAM FMS HANA MemVerge ML MLC NUMA OLAP OS PCIe SAP SDK SQL TPC TPCH XConn
 
 Ravi Kiran Gummaluri
 
