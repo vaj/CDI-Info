@@ -2681,6 +2681,8 @@ Mohamad El-Batal
 
 [Text](./95)
 
+[Acronyms](./acronym.md): AEC AOC CDFP CPU CXL DAC DOC FEC GPU MPO NUMA NVMe OCP PAM4 PCI PCIe QSFP QSFPDD SFF SIG SN SNIA TCO
+
 ### SK hynix
 
 Don Moon
@@ -2689,11 +2691,15 @@ Don Moon
 
 [Text](./115)
 
+[Acronyms](./acronym.md): BKC CDN CentOS CPU CXL DDR DDR5 DRAM DSA GitHub HMSDK KV LRU NUMA NVMe OS PCIe SK
+
 Hoshik Kim
 
 [YouTube](https://www.youtube.com/watch?v=pbnTlY41h08)
 
 [Text](./139)
+
+[Acronyms](./acronym.md): AI CMS CMSDK CPU CXL DAMON DIMM DRAM FMS GitHub HMSDK IO LightingDB NAND OCP RAID RDMA SK SoC SSD TCP TLB
 
 Jungmin Choi
 
@@ -2701,11 +2707,15 @@ Jungmin Choi
 
 [Text](./90)
 
+[Acronyms](./acronym.md): AI ASIC CPU CXL CXL.mem DCD DCS DDR4 FPGA MemVerge MPU NVMe PMM SK SWMR VM
+
 Yongkee Kwon
 
 [YouTube](https://www.youtube.com/watch?v=07JjXXd-0ao)
 
 [Text](./161)
+
+[Acronyms](./acronym.md): AI AiM ASIC BF16 BLAS DDR5 DM DRAM ECC FP32 FPGA GDDR GDDR6 GEMM GEMV GPT GPU HBM HBM3 LLAMA LPDDR LPDDR5 MAC MLIR NPU NVIDIA ONNX OPT PCIe PhD POC PyTorch SK UT VR
 
 ### SMART Modular Technologies
 
@@ -2715,17 +2725,23 @@ Andy Mills
 
 [Text](./70)
 
+[Acronyms](./acronym.md): ACPI AMD CMS CPU CXL DDR DDR5 DIMM E3S EFI FDDI HA HBM HCI HPC IBM IO IOPS JBOD JBOM JSON LAN LBA MemVerge MP3 NUMA NV NVMe OCP OMI OS PC PCIe PhD RAID RAM RESTful RPO RTO SAN SATA SSD USB VMAP VMware
+
 Andy Mills
 
 [YouTube](https://www.youtube.com/watch?v=XpH5PJnVnQw)
 
 [Text](./117)
 
+[Acronyms](./acronym.md): AMD API CMS CPU CXL DDR DDR5 DIMM HA HBM HPE IO IOPS JBOM JSON KVM NUMA NVMe OCP OMI OpenCAPI PCIe RESTful RPO RTO SGH SMART SSD VMAP VMware XConn
+
 Arthur Sainio
 
 [YouTube](https://www.youtube.com/watch?v=Upbpuma5cB8)
 
 [Text](./104)
+
+[Acronyms](./acronym.md): AI CCIX CPU CXL DDIMM DDR3 DDR4 DDR5 DIMM DRAM FMS LED MemVerge NV NVDIMM OCP OpenCAPI SMART SNIA TCO XConn
 
 ### Solidigm
 
@@ -2735,6 +2751,8 @@ Jason Molgaard
 
 [Text](./74)
 
+[Acronyms](./acronym.md): AMD API ARM ATS BSD3 CMB CPU CS CXL DMA DRAM FPGA GPU IO IOMMU MMIO NVM NVMe OS PCI PCIe PMR PRI QEMU QoS RISC SDXI SIG SLM SNIA TWG VM
+
 ### TE Connectivity
 
 Brian Costello
@@ -2743,17 +2761,23 @@ Brian Costello
 
 [Text](./91)
 
+[Acronyms](./acronym.md): AI CDFP CEM CMOS CopperLink CPU CXL EWG H3C HD INF JBOG JBOM MSA NIC OCP OSFP PCB PCIe SAS SFF SIG SNIA TA TA1034 TE XD XY
+
 Christopher Blackburn
 
 [YouTube](https://www.youtube.com/watch?v=grWlLw02c3E)
 
 [Text](./91)
 
+[Acronyms](./acronym.md): AI CDFP CEM CMOS CopperLink CPU CXL EWG H3C HD INF JBOG JBOM MSA NIC OCP OSFP PCB PCIe SAS SFF SIG SNIA TA TA1034 TE XD XY
+
 Christopher Blackburn
 
 [YouTube](https://www.youtube.com/watch?v=YTqsWu_ta6s)
 
 [Text](./101)
+
+[Acronyms](./acronym.md): CEM CMA CXL DCMHS DCSCM DRAM E1L E1S EDSFF HPM MCIO MXIO NIC OCP PCIe PMM SC23 SFF SI SNIA SSD TA TA1002 TE XY
 
 ### Uber
 
@@ -2763,11 +2787,15 @@ Baojun Liu
 
 [Text](./108)
 
+[Acronyms](./acronym.md): AI API CPU CUDA CXL DeepSpeed DGX DIMM ETA GenAI GPU InfiniBand LLM MFU ML NCCL NVIDIA NVLink NVMe OCP XGBoost ZeRO-Infinity
+
 Bo Ling
 
 [YouTube](https://www.youtube.com/watch?v=Ju0r8yU1_Lw)
 
 [Text](./108)
+
+[Acronyms](./acronym.md): AI API CPU CUDA CXL DeepSpeed DGX DIMM ETA GenAI GPU InfiniBand LLM MFU ML NCCL NVIDIA NVLink NVMe OCP XGBoost ZeRO-Infinity
 
 Navneeth Kankani
 
@@ -2775,17 +2803,23 @@ Navneeth Kankani
 
 [Text](./108)
 
+[Acronyms](./acronym.md): AI API CPU CUDA CXL DeepSpeed DGX DIMM ETA GenAI GPU InfiniBand LLM MFU ML NCCL NVIDIA NVLink NVMe OCP XGBoost ZeRO-Infinity
+
 Vikrant Soman
 
 [YouTube](https://www.youtube.com/watch?v=SWM8XjsQv5o)
 
 [Text](./112)
 
+[Acronyms](./acronym.md): CPU CXL DDR DDR5 DRAM IPC MLC NUMA SPEC TCO VM
+
 Vikrant Soman
 
 [YouTube](https://www.youtube.com/watch?v=FdT_2Vu07jA)
 
 [Text](./113)
+
+[Acronyms](./acronym.md): AI API CMS CPU CXL DCMHS DDR DRAM FMS GPU NUMA NVM OCP SK VMM
 
 ### UCLA
 
