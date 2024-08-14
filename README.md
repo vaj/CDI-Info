@@ -695,7 +695,9 @@ Glenn Ward
 
 ### Nanjing Fujitsu Nanda
 
-[Ruan Shiyang](https://www.youtube.com/watch?v=CEtgd4GOYXI)
+Ruan Shiyang
+
+[YouTube](https://www.youtube.com/watch?v=CEtgd4GOYXI)
 
 [Text](./17)
 
