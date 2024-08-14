@@ -237,6 +237,8 @@ Brad Benton
 
 [Text](./22)
 
+[Article](https://github.com/vaj/CDI-Articles#22)
+
 [Acronyms](./acronym.md): AMD API ARM BlueLink CAPI CCIX CPU DDR DMA DSDA ESM FNVMe FPGA GenZ GPU HPE IBM InfiniBand IP MPI NIC NVLink NVMe OFA OFIWG OpenCAPI OpenPower PCI PCIe PCIE PHY PIM PRI PSL SCM SHMEM
 
 ### Gen-Z Consortium
@@ -265,6 +267,8 @@ Paul Grun
 
 [Text](./24)
 
+[Article](https://github.com/vaj/CDI-Articles#24)
+
 [Acronyms](./acronym.md): AI API CPU DAG DRAM DreamWorks NUMA NVDIMM NVM OFA OFIWG RPM SNIA SSD TWG
 
 ### Gen-Z Consortium
@@ -285,6 +289,8 @@ Doug Voigt
 
 [Text](./24)
 
+[Article](https://github.com/vaj/CDI-Articles#24)
+
 [Acronyms](./acronym.md): AI API CPU DAG DRAM DreamWorks NUMA NVDIMM NVM OFA OFIWG RPM SNIA SSD TWG
 
 ### Microsoft
@@ -294,6 +300,8 @@ Tom Talpey
 [YouTube](https://www.youtube.com/watch?v=oeBPzUyZbXo)
 
 [Text](./176)
+
+[Article](https://github.com/vaj/CDI-Articles#176)
 
 [Acronyms](./acronym.md): API CPU DAX DIMM GitHub IB IBTA InfiniBand IO JEDEC NIC NVDIMM NVM NVMP PCI PM PMDK PMEM QOS RAM RDMA RNIC RoCE RTL SDC SMB SMB3 SNIA SSD TWG
 
@@ -317,6 +325,8 @@ Jim Hull
 
 [Text](./207)
 
+[Article](https://github.com/vaj/CDI-Articles#207)
+
 [Acronyms](./acronym.md): CCIX CPU CXL DMTF GCID HPC HPE InfiniBand IOMMU IOV MMU MPI OpenCAPI PASID PCI PCIe PHY RDMA SR TLB UEFI UEPs ZMMU
 
 ### Intel
@@ -327,6 +337,8 @@ Alan Bumgarner
 
 [Text](./177)
 
+[Article](https://github.com/vaj/CDI-Articles#177)
+
 [Acronyms](./acronym.md): ACPI ADR API ARM CPU DMA DRAM ECN HA HMAT IBTA IETF InfiniBand NIC NVM NVMP OFIWG PCI PCIe PM PMEM QP RAID RAM RDMA RoCE SerDes SIG SMB3 SNIA SSD TWG
 
 ### Microsoft
@@ -336,6 +348,8 @@ Tom Talpey
 [YouTube](https://www.youtube.com/watch?v=NJ2Zm2EpK7I)
 
 [Text](./177)
+
+[Article](https://github.com/vaj/CDI-Articles#177)
 
 [Acronyms](./acronym.md): ACPI ADR API ARM CPU DMA DRAM ECN HA HMAT IBTA IETF InfiniBand NIC NVM NVMP OFIWG PCI PCIe PM PMEM QP RAID RAM RDMA RoCE SerDes SIG SMB3 SNIA SSD TWG
 
@@ -359,6 +373,8 @@ Kurtis Bowman
 
 [Text](./208)
 
+[Article](https://github.com/vaj/CDI-Articles#208)
+
 [Acronyms](./acronym.md): AI AMD ARM64 CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLLP DMA DRAM FLIT GPGPU HBM HPC IO IP IPR LinkedIn MESI MUX NIC OpenPower PCI PCIe PGAS PHY SIG SSD TLP USB
 
 ### Google
@@ -368,6 +384,8 @@ Prakash Chauhan
 [YouTube](https://www.youtube.com/watch?v=eI1PhzRau40)
 
 [Text](./209)
+
+[Article](https://github.com/vaj/CDI-Articles#209)
 
 [Acronyms](./acronym.md): ACPI CPU CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DMA DRAM ECC FLIT HFT HPC IO LinkedIn LR MRAM NOP NRAM NUMA NVDIMM OS PC PCB PCI PCIe PCM RAM RAS ReRAM SAM YouTube
 
@@ -379,17 +397,23 @@ Debendra Das Sharma
 
 [Text](./9)
 
+[Article](https://github.com/vaj/CDI-Articles#9)
+
 [Acronyms](./acronym.md): ACK AI BER BGA BIOS CEM CPU CRC CTLE DFE DLLP DLP DSP DWORD ECC FBER FEC FIT FLIT GPGPU IO IoT IP L0P MUX NACK NOP NRZ OS PAM PAM4 PC PCI PCIe PHY REF RTL SD SIG TLP UI USP VMM YouTube
 
 [YouTube](https://www.youtube.com/watch?v=RpAshNmpqLQ)
 
 [Text](./208)
 
+[Article](https://github.com/vaj/CDI-Articles#208)
+
 [Acronyms](./acronym.md): AI AMD ARM64 CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLLP DMA DRAM FLIT GPGPU HBM HPC IO IP IPR LinkedIn MESI MUX NIC OpenPower PCI PCIe PGAS PHY SIG SSD TLP USB
 
 [YouTube](https://www.youtube.com/watch?v=98ncoAyvPLk)
 
 [Text](./262)
+
+[Article](https://github.com/vaj/CDI-Articles#262)
 
 [Acronyms](./acronym.md): ACPI AI API CPU CXL CXL.cache CXL.io CXL.mem DMA DMTF DRAM FM HMAT IO IoT IP LD LD0 LD15 LinkedIn MEM MLD MMIO NIC NVMe OEM PCI PCIe PHY PPB SMB SMP SPDM SRAT SSD TCO TLB UEFI USB VCS VCS0 VPPB YouTube
 
@@ -409,6 +433,8 @@ Chris Petersen
 
 [Text](./209)
 
+[Article](https://github.com/vaj/CDI-Articles#209)
+
 [Acronyms](./acronym.md): ACPI CPU CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DMA DRAM ECC FLIT HFT HPC IO LinkedIn LR MRAM NOP NRAM NUMA NVDIMM OS PC PCB PCI PCIe PCM RAM RAS ReRAM SAM YouTube
 
 ### Microchip
@@ -418,6 +444,8 @@ Ahmad Danesh
 [YouTube](https://www.youtube.com/watch?v=98ncoAyvPLk)
 
 [Text](./262)
+
+[Article](https://github.com/vaj/CDI-Articles#262)
 
 [Acronyms](./acronym.md): ACPI AI API CPU CXL CXL.cache CXL.io CXL.mem DMA DMTF DRAM FM HMAT IO IoT IP LD LD0 LD15 LinkedIn MEM MLD MMIO NIC NVMe OEM PCI PCIe PHY PPB SMB SMP SPDM SRAT SSD TCO TLB UEFI USB VCS VCS0 VPPB YouTube
 
@@ -429,6 +457,8 @@ Glenn Ward
 
 [Text](./208)
 
+[Article](https://github.com/vaj/CDI-Articles#208)
+
 [Acronyms](./acronym.md): AI AMD ARM64 CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLLP DMA DRAM FLIT GPGPU HBM HPC IO IP IPR LinkedIn MESI MUX NIC OpenPower PCI PCIe PGAS PHY SIG SSD TLP USB
 
 Robert Blankenship
@@ -436,6 +466,8 @@ Robert Blankenship
 [YouTube](https://www.youtube.com/watch?v=OK7_89zm2io)
 
 [Text](./227)
+
+[Article](https://github.com/vaj/CDI-Articles#227)
 
 [Acronyms](./acronym.md): CacheFlushed CleanEvict CleanEvictNoData CLFlush CPU CXL CXL.cache CXL.io CXL.mem D2H DDR DDR4 DirtyEvict DRS ECC H2D HBM LinkedIn MESI NDR NIC PCI PGAS RdAny RdCurr RdOwn RdownNoData RdShared YouTube
 
@@ -459,6 +491,8 @@ Manish Mehta
 
 [Text](./269)
 
+[Article](https://github.com/vaj/CDI-Articles#269)
+
 [Acronyms](./acronym.md): ACPI AI BAR BMC CEDT CFMWS CPU CXL CXL_IDE_KM CXL.cache CXL.io CXL.mem DDR DMTF DOE DSP DVSEC ECN FPGA HPA IDE IP MCTP OS PCI PCIe QoS QTG QTG_DSM RAS RCEC RCRB SMBus SPDM USB
 
 ### CXL Consortium
@@ -468,6 +502,8 @@ Kurtis Bowman
 [YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
 
 [Text](./272)
+
+[Article](https://github.com/vaj/CDI-Articles#272)
 
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
@@ -479,6 +515,8 @@ Kurtis Bowman
 
 [Text](./17)
 
+[Article](https://github.com/vaj/CDI-Articles#17)
+
 [Acronyms](./acronym.md): API CPU CXL DAX DIMM DMA DRAM EXT4 FS FSDAX HDD InfiniBand IOMAP LSF LVM MAP_SYNC MCE NVDIMM NVIDIA NVMe ODP OSS PFN PMDK PMEM RAID RAM RAS RDMA RefLink RWF SSD VMA XFS
 
 ### HPE
@@ -489,6 +527,8 @@ Jim Hull
 
 [Text](./272)
 
+[Article](https://github.com/vaj/CDI-Articles#272)
+
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 Russ Herrell
@@ -496,6 +536,8 @@ Russ Herrell
 [YouTube](https://www.youtube.com/watch?v=LUwnmrH3P9c)
 
 [Text](./64)
+
+[Article](https://github.com/vaj/CDI-Articles#64)
 
 [Acronyms](./acronym.md): CLI CXL DAX FIFO FM HTTP OFMF POC RESTful SMEM SOC VM ZMM
 
@@ -507,6 +549,8 @@ Ben Widawsky
 
 [Text](./58)
 
+[Article](https://github.com/vaj/CDI-Articles#58)
+
 [Acronyms](./acronym.md): ABI ACPI ARM BIOS CCIX COVID CPU CXL CXL.cache CXL.io CXL.mem DDR DOE DSM EDK2 HCI HDM IG IRC LSA MMIO NDA NFIT NVDIMM NVMe OS OVMF PCI PCIe PMEM PMP0A08 QEMU REST RP USB
 
 David Harriman
@@ -514,6 +558,8 @@ David Harriman
 [YouTube](https://www.youtube.com/watch?v=PV6FJZ3wJGM)
 
 [Text](./268)
+
+[Article](https://github.com/vaj/CDI-Articles#268)
 
 [Acronyms](./acronym.md): AD AES CRC CXL CXL.cache CXL.io CXL.mem DLLP DMTF DOE ECN EDPC GCM IDE IP IV LAI LinkedIn MAC MCTP MEM MLD PCI PCIe RX SMbus SPDM TCB TLP TMAC TX XOR YouTube
 
@@ -523,6 +569,8 @@ Debendra Das Sharma
 
 [Text](./3)
 
+[Article](https://github.com/vaj/CDI-Articles#3)
+
 [Acronyms](./acronym.md): AI API CPU CXL CXL.cache CXL.io DDR DIMM DMA DRAM GPGPU HBM HMAT HPC IDC IHV InfiniBand IoT ML NAND NIC NUMA NVDIMM PC PCI PCIe PCIe5 PGAS RAID RAS SCM SerDes smartNIC SMP TCO TLB UltraPath UPI VM
 
 Ishwar Agarwal
@@ -530,6 +578,8 @@ Ishwar Agarwal
 [YouTube](https://www.youtube.com/watch?v=__iZIBEDOUo)
 
 [Text](./269)
+
+[Article](https://github.com/vaj/CDI-Articles#269)
 
 [Acronyms](./acronym.md): ACPI AI BAR BMC CEDT CFMWS CPU CXL CXL_IDE_KM CXL.cache CXL.io CXL.mem DDR DMTF DOE DSP DVSEC ECN FPGA HPA IDE IP MCTP OS PCI PCIe QoS QTG QTG_DSM RAS RCEC RCRB SMBus SPDM USB
 
@@ -539,6 +589,8 @@ Mahesh Natu
 
 [Text](./264)
 
+[Article](https://github.com/vaj/CDI-Articles#264)
+
 [Acronyms](./acronym.md): AI AIC BrightTrack CEM CPU CXL CXL.io CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM DSC EDSFF GPF HPA HPC LinkedIn ML MLD MSI NVM NVMe OS PCI PCIe PMEM QoS RAS RDIMM SK SLD TSV UEFI VDM YouTube
 
 Mahesh Wagh
@@ -547,11 +599,15 @@ Mahesh Wagh
 
 [Text](./263)
 
+[Article](https://github.com/vaj/CDI-Articles#263)
+
 Raghu Makaram
 
 [YouTube](https://www.youtube.com/watch?v=PV6FJZ3wJGM)
 
 [Text](./268)
+
+[Article](https://github.com/vaj/CDI-Articles#268)
 
 [Acronyms](./acronym.md): API BIOS BMC CDAT CPU CXL CXL.cache CXL.io CXL.mem DDR DRAM FM FMAPI HBM HDM HPA IO LD MCTP MLD OS PCI PCIe PM QoS SLD SMBus SoC TLP USB VM VMM YouTube
 
@@ -560,6 +616,8 @@ Richelle Ahlvers
 [YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
 
 [Text](./272)
+
+[Article](https://github.com/vaj/CDI-Articles#272)
 
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
@@ -577,6 +635,8 @@ Erich Hanke
 
 [Text](./272)
 
+[Article](https://github.com/vaj/CDI-Articles#272)
+
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 ### Meta
@@ -586,6 +646,8 @@ Bharath Muthiah
 [YouTube](https://www.youtube.com/watch?v=tJ3-edJQ_so)
 
 [Text](./272)
+
+[Article](https://github.com/vaj/CDI-Articles#272)
 
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
@@ -597,6 +659,8 @@ Ahmad Danesh
 
 [Text](./272)
 
+[Article](https://github.com/vaj/CDI-Articles#272)
+
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 Rick Sodke
@@ -604,6 +668,8 @@ Rick Sodke
 [YouTube](https://www.youtube.com/watch?v=FaIK_SFe_i8)
 
 [Text](./263)
+
+[Article](https://github.com/vaj/CDI-Articles#263)
 
 [Acronyms](./acronym.md): API BIOS BMC CDAT CPU CXL CXL.cache CXL.io CXL.mem DDR DRAM FM FMAPI HBM HDM HPA IO LD MCTP MLD OS PCI PCIe PM QoS SLD SMBus SoC TLP USB VM VMM YouTube
 
@@ -623,6 +689,8 @@ Glenn Ward
 
 [Text](./272)
 
+[Article](https://github.com/vaj/CDI-Articles#272)
+
 [Acronyms](./acronym.md): ACPI AI AMD ASIC CPU CXL CXL.io CXL.mem DDR DDR4 DDR5 DMTF DRAM EDSFF FPGA GitHub HBM HMAT IDE IntelliProp LinkedIn MOU NUMA OCP OEM OFA PCIe PHY RAS SC SFF SNIA SPDM SuperCompute TCO VM
 
 ### Nanjing Fujitsu Nanda
@@ -630,6 +698,8 @@ Glenn Ward
 [Ruan Shiyang](https://www.youtube.com/watch?v=CEtgd4GOYXI)
 
 [Text](./17)
+
+[Article](https://github.com/vaj/CDI-Articles#17)
 
 [Acronyms](./acronym.md): API CPU CXL DAX DIMM DMA DRAM EXT4 FS FSDAX HDD InfiniBand IOMAP LSF LVM MAP_SYNC MCE NVDIMM NVIDIA NVMe ODP OSS PFN PMDK PMEM RAID RAM RAS RDMA RefLink RWF SSD VMA XFS
 
@@ -651,6 +721,8 @@ Thomas Won Ha Choi
 
 [Text](./264)
 
+[Article](https://github.com/vaj/CDI-Articles#264)
+
 [Acronyms](./acronym.md): AI AIC BrightTrack CEM CPU CXL CXL.io CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM DSC EDSFF GPF HPA HPC LinkedIn ML MLD MSI NVM NVMe OS PCI PCIe PMEM QoS RAS RDIMM SK SLD TSV UEFI VDM YouTube
 
 ## 2022
@@ -663,6 +735,8 @@ Mahesh Wagh
 
 [Text](./13)
 
+[Article](https://github.com/vaj/CDI-Articles#13)
+
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
 Nathan Kalyanasundharam
@@ -670,6 +744,8 @@ Nathan Kalyanasundharam
 [YouTube](https://www.youtube.com/watch?v=pHuHUeSmGGk)
 
 [Text](./13)
+
+[Article](https://github.com/vaj/CDI-Articles#13)
 
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
@@ -679,6 +755,8 @@ Robert Richter
 
 [Text](./52)
 
+[Article](https://github.com/vaj/CDI-Articles#52)
+
 [Acronyms](./acronym.md): ACPI AER CPER CPU CXL CXL.mem DDR DOE DRAM EDAC MSI MSIX OBD OS OSC PCI PCIe RAM RAS RCD RCEC UEFI VH
 
 Sayanta Pattanayak
@@ -686,6 +764,8 @@ Sayanta Pattanayak
 [YouTube](https://www.youtube.com/watch?v=61wblBZO_o4)
 
 [Text](./48)
+
+[Article](https://github.com/vaj/CDI-Articles#48)
 
 [Acronyms](./acronym.md): ACPI AP ARM CBR CCG CDAT CDT CEDT CHBS CMN CXL CXL.mem DOE DRAM DSEMTS DSMAS DVSEC DXE EDK2 EFI FVP HDM HID HMAT Neoverse NUMA PCI PCIe QEMU RD RFC SBBR SCP SK SRAT UID
 
@@ -695,6 +775,8 @@ Sid Karkare
 
 [Text](./277)
 
+[Article](https://github.com/vaj/CDI-Articles#277)
+
 [Acronyms](./acronym.md): AMD CPU CXL DDR DDR4 DDR5 DPU DRAM FPGA GPU HPC IDE NUMA NVMe PCIe
 
 Yazen Ghannam
@@ -702,6 +784,8 @@ Yazen Ghannam
 [YouTube](https://www.youtube.com/watch?v=vZVv7n044uo)
 
 [Text](./52)
+
+[Article](https://github.com/vaj/CDI-Articles#52)
 
 [Acronyms](./acronym.md): ACPI AER CPER CPU CXL CXL.mem DDR DOE DRAM EDAC MSI MSIX OBD OS OSC PCI PCIe RAM RAS RCD RCEC UEFI VH
 
@@ -733,6 +817,8 @@ Siamak Tavallaei
 
 [Text](./275)
 
+[Article](https://github.com/vaj/CDI-Articles#275)
+
 [Acronyms](./acronym.md): CPU CXL DMA DRAM FLIT FPGA GenZ IDE InfiniBand IP MCTP MLD MOU NUMA OMI OpenCAPI PAM PAM4 PCIe PHY RDMA SIG SMP
 
 ### Google
@@ -742,6 +828,8 @@ Jérôme Glisse
 [YouTube](https://www.youtube.com/watch?v=x0uksfEPedo)
 
 [Text](./50)
+
+[Article](https://github.com/vaj/CDI-Articles#50)
 
 [Acronyms](./acronym.md): AMD ARM ATS BIOS CPU CXL GPU HPA IDE IOMMU IOV IP JTAG PCI SR SSL TCB TCP TEE TVM VM
 
@@ -771,6 +859,8 @@ Jonathan Cameron
 
 [Text](./26)
 
+[Article](https://github.com/vaj/CDI-Articles#26)
+
 [Acronyms](./acronym.md): ACPI API ARM BMC CCI CDAT CFMWS CPMU CXL DMTF DOE EDK2 FM HDM HMAT NUMA OS PCI PMU QEMU RAS RFC SPDM
 
 Jonathan Cameron
@@ -778,6 +868,8 @@ Jonathan Cameron
 [YouTube](https://www.youtube.com/watch?v=pAiNeCZd2rQ)
 
 [Text](./49)
+
+[Article](https://github.com/vaj/CDI-Articles#49)
 
 [Acronyms](./acronym.md): ACPI API ARM CDT CXL DAX DCD DPA FVP HDM HPA KMEM NUMA OS PCI QEMU RAM RFC TCO TCP UUID VertIO VM
 
@@ -789,6 +881,8 @@ Debendra Das Sharma
 
 [Text](./271)
 
+[Article](https://github.com/vaj/CDI-Articles#271)
+
 [Acronyms](./acronym.md): ACK ASIC BI CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLP DRAM E2O2E FEC FLIT FPGA GFAM GPGPU HBM HBR HDM HPC IDE IO LinkedIn MESI MLD NIC PAM PBR PCI PCIe PGAS PLPs RAM RDMA SI SLD SmartNIC SSD TCO UIO YouTube
 
 Ishwar Agarwal
@@ -796,6 +890,8 @@ Ishwar Agarwal
 [YouTube](https://www.youtube.com/watch?v=pHuHUeSmGGk)
 
 [Text](./13)
+
+[Article](https://github.com/vaj/CDI-Articles#13)
 
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
@@ -805,6 +901,8 @@ Navneet Singh
 
 [Text](./49)
 
+[Article](https://github.com/vaj/CDI-Articles#49)
+
 [Acronyms](./acronym.md): ACPI API ARM CDT CXL DAX DCD DPA FVP HDM HPA KMEM NUMA OS PCI QEMU RAM RFC TCO TCP UUID VertIO VM
 
 Robert Blankenship
@@ -813,6 +911,8 @@ Robert Blankenship
 
 [Text](./13)
 
+[Article](https://github.com/vaj/CDI-Articles#13)
+
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
 Will Nelson
@@ -820,6 +920,8 @@ Will Nelson
 [YouTube](https://youtu.be/udA2nuBHiHo)
 
 [Text](./276)
+
+[Article](https://github.com/vaj/CDI-Articles#276)
 
 [Acronyms](./acronym.md): CPU CXL DDR EDSFF FPGA IP JEDEC MemVerge OpenCAPI PCB PCI PCIe SI SIG SSD
 
@@ -830,6 +932,8 @@ PJ Waskiewicz
 [YouTube](https://www.youtube.com/watch?v=BlVO3v_K58M)
 
 [Text](./45)
+
+[Article](https://github.com/vaj/CDI-Articles#45)
 
 [Acronyms](./acronym.md): AMD BPF CCFS CPU CXL CXL.cache CXL.io DDR4 DDR5 DPC EDPC FPGA HLS IP JTAG MESI NMI NVIDIA OS PCI PCIe RAM SMI
 
@@ -869,6 +973,8 @@ Jonathan Zhang
 
 [Text](./55)
 
+[Article](https://github.com/vaj/CDI-Articles#55)
+
 [Acronyms](./acronym.md): AI BDF CPU CXL CXL.cache CXL.io CXL.mem DAX DIMM DRAM GPGPU GPU HDM HMEM MC NIC NUMA NVDIMM OS P2V PCIe PDF PMEM RCRB TLB TPP VM
 
 Manoj Wadekar
@@ -877,6 +983,8 @@ Manoj Wadekar
 
 [Text](./274)
 
+[Article](https://github.com/vaj/CDI-Articles#274)
+
 [Acronyms](./acronym.md): AI AIML AMD CPU CXL DDR DDR4 DDR5 DLRM DRAM FMS GPU HBM HPC ML NAND OCP SDM SSD TAM TCO TLC VMware WhatsApp
 
 Prakash Chauhan
@@ -884,6 +992,8 @@ Prakash Chauhan
 [YouTube](https://www.youtube.com/watch?v=pHuHUeSmGGk)
 
 [Text](./13)
+
+[Article](https://github.com/vaj/CDI-Articles#13)
 
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
@@ -895,6 +1005,8 @@ Tony Brewer
 
 [Text](./13)
 
+[Article](https://github.com/vaj/CDI-Articles#13)
+
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
 
 ### NVIDIA
@@ -904,6 +1016,8 @@ Steve Glaser
 [YouTube](https://www.youtube.com/watch?v=ediIaJwwTiE)
 
 [Text](./27)
+
+[Article](https://github.com/vaj/CDI-Articles#27)
 
 [Acronyms](./acronym.md): API CPU CUDA CXL DDR DMA DRAM GPU HBM IDE NIC NVIDIA NVLink PCI PHY SIG TVM VM
 
@@ -915,6 +1029,8 @@ Danny Moore
 
 [Text](./271)
 
+[Article](https://github.com/vaj/CDI-Articles#271)
+
 [Acronyms](./acronym.md): ACK ASIC BI CPU CRC CXL CXL.cache CXL.io CXL.mem DDR DLP DRAM E2O2E FEC FLIT FPGA GFAM GPGPU HBM HBR HDM HPC IDE IO LinkedIn MESI MLD NIC PAM PBR PCI PCIe PGAS PLPs RAM RDMA SI SLD SmartNIC SSD TCO UIO YouTube
 
 Vincent Haché
@@ -922,6 +1038,8 @@ Vincent Haché
 [YouTube](https://www.youtube.com/watch?v=6TRbkes15Ok)
 
 [Text](./270)
+
+[Article](https://github.com/vaj/CDI-Articles#270)
 
 [Acronyms](./acronym.md): API BAR BMC CCI CPU CXL CXL.io DMTF DVSEC ECN FM GbE LD LD0 LD1 LDID LinkedIn LSA MCTP MLD MMIO MSI MSIX NVMe PCI PCIe QoS SLD SmartNIC SMBus SMbus SoC TLP VCS VDM YouTube
 
@@ -941,6 +1059,8 @@ Cheolmin Park
 
 [Text](./23)
 
+[Article](https://github.com/vaj/CDI-Articles#23)
+
 [Acronyms](./acronym.md): AI CPU CXL DDR DIMM DRAM IP NIC PCIe SMDK UCIe
 
 Heekwon Park
@@ -948,6 +1068,8 @@ Heekwon Park
 [YouTube](https://www.youtube.com/watch?v=TR0-f_jwNpc)
 
 [Text](./51)
+
+[Article](https://github.com/vaj/CDI-Articles#51)
 
 [Acronyms](./acronym.md): BtrFS CPU CXL DAX DRAM EXT4 F2FS Filemap IO LBA NAND NILFS2 NVMe PFN PMEM PRAM RAM RFC SSD VFS
 
@@ -969,6 +1091,8 @@ Danny Volkind
 
 [Text](./21)
 
+[Article](https://github.com/vaj/CDI-Articles#21)
+
 [Acronyms](./acronym.md): ACPI AES API BMC CPU CTO CXL CXL.cache CXL.io CXL.mem DDR DIMM DMA DMTF ECDSA ECN FPGA GCM GPF GPU HMAT IDE IO LDID LinkedIn MLD NIC NISTP NUMA NVMe OS PC PCI PCIe PHY PMEM QoS RAM RCiEP SLD SPDM UEFI USB VCS YouTube
 
 Elad Shliselberg
@@ -976,6 +1100,8 @@ Elad Shliselberg
 [YouTube](https://www.youtube.com/watch?v=w2cZn-Tzrmo)
 
 [Text](./21)
+
+[Article](https://github.com/vaj/CDI-Articles#21)
 
 [Acronyms](./acronym.md): ACPI AES API BMC CPU CTO CXL CXL.cache CXL.io CXL.mem DDR DIMM DMA DMTF ECDSA ECN FPGA GCM GPF GPU HMAT IDE IO LDID LinkedIn MLD NIC NISTP NUMA NVMe OS PC PCI PCIe PHY PMEM QoS RAM RCiEP SLD SPDM UEFI USB VCS YouTube
 
@@ -1009,6 +1135,8 @@ Clara Li
 
 [Text](./25)
 
+[Article](https://github.com/vaj/CDI-Articles#25)
+
 [Acronyms](./acronym.md): CXL DCI FDN IOWN LSN OpenAPN PoC QoS RAN RDMA
 
 ### MemVerge
@@ -1019,6 +1147,8 @@ Charles Fan
 
 [Text](./76)
 
+[Article](https://github.com/vaj/CDI-Articles#76)
+
 [Acronyms](./acronym.md): AI AMD ARM BIOS CPU CXL DDR DDR5 DIMM DRAM ECC EMC GPU HBM IP MemVerge MLC MPP NAND NAS NetApp NUMA OCP PCIe SAN SDC SDM TCO VM
 
 ### Sandia National Laboratories
@@ -1028,6 +1158,8 @@ Michael Aguilar
 [YouTube](https://www.youtube.com/watch?v=AmAj-3Rx_gs)
 
 [Text](./1)
+
+[Article](https://github.com/vaj/CDI-Articles#1)
 
 [Acronyms](./acronym.md): CXL DMTF HPC HTTP HTTPS InfiniBand MDS NVMe OFMF OpenFabrics OSS RabbitMQ RAM RDMA RESTful VFS
 
@@ -1040,6 +1172,8 @@ Dragan Stancevic
 [YouTube](https://www.youtube.com/watch?v=8glo1KUQrlY)
 
 [Text](./46)
+
+[Article](https://github.com/vaj/CDI-Articles#46)
 
 [Acronyms](./acronym.md): ABI BoF CPU CXL CXL.mem DAX DDR DRAM IBM MEM NUMA QEMU SysFS TCP VCPU VFIO VM
 
@@ -1081,6 +1215,8 @@ Alan Benjamin
 
 [Text](./33)
 
+[Article](https://github.com/vaj/CDI-Articles#33)
+
 [Acronyms](./acronym.md): CPU CXL DMA DRAM FPGA GigaIO GigaIO GPU HPC InfiniBand MemVerge MPI NVMeOF PCI RDMA UPI
 
 ### H3 Platform
@@ -1100,6 +1236,8 @@ Clarete Crasta
 [YouTube](https://www.youtube.com/watch?v=baFQzjSMzzs)
 
 [Text](./19)
+
+[Article](https://github.com/vaj/CDI-Articles#19)
 
 [Acronyms](./acronym.md): AI API CUDA CXL DRAM FAM gRPC HDFS HP HPA HPC HPE InfiniBand MPI OpenFAM OpenSHMEM PE PMIx RDMA
 
@@ -1121,6 +1259,8 @@ Christian Pinto
 
 [Text](./4)
 
+[Article](https://github.com/vaj/CDI-Articles#4)
+
 [Acronyms](./acronym.md): API CPU CXL DMTF HPC IBM InfiniBand LD MES MLD NIC OCP ODSA OFMF PCIe RDMA
 
 ### Intel
@@ -1130,6 +1270,8 @@ Andy Rudoff
 [YouTube](https://www.youtube.com/watch?v=A1BsIa_AbdA)
 
 [Text](./12)
+
+[Article](https://github.com/vaj/CDI-Articles#12)
 
 [Acronyms](./acronym.md): CPU CXL CXL.cache CXL.io CXL.mem FLIT FM GPU HDM IDE LinkedIn MHSLD PCIe SmartNIC
 
@@ -1147,6 +1289,8 @@ Debendra Das Sharma
 
 [Text](./8)
 
+[Article](https://github.com/vaj/CDI-Articles#8)
+
 [Acronyms](./acronym.md): BAR BGA CEM COVID CPU CRC CXL DC DDR DFE DMA FBER FEC FIT FLIT FR4 GM HP HPC IBM IoT IP ISA L0P MCA NASA NBA OS PAM PAM4 PC PCB PCI PCIe PhD PHY RAS SDP SerDes SFF SI SIG SMP SoC SpaceX STP TCO TLB US VI VM YouTube
 
 Debendra Das Sharma
@@ -1163,6 +1307,8 @@ Phil Cayton
 
 [Text](./2)
 
+[Article](https://github.com/vaj/CDI-Articles#2)
+
 [Acronyms](./acronym.md): API BeeGFS BMC BrightTALK CDI CPU CXL DevOps DMTF GPFS HPC HTTP InfiniBand IO IT LSF NVMe OFA OFMF OpenFAM OpenSHMEM PCI RAS RDMA RESTful SAS SATA SMI SNIA SSM TCP UCIe URI US
 
 Richelle Ahlvers
@@ -1170,6 +1316,8 @@ Richelle Ahlvers
 [YouTube](https://www.youtube.com/watch?v=mPb0jmNw858)
 
 [Text](./2)
+
+[Article](https://github.com/vaj/CDI-Articles#2)
 
 [Acronyms](./acronym.md): API BeeGFS BMC BrightTALK CDI CPU CXL DevOps DMTF GPFS HPC HTTP InfiniBand IO IT LSF NVMe OFA OFMF OpenFAM OpenSHMEM PCI RAS RDMA RESTful SAS SATA SMI SNIA SSM TCP UCIe URI US
 
@@ -1180,6 +1328,8 @@ Mats Öberg
 [YouTube](https://www.youtube.com/watch?v=sxWqgLv5XJ0)
 
 [Text](./10)
+
+[Article](https://github.com/vaj/CDI-Articles#10)
 
 [Acronyms](./acronym.md): API CPU CXL DDR4 DDR5 DIMM DRAM NVMe OCP PCIe RegExp SNIA SSD TPP
 
@@ -1198,6 +1348,8 @@ Charles Fan
 [YouTube](https://www.youtube.com/watch?v=D66W7eqFbhc)
 
 [Text](./41)
+
+[Article](https://github.com/vaj/CDI-Articles#41)
 
 [Acronyms](./acronym.md): AI AnyScale API ChatGPT CPU CXL DRAM GA GPT HPC HTAP ML NAND NUMA SDK TimePlus
 
@@ -1236,6 +1388,8 @@ Vincent Haché
 [YouTube](https://www.youtube.com/watch?v=Lt3kjReLXds)
 
 [Text](./15)
+
+[Article](https://github.com/vaj/CDI-Articles#15)
 
 [Acronyms](./acronym.md): CXL DPID FLIT GFAM GFD HBR PBR PCIe SPID
 
@@ -1289,6 +1443,8 @@ Mahesh Wagh
 
 [Text](./28)
 
+[Article](https://github.com/vaj/CDI-Articles#28)
+
 [Acronyms](./acronym.md): ACPI AI AMD API AV BI BIOS BMC ByteDance CCI CDAT CPU CRC CXL CXL.cache CXL.io CXL.mem DC DCD DDI DDR DDR4 DDR5 DIMM DMTF DPA DRAM DVSEC ECN EDSFF FAM FAST FEC FLIT FM FMS GFAM GFD GPGPU GPT GPU HBR HDM HDMDB HDMH HMAT HPA HPC IO IP JBOM JEDEC LD LD1 LD2 LDFAM LinkedIn MCTP MEM MH MLD MMIO MSIX NIC NRZ NUMA NVMe OS PAM PAM4 PBR PCI PCIe PCIE5 PID PLDM PMEM PMIC PMU POC QoS RCD RCH RDMA RP SerDes SLD SMBus SPD SRAT TCO TLP UCIE UEFI UIO USB VH
 
 ### Intel
@@ -1299,6 +1455,8 @@ Debendra Das Sharma
 
 [Text](./28)
 
+[Article](https://github.com/vaj/CDI-Articles#28)
+
 [Acronyms](./acronym.md): ACPI AI AMD API AV BI BIOS BMC ByteDance CCI CDAT CPU CRC CXL CXL.cache CXL.io CXL.mem DC DCD DDI DDR DDR4 DDR5 DIMM DMTF DPA DRAM DVSEC ECN EDSFF FAM FAST FEC FLIT FM FMS GFAM GFD GPGPU GPT GPU HBR HDM HDMDB HDMH HMAT HPA HPC IO IP JBOM JEDEC LD LD1 LD2 LDFAM LinkedIn MCTP MEM MH MLD MMIO MSIX NIC NRZ NUMA NVMe OS PAM PAM4 PBR PCI PCIe PCIE5 PID PLDM PMEM PMIC PMU POC QoS RCD RCH RDMA RP SerDes SLD SMBus SPD SRAT TCO TLP UCIE UEFI UIO USB VH
 
 Igor Chorazewicz
@@ -1307,6 +1465,8 @@ Igor Chorazewicz
 
 [Text](./43)
 
+[Article](https://github.com/vaj/CDI-Articles#43)
+
 [Acronyms](./acronym.md): API CPU CXL CXL.cache CXL.mem DAX DRAM FSDAX MEMKID_DEFAULT NAND NUMA PCIe PM PMDK PMEM PMKV QR RAM RDMA SNIA SSD
 
 Mahesh Natu
@@ -1314,6 +1474,8 @@ Mahesh Natu
 [YouTube](https://www.youtube.com/watch?v=eS5fHdg46nU)
 
 [Text](./28)
+
+[Article](https://github.com/vaj/CDI-Articles#28)
 
 [Acronyms](./acronym.md): ACPI AI AMD API AV BI BIOS BMC ByteDance CCI CDAT CPU CRC CXL CXL.cache CXL.io CXL.mem DC DCD DDI DDR DDR4 DDR5 DIMM DMTF DPA DRAM DVSEC ECN EDSFF FAM FAST FEC FLIT FM FMS GFAM GFD GPGPU GPT GPU HBR HDM HDMDB HDMH HMAT HPA HPC IO IP JBOM JEDEC LD LD1 LD2 LDFAM LinkedIn MCTP MEM MH MLD MMIO MSIX NIC NRZ NUMA NVMe OS PAM PAM4 PBR PCI PCIe PCIE5 PID PLDM PMEM PMIC PMU POC QoS RCD RCH RDMA RP SerDes SLD SMBus SPD SRAT TCO TLP UCIE UEFI UIO USB VH
 
@@ -1353,6 +1515,8 @@ Vincent Haché
 
 [Text](./28)
 
+[Article](https://github.com/vaj/CDI-Articles#28)
+
 [Acronyms](./acronym.md): ACPI AI AMD API AV BI BIOS BMC ByteDance CCI CDAT CPU CRC CXL CXL.cache CXL.io CXL.mem DC DCD DDI DDR DDR4 DDR5 DIMM DMTF DPA DRAM DVSEC ECN EDSFF FAM FAST FEC FLIT FM FMS GFAM GFD GPGPU GPT GPU HBR HDM HDMDB HDMH HMAT HPA HPC IO IP JBOM JEDEC LD LD1 LD2 LDFAM LinkedIn MCTP MEM MH MLD MMIO MSIX NIC NRZ NUMA NVMe OS PAM PAM4 PBR PCI PCIe PCIE5 PID PLDM PMEM PMIC PMU POC QoS RCD RCH RDMA RP SerDes SLD SMBus SPD SRAT TCO TLP UCIE UEFI UIO USB VH
 
 ### Samsung
@@ -1362,6 +1526,8 @@ Yang Seok Ki
 [YouTube](https://www.youtube.com/live/SHR2uIavnbk?si=KCtnkMH-y1wv_pYd&t=9208)
 
 [Text](./67)
+
+[Article](https://github.com/vaj/CDI-Articles#67)
 
 [Acronyms](./acronym.md): BIOS CPU CXL CXL.cache CXL.io CXL.mem DAOS DDR5 DLRM DRAM GPF GPU HDM IO IOPS LBA NAND NVDIMM NVIDIA NVMe OS PCI SSD TCO VDI
 
@@ -1375,6 +1541,8 @@ Michael Klempa
 
 [Text](./127)
 
+[Article](https://github.com/vaj/CDI-Articles#127)
+
 [Acronyms](./acronym.md): AI AlphaWave ASIC BER CMIS CPL DFE DSP ECOC FFE FR IEEE IMDD IOL IP LPO LR LR1 MLSD MR NPO OCP OFC OIF OWI PAM PAM4 PAM6 PLL QAM16 SerDes SNR TE UCIe UNH VSR ZR
 
 ### AMD
@@ -1385,6 +1553,8 @@ Gregory D Sellman
 
 [Text](./141)
 
+[Article](https://github.com/vaj/CDI-Articles#141)
+
 [Acronyms](./acronym.md): AMD CLA CXL DCMHS ExaMax HPM I2C I3C IO MHS NIC OCP PCIe PMM SIF USB
 
 Kai Troester
@@ -1393,6 +1563,8 @@ Kai Troester
 
 [Text](./165)
 
+[Article](https://github.com/vaj/CDI-Articles#165)
+
 [Acronyms](./acronym.md): AMD ARM AVX BSc CCD CXL DDR4 DDR5 DRAM EPYC FP GenoaX GMI HPL IO IPC ISA MAC MilanX NVIDIA PCIe PhD PR SemiAccurate SMT TCO UT XGMI
 
 Kin-Yip Liu
@@ -1400,6 +1572,8 @@ Kin-Yip Liu
 [YouTube](https://www.youtube.com/watch?v=dCcbR0T4UJA)
 
 [Text](./71)
+
+[Article](https://github.com/vaj/CDI-Articles#71)
 
 [Acronyms](./acronym.md): AI AMD ASIC CMS CPU CXL CXL.mem DDR DIMM DRAM EPYC LRU MRU NUMA NVMe PCI SDXI SNIA SSD TCO VM VMware
 
@@ -1417,6 +1591,8 @@ Ravi Bhargava
 
 [Text](./165)
 
+[Article](https://github.com/vaj/CDI-Articles#165)
+
 [Acronyms](./acronym.md): AMD ARM AVX BSc CCD CXL DDR4 DDR5 DRAM EPYC FP GenoaX GMI HPL IO IPC ISA MAC MilanX NVIDIA PCIe PhD PR SemiAccurate SMT TCO UT XGMI
 
 Robert Richter
@@ -1425,6 +1601,8 @@ Robert Richter
 
 [Text](./146)
 
+[Article](https://github.com/vaj/CDI-Articles#146)
+
 [Acronyms](./acronym.md): ACPI AER BDF BIOS CXL DVSEC IO MEM MMIO OS PCI PCIe RAS RCEC RCH RCiEP RCRB VH
 
 Terry Bowman
@@ -1432,6 +1610,8 @@ Terry Bowman
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=oJfs6RIX7Fw49-6B&t=7574)
 
 [Text](./146)
+
+[Article](https://github.com/vaj/CDI-Articles#146)
 
 [Acronyms](./acronym.md): ACPI AER BDF BIOS CXL DVSEC IO MEM MMIO OS PCI PCIe RAS RCEC RCH RCiEP RCRB VH
 
@@ -1443,6 +1623,8 @@ Sam Kocsis
 
 [Text](./94)
 
+[Article](https://github.com/vaj/CDI-Articles#94)
+
 [Acronyms](./acronym.md): AOC BER BMW CDFP CMIS CPU CXL HD MiniSAS NIC NRZ NVMe OCP OIF OSFP OSFPXD PAM4 PCI PCIe QSFPDD SAS SIG TCO TE VCSEL XD
 
 ### Arista
@@ -1452,6 +1634,8 @@ Andy Bechtolsheim
 [YouTube](https://www.youtube.com/watch?v=1WYJaFDTo4o)
 
 [Text](./131)
+
+[Article](https://github.com/vaj/CDI-Articles#131)
 
 [Acronyms](./acronym.md): AI AMD CDU CHF CoWoS CPU DGX EX GPU HBM4 HPE IsoPower IsoSpeed LPO NVIDIA NVSwitch OCP ORV3 RF TDP TPU TSMC VRM
 
@@ -1463,6 +1647,8 @@ Anitha Kona
 
 [Text](./168)
 
+[Article](https://github.com/vaj/CDI-Articles#168)
+
 [Acronyms](./acronym.md): AMBA AP ARM AXI BMC CCG CSS CXL CXS DDR DVFS EDA EL2 FCI FPGA GIC GIC700 HNF IBS IO IP LPDDR MCP ML MMU MMU700 MPAM MPMM MySQL Neoverse NGINX OS PCI PCIe PHY POP PPA RAS RTL SBSA SCP SLC SMMU SMP SoC SVE TLB UCIe UPF
 
 Magnus Bruce
@@ -1470,6 +1656,8 @@ Magnus Bruce
 [YouTube](https://www.youtube.com/watch?v=slcwJP0pzGQ)
 
 [Text](./164)
+
+[Article](https://github.com/vaj/CDI-Articles#164)
 
 [Acronyms](./acronym.md): AI ALU AMBA AMD ARM BTB CHI CMN700 CPU DDR DRAM DVM GCC GIC700 HPC ILP IP IPC LPDDR5X ML MMU700 MTE MySQL Neoverse NGINX NI NIC450 NVIDIA QoS RAR RAW RIP SIMD SLC SMMU SMS SOC SPEC SVE TAGE TLB VA XGBoost
 
@@ -1487,6 +1675,8 @@ Samer El-Haj-Mahmoud
 
 [Text](./144)
 
+[Article](https://github.com/vaj/CDI-Articles#144)
+
 [Acronyms](./acronym.md): ACPI ACS AI ARM BBR BIOS BMC BSA CG1 CPU CTO DPU EDA EDK GH200 GitHub GPU IoT IP IPMI ISA LBBR LS MGX NVIDIA OCP OpenBMC OPF OSF SBBR SBMR SBSA SIE SR TCG TFA TPM UEFI
 
 ### Astera Labs
@@ -1497,6 +1687,8 @@ Ahmad Danesh
 
 [Text](./78)
 
+[Article](https://github.com/vaj/CDI-Articles#78)
+
 [Acronyms](./acronym.md): AI AWS CCIX CMS CPU CXL DIMM DRAM GPU OCP OpenCAPI XPU
 
 Jonathan Zhang
@@ -1504,6 +1696,8 @@ Jonathan Zhang
 [YouTube](https://www.youtube.com/watch?v=B9dw2hTlrWM)
 
 [Text](./121)
+
+[Article](https://github.com/vaj/CDI-Articles#121)
 
 [Acronyms](./acronym.md): API BMC CCFS CMS CSP CXL DDR5 DIMM DMTF GPIO I2C I3C IDE JEDEC MCTP MMIO OS PCIe RAS UEFI VDM
 
@@ -1521,6 +1715,8 @@ Priya Vartak
 
 [Text](./93)
 
+[Article](https://github.com/vaj/CDI-Articles#93)
+
 [Acronyms](./acronym.md): AI BMC CEM CMS CPU CXL DCMHS DDR DDR4 DIMM DRAM GPU HANA MSIF NUMA NVMe OCP OpenBMC OS PMM RAS SAP SDK TCO XConn
 
 Sandeep Dattaprasad
@@ -1528,6 +1724,8 @@ Sandeep Dattaprasad
 [YouTube](https://www.youtube.com/watch?v=CqyFG3gOBSk)
 
 [Text](./68)
+
+[Article](https://github.com/vaj/CDI-Articles#68)
 
 [Acronyms](./acronym.md): AI ASIC BSC CPU CSP CXL CXL.cache CXL.io DCD DLLP DMA DMTF DRAM FLIT GPU HBM IDE InfiniBand MemVerge ML MRIOV MS NAND NUMA NVIDIA NVM NVMe OEM PCI PCIe PMDK QEMU RAID RAS SAN SAS SDXI SNIA SOC SRIOV SSD TCO TLP
 
@@ -1555,6 +1753,8 @@ LK Bhupathi
 
 [Text](./129)
 
+[Article](https://github.com/vaj/CDI-Articles#129)
+
 [Acronyms](./acronym.md): AI BoW CPU CXL DRAM EMIB FEC FPGA GPU HBM MCP ML NRZ NVLink SOC UCIe USR XSR
 
 ### Broadcom
@@ -1565,6 +1765,8 @@ Hemal Shah
 
 [Text](./110)
 
+[Article](https://github.com/vaj/CDI-Articles#110)
+
 [Acronyms](./acronym.md): API BMC CXL DCSCM DM DMC DMTF GitHub GPU HPE I2C IO MCTP NIC OCP OpenBIC OpenRMC PCIe PLDM PMCI RAS RMC RunBMC SMC SPDM
 
 Hemal Shah
@@ -1573,6 +1775,8 @@ Hemal Shah
 
 [Text](./151)
 
+[Article](https://github.com/vaj/CDI-Articles#151)
+
 [Acronyms](./acronym.md): ACK ARP BIOS DMTF EID IO IoT IP MCTP NACK NCSI NIC NVMe NVMeMI NVMeMI OCP PCIe PLDM PMCI RMII SACK SMBIOS SMBus SPDM TCP TLS USB VDM VP WIP
 
 Manish Mehta
@@ -1580,6 +1784,8 @@ Manish Mehta
 [YouTube](https://www.youtube.com/watch?v=4y906CI7oRk)
 
 [Text](./126)
+
+[Article](https://github.com/vaj/CDI-Articles#126)
 
 [Acronyms](./acronym.md): AI AOC ASIC CAPEX CMOS CoWoS CPO CXL DAC DSP ECOC GPU HBM HBM3 HBM4 IBM IEEE LPO NRZ NVIDIA NVLink OCP OFC OIF OSA PAM PAM4 PCIe SerDes TCO VCSEL VP
 
@@ -1599,6 +1805,8 @@ Anant Thakar
 
 [Text](./92)
 
+[Article](https://github.com/vaj/CDI-Articles#92)
+
 [Acronyms](./acronym.md): API ASIC BMC CAD CMS CPU CXL DCMHS DCO DDR4 DDR5 DRAM HBM I2C MCIO MSIF OCP PCI PCIe PMM QSFP RDIMM SNIA USB
 
 Joe Jacques
@@ -1606,6 +1814,8 @@ Joe Jacques
 [YouTube](https://www.youtube.com/watch?v=DkNdPUIeMuU)
 
 [Text](./130)
+
+[Article](https://github.com/vaj/CDI-Articles#130)
 
 [Acronyms](./acronym.md): ASIC CPU DOM DSP EMI FPGA MSA OIF OSFP OSFPXD PCIe QSFPDD SMT SSD TIM XD
 
@@ -1617,6 +1827,8 @@ Chris Cole
 
 [Text](./94)
 
+[Article](https://github.com/vaj/CDI-Articles#94)
+
 [Acronyms](./acronym.md): AOC BER BMW CDFP CMIS CPU CXL HD MiniSAS NIC NRZ NVMe OCP OIF OSFP OSFPXD PAM4 PCI PCIe QSFPDD SAS SIG TCO TE VCSEL XD
 
 ### Credo Semiconductor
@@ -1627,6 +1839,8 @@ Jeff Twombly
 
 [Text](./149)
 
+[Article](https://github.com/vaj/CDI-Articles#149)
+
 [Acronyms](./acronym.md): AEC AI AIB ASIC CPO CXL DC EMIB IEEE IP IT LEGO LR MR MRLR NIC NRZ OCP OIF OSAT PAM4 PCIe SerDes TSMC UCIe XSR
 
 ### CXL Consortium
@@ -1636,6 +1850,8 @@ Kurtis Bowman
 [YouTube](https://www.youtube.com/watch?v=Ng71-MFs6VU)
 
 [Text](./175)
+
+[Article](https://github.com/vaj/CDI-Articles#175)
 
 [Acronyms](./acronym.md): AI AMD APU ASIC CPU CXL CXL.cache DDR DDR4 DDR5 DLRM DRAM FLIT GPU HBM HBM4 HBR HPC HPE IntelliProp IO LiqidOS LPCAM LPDDR ML NUMA NVMe OCP OpenFAM PBR PCI PCIe RAS RDIMM ScaleFlux SQL UCIe US VM VP
 
@@ -1661,6 +1877,8 @@ Siamak Tavallaei
 
 [Text](./158)
 
+[Article](https://github.com/vaj/CDI-Articles#158)
+
 [Acronyms](./acronym.md): AI CPU CXL DCMHS DDR DDR5 DRAM ECC FLOPS FPGA GPU HBM InfiniBand LPDDR NVLink NVMe OAI OCP ODSA PCIe PCIE SNIA SRAM UBB UCIE XPU
 
 ### d-Matrix
@@ -1670,6 +1888,8 @@ Jayaprakash Balachandran
 [YouTube](https://www.youtube.com/watch?v=nOwCkr_Rrb0)
 
 [Text](./154)
+
+[Article](https://github.com/vaj/CDI-Articles#154)
 
 [Acronyms](./acronym.md): AI AMD BoW CPU CXL D2D DDI DDR5 DRAM GPU HBM IP Jayhawk LLM NIC NVIDIA OCP ODSA OIF PC PCI PCIe PhD PoC SoC SRAM TCO
 
@@ -1681,6 +1901,8 @@ Shyamkumar Iyer
 
 [Text](./72)
 
+[Article](https://github.com/vaj/CDI-Articles#72)
+
 [Acronyms](./acronym.md): ARM CPU CRC CXL DDR DMA DRAM IO IOV MMIO NIC NVM NVMe OS PCI PCIe POSIX QEMU QoS RDMA SDXI SIG SNIA SR TLP TWG VM XORing
 
 Shyamkumar Iyer
@@ -1689,6 +1911,8 @@ Shyamkumar Iyer
 
 [Text](./74)
 
+[Article](https://github.com/vaj/CDI-Articles#74)
+
 [Acronyms](./acronym.md): AMD API ARM ATS BSD3 CMB CPU CS CXL DMA DRAM FPGA GPU IO IOMMU MMIO NVM NVMe OS PCI PCIe PMR PRI QEMU QoS RISC SDXI SIG SLM SNIA TWG VM
 
 Tim Lambert
@@ -1696,6 +1920,8 @@ Tim Lambert
 [YouTube](https://www.youtube.com/watch?v=LF_8JZ1UKAs)
 
 [Text](./145)
+
+[Article](https://github.com/vaj/CDI-Articles#145)
 
 [Acronyms](./acronym.md): AI AMI ASPEED BMC CDFP CEM CPLD CPU CRC CRPS CXL DCM DCMHS DCSCI DCSCM DDR DDR5 DDR6 DSSI ECN EDSFF EMC FlexIO FPGA HBM HPE HPM I2C I3C IDE IO Jabil JTAG LTPI MCTP MHS MXIO NIC NVMe PCI PCIe PDB PESTI PIC RAS RTC SCM SGPIO SIF SIG SMB USB USBIF VDM XIO
 
@@ -1706,6 +1932,8 @@ Sameh Boujelbene
 [YouTube](https://www.youtube.com/watch?v=NJVtxCxWCYg)
 
 [Text](./123)
+
+[Article](https://github.com/vaj/CDI-Articles#123)
 
 [Acronyms](./acronym.md): AI CEO CXL GPU InfiniBand IO IT ML NVLink PCIe
 
@@ -1727,6 +1955,8 @@ Andy Heinig
 
 [Text](./154)
 
+[Article](https://github.com/vaj/CDI-Articles#154)
+
 [Acronyms](./acronym.md): AI AMD BoW CPU CXL D2D DDI DDR5 DRAM GPU HBM IP Jayhawk LLM NIC NVIDIA OCP ODSA OIF PC PCI PCIe PhD PoC SoC SRAM TCO
 
 ### Fujitsu
@@ -1737,6 +1967,8 @@ Andy Heinig
 
 [Text](./160)
 
+[Article](https://github.com/vaj/CDI-Articles#160)
+
 [Acronyms](./acronym.md): ACPI AMD ARM ATM BISnp BMC CCIX CDAT CPU CXL CXL.cache CXL.io CXL.mem DCOH DDR DMA DPDK DRAM FPGA GPGPU HDM HMAT I2C I3C IDE InfiniBand IP MESI MOESI NUMA NVIDIA ODP OS PBR PCI PCIe RDMA RoCE SmartNIC SMBus TCP TSP VM ZONE_MOVABLE
 
 小口 直樹
@@ -1744,6 +1976,8 @@ Andy Heinig
 [YouTube](https://www.youtube.com/watch?v=YVjM5Vy4KLo&t=4s)
 
 [Text](./162)
+
+[Article](https://github.com/vaj/CDI-Articles#162)
 
 [Acronyms](./acronym.md): AI APN ARM CAPEX CDI COTS CPS CPU CXL DCI DPU DRA GPU ICT IOWN IPU KubeCon LF LSN MIMO ML MOU NGINX NTT NVIDIA OCP OpenShift OPEX OPI OS OSS PCE PCI PCIe PoC RDMA TPU UPF US
 
@@ -1755,6 +1989,8 @@ Drew Walton
 
 [Text](./150)
 
+[Article](https://github.com/vaj/CDI-Articles#150)
+
 [Acronyms](./acronym.md): AMD API BMC CCI CLA CPER CPU CSM CSP CXL EMCA2 FMFM GPU IP JEDEC MCTP ML NVIDIA OCP OS PLDM PPR RAS SMM SoC UUID
 
 Kevin Yasumura
@@ -1763,6 +1999,8 @@ Kevin Yasumura
 
 [Text](./105)
 
+[Article](https://github.com/vaj/CDI-Articles#105)
+
 [Acronyms](./acronym.md): CAPEX DC DCN DSP EPS LLM MEMS ML OCS SIGCOMM TPU WDM
 
 Vikram Kasivajhula
@@ -1770,6 +2008,8 @@ Vikram Kasivajhula
 [YouTube](https://www.youtube.com/watch?v=2MPqeotTESU)
 
 [Text](./138)
+
+[Article](https://github.com/vaj/CDI-Articles#138)
 
 [Acronyms](./acronym.md): AI AWS BARD BertClassifier ChatGPT CMS CPU CTO CXL DRAM GPT GPU HBM IMDB JAX KV OCP OFP8 OpenXLA PCIe PyTorch ResNet TensorFlow TL;DR
 
@@ -1780,6 +2020,8 @@ Brian Pan
 [YouTube](https://www.youtube.com/watch?v=fTfHMQxg7t8)
 
 [Text](./81)
+
+[Article](https://github.com/vaj/CDI-Articles#81)
 
 [Acronyms](./acronym.md): API CDFP CLI CMS CPU CXL DDR DLUT GUI LTS mCPU MLC OS PCIe RESTful
 
@@ -1799,6 +2041,8 @@ Jeff Autor
 
 [Text](./110)
 
+[Article](https://github.com/vaj/CDI-Articles#110)
+
 [Acronyms](./acronym.md): API BMC CXL DCSCM DM DMC DMTF GitHub GPU HPE I2C IO MCTP NIC OCP OpenBIC OpenRMC PCIe PLDM PMCI RAS RMC RunBMC SMC SPDM
 
 Jeffrey Hilland
@@ -1815,6 +2059,8 @@ Mike Witkowski
 
 [Text](./145)
 
+[Article](https://github.com/vaj/CDI-Articles#145)
+
 [Acronyms](./acronym.md): AI AMI ASPEED BMC CDFP CEM CPLD CPU CRC CRPS CXL DCM DCMHS DCSCI DCSCM DDR DDR5 DDR6 DSSI ECN EDSFF EMC FlexIO FPGA HBM HPE HPM I2C I3C IDE IO Jabil JTAG LTPI MCTP MHS MXIO NIC NVMe PCI PCIe PDB PESTI PIC RAS RTC SCM SGPIO SIF SIG SMB USB USBIF VDM XIO
 
 ### Huawei
@@ -1825,6 +2071,8 @@ Jonathan Cameron
 
 [Text](./132)
 
+[Article](https://github.com/vaj/CDI-Articles#132)
+
 [Acronyms](./acronym.md): ABI ARM BIOS BMC CCI CDAT CXL DC DCD DMTF DPA EDK2 FAM FM FMAPI GFD HDM I2C I3C KVM LPC MCTP MEM MMPT PCI PMEM PXB QEMU QMP RAS TCG TCP VDM
 
 Jonathan Cameron
@@ -1832,6 +2080,8 @@ Jonathan Cameron
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=9JyEOumYSGunsEgU&t=3753)
 
 [Text](./134)
+
+[Article](https://github.com/vaj/CDI-Articles#134)
 
 [Acronyms](./acronym.md): ABI CXL DAX DCD DPA FM HPA PMEM QEMU RFC SysFS VM
 
@@ -1843,6 +2093,8 @@ Tim Lewis
 
 [Text](./144)
 
+[Article](https://github.com/vaj/CDI-Articles#144)
+
 [Acronyms](./acronym.md): ACPI ACS AI ARM BBR BIOS BMC BSA CG1 CPU CTO DPU EDA EDK GH200 GitHub GPU IoT IP IPMI ISA LBBR LS MGX NVIDIA OCP OpenBMC OPF OSF SBBR SBMR SBSA SIE SR TCG TFA TPM UEFI
 
 ### Intel
@@ -1853,6 +2105,8 @@ Anjaneya Chagam
 
 [Text](./109)
 
+[Article](https://github.com/vaj/CDI-Articles#109)
+
 [Acronyms](./acronym.md): AI CMS CXL DMTF ECN FDI GitHub GPU JEDEC NVM OCP P2P SerDes
 
 Anjaneya Chagam
@@ -1860,6 +2114,8 @@ Anjaneya Chagam
 [YouTube](https://www.youtube.com/watch?v=FdT_2Vu07jA)
 
 [Text](./113)
+
+[Article](https://github.com/vaj/CDI-Articles#113)
 
 [Acronyms](./acronym.md): AI API CMS CPU CXL DCMHS DDR DRAM FMS GPU NUMA NVM OCP SK VMM
 
@@ -1877,6 +2133,8 @@ Antonio Hasbun
 
 [Text](./150)
 
+[Article](https://github.com/vaj/CDI-Articles#150)
+
 [Acronyms](./acronym.md): AMD API BMC CCI CLA CPER CPU CSM CSP CXL EMCA2 FMFM GPU IP JEDEC MCTP ML NVIDIA OCP OS PLDM PPR RAS SMM SoC UUID
 
 Bhushan Chitlur
@@ -1893,6 +2151,8 @@ Chris Gianos
 
 [Text](./167)
 
+[Article](https://github.com/vaj/CDI-Articles#167)
+
 [Acronyms](./acronym.md): AI AMX ARM CPU CXL DDR DIMM DRAM ECC EDA EMIB FP16 HPC IO JEDEC LP MCR MUX PCH PCI PCIe RDIMM RDT UPI VAX
 
 Clara Li
@@ -1900,6 +2160,8 @@ Clara Li
 [YouTube](https://www.youtube.com/watch?v=YVjM5Vy4KLo&t=4s)
 
 [Text](./162)
+
+[Article](https://github.com/vaj/CDI-Articles#162)
 
 [Acronyms](./acronym.md): AI APN ARM CAPEX CDI COTS CPS CPU CXL DCI DPU DRA GPU ICT IOWN IPU KubeCon LF LSN MIMO ML MOU NGINX NTT NVIDIA OCP OpenShift OPEX OPI OS OSS PCE PCI PCIe PoC RDMA TPU UPF US
 
@@ -1909,6 +2171,8 @@ Daniel Byrne
 
 [Text](./115)
 
+[Article](https://github.com/vaj/CDI-Articles#115)
+
 [Acronyms](./acronym.md): BKC CDN CentOS CPU CXL DDR DDR5 DRAM DSA GitHub HMSDK KV LRU NUMA NVMe OS PCIe SK
 
 Debendra Das Sharma
@@ -1916,6 +2180,8 @@ Debendra Das Sharma
 [YouTube](https://www.youtube.com/watch?v=ZcqVUo5cWDU)
 
 [Text](./53)
+
+[Article](https://github.com/vaj/CDI-Articles#53)
 
 [Acronyms](./acronym.md): ACK AES AI AMD ARM CHI CoWoS CPI CPU CRC CXL DMA EEPROM EMIB FDI FIT FLIT FOCoS FPGA GM GPIO HPC IO IOTLB IP JTAG ML MUX NACK NOC NVIDIA PCI PCIe PHY RDI RF ROI RTL SFI SIP SMP SoC SOC TSMC UCIe USB VIP XOR
 
@@ -1925,6 +2191,8 @@ Debendra Das Sharma
 
 [Text](./69)
 
+[Article](https://github.com/vaj/CDI-Articles#69)
+
 [Acronyms](./acronym.md): ACK ADC AI BER BGA CEM CPU CRC CTLE CXL DFA DFE DLLP DMTF DPC DRAM DWORD ECC ECN EDPC EDSFF EIC FBER FEC FIT FLIT FPGA HBA IC IDE IoT IOTLB IOV L0P NACK NOC NRZ PAM PAM4 PC PCI PCIe PIC RAS SD TLP UI
 
 Debendra Das Sharma
@@ -1932,6 +2200,8 @@ Debendra Das Sharma
 [YouTube](https://www.youtube.com/watch?v=kTI1dWJyjLs)
 
 [Text](./153)
+
+[Article](https://github.com/vaj/CDI-Articles#153)
 
 [Acronyms](./acronym.md): AES ARM AXI CHI CoWoS CRC CXL EMIB FDI FOCoS HIR IP NVIDIA PCI PHY QPI RDI SerDes SoC TSMC UCIe
 
@@ -1941,6 +2211,8 @@ Debendra Das Sharma
 
 [Text](./172)
 
+[Article](https://github.com/vaj/CDI-Articles#172)
+
 [Acronyms](./acronym.md): AES AXI CHI CoWoS CPU CRC CXL CXL.mem D2D EMIB FDI FIT FRAND GM IEEE IIT IO IP KPI MDFI NIC OEM PCI PCIe PCIE PhD PHY RDI RF RTL SerDes SIG SoC TSMC UCIe UMass USB VIP
 
 Dirk Blevins
@@ -1948,6 +2220,8 @@ Dirk Blevins
 [YouTube](https://www.youtube.com/watch?v=dWHF6-88Rh8)
 
 [Text](./141)
+
+[Article](https://github.com/vaj/CDI-Articles#141)
 
 [Acronyms](./acronym.md): AMD CLA CXL DCMHS ExaMax HPM I2C I3C IO MHS NIC OCP PCIe PMM SIF USB
 
@@ -1957,6 +2231,8 @@ Ira Weiny
 
 [Text](./133)
 
+[Article](https://github.com/vaj/CDI-Articles#133)
+
 [Acronyms](./acronym.md): AMD API CCI CPU CXL DAX DCD FPGA HDMDB MCTP MMPT OCP OS QEMU RAS RFC
 
 Ira Weiny
@@ -1964,6 +2240,8 @@ Ira Weiny
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=9JyEOumYSGunsEgU&t=3753)
 
 [Text](./134)
+
+[Article](https://github.com/vaj/CDI-Articles#134)
 
 [Acronyms](./acronym.md): ABI CXL DAX DCD DPA FM HPA PMEM QEMU RFC SysFS VM
 
@@ -1973,6 +2251,8 @@ Jason Howard
 
 [Text](./171)
 
+[Article](https://github.com/vaj/CDI-Articles#171)
+
 [Acronyms](./acronym.md): AI AIB ATTD BGA DARPA DDR5 DRAM ERI FinFET HIVE HyperX ISA LLVM MTP OAPS PCIe RISC RX SDK SPMV STP TSMC TX VC XY
 
 Javier Lasa
@@ -1981,6 +2261,8 @@ Javier Lasa
 
 [Text](./145)
 
+[Article](https://github.com/vaj/CDI-Articles#145)
+
 [Acronyms](./acronym.md): AI AMI ASPEED BMC CDFP CEM CPLD CPU CRC CRPS CXL DCM DCMHS DCSCI DCSCM DDR DDR5 DDR6 DSSI ECN EDSFF EMC FlexIO FPGA HBM HPE HPM I2C I3C IDE IO Jabil JTAG LTPI MCTP MHS MXIO NIC NVMe PCI PCIe PDB PESTI PIC RAS RTC SCM SGPIO SIF SIG SMB USB USBIF VDM XIO
 
 John Leung
@@ -1988,6 +2270,8 @@ John Leung
 [YouTube](https://www.youtube.com/watch?v=1vFczyVaUjw)
 
 [Text](./155)
+
+[Article](https://github.com/vaj/CDI-Articles#155)
 
 [Acronyms](./acronym.md): DMTF DSIM GitHub GPU HTML JSON OCP OPAF OpenStack PDF RAS RESTful RFP RMC StarlingX VP
 
@@ -2005,6 +2289,8 @@ Navneet Singh
 
 [Text](./134)
 
+[Article](https://github.com/vaj/CDI-Articles#134)
+
 [Acronyms](./acronym.md): ABI CXL DAX DCD DPA FM HPA PMEM QEMU RFC SysFS VM
 
 Sounak Gupta
@@ -2012,6 +2298,8 @@ Sounak Gupta
 [YouTube](https://www.youtube.com/watch?v=v6lk9tDM0rc)
 
 [Text](./115)
+
+[Article](https://github.com/vaj/CDI-Articles#115)
 
 [Acronyms](./acronym.md): BKC CDN CentOS CPU CXL DDR DDR5 DRAM DSA GitHub HMSDK KV LRU NUMA NVMe OS PCIe SK
 
@@ -2021,6 +2309,8 @@ Swadesh Choudhary
 
 [Text](./173)
 
+[Article](https://github.com/vaj/CDI-Articles#173)
+
 [Acronyms](./acronym.md): ACK AMD ARB BER BS CRC CXL CXL.cache CXL.io CXL.mem D2D DLP DWORD FDI FEC FLIT HBM IIT IP LINKINIT MBINIT MBTRAIN MS MUX NACK NVIDIA NVLink PCI PCIe PDS PHY PM PowerPC RAW RDI RESET REV SBINIT UCIe UI
 
 Yogesh Varma
@@ -2028,6 +2318,8 @@ Yogesh Varma
 [YouTube](https://www.youtube.com/watch?v=yKF84FfYBUk)
 
 [Text](./150)
+
+[Article](https://github.com/vaj/CDI-Articles#150)
 
 [Acronyms](./acronym.md): AMD API BMC CCI CLA CPER CPU CSM CSP CXL EMCA2 FMFM GPU IP JEDEC MCTP ML NVIDIA OCP OS PLDM PPR RAS SMM SoC UUID
 
@@ -2039,6 +2331,8 @@ Tracy Spitler
 
 [Text](./175)
 
+[Article](https://github.com/vaj/CDI-Articles#175)
+
 [Acronyms](./acronym.md): AI AMD APU ASIC CPU CXL CXL.cache DDR DDR4 DDR5 DLRM DRAM FLIT GPU HBM HBM4 HBR HPC HPE IntelliProp IO LiqidOS LPCAM LPDDR ML NUMA NVMe OCP OpenFAM PBR PCI PCIe RAS RDIMM ScaleFlux SQL UCIe US VM VP
 
 ### Jabil
@@ -2048,6 +2342,8 @@ Todd Rosedahl
 [YouTube](https://www.youtube.com/watch?v=LF_8JZ1UKAs)
 
 [Text](./145)
+
+[Article](https://github.com/vaj/CDI-Articles#145)
 
 [Acronyms](./acronym.md): AI AMI ASPEED BMC CDFP CEM CPLD CPU CRC CRPS CXL DCM DCMHS DCSCI DCSCM DDR DDR5 DDR6 DSSI ECN EDSFF EMC FlexIO FPGA HBM HPE HPM I2C I3C IDE IO Jabil JTAG LTPI MCTP MHS MXIO NIC NVMe PCI PCIe PDB PESTI PIC RAS RTC SCM SGPIO SIF SIG SMB USB USBIF VDM XIO
 
@@ -2059,6 +2355,8 @@ Majid Foodeei
 
 [Text](./154)
 
+[Article](https://github.com/vaj/CDI-Articles#154)
+
 [Acronyms](./acronym.md): AI AMD BoW CPU CXL D2D DDI DDR5 DRAM GPU HBM IP Jayhawk LLM NIC NVIDIA OCP ODSA OIF PC PCI PCIe PhD PoC SoC SRAM TCO
 
 ### KIOXIA
@@ -2069,6 +2367,8 @@ Sam Bhattarai
 
 [Text](./147)
 
+[Article](https://github.com/vaj/CDI-Articles#147)
+
 [Acronyms](./acronym.md): CFM EDSFF FMS IOPS KIOXIA OCP OPEX PCB PCBA PCIe SAS SATA SSD TCO YV3
 
 Scott Stetzer
@@ -2076,6 +2376,8 @@ Scott Stetzer
 [YouTube](https://www.youtube.com/watch?v=ZMQ-D8oCBMU)
 
 [Text](./148)
+
+[Article](https://github.com/vaj/CDI-Articles#148)
 
 [Acronyms](./acronym.md): API BSD BSD3 CLI CPU DMA DRAM FDP FIO FTL IO IP KIOXIA OSS PCI POC PSLC QEMU QLC QoS QOS SDK SEF SLC SSD TCO TLC WAF ZNS
 
@@ -2087,6 +2389,8 @@ Patrick Caporale
 
 [Text](./151)
 
+[Article](https://github.com/vaj/CDI-Articles#151)
+
 [Acronyms](./acronym.md): ACK ARP BIOS DMTF EID IO IoT IP MCTP NACK NCSI NIC NVMe NVMeMI NVMeMI OCP PCIe PLDM PMCI RMII SACK SMBIOS SMBus SPDM TCP TLS USB VDM VP WIP
 
 ### Light Counting
@@ -2097,6 +2401,8 @@ Bob Wheeler
 
 [Text](./156)
 
+[Article](https://github.com/vaj/CDI-Articles#156)
+
 [Acronyms](./acronym.md): AOC ARM CDFP CXL CXL.mem DRAM GPU HANA HPE LPDDR NERSC NUMA NVIDIA NVLink ODM OS PCI PCIe QPI SAP TE TPP VCSEL
 
 Vlad Kozlov
@@ -2104,6 +2410,8 @@ Vlad Kozlov
 [YouTube](https://www.youtube.com/watch?v=4y906CI7oRk)
 
 [Text](./126)
+
+[Article](https://github.com/vaj/CDI-Articles#126)
 
 [Acronyms](./acronym.md): AI AOC ASIC CAPEX CMOS CoWoS CPO CXL DAC DSP ECOC GPU HBM HBM3 HBM4 IBM IEEE LPO NRZ NVIDIA NVLink OCP OFC OIF OSA PAM PAM4 PCIe SerDes TCO VCSEL VP
 
@@ -2114,6 +2422,8 @@ Maurice Steinman
 [YouTube](https://youtu.be/l5Fg2ciN_Mk?si=3bXbhzoWUPDxumpR&t=1815)
 
 [Text](./170)
+
+[Article](https://github.com/vaj/CDI-Articles#170)
 
 [Acronyms](./acronym.md): AI ALU AMD ARM BFLOAT16 CMOS CPU DEC DRAM DSA ECC EIC FPGA HP IC IMEC MAC MCM MZI NOC oNOC PCIe PD PIC ResNet SIMD SiP SoC SRAM TPU TSMC TSV
 
@@ -2131,6 +2441,8 @@ Ron Swartzentruber
 
 [Text](./157)
 
+[Article](https://github.com/vaj/CDI-Articles#157)
+
 [Acronyms](./acronym.md): AI AMD CDFP CPU CXL FEC FPGA GPU LLM LPO MemVerge MPO NIC NUMA OCP OPT66B PCI QSFPDD RDMA SerDes SSD TCO TE
 
 ### Magnition IO
@@ -2140,6 +2452,8 @@ Andy Banta
 [YouTube](https://www.youtube.com/watch?v=dCcbR0T4UJA)
 
 [Text](./71)
+
+[Article](https://github.com/vaj/CDI-Articles#71)
 
 [Acronyms](./acronym.md): AI AMD ASIC CMS CPU CXL CXL.mem DDR DIMM DRAM EPYC LRU MRU NUMA NVMe PCI SDXI SNIA SSD TCO VM VMware
 
@@ -2151,6 +2465,8 @@ Loi Nguyen
 
 [Text](./126)
 
+[Article](https://github.com/vaj/CDI-Articles#126)
+
 [Acronyms](./acronym.md): AI AOC ASIC CAPEX CMOS CoWoS CPO CXL DAC DSP ECOC GPU HBM HBM3 HBM4 IBM IEEE LPO NRZ NVIDIA NVLink OCP OFC OIF OSA PAM PAM4 PCIe SerDes TCO VCSEL VP
 
 ### MemVerge
@@ -2160,6 +2476,8 @@ Charles Fan
 [YouTube](https://www.youtube.com/watch?v=IL5CcSO9tDQ)
 
 [Text](./77)
+
+[Article](https://github.com/vaj/CDI-Articles#77)
 
 [Acronyms](./acronym.md): AI AnyScale API CEO CPU CXL IO MemVerge ML PCIe SDK
 
@@ -2177,6 +2495,8 @@ Gregory Price
 
 [Text](./137)
 
+[Article](https://github.com/vaj/CDI-Articles#137)
+
 [Acronyms](./acronym.md): CPU CXL DRAM FPGA GPL IBS LLC LSFMM MM NAND NUMA PFN PID PMU RFC SQL SSD VMA
 
 Steve Scargall
@@ -2184,6 +2504,8 @@ Steve Scargall
 [YouTube](https://www.youtube.com/watch?v=CqyFG3gOBSk)
 
 [Text](./68)
+
+[Article](https://github.com/vaj/CDI-Articles#68)
 
 [Acronyms](./acronym.md): AI ASIC BSC CPU CSP CXL CXL.cache CXL.io DCD DLLP DMA DMTF DRAM FLIT GPU HBM IDE InfiniBand MemVerge ML MRIOV MS NAND NUMA NVIDIA NVM NVMe OEM PCI PCIe PMDK QEMU RAID RAS SAN SAS SDXI SNIA SOC SRIOV SSD TCO TLP
 
@@ -2201,6 +2523,8 @@ Steve Scargall
 
 [Text](./116)
 
+[Article](https://github.com/vaj/CDI-Articles#116)
+
 [Acronyms](./acronym.md): AMD CDAT CMS CPMU CPU CXL DCIM MemVerge NUMA OCP OS PCI RAM RAS XConn
 
 Svetly Todorov
@@ -2208,6 +2532,8 @@ Svetly Todorov
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=_0PHPs6A_1zRfPnG&t=12130)
 
 [Text](./137)
+
+[Article](https://github.com/vaj/CDI-Articles#137)
 
 [Acronyms](./acronym.md): CPU CXL DRAM FPGA GPL IBS LLC LSFMM MM NAND NUMA PFN PID PMU RFC SQL SSD VMA
 
@@ -2219,6 +2545,8 @@ Anil Agrawal
 
 [Text](./232)
 
+[Article](https://github.com/vaj/CDI-Articles#232)
+
 [Acronyms](./acronym.md): AER AI BMC CPER CPU CRC CTO DC DPC ECRC EINJ GPT GPU IO IOX LCRC META ML NIC NV NVMe OCP ODM OS PCI PCIe PCIE RAS RP_PIO SMI SMM TLP UR
 
 Chenyu Xu
@@ -2226,6 +2554,8 @@ Chenyu Xu
 [YouTube](https://www.youtube.com/watch?v=t72H1_4Wv8M)
 
 [Text](./143)
+
+[Article](https://github.com/vaj/CDI-Articles#143)
 
 [Acronyms](./acronym.md): ASIC BMC CPU CXL DAC DCMHS DCSCI DCSCM DNO I2C I3C IC MDNO NCSI NIC OCP ORV3 OU PCI PCIe TDP USB VNC YV4
 
@@ -2235,6 +2565,8 @@ Chris Petersen
 
 [Text](./80)
 
+[Article](https://github.com/vaj/CDI-Articles#80)
+
 [Acronyms](./acronym.md): AI CEM CPU CRC CXL DRAM FEC GFAM GPU HBM OCP PCI PCIe PHY TPU XPU
 
 Damien Chong
@@ -2243,6 +2575,8 @@ Damien Chong
 
 [Text](./141)
 
+[Article](https://github.com/vaj/CDI-Articles#141)
+
 [Acronyms](./acronym.md): AMD CLA CXL DCMHS ExaMax HPM I2C I3C IO MHS NIC OCP PCIe PMM SIF USB
 
 Darron Young
@@ -2250,6 +2584,8 @@ Darron Young
 [YouTube](https://www.youtube.com/watch?v=kEmuvQVlgIU)
 
 [Text](./124)
+
+[Article](https://github.com/vaj/CDI-Articles#124)
 
 [Acronyms](./acronym.md): AI CPO CWDM4 DSP FEC FR4 FR8 LPO OCP OMA ROI TX UCIe
 
@@ -2267,6 +2603,8 @@ Gada Badeer
 
 [Text](./232)
 
+[Article](https://github.com/vaj/CDI-Articles#232)
+
 [Acronyms](./acronym.md): AER AI BMC CPER CPU CRC CTO DC DPC ECRC EINJ GPT GPU IO IOX LCRC META ML NIC NV NVMe OCP ODM OS PCI PCIe PCIE RAS RP_PIO SMI SMM TLP UR
 
 Janet Chen
@@ -2274,6 +2612,8 @@ Janet Chen
 [YouTube](https://www.youtube.com/watch?v=zU0xhhES5VE)
 
 [Text](./128)
+
+[Article](https://github.com/vaj/CDI-Articles#128)
 
 [Acronyms](./acronym.md): AGC AI ASIC BER C2M CPO DCA DSP ER FR FR4 IEEE ISI LMS LPO ML MPN MVP OCP PAM4 RF RLM RX RxFFE TBD TDECQ TECQ TIA TP1 TP1a TP2 TP3 TP4 TP4a TX TxFIR
 
@@ -2283,6 +2623,8 @@ Jeremy Baumgartner
 
 [Text](./231)
 
+[Article](https://github.com/vaj/CDI-Articles#231)
+
 [Acronyms](./acronym.md): AC AI AMD BGA CPU DC DCSCM DVT EVT GPU HGX LED LLM ML NVIDIA OAM OCP OU PCB PCIe PDR QR SCM SI TCO UBB
 
 Kiran Vemuri
@@ -2290,6 +2632,8 @@ Kiran Vemuri
 [YouTube](https://www.youtube.com/watch?v=YWxVJkBKdVs)
 
 [Text](./92)
+
+[Article](https://github.com/vaj/CDI-Articles#92)
 
 [Acronyms](./acronym.md): API ASIC BMC CAD CMS CPU CXL DCMHS DCO DDR4 DDR5 DRAM HBM I2C MCIO MSIF OCP PCI PCIe PMM QSFP RDIMM SNIA USB
 
@@ -2299,6 +2643,8 @@ Kiran Vemuri
 
 [Text](./143)
 
+[Article](https://github.com/vaj/CDI-Articles#143)
+
 [Acronyms](./acronym.md): ASIC BMC CPU CXL DAC DCMHS DCSCI DCSCM DNO I2C I3C IC MDNO NCSI NIC OCP ORV3 OU PCI PCIe TDP USB VNC YV4
 
 Manoj Wadekar
@@ -2307,6 +2653,8 @@ Manoj Wadekar
 
 [Text](./109)
 
+[Article](https://github.com/vaj/CDI-Articles#109)
+
 [Acronyms](./acronym.md): AI CMS CXL DMTF ECN FDI GitHub GPU JEDEC NVM OCP P2P SerDes
 
 Manoj Wadekar
@@ -2314,6 +2662,8 @@ Manoj Wadekar
 [YouTube](https://www.youtube.com/watch?v=Sn5Jmnnvpko)
 
 [Text](./111)
+
+[Article](https://github.com/vaj/CDI-Articles#111)
 
 [Acronyms](./acronym.md): AI ARM ChatGPT CMS CPU CXL DDR4 DDR5 DRAM GenAI GPU HBM LLAMA PCI QPS RDMA SLA TCO VM
 
@@ -2331,6 +2681,8 @@ Manoj Wadekar
 
 [Text](./138)
 
+[Article](https://github.com/vaj/CDI-Articles#138)
+
 [Acronyms](./acronym.md): AI AWS BARD BertClassifier ChatGPT CMS CPU CTO CXL DRAM GPT GPU HBM IMDB JAX KV OCP OFP8 OpenXLA PCIe PyTorch ResNet TensorFlow TL;DR
 
 Matt Bowman
@@ -2338,6 +2690,8 @@ Matt Bowman
 [YouTube](https://www.youtube.com/watch?v=fmXfWad-NiA)
 
 [Text](./231)
+
+[Article](https://github.com/vaj/CDI-Articles#231)
 
 [Acronyms](./acronym.md): AC AI AMD BGA CPU DC DCSCM DVT EVT GPU HGX LED LLM ML NVIDIA OAM OCP OU PCB PCIe PDR QR SCM SI TCO UBB
 
@@ -2347,6 +2701,8 @@ Prakash Chauhan
 
 [Text](./80)
 
+[Article](https://github.com/vaj/CDI-Articles#80)
+
 [Acronyms](./acronym.md): AI CEM CPU CRC CXL DRAM FEC GFAM GPU HBM OCP PCI PCIe PHY TPU XPU
 
 Qing Wang
@@ -2355,6 +2711,8 @@ Qing Wang
 
 [Text](./128)
 
+[Article](https://github.com/vaj/CDI-Articles#128)
+
 [Acronyms](./acronym.md): AGC AI ASIC BER C2M CPO DCA DSP ER FR FR4 IEEE ISI LMS LPO ML MPN MVP OCP PAM4 RF RLM RX RxFFE TBD TDECQ TECQ TIA TP1 TP1a TP2 TP3 TP4 TP4a TX TxFIR
 
 Yishen Huang
@@ -2362,6 +2720,8 @@ Yishen Huang
 [YouTube](https://www.youtube.com/watch?v=zU0xhhES5VE)
 
 [Text](./128)
+
+[Article](https://github.com/vaj/CDI-Articles#128)
 
 [Acronyms](./acronym.md): AGC AI ASIC BER C2M CPO DCA DSP ER FR FR4 IEEE ISI LMS LPO ML MPN MVP OCP PAM4 RF RLM RX RxFFE TBD TDECQ TECQ TIA TP1 TP1a TP2 TP3 TP4 TP4a TX TxFIR
 
@@ -2391,6 +2751,8 @@ John Groves
 
 [Text](./135)
 
+[Article](https://github.com/vaj/CDI-Articles#135)
+
 [Acronyms](./acronym.md): AI API CLI CXL DAX DRAM FAM FSDAX IOMAP MMAP NumPy PMEM POSIX RAMFS RFC S_DAX TLB VFS VMA XFS
 
 John Groves
@@ -2398,6 +2760,8 @@ John Groves
 [YouTube](https://www.youtube.com/live/YbOgDpHWCtY?si=VmasazzvHpIVGMgM&t=10546)
 
 [Text](./136)
+
+[Article](https://github.com/vaj/CDI-Articles#136)
 
 [Acronyms](./acronym.md): BIOS CMM CPU CXL DDR DRAM HMAT IsoCapacity MEM MVP NUMA OCP OS RFC TLB VMA
 
@@ -2415,6 +2779,8 @@ Ravi Kiran Gummaluri
 
 [Text](./136)
 
+[Article](https://github.com/vaj/CDI-Articles#136)
+
 [Acronyms](./acronym.md): BIOS CMM CPU CXL DDR DRAM HMAT IsoCapacity MEM MVP NUMA OCP OS RFC TLB VMA
 
 Vijay Nain
@@ -2422,6 +2788,8 @@ Vijay Nain
 [YouTube](https://www.youtube.com/watch?v=Ng71-MFs6VU)
 
 [Text](./175)
+
+[Article](https://github.com/vaj/CDI-Articles#175)
 
 [Acronyms](./acronym.md): AI AMD APU ASIC CPU CXL CXL.cache DDR DDR4 DDR5 DLRM DRAM FLIT GPU HBM HBM4 HBR HPC HPE IntelliProp IO LiqidOS LPCAM LPDDR ML NUMA NVMe OCP OpenFAM PBR PCI PCIe RAS RDIMM ScaleFlux SQL UCIe US VM VP
 
@@ -2433,6 +2801,8 @@ Alex Wetmore
 
 [Text](./138)
 
+[Article](https://github.com/vaj/CDI-Articles#138)
+
 [Acronyms](./acronym.md): AI AWS BARD BertClassifier ChatGPT CMS CPU CTO CXL DRAM GPT GPU HBM IMDB JAX KV OCP OFP8 OpenXLA PCIe PyTorch ResNet TensorFlow TL;DR
 
 Ram Huggahalli
@@ -2441,6 +2811,8 @@ Ram Huggahalli
 
 [Text](./125)
 
+[Article](https://github.com/vaj/CDI-Articles#125)
+
 [Acronyms](./acronym.md): AI CAPEX CPU CXL GPU HBM InfiniBand NIC OCP OPEX PCIe UCIE UEC
 
 Samir Rajadnya
@@ -2448,6 +2820,8 @@ Samir Rajadnya
 [YouTube](https://www.youtube.com/watch?v=Sn5Jmnnvpko)
 
 [Text](./111)
+
+[Article](https://github.com/vaj/CDI-Articles#111)
 
 [Acronyms](./acronym.md): AI ARM ChatGPT CMS CPU CXL DDR4 DDR5 DRAM GenAI GPU HBM LLAMA PCI QPS RDMA SLA TCO VM
 
@@ -2465,6 +2839,8 @@ Samir Rajadnya
 
 [Text](./119)
 
+[Article](https://github.com/vaj/CDI-Articles#119)
+
 [Acronyms](./acronym.md): CMS CPU CXL DDR4 DMA DRAM ECN GPU IP LBA LRU MMU NUMA NVIDIA OCP OS PCIe QOS RAS TPP
 
 ### Molex
@@ -2475,6 +2851,8 @@ Hasan Ali
 
 [Text](./130)
 
+[Article](https://github.com/vaj/CDI-Articles#130)
+
 [Acronyms](./acronym.md): ASIC CPU DOM DSP EMI FPGA MSA OIF OSFP OSFPXD PCIe QSFPDD SMT SSD TIM XD
 
 WaiKiong Poon
@@ -2482,6 +2860,8 @@ WaiKiong Poon
 [YouTube](https://www.youtube.com/watch?v=kZrUmhtBXbQ)
 
 [Text](./102)
+
+[Article](https://github.com/vaj/CDI-Articles#102)
 
 [Acronyms](./acronym.md): AI CPU DGX GPU HPC IBM MME NVIDIA NVLink OEM PAM PCB PCI SI SMT TDR UBB
 
@@ -2503,6 +2883,8 @@ Allan Cantle
 
 [Text](./142)
 
+[Article](https://github.com/vaj/CDI-Articles#142)
+
 [Acronyms](./acronym.md): AI AMD CoWoS CPO CPU CXL DGX FPGA GPT GPU HPC HPCM IBM IoT MI300 NPO NVIDIA NVMe OAM OCP ODSA PC PCI SambaNova TPU UCIE
 
 ### NTT
@@ -2512,6 +2894,8 @@ Allan Cantle
 [YouTube](https://www.youtube.com/watch?v=YVjM5Vy4KLo&t=4s)
 
 [Text](./162)
+
+[Article](https://github.com/vaj/CDI-Articles#162)
 
 [Acronyms](./acronym.md): AI APN ARM CAPEX CDI COTS CPS CPU CXL DCI DPU DRA GPU ICT IOWN IPU KubeCon LF LSN MIMO ML MOU NGINX NTT NVIDIA OCP OpenShift OPEX OPI OS OSS PCE PCI PCIe PoC RDMA TPU UPF US
 
@@ -2523,6 +2907,8 @@ Durgesh Srivastava
 
 [Text](./119)
 
+[Article](https://github.com/vaj/CDI-Articles#119)
+
 [Acronyms](./acronym.md): CMS CPU CXL DDR4 DMA DRAM ECN GPU IP LBA LRU MMU NUMA NVIDIA OCP OS PCIe QOS RAS TPP
 
 James Bodner
@@ -2530,6 +2916,8 @@ James Bodner
 [YouTube](https://www.youtube.com/watch?v=z8qkUckxuC8)
 
 [Text](./144)
+
+[Article](https://github.com/vaj/CDI-Articles#144)
 
 [Acronyms](./acronym.md): ACPI ACS AI ARM BBR BIOS BMC BSA CG1 CPU CTO DPU EDA EDK GH200 GitHub GPU IoT IP IPMI ISA LBBR LS MGX NVIDIA OCP OpenBMC OPF OSF SBBR SBMR SBSA SIE SR TCG TFA TPM UEFI
 
@@ -2539,6 +2927,8 @@ Kevin Deierling
 
 [Text](./169)
 
+[Article](https://github.com/vaj/CDI-Articles#169)
+
 [Acronyms](./acronym.md): AI AMD ARM ASIC CPU CV DDoS DOCA DPDK DPU ELMO Geneve MIPS NetFlow NVIDIA OVS P4 RDMA RMT SIGCOMM VXLAN
 
 Marvin Denman
@@ -2546,6 +2936,8 @@ Marvin Denman
 [YouTube](https://youtu.be/UsJnMdMKTRA?si=vTITi3k5mIDbzjL5&t=3047)
 
 [Text](./173)
+
+[Article](https://github.com/vaj/CDI-Articles#173)
 
 [Acronyms](./acronym.md): ACK AMD ARB BER BS CRC CXL CXL.cache CXL.io CXL.mem D2D DLP DWORD FDI FEC FLIT HBM IIT IP LINKINIT MBINIT MBTRAIN MS MUX NACK NVIDIA NVLink PCI PCIe PDS PHY PM PowerPC RAW RDI RESET REV SBINIT UCIe UI
 
@@ -2555,6 +2947,8 @@ Seunghyun Eddy Hwang
 
 [Text](./102)
 
+[Article](https://github.com/vaj/CDI-Articles#102)
+
 [Acronyms](./acronym.md): AI CPU DGX GPU HPC IBM MME NVIDIA NVLink OEM PAM PCB PCI SI SMT TDR UBB
 
 Yuval Itkin
@@ -2562,6 +2956,8 @@ Yuval Itkin
 [YouTube](https://www.youtube.com/watch?v=pFdyCUi6q2s)
 
 [Text](./151)
+
+[Article](https://github.com/vaj/CDI-Articles#151)
 
 [Acronyms](./acronym.md): ACK ARP BIOS DMTF EID IO IoT IP MCTP NACK NCSI NIC NVMe NVMeMI NVMeMI OCP PCIe PLDM PMCI RMII SACK SMBIOS SMBus SPDM TCP TLS USB VDM VP WIP
 
@@ -2573,6 +2969,8 @@ Jim Handy
 
 [Text](./73)
 
+[Article](https://github.com/vaj/CDI-Articles#73)
+
 [Acronyms](./acronym.md): AI AMD CPU CXL DDR DDR3 DDR4 DDR5 DDRT DIMM DRAM FlashCore FRAM GPU HBM IBM IEEE IO JEDEC MemCon MLC MRAM NAND NVDIMM NVIDIA NVM NVMe OMI PCI PCIe RAM SATA SK SLC SNIA SRAM SSD TLC UCIe URL
 
 ### OCP
@@ -2583,6 +2981,8 @@ Andy Bechtolsheim
 
 [Text](./122)
 
+[Article](https://github.com/vaj/CDI-Articles#122)
+
 [Acronyms](./acronym.md): AI DSP LPO MTBF OCP OSFP WDM XD
 
 Andy Bechtolsheim
@@ -2590,6 +2990,8 @@ Andy Bechtolsheim
 [YouTube](https://www.youtube.com/watch?v=4y906CI7oRk)
 
 [Text](./126)
+
+[Article](https://github.com/vaj/CDI-Articles#126)
 
 [Acronyms](./acronym.md): AI AOC ASIC CAPEX CMOS CoWoS CPO CXL DAC DSP ECOC GPU HBM HBM3 HBM4 IBM IEEE LPO NRZ NVIDIA NVLink OCP OFC OIF OSA PAM PAM4 PCIe SerDes TCO VCSEL VP
 
@@ -2600,6 +3002,8 @@ Nathan Tracy
 [YouTube](https://www.youtube.com/watch?v=h-l8BE3cDGg)
 
 [Text](./106)
+
+[Article](https://github.com/vaj/CDI-Articles#106)
 
 [Acronyms](./acronym.md): AI APPSEL CEI CMIS ECOC GPU IEEE LGA LPO LR MR OFC OIF PCIe VSR XSR
 
@@ -2619,6 +3023,8 @@ Larrie Carr
 
 [Text](./119)
 
+[Article](https://github.com/vaj/CDI-Articles#119)
+
 [Acronyms](./acronym.md): CMS CPU CXL DDR4 DMA DRAM ECN GPU IP LBA LRU MMU NUMA NVIDIA OCP OS PCIe QOS RAS TPP
 
 Larrie Carr
@@ -2626,6 +3032,8 @@ Larrie Carr
 [YouTube](https://www.youtube.com/watch?v=JSmqTJGCVs4)
 
 [Text](./120)
+
+[Article](https://github.com/vaj/CDI-Articles#120)
 
 [Acronyms](./acronym.md): AI CMS CPU CRC CXL CXL.mem DDR DI DIF DRAM ECC FLIT HPE IDE IP OCP PCIe RAS SDC UE VLSI
 
@@ -2645,6 +3053,8 @@ Vincent Haché
 
 [Text](./162)
 
+[Article](https://github.com/vaj/CDI-Articles#162)
+
 [Acronyms](./acronym.md): AI APN ARM CAPEX CDI COTS CPS CPU CXL DCI DPU DRA GPU ICT IOWN IPU KubeCon LF LSN MIMO ML MOU NGINX NTT NVIDIA OCP OpenShift OPEX OPI OS OSS PCE PCI PCIe PoC RDMA TPU UPF US
 
 ### Samsung
@@ -2663,6 +3073,8 @@ Fan Ni
 
 [Text](./132)
 
+[Article](https://github.com/vaj/CDI-Articles#132)
+
 [Acronyms](./acronym.md): ABI ARM BIOS BMC CCI CDAT CXL DC DCD DMTF DPA EDK2 FAM FM FMAPI GFD HDM I2C I3C KVM LPC MCTP MEM MMPT PCI PMEM PXB QEMU QMP RAS TCG TCP VDM
 
 Jin Hyun Kim
@@ -2670,6 +3082,8 @@ Jin Hyun Kim
 [YouTube](https://youtu.be/07JjXXd-0ao?si=SFHZ2BJhpn4kBe1-&t=1830)
 
 [Text](./163)
+
+[Article](https://github.com/vaj/CDI-Articles#163)
 
 [Acronyms](./acronym.md): AI AMD AXDIMM BF16 CO2 CPU CXL CXL.io CXL.mem DAX DDR DIMM DQ DRAM ECC FP16 FP32 GDDR GDDR6X GDDR7 GEMM GEMV GPT GPU HBM HBM2 HPC InfiniBand ISSCC JEDEC LPDDR LPDDR5 MCR MI100 MOE OneMCC OpenACC OPT OPT13B OPT66B PAM PCB PIM PNM POC PyTorch RNNT SDK SIMD SQL SRAM SSD SYCL TCO
 
@@ -2681,6 +3095,8 @@ Mohamad El-Batal
 
 [Text](./95)
 
+[Article](https://github.com/vaj/CDI-Articles#95)
+
 [Acronyms](./acronym.md): AEC AOC CDFP CPU CXL DAC DOC FEC GPU MPO NUMA NVMe OCP PAM4 PCI PCIe QSFP QSFPDD SFF SIG SN SNIA TCO
 
 ### SK hynix
@@ -2691,6 +3107,8 @@ Don Moon
 
 [Text](./115)
 
+[Article](https://github.com/vaj/CDI-Articles#115)
+
 [Acronyms](./acronym.md): BKC CDN CentOS CPU CXL DDR DDR5 DRAM DSA GitHub HMSDK KV LRU NUMA NVMe OS PCIe SK
 
 Hoshik Kim
@@ -2698,6 +3116,8 @@ Hoshik Kim
 [YouTube](https://www.youtube.com/watch?v=pbnTlY41h08)
 
 [Text](./139)
+
+[Article](https://github.com/vaj/CDI-Articles#139)
 
 [Acronyms](./acronym.md): AI CMS CMSDK CPU CXL DAMON DIMM DRAM FMS GitHub HMSDK IO LightingDB NAND OCP RAID RDMA SK SoC SSD TCP TLB
 
@@ -2715,6 +3135,8 @@ Yongkee Kwon
 
 [Text](./161)
 
+[Article](https://github.com/vaj/CDI-Articles#161)
+
 [Acronyms](./acronym.md): AI AiM ASIC BF16 BLAS DDR5 DM DRAM ECC FP32 FPGA GDDR GDDR6 GEMM GEMV GPT GPU HBM HBM3 LLAMA LPDDR LPDDR5 MAC MLIR NPU NVIDIA ONNX OPT PCIe PhD POC PyTorch SK UT VR
 
 ### SMART Modular Technologies
@@ -2725,6 +3147,8 @@ Andy Mills
 
 [Text](./70)
 
+[Article](https://github.com/vaj/CDI-Articles#70)
+
 [Acronyms](./acronym.md): ACPI AMD CMS CPU CXL DDR DDR5 DIMM E3S EFI FDDI HA HBM HCI HPC IBM IO IOPS JBOD JBOM JSON LAN LBA MemVerge MP3 NUMA NV NVMe OCP OMI OS PC PCIe PhD RAID RAM RESTful RPO RTO SAN SATA SSD USB VMAP VMware
 
 Andy Mills
@@ -2732,6 +3156,8 @@ Andy Mills
 [YouTube](https://www.youtube.com/watch?v=XpH5PJnVnQw)
 
 [Text](./117)
+
+[Article](https://github.com/vaj/CDI-Articles#117)
 
 [Acronyms](./acronym.md): AMD API CMS CPU CXL DDR DDR5 DIMM HA HBM HPE IO IOPS JBOM JSON KVM NUMA NVMe OCP OMI OpenCAPI PCIe RESTful RPO RTO SGH SMART SSD VMAP VMware XConn
 
@@ -2751,6 +3177,8 @@ Jason Molgaard
 
 [Text](./74)
 
+[Article](https://github.com/vaj/CDI-Articles#74)
+
 [Acronyms](./acronym.md): AMD API ARM ATS BSD3 CMB CPU CS CXL DMA DRAM FPGA GPU IO IOMMU MMIO NVM NVMe OS PCI PCIe PMR PRI QEMU QoS RISC SDXI SIG SLM SNIA TWG VM
 
 ### TE Connectivity
@@ -2761,6 +3189,8 @@ Brian Costello
 
 [Text](./91)
 
+[Article](https://github.com/vaj/CDI-Articles#91)
+
 [Acronyms](./acronym.md): AI CDFP CEM CMOS CopperLink CPU CXL EWG H3C HD INF JBOG JBOM MSA NIC OCP OSFP PCB PCIe SAS SFF SIG SNIA TA TA1034 TE XD XY
 
 Christopher Blackburn
@@ -2768,6 +3198,8 @@ Christopher Blackburn
 [YouTube](https://www.youtube.com/watch?v=grWlLw02c3E)
 
 [Text](./91)
+
+[Article](https://github.com/vaj/CDI-Articles#91)
 
 [Acronyms](./acronym.md): AI CDFP CEM CMOS CopperLink CPU CXL EWG H3C HD INF JBOG JBOM MSA NIC OCP OSFP PCB PCIe SAS SFF SIG SNIA TA TA1034 TE XD XY
 
@@ -2811,6 +3243,8 @@ Vikrant Soman
 
 [Text](./112)
 
+[Article](https://github.com/vaj/CDI-Articles#112)
+
 [Acronyms](./acronym.md): CPU CXL DDR DDR5 DRAM IPC MLC NUMA SPEC TCO VM
 
 Vikrant Soman
@@ -2818,6 +3252,8 @@ Vikrant Soman
 [YouTube](https://www.youtube.com/watch?v=FdT_2Vu07jA)
 
 [Text](./113)
+
+[Article](https://github.com/vaj/CDI-Articles#113)
 
 [Acronyms](./acronym.md): AI API CMS CPU CXL DCMHS DDR DRAM FMS GPU NUMA NVM OCP SK VMM
 
@@ -2829,6 +3265,8 @@ Subu Iyer
 
 [Text](./154)
 
+[Article](https://github.com/vaj/CDI-Articles#154)
+
 [Acronyms](./acronym.md): AI AMD BoW CPU CXL D2D DDI DDR5 DRAM GPU HBM IP Jayhawk LLM NIC NVIDIA OCP ODSA OIF PC PCI PCIe PhD PoC SoC SRAM TCO
 
 ### Ventana
@@ -2838,6 +3276,8 @@ Greg Favor
 [YouTube](https://youtu.be/slcwJP0pzGQ?si=Ft9VLbezHaC-sgHB&t=3831)
 
 [Text](./166)
+
+[Article](https://github.com/vaj/CDI-Articles#166)
 
 [Acronyms](./acronym.md): AI AMBA AMD ARM ASL AXI CHI CMO CPU CTO CXL DDR DL2 DRAM DVFS FPGA IL2 ILP INT IOMMU IP IPC ISA OctoML ODSA PDP PHY PowerPC PR1 PR2 RAID RAM RAS RISC RPS RV64GC RVV SoC SOC SPEC TDP TLB TSMC UCIe
 
@@ -2849,6 +3289,8 @@ Arvind Jagannath
 
 [Text](./114)
 
+[Article](https://github.com/vaj/CDI-Articles#114)
+
 [Acronyms](./acronym.md): CPU CXL DDR DRAM DRS ESXi IP MongoDB MySQL NUMA NVMe OEL OPEX OS PCI PCT RAM SLOB SMT SQL TCO vCPU VM VMware
 
 Sudhir Balasubramanian
@@ -2856,6 +3298,8 @@ Sudhir Balasubramanian
 [YouTube](https://www.youtube.com/watch?v=hNoEfggkSPE)
 
 [Text](./114)
+
+[Article](https://github.com/vaj/CDI-Articles#114)
 
 [Acronyms](./acronym.md): CPU CXL DDR DRAM DRS ESXi IP MongoDB MySQL NUMA NVMe OEL OPEX OS PCI PCT RAM SLOB SMT SQL TCO vCPU VM VMware
 
@@ -2877,6 +3321,8 @@ Bill Gervas
 
 [Text](./175)
 
+[Article](https://github.com/vaj/CDI-Articles#175)
+
 [Acronyms](./acronym.md): AI AMD APU ASIC CPU CXL CXL.cache DDR DDR4 DDR5 DLRM DRAM FLIT GPU HBM HBM4 HBR HPC HPE IntelliProp IO LiqidOS LPCAM LPDDR ML NUMA NVMe OCP OpenFAM PBR PCI PCIe RAS RDIMM ScaleFlux SQL UCIe US VM VP
 
 ### Xconn Technologies
@@ -2886,6 +3332,8 @@ Gerry Fan
 [YouTube](https://www.youtube.com/watch?v=CqyFG3gOBSk)
 
 [Text](./68)
+
+[Article](https://github.com/vaj/CDI-Articles#68)
 
 [Acronyms](./acronym.md): AI ASIC BSC CPU CSP CXL CXL.cache CXL.io DCD DLLP DMA DMTF DRAM FLIT GPU HBM IDE InfiniBand MemVerge ML MRIOV MS NAND NUMA NVIDIA NVM NVMe OEM PCI PCIe PMDK QEMU RAID RAS SAN SAS SDXI SNIA SOC SRIOV SSD TCO TLP
 
@@ -2907,6 +3355,8 @@ Mahesh Wagh
 
 [Text](./178)
 
+[Article](https://github.com/vaj/CDI-Articles#178)
+
 [Acronyms](./acronym.md): API CPU CXL CXL.cache CXL.io CXL.mem DCD DDR DDR4 DDR5 DDR6 DRS ECN GFAM GIM GPGPU GPU H2H HBR HDMDB HDMH HPE IDE IO IP MC NDR NIC NVIDIA P2P PBR PCI PCIe PGAS RAS S2M S2M TEE TSP UI UIO VM
 
 ### Astera Labs
@@ -2916,6 +3366,8 @@ Michael Ocampo
 [YouTube](https://www.youtube.com/watch?v=qlveMGLpokA)
 
 [Text](./195)
+
+[Article](https://github.com/vaj/CDI-Articles#195)
 
 [Acronyms](./acronym.md): AI ARIES BIOS BMC CAPEX CEM CFD CMS COSMOS CPU CXL DCMHS DDR5 DesignCon DIMM DRAM EDA GTC HPC HPM IC JBOM JEDEC LEO MDNO MemVerge META MLC MSIF MXIO MySQL NIC NUMA NVIDIA OCP OEM OLAP OPEX OS PCIe RAS SC SDK SFFTA SNIA SQL TCO TPC
 
@@ -2927,6 +3379,8 @@ Siamak Tavallaei
 
 [Text](./182)
 
+[Article](https://github.com/vaj/CDI-Articles#182)
+
 [Acronyms](./acronym.md): CMS CPU CXL CXL.mem DDR6 DRAM GPU HPC IDE InfiniBand JEDEC OCP PCIe RAS TSP
 
 Siamak Tavallaei
@@ -2934,6 +3388,8 @@ Siamak Tavallaei
 [YouTube](https://www.youtube.com/watch?v=VOeoZsRQcqI)
 
 [Text](./192)
+
+[Article](https://github.com/vaj/CDI-Articles#192)
 
 [Acronyms](./acronym.md): AI CMS CPU CXL DCMHS DMTF GPU HPC HPM JEDEC ML NVMe OAI OAM OCP PCB PCIe SNIA UCIe
 
@@ -2945,6 +3401,8 @@ Eddie McMorrow
 
 [Text](./191)
 
+[Article](https://github.com/vaj/CDI-Articles#191)
+
 [Acronyms](./acronym.md): AI AMD BIOS CPU CXL CXL.cache CXL.io CXL.mem DDR DRAM FabreX GigaIO GigaIO GPU InfiniBand IP JBOF JBOG MI210 MPI NIC NVIDIA NVMe NVMeOF OS PCI PCIe PyTorch RDMA SC23 TCP
 
 ### H3 Platform
@@ -2954,6 +3412,8 @@ Brian Pan
 [YouTube](https://www.youtube.com/watch?v=hqIAh0nYeV4)
 
 [Text](./179)
+
+[Article](https://github.com/vaj/CDI-Articles#179)
 
 [Acronyms](./acronym.md): API CDFP CEO CLI CXL DDR4 DIMM EVT GUI mCPU PCIe RESTful YouTube
 
@@ -2965,6 +3425,8 @@ Changwoo Min
 
 [Text](./203)
 
+[Article](https://github.com/vaj/CDI-Articles#203)
+
 [Acronyms](./acronym.md): API CPU CXL DiskANN DRAM FusionFS IO KNN LevelDB NOVA NUMA NVM OmniCache OmniDynamic OmniIndex OS PCIe POSIX RocksDB UserLib YCSB
 
 ### Intel
@@ -2975,6 +3437,8 @@ Anil Godbole
 
 [Text](./189)
 
+[Article](https://github.com/vaj/CDI-Articles#189)
+
 [Acronyms](./acronym.md): AC ARM BHS BIOS CCIX CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM EDSFF EMR GNR HANA IBM IP IT MemVerge MMIO NUMA OpenCAPI OS PCIe SAP SATA SPR SSD TCO TPP USB
 
 Robert Blankenship
@@ -2982,6 +3446,8 @@ Robert Blankenship
 [YouTube](https://www.youtube.com/watch?v=Vtcs-8zcmg0)
 
 [Text](./178)
+
+[Article](https://github.com/vaj/CDI-Articles#178)
 
 [Acronyms](./acronym.md): API CPU CXL CXL.cache CXL.io CXL.mem DCD DDR DDR4 DDR5 DDR6 DRS ECN GFAM GIM GPGPU GPU H2H HBR HDMDB HDMH HPE IDE IO IP MC NDR NIC NVIDIA P2P PBR PCI PCIe PGAS RAS S2M S2M TEE TSP UI UIO VM
 
@@ -2993,6 +3459,8 @@ Ron Swartzentruber
 
 [Text](./188)
 
+[Article](https://github.com/vaj/CDI-Articles#188)
+
 [Acronyms](./acronym.md): AI AMD CDFP CEM CPU CXL GPU MCIO MemVerge NIC NUMA NVIDIA OCP OPT OPT66B OSFP PCI PCIe PhotoWave QSFP RDMA SIG SMBus SSD
 
 ### MemVerge
@@ -3003,6 +3471,8 @@ Charles Fan
 
 [Text](./180)
 
+[Article](https://github.com/vaj/CDI-Articles#180)
+
 [Acronyms](./acronym.md): AI AIC AMD API CEO CPU CRAP CRUD CXL DDR DDR4 DDR5 DIMM DRAM GPU InfiniBand IO IP MemVerge MPI NCCL NVIDIA NVLink OS PCIe POC RDMA SDK SK SSD TCP VMware
 
 Steve Scargall
@@ -3010,6 +3480,8 @@ Steve Scargall
 [YouTube](https://www.youtube.com/watch?v=0C4QiT4W6gY)
 
 [Text](./197)
+
+[Article](https://github.com/vaj/CDI-Articles#197)
 
 [Acronyms](./acronym.md): AI AMD BIOS CEM CPU CXL DAX DDR DDR4 DDR5 DeepImage DIMM DRAM GIST GloVe GPU LinkedIn MemVerge MLC MySQL NUMA NVMe PCIe RAID RAM RDBMS SIFT SlideShare SQL TPP YouTube
 
@@ -3019,6 +3491,8 @@ Yong Tian
 
 [Text](./190)
 
+[Article](https://github.com/vaj/CDI-Articles#190)
+
 [Acronyms](./acronym.md): AI AIC AMD CPU CPU0 CPU1 CXL DDR4 DDR5 DesignCon DIMM HPC MetaBat MySQL NUMA NUMA0 NUMA1 NUMA4 NUMA5 OLAP PCIe SQL TCO TPCC TPS UPI
 
 Yong Tian
@@ -3026,6 +3500,8 @@ Yong Tian
 [YouTube](https://www.youtube.com/watch?v=JiZWNj0mPjk)
 
 [Text](./202)
+
+[Article](https://github.com/vaj/CDI-Articles#202)
 
 [Acronyms](./acronym.md): AI AIC AMD AWS CPU CXL DDR DDR4 DDR5 DIMM DRAM EDA GPU HPC LinkedIn MetaBat MySQL NUMA PCIe PoC QPS SQL SSD TPC UPI YouTube
 
@@ -3037,11 +3513,15 @@ Michael Abraham
 
 [Text](./185)
 
+[Article](https://github.com/vaj/CDI-Articles#185)
+
 Ravi Kiran Gummaluri
 
 [YouTube](https://www.youtube.com/watch?v=pX2kCoDtgBM)
 
 [Text](./193)
+
+[Article](https://github.com/vaj/CDI-Articles#193)
 
 [Acronyms](./acronym.md): ACMM AI AMD BIOS CMM CPU CXL CZ120 DDR DDR4 DDR5 DRAM EPYC HPC LLAMA MemVerge MLC NUMA OS PCIe RAS RDIMM TCO TPC
 
@@ -3053,6 +3533,8 @@ Ravi Budruk
 
 [Text](./200)
 
+[Article](https://github.com/vaj/CDI-Articles#200)
+
 [Acronyms](./acronym.md): ARB ARM CEO CXL DDR DDR4 DDR5 DRAM FAE FLIT HBM IP LeCroy LPDDR LPDDR4 LPDDR5 LTSSM MindShare MUX NVMe OpenCL OS PCI PCIe PDF PM SAS SATA UEFI UFS US USB VHDL WebEx XHCI
 
 ### Montage Technology
@@ -3062,6 +3544,8 @@ Nilesh Shah
 [YouTube](https://www.youtube.com/watch?v=Bmq7pahlTYI)
 
 [Text](./196)
+
+[Article](https://github.com/vaj/CDI-Articles#196)
 
 [Acronyms](./acronym.md): AI CPU CXL DDR DDR4 DDR5 DRAM EDSFF IO JEDEC MemVerge MXC NUMA OCP PCI PCIe RAS RDIMM RISC SK SoC UDIMM VP
 
@@ -3073,6 +3557,8 @@ Jian Zhang
 
 [Text](./203)
 
+[Article](https://github.com/vaj/CDI-Articles#203)
+
 [Acronyms](./acronym.md): API CPU CXL DiskANN DRAM FusionFS IO KNN LevelDB NOVA NUMA NVM OmniCache OmniDynamic OmniIndex OS PCIe POSIX RocksDB UserLib YCSB
 
 ### Samsung
@@ -3082,6 +3568,8 @@ Marie Nguyen
 [YouTube](https://www.youtube.com/watch?v=k9HDnNPg_XM)
 
 [Text](./203)
+
+[Article](https://github.com/vaj/CDI-Articles#203)
 
 [Acronyms](./acronym.md): API CPU CXL DiskANN DRAM FusionFS IO KNN LevelDB NOVA NUMA NVM OmniCache OmniDynamic OmniIndex OS PCIe POSIX RocksDB UserLib YCSB
 
@@ -3093,6 +3581,8 @@ Torry Steed
 
 [Text](./183)
 
+[Article](https://github.com/vaj/CDI-Articles#183)
+
 [Acronyms](./acronym.md): AI AIC ATM CEM CPU CXL DDR5 DIMM DRAM ECC EDSFF IT PCB PCIe SIM SO SSD TSV
 
 Torry Steed
@@ -3101,6 +3591,8 @@ Torry Steed
 
 [Text](./186)
 
+[Article](https://github.com/vaj/CDI-Articles#186)
+
 [Acronyms](./acronym.md): AI AMD CMM CPU CXL DDR4 DDR5 DIMM DNA DRAM ESM NAND NV NVCMM PCB PCIe SGH SMART
 
 Torry Steed
@@ -3108,6 +3600,8 @@ Torry Steed
 [YouTube](https://www.youtube.com/watch?v=muBTTEise6U)
 
 [Text](./194)
+
+[Article](https://github.com/vaj/CDI-Articles#194)
 
 [Acronyms](./acronym.md): AI CEM CPU CXL DDR4 DDR5 DIMM DNA DRAM HANA LED NAND NASDAQ NVDIMM SAP SGH SMART SQL TSV
 
@@ -3119,6 +3613,8 @@ Gary Ruggles
 
 [Text](./199)
 
+[Article](https://github.com/vaj/CDI-Articles#199)
+
 [Acronyms](./acronym.md): AMBA ARB ARM ASIC AXI CCA CCIX CMN700 CPU CXL CXL.cache CXL.io CXL.mem CXS DDR DES DesignCon DevCon ECN EP FAE FLIT FPGA FYI GFAM GIC GTH HAPS HBR IDE IP L0P LeCroy MemVerge MSI MUX NOC PBR PCI PCI6 PCS PHY RAS RC RC SC23 SIG SKU SoC TSP UIO UltraScale
 
 ### Teledyne LeCroy
@@ -3129,6 +3625,8 @@ Gorden Getty
 
 [Text](./201)
 
+[Article](https://github.com/vaj/CDI-Articles#201)
+
 [Acronyms](./acronym.md): BIOS CEM CXL CXL.mem EDSFF FYI IDE LeCroy LinkExpert LTSSM NVMe OCP PCI PCIe RoCE SAS SATA SFF SIG SMBus TA TCP US VP
 
 Nick Kriczsky
@@ -3136,6 +3634,8 @@ Nick Kriczsky
 [YouTube](https://www.youtube.com/watch?v=HuPcPdBuLqg)
 
 [Text](./201)
+
+[Article](https://github.com/vaj/CDI-Articles#201)
 
 [Acronyms](./acronym.md): BIOS CEM CXL CXL.mem EDSFF FYI IDE LeCroy LinkExpert LTSSM NVMe OCP PCI PCIe RoCE SAS SATA SFF SIG SMBus TA TCP US VP
 
@@ -3147,6 +3647,8 @@ Zhe Yang
 
 [Text](./204)
 
+[Article](https://github.com/vaj/CDI-Articles#204)
+
 [Acronyms](./acronym.md): ADDR CPU DMA LBA MR ODP ODPMR OS RDMA RNIC SSD TeRM VM XStore
 
 ### VMWare
@@ -3156,6 +3658,8 @@ Arvind Jagannath
 [YouTube](https://www.youtube.com/watch?v=_adbBMEhdNQ)
 
 [Text](./184)
+
+[Article](https://github.com/vaj/CDI-Articles#184)
 
 [Acronyms](./acronym.md): AI BirchStream CPU CXL CXL.mem DDR DRAM DRS ESX GFAM IP IT MemVerge ML NVMe OEM PCI PLX RAS TCO VDI VM VMotion VMware
 
@@ -3167,6 +3671,8 @@ JP Jiangg
 
 [Text](./187)
 
+[Article](https://github.com/vaj/CDI-Articles#187)
+
 [Acronyms](./acronym.md): AI ASIC CPU CXL DPU GPU MemVerge PCIe RDMA
 
 ### Yole
@@ -3177,6 +3683,8 @@ Thibault Grossi
 
 [Text](./181)
 
+[Article](https://github.com/vaj/CDI-Articles#181)
+
 [Acronyms](./acronym.md): ADAS AI AIC CAPEX CPU CXL DDR DDR5 DIMM DRAM EDSSF GPU HPC JBOM MCU MRAM NAND NLP NVMe PCI PCM PMIC QR RDIMM SoC
 
 ### ZeroPoint
@@ -3186,6 +3694,8 @@ Nilesh Shah
 [YouTube](https://www.youtube.com/watch?v=qJgWidihl-s)
 
 [Text](./198)
+
+[Article](https://github.com/vaj/CDI-Articles#198)
 
 [Acronyms](./acronym.md): AI CHI CPU CXL DDR DenseMem DRAM FPGA IP LLM LZ4 MemVerge OCP QEMU RDMA RTL SoC SOC SRAM SuperRAM TCO VP YouTube ZeroPoint ZiptilionBW
 
@@ -3199,11 +3709,15 @@ Paul Artman
 
 [Text](./218)
 
+[Article](https://github.com/vaj/CDI-Articles#218)
+
 [Acronyms](./acronym.md): AMD BMC CRPS CXL DCMHS DCSCM DNO GPU HPC HPM I2C I3C Jabil MHS MSIF OCP PCIE PESTI
 
 [YouTube](https://www.youtube.com/watch?v=lyB49m-3maQ)
 
 [Text](./230)
+
+[Article](https://github.com/vaj/CDI-Articles#230)
 
 [Acronyms](./acronym.md): AMD AMI BIOS DC DNO FLW HPM IO Jabil META MHS MPNP MSIF NIC OCP SCM SDNO SP5
 
@@ -3215,6 +3729,8 @@ Sam Kocsis
 
 [Text](./225)
 
+[Article](https://github.com/vaj/CDI-Articles#225)
+
 [Acronyms](./acronym.md): AI CAD CLA FSA HGX HPC IP ML MSA NVIDIA OAI OCP PCIe PCIE SFF
 
 ### Apex Semiconductors
@@ -3224,6 +3740,8 @@ Suresh Subramaniam
 [YouTube](https://www.youtube.com/watch?v=0ihsln_0BqE)
 
 [Text](./216)
+
+[Article](https://github.com/vaj/CDI-Articles#216)
 
 [Acronyms](./acronym.md): CPU CXL DDR5 DRAM DSA IO IP JEDEC NRE OAI OAM OCP OEM PCI PCIe ROAM SIP UBB USA
 
@@ -3235,11 +3753,15 @@ Ahmed Medhioub
 
 [Text](./244)
 
+[Article](https://github.com/vaj/CDI-Articles#244)
+
 [Acronyms](./acronym.md): AI CEM CFD CPU CXL CXL.cache CXL.io CXL.mem DCMHS DDR DDR5 DIMM DPC DRAM EDA GenAI IO JBOM LEO MDNO MXIO NUMA OCP OLAP OLTP OS PCIe RAS RecSys SFF SFFTA SNIA SQL TA TPC
 
 [YouTUbe](https://www.youtube.com/watch?v=vRvgO3nwtFo)
 
 [Text](./259)
+
+[Article](https://github.com/vaj/CDI-Articles#259)
 
 [Acronyms](./acronym.md): AI AIC AMD ASIC CAPEX CDFP CEM CPO CPU CXL CXL.cache CXL.io CXL.mem DDR DDR4 DDR5 DevKit DIMM DNA DSI E3S EDSSF FPGA FPP GenAI GPT GPU HPC HPCG IBM InfiniBand IO JBOM MCIO MSA MXIO NIC NUMA NVIDIA NVLink NVMe OCP OPEX OS OSFP PAM PAM4 PCB PCI PCI6 PCIe QSFPDD SFP SIG SK UnifabriX US XD YouTube
 
@@ -3257,6 +3779,8 @@ Sandeep Dattaprasad
 
 [Text](./243)
 
+[Article](https://github.com/vaj/CDI-Articles#243)
+
 [Acronyms](./acronym.md): AI ChatGPT CXL DCD DRAM GPU GTC HBM HPC IDE MemVerge MPI NFS NVIDIA QEMU TCO TEE TSP TVM VM
 
 ### CXL Consortium
@@ -3267,11 +3791,15 @@ Kurtis Bowman
 
 [Text](./211)
 
+[Article](https://github.com/vaj/CDI-Articles#211)
+
 [Acronyms](./acronym.md): AMD API BMC CPU CXL CXL.mem DDR DDR6 DevCon DMTF FM FPGA GIM GPU IB IDD IDE IP IPoCXL PCI PCIe RDMA SNIA SSD TSP
 
 [YouTube](https://www.youtube.com/watch?v=_VjZh39CW9c)
 
 [Text](./243)
+
+[Article](https://github.com/vaj/CDI-Articles#243)
 
 [Acronyms](./acronym.md): AI ChatGPT CXL DCD DRAM GPU GTC HBM HPC IDE MemVerge MPI NFS NVIDIA QEMU TCO TEE TSP TVM VM
 
@@ -3280,6 +3808,8 @@ Siamak Tavallaei
 [YouTube](https://www.youtube.com/watch?v=0pa2w-1DnIo)
 
 [Text](./220)
+
+[Article](https://github.com/vaj/CDI-Articles#220)
 
 [Acronyms](./acronym.md): AI API BMC CCI CMS CPU CXL DCMHS DDR DMTF FDI GitHub GPU HPC IO JEDEC ML NUMA NVM OCP PCI PCIe POC PST SIG SNIA UCIe YouTube
 
@@ -3291,6 +3821,8 @@ John Cardente
 
 [Text](./253)
 
+[Article](https://github.com/vaj/CDI-Articles#253)
+
 [Acronyms](./acronym.md): AI CTO DDoS DLIO GPT GPU ML MLCommons NFS NVIDIA OS ResNet TensorFlow TFRecord
 
 Kevin Marks
@@ -3299,6 +3831,8 @@ Kevin Marks
 
 [Text](./255)
 
+[Article](https://github.com/vaj/CDI-Articles#255)
+
 [Acronyms](./acronym.md): API CDMI CMB CXL CXL.cache CXL.io CXL.mem DDR DE DMTF FLIT GenAI GFAM GIM HA HDM HDMDB HDMH IDE InfiniBand IO ISL MACsec MLD MMIO NIC NVMe PBR PCI PCIe PRP RAS SATA SDXI SNIA TLP UIO VF
 
 Shyamkumar Iyer
@@ -3306,6 +3840,8 @@ Shyamkumar Iyer
 [YouTube](https://www.youtube.com/watch?v=l89_KobC2YM)
 
 [Text](./249)
+
+[Article](https://github.com/vaj/CDI-Articles#249)
 
 [Acronyms](./acronym.md): AI AMD CPU CRC CS CXL DIF DMA DRAM FPGA GPU MemCon ML NVM NVMe OEM OS PoC POSIX QR SDXI SNIA TWG YouTube
 
@@ -3316,6 +3852,8 @@ William Koss
 [YouTube](https://www.youtube.com/watch?v=1tjUlo5hvXY)
 
 [Text](./226)
+
+[Article](https://github.com/vaj/CDI-Articles#226)
 
 [Acronyms](./acronym.md): AI ASIC CEO ChatGPT CLEC CPU CXL DAC GPT GPU GTC HBM HPC ILEC LightCounting LLM LPO ML NVIDIA NVLink OCP OFC OpenAI PCB US VCSEL WDM
 
@@ -3333,6 +3871,8 @@ Christian Pinto
 
 [Text](./210)
 
+[Article](https://github.com/vaj/CDI-Articles#210)
+
 [Acronyms](./acronym.md): AI API CPU CXL DMTF DRA FSAS GitHub GPU GPU1 HPC IBM InfiniBand JSON NVMe OFA PCIe QR RESTful SNIA SSH UID US
 
 Meow Yee
@@ -3340,6 +3880,8 @@ Meow Yee
 [YouTube](https://www.youtube.com/watch?v=3UOMUHFFYvQ)
 
 [Text](./215)
+
+[Article](https://github.com/vaj/CDI-Articles#215)
 
 [Acronyms](./acronym.md): AI ARM BMC CPU CXL DC DCM DCMHS DDR E3S HANA HBM IBM ISA Jabil MHS ML OCP ODM OMI OpenCAPI PCB PCI PCIe SAP SAS SCM SSD
 
@@ -3351,6 +3893,8 @@ Anjaneya Chagam
 
 [Text](./220)
 
+[Article](https://github.com/vaj/CDI-Articles#220)
+
 [Acronyms](./acronym.md): AI API BMC CCI CMS CPU CXL DCMHS DDR DMTF FDI GitHub GPU HPC IO JEDEC ML NUMA NVM OCP PCI PCIe POC PST SIG SNIA UCIe YouTube
 
 Apparao Puli
@@ -3358,6 +3902,8 @@ Apparao Puli
 [YouTube](https://www.youtube.com/watch?v=cxvkCS9BWlE)
 
 [Text](./229)
+
+[Article](https://github.com/vaj/CDI-Articles#229)
 
 [Acronyms](./acronym.md): BMC CCI CLI CXL DCSCM DM DMTF HPPR I3C IP IPMI MCTP OCP OpenBMC PBR PCI PCIe PLDM PM PMCI PPR PSUs RAS REST SMBus SMbus SPDM SPPR UI
 
@@ -3385,11 +3931,15 @@ Rob Nance
 
 [Text](./218)
 
+[Article](https://github.com/vaj/CDI-Articles#218)
+
 [Acronyms](./acronym.md): AMD BMC CRPS CXL DCMHS DCSCM DNO GPU HPC HPM I2C I3C Jabil MHS MSIF OCP PCIE PESTI
 
 [YouTube](https://www.youtube.com/watch?v=lyB49m-3maQ)
 
 [Text](./230)
+
+[Article](https://github.com/vaj/CDI-Articles#230)
 
 [Acronyms](./acronym.md): AMD AMI BIOS DC DNO FLW HPM IO Jabil META MHS MPNP MSIF NIC OCP SCM SDNO SP5
 
@@ -3398,6 +3948,8 @@ Todd Rosedahl
 [YouTube](https://www.youtube.com/watch?v=3UOMUHFFYvQ)
 
 [Text](./215)
+
+[Article](https://github.com/vaj/CDI-Articles#215)
 
 [Acronyms](./acronym.md): AI ARM BMC CPU CXL DC DCM DCMHS DDR E3S HANA HBM IBM ISA Jabil MHS ML OCP ODM OMI OpenCAPI PCB PCI PCIe SAP SAS SCM SSD
 
@@ -3409,6 +3961,8 @@ Roy Rubenstein
 
 [Text](./226)
 
+[Article](https://github.com/vaj/CDI-Articles#226)
+
 [Acronyms](./acronym.md): AI ASIC CEO ChatGPT CLEC CPU CXL DAC GPT GPU GTC HBM HPC ILEC LightCounting LLM LPO ML NVIDIA NVLink OCP OFC OpenAI PCB US VCSEL WDM
 
 Vlad Kozlov
@@ -3417,11 +3971,15 @@ Vlad Kozlov
 
 [Text](./226)
 
+[Article](https://github.com/vaj/CDI-Articles#226)
+
 [Acronyms](./acronym.md): AI ASIC CEO ChatGPT CLEC CPU CXL DAC GPT GPU GTC HBM HPC ILEC LightCounting LLM LPO ML NVIDIA NVLink OCP OFC OpenAI PCB US VCSEL WDM
 
 [YouTube](https://www.youtube.com/watch?v=UAet76TvGlQ)
 
 [Text](./239)
+
+[Article](https://github.com/vaj/CDI-Articles#239)
 
 [Acronyms](./acronym.md): AI CXL DWDM GPU HBM ICI InfiniBand NVLink OFC PCB PCIe TPU
 
@@ -3433,11 +3991,15 @@ Ron Swartzentruber
 
 [Text](./219)
 
+[Article](https://github.com/vaj/CDI-Articles#219)
+
 [Acronyms](./acronym.md): AI AMD CDFP CEM CPU CXL DRAM ECN FEC GPU LLM MCIO NUMA NVIDIA NVMe OCP OPT66B OSFP PCI PhotoWave QSFP RDMA SFF SIG SMbus SSD XD
 
 [YouTube](https://www.youtube.com/watch?v=1tjUlo5hvXY)
 
 [Text](./226)
+
+[Article](https://github.com/vaj/CDI-Articles#226)
 
 [Acronyms](./acronym.md): AI ASIC CEO ChatGPT CLEC CPU CXL DAC GPT GPU GTC HBM HPC ILEC LightCounting LLM LPO ML NVIDIA NVLink OCP OFC OpenAI PCB US VCSEL WDM
 
@@ -3449,6 +4011,8 @@ Mitch Wright
 
 [Text](./211)
 
+[Article](https://github.com/vaj/CDI-Articles#211)
+
 [Acronyms](./acronym.md): AMD API BMC CPU CXL CXL.mem DDR DDR6 DevCon DMTF FM FPGA GIM GPU IB IDD IDE IP IPoCXL PCI PCIe RDMA SNIA SSD TSP
 
 ### Magnition IO
@@ -3458,6 +4022,8 @@ Andy Banta
 [YouTube](https://www.youtube.com/watch?v=K9Ck8uzW7t4)
 
 [Text](./258)
+
+[Article](https://github.com/vaj/CDI-Articles#258)
 
 [Acronyms](./acronym.md): AI CXL DDR DRAM HBM HPC HTTP iSCSI LinkedIn MQSim NUMA NVMe PCI RAM SCSI SDC SDXI SNIA SSD URL VMware vSCSI YouTube
 
@@ -3475,6 +4041,8 @@ Steve Scargall
 
 [Text](./243)
 
+[Article](https://github.com/vaj/CDI-Articles#243)
+
 [Acronyms](./acronym.md): AI ChatGPT CXL DCD DRAM GPU GTC HBM HPC IDE MemVerge MPI NFS NVIDIA QEMU TCO TEE TSP TVM VM
 
 ### Meta
@@ -3485,11 +4053,15 @@ Andrew Alduino
 
 [Text](./226)
 
+[Article](https://github.com/vaj/CDI-Articles#226)
+
 [Acronyms](./acronym.md): AI ASIC CEO ChatGPT CLEC CPU CXL DAC GPT GPU GTC HBM HPC ILEC LightCounting LLM LPO ML NVIDIA NVLink OCP OFC OpenAI PCB US VCSEL WDM
 
 [YouTube](https://www.youtube.com/watch?v=0uCgUj1_PJo)
 
 [Text](./247)
+
+[Article](https://github.com/vaj/CDI-Articles#247)
 
 [Acronyms](./acronym.md): AGI AI CPO CPU CXL GPU HBM HVM InfiniBand LLM ML NVIDIA NVLink OCP OFC PaLMs PCI PCIe PHY PyTorch RoCE
 
@@ -3499,6 +4071,8 @@ Anil Agrawal
 
 [Text](./221)
 
+[Article](https://github.com/vaj/CDI-Articles#221)
+
 [Acronyms](./acronym.md): AER BMC CPU ECR ECRC GitHub MSI OCP OS PCI PCIe RAS SIG SMI SMM
 
 Carlos Fernandez
@@ -3507,6 +4081,8 @@ Carlos Fernandez
 
 [Text](./221)
 
+[Article](https://github.com/vaj/CDI-Articles#221)
+
 [Acronyms](./acronym.md): AER BMC CPU ECR ECRC GitHub MSI OCP OS PCI PCIe RAS SIG SMI SMM
 
 Manoj Wadekar
@@ -3514,6 +4090,8 @@ Manoj Wadekar
 [YouTube](https://www.youtube.com/watch?v=p9mZQULpX7I)
 
 [Text](./251)
+
+[Article](https://github.com/vaj/CDI-Articles#251)
 
 [Acronyms](./acronym.md): AI C2C CPU CXL DAG DRAM GeneAI GPU HBM InfiniBand JEDEC NVLink NVswitch OCP PCI PCIe RDMA RoCE SNIA WhatsApp
 
@@ -3543,6 +4121,8 @@ Jim Handy
 
 [Text](./245)
 
+[Article](https://github.com/vaj/CDI-Articles#245)
+
 [Acronyms](./acronym.md): AI AMD APU AXDIMM BEOL CMOS CPU CXL DIMM DRAM FEOL FortiX GPU GSI HBM NAND NP NVIDIA PDF PIM PROM RAM SNIA SRAM SSD UCIe UPmem
 
 ### Rambus
@@ -3552,6 +4132,8 @@ Larrie Carr
 [YouTube](https://www.youtube.com/watch?v=-tReSmIXGos)
 
 [Text](./241)
+
+[Article](https://github.com/vaj/CDI-Articles#241)
 
 [Acronyms](./acronym.md): AI AMD CAPI CCIX CPU CXL DDIMM DDR DDR4 DRAM GPU HBM HP HPC IBM InfiniBand IP JEDEC NERSC NVIDIA NVLink OCP OMI OpenCAPI PC PCI PCIe PowerPC RISC SNIA SSD US VP
 
@@ -3563,6 +4145,8 @@ Adam Manzanares
 
 [Text](./254)
 
+[Article](https://github.com/vaj/CDI-Articles#254)
+
 [Acronyms](./acronym.md): ACPI BIOS CPU CXL CXL.io DAX DCD DRAM FAMFS FEMU GitLab GPF HDM IB IO IOV KVM LBA MCTP NUMA NVMe OS PBR PCI PMEM QEMU RAM SR SSD SSH VM ZNS
 
 Bill Martin
@@ -3571,6 +4155,8 @@ Bill Martin
 
 [Text](./248)
 
+[Article](https://github.com/vaj/CDI-Articles#248)
+
 [Acronyms](./acronym.md): API CS CSE CSEE CSF CSx FMS NVMe OS SDXI SNIA TWG
 
 David McIntyre
@@ -3578,6 +4164,8 @@ David McIntyre
 [YouTube](https://www.youtube.com/watch?v=UUoscQvXOCs)
 
 [Text](./242)
+
+[Article](https://github.com/vaj/CDI-Articles#242)
 
 [Acronyms](./acronym.md): AI ARM BIOS CAPEX CMM CMMH CPU CXL CXL.io CXL.mem DRAM ESX ESXi FPGA HammerDB IP ML NAND NVMe OEM OLTP OPEX PCI RAM SSD TCO TPCC VDI VM VM1 VM3 VM4 VMotion VMware VSA
 
@@ -3589,6 +4177,8 @@ Matthew Burns
 
 [Text](./259)
 
+[Article](https://github.com/vaj/CDI-Articles#259)
+
 [Acronyms](./acronym.md): AI AIC AMD ASIC CAPEX CDFP CEM CPO CPU CXL CXL.cache CXL.io CXL.mem DDR DDR4 DDR5 DevKit DIMM DNA DSI E3S EDSSF FPGA FPP GenAI GPT GPU HPC HPCG IBM InfiniBand IO JBOM MCIO MSA MXIO NIC NUMA NVIDIA NVLink NVMe OCP OPEX OS OSFP PAM PAM4 PCB PCI PCI6 PCIe QSFPDD SFP SIG SK UnifabriX US XD YouTube
 
 ### Sandia National Laboratories
@@ -3599,6 +4189,8 @@ Catherine Appleby
 
 [Text](./212)
 
+[Article](https://github.com/vaj/CDI-Articles#212)
+
 [Acronyms](./acronym.md): CDI HPC IO RabbitMQ RESTful
 
 Michael Aguilar
@@ -3606,6 +4198,8 @@ Michael Aguilar
 [YouTube](https://www.youtube.com/watch?v=0CYAhODfFFA)
 
 [Text](./212)
+
+[Article](https://github.com/vaj/CDI-Articles#212)
 
 [Acronyms](./acronym.md): CDI HPC IO RabbitMQ RESTful
 
@@ -3617,6 +4211,8 @@ Jonmichael Hands
 
 [Text](./246)
 
+[Article](https://github.com/vaj/CDI-Articles#246)
+
 [Acronyms](./acronym.md): AI AMD CMSI CPU CXL DRAM EDS EDSFF GPU HP JEDEC MemCon NAND NIC NVIDIA NVMe OCP PCH PCI PCIe PD PDUs QLC QSFP SFF SFP SK SLC SNIA SSD TA1002 TA1034 TCO TDP TLC
 
 ### Solidigm
@@ -3627,11 +4223,15 @@ Jason Molgaard
 
 [Text](./248)
 
+[Article](https://github.com/vaj/CDI-Articles#248)
+
 [Acronyms](./acronym.md): API CS CSE CSEE CSF CSx FMS NVMe OS SDXI SNIA TWG
 
 [YouTube](https://www.youtube.com/watch?v=gKAipzZeFe4)
 
 [Text](./256)
+
+[Article](https://github.com/vaj/CDI-Articles#256)
 
 [Acronyms](./acronym.md): AFDM CDN CMB CPU CSA CSEE CSF CSP CSx CXL CXL.io CXL.mem DMA DRAM DWORD FDM FPGA GZIP HDM IO MMIO NVM NVMe PC PCIe PMR SLM SNIA SSD TWG UIO VM
 
@@ -3643,6 +4243,8 @@ Steven Yuan
 
 [Text](./252)
 
+[Article](https://github.com/vaj/CDI-Articles#252)
+
 [Acronyms](./acronym.md): AGI AI API CEO ChatGPT CIM CPU DPPM ERP GPU IO IOPS IoT LCD MES PC PPO SaaS SNIA StorageX
 
 ### Supermicro
@@ -3652,6 +4254,8 @@ Paul McLeod
 [YouTube](https://www.youtube.com/watch?v=FvVytHgXzd8)
 
 [Text](./237)
+
+[Article](https://github.com/vaj/CDI-Articles#237)
 
 [Acronyms](./acronym.md): AI AMD CXL DevOps DPU E1L E1S E3S EDSFF GPU HPC IOPS NVIDIA NVMe PCI PCIe RDMA SNIA US WEKA
 
@@ -3663,6 +4267,8 @@ Glenn Ge
 
 [Text](./223)
 
+[Article](https://github.com/vaj/CDI-Articles#223)
+
 [Acronyms](./acronym.md): AI AIGC ASIC CPU DRAM GDP GPU HBM HPC ICC IO MHD MNIST MPU MRAM MX PCRAM RRAM SDK SORA SRAM TetraMem TikTok TOPS VM VMM
 
 ### UnifabriX
@@ -3672,6 +4278,8 @@ Oren Benisty
 [YouTube](https://www.youtube.com/watch?v=vRvgO3nwtFo)
 
 [Text](./259)
+
+[Article](https://github.com/vaj/CDI-Articles#259)
 
 [Acronyms](./acronym.md): AI AIC AMD ASIC CAPEX CDFP CEM CPO CPU CXL CXL.cache CXL.io CXL.mem DDR DDR4 DDR5 DevKit DIMM DNA DSI E3S EDSSF FPGA FPP GenAI GPT GPU HPC HPCG IBM InfiniBand IO JBOM MCIO MSA MXIO NIC NUMA NVIDIA NVLink NVMe OCP OPEX OS OSFP PAM PAM4 PCB PCI PCI6 PCIe QSFPDD SFP SIG SK UnifabriX US XD YouTube
 
@@ -3683,6 +4291,8 @@ Wentao Hou
 
 [Text](./240)
 
+[Article](https://github.com/vaj/CDI-Articles#240)
+
 [Acronyms](./acronym.md): ACF CPU CXL DMA FabreX FPGA GigaIO GigaIO GPU GroqRack MMIO NTB PCIe PowerEdge rPCIeBench
 
 ### VMWare
@@ -3693,11 +4303,15 @@ Arvind Jagannath
 
 [Text](./236)
 
+[Article](https://github.com/vaj/CDI-Articles#236)
+
 [Acronyms](./acronym.md): AMD CAPEX CPU CXL DDR DRAM EDSFF ESX ESXi HammerDB LoginVSI MySQL NVMe OEM POC SLOB SQL TCO TPCH VC VCPU VDI VM VM1 VM2 VMware
 
 [YouTube](https://www.youtube.com/watch?v=UUoscQvXOCs)
 
 [Text](./242)
+
+[Article](https://github.com/vaj/CDI-Articles#242)
 
 [Acronyms](./acronym.md): AI ARM BIOS CAPEX CMM CMMH CPU CXL CXL.io CXL.mem DRAM ESX ESXi FPGA HammerDB IP ML NAND NVMe OEM OLTP OPEX PCI RAM SSD TCO TPCC VDI VM VM1 VM3 VM4 VMotion VMware VSA
 
@@ -3707,11 +4321,15 @@ Sudhir Balasubramanian
 
 [Text](./236)
 
+[Article](https://github.com/vaj/CDI-Articles#236)
+
 [Acronyms](./acronym.md): AMD CAPEX CPU CXL DDR DRAM EDSFF ESX ESXi HammerDB LoginVSI MySQL NVMe OEM POC SLOB SQL TCO TPCH VC VCPU VDI VM VM1 VM2 VMware
 
 [YouTube](https://www.youtube.com/watch?v=UUoscQvXOCs)
 
 [Text](./242)
+
+[Article](https://github.com/vaj/CDI-Articles#242)
 
 [Acronyms](./acronym.md): AI ARM BIOS CAPEX CMM CMMH CPU CXL CXL.io CXL.mem DRAM ESX ESXi FPGA HammerDB IP ML NAND NVMe OEM OLTP OPEX PCI RAM SSD TCO TPCC VDI VM VM1 VM3 VM4 VMotion VMware VSA
 
@@ -3723,11 +4341,15 @@ Nilesh Shah
 
 [Text](./217)
 
+[Article](https://github.com/vaj/CDI-Articles#217)
+
 [Acronyms](./acronym.md): AI ASIC AXI CAPEX CPU CXL CXL.mem DRAM IP LZ4 MLPerf NUMA OAM OCP OPEX SPEC TCO ZeroPoint
 
 [YouTube](https://www.youtube.com/watch?v=T2QYDu7reOY)
 
 [Text](./222)
+
+[Article](https://github.com/vaj/CDI-Articles#222)
 
 [Acronyms](./acronym.md): AI ARM AXI CHI CPU DRAM GPU GTC HBM IP MRAM NuMem NVIDIA OCP ODSA RAM SoC SOC SRAM TCO TSMC UCIE
 
@@ -3741,6 +4363,8 @@ Samuel Kocsis
 
 [Text](./267)
 
+[Article](https://github.com/vaj/CDI-Articles#267)
+
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
 
 ### Intel
@@ -3750,6 +4374,8 @@ Mohiuddin Mazumder
 [YouTube](https://www.youtube.com/watch?v=6O24GgQc824)
 
 [Text](./267)
+
+[Article](https://github.com/vaj/CDI-Articles#267)
 
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
 
