@@ -1303,6 +1303,7 @@
 | TWG                 | Technical Work Group                                                      |
 | TX                  | Transmitter                                                               |
 | TxFIR               | TX Finite Impulse Response                                                |
+| UALink              | Ultra Accelerator Link                                                    |
 | UBB                 | Universal Building Block                                                  |
 | UCIe                | Universal Chiplet Interconnect Express                                    |
 | UCIE                | Universal Chiplet Interconnect Express                                    |
