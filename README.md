@@ -4391,6 +4391,14 @@ Adam Manzanares
 
 [Acronyms](./acronym.md): ACPI AI AMD BIOS CPU CXL EDAC GHES HBM IBM IP NUMA OCP PCI PCIe QEMU RAS
 
+Siamak Tavallaei
+
+[YouTube](https://www.youtube.com/watch?v=iCUoSK3TwKs)
+
+[Text](./278)
+
+[Acronyms](./acronym.md): AI CPU CXL DDR DRAM GPU HBM HBM3 HPE InfiniBand IOPS IPU IT LPDDR ML NVLink RDMA SmartNIC SSD XPU
+
 ### ZeroPoint
 
 Yiannis Nikolakopoulos
