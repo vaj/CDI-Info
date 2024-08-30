@@ -1392,6 +1392,7 @@
 | WEKA                | (Company Name)                                                            |
 | WhatsApp            | (Name of service)                                                         |
 | WIP                 | Work In Progress                                                          |
+| xAI                 | (Company Name)                                                            |
 | XConn               | (Company Name)                                                            |
 | XD                  | eXtended Density                                                          |
 | XFS                 | (file system name)                                                        |

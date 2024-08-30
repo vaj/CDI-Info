@@ -4408,7 +4408,7 @@ Siamak Tavallaei
 
 [Text](./278)
 
-[Acronyms](./acronym.md): AI CPU CXL DDR DRAM GPU HBM HBM3 HPE InfiniBand IOPS IPU IT LPDDR ML NVLink RDMA SmartNIC SSD UALink XPU
+[Acronyms](./acronym.md): AI CPU CXL DDR DRAM GPU HBM HBM3 HPE InfiniBand IOPS IPU IT LPDDR ML NVLink RDMA SmartNIC SSD UALink xAI XPU
 
 ### ZeroPoint
 
