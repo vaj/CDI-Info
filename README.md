@@ -4390,7 +4390,7 @@ Reggie Reynolds
 
 [Text](./279)
 
-[Acronyms](./acronym.md): AI ARM ConnectX CPU DMA DOCA DPU GPU GTC HPC InfiniBand IO NDR NVIDIA NVLink OSFP PCIe RDMA RoCE ROI SDK TCP
+[Acronyms](./acronym.md): AI ARM CPU ConnectX DMA DOCA DPU ECMP GPU GTC HPC IO InfiniBand LinkX NDR NVIDIA NVLink NetQ OSFP PCIe RDMA ROI RoCE SDK SHARP SONiC SpectrumX TCP UDP UFM XDR
 
 ### Samsung
 

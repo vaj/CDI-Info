@@ -315,6 +315,7 @@
 | EBS                 | Elastic Block Store                                                       |
 | ECC                 | Error-correcting Code                                                     |
 | ECDSA               | Elliptic Curve Digital Signature Algorithm                                |
+| ECMP                | Equal Cost Multi Path                                                     |
 | ECN                 | Engineering Change Notice                                                 |
 | ECO                 | Engineering Change Order                                                  |
 | ECOC                | European Conference on Optical Communication                              |
@@ -647,6 +648,7 @@
 | LinkedIn            | (Company Name)                                                            |
 | LinkExpert          | (Product name)(Teledyne LeCroy)                                           |
 | LINKINIT            | (state name)                                                              |
+| LinkX               | (Product name)(NVIDIA)                                                    |
 | LINPACK             | (Benchmark name)                                                          |
 | LiqidOS             | (Fabric Manager Name) (Liqid)                                             |
 | LLAMA               | Large Language Model Meta AI                                              |
@@ -804,6 +806,7 @@
 | NERSC               | National Energy Research Scientific Computing                             |
 | NetApp              | (Company Name)                                                            |
 | NetFlow             | (library name) (NVIDIA)                                                   |
+| NetQ                | (Product name)(NVIDIA)                                                    |
 | NetworkX            | (library name) (OSS)                                                      |
 | NFIT                | NVDIMM Firmware Interaface Table                                          |
 | NFS                 | Network File System                                                       |
@@ -1161,6 +1164,7 @@
 | SGH                 | (Company Name) (SMART Global Holdings)                                    |
 | SGI                 | (Company Name) (Silicon Graphics International)                           |
 | SGPIO               | Serial GPIO                                                               |
+| SHARP               | Scalable Hierarchical Aggregation and Reduction Protocol (NVIDIA)         |
 | SHMEM               | (library name) (SHared MEMory)                                            |
 | SI                  | System Image, Signal Integrity                                            |
 | SIE                 | Security Interface Extension                                              |
@@ -1175,6 +1179,7 @@
 | SiPearl             | (Company Name)                                                            |
 | SK                  | (Company Name)                                                            |
 | SKU                 | Stock Keeping Unit                                                        |
+| Skyway              | (Product name)(NVIDIA)                                                    |
 | SLA                 | Service Level Agreement                                                   |
 | SLC                 | Single Level Cell                                                         |
 | SLD                 | Single Logical Device                                                     |
@@ -1209,6 +1214,7 @@
 | SOC                 | System on a Chip                                                          |
 | SODA                | (SODA Foundation)                                                         |
 | SOL                 | Serial over LAN                                                           |
+| SONiC               | Software for Open Networking in the Cloud                                 |
 | SORA                | (text-to-video generative AI model name)                                  |
 | SP                  | Scalable Processor                                                        |
 | SP5                 | (Product name)(Jabil)                                                     |
@@ -1216,6 +1222,7 @@
 | SPD                 | Serial Presence Detect                                                    |
 | SPDM                | Security Protocols and Data Models                                        |
 | SPEC                | System Performance Evaluation Cooperative                                 |
+| SpectrumX           | (Product name)(NVIDIA)                                                    |
 | SPID                | Source PBR ID                                                             |
 | SPMV                | Sparse Matrix-Vector Multiplication                                       |
 | SpotSurfer          | (functional name) (MemVerge)                                              |
@@ -1311,10 +1318,12 @@
 | UCSD                | University of California San Diego                                        |
 | UCX                 | the Unified Communication X                                               |
 | UDIMM               | Unbuffered DIMM                                                           |
+| UDP                 | User Datagram Protocol                                                    |
 | UE                  | Uncorrectable Error                                                       |
 | UEC                 | Ultra Ethernet Consortium                                                 |
 | UEFI                | Unified Extensible Firmware Interface                                     |
 | UEPs                | Unsolicited Event Packets                                                 |
+| UFM                 | Unified Fabric Manager                                                    |
 | UFS                 | Universal Flash Storage                                                   |
 | UI                  | Unit Interval                                                             |
 | UID                 | Unique ID (CXL Host Bridge Structure)                                     |
@@ -1395,6 +1404,7 @@
 | xAI                 | (Company Name)                                                            |
 | XConn               | (Company Name)                                                            |
 | XD                  | eXtended Density                                                          |
+| XDR                 | eXtreme Data Rate                                                         |
 | XFS                 | (file system name)                                                        |
 | XGBoost             | Extreme Gradient Boosting                                                 |
 | XGMI                | (interconnect name) (AMD)                                                 |
