@@ -223,10 +223,12 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [ZeroPoint](#zeropoint-1)
   - [2024Q3](#2024q3)
     - [Amphenol](#amphenol-2)
+    - [Broadcom](#broadcom-2)
     - [Intel](#intel-10)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
+    - [Wolley](#wolley-1)
     - [ZeroPoint](#zeropoint-2)
 
 ## 2017
@@ -4371,6 +4373,16 @@ Samuel Kocsis
 
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
 
+### Broadcom
+
+Arvind Jagannath
+
+[YouTube](https://www.youtube.com/watch?v=hxxP5xG807g)
+
+[Text](./281)
+
+[Acronyms](./acronym.md): AMD CPU CXL DDR DIMM DRAM ESX GA HammerDB NVMe OPEX SSD TCO TPM VDI VM VMware
+
 ### Intel
 
 Mohiuddin Mazumder
@@ -4420,6 +4432,16 @@ Siamak Tavallaei
 [Text](./278)
 
 [Acronyms](./acronym.md): AI CPU CXL DDR DRAM GPU HBM HBM3 HPE InfiniBand IOPS IPU IT LPDDR ML NVLink RDMA SmartNIC SSD UALink xAI XPU
+
+### Wolley
+
+Bill Gervasi
+
+[YouTube](https://www.youtube.com/watch?v=-47OqaCtlxM)
+
+[Text](./282)
+
+[Acronyms](./acronym.md): ASIC CCIX CPU CXL CXL.io DDR DDR3 DDR4 DDR5 DIMM DRAM ECC FLIT HBM JEDEC LinkedIn PCI PCIe SSD
 
 ### ZeroPoint
 
