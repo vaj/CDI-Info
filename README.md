@@ -224,6 +224,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2024Q3](#2024q3)
     - [Amphenol](#amphenol-2)
     - [Intel](#intel-10)
+    - [Liquid Markets Solutions](#liquid-markets-solutions)
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
     - [ZeroPoint](#zeropoint-2)
@@ -4381,6 +4382,16 @@ Mohiuddin Mazumder
 [Article](https://github.com/vaj/CDI-Articles#267)
 
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
+
+### Liquid Markets Solutions
+
+Seth Friedman
+
+[YouTube](https://www.youtube.com/watch?v=uMpfg04GeZw)
+
+[Text](./280)
+
+[Acronyms](./acronym.md): ASIC CAPI CEO CXL CXL.cache CXL.io CXL.mem FEC FPGA GPU IP LMS NIC PCI PCIe QSFP TCP UDP
 
 ### NVIDIA
 
