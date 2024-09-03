@@ -224,6 +224,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2024Q3](#2024q3)
     - [Amphenol](#amphenol-2)
     - [Intel](#intel-10)
+    - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
@@ -4384,6 +4385,16 @@ Mohiuddin Mazumder
 [Article](https://github.com/vaj/CDI-Articles#267)
 
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
+
+### Jackrabbit Labs
+
+Grant Mackey
+
+[YouTube](https://www.youtube.com/watch?v=u5OCpXKx9xo)
+
+[Text](./284)
+
+[Acronyms](./acronym.md): AMD API CSE CTO CXL DIMM DRAM FM FMAPI GA GitHub I2C I3C IP OCP OS OpenShift OpenStack PCIe QEMU RESTful TCP VCS
 
 ### Liquid Markets Solutions
 
