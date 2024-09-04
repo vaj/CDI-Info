@@ -65,6 +65,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [KIOXIA](#kioxia)
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory)
     - [Meta](#meta-2)
+    - [MemVerge](#memverge)
     - [Micron Technology](#micron-technology)
     - [NVIDIA](#nvidia)
     - [Rambus](#rambus)
@@ -75,7 +76,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Xconn Technologies](#xconn-technologies)
   - [2023Q1](#2023q1)
     - [Intel](#intel-4)
-    - [MemVerge](#memverge)
+    - [MemVerge](#memverge-1)
     - [Sandia National Laboratories](#sandia-national-laboratories)
   - [2023Q2](#2023q2)
     - [(Independent)](#independent)
@@ -89,7 +90,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [IBM](#ibm)
     - [Intel](#intel-5)
     - [Marvell](#marvell)
-    - [MemVerge](#memverge-1)
+    - [MemVerge](#memverge-2)
     - [Micron Technology](#micron-technology-1)
     - [Panmnesic](#panmnesic)
     - [Rambus](#rambus-1)
@@ -100,7 +101,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2023Q3](#2023q3)
     - [AMD](#amd-2)
     - [Intel](#intel-6)
-    - [MemVerge](#memverge-2)
+    - [MemVerge](#memverge-3)
     - [NVIDIA](#nvidia-1)
     - [Rambus](#rambus-2)
     - [Samsung](#samsung-2)
@@ -138,7 +139,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Lightelligence](#lightelligence)
     - [Magnition IO](#magnition-io)
     - [Marvell](#marvell-1)
-    - [MemVerge](#memverge-3)
+    - [MemVerge](#memverge-4)
     - [Meta](#meta-3)
     - [Microchip](#microchip-2)
     - [Micron Technology](#micron-technology-2)
@@ -175,7 +176,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Igalia](#igalia)
     - [Intel](#intel-8)
     - [Lightelligence](#lightelligence-1)
-    - [MemVerge](#memverge-4)
+    - [MemVerge](#memverge-5)
     - [Micron Technology](#micron-technology-3)
     - [MindShare](#mindshare)
     - [Montage Technology](#montage-technology-1)
@@ -204,7 +205,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Lightelligence](#lightelligence-2)
     - [Liqid](#liqid)
     - [Magnition IO](#magnition-io-1)
-    - [MemVerge](#memverge-5)
+    - [MemVerge](#memverge-6)
     - [Meta](#meta-4)
     - [Micron Technology](#micron-technology-4)
     - [Objective Analysis](#objective-analysis-1)
@@ -1003,6 +1004,16 @@ Prakash Chauhan
 [Article](https://github.com/vaj/CDI-Articles#13)
 
 [Acronyms](./acronym.md): ACPI AER AI AMD API ATS BI BISnp BMC BS CDAT CPER CPU CRC CXL CXL.cache CXL.io CXL.mem DCOH DDR DIMM DMP DPID DRAM ECC ECN FAM FAST FEC FLIT FM FMAPI GDT GFAM GFD GPGPU GPU GRAN HBM HBR HDM HDMD HDMDB HDMH HMAT HPC IBM IDE IDT InfiniBand INTLV IO IoT IP LD LinkedIn LLC MC MCTP MESI ML MLD MMIO MS MSI MSIX NDR NIC NUMA NVIDIA NVMe OpenCAPI OS PAM4 PBR PCB PCI PCIe PGAS PIM QoS RAS RDMA SAT SIG SLD SLIT SMBus SMbus SNP SPID SRAT TCO TPP UCIE UCSD UEFI USB VM YouTube
+
+### MemVerge
+
+Steve Scargall (MemVerge)
+
+[YouTube](https://www.youtube.com/watch?v=KC548VU4Hd0)
+
+[Text](./285)
+
+[Acronyms](./acronym.md): AI AMD API CPU CXL DMA DRAM GPU HDFS IO LLM LinkedIn MSI MemVerge NAS NUMA NVIDIA NVMe OPT PCIe SAN SK TCP TPC TPCC UI
 
 ### Micron Technology
 
