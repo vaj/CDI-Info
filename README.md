@@ -227,6 +227,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
+    - [Micron](#micron)
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
@@ -4418,6 +4419,16 @@ Seth Friedman
 [Text](./280)
 
 [Acronyms](./acronym.md): ASIC CAPI CEO CXL CXL.cache CXL.io CXL.mem FEC FPGA GPU IP LMS NIC PCI PCIe QSFP TCP UDP
+
+### Micron
+
+Michael Abraham
+
+[YouTube](https://www.youtube.com/watch?v=zq0htf7Hu_8)
+
+[Text](./288)
+
+[Acronyms](./acronym.md): AI CXL CZ120 DDR DDR5 DRAM FAMFS FMS GPU HBM MemVerge NVIDIA OS PCIe RDIMM RocksDB SSD TCO TEP
 
 ### NVIDIA
 
