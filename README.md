@@ -231,6 +231,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Samsung](#samsung-6)
     - [VMware](#vmware-3)
     - [Wolley](#wolley-1)
+    - [Xconn](#xconn)
     - [ZeroPoint](#zeropoint-2)
 
 ## 2017
@@ -4470,6 +4471,16 @@ Bill Gervasi
 [Text](./283)
 
 [Acronyms](./acronym.md): AI CCIX CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM HDM HTTP LPDDR LinkedIn MRAM NAND NVDIMM NVLink NVMe PC PCB PCI PCIe SFF SIG SO SSD UALink
+
+### Xconn
+
+JP Jiang
+
+[YouTube](https://www.youtube.com/watch?v=oC2pF9W4-pY)
+
+[Text](./286)
+
+[Acronyms](./acronym.md): AI AMD ARM BMC CMM CPU CXL DDR4 DIMM ER HANA HBM HPC IC MemCon MemVerge PCIe RDMA SAP TCO
 
 ### ZeroPoint
 
