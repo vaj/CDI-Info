@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 284 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 286 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4389,6 +4389,14 @@ Samuel Kocsis
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
 
 ### Intel
+
+Anil Godbole (Intel)
+
+[YouTube](https://www.youtube.com/watch?v=ksNts1CD6aY)
+
+[Text](./289)
+
+[Acronyms](./acronym.md): AI BIOS CPU CXL DDR4 DDR5 DIMM DRAM HANA HPC ML MemVerge OS PCI SAP TCO
 
 Mohiuddin Mazumder
 
