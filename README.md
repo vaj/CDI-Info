@@ -229,6 +229,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Liquid Markets Solutions](#liquid-markets-solutions)
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
+    - [SMART Modular Technologies](#smart-modular-technologies-2)
     - [VMware](#vmware-3)
     - [Wolley](#wolley-1)
     - [Xconn](#xconn)
@@ -4445,6 +4446,16 @@ Siamak Tavallaei
 [Text](./278)
 
 [Acronyms](./acronym.md): AI CPU CXL DDR DRAM GPU HBM HBM3 HPE InfiniBand IOPS IPU IT LPDDR ML NVLink RDMA SmartNIC SSD UALink xAI XPU
+
+### SMART Modular Technologies
+
+Torry Steed
+
+[YouTube](https://www.youtube.com/watch?v=LK8ITlL3Veg)
+
+[Text](./287)
+
+[Acronyms](./acronym.md): AI AMD CEM CPU CXL CXL.cache CXL.io CXL.mem DIMM DNA DRAM EDSFF IO NAND NIC NVMe PCIe RDIMM SDP SQL SSD TSV
 
 ### VMware
 
