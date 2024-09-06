@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 286 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 287 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -228,6 +228,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
     - [Micron](#micron)
+    - [MSI](#msi)
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
@@ -4437,6 +4438,16 @@ Michael Abraham
 [Text](./288)
 
 [Acronyms](./acronym.md): AI CXL CZ120 DDR DDR5 DRAM FAMFS FMS GPU HBM MemVerge NVIDIA OS PCIe RDIMM RocksDB SSD TCO TEP
+
+### MSI
+
+Philip Maher
+
+[YouTube](https://www.youtube.com/watch?v=EulQfroVS1g)
+
+[Text](./290)
+
+[Acronyms](./acronym.md): AMD BMC CPU CPU0 CPU1 CXL DIMM DRAM EPS EPYC MSI NAND NVMe ODM PCI RAM SKU SP5 SSD
 
 ### NVIDIA
 
