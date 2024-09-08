@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 287 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 288 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -224,6 +224,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [ZeroPoint](#zeropoint-1)
   - [2024Q3](#2024q3)
     - [Amphenol](#amphenol-2)
+    - [Astera Labs](#astera-labs-4)
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
@@ -4388,6 +4389,16 @@ Samuel Kocsis
 [Article](https://github.com/vaj/CDI-Articles#267)
 
 [Acronyms](./acronym.md): AC AI CDFP CEM CMIS CON CopperLink CPU CXL DEF ECN EEPROM FRU GenAI GPIO GPU HPC I2C IRL ML NRZ OCuLink OIF PAM PAM4 PCB PCI PCIe PESTI PIRST RefClock SAS SATA SCL SFF SIG SNIA TA TE US USB VIAs
+
+### Astera Labs
+
+Michael Ocampo
+
+[YouTube](https://www.youtube.com/watch?v=2sEG1NahufE)
+
+[Text](./291)
+
+[Acronyms](./acronym.md): AI AMD CPU CXL GDDR6 GPT GPU IO InfiniBand KV LLM ML MemVerge NVIDIA NVMe OCP OPT OPT66B PCIe
 
 ### Intel
 
