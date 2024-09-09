@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 289 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 290 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -234,6 +234,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [NVIDIA](#nvidia-3)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
+    - [Synopsys](#synopsys-1)
     - [VMware](#vmware-3)
     - [Wolley](#wolley-1)
     - [Xconn](#xconn)
@@ -4508,6 +4509,16 @@ Torry Steed
 [Text](./287)
 
 [Acronyms](./acronym.md): AI AMD CEM CPU CXL CXL.cache CXL.io CXL.mem DIMM DNA DRAM EDSFF IO NAND NIC NVMe PCIe RDIMM SDP SQL SSD TSV
+
+### Synopsys
+
+Gary Ruggles
+
+[YouTube](https://www.youtube.com/watch?v=AZkNAxFJ9XM)
+
+[Text](./293)
+
+[Acronyms](./acronym.md): AI AMBA ARM ASIC AXI CCA CCIX CHI CMN CPU CXL CXL.cache CXL.io CXL.mem CXS DDR DDR4 DDR5 ECN FAE FMS FYI GIC HBM IDE IO IP L0P LPDDR MSI NVIDIA NVLink PBR PCI PCIe PHY RTL SIG SK SOC SoC TSP UALink UIO
 
 ### VMware
 
