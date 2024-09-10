@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 291 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 292 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4545,6 +4545,12 @@ Bill Gervasi
 [Text](./283)
 
 [Acronyms](./acronym.md): AI CCIX CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM HDM HTTP LPDDR LinkedIn MRAM NAND NVDIMM NVLink NVMe PC PCB PCI PCIe SFF SIG SO SSD UALink
+
+[YouTube](https://www.youtube.com/watch?v=e9-iK3WtqWU)
+
+[Text](./295)
+
+[Acronyms](./acronym.md): AI CMB CPU CXL CXL.io CXL.mem DAX DDR DRAM FMS GitHub HDM NAND NVDIMM NVMe PCIe RAM SSD
 
 ### Xconn
 
