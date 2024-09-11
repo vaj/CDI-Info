@@ -1020,7 +1020,7 @@ Steve Scargall (MemVerge)
 
 [Text](./285)
 
-[Acronyms](./acronym.md): AI AMD API CPU CXL DMA DRAM GPU HDFS IO LLM LinkedIn MSI MemVerge NAS NUMA NVIDIA NVMe OPT PCIe SAN SK TCP TPC TPCC UI
+[Acronyms](./acronym.md): AI AMD API CMMB CPU CXL DAS DMA DRAM DS GPU HDFS IO LLM LinkedIn MMX MSI MemVerge NAS NUMA NVIDIA NVMe OPT PCIe RAG SAN SK TCP TPC TPCC UI
 
 ### Micron Technology
 
@@ -4430,7 +4430,7 @@ Grant Mackey
 
 [Text](./284)
 
-[Acronyms](./acronym.md): AMD API CSE CTO CXL DIMM DRAM FM FMAPI GA GitHub I2C I3C IP OCP OS OpenShift OpenStack PCIe QEMU RESTful TCP VCS
+[Acronyms](./acronym.md): AMD API CNI CRI CSE CSE CSI CTO CXL DIMM DRAM FM FMAPI GA GitHub I2C I3C IP OCP OS OpenShift OpenStack PCIe QEMU RESTful TCP VCS
 
 ### Liquid Markets Solutions
 
@@ -4440,7 +4440,7 @@ Seth Friedman
 
 [Text](./280)
 
-[Acronyms](./acronym.md): ASIC CAPI CEO CXL CXL.cache CXL.io CXL.mem FEC FPGA GPU IP LMS NIC PCI PCIe QSFP TCP UDP
+[Acronyms](./acronym.md): ASIC CAPI CEO CERN CXL CXL.cache CXL.io CXL.mem FCC FCS FEC FPGA GPU IP LMS NIC PCI PCIe PPS PTM PTP QSFP SC24 STAC TASER TCP TGPIO UDP
 
 ### Micron
 
@@ -4450,7 +4450,7 @@ Michael Abraham
 
 [Text](./288)
 
-[Acronyms](./acronym.md): AI CXL CZ120 DDR DDR5 DRAM FAMFS FMS GPU HBM MemVerge NVIDIA OS PCIe RDIMM RocksDB SSD TCO TEP
+[Acronyms](./acronym.md): AI CXL CZ120 DDR DDR5 DRAM FAMFS FMS GPU HBM MemVerge NVIDIA OS PCIe RAG RDIMM RocksDB SSD TCO TEP
 
 ### Montage
 
@@ -4460,7 +4460,7 @@ Geof Findley
 
 [Text](./292)
 
-[Acronyms](./acronym.md): AI AMD CPU CSP CXL DDR4 DDR5 DIMM DRAM MRDIMM MemVerge PCB PCI SK SPD TCO
+[Acronyms](./acronym.md): AI AMD CPU CSP CXL DDR4 DDR5 DIMM DRAM EVB MRDIMM MemVerge PCB PCI SK SPD TCO
 
 ### MSI
 
@@ -4518,7 +4518,7 @@ Gary Ruggles
 
 [Text](./293)
 
-[Acronyms](./acronym.md): AI AMBA ARM ASIC AXI CCA CCIX CHI CMN CPU CXL CXL.cache CXL.io CXL.mem CXS DDR DDR4 DDR5 ECN FAE FMS FYI GIC HBM IDE IO IP L0P LPDDR MSI NVIDIA NVLink PBR PCI PCIe PHY RTL SIG SK SOC SoC TSP UALink UIO
+[Acronyms](./acronym.md): AI AMBA ARM ASIC AXI CCA CCIX CHI CMN CPU CXL CXL.cache CXL.io CXL.mem CXS DDR DDR4 DDR5 ECAM ECN FAE FIPS FMS FYI GIC HBM IDE IO IP L0P LPDDR MSI NVIDIA NVLink PBR PCI PCIe PHY RTL SIG SK SOC SoC TDISP TSP UALink UIO
 
 ### VMware
 
@@ -4528,7 +4528,7 @@ Arvind Jagannath
 
 [Text](./281)
 
-[Acronyms](./acronym.md): AMD CPU CXL DDR DIMM DRAM ESX GA HammerDB NVMe OPEX SSD TCO TPM VDI VM VMware
+[Acronyms](./acronym.md): AMD CPU CXL DDR DIMM DRAM ESX GA HammerDB KB NVMe OPEX SSD TCO TPM VDI VM VMware VSI
 
 ### Wolley
 
@@ -4538,13 +4538,13 @@ Bill Gervasi
 
 [Text](./282)
 
-[Acronyms](./acronym.md): ASIC CCIX CPU CXL CXL.io DDR DDR3 DDR4 DDR5 DIMM DRAM ECC FLIT HBM JEDEC LinkedIn PCI PCIe SSD
+[Acronyms](./acronym.md): ASIC CCIX CPU CXL CXL.io DDR DDR1 DDR2 DDR3 DDR4 DDR5 DIMM DRAM ECC FLIT HBM JEDEC LinkedIn PCI PCIe SSD
 
 [YouTube](https://www.youtube.com/watch?v=2ymXFhM-58A)
 
 [Text](./283)
 
-[Acronyms](./acronym.md): AI CCIX CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM HDM HTTP LPDDR LinkedIn MRAM NAND NVDIMM NVLink NVMe PC PCB PCI PCIe SFF SIG SO SSD UALink
+[Acronyms](./acronym.md): AI ATX CCIX CXL CXL.mem DDR DDR3 DDR4 DDR5 DIMM DOE DRAM EES2 HDM HTTP LPDDR LinkedIn MRAM NAND NVDIMM NVLink NVMe PC PCB PCI PCIe SFF SIG SO SO SO-DIMM SSD UALink
 
 [YouTube](https://www.youtube.com/watch?v=e9-iK3WtqWU)
 

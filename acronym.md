@@ -51,6 +51,7 @@
 | ATM                 | Automated Teller Machine                                                  |
 | ATS                 | Address Translation Services                                              |
 | ATTD                | Assembly Test Technology Development                                      |
+| ATX                 | Advanced Technology eXtended                                              |
 | AutoNUMA            | (technology name)                                                         |
 | AV                  | Audio/Visual                                                              |
 | AVX                 | Advanced Vector Extensions                                                |
@@ -128,6 +129,7 @@
 | CentOS              | (Linux distribution name)                                                 |
 | CEO                 | Chief Executive Officer                                                   |
 | CEPH                | (file system name)                                                        |
+| CERN                | Conseil Européen pour la Recherche Nucléaire                              |
 | CFD                 | Computational Fluid Dynamics                                              |
 | CFM                 | Cubic Feet per Minute                                                     |
 | CFMWS               | CXL Fixed Memory Window Structure                                         |
@@ -150,6 +152,7 @@
 | CMB                 | Controller Memory Buffer                                                  |
 | CMIS                | Common Management Interface Specification                                 |
 | CMM                 | CXL Memory Module                                                         |
+| CMMB                | CXL Memory Module - Box                                                   |
 | CMMH                | CXL Memory Module Hybrid                                                  |
 | CMN                 | Coherent Mesh Network                                                     |
 | CMN700              | Coherent Mesh Network 700                                                 |
@@ -159,6 +162,7 @@
 | CMSDK               | Computational Memory Software Development Kit                             |
 | CMSI                | the SNIA Compute, Memory, and Storage Initiative                          |
 | CMU                 | Carnegie Mellon University                                                |
+| CNI                 | Container Network Interface                                               |
 | CO2                 | CO2                                                                       |
 | CON                 | DEF CON (hacker convention name)                                          |
 | ConnectX            | (Product name)(NVIDIA)                                                    |
@@ -179,13 +183,15 @@
 | CPU1                | CPU 1                                                                     |
 | CRAP                | Create, Read, Append, Process                                             |
 | CRC                 | Cyclic Redundancy Check                                                   |
+| CRI                 | Container Runtime Interfac                                                |
 | CRPS                | Common Redundant Power Supply                                             |
 | CRUD                | Create, Read, Update, Delete                                              |
 | CS                  | Computational Storage                                                     |
 | CSA                 | Cloud Service Agreements                                                  |
-| CSE                 | Computational Storage Engine                                              |
+| CSE                 | Computational Storage Engine, CXL switch emulator                         |
 | CSEE                | Computational Storage Engine Environment                                  |
 | CSF                 | Computational Storage Function                                            |
+| CSI                 | Container Storage Interface                                               |
 | CSM                 | Cloud Service Model                                                       |
 | CSP                 | Cloud Service Provider                                                    |
 | CSR                 | Configuration Space register                                              |
@@ -212,6 +218,7 @@
 | DAMON               | Data Access MONitor                                                       |
 | DAOS                | Distributed Asynchronous Object Storage                                   |
 | DARPA               | Defense Advanced Research Projects Agency                                 |
+| DAS                 | Direct Attached Storage                                                   |
 | DAX                 | Direct Access Mode                                                        |
 | DBMS                | Database Management System                                                |
 | DC                  | Direct Current, Dynamic Capacity                                          |
@@ -232,6 +239,8 @@
 | DDIMM               | Differential DIMM                                                         |
 | DDoS                | Distributed Denial of Service                                             |
 | DDR                 | Double Data Rate                                                          |
+| DDR1                | Double Data Rate 1                                                        |
+| DDR2                | Double Data Rate 2                                                        |
 | DDR3                | Double Data Rate 3                                                        |
 | DDR4                | Double Data Rate 4                                                        |
 | DDR5                | Double Data Rate 5                                                        |
@@ -290,6 +299,7 @@
 | DRAM                | Dynamic Random Access Memory                                              |
 | DreamWorks          | (Company Name)                                                            |
 | DRS                 | Data Response                                                             |
+| DS                  | Decision Support                                                          |
 | DSA                 | Data Streaming Accelerator, Digital Signature Algorithm                   |
 | DSC                 | Dirty Shutdown Count                                                      |
 | DSDA                |                                                                           |
@@ -313,6 +323,7 @@
 | E2O2E               | Electrical-to-Optical-to-Electrical conversion                            |
 | E3S                 | (EDSFF card form factor)                                                  |
 | EBS                 | Elastic Block Store                                                       |
+| ECAM                | Enhanced Configuration Access Mechanism                                   |
 | ECC                 | Error-correcting Code                                                     |
 | ECDSA               | Elliptic Curve Digital Signature Algorithm                                |
 | ECMP                | Equal Cost Multi Path                                                     |
@@ -331,6 +342,7 @@
 | EDSFF               | Enterprise and Datacenter Standard Form Factor                            |
 | EDSSF               | Enterprise and Datacenter SSD Form Factor                                 |
 | EEPROM              | Electrically Erasable Programmable Read-Only Memory                       |
+| EES2                | The Energy Efficiency Scaling for 2 Decades                               |
 | EFI                 | Extensible Firmware Interface                                             |
 | EIC                 | Electronic Integrated Circuit                                             |
 | EID                 | Endpoint ID                                                               |
@@ -362,6 +374,7 @@
 | EU                  | European Union                                                            |
 | EUPILOT             | (HPC system name)                                                         |
 | EuroHPC             | (HPC Project name)                                                        |
+| EVB                 | Evaluation Board                                                          |
 | EVT                 | Engineering Validation Test                                               |
 | EWG                 | Electrical Working Group                                                  |
 | EX                  | (supercomputer name) (HPE)                                                |
@@ -375,7 +388,9 @@
 | FAST                | Fabric Address Segment Table                                              |
 | FatTrees            | (topology name)                                                           |
 | FBER                | First bit error rate                                                      |
+| FCC                 | Flow Control Credits                                                      |
 | FCI                 | Fast memory Cache Instance                                                |
+| FCS                 | Frame Check Sequence                                                      |
 | FDDI                | Fiber Distributed Data Interface                                          |
 | FDI                 | Fit Aware / D2D Interface                                                 |
 | FDM                 | Function Data Memory                                                      |
@@ -391,6 +406,7 @@
 | Filemap             | (data structure name) (Linux)                                             |
 | FinFET              | Fin Field Effect Transistor                                               |
 | FIO                 | Flexible IO tester                                                        |
+| FIPS                | Federal Information Processing Standards                                  |
 | FIT                 | Failures in Time                                                          |
 | FlashCore           | (Storage device name) (IBM)                                               |
 | FlexIO              | (Hardware specification name)                                             |
@@ -608,6 +624,7 @@
 | JEDEC               | Joint Electron Device Engineering Councils                                |
 | JSON                | JavaScript Object Notation                                                |
 | JTAG                | Joint Test Action Group                                                   |
+| KB                  | Knowledge Base                                                            |
 | KIOXIA              | (Company Name)                                                            |
 | KMEM                | Kernel Memory                                                             |
 | KNL                 | Knights Landing                                                           |
@@ -753,6 +770,7 @@
 | MMPT                | Management Message Passthrough                                            |
 | MMU                 | Memory Management Unit                                                    |
 | MMU700              | (system MMU name) (ARM)                                                   |
+| MMX                 | Memory Machine X (MemVerge)                                               |
 | MNIST               | Modified National Institute of Standards and Technology (database)        |
 | MOE                 | Mixture of Experts                                                        |
 | MOESI               | Modified、Owned、Exclusive、Shared、Invalid cache coherence protocol      |
@@ -1017,6 +1035,7 @@
 | PPB                 | Physical PCI to PCI Bridge                                                |
 | PPO                 | Proximal Policy Optimization                                              |
 | PPR                 | Post Package Repair                                                       |
+| PPS                 | Pulse Per Second                                                          |
 | PR                  | Public Relations                                                          |
 | PR1                 | Pipeline Register 1                                                       |
 | PR2                 | Pipeline Register 2                                                       |
@@ -1029,6 +1048,8 @@
 | PSLC                | pseudo SLC                                                                |
 | PST                 | Pacific Standard Time                                                     |
 | PSUs                | Power Supply Units                                                        |
+| PTM                 | Precision Time Measurement                                                |
+| PTP                 | Precision Time Protocol                                                   |
 | PUE                 | Power Utilization Efficiency                                              |
 | PXB                 | PCI Expander Bridges                                                      |
 | PyTorch             | (library name) (OSS)                                                      |
@@ -1047,6 +1068,7 @@
 | QTG                 | QoS Throttling Group                                                      |
 | QTG_DSM             | QTG DSM                                                                   |
 | RabbitMQ            | (middleware name) (OSS)                                                   |
+| RAG                 | Retrieval Augmented Generation                                            |
 | RAID                | Redundant Arrays of Inexpensive Disks                                     |
 | RAM                 | Random Access Memory                                                      |
 | RAMFS               | (file system name)                                                        |
@@ -1142,6 +1164,7 @@
 | SC                  | Super Computing Conference                                                |
 | SC21                | Super Computing 21                                                        |
 | SC23                | Super Computing 23                                                        |
+| SC24                | Super Computing 24                                                        |
 | ScaleFlux           | (Company Name)                                                            |
 | SCL                 | Serial Clock                                                              |
 | SCM                 | Storage Class Memory, Secure Control Module                               |
@@ -1213,6 +1236,7 @@
 | SoC                 | System on a Chip                                                          |
 | SOC                 | System on a Chip                                                          |
 | SODA                | (SODA Foundation)                                                         |
+| SO-DIMM             | Small Outline Dual Inline Memory Module                                   |
 | SOL                 | Serial over LAN                                                           |
 | SONiC               | Software for Open Networking in the Cloud                                 |
 | SORA                | (text-to-video generative AI model name)                                  |
@@ -1239,6 +1263,7 @@
 | SSH                 | Secure Shell                                                              |
 | SSL                 | Secure Sockets Layer                                                      |
 | SSM                 | Scalable Storage Management                                               |
+| STAC                | Securities Technology Analysis Center                                     |
 | StarlingX           | (Project name) (OpenInfra Foundation)                                     |
 | StorageX            | (Company Name)                                                            |
 | STP                 | Single-Threaded Pipelines, Start of Packet                                |
@@ -1256,12 +1281,14 @@
 | TAD                 | Target Address Decoder Registers                                          |
 | TAGE                | TAgged GEometric history length branch prediction                         |
 | TAM                 | Total Addressable Market                                                  |
+| TASER               | Testing and Simulation Rig                                                |
 | TBD                 | To Be Determined                                                          |
 | TCB                 | Trusted Computing Base                                                    |
 | TCG                 | Tiny Code Generator                                                       |
 | TCO                 | Total Cost of Ownership                                                   |
 | TCP                 | Transmission Control Protocol                                             |
 | TDECQ               | Transmitter and Dispersion Eye Closure Quaternary                         |
+| TDISP               | Trusted Device Identity and Security Provisioning                         |
 | TDP                 | Thermal Design Power                                                      |
 | TDR                 | Time Domain Reflectometry                                                 |
 | TE                  | (Company Name)                                                            |
@@ -1298,6 +1325,7 @@
 | TPC                 | Transaction Processing Performance Council                                |
 | TPCC                | TPC-C                                                                     |
 | TPCH                | TPC-H                                                                     |
+| TGPIO               | Time General Purpose Input/Output                                         |
 | TPM                 | Trusted Platform Module                                                   |
 | TPP                 | Transparent Page Placement                                                |
 | TPS                 | Transaction Per Second                                                    |
@@ -1379,6 +1407,7 @@
 | VMA                 | Virtual Memory Address                                                    |
 | VMAP                | Virtual Memory Mapping                                                    |
 | VMM                 | Virtual Machine Monitor                                                   |
+| VMmark              | (benchmark name)(VMWare)                                                  |
 | VMotion             | (feature name)(VMWare)                                                    |
 | VMware              | (Company Name)                                                            |
 | VNC                 | Virtual Network Computing                                                 |
@@ -1389,6 +1418,7 @@
 | VRM                 | Voltage Regulator Modules                                                 |
 | VSA                 | Virtualization Services Accelerator                                       |
 | vSCSI               | (tool name) (VMWare)                                                      |
+| VSI                 | (benchmark name)(Login VSI)                                               |
 | VSR                 | Very Short Reach                                                          |
 | VXLAN               | Virtual eXtensible Local Area Network                                     |
 | WAF                 | Write Amplification Factor                                                |
