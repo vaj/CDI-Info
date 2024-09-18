@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 292 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 293 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -225,6 +225,8 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2024Q3](#2024q3)
     - [Amphenol](#amphenol-2)
     - [Astera Labs](#astera-labs-4)
+    - [Barcelona Supercomputing Center](#barcelona-supercomputing-center-1)
+    - [Georgia Institute of Technology](#georgia-institute-of-technology)
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
@@ -232,6 +234,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Montage](#montage)
     - [MSI](#msi)
     - [NVIDIA](#nvidia-3)
+    - [Oak Ridge National Lab.](#oak-ridge-national-lab)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
     - [Synopsys](#synopsys-1)
@@ -4402,6 +4405,26 @@ Michael Ocampo
 
 [Acronyms](./acronym.md): AI AMD CPU CXL GDDR6 GPT GPU IO InfiniBand KV LLM ML MemVerge NVIDIA NVMe OCP OPT OPT66B PCIe
 
+### Barcelona Supercomputing Center
+
+Sergio Iserte
+
+[YouTube](https://www.youtube.com/watch?v=ga_UoAqx0II)
+
+[Text](./296)
+
+[Acronyms](./acronym.md): AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
+### Georgia Institute of Technology
+
+Jeffrey Young
+
+[YouTube](https://www.youtube.com/watch?v=ga_UoAqx0II)
+
+[Text](./296)
+
+[Acronyms](./acronym.md): AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
 ### Intel
 
 Anil Godbole (Intel)
@@ -4481,6 +4504,32 @@ Reggie Reynolds
 [Text](./279)
 
 [Acronyms](./acronym.md): AI ARM CPU ConnectX DMA DOCA DPU ECMP GPU GTC HPC IO InfiniBand LinkX NDR NVIDIA NVLink NetQ OSFP PCIe RDMA ROI RoCE SDK SHARP SONiC SpectrumX TCP UDP UFM XDR
+
+Richard Graham
+
+[YouTube](https://www.youtube.com/watch?v=ga_UoAqx0II)
+
+[Text](./296)
+
+[Acronyms](./acronym.md): AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
+### Oak Ridge National Lab.
+
+Geoffroy Vallee
+
+[YouTube](https://www.youtube.com/watch?v=ga_UoAqx0II)
+
+[Text](./296)
+
+[Acronyms](./acronym.md): AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
+Oscar Hernandez
+
+[YouTube](https://www.youtube.com/watch?v=ga_UoAqx0II)
+
+[Text](./296)
+
+[Acronyms](./acronym.md): AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
 
 ### Samsung
 
