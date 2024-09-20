@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 293 disaggregated computing-related talks published on YouTube between March 2017 and August 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 294 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -238,6 +238,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
     - [Synopsys](#synopsys-1)
+    - [The Ohio State University](#the-ohio-state-university)
     - [VMware](#vmware-3)
     - [Wolley](#wolley-1)
     - [Xconn](#xconn)
@@ -4568,6 +4569,20 @@ Gary Ruggles
 [Text](./293)
 
 [Acronyms](./acronym.md): AI AMBA ARM ASIC AXI CCA CCIX CHI CMN CPU CXL CXL.cache CXL.io CXL.mem CXS DDR DDR4 DDR5 ECAM ECN FAE FIPS FMS FYI GIC HBM IDE IO IP L0P LPDDR MSI NVIDIA NVLink PBR PCI PCIe PHY RTL SIG SK SOC SoC TDISP TSP UALink UIO
+
+### The Ohio State University
+
+Dhabaleswar K. Panda
+
+[YouTube](https://www.youtube.com/watch?v=JYCRpa4q20w)
+
+[Acronyms](./acronym.md): ACK AI AMD API ARM ATM AWS CAPI CCIX CPU CUDA CXL ConnectX DDR DGX DMA DOE DPU FDR FFT FPGA GPU GTC HBM HP HPC HPE HPL IB IBM IEEE IO IP IPU IV InfiniBand LAN MAC MPI NASA NCCL NDR NIC NVIDIA NVLink NVSwitch OFI OPT OS OpenCAPI OpenFOAM OpenFabrics OpenSHMEM PCI PGAS PyTorch QP QoS RC RDMA ResNet RoCE SDP SHARP STP SmartNIC TCP TensorFlow UCX UDP US
+
+Hari Subramoni
+
+[YouTube](https://www.youtube.com/watch?v=JYCRpa4q20w)
+
+[Acronyms](./acronym.md): ACK AI AMD API ARM ATM AWS CAPI CCIX CPU CUDA CXL ConnectX DDR DGX DMA DOE DPU FDR FFT FPGA GPU GTC HBM HP HPC HPE HPL IB IBM IEEE IO IP IPU IV InfiniBand LAN MAC MPI NASA NCCL NDR NIC NVIDIA NVLink NVSwitch OFI OPT OS OpenCAPI OpenFOAM OpenFabrics OpenSHMEM PCI PGAS PyTorch QP QoS RC RDMA ResNet RoCE SDP SHARP STP SmartNIC TCP TensorFlow UCX UDP US
 
 ### VMware
 
