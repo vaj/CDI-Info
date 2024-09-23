@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 294 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 295 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -227,6 +227,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Astera Labs](#astera-labs-4)
     - [Barcelona Supercomputing Center](#barcelona-supercomputing-center-1)
     - [Georgia Institute of Technology](#georgia-institute-of-technology)
+    - [GigaIO](#gigaio-2)
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
@@ -4425,6 +4426,16 @@ Jeffrey Young
 [Text](./296)
 
 [Acronyms](./acronym.md): AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
+### GigaIO
+
+Alan Benjamin
+
+[YouTube](https://www.youtube.com/watch?v=Ks0S2SaJi04)
+
+[Text](./298)
+
+[Acronyms](./acronym.md): AI AMD CLI CXL ChatGPT DevOps FabreX GPU GigaIO InfiniBand NVIDIA NVLink NVSwitch PCI PyTorch TensorFlow
 
 ### Intel
 
