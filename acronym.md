@@ -2,6 +2,7 @@
 | ------------------- | ------------------------------------------------------------------------- |
 | ABI                 | Application Binary Interface                                              |
 | AC                  | Alternating Current                                                       |
+| ACCEL               | (benchmark name)(SPEC ACCEL)                                              |
 | ACF                 | Accelerated Compute Fabric                                                |
 | ACK                 | Acknowledgment                                                            |
 | ACM                 | Association for Computing Machinery                                       |
@@ -370,6 +371,7 @@
 | ESX                 | Elastic Sky X (VMWare)                                                    |
 | ESXi                | (Product name) (Vmware)                                                   |
 | ETA                 | Estimated Time of Arrival                                                 |
+| ETH                 | Eidgenössische Technische Hochschule Zürich                               |
 | ETL                 | Extract/Transform/Load                                                    |
 | EU                  | European Union                                                            |
 | EUPILOT             | (HPC system name)                                                         |
@@ -482,6 +484,7 @@
 | GM                  | General Manager                                                           |
 | GMI                 | Global Memory Interconnect                                                |
 | GNR                 | Granite Rapids                                                            |
+| GNU                 | GNU's Not Unix!                                                           |
 | GPF                 | Global Persistence Flush                                                  |
 | GPFS                | (file system name)                                                        |
 | GPGPU               | General-purpose computing on graphics processing unit                     |
@@ -499,6 +502,7 @@
 | GTC                 | GPU Technology Conference                                                 |
 | GTH                 | (name of transceiver) (AMD)                                               |
 | GUI                 | Graphical User Interface                                                  |
+| GVMI                | Guest Virtual Machine ID                                                  |
 | GZIP                | GNU zip                                                                   |
 | H2D                 | Host to Device                                                            |
 | H2H                 | Host to Host                                                              |
@@ -539,7 +543,8 @@
 | HPC                 | High-Performance Computing                                                |
 | HPCG                | (Benchmark name)                                                          |
 | HPCM                | High-Performance Computing Module                                         |
-| HPE                 | (Company Name)                                                            |
+| HPCX                | (Software package name)(NVIDIA)                                           |
+| HPE                 | (Company name)                                                            |
 | HPL                 | High-Performance Linpack                                                  |
 | HPM                 | Host Processor Modules, Hardware Platform Management                      |
 | HPPR                | Hard Post-package repair                                                  |
@@ -595,6 +600,7 @@
 | IOX                 | I/O Expansion (Grand Teton)                                               |
 | IP                  | Intellectual Property                                                     |
 | IPC                 | Inter-Process Communication, Instructions Per Cycle                       |
+| IPDPS               | the International Parallel and Distributed Processing Symposium           |
 | IPMI                | Intelligent Platform Management Interface                                 |
 | IPoCXL              | IP over CXL                                                               |
 | IPR                 | Intellectual Property Rights                                              |
@@ -602,6 +608,7 @@
 | IRC                 | Internet Relay Chat                                                       |
 | IRL                 | Integrated Return Loss                                                    |
 | ISA                 | Industry Standard Architecture, Instruction Set Architecture              |
+| ISC                 | the Information Security Conference                                       |
 | iSCSI               | Internet Small Computer System Interface                                  |
 | ISI                 | Inter Symbol Interference                                                 |
 | ISL                 | Inter-Switch Link                                                         |
@@ -779,6 +786,7 @@
 | MP3                 | MPEG-1 audio layer 3                                                      |
 | MPAM                | Memory Partitioning and Monitoring                                        |
 | MPI                 | Message Passing Interface                                                 |
+| MPMD                | Multiple Program Multiple Data                                            |
 | MPMM                | Max Power Mitigation Mechanism                                            |
 | MPN                 | Manufacturer Part Number                                                  |
 | MPNP                | Modular Plug and Play                                                     |
@@ -883,6 +891,7 @@
 | OctoML              | (Company Name)                                                            |
 | OCuLink             | (connector technology)(PCI-SIG)                                           |
 | ODM                 | Original Design Manufacturer                                              |
+| ODOS                | OpenMP DPU Offloading Support                                             |
 | ODP                 | On Demand Pageing                                                         |
 | ODPMR               | on-demand paging memory region                                            |
 | ODSA                | Open Domain-Specific Architecture                                         |
@@ -943,14 +952,16 @@
 | OSF                 | Open System Firmware                                                      |
 | OSFP                | Octal Small Form Factor Pluggable                                         |
 | OSFPXD              | Octal Small Form-factor Pluggable eXtended Density                        |
-| OSLabs              | NPO 名                                                                    |
+| OSLabs              | (NPO name)                                                                |
 | OSS                 | Open Source Software, Object Storage Server                               |
+| OSU                 | Ohio State University                                                     |
 | OU                  | Open U                                                                    |
 | OVMF                | Open Virtual Machine Framework                                            |
 | OVS                 | Open vSwitch                                                              |
 | OWI                 | Optical Wavelength Interval                                               |
 | P2P                 | Peer to Peer                                                              |
 | P2V                 | Physical to Virtual                                                       |
+| P3DFFT              | Parallel Three-Dimensional Fast Fourier Transforms                        |
 | P4                  | Programming Protocol-independent Packet Processors                        |
 | PA                  | Precision Architecture                                                    |
 | PageRank            | (Algorithm name)                                                          |
@@ -1018,6 +1029,7 @@
 | PMIC                | Power Management Integrated Circuit                                       |
 | PMIx                | Process Management Interface - Exascale                                   |
 | PMKV                | crash-consistent key-value store on persistent memory                     |
+| PML                 | Point-to-Point Messaging Layer                                            |
 | PMM                 | Pooled Memory Manager, Pluggable Multi-Purpose Module                     |
 | PMP0A08             | (driver name) (ACPI)                                                      |
 | PMR                 | Persistent Memory Region                                                  |
@@ -1033,6 +1045,7 @@
 | PowerPC             | (Processor name)                                                          |
 | PPA                 | Power, Performance, and Area                                              |
 | PPB                 | Physical PCI to PCI Bridge                                                |
+| PPN                 | Processes Per Node                                                        |
 | PPO                 | Proximal Policy Optimization                                              |
 | PPR                 | Post Package Repair                                                       |
 | PPS                 | Pulse Per Second                                                          |
@@ -1115,6 +1128,7 @@
 | RISC                | Reduced Instruction Set Computer                                          |
 | RISER               | (Project name)                                                            |
 | RLM                 | Reflective Loss Measurement                                               |
+| RMA                 | Remote Memory Access                                                      |
 | RMC                 | Rack Management Controller                                                |
 | RMCDM               | Rack Management Controller Device Manager                                 |
 | RMII                | Reduced Media-Independent Interface                                       |
@@ -1190,6 +1204,7 @@
 | SHARP               | Scalable Hierarchical Aggregation and Reduction Protocol (NVIDIA)         |
 | SHMEM               | (library name) (SHared MEMory)                                            |
 | SI                  | System Image, Signal Integrity                                            |
+| SIAM                | the Society for Industrial and Applied Mathematics                        |
 | SIE                 | Security Interface Extension                                              |
 | SIF                 | Shared InFrastructure                                                     |
 | SIFT                | Scale-Invariant Feature Transform                                         |
@@ -1244,6 +1259,7 @@
 | SP5                 | (Product name)(Jabil)                                                     |
 | SpaceX              | (Company Name)                                                            |
 | SPD                 | Serial Presence Detect                                                    |
+| SPDK                | the Storage Performance Development Kit                                   |
 | SPDM                | Security Protocols and Data Models                                        |
 | SPEC                | System Performance Evaluation Cooperative                                 |
 | SpectrumX           | (Product name)(NVIDIA)                                                    |
@@ -1340,6 +1356,7 @@
 | TxFIR               | TX Finite Impulse Response                                                |
 | UALink              | Ultra Accelerator Link                                                    |
 | UBB                 | Universal Building Block                                                  |
+| UCC                 | Unified Communication Collectives                                         |
 | UCIe                | Universal Chiplet Interconnect Express                                    |
 | UCIE                | Universal Chiplet Interconnect Express                                    |
 | UCS                 | Unified Computing System (Cisco)                                          |
@@ -1368,6 +1385,7 @@
 | UR                  | Unsupported Request                                                       |
 | URI                 | Uniform Resource Identifier                                               |
 | URL                 | Uniform Resource Locator                                                  |
+| UROM                | Unified Runtime Offload Manager                                           |
 | US                  | United States of America                                                  |
 | USA                 | United States of America                                                  |
 | USB                 | Universal Serial Bus                                                      |
