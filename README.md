@@ -4435,7 +4435,7 @@ Alan Benjamin
 
 [Text](./298)
 
-[Acronyms](./acronym.md): AI AMD CLI CXL ChatGPT DevOps FabreX GPU GigaIO InfiniBand NVIDIA NVLink NVSwitch PCI PyTorch TensorFlow
+[Acronyms](./acronym.md): AI AMD CLI CXL ChatGPT DevOps FabreX GPU GigaIO InfiniBand NVIDIA NVLink NVSwitch PBS PCI PyTorch TensorFlow
 
 ### Intel
 

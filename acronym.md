@@ -998,6 +998,7 @@
 | PASID               | Process Address Space Identifier                                          |
 | PBR                 | Port Based Routing                                                        |
 | PBRS31              | Pseudorandom Binary Sequence of length 31                                 |
+| PBS                 | Portable Batch System                                                     |
 | PC                  | Personal Computer                                                         |
 | PCB                 | Printed Circuit Board                                                     |
 | PCBA                | Printed Circuit Board Assembly                                            |
