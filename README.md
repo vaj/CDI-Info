@@ -4645,7 +4645,7 @@ JP Jiang
 
 Nilesh Shah
 
-[YouTUbe](https://www.youtube.com/watch?v=6-pSIGzncbs)
+[YouTube](https://www.youtube.com/watch?v=6-pSIGzncbs)
 
 [Text](./294)
 
