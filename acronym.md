@@ -140,7 +140,9 @@
 | CHF                 | Critical Heat Flux                                                        |
 | CHI                 | Coherent Hub Interface                                                    |
 | CHIPS               | Clearing House Interbank Payments System                                  |
+| CIFAR               | Canadian Institute For Advanced Research                                  |
 | CIM                 | Computer Integrated Manufacturing                                         |
+| CINECA              | Consorzio Interuniversitario del Nord-Est per il Calcolo Automatico       |
 | CLA                 | Contributor License Agreement                                             |
 | CleanEvict          | (request in CXL)                                                          |
 | CleanEvictNoData    | (request in CXL)                                                          |
@@ -149,6 +151,7 @@
 | CLI                 | Command Line Interface                                                    |
 | CLKREC              | (PCIe Signal Name)                                                        |
 | CLOS                | (Person's name, topology name)                                            |
+| CM                  | Connection Manager                                                        |
 | CMA                 | Component Measurement and Authentication                                  |
 | CMB                 | Controller Memory Buffer                                                  |
 | CMIS                | Common Management Interface Specification                                 |
@@ -182,6 +185,8 @@
 | CPU                 | Central Processing Unit                                                   |
 | CPU0                | CPU 0                                                                     |
 | CPU1                | CPU 1                                                                     |
+| CQ                  | Completion Queue                                                          |
+| CQE                 | Completion Queue Elements                                                 |
 | CRAP                | Create, Read, Append, Process                                             |
 | CRC                 | Cyclic Redundancy Check                                                   |
 | CRI                 | Container Runtime Interfac                                                |
@@ -268,8 +273,10 @@
 | DirectCXL           | (prototype name) (Panmnesic)                                              |
 | DirtyEvict          | (request in CXL)                                                          |
 | DiskANN             | (application name)                                                        |
+| DL                  | Deep Learning                                                             |
 | DL1                 | Data Level 1                                                              |
 | DL2                 | Data Level 2                                                              |
+| DLID                | Destination Local Identifier                                              |
 | DLIO                | (Benchmark tool name)                                                     |
 | DLLP                | Data Link Layer Packet                                                    |
 | DLP                 | Data Link Layer Packet                                                    |
@@ -282,6 +289,7 @@
 | DMP                 | Device Media Partition                                                    |
 | DMTF                | Distributed Management Task Force                                         |
 | DNA                 | Deoxyribonucleic acid                                                     |
+| DNN                 | Deep Neural Network                                                       |
 | DNO                 | Datacenter Network Optimizer, Density Optimized                           |
 | DOC                 | Direct Attached Optical                                                   |
 | DOCA                | Data-Center-on-a-Chip Architecture                                        |
@@ -339,11 +347,13 @@
 | EDK                 | UEFI Development Kit 2020                                                 |
 | EDK2                | UEFI Development Kit 2020                                                 |
 | EDPC                | Enhanced Downstream Port Containment                                      |
+| EDR                 | Enhanced Data Rate                                                        |
 | EDS                 | Enterprise and Datacenter Standard                                        |
 | EDSFF               | Enterprise and Datacenter Standard Form Factor                            |
 | EDSSF               | Enterprise and Datacenter SSD Form Factor                                 |
 | EEPROM              | Electrically Erasable Programmable Read-Only Memory                       |
 | EES2                | The Energy Efficiency Scaling for 2 Decades                               |
+| EFA                 | Elastic Fabric Adapter                                                    |
 | EFI                 | Extensible Firmware Interface                                             |
 | EIC                 | Electronic Integrated Circuit                                             |
 | EID                 | Endpoint ID                                                               |
@@ -517,6 +527,7 @@
 | HBM3                | High Bandwidth Memory 3                                                   |
 | HBM4                | High Bandwidth Memory 4                                                   |
 | HBR                 | Hierarchy Based Routing                                                   |
+| HCA                 | Host Channel Adapter                                                      |
 | HCI                 | Human-Computer Interaction                                                |
 | HD                  | High-Density                                                              |
 | HDD                 | Hard Disk Drive                                                           |
@@ -525,9 +536,11 @@
 | HDMD                | Device Managed Coherence                                                  |
 | HDMDB               | Device Managed Coherence with Back-Invalidation                           |
 | HDMH                | Host Managed Coherence                                                    |
+| HDR                 | High Data Rate                                                            |
 | HFT                 | High-Frequency Trading                                                    |
 | HGX                 | (Product name)(NVIDIA)                                                    |
 | HIB                 | Host Interface Board                                                      |
+| HiCCL               | Havana Collective Communication Library                                   |
 | HID                 | Hardware ID                                                               |
 | HIR                 | Heterogeneous Integration Roadmap                                         |
 | HIVE                | Hierarchical Identify Verify Exploit                                      |
@@ -610,6 +623,8 @@
 | ISA                 | Industry Standard Architecture, Instruction Set Architecture              |
 | ISC                 | the Information Security Conference                                       |
 | iSCSI               | Internet Small Computer System Interface                                  |
+| ISE                 | Integrated Systems Europe                                                 |
+| iSER                | iSCSI Extensions for RDMA                                                 |
 | ISI                 | Inter Symbol Interference                                                 |
 | ISL                 | Inter-Switch Link                                                         |
 | IsoCapacity         | (Equal capacity)                                                          |
@@ -620,6 +635,7 @@
 | ITER                | International Thermonuclear Experimental Reactor                          |
 | IUE                 | Infrastructure Usage Effectiveness                                        |
 | IV                  | Initialization Vector                                                     |
+| iWARP               | Internet Wide Area RDMA Protocol                                          |
 | Jabil               | (Company Name)                                                            |
 | JAX                 | OSS(library name) (Google)                                                |
 | Jayhawk             | (Processor name) (d-Matrix)                                               |
@@ -666,6 +682,7 @@
 | LF                  | Linux Foundation                                                          |
 | LFEDGE              | (organisation name)                                                       |
 | LGA                 | Land Grid Array                                                           |
+| LID                 | Local Identifier                                                          |
 | LightCounting       | (Company Name)                                                            |
 | LightElligence      | (Company Name)                                                            |
 | LightingDB          | (In-memory database name) (SK Telecom)                                    |
@@ -745,6 +762,7 @@
 | MetaBat             | (genomics workload name)                                                  |
 | MetaSPAdes          | (Name of metagenome tool)                                                 |
 | MFU                 | Model FLOPS Utilization                                                   |
+| MGID                | Multicast Group Identifier                                                |
 | MGX                 | (Platform name) (NVIDIA)                                                  |
 | MH                  | Multi-Headed                                                              |
 | MHD                 | Magnetohydrodynamics                                                      |
@@ -781,6 +799,7 @@
 | MNIST               | Modified National Institute of Standards and Technology (database)        |
 | MOE                 | Mixture of Experts                                                        |
 | MOESI               | Modified、Owned、Exclusive、Shared、Invalid cache coherence protocol      |
+| MOFED               | Mellanox OpenFabrics Enterprise Distribution                              |
 | MongoDB             | (Document-oriented database name)                                         |
 | MOU                 | Memorandum of Understanding                                               |
 | MP3                 | MPEG-1 audio layer 3                                                      |
@@ -900,6 +919,7 @@
 | OEOs                | Optical-Electrical-Optical                                                |
 | OFA                 | OpenFabrics Alliance                                                      |
 | OFC                 | (Conference Name) (Optical Fiber Communication Conference and Exhibition) |
+| OFED                | OpenFabrics Enterprise Distribution                                       |
 | OFI                 | Open Fabrics Interfaces                                                   |
 | OFIWG               | OpenFabrics Interfaces Working Group                                      |
 | OFMF                | OpenFabrics Management Framework                                          |
@@ -914,6 +934,7 @@
 | OmniDynamic         | (component in OmniCache)                                                  |
 | OmniIndex           | (component in OmniCache)                                                  |
 | OmniPath            | (interconnect name)(Intel)                                                |
+| OneCLL              | OneAPI Collective Communications Library                                  |
 | OneMCC              | One Memory Coupled Computing                                              |
 | ONNX                | Open Neural Network Exchange                                              |
 | oNOC                | optical Network On Chip                                                   |
@@ -930,11 +951,14 @@
 | OpenFabrics         | (Consortium name) (OpenFabrics Alliance)                                  |
 | OpenFAM             | (API Name) (Open FAM)                                                     |
 | OpenFOAM            | (CFD software name) (Open Field Operation And Manipulation)               |
+| OpenIB              | Open InfiniBand                                                           |
 | OpenPower           | (Consortium name) (OpenPOWER Foundation)                                  |
 | OpenRMC             | (Project name) (Open Rack Management Controller)                          |
 | OpenSDS             | Open Software-Defined Storage                                             |
 | OpenShift           | (container platform name) (RedHat)                                        |
 | OpenSHMEM           | (API Name) (Open SHared MEMory)                                           |
+| OpenSM              | Open Subnet Manager                                                       |
+| OpenSNAPI           | Open Scalable Network Application Programming Interface                   |
 | OpenStack           | (cloud platform name) (OSS)                                               |
 | OpenXLA             | (compiler name) (Open Accelerated Linear Algebra)                         |
 | OPEX                | Operating Expense                                                         |
@@ -944,6 +968,7 @@
 | OPT                 | Open Pretrained Transformers                                              |
 | OPT13B              | Open Pretrained Transformers - 13 B                                       |
 | OPT66B              | Open Pretrained Transformers - 66 B                                       |
+| OPX                 | Omni-Path Express                                                         |
 | ORV3                | Open Rack V 3                                                             |
 | OS                  | Operating System                                                          |
 | OSA                 | Optical Society of America                                                |
@@ -952,6 +977,7 @@
 | OSF                 | Open System Firmware                                                      |
 | OSFP                | Octal Small Form Factor Pluggable                                         |
 | OSFPXD              | Octal Small Form-factor Pluggable eXtended Density                        |
+| OSI                 | Open Systems Interconnection                                              |
 | OSLabs              | (NPO name)                                                                |
 | OSS                 | Open Source Software, Object Storage Server                               |
 | OSU                 | Ohio State University                                                     |
@@ -1002,6 +1028,7 @@
 | PEI                 | Pre-EFI Initialization                                                    |
 | PERST               | (state name)                                                              |
 | PESTI               | Peripheral Sideband Tunneling Interface                                   |
+| PETSc               | Portable, Extensible Toolkit for Scientific Computation                   |
 | PFM                 | Primary Fabric Manager                                                    |
 | PFN                 | Physical Frame Number, Page Frame Number                                  |
 | PFRA                | Pageframe Replacement Algorithm                                           |
@@ -1059,6 +1086,7 @@
 | PRP                 | Physical Region Page                                                      |
 | PSL                 | Power Service Layer                                                       |
 | PSLC                | pseudo SLC                                                                |
+| PSM                 | Performance Scaled Messaging                                              |
 | PST                 | Pacific Standard Time                                                     |
 | PSUs                | Power Supply Units                                                        |
 | PTM                 | Precision Time Measurement                                                |
@@ -1067,6 +1095,7 @@
 | PXB                 | PCI Expander Bridges                                                      |
 | PyTorch             | (library name) (OSS)                                                      |
 | QAM16               | Quadrature Amplitude Modulation 16                                        |
+| QDR                 | Quad Data Rate                                                            |
 | QEMU                | (Processor emulator name) (OSS)                                           |
 | QLC                 | Quadruple Level Cell                                                      |
 | QMP                 | QEMU Machine Protocol                                                     |
@@ -1089,8 +1118,8 @@
 | RAR                 | Read After Read                                                           |
 | RAS                 | Reliability, Availability and Serviceability                              |
 | RAW                 | Read After Write                                                          |
-| RC                  | Root Complex                                                              |
-| RC                  | Root Complex                                                              |
+| RC                  | Root Complex, Reliable Connection                                         |
+| RCCL                | ROCm Collective Communication Library                                     |
 | RCD                 | Restricted CXL Device                                                     |
 | RCEC                | Root Complex Event Collector                                              |
 | RCH                 | Restricted CXL Host                                                       |
@@ -1138,6 +1167,7 @@
 | ROAM                | (Company Name)                                                            |
 | RoCE                | RDMA over Converged Ethernet                                              |
 | RocksDB             | (key-value Database name) (OSS)                                           |
+| ROCm                | Radeon Open Compute platform                                              |
 | ROI                 | Return on Investment                                                      |
 | ROM                 | Read Only Memory                                                          |
 | RP                  | Root Port                                                                 |
@@ -1147,6 +1177,7 @@
 | RPO                 | Recovery Point Objective                                                  |
 | RPS                 | Restart Pipe Start                                                        |
 | RRAM                | Resistive RAM                                                             |
+| Rsocket             | RDMA Sockets                                                              |
 | RStudio             | (Integrated development environment name) (OSS)                           |
 | RTC                 | Real Time Clock                                                           |
 | RTL                 | Register Transfer Level                                                   |
@@ -1189,7 +1220,8 @@
 | SDK                 | Software Development Kit                                                  |
 | SDM                 | Software Defined Memory                                                   |
 | SDNO                | Scalable Density Optimized                                                |
-| SDP                 | Start of Data Packet                                                      |
+| SDP                 | Start of Data Packet, Sockets Direct Protocol                             |
+| SDR                 | Single Data Rate                                                          |
 | SDXI                | Smart Data Accelerator Interface                                          |
 | SEF                 | Software Enabled Flash                                                    |
 | SemiAccurate        | (Company Name)                                                            |
@@ -1272,6 +1304,7 @@
 | SR                  | Single-Root, Short Reach                                                  |
 | SRAM                | Static Random Access Memory                                               |
 | SRAT                | System Resource Affinity Table                                            |
+| SRD                 | Scalable Reliable Datagram                                                |
 | SRIOV               | Single-Root Input/Output Virtualization                                   |
 | SSD                 | Solid State Drive                                                         |
 | SSDT                | Secondary System Description Table                                        |
@@ -1362,6 +1395,7 @@
 | UCS                 | Unified Computing System (Cisco)                                          |
 | UCSD                | University of California San Diego                                        |
 | UCX                 | the Unified Communication X                                               |
+| UD                  | Unreliable Datagram                                                       |
 | UDIMM               | Unbuffered DIMM                                                           |
 | UDP                 | User Datagram Protocol                                                    |
 | UE                  | Uncorrectable Error                                                       |
@@ -1414,6 +1448,8 @@
 | VI                  | Virtualization Intermediary                                               |
 | VIAs                | Vertical Interconnect Accesses                                            |
 | VIP                 | Verification Intellectual Properties                                      |
+| VL                  | Virtual Lane                                                              |
+| VLARB               | Virtual Lane Arbitration                                                  |
 | VLANs               | Virtual Local Area Network                                                |
 | Vlasiator           | (Project name)                                                            |
 | VLSI                | Very Large-Scale Integration                                              |
@@ -1449,6 +1485,8 @@
 | WEKA                | (Company Name)                                                            |
 | WhatsApp            | (Name of service)                                                         |
 | WIP                 | Work In Progress                                                          |
+| WQE                 | Work Queue Element                                                        |
+| WSE                 | Wafer Scale Engine                                                        |
 | xAI                 | (Company Name)                                                            |
 | XConn               | (Company Name)                                                            |
 | XD                  | eXtended Density                                                          |
@@ -1462,6 +1500,7 @@
 | XOR                 | eXclusive OR                                                              |
 | XORing              | eXclusive Oring                                                           |
 | XPU                 | X Processing Units (Intel)                                                |
+| XRC                 | eXtended Reliable Connection                                              |
 | XSR                 | eXtra Short Reach                                                         |
 | XStore              | (key-value system)                                                        |
 | XY                  | (Routing Algorithm name)                                                  |
