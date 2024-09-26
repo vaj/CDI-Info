@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 295 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 296 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -238,6 +238,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Oak Ridge National Lab.](#oak-ridge-national-lab)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
+    - [STAC](#stac)
     - [Synopsys](#synopsys-1)
     - [The Ohio State University](#the-ohio-state-university)
     - [VMware](#vmware-3)
@@ -3787,7 +3788,7 @@ Ahmed Medhioub
 
 [Acronyms](./acronym.md): AI CEM CFD CPU CXL CXL.cache CXL.io CXL.mem DCMHS DDR DDR5 DIMM DPC DRAM EDA GenAI IO JBOM LEO MDNO MXIO NUMA OCP OLAP OLTP OS PCIe RAS RecSys SFF SFFTA SNIA SQL TA TPC
 
-[YouTUbe](https://www.youtube.com/watch?v=vRvgO3nwtFo)
+[YouTube](https://www.youtube.com/watch?v=vRvgO3nwtFo)
 
 [Text](./259)
 
@@ -4570,6 +4571,16 @@ Torry Steed
 [Text](./287)
 
 [Acronyms](./acronym.md): AI AMD CEM CPU CXL CXL.cache CXL.io CXL.mem DIMM DNA DRAM EDSFF IO NAND NIC NVMe PCIe RDIMM SDP SQL SSD TSV
+
+### STAC
+
+Jack Gidding
+
+[YouTube](https://youtu.be/2EEXLeajOXI?si=ewcD8fQdKdKPKSz8)
+
+[Text](./299)
+
+[Acronyms](./acronym.md): AI AMD AWS CEO CXL IO ML NDA NVIDIA STAC URL
 
 ### Synopsys
 
