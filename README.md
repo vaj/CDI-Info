@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 296 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 297 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -228,6 +228,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Barcelona Supercomputing Center](#barcelona-supercomputing-center-1)
     - [Georgia Institute of Technology](#georgia-institute-of-technology)
     - [GigaIO](#gigaio-2)
+    - [HYPERION RESEARCH](#hyperion-research)
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
@@ -4437,6 +4438,16 @@ Alan Benjamin
 [Text](./298)
 
 [Acronyms](./acronym.md): AI AMD CLI CXL ChatGPT DevOps FabreX GPU GigaIO InfiniBand NVIDIA NVLink NVSwitch PBS PCI PyTorch TensorFlow
+
+### HYPERION RESEARCH
+
+Mark Nossokoff
+
+[YouTube](https://youtu.be/cGQHZ-8205o?si=PpKVIFDNEoj-wWuH)
+
+[Text](./300)
+
+[Acronyms](./acronym.md): AI CPU CXL GPU HPC UALink
 
 ### Intel
 
