@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 297 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 298 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -223,6 +223,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [VMWare](#vmware-2)
     - [ZeroPoint](#zeropoint-1)
   - [2024Q3](#2024q3)
+    - [AMD](#amd-6)
     - [Amphenol](#amphenol-2)
     - [Astera Labs](#astera-labs-4)
     - [Barcelona Supercomputing Center](#barcelona-supercomputing-center-1)
@@ -4387,6 +4388,16 @@ Nilesh Shah
 
 ## 2024Q3
 
+### AMD
+
+Kurtis Bowman
+
+[YouTube](https://youtu.be/CRCfRsX6IyU?si=XvBO3gYH9XQfd32e)
+
+[Text](./301)
+
+[Acronyms](./acronym.md): CPU CXL GPU HBM LinkedIn MemVerge PCI PCIe SIG YOLE
+
 ### Amphenol
 
 Samuel Kocsis
@@ -4458,6 +4469,12 @@ Anil Godbole (Intel)
 [Text](./289)
 
 [Acronyms](./acronym.md): AI BIOS CPU CXL DDR4 DDR5 DIMM DRAM HANA HPC ML MemVerge OS PCI SAP TCO
+
+[YouTube](https://youtu.be/CRCfRsX6IyU?si=XvBO3gYH9XQfd32e)
+
+[Text](./301)
+
+[Acronyms](./acronym.md): CPU CXL GPU HBM LinkedIn MemVerge PCI PCIe SIG YOLE
 
 Mohiuddin Mazumder
 
