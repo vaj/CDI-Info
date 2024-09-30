@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 299 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 300 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -241,6 +241,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Oak Ridge National Lab.](#oak-ridge-national-lab)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
+    - [Solidigm](#solidigm-2)
     - [STAC](#stac)
     - [Synopsys](#synopsys-1)
     - [The Ohio State University](#the-ohio-state-university)
@@ -4593,6 +4594,14 @@ Adam Manzanares
 
 [Acronyms](./acronym.md): ACPI AI AMD BIOS CPU CXL EDAC GHES HBM IBM IP NUMA OCP PCI PCIe QEMU RAS
 
+Bill Martin
+
+[YouTube](https://youtu.be/HUQQ_m8wbWI?si=NfHqTtAWeh8aAaRx)
+
+[Text](./303)
+
+[Acronyms](./acronym.md): BAR CMB CXL CXL.mem FMS HDM IO MMIO NVM NVMe OS PCI PCIe PMR SDC SLM SNIA SSD UIO YouTube
+
 Siamak Tavallaei
 
 [YouTube](https://www.youtube.com/watch?v=iCUoSK3TwKs)
@@ -4610,6 +4619,16 @@ Torry Steed
 [Text](./287)
 
 [Acronyms](./acronym.md): AI AMD CEM CPU CXL CXL.cache CXL.io CXL.mem DIMM DNA DRAM EDSFF IO NAND NIC NVMe PCIe RDIMM SDP SQL SSD TSV
+
+### Solidigm
+
+Jason Molgaard
+
+[YouTube](https://youtu.be/HUQQ_m8wbWI?si=NfHqTtAWeh8aAaRx)
+
+[Text](./303)
+
+[Acronyms](./acronym.md): BAR CMB CXL CXL.mem FMS HDM IO MMIO NVM NVMe OS PCI PCIe PMR SDC SLM SNIA SSD UIO YouTube
 
 ### STAC
 
