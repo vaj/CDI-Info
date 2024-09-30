@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 298 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 299 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -237,6 +237,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Montage](#montage)
     - [MSI](#msi)
     - [NVIDIA](#nvidia-3)
+    - [Objective Analysis](#objective-analysis-2)
     - [Oak Ridge National Lab.](#oak-ridge-national-lab)
     - [Samsung](#samsung-6)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
@@ -4553,6 +4554,16 @@ Richard Graham
 [Text](./296)
 
 [Acronyms](./acronym.md): UROM UCC SPDK RMA PPN PML P3DFFT OSU ODOS MPMD ISC IPDPS HPCX GVMI GNU ETH SIAM ACCEL AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
+### Objective Analysis
+
+Jim Handy
+
+[YouTube](https://youtu.be/0-zHObQrNVY?si=6AG2racMp9Zyu-ZM)
+
+[Text](./302)
+
+[Acronyms](./acronym.md): AI CCIX CMM CPU CXL DDR DDR4 DDR5 DDR6 DRAM FRAM GDDR GPU HBM HPC IBM IEEE IP LPDDR MRAM NAND NVMe OpenCAPI PC PCI PCIe PCM PDF RAM SNIA SSD
 
 ### Oak Ridge National Lab.
 
