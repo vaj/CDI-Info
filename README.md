@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 300 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 301 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -75,9 +75,16 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [University of Michigan](#university-of-michigan)
     - [Xconn Technologies](#xconn-technologies)
   - [2023Q1](#2023q1)
+    - [AMD](#amd-2)
+    - [Astera Labs](#astera-labs-1)
+    - [Elastic Cloud](#elastic-cloud)
     - [Intel](#intel-4)
+    - [IntelliProp](#intelliprop-1)
     - [MemVerge](#memverge-1)
+    - [Samsung](#samsung-1)
     - [Sandia National Laboratories](#sandia-national-laboratories)
+    - [Teledyne LeCroy](#teledyne-lecroy)
+    - [UnifabriX](#unifabrix-1)
   - [2023Q2](#2023q2)
     - [(Independent)](#independent)
     - [Barcelona Supercomputing Center](#barcelona-supercomputing-center)
@@ -94,24 +101,24 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Micron Technology](#micron-technology-1)
     - [Panmnesic](#panmnesic)
     - [Rambus](#rambus-1)
-    - [Samsung](#samsung-1)
+    - [Samsung](#samsung-2)
     - [SiPearl](#sipearl)
     - [Timeplus](#timeplus)
     - [Xconn Technologies](#xconn-technologies-1)
   - [2023Q3](#2023q3)
-    - [AMD](#amd-2)
+    - [AMD](#amd-3)
     - [Intel](#intel-6)
     - [MemVerge](#memverge-3)
     - [NVIDIA](#nvidia-1)
     - [Rambus](#rambus-2)
-    - [Samsung](#samsung-2)
+    - [Samsung](#samsung-3)
   - [2023Q4](#2023q4)
     - [AlphaWave IP](#alphawave-ip)
-    - [AMD](#amd-3)
+    - [AMD](#amd-4)
     - [Amphenol](#amphenol)
     - [Arista](#arista)
     - [ARM](#arm-2)
-    - [Astera Labs](#astera-labs-1)
+    - [Astera Labs](#astera-labs-2)
     - [Ayar Labs](#ayar-labs-1)
     - [Broadcom](#broadcom-1)
     - [Cisco](#cisco)
@@ -130,7 +137,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Huawei](#huawei-1)
     - [Insyde Software](#insyde-software)
     - [Intel](#intel-7)
-    - [IntelliProp](#intelliprop-1)
+    - [IntelliProp](#intelliprop-2)
     - [Jabil](#jabil)
     - [Kandou](#kandou)
     - [KIOXIA](#kioxia-1)
@@ -154,7 +161,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [OIF](#oif)
     - [Rambus](#rambus-3)
     - [Red Hat](#red-hat)
-    - [Samsung](#samsung-3)
+    - [Samsung](#samsung-4)
     - [Seagate](#seagate-1)
     - [SK hynix](#sk-hynix-1)
     - [SMART Modular Technologies](#smart-modular-technologies)
@@ -168,8 +175,8 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Wolley](#wolley)
     - [Xconn Technologies](#xconn-technologies-2)
   - [2024Q1](#2024q1)
-    - [AMD](#amd-4)
-    - [Astera Labs](#astera-labs-2)
+    - [AMD](#amd-5)
+    - [Astera Labs](#astera-labs-3)
     - [CXL Consortium](#cxl-consortium-4)
     - [GigaIO](#gigaio-1)
     - [H3 Platform](#h3-platform-2)
@@ -181,20 +188,20 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [MindShare](#mindshare)
     - [Montage Technology](#montage-technology-1)
     - [Rutgers University](#rutgers-university)
-    - [Samsung](#samsung-4)
+    - [Samsung](#samsung-5)
     - [SMART Modular Technologies](#smart-modular-technologies-1)
     - [Synopsys](#synopsys)
-    - [Teledyne LeCroy](#teledyne-lecroy)
+    - [Teledyne LeCroy](#teledyne-lecroy-1)
     - [Tsinghua University](#tsinghua-university)
     - [VMWare](#vmware-1)
     - [Xconn Technologies](#xconn-technologies-3)
     - [Yole](#yole)
     - [ZeroPoint](#zeropoint)
   - [2024Q2](#2024q2)
-    - [AMD](#amd-5)
+    - [AMD](#amd-6)
     - [Amphenol](#amphenol-1)
     - [Apex Semiconductors](#apex-semiconductors)
-    - [Astera Labs](#astera-labs-3)
+    - [Astera Labs](#astera-labs-4)
     - [CXL Consortium](#cxl-consortium-5)
     - [Dell](#dell-2)
     - [Drut Technologies](#drut-technologies)
@@ -210,7 +217,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Micron Technology](#micron-technology-4)
     - [Objective Analysis](#objective-analysis-1)
     - [Rambus](#rambus-4)
-    - [Samsung](#samsung-5)
+    - [Samsung](#samsung-6)
     - [Samtec](#samtec-1)
     - [Sandia National Laboratories](#sandia-national-laboratories-1)
     - [SNIA](#snia)
@@ -218,14 +225,14 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [StorageX.ai](#storagexai)
     - [Supermicro](#supermicro)
     - [TetraMem](#tetramem)
-    - [UnifabriX](#unifabrix-1)
+    - [UnifabriX](#unifabrix-2)
     - [University of Wisconsin-Madison](#university-of-wisconsin-madison)
     - [VMWare](#vmware-2)
     - [ZeroPoint](#zeropoint-1)
   - [2024Q3](#2024q3)
-    - [AMD](#amd-6)
+    - [AMD](#amd-7)
     - [Amphenol](#amphenol-2)
-    - [Astera Labs](#astera-labs-4)
+    - [Astera Labs](#astera-labs-5)
     - [Barcelona Supercomputing Center](#barcelona-supercomputing-center-1)
     - [Georgia Institute of Technology](#georgia-institute-of-technology)
     - [GigaIO](#gigaio-2)
@@ -239,7 +246,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [NVIDIA](#nvidia-3)
     - [Objective Analysis](#objective-analysis-2)
     - [Oak Ridge National Lab.](#oak-ridge-national-lab)
-    - [Samsung](#samsung-6)
+    - [Samsung](#samsung-7)
     - [SMART Modular Technologies](#smart-modular-technologies-2)
     - [Solidigm](#solidigm-2)
     - [STAC](#stac)
@@ -1162,6 +1169,50 @@ Gerry Fan
 
 ## 2023Q1
 
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+### AMD
+
+Kurtis Bowman
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+Rita Gupta
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+### Astera Labs
+
+Sandeep Dattaprasad
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+### Elastic Cloud
+
+George Apostol
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
 ### Intel
 
 Clara Li
@@ -1173,6 +1224,24 @@ Clara Li
 [Article](https://github.com/vaj/CDI-Articles#25)
 
 [Acronyms](./acronym.md): CXL DCI FDN IOWN LSN OpenAPN PoC QoS RAN RDMA
+
+Kurt Lender
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+### IntelliProp
+
+Tracy Spitler
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
 
 ### MemVerge
 
@@ -1186,6 +1255,24 @@ Charles Fan
 
 [Acronyms](./acronym.md): AI AMD ARM BIOS CPU CXL DDR DDR5 DIMM DRAM ECC EMC GPU HBM IP MemVerge MLC MPP NAND NAS NetApp NUMA OCP PCIe SAN SDC SDM TCO VM
 
+Steve Scargall
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+### Samsung
+
+Kapil Sethi
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
 ### Sandia National Laboratories
 
 Michael Aguilar
@@ -1197,6 +1284,26 @@ Michael Aguilar
 [Article](https://github.com/vaj/CDI-Articles#1)
 
 [Acronyms](./acronym.md): CXL DMTF HPC HTTP HTTPS InfiniBand MDS NVMe OFMF OpenFabrics OSS RabbitMQ RAM RDMA RESTful VFS
+
+### Teledyne LeCroy
+
+Gorden Getty
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+
+### UnifabriX
+
+Danny Volkind
+
+[YouTube](https://www.youtube.com/watch?v=yN3rvn1BH-8)
+
+[Text](./304)
+
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
 
 ## 2023Q2
 
