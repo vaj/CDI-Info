@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 301 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 302 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -447,6 +447,14 @@ Debendra Das Sharma
 
 [Acronyms](./acronym.md): ACPI AI API CPU CXL CXL.cache CXL.io CXL.mem DMA DMTF DRAM FM HMAT IO IoT IP LD LD0 LD15 LinkedIn MEM MLD MMIO NIC NVMe OEM PCI PCIe PHY PPB SMB SMP SPDM SRAT SSD TCO TLB UEFI USB VCS VCS0 VPPB YouTube
 
+Kurt Lender
+
+[YouTube](https://www.youtube.com/watch?v=It1_mHsor9g)
+
+[Text](./305)
+
+[Acronyms](./acronym.md): ASIC CPU CXL CXL.cache CXL.io CXL.mem DDR DMA FLIT HPC IP LRU LinkedIn MESI MSI PCI PCIe PGAS PHY RAS RDMA RdOwn YouTube
+
 Mahesh Natu
 
 [YouTube](https://www.youtube.com/watch?v=jhehXwnu0Ss)
@@ -454,6 +462,14 @@ Mahesh Natu
 [Text](./5)
 
 [Acronyms](./acronym.md): ACPI AI ARM BIOS CCIX CDAT CPU CXL CXL.cache CXL.io CXL.mem DDI DDR DRAM EDK EFI GPU HBM HMAT HPA HPC IO LER MCFG ML NIC NUMA OS OSC PCI PCIe PEI PHY RAS ROM SIG SP SSDT UEFI YouTube
+
+Rob Blankenship
+
+[YouTube](https://www.youtube.com/watch?v=It1_mHsor9g)
+
+[Text](./305)
+
+[Acronyms](./acronym.md): ASIC CPU CXL CXL.cache CXL.io CXL.mem DDR DMA FLIT HPC IP LRU LinkedIn MESI MSI PCI PCIe PGAS PHY RAS RDMA RdOwn YouTube
 
 ### Meta
 
@@ -500,6 +516,14 @@ Robert Blankenship
 [Article](https://github.com/vaj/CDI-Articles#227)
 
 [Acronyms](./acronym.md): CacheFlushed CleanEvict CleanEvictNoData CLFlush CPU CXL CXL.cache CXL.io CXL.mem D2H DDR DDR4 DirtyEvict DRS ECC H2D HBM LinkedIn MESI NDR NIC PCI PGAS RdAny RdCurr RdOwn RdownNoData RdShared YouTube
+
+Siamak Tavallaei
+
+[YouTube](https://www.youtube.com/watch?v=It1_mHsor9g)
+
+[Text](./305)
+
+[Acronyms](./acronym.md): ASIC CPU CXL CXL.cache CXL.io CXL.mem DDR DMA FLIT HPC IP LRU LinkedIn MESI MSI PCI PCIe PGAS PHY RAS RDMA RdOwn YouTube
 
 ## 2021
 
