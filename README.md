@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 302 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 303 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -240,6 +240,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
+    - [MemVerge](#memverge-7)
     - [Micron](#micron)
     - [Montage](#montage)
     - [MSI](#msi)
@@ -4638,6 +4639,16 @@ Seth Friedman
 [Text](./280)
 
 [Acronyms](./acronym.md): ASIC CAPI CEO CERN CXL CXL.cache CXL.io CXL.mem FCC FCS FEC FPGA GPU IP LMS NIC PCI PCIe PPS PTM PTP QSFP SC24 STAC TASER TCP TGPIO UDP
+
+### MemVerge
+
+Gregory Price
+
+[YouTube](https://youtu.be/ygNW_Z-fChM?si=4DBvSgS2S62b7NFO)
+
+[Text](./306)
+
+[Acronyms](./acronym.md): CPU CXL DRAM GPU HBM HMAT NUMA PID PMEM RFC VMA
 
 ### Micron
 
