@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 303 disaggregated computing-related talks published on YouTube between March 2017 and September 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 304 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -257,6 +257,8 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Wolley](#wolley-1)
     - [Xconn](#xconn)
     - [ZeroPoint](#zeropoint-2)
+  - [2024Q4](#2024q4)
+    - [SUSE Linux](#suse-linux)
 
 ## 2017
 
@@ -4869,3 +4871,15 @@ Yiannis Nikolakopoulos
 [Text](./266)
 
 [Acronyms](./acronym.md): CPU CXL DAX DDR DPA ECO HPA IP MCE MM MSI NUMA OCP PCIe PFN PMEM ZeroPoint ZRAM
+
+## 2024Q4
+
+### SUSE Linux
+
+Hannes Reinecke
+
+[YouTube](https://youtu.be/THfAHO2DtQ0?si=U4iaaWLVhUVWlCCa)
+
+[Text](./307)
+
+[Acronyms](./acronym.md): BIOS CPU CXL CXL.cache CXL.io CXL.mem DRAM GPU HMAT HP HPE IO IOPS MSI MSIX NUMA PCI QEMU QPI RAM
