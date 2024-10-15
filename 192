@@ -1,1 +1,83 @@
-(Negotiations are underway with the YouTube channel concerned.)
+YouTube:https://www.youtube.com/watch?v=VOeoZsRQcqI
+Text:
+Thank you very much. Yesterday, we covered a little bit  about CXL specification update for 3.1. Today, we go a little bit deeper  into how to actually take advantage of it into systems.
+
+A very good place for including technology such as CXL,  is Open Compute Project. That's where we basically place technologies into systems,  integrate them, and eventually push them to production. So OCP provides a community to realize  these kind of wonderful technologies from CXL, PCIe,  JEDEC, NVMe, different technologies come into systems.
+
+It is good to know that CXL is organized around different work  groups, board of directors, and then technical task force  and marketing work groups are reporting  to board of directors. And there are a number of very active technical work groups  that work together, debate the use models,  and eventually produce specifications. Within OCP, we also have a related project structure,  specifically OCP server project, includes  a number of work streams and subprojects  that benefit from technologies such as CXL. For example, composable memory system,  and then modular hardware system,  which is mechanical and system features,  extended connectivity, talks about how  to interconnect multiple chassis using PCIe and CXL. So there are a number of wonderful activities  within OCP that parallel activities that  are happening in other consortia and work groups  to eventually realize them into the systems.
+
+We have been talking about memory fabrics. CXL seems to be the right choice moving forward  as a standard for low latency, high bandwidth,  and open specification. Specification is in public domain now for up to 3.1. And it is a realization that working together  will make it easier for people to produce good products.
+
+A little primer, if you remember,  CXL is based on the type of things  that you already know. You know PCIe very well in several generations. The physical layer of CXL is PCIe.
+
+But then it adds coherency protocols  for memory semantic workloads.
+
+ And eventually produces systems with converged memory area  so that accelerators and devices and host CPUs  can work together on one memory region.
+
+ Once we do that, then we enable ease  of use for software programmers and efficient data movement  that reduces energy and reduces time for executing workloads.
+
+CXL has been growing. It has doubled the bandwidth from CXL 2.0 to 3.0  using PCIe 6.0 bit rate of 64 gigabits per second,  transfer per second. It has increased the connectivity  through switching the description of fabrics. And it has talked about and captured ways for us system  guys to compose systems from disaggregated computing. All of these capabilities will eventually  help us build shared memory regions, memory pooled regions,  all within a backward compatible specification. If you start building CXL 3.0, you  could have some confidence that CXL 2.0 devices will  interoperate with your device.
+
+ So removing the bottlenecks has been a key element for CXL. You know, for example, with PCIe,  if a device through a switch wants  to communicate with another device,  it has to go through its host, goes up the tree,  and then back down the tree. That creates a choke point for the host or that CPU.
+
+With CXL, we can have a peer-to-peer interconnect  between devices through switches to remove the bottleneck that  was with CXL 2.0 or PCIe. With this concept, using the peer-to-peer semantics,  such as a memory that enables the back invalidate channel,  using unordered I/O semantics, memory devices  can be accessed by compute devices, such as a GPU  or an accelerator with ease.
+
+Now, of course, we have new capabilities. Yesterday, we talked about it, and this one summarizes it. CXL 3.0 enhances the support for memory pooling  by adding memory sharing concept. A memory region within a memory device  can be allocated and be mapped to different hosts. And once we do that, you can see that different hosts  through that memory that is shared between the two  can communicate. So earlier, I talked about communication between devices  as a peer-to-peer device-to-device. Now, with memory sharing, the hosts  can also communicate through memory sharing.
+
+Now, this is 3.1, 3.0. 3.1 adds another capability I will talk in a minute. Now, once we have these systems and these techniques provided  through CXL, then we can imagine to disaggregate compute  for the sake of multiple benefits-- ease of use,  putting things where they belong, memory in one place,  storage in one place, host and compute elements  that are power-hungry in a different place,  and interconnect them so that you  can have a different ratio of CPU core or GPU core to memory. And then CXL allows us to compose all of those  using CXL Fabric Manager as a mechanism  to pull it all together to build a system.
+
+Now, once we have that, then we can think of very large fabrics. And we talked about yesterday, you  can have a concept of spine and leaf switches. You can have a rack. Chassis within the rack can be of different types. They can be switches, can be networking elements, memory  appliance, or compute blocks.
+
+Once we do all of that, we can then increase our traffic. It's not just north and south, similar to PCIe  through the tree structure. With fabrics, we can also have east-west traffic  with efficiency.
+
+So composable architecture creates this concept for us. And that's very applicable for large systems,  such as HPC, AI/ML, or in-memory databases  with large memory blocks that are  shared amongst multiple nodes.
+
+You're familiar with a traditional server. It starts with a compute element and a memory  that's locally attached to it, networking element and storage  element.
+
+We did talk about this. Summarize again. CXL allows us to interconnect another device to the CPU  complex. That device could be a memory device.
+
+ It could allow us to have different kinds of memory. Emerging technologies can be provided.
+ 
+CXL allows us to have multi-ported devices. So each particular memory controller  be connected to more than one server. And these are all the silicon that's available right now. People have built multi-ported memory controllers  based on CXL.
+
+Now, of course, we can imagine larger systems. You can have a memory device that has multiple ports,  be connected to multiple CPUs or multiple hosts,  and have a large memory pool. And the memory pool can, in fact,  be shared now with CXL 3.1 specification  amongst multiple hosts.
+
+We can have appliance systems enabled  by CXL switches. These appliances could be memory appliances, storage appliances,  or GPU accelerator appliances, all  connected through a similar structure  using CXL memory fabric.
+
+Now, of course, we have challenges  because some of these interconnects are complex. And that's why we have system people  within OCP and other companies to solve  some of these problems.
+
+So the way I've thought about these things is,  well, to build large systems, we need to be careful. The three points that I normally mention include,  first, do no harm. Put things where they belong. And if it is too hard, push back and sometimes  find another way to do it.
+
+ So within the first principle, first, do no harm,  if we disaggregate a system, from a software point of view,  we still need to represent the system as what  they are used to--  CPU, memory, networking, and storage. And that is a major effort that's underway  as part of OCP, for example.
+
+And put things where they belong. Hardware elements, if you are not very careful,  you can create new fault modes, new complexes  for interconnect. Choosing how to partition the system  is very important for serviceability  and reducing the costs associated  with disaggregating compute. And that's another element that OCP is working on.
+
+And once we do all of those, we can  think of a reference hardware that software people can  use to develop their software. You could call that one a reference software. And it could be ready for future systems.
+
+ An example of that could include a mesh of compute elements  and memory and storage and switch elements  that can all be in mechanical structures,  plug-in using cabling techniques or PCB techniques.
+
+For that, a backbone, copper backbone,  seems to be very reasonable. You have one element, serviceable element,  that could be one part number that  creates this copper backbone.
+
+Interconnect can be photonics. If the devices are farther away, within a rack, for example,  or multiple racks, these are the concepts that  are being discussed within OCP.
+
+So then you can imagine multiple modules,  all interconnected using copper or photonic elements. And of course, for systems, we need power and cooling. And OCP rack and OCP servers are good examples  of what system designers are doing. So having all of that, you can imagine  have a tightly connected local compute and memory. And they can be connected through expansion chassis  and disaggregation for appliances. And that looks like having an aggregation point using  fat pipes and lots of interconnects  within the individual tightly connected clusters. So efficiency on data movement can be handled  using different techniques.
+
+ For all of that, we need software. CXL Fabric Manager, an essential element  to do the system composition. UFI can be used for preboot. And those are normal techniques that we've used for PCIe. We can expand that one across for CXL as well. So this creates multiple layers for CXL, physical layer  based on PCIe today. UCIe is another. And then we have software layers. Even if we change an element of the full multi-layer system,  other layers are applicable to move to another technology.
+
+So having this technology, then it  is good for us to have ways to realize them in systems. And OCP is a very good technique to do that.
+
+As I suggested earlier, within OCP server project,  we have multiple work streams that  are thinking about and doing work around composable memory  and CXL enabled solutions. Composable memory system, CMS, is very active. I encourage you to participate. It touches on software elements and system elements. DCMHS is mostly around hardware, modularity, and standardization  on how the cables and connectors and adding cards  and what we used to call motherboard,  now we call processor memory modules, HPM,  how they are interconnected.
+
+So within a composable memory system work group,  the teams have structured themselves  around multiple work streams. And work stream is working on the workloads  and defining the use cases for this. As I said earlier, once you disaggregate things,  we need to have a management entity,  fabric managers and entity, to pull it all together. And then, of course, fabric enabled solutions  targeted for AI/ML and HPC is a very interesting topic  for a lot of people these days. There's good activity going on over there. Competition programming and working with academia  are other work streams that the team is working.
+
+ They do have an extensive plan for 2024 for this year  to move these concepts forward. And the work is being done in conjunction  with other co-travelers, different consortia, the DMTF,  JEDEC, CXL, SNIA, and others to bring good capabilities  into systems.
+
+The other sub-project of server project is the DCMHS. They're working on mechanical structures and standardization  of how modules fit together into a system.
+
+The extended connectivity work stream  is responsible for defining requirements  for chassis elements. Inside the chassis and chassis to chassis elements,  they have a specification contributed  to OCP that defines the length of these cables,  how well to design them, what connectors to use,  what expectation they have on the distances  between these racks or chassis.
+
+So on a parallel effort, there is a open accelerator  infrastructure, OAI, that is active. It started with a definition of OAM, OCP Accelerator Module. Later, it created a specification  for an infrastructure around that OAM, that's OAI. And they have pushed out their specifications  into larger chassis. And they are very active on that aspect as well.
+
+So once you have a chassis that's defined around OAI,  other people can think about how to interconnect  those chassis together to make a very large structure out  of them. They could be based on CXL or other potentially  proprietary methods of interconnecting  these chassis together.
+
+So to summarize, on the first do no harm part,  software compatibility is very important. Security and management are paramount. For that, within OCP, there is composable memory system work  group that is trying to create a semblance of the same server  that it used to be before disaggregation. So that is the effort on that side. On the put things where they belong,  module address system team is working  on very good, feasible, correct partitioning of the systems  and standardization on the interconnect. So once people are done with their designs,  devices can be interoperable. And on the pushing the envelope as far as big as we can go,  the extended connectivity work stream within OCP  is very active on that. Push it as far as it goes, but then if it is too hard,  find another way. You start with PCBs, then interconnect them  within a chassis, and then sometimes  interconnect chassis together. And sometimes you use copper, and sometimes  you use photonics. So when you put them all together,  then we will have systems that can realize technologies  for memory fabrics based on, for example, CXL. So that is the way that CXL technology can find itself  into systems. And OCP is a method that we can realize these into products. I will close on that, Frank.

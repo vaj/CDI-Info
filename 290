@@ -1,1 +1,29 @@
-(Negotiations are underway with the YouTube channel concerned.)
+YouTube:https://www.youtube.com/watch?v=EulQfroVS1g
+Text:
+Hi, my name is Philip and I'm Director of Product Marketing for MSI Enterprise Platform Solutions. Today we're going to take a look at a new server product we're bringing to market later this year called the S2301. We'll go through the product specifications, we'll take a look inside the chassis, we'll see how this all relates to the CXL memory fabric form, and we'll talk about some product availability. 
+
+But first, let's begin with a brief introduction to MSI Computer Corporation. MSI has been a leading provider of computer hardware since the 1980s and remains prominent in the computer industry to this day. Some of you may be watching this on an MSI laptop or through an MSI graphics card right now. MSI Enterprise Platform Solutions is a business unit of MSI which is focused on designing and manufacturing server platforms for the broad data center markets. EPS was founded in 2001 as a traditional server ODM, but we have recently  invested heavily in new products for the server channel targeting systems integrators and large data center operators alike. 
+
+I'd like to briefly explain what CXL memory expansion is and what it does. There are several types of CXL memory, and for the purposes of this discussion, memory pooling and sharing are outside of the scope and we are focused on CXL memory expansion. 
+
+Consider the following: You've got a server. In this instance, you've got a dual socket AMD SP5 EPYC server. For all but the most exotic of designs, this means you have 24 DIMM slots and 24 memory channels. Your total system memory capacity depends on the DIMMs installed, but a 24, 64-gigabyte DIMM configuration yields 1.5 terabytes, 128-gigabyte DIMMs yield 3 terabytes, and 256-gigabyte DIMMs bring total system memory capacity up to 6 terabytes. And that's it. With traditional server architectures, once you fill all your DIMM slots, you've got nowhere else to go. It's topped off. Server components have grown so physically large in recent generations that chassis have run out of space to continue adding memory. This is becoming a bigger issue every year as processor core counts continue to rapidly increase with each generation. But unfortunately, the width of a standard server chassis isn't getting any wider.
+
+CXL memory expansion technology allows us to break free from this limitation by placing DRAM on the PCI Express bus using CXL protocols.
+
+With each CXL memory expansion module added to a system, we get to add both capacity and bandwidth at the same time, allowing system designers to keep up with per-core memory requirements for generations to come. 
+
+A dual socket EPYC SP5 server platform with 24 memory channels can add about 33% more bandwidth and as much as 4 terabytes of additional RAM to main system memory with the use of CXL memory expansion technology. If your application is hurting for memory bandwidth or capacity, then CXL memory expansion could be your answer. 
+
+CXL is not a physical specification and can come in any shape and form factor. There are some CXL memory expansion modules which live in PCI Express slots, but the first memory expansion modules to come to market will be in the E3.S-2T form factor with a PCI Express 5.0 link. Not to be confused with an NVMe SSD, these modules are comprised of CXL memory controllers and DRAM, not NAND and an NVMe interface.
+
+Let's take a look at our S2301 server platform. The S2301 is a 2U server platform with two AMD SP5 EPYC sockets supporting next-generation EPYC 9000 series processors. In the heart of the chassis are 24 DIMM slots supporting up to 256 gigabytes per DIMM and at the rear are two double-wide full-height half-length PCI Express 5.0 x16 slots. 
+
+In the center of a chassis are a row of 60 millimeter fans which blow air directly into extended volume air cooler CPU heatsinks, allowing the S2301 to support the full SKU stack of current and future AMD EPYC SP5 processors. 
+
+The front of the server is where the CXL magic happens. The right side of the chassis houses a backplane for four of the E3.S-2T CXL memory expansion modules showcased earlier and are directly connected to CPU0. The left side of the chassis houses another four CXL memory expansion modules for CPU1. In the center of the chassis lives eight PCI Express 5.0 x4 E3.S-1T NVMe SSD bays for local storage. 
+
+At the rear of the chassis we see two double-wide full-height half-length PCI Express 5.0 x16 expansion slots. Below that is a PCI Express 5.0 x16 OCP3 mezzanine for high-speed networking. Server management is handled by a dedicated Ethernet port connected to the server's AST 2600 BMC. Low-speed in-band management functions can be handled with a pair of onboard 1000 base T gigabit Ethernet ports. Towards the bottom right we see a pair of redundant 2000 watt 80 plus titanium power supplies. 
+
+Now here is where I would have loved to discuss performance numbers we are seeing in lab testing. Unfortunately, this server is currently being designed primarily around next generation AMD EPYC processors which as of now have not launched and I prefer not to break any embargoes today. However, we do have this running today in our lab and we plan to launch the server in Q4 this year. 
+
+If you're interested in discussing what type of testing we've done, what kind of performance numbers we've seen, or you'd like to set up some remote testing, or would like to arrange sample units, we'd love to talk to you. Send me an email at the address shown on the screen philipmaher@msi.com or reach out to your favorite systems integrator and ask for the MSI S2301. We'd love to see how we can help solve your memory bottleneck issues.

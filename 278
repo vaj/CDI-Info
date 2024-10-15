@@ -1,1 +1,109 @@
-(Negotiations are underway with the YouTube channel concerned.)
+YouTube:https://www.youtube.com/watch?v=iCUoSK3TwKs
+Text:
+Hello, this is Siamak Tavallaei. I'm excited to be with you today and talk about an interesting challenge to us as industry collaborators. I'm Siamak Tavallaei. I'm part of the memory division of Samsung, headquartered in San Jose, California. 
+
+The challenge in front of us is by the name Stargate. I'll talk about some numbers and the scale of this challenge and then come up with some practical examples. I hope you will enjoy that.
+
+So we've been given a big challenge. Build me a super cluster of one million processing elements.We want them to be efficiently connected and use a lot of floating-point operations.The workload for that is AI/ML and build it for me as soon as we can by the end of the decade.
+
+So this challenge, you can imagine, will be multifaceted. It is telling us to work together, collaborate, invent new solutions, basically dream big, communicate our findings, our challenges with each other.In case somebody else has solved the problem ahead of us, or maybe we have solved the problem for others who have quit working on it, and then execute. So that's the three-step making the solution work. 
+
+So how would we build a system of one million XPUs, processing elements?Well, we'll start small, 16 things at a time, and then we put 16 of those together. And so on. We will get to close to a million very quickly.But what we realize is that as we grow the radius of this at-scale system, we need to increase the bandwidth also. If we want every element of this super cluster to talk to every other element, the bandwidth goes up very fast. And that's kind of prohibitive.So what do we do? We use our scale-up techniques using native interconnects and put as many devices we can and let them have all-to-all interconnects to the extent that's feasible.Then we use other techniques, scale-out techniques, using packet switchers, using fat pipes, using memory as staging elements along the way.And then if you want to go even larger, we leave the copper domain, go to photonics. We extend the reach, we increase the number of ports, we aggregate bandwidth, and basically use all of the techniques that we have learned.To come up with a very large supercluster.
+
+Again, starting point can start with eight elements as an example. If we have eight elements, we want to fully interconnect them. Each processing element needs to have seven links.With seven links, we can have a fully connected mesh of all these XPUs.If we want to have a fully interconnected mesh of all these XPUs, we need to have a fully interconnected mesh of all these XPUs.
+
+If we want to expand to go beyond only eight, we can use a series of switches. These are normally packet switches, concurrent, non-blocking, and we need to be careful about maximum bisection bandwidth.
+
+Each one of these processing elements normally connects to a host. Host could be a CPU.The CPU can provide management, programming, expansion, can provide bulk memory.And then we can also expand using circuit switches and go beyond the capabilities of packet switches.
+
+So if we were to represent all of those using this diagram and put them together, many of them, we come up with structures that are large.
+
+For example, we can build a fully connected set of 256 processing elements.We could imagine that every one of those can implement an all-to-all cluster of 256 XPUs, for example.
+
+Now, if we want to go beyond 256, then we will cluster those together, interconnect those, every one of them, to as many as physically feasible using copper.And then if we need more, using photonics interconnects.So to scale out, we use fat pipes.And what do I mean by fat pipes?Instead of being fully connected using all-to-all, if we cannot have access to every element using a link, we can aggregate data onto a, a link that is much, at much bigger bandwidth.What we realize that to do that, distances go up, that's what we need, but power requirement goes up and latency will go up also.We need to be careful about fault tolerance, large systems break faster.
+
+Now, once we do all of that, then we can imagine a super cluster of many of these sub-clusters put together to eventually get to 1 million GPUs or XPUs.
+
+To do that very well, if we are aggregating bandwidth to reduce the number of links, it does make sense to have data stages along the way.For that, we can use memory servers.So once we have memory servers along the path, we can use those to do some collective execution.They can participate in processing as well.
+
+So techniques all-to-all and all-reduce are techniques that people use to aggregate, use embeddings, do snapshots, checkpointing, and concepts such as write-once and many consumers can read it many times.
+
+So to summarize to these points, we can use hierarchical aggregation and reduction points, use all-reduce techniques, and scale out using Fat pipes when we have addressable memory as data stages to aggregate, reduce, and distribute data.
+
+So, again, our supercluster then can look like a number of processing elements as clusters.And along the path, we will have memory elements and memory servers to help state data very similar to what we do in train stations, different cities, interconnect, where we don't have an all-to-all, every house connected to every other house.We do have train stations.Everybody gathers there, does some functions, get on the train, and then go.
+
+So to build a 1 million processing element, we need 2,000 domains of 500 XPU each.That gives us a massive hierarchy of network switches, memory elements, and data stages.
+
+Have we done this before?No.So what challenges have been presented to us, Exascale, for example, several years ago, and a number of solutions came, Frontier, Aurora, and El Capitan, and responses to these large-scale clusters.
+
+So if we were to think about a supercluster of 1 million GPUs, you can imagine that we need close to 1 gigawatt of power.How do we do that?Well, we need 10,000 racks.Each rack could be 120 kilowatts, power and cooling requirements.And then we need 10 data centers of 100 megawatt each.That's a large system.
+
+Different companies, these are some examples, Microsoft, Google, and HPE have tackled some of these in the past.Building some large building blocks for us to use to maybe even make bigger systems.
+
+Microsoft has announced a system of 10,000 GPUs interconnected using Infiniband as back-end network.Just recently, xAI announced a system of 100,000 GPUs.What's the difference?Yeah.interconnected. 
+
+In the case of Microsoft, they have solved the problem from the processing element itself, then cooling solutions to accommodate that, put them in racks, interconnect them, and then have solutions for power and cooling adjacent to compute elements.
+
+People have talked about model parallelism as an example of distributing the models onto multiple processing elements, have a concept of front-end network to bring in public data, and back-end networks that are optimized for interconnecting all of these processing elements.
+
+Google has also tackled this. Last December, they announced that they are going to be able to integrate all of these processing elements into a single process.They announced a solution of more than 8,000 TPUs. 
+
+They first observed that in their topology for their networks, they needed to increase the bandwidth for their links.A classic spine and leaf topology, a number of leaf nodes connecting to downstream elements, aggregate data, they go through spine nodes, and then interconnect to each other.So the link between spine and leaf, they doubled it to 200 gigabits per second, for example.
+
+Later, they realized they could do better. They eliminated the spine layer by introducing an optical circuit switch. With optical circuit switch, they could reduce latency, power, cost of developing the interconnect. But at the same time, with optical circuit switches, you cannot have an all-to-all all the time. You can have all-to-all within selected few devices, but any-to-any is possible through some programming.
+
+HPE has also developed a system, that's good to take a look at, 2,500 GPUs in one large ensemble of IT gear in a data center at Los Alamos National Laboratory. 
+
+This is an example to see how large these things could be.2,500 GPUs take about two megawatts. The structure to house that is about 26 feet.And in this case, they used Slingshot, Slingshot has the back-end network between all of these processing elements.
+
+So, there have been a number of responses to the potential challenge for the 1 million GPUs or XPUs.When we look at them, we see that we need very good compute elements.These are accelerators, CPUs.We need algorithms, software algorithms, hardware algorithms, and frameworks to interconnect these and move data efficiently.We need memory to feed all of these compute elements.Memory can come in local memory or bulk memory, sometimes even shared memory.We need storage for checkpointing, for disaggregated pool memory and storage.And then we need scale-up and scale-out network fabrics.They normally turn into back-end networks and front-end networks.
+
+The memory and storage opportunity for that include direct-attached fast memory, direct-attached bulk memory that might be connected directly to the XPUs or CPU.There are a couple to XPUs.Memory can be pooled so that bulk of memory can be allocated and reallocated to different processing elements, can be shared so multiple XPUs can touch the same memory block, and therefore reduce the overhead of moving data.Of course, we could have, as usual, disaggregated storage as well to help along.
+
+So, different solutions might have different underlying processing elements because they're tackling different workloads.But if we want to interconnect 1 million processing elements, there are large infrastructure problems we need to solve.Space and power and cooling, security and fault tolerance, and of course, sustainability are challenges that are in front of us.And, along the way, we need to tightly connect these domains.And for that, we need memory that need to be reliable, large enough capacity, maintain good enough bandwidth for throughput, and reduce the latency associated with moving data.
+
+So, again, to build a million XPUs, we need 2,000 domains of 500 XPUs.That is a massive hierarchy of network switches and memory ensemble.
+
+So, what do we do?We scale up using native fabric links and scale out using networking techniques that we have learned from the past.
+
+This is an example to illustrate that.
+
+For scale out, InfiniBand, Ethernet, and emerging Ultra Ethernet are good examples.
+
+For native interconnects, NVLink, UALink, CXL are good examples.
+
+Now, if we were to go into more details, scaling up again using native fabrics, scaling out using network techniques that we have, we realized that for scale up using native fabrics, the focus we have could be on hardware coherence or software coherence. Traditional programs are based on the reliance on memory coherence being done by hardware. But emerging AI ML workloads, I understand that latency associated with large ensemble of clusters are large.Therefore, they have come up with software coherence models that put data where it needs to be ahead of use. So backend networks then and public networks are different techniques that can use RDMA technology.But the actual core needs of the data is to reduce latency. So we come up with the alternative techniques for get put models, and AI ML workloads can use software coherence and orchestrate data movement, before it is actually being used to reduce the impact of latency associated with large interconnects and far away distances. Far away meaning the length of the cable or photonic fiber is large.or the number of hops that we need to go through to get there.
+
+So it is feasible to think of natively scaling up to 4,000 elements using a couple of layers of switches with high radix number of ports, large number of ports, 256 ports, for example.
+
+If we were to think all of this again, for a large ensemble of 1 million XPUs, we need very good computation elements.As much as we can do on the same silicon die, then we expand from there.We expand in memory, low latency, directly connected memory, for example, HBM.To the CPUs and GPUs and XPUs.Interconnect memory through CPUs or directly connected using CXL controllers to the processing elements using fabrics such as CXL, NVLink, or Ultra Ethernet.GPU to GPU can use Infinity Fabric, UALink, or NVLink.Local CPUs.CPU memory and expansion can use CXL.Hardware-based coherence model using load and store semantics.For storage, disaggregated and pooled and shared storage is useful.These are the techniques we have learned in the past.We can extend that to memory pooling, memory sharing, as well.Of course, we need some structural elements, chassis, racks.Mechanical structures and data centers.And power and cooling associated with that.
+
+So, to build this state of the art starts from the beginning.Largest processing elements can be 10 teraflops, for example.On memory, nowadays, we can imagine to have one terabyte, per second, of bandwidth from HBM3, for example.And then CXL can come in and help us with extending that to bigger capacity memory.When we tactically connect this, we could have local memory and local SSDs.And we can have larger ensemble of memory in the form of bulk memory that can be pooled or shared.
+
+So, some numbers to help out.If we start with an ensemble of 72 GPUs, if we put 8 of them together, we can get to 576 XPUs.These are some of the examples that people have illustrated that is possible.And then we can interconnect those using back end networks.They could still use the native interconnect to get us to 4,000 processing elements using NVLink or UALink as an example that people are talking about.Then we want to scale out.We put those together using networking techniques, such as InfiniBand or Ethernet, Slingshot, and Ultra Ethernet, are good examples.
+
+So, for structures to house all of those in a large data center, people have used full up racks.35 kilowatt can be air cooled.Any more than that, we need different techniques, such as liquid cooling, direct connect liquid, direct attached liquid, or immersion cooling.Immersion tanks can get us about 200 kilowatts per tank, a very large tank.And then if we were to put those into racks, 20 racks can use up to 500 kilowatts or 1.5, basically one and a half megawatts of power.Putting it all together, we'd need a very large data center.We need 10,000 GPU systems to get to 1 million.That's a very large structure of nodes and chassis and racks and rows.And people need to have to worry about availability zones and fault tolerance.
+
+So, software that is required to move data, we are all familiar with CPU centric processors.Those models are tightly connected.Software requires single thread performance.And they require load store semantics.And cache coherence is normally done in hardware.Emerging workloads.Take advantage of many, many cores in processing elements.These cores aggregate performance.They are good performance each, but they aggregate even much higher.They could be on the same die or they could be tightly connected on multiple packages.And then some of these processing elements are simple.And they require, a CPU to do some of the housekeeping for them.So, a collection of XPUs, many XPUs.And a few CPUs form a basis for such a building block.
+
+So, to repeat, to build a million GPUs, we need 2,000 domains of 500 XPUs each.Of course, this requires a massive hardware.It requires a massive hierarchy of network switches.But along the way, we can implement memory servers to help out to stage data along the way.
+
+Some of the building blocks start from our quite good understanding of CPUs and GPUs, memory, networking devices, and storage elements in one that we call a server.
+
+You can imagine having 512 gigabytes of LPDDR.And nowadays, you can imagine having a very high bandwidth memory, about 192 gigabytes worth of that.Three terabytes of SSD and interconnects such as Ethernet or similar to give us to 800 gigabits per second.So, local memory that can be HBM or DDR LPDDR.Local SSD that we will worry about throughput and IOPS.And servers normally have a SmartNIC or IPU for infrastructure software that connect to the front-end network.
+
+We can expand a capability using CXL.Memory can be extended to DDR connected, still DRAM connected memory.We can quickly add one terabyte of memory per module.
+
+We can extend that capability beyond one module to multiple modules if we wished.
+
+Local HBMs give us the bandwidth and bulk memory can give us the capacity.
+
+A big ensemble of memory and CPUs can form a set of pooled and shared memory.They can then serve a number of GPUs.So, these are the type of memory servers that we could implement along the path in that large galaxy of super cluster.Memory elements can provide capacity.Can provide a high throughput to CPUs or GPUs that are locally connected.
+
+Again, to house these things, we need structure, mechanical structures.And we will be careful about balancing compute, networking, GPU, memory, and storage in modules that are easily maintainable and serviceable.
+
+So, again, scale up networks.Scale as far as we can.We're using native fabrics.And when we cannot, we go to networking techniques.
+
+Building 4,000 elements using native fabrics is feasible using two, three layers of switches.
+
+And if you want to go beyond that, we need networking techniques, just as the ones they use with InfiniBand, Ethernet, and the emerging Ultra Ethernet techniques.This is the end of the presentation.Help us get to that 1 million GPU challenge.Thank you.

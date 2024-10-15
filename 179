@@ -1,1 +1,31 @@
-(Negotiations are underway with the YouTube channel concerned.)
+YouTube:https://www.youtube.com/watch?v=hqIAh0nYeV4
+Text:
+Good afternoon, this is Brian Pan, CEO of H3 platform. It's my pleasure to present the first CXL Switch solutions to you.
+
+ I will talk about CXL Switch architectures, the software layer of the Fabric Manager,  how to use the GUI to provision the memory, and the roadmap.
+
+ The left diagram is the system architectures of the CXL memory pooling. The server and the CXL memory appliances are in separate chassis,  and are connected through the PCIe Gen5 x16 or x8 CDFP cables. The CXL memory in the memory chassis can be dynamically provisioned to the connected server. When the memory is provisioned to the servers, it will form the logical view of the right diagram. The CXL memory will be used as a new model of memory in the servers.
+
+H3 platform has developed the external PCIe switch since 2016 by using Brokaw PCIe switch. The PCIe switch chassis are synthetic switches. As you know, the CXL switch is based on the PCIe synthetic switch. So H3 is also developing the CXL memory pooling and sharing solution now. The memory solutions will be ready in April this year.
+ 
+
+In the CXL chassis, the Fabric Manager is installed on the mCPU. Cloud orchestrations can manage the CXL memory chassis through Ethernet,  such as memory byte-on-byte, port configuration, and so on.
+ 
+
+This is the CXL memory chassis with adding cloud form factors. The CXL switch is configured as 30 PCIe Gen5 x8 ports. Six of these 30 ports are configured as host ports for server connections. You can also configure these ports to 3 x 16. 24 ports are for 18 cloud memory modules. Each 18 cloud memory module has 4 DDR4 DIMMs, so the total is 96 DIMMs.
+
+Here are four main layers in Fabric Manager. The GUI handles the interactions that the user has with the Fabric Manager. The API layer provides the RESTful API for the cloud orchestration. The CLI provides two different DIMMs. DIMM 1 is for composable memory. DIMM 2 is for chassis management. The left button block is set to the registers of the CXL switch  to map the CXL memory to the host. The right button is the CXL module management,  including the health status, firmware version, and so on.
+
+ System overview shows the basic information of the memory chassis,  including the event notifications, temperature, system profile, and device information.
+
+This page is to bind or unbind memory to or from one host through GUI. Choose the host port and bind memory to the specific host. Memory mapping tables will be built in the CXL switch. So when the host reads the CXL memory address,  the switch will redirect memory read to the CXL memory modules.
+
+The port configurations include two different configurations,  host or device port configurations, and x16 or x8 configurations. You can configure any port to the host or device port. You can also configure the port to 8 lanes or 16 lanes. Please be noted that when changing the port configuration,  the switch needs to be rebooted in order to regenerate the PCIe tree.
+
+ Here is a full list of RESTful APIs. This API is used for cloud orchestrations. The example is CXL device information. It shows the device detail information including the bus number,  vendor ID, device ID, and so on. This is a Samsung 128GB H3.S memory module.
+
+Here is a demo of the CXL memory sharing. Two hosts and one memory module are connected to the CXL switch. The 128GB Samsung CXL memory module is shared by two hosts. The first server writes to the CXL memory. Then the second server reads the data in the CXL memory. Of course, the second server will get the same data as the server one writes. The demo is available on the website. Please go to the H3 platform YouTube channel or search "multiple hosts rewrite CXL memory through CXL switch". Please be noted that the demo is a real solution, not a GUI demo only.
+
+We will have two different products, 24 Add-in cards modules and 8 to 14 E3.S 2T memory samples. The EVT samples are ready around May. The general availability schedule is in September this year. If you are interested in testing the sample or you have any application or device that you want to integrate with the H3 platform solutions,  please reach out to me.
+
+Here is our website and email address that you can reach out to H3 platform. Please feel free to send emails for any request. Thank you very much for your time. Before ending my presentations,  Frank, thank you so much for organizing this CXL online event. Have a nice day. Goodbye.
