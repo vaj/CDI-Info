@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 306 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 307 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -258,9 +258,11 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Xconn](#xconn)
     - [ZeroPoint](#zeropoint-2)
   - [2024Q4](#2024q4)
+    - [Ampere](#ampere)
     - [Google](#google-3)
     - [Samsung](#samsung-8)
     - [Meta](#meta-5)
+    - [Micron](#micron-1)
     - [SUSE Linux](#suse-linux)
 
 ## 2017
@@ -4877,6 +4879,16 @@ Yiannis Nikolakopoulos
 
 ## 2024Q4
 
+### Ampere
+
+Seema Mehta
+
+[YouTube](https://www.youtube.com/watch?v=4s59fjoCoas)
+
+[Text](./310)
+
+[Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
 ### Google
 
 Brian Morris
@@ -4897,6 +4909,14 @@ Jinin So
 
 [Acronyms](./acronym.md): AI AIC AMD API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SLA SMDK SaaS TCO TPC UALink XConn
 
+Kapil Sethi
+
+[YouTube](https://www.youtube.com/watch?v=4s59fjoCoas)
+
+[Text](./310)
+
+[Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
 Siamak Tavallaei
 
 [YouTUbe](https://youtu.be/1p3OwPnZtT4?si=jnolAnp_-S1vUNWS)
@@ -4914,6 +4934,16 @@ Prakash Chauhan
 [Text](./308)
 
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
+
+### Micron
+
+Ravi Gummaluri
+
+[YouTube](https://www.youtube.com/watch?v=4s59fjoCoas)
+
+[Text](./310)
+
+[Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
 
 ### SUSE Linux
 
