@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 307 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 308 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -259,10 +259,13 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [ZeroPoint](#zeropoint-2)
   - [2024Q4](#2024q4)
     - [Ampere](#ampere)
+    - [Astera Labs](#astera-labs-6)
     - [Google](#google-3)
-    - [Samsung](#samsung-8)
+    - [Marvell](#marvell-2)
     - [Meta](#meta-5)
     - [Micron](#micron-1)
+    - [Open Compute Project](#open-compute-project)
+    - [Samsung](#samsung-8)
     - [SUSE Linux](#suse-linux)
 
 ## 2017
@@ -4889,6 +4892,16 @@ Seema Mehta
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
 
+### Astera Labs
+
+Chris Petersen
+
+[YouTube](https://youtu.be/7lCq7xH7CHo?si=alR6zzUeV19jXqwe)
+
+[Text](./311)
+
+[Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
 ### Google
 
 Brian Morris
@@ -4898,6 +4911,46 @@ Brian Morris
 [Text](./308)
 
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
+
+### Marvell
+
+Nigel Alvares
+
+[YouTube](https://youtu.be/7lCq7xH7CHo?si=alR6zzUeV19jXqwe)
+
+[Text](./311)
+
+[Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
+### Meta
+
+Prakash Chauhan
+
+[YouTube](https://youtu.be/DMTkQuFojKo?si=l5yfS99n8aDRYrnZ)
+
+[Text](./308)
+
+[Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
+
+### Micron
+
+Ravi Gummaluri
+
+[YouTube](https://www.youtube.com/watch?v=4s59fjoCoas)
+
+[Text](./310)
+
+[Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+### Open Compute Project
+
+James Kelly
+
+[YouTube](https://youtu.be/7lCq7xH7CHo?si=alR6zzUeV19jXqwe)
+
+[Text](./311)
+
+[Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
 
 ### Samsung
 
@@ -4925,25 +4978,13 @@ Siamak Tavallaei
 
 [Acronyms](./acronym.md): AI AIC AMD API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SLA SMDK SaaS TCO TPC UALink XConn
 
-### Meta
+TaekSang Song
 
-Prakash Chauhan
+[YouTube](https://youtu.be/7lCq7xH7CHo?si=alR6zzUeV19jXqwe)
 
-[YouTube](https://youtu.be/DMTkQuFojKo?si=l5yfS99n8aDRYrnZ)
+[Text](./311)
 
-[Text](./308)
-
-[Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
-
-### Micron
-
-Ravi Gummaluri
-
-[YouTube](https://www.youtube.com/watch?v=4s59fjoCoas)
-
-[Text](./310)
-
-[Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+[Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
 
 ### SUSE Linux
 
