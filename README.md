@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 310 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 311 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -267,6 +267,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
     - [Micron](#micron-1)
+    - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
     - [Samsung](#samsung-8)
     - [SUSE Linux](#suse-linux)
@@ -4974,6 +4975,16 @@ Ravi Gummaluri
 [Text](./310)
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+### NVIDIA
+
+Rob Davis
+
+[YouTube](https://youtu.be/8k7R7sIlKFM?si=ZN2rZG_gpnesCgMe)
+
+[Text](./314)
+
+[Acronyms](./acronym.md): AI ASIC BMW CPU CUDA ChatGPT DMA GPU HBA IP InfiniBand NIC NVIDIA NVLink OCP PR QPI RDMA RoCE
 
 ### Open Compute Project
 
