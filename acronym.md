@@ -33,6 +33,7 @@
 | AMD                 | Advanced Micro Devices                                                    |
 | AMI                 | American Megatrends Inc.                                                  |
 | AMX                 | Advanced Matrix Extensions                                                |
+| ANN                 | Artificial Neural Network                                                 |
 | AnyScale            | (Company Name)                                                            |
 | AOC                 | Active Optical Connection                                                 |
 | AP                  | Application Processor                                                     |
@@ -251,6 +252,7 @@
 | DDR4                | Double Data Rate 4                                                        |
 | DDR5                | Double Data Rate 5                                                        |
 | DDR6                | Double Data Rate 6                                                        |
+| DDRIO               | Double Data Rate Input/Output                                             |
 | DDRT                | Double Data Rate T                                                        |
 | DE                  | Distinguished Engineer                                                    |
 | DEC                 | (Company Name)                                                            |
@@ -377,6 +379,7 @@
 | ERC                 | European Resarch Council                                                  |
 | ERI                 | Electronics Resurgence Initiative                                         |
 | ERP                 | Enterprise Resource Planning                                              |
+| ES                  | Engineering Sample                                                        |
 | ESM                 | Extended Speed Mode                                                       |
 | ESX                 | Elastic Sky X (VMWare)                                                    |
 | ESXi                | (Product name) (Vmware)                                                   |
@@ -403,6 +406,7 @@
 | FCC                 | Flow Control Credits                                                      |
 | FCI                 | Fast memory Cache Instance                                                |
 | FCS                 | Frame Check Sequence                                                      |
+| FD                  | File Descriptor                                                           |
 | FDDI                | Fiber Distributed Data Interface                                          |
 | FDI                 | Fit Aware / D2D Interface                                                 |
 | FDM                 | Function Data Memory                                                      |
@@ -487,6 +491,7 @@
 | GigaIO              | (Company Name)                                                            |
 | GigaIO              | (Company Name)                                                            |
 | GIM                 | Global Integrated Memory                                                  |
+| GISMO               | Global IO-free Shared Memory                                              |
 | GIST                | (Benchmark name)                                                          |
 | GitHub              | (Company Name)                                                            |
 | GitLab              | (DevOps lifecycle tool name)                                              |
@@ -557,6 +562,7 @@
 | HPCG                | (Benchmark name)                                                          |
 | HPCM                | High-Performance Computing Module                                         |
 | HPCX                | (Software package name)(NVIDIA)                                           |
+| HPDA                | High-Performance Data Analytics                                           |
 | HPE                 | (Company name)                                                            |
 | HPL                 | High-Performance Linpack                                                  |
 | HPM                 | Host Processor Modules, Hardware Platform Management                      |
@@ -790,6 +796,7 @@
 | MLSD                | Mean Likelihood Sequence Detector                                         |
 | MM                  | Memory Management, Memory Machine, Mirror Mezz                            |
 | MMAP                | (system call name)                                                        |
+| MMAT                | Memory Management Area Type                                               |
 | MME                 | Mirror Mezz Enhanced                                                      |
 | MMIO                | Memory Mapped I/O                                                         |
 | MMPT                | Management Message Passthrough                                            |
@@ -1040,6 +1047,7 @@
 | PI                  | Principle Investigator                                                    |
 | PIC                 | Photonic Integrated Circuit, Platform Infrastructure Connectivity         |
 | PID                 | Port Based Routing ID, Process ID                                         |
+| PIDF                | Process ID File                                                           |
 | PIM                 | Processing-in-Memory                                                      |
 | PIRST               | (PCI signal)                                                              |
 | PLASMA              | (Project name)                                                            |
@@ -1126,6 +1134,7 @@
 | RCH                 | Restricted CXL Host                                                       |
 | RCiEP               | Root Complex Integrated Endpoint                                          |
 | RCRB                | Root Complex Register Block                                               |
+| RCU                 | Read-Copy-Update                                                          |
 | RD                  | Reference Design                                                          |
 | RdAny               | (request in CXL)                                                          |
 | RDBMS               | Relational Database Management System                                     |
@@ -1209,6 +1218,7 @@
 | SBSA                | Server Base System Architecture                                           |
 | SC                  | Super Computing Conference                                                |
 | SC21                | Super Computing 21                                                        |
+| SC22                | Super Computing 22                                                        |
 | SC23                | Super Computing 23                                                        |
 | SC24                | Super Computing 24                                                        |
 | ScaleFlux           | (Company Name)                                                            |
@@ -1223,16 +1233,19 @@
 | SDNO                | Scalable Density Optimized                                                |
 | SDP                 | Start of Data Packet, Sockets Direct Protocol                             |
 | SDR                 | Single Data Rate                                                          |
+| SDRAM               | Synchronous Dynamic Random-Access Memory                                  |
 | SDXI                | Smart Data Accelerator Interface                                          |
 | SEF                 | Software Enabled Flash                                                    |
 | SemiAccurate        | (Company Name)                                                            |
 | SerDes              | Serializer/Deserializer                                                   |
+| SEV                 | Secure Encrypted Virtualization                                           |
 | SFF                 | Small Form Factor                                                         |
 | SFFTA               | Small Form Factor Technology Affiliate                                    |
 | SFI                 | Streaming Fabric Interface                                                |
 | SFP                 | Small Form-factor Pluggable                                               |
 | SGH                 | (Company Name) (SMART Global Holdings)                                    |
 | SGI                 | (Company Name) (Silicon Graphics International)                           |
+| SGL                 | Scatter Gather List                                                       |
 | SGPIO               | Serial GPIO                                                               |
 | SHARP               | Scalable Hierarchical Aggregation and Reduction Protocol (NVIDIA)         |
 | SHMEM               | (library name) (SHared MEMory)                                            |
@@ -1274,6 +1287,7 @@
 | SMM                 | System Management Mode                                                    |
 | SMMU                | System Memory Management Unit                                             |
 | SMP                 | Symmetric MultiProcessing                                                 |
+| SMRC                | Samsung Memory Research Center                                            |
 | SMS                 | Spatial Memory Streaming                                                  |
 | SMT                 | Software Memory Tiering, Surface Mount, Simultaneous Multi-Threading      |
 | SN                  | (Connector name) (SENKO Advanced Components)                              |
@@ -1320,6 +1334,7 @@
 | SuperCompute        | (Conference Name)                                                         |
 | SuperPOD            | (Product name) (NVIDIA)                                                   |
 | SuperRAM            | (Product name)(ZeroPoint)                                                 |
+| SUT                 | system under test                                                         |
 | SVE                 | Scalable Vector Extension                                                 |
 | SWMR                | Single Writer Multiple Reader                                             |
 | SXM                 | (form factor name)                                                        |
@@ -1388,6 +1403,7 @@
 | TWG                 | Technical Work Group                                                      |
 | TX                  | Transmitter                                                               |
 | TxFIR               | TX Finite Impulse Response                                                |
+| UAL                 | Ultra Accelerator Link                                                    |
 | UALink              | Ultra Accelerator Link                                                    |
 | UBB                 | Universal Building Block                                                  |
 | UCC                 | Unified Communication Collectives                                         |
@@ -1468,6 +1484,7 @@
 | VNC                 | Virtual Network Computing                                                 |
 | VoltDB              | (In-memory database name) (GPL)                                           |
 | VP                  | Vice President                                                            |
+| VPN                 | Virtual Private Network                                                   |
 | VPPB                | Virtual PCI to PCI Bridge                                                 |
 | VR                  | Very Short Reach                                                          |
 | VRM                 | Voltage Regulator Modules                                                 |

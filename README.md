@@ -1211,7 +1211,7 @@ Gerry Fan
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ### AMD
 
@@ -1221,7 +1221,7 @@ Kurtis Bowman
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 Rita Gupta
 
@@ -1229,7 +1229,7 @@ Rita Gupta
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ### Astera Labs
 
@@ -1239,7 +1239,7 @@ Sandeep Dattaprasad
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ### Elastic Cloud
 
@@ -1249,7 +1249,7 @@ George Apostol
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ### Intel
 
@@ -1299,7 +1299,7 @@ Steve Scargall
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ### Samsung
 
@@ -1309,7 +1309,7 @@ Kapil Sethi
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ### Sandia National Laboratories
 
@@ -1341,7 +1341,7 @@ Danny Volkind
 
 [Text](./304)
 
-[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SIG SMDK SNIA SSD SuperCompute TPU UnifabriX XPU
+[Acronyms](./acronym.md): AI AMD CPS CPU CV CXL DC DDR4 DDR5 DMTF DRAM FMS FYI GPU GitHub HPC IBM IP IntelliProp IoT LeCroy MIT ML MPI MemVerge NDA OMI OS OpenCAPI PCI PCIe RAS SC SC22 SEV SIG SMDK SNIA SSD SuperCompute TPU UnifabriX VPN XPU
 
 ## 2023Q2
 
@@ -4543,7 +4543,7 @@ Kurtis Bowman
 
 [Text](./301)
 
-[Acronyms](./acronym.md): CPU CXL GPU HBM LinkedIn MemVerge PCI PCIe SIG YOLE
+[Acronyms](./acronym.md): CPU CXL ES GPU HBM LinkedIn MemVerge PCI PCIe SIG YOLE
 
 ### Amphenol
 
@@ -4605,7 +4605,7 @@ Mark Nossokoff
 
 [Text](./300)
 
-[Acronyms](./acronym.md): AI CPU CXL GPU HPC UALink
+[Acronyms](./acronym.md): AI CPU CXL GPU HPC HPDA UALink
 
 ### Intel
 
@@ -4621,7 +4621,7 @@ Anil Godbole (Intel)
 
 [Text](./301)
 
-[Acronyms](./acronym.md): CPU CXL GPU HBM LinkedIn MemVerge PCI PCIe SIG YOLE
+[Acronyms](./acronym.md): CPU CXL ES GPU HBM LinkedIn MemVerge PCI PCIe SIG YOLE
 
 Mohiuddin Mazumder
 
@@ -4661,7 +4661,7 @@ Gregory Price
 
 [Text](./306)
 
-[Acronyms](./acronym.md): CPU CXL DRAM GPU HBM HMAT NUMA PID PMEM RFC VMA
+[Acronyms](./acronym.md): CPU CXL DRAM FD GPU HBM HMAT MMAT NUMA PID PIDF PMEM RCU RFC VMA
 
 ### Micron
 
@@ -4719,7 +4719,7 @@ Jim Handy
 
 [Text](./302)
 
-[Acronyms](./acronym.md): AI CCIX CMM CPU CXL DDR DDR4 DDR5 DDR6 DRAM FRAM GDDR GPU HBM HPC IBM IEEE IP LPDDR MRAM NAND NVMe OpenCAPI PC PCI PCIe PCM PDF RAM SNIA SSD
+[Acronyms](./acronym.md): AI CCIX CMM CPU CXL DDR DDR4 DDR5 DDR6 DDRIO DRAM FRAM GDDR GPU HBM HPC IBM IEEE IP LPDDR MRAM NAND NVMe OpenCAPI PC PCI PCIe PCM PDF RAM SNIA SSD
 
 ### Oak Ridge National Lab.
 
@@ -4755,7 +4755,7 @@ Bill Martin
 
 [Text](./303)
 
-[Acronyms](./acronym.md): BAR CMB CXL CXL.mem FMS HDM IO MMIO NVM NVMe OS PCI PCIe PMR SDC SLM SNIA SSD UIO YouTube
+[Acronyms](./acronym.md): BAR CMB CXL CXL.mem FMS HDM IO MMIO NVM NVMe OS PCI PCIe PMR SDC SGL SLM SNIA SSD UIO YouTube
 
 Siamak Tavallaei
 
@@ -4783,7 +4783,7 @@ Jason Molgaard
 
 [Text](./303)
 
-[Acronyms](./acronym.md): BAR CMB CXL CXL.mem FMS HDM IO MMIO NVM NVMe OS PCI PCIe PMR SDC SLM SNIA SSD UIO YouTube
+[Acronyms](./acronym.md): BAR CMB CXL CXL.mem FMS HDM IO MMIO NVM NVMe OS PCI PCIe PMR SDC SGL SLM SNIA SSD UIO YouTube
 
 ### STAC
 
@@ -4793,7 +4793,7 @@ Jack Gidding
 
 [Text](./299)
 
-[Acronyms](./acronym.md): AI AMD AWS CEO CXL IO ML NDA NVIDIA STAC URL
+[Acronyms](./acronym.md): AI AMD AWS CEO CXL IO ML NDA NVIDIA STAC SUT URL
 
 ### Synopsys
 
@@ -4893,7 +4893,7 @@ Fangzhi Wen
 
 [Text](./312)
 
-[Acronyms](./acronym.md): AI AMD CDU CPU FMS GPU IP OS PHY UALink UEC
+[Acronyms](./acronym.md): AI AMD CDU CPU FMS GPU IP OS PHY UAL UALink UEC
 
 ### AMD
 
@@ -4903,7 +4903,7 @@ Kurtis Bowman
 
 [Text](./312)
 
-[Acronyms](./acronym.md): AI AMD CDU CPU FMS GPU IP OS PHY UALink UEC
+[Acronyms](./acronym.md): AI AMD CDU CPU FMS GPU IP OS PHY UAL UALink UEC
 
 ### Ampere
 
@@ -4953,7 +4953,7 @@ Charles Fan
 
 [Text](./313)
 
-[Acronyms](./acronym.md): AI ARM CEO CPU CXL DDR DGX DRAM DS GPU IO IP InfiniBand KV MemVerge NVIDIA NVLink OCP PCIe PyTorch RAG SRAM TCP TPC UALink YouTube
+[Acronyms](./acronym.md): AI ARM CEO CPU CXL DDR DGX DRAM DS GISMO GPU IO IP InfiniBand KV MemVerge NVIDIA NVLink OCP PCIe PyTorch RAG SRAM TCP TPC UALink YouTube
 
 ### Meta
 
@@ -4993,7 +4993,7 @@ Jinin So
 
 [Text](./309)
 
-[Acronyms](./acronym.md): AI AIC AMD API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SLA SMDK SaaS TCO TPC UALink XConn
+[Acronyms](./acronym.md): AI AIC AMD ANN API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SDRAM SLA SMDK SMRC SaaS TCO TPC UALink XConn
 
 Kapil Sethi
 
@@ -5009,7 +5009,7 @@ Siamak Tavallaei
 
 [Text](./309)
 
-[Acronyms](./acronym.md): AI AIC AMD API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SLA SMDK SaaS TCO TPC UALink XConn
+[Acronyms](./acronym.md): AI AIC AMD ANN API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SDRAM SLA SMDK SMRC SaaS TCO TPC UALink XConn
 
 TaekSang Song
 
