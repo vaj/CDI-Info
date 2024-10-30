@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 311 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 312 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4898,6 +4898,14 @@ Fangzhi Wen
 
 ### AMD
 
+J Metz
+
+[YouTube](https://youtu.be/_oQjOLj2-W4?si=pLWhNihP7ldDEVkN)
+
+[Text](./315)
+
+[Acronyms](./acronym.md): AI AMD CPU CXL DMA GPU HPC HPE InfiniBand LinkedIn NIC NVIDIA PCI PCIe TPU UALink UCIE UEC
+
 Kurtis Bowman
 
 [YouTube](https://www.youtube.com/watch?v=licUcxCc3Yc)
@@ -4905,6 +4913,12 @@ Kurtis Bowman
 [Text](./312)
 
 [Acronyms](./acronym.md): AI AMD CDU CPU FMS GPU IP OS PHY UAL UALink UEC
+
+[YouTube](https://youtu.be/_oQjOLj2-W4?si=pLWhNihP7ldDEVkN)
+
+[Text](./315)
+
+[Acronyms](./acronym.md): AI AMD CPU CXL DMA GPU HPC HPE InfiniBand LinkedIn NIC NVIDIA PCI PCIe TPU UALink UCIE UEC
 
 ### Ampere
 
