@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 312 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 313 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -258,7 +258,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Xconn](#xconn)
     - [ZeroPoint](#zeropoint-2)
   - [2024Q4](#2024q4)
-    - [AAlibaba](#aalibaba)
+    - [Alibaba](#alibaba)
     - [AMD](#amd-8)
     - [Ampere](#ampere)
     - [Astera Labs](#astera-labs-6)
@@ -267,6 +267,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
     - [Micron](#micron-1)
+    - [Microsoft](#microsoft-5)
     - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
     - [Samsung](#samsung-8)
@@ -4886,7 +4887,7 @@ Yiannis Nikolakopoulos
 
 ## 2024Q4
 
-### AAlibaba
+### Alibaba
 
 Fangzhi Wen
 
@@ -4931,6 +4932,14 @@ Seema Mehta
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
 
 ### Astera Labs
+
+Ahmad Danesh
+
+[YouTube](https://youtu.be/hQt7dVkXU8E?si=dTFkfOMcRCa2kVsC)
+
+[Text](./316)
+
+[Acronyms](./acronym.md): AMD BMC CPU CXL DDR DDR5 DIMM DRAM LEO MLC NUMA OS RAS RDIMM TCO UPI
 
 Chris Petersen
 
@@ -4989,6 +4998,16 @@ Ravi Gummaluri
 [Text](./310)
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+### Microsoft
+
+Samir Rajadnya
+
+[YouTube](https://youtu.be/hQt7dVkXU8E?si=dTFkfOMcRCa2kVsC)
+
+[Text](./316)
+
+[Acronyms](./acronym.md): AMD BMC CPU CXL DDR DDR5 DIMM DRAM LEO MLC NUMA OS RAS RDIMM TCO UPI
 
 ### NVIDIA
 
