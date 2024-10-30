@@ -1,1 +1,178 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Which one do you prefer?
+
+I can talk about either one.
+
+I can talk about either one.
+
+Both are ultra.
+
+Both are ultra.
+
+That's true.
+
+Holy crap.
+
+Very bright lights.
+
+Okay. This is like standing room only back there. There are some seats here in the middle if you want to come in. We can wait. But not for long. It's okay. You're not going to interrupt anybody. We're hard to miss.
+
+It's a little cooler up in the front of the room, I can tell you that.
+
+That is very true. Yeah, we actually have people outside waiting to come in. That's never happened to me before. It's supposed to be you.
+
+No, you're the important one.
+
+No, no, no.
+
+My hat's off. That's all I can say.
+
+All right. There's the hat jokes, right? Let's just get them out of the way.
+
+That's the only one I had, sorry.
+
+Okay.
+
+All right. All right. How are we doing back there? People are already coming in?
+
+I think we've got a pretty good group in.
+
+All right. I love the fact that they won't come up and sit next to somebody in a seat, but they'll stand next to each other on each other's feet in the back. That's a confident mentality. You do you, Boo. It's perfectly fine. All right. So, welcome to the... The J and Kurtis show. So, both of us happen to work for AMD, and we are both respectively the chairs of UEC and UALink. And we're here to talk to you about some of the things that we're doing in both these organizations, and we're going to open it up for questions. I see that there's actually some microphones at the top, too. We've got 20 minutes to try to answer every question you possibly could think of, but were afraid to ask. And so, we'll try to see what we can do in the meantime. Yep.
+
+All right. Well, thank you. My name is Kurtis, in case you needed to know. And thank you all very much for coming down, supporting this effort, both, you know, learning about the Ultras and also the memory forum. So, you know, as we look at these Ultras, we've got the Ultra Accelerator Link, and then we've got Ultra Ethernet. Two open standards. And the reason that we're here talking about it is because we believe that that's the best way to move things forward in the industry. You know, give everybody what they need as far as an open standard that they can design to, and help to advance AI in that way. And what you can kind of see here on the picture is, we believe that the Ultra Ethernet is set up to connect pods together. UALink is what connects inside the pods. And it really comes down to how many accelerators do you need.
+
+All of them, obviously. You know, it all depends on the size of your model. So, if you need large-scale models, you need to go up to about 1,000 accelerators; then, Ultra Accelerator Link is sufficient. You can get it all in a pod, and it really helps you to control your costs, if that's something that's important, which I know for us it always is. The other is, if you need to get there to tens of thousands, even hundreds of thousands, all the way to a million accelerators, then you need to put Ultra Ethernet into that mix as well. So, what we think of is scale up and then scale out.
+
+As you start to look at that, what does it mean?Well, there's always a standard network, and that's the green network you see on the screen.That's what you need to run your standard traffic.Then inside the pod, is what we think of as the scale up network, or the UALink network.That's what you see there in purple.And then finally, in the orange, that's the scale out network.And again, these are, scale up and scale out are very dedicated purpose networks.And so, we can make optimizations that give you savings in die size, give you savings in power, give you a higher efficiency than you would get if you use just a standard interface.
+
+So, let's jump in.
+
+So, I think what was really important about this particular graphic here is that we're looking at a server, a server node, to be able to describe what the problems are. Because ultimately, we're trying to solve... Ultimately? I did not mean to do that. That was good. That was not good. That was bad. Bad, J. We're trying to solve different problems. When we talk about connecting accelerators together, the connecting GPUs together, we're redefining our terms from what constitutes a node or what constitutes an endpoint. It constitutes where the problems actually get resolved. And this is a very big problem. It's incredibly ambitious. So, we're taking a very small, microscopic look at the bigger picture by taking a single node and saying, look, all of these different pieces of the puzzle have different interconnects. It used to be I've got compute, I've got network, and I've got storage. Now, I've got compute in a number of different formats. I've got networks in a variety of different formats and protocols, and I've got data that has to be spread in load store and DMA environments. And so, we create specific types of networks and fabrics to do this. It becomes particularly important and difficult to solve this problem as those AI situations in HPC get bigger and bigger and bigger. Eventually, what winds up happening is that the growth of these networks, these fabrics, is nonlinear. They have these huge jumps. So, if you heard today, if you were listening to the keynote, you heard him talk about... You know, 405 billion parameters, 1 trillion parameters, 10 trillion parameters. And I've got to fit these suckers into a single memory space? That's not easy to do. I don't want to have this over a general network. I want to have a specific network to do that. That's effectively what we're trying to do with UALink here. And if I'm going to take all of these different memory spaces and put them together, that's what the UEC is supposed to do. That needs its own specific network. And they all have different protocols, and they have different parameters. No pun intended, maybe a little bit more intended. But they all have different needs. And that's why we're looking at solving these problems very individually and very specifically.
+
+Well stated. So now let's talk a little bit about what's scale up? What does it mean? Because we sit here and we talk about scale up and scale out. And a lot of people go, "I don't get it." Scale up is about trying to create a bigger thing using the building blocks. And so when you start looking at scale up, what I'm trying to do is make a bunch of GPUs look like one great big GPU. And when I interface to it, I can't tell the difference. You do that today. You have a single CPU system. If you get a dual CPU system, you don't go, "Oh, I've got to write something for each CPU." Or if you go to four-way or eight-way CPUs, you don't think, "Oh gosh, I've got to think about which memory is attached to which one, and how do I work it?" It's all taken care of for you. That's what is needed when you do a scale up GPU. It needs to just be taken care of. From a programming point of view, you're just writing code. And so UALink is out there to make sure that it is easy to scale up and look like one very large GPU that matches the model size that you need to accompany that work. And so that's really where UALink is coming from, is how do I get you to scale up? And if I can get to 1,000 GPUs, is that sufficient for what you need? We think right now that's a lofty goal, but it's not a magic number. It's not like, "Oh, I can't go to 1,000." Right now it's 1024. I can't go to 1025. You could do that. It's just about allocating address bits.
+
+And then think about the companies that came together to bring you UALink. So Cisco, Google, HPE, Intel, Meta, and Microsoft, along with AMD, got together and said, "We have a need. All of us want to do accelerators. All of us want to make those easily marketable. But if we come to you every time and say, 'Well, here's my accelerator, and here's the switch you've got to buy to use it,' it's not real useful. What we really want to do is enable a switch ecosystem. So, you can buy a switch, and you can connect the AMD GPU to it. You can connect an Intel GPU to it. You can connect somebody else's accelerator to it. And it all works together. What it means is, you don't have to keep investing. Every time you want to try something, you don't have to buy the whole shooting match. You can just buy the accelerator that you want to test."
+
+Well, not just that, but what defines an accelerator can change over time.
+
+Absolutely true.
+
+Because right now, we're talking GPUs, but that doesn't mean that's the only kind of accelerator that could join an open consortium like UALink.
+
+Well, we already have those. Google has the TPU.
+
+Well, that's right. So, that's a really good example. But we could also have other kinds of data accelerators, or maybe even smaller chips that could be talking UALink, or be able to disaggregate some of the memory spaces, and maybe even get hierarchical memory spaces that could fit into a load-store operation. So, this has legs and a future, in other words.
+
+It does. Yeah, well stated. Well, thank you. The goal here, you can see in the middle, is open. And then on the outside, we definitely need high performance, and we need scalability. And that's really what defines UALink.
+
+Now, when you start to look at UALink, it's open. I've already talked about that. Its setup allows for effective communication between the accelerators. This is important, right? Because you're sharing that memory, and so you need high bandwidth, low latency. Anybody who's ever done any sort of memory application knows those are the two parameters that make it happen. If your bandwidth is too low, if your latency is too high, you really can't share your memory effectively. Then it's, you know, how do we make sure that, you know, it's a memory semantic fabric? How do we use the power, the bandwidth, etc., to be a little bit better? And then finally, you know, for people who are asking, 'Well, hey, I've heard a little bit about UALink, but I want to know more,' we incorporated just earlier this month. We'll be open for members at the end of this month. And we do expect to have the 1.0 spec out at the end of the year for the consortium. And then I do think the board will probably release it for public viewings by the end of Q1.
+
+"And then, tell me a little bit about the link," you might say. Pretty simple, right? So, its initial focus is on sharing memory. That's the key thing that we need. The next thing is, you know, it's direct load-store Atomics. So, it's really that memory semantic interface. With the low latency, the high bandwidth that I've talked about, with the goal of doing hundreds, right? So, 1024 in a pod. It supports data rates up to 200 gigabits per second. And the reason it's important—I don't know if you got a chance to hear Forrest talk this morning. He talked about Gall's law. And what he said was, anytime you build a complex system, it needs to be done on things that are proven. And what we have is, we have all of those promoters that you saw. They're used to deploying large systems. They're used to the complexity of that. And then, it's built on the infinity fabric that has been connecting GPUs and CPUs for over a decade. And so, you take something that's well-known and established, and you start to scale it out with people who know how to scale things out. And that's where Gall's law comes in. It says, if you build from the pieces you know work, you make a more complex system. Then you can be sure it's going to work, too. And as a transition, it does a real nice job of working with UEC.
+
+Almost like that was planned.
+
+So, at the end of the day, summarize it: low latency stack, low power, low latency switch, and low die area, which it gets back to. You know? Making sure that we have low power. And with that, let me pass it off to J for his presentation.
+
+Thank you. So you've seen this before. We're talking about what about the scale-out network?
+
+And just for the sake of time, if we take all those different GPUs or accelerators together that are all bundled into a scale of pods, and we link them together, we need to have a special type of network to do that. We do have a special type of network, and we've had one for 25 years. And InfiniBand has been around for a very long period of time. So the question is, how do we do that? So the question is, why now? Why do this? Well, the answer is very simple. If you look at the Ethernet roadmap, and you look at the way that the stack has been developed over time, Bob Metcalf once said, 'I don't know what the future is going to look like, but we're going to call it Ethernet.' Well, in this particular case, we're going to be doing that specifically for AI and HPC. UltraEthernet is trying to solve this particular problem in a way that the evolution of Ethernet itself has not tried before. It's an incredibly ambitious project to try to create a workload-tuned network for a specific type of characteristic of data being moved across the network. And that's what we're looking to do here with UltraEthernet.
+
+And so, what we did when we started off was we said, 'Look, in order to do this, we have to be able to have a lot of checks and balances.' We need to make sure that the layer violations that were anathema inside of an Ethernet environment are actually going to be trained—no pun intended. Man, I do that a lot, haven't I? Just a pun intended. Screw that. It was intended. I made a pun. It's trained so that each of the different layers are going to work in concert, so that the physical layer works with the link layer. The link layer works up through the transport layer. The transport layer works with the APIs and the software layer. And then, across the board, we have to make sure that they are, uh, going to be able to, uh, work with the proper management, the proper storage workgroups, with the proper train, uh, compliance and testing, and performance and debug. So, the organization of UltraEthernet is designed to not just create the different stacks of Ethernet to solve that workload problem, but also do the vertical links between those different stacks to make sure that they work properly for the workloads—AI, HPC in particular. So, we are the fastest-growing Linux Foundation group ever. We've gone from six members to 100 members in less than a year, and we have a lot of contributions. We have over 1,200—I think we're actually over 1,400 now as of today—individual members who are participating in the groups.
+
+So, we're trying to make sure that everybody has the ability to contribute to the UEC technical goals, which is, as I said, you want to make sure that all of these different layers are going to work in concert. That's ultimately what we're trying to accomplish. And if it doesn't do that, then we're not going to be able to get the goals that we want to get. What are the goals? Well, right now, if you want to have a really good network for AI or HPC, you're probably looking at about 100,000 nodes as your maximum. We're looking to hit a million nodes for our deployments, right, because you're going to need those when we start talking about building nuclear power plants for the 10 trillion parameter model that you're going to want to run. So if you're going to do that, you've got to make sure that the network runs really efficiently as well. And so, at that scale, the problem is that the larger the scale you go, the more difficult it is to have efficiency, as Rob was talking about in the previous presentation, right? It effectively becomes, and I apologize for those of you who are not from the south of the U.S., but it's effectively a networking tractor pull. The farther you go, the bigger the scale you get, the harder it is to be efficient, and you wind up losing that efficiency the larger you get.
+
+And we're trying to solve that problem by making improvements in congestion, making improvements in telemetry, as well as in the actual endpoints with the buffering, right? And the congestion signaling. So, we've got a lot of things that we're looking to do. Some of this stuff has already been put into play with regards to previous presentations and stuff in the keynote, but I'd like to illustrate the key points here. Everything that we do inside of UltraEthernet is designed to start at the largest scales, starting to be where we're linking more efficiently at a million endpoints. But what's a million endpoints? An endpoint could be anything that winds up being a fabric endpoint for UltraEthernet. That could be a GPU, it could be a TPU, it could be an Ethernet NIC, it could be an accelerator. Anything can be a fabric endpoint in UltraEthernet. Now, if that doesn't scare you, it scares the living crap out of me, and I'm the chair of the organization, all right? What that means is, you have to make sure that the checks and balances are right to be able to do this, and that's why we have this approach that we're trying to take for making sure that we handle the congestion and the signaling done. We're making sure that the physical layer and the link layer are in communication; they can pass messages back and forth and respond accordingly. We want to make sure that we can scale the approach without losing the efficiency or the bandwidth that we're trying to, at the same time, making sure the topologies are included. Right now, we're doing leaf-spine, clode technologies or topologies, but that's going to be possibly expanded into Dragonfly, Dragonfly Plus, Taurus, and Megafly. Those kinds of things are all on the table for after post 1.0, and if I feel like, if it sounds like I'm really trying, dog food. So, if it sounds like this is an incredibly ambitious project, it is, right? Because when you're talking about even a specific type of workload, like AI or HPC, it is an incredibly ambitious thing. These things don't get built overnight, right? Forrest was talking about the time it took to build Frontier and El Capitan. So obviously, if we've got 100 different companies that are all contributing, there is a goal that everybody has in mind to be able to participate and get this to work for an open ecosystem across the board. And that's ultimately, damn it, I did it again. It's like a drinking game. At the end of the day, we want to make sure that we have an open ecosystem that everybody can participate in and can feel like they're contributing to, to be able to make this better for everybody involved.
+
+So, at that, we do have a couple of seconds, I think, for being able to answer a question, but I do see that I'm over two o'clock. I can take some questions. Oh, I got the permission from Frank. All right, I see a hand up. Please come to the front. You're the next contestant on 'The Prices of AI'.
+
+It was a very nice presentation, thank you.
+
+Ah.
+
+Question for you.
+
+I recognize you.
+
+I appreciate it.Thank you for being the chair of UEC.Why do you- 
+
+Thank you for not shooting me on the stage.
+
+Absolutely not, absolutely not. Why do you think Ethernet will not solve the scalar problem? Why do you think it will not solve the scalar problem?
+
+I don't think that that's actually really a question. I mean, it's—
+
+It is a question.
+
+I mean, what I mean is that I don't think that's—I don't think that we're saying that Ethernet cannot be a scale-up solution.
+
+Okay.
+
+On the contrary, as we start to go through—and I can't go through the secret details of UALink at the moment—Ethernet as a foundation is a very real solution for the scale-up problem. Right now, UltraEthernet is not focusing on that as a direction, but after Post 1.0, I don't see that as a reason why scale-up issues can't be resolved in a broader scheme.
+
+Okay, thank you.
+
+Yeah.
+
+And maybe just a corollary. It's not about 'can it', it's about 'is it most optimized?' UALink is more optimized for a scale-up environment because it has a load-store protocol. It doesn't have to packetize. It's set up to do exactly that. And so, I don't think it says, 'Oh, Ethernet's terrible because it can't.' It's just that there are two different protocols that were designed and optimized in different ways.
+
+I'm gonna see this on LinkedIn this afternoon, aren't I? Pretty sure. All right, yes, sir.
+
+Yeah, just sort of building on the last question: When you talk about scale-up, I also think about UCIE. How should we think about those things differently? Because both seem to be aiming for coherent memory domains, but UCIE seems to be more package-focused. How would you distinguish the two?
+
+Yeah, so UCIE is really focused inside the package—chip-to-chip, or chiplet-to-chiplet connections. And they certainly could realize a small pod inside a chip. When you start to grow that and you say, "Hey, I wanna take GPUs that have many, many processing units already in there, and I wanna grow that out," I think it just becomes limited by the size that you can get out of a chip and still stay linear.
+
+And sort of a similar answer if you're talking CXL or any other sort of approach.
+
+CXL is also great. It has some challenges: how fast can CXL move? It does a real nice job of connecting to memory off the processor. And I do believe that it has a place in the future. But think about it; AMD and NVIDIA both said, "We are gonna be launching new chips every year." That means UALink has to have a new spec launched every year to keep up with the rate of change. That's very hard for an established organization to do.
+
+Yeah, thanks.
+
+Yes, sir.
+
+J and Kurtis, I just realized you're both from AMD.
+
+What? You didn’t tell me?
+
+I've never seen you before.
+
+Oh my god.
+
+Yeah, I just want to follow up on Ram's question. AMD is also working on your next-gen GPUs, like the MI450. So, you're also planning to build up your scale-up switches, right? What are you going to use? Is that a regular switch, or are you actually going to build a specialized UALink switch?
+
+Yes. Scale-up will use a special UALink switch as we go forward. The Ethernet is also a piece that we're using in some of our planning because it's already present in many installations. And so, yes, we'll be using both. But I do believe that we're going to see AMD and the industry move over to UALink.
+
+All right, Ray.
+
+Yeah, so UALink—is this an extension of PCI today, or is it something completely different? That was one question. The other question is, do you actually see a 100-GPU server in our future?
+
+Yeah, so, it is not an extension of PCIe.
+
+It's not?
+
+No. It's its own protocol, and it's based on AMD's Infinity Fabric. Do I think you're going to stick 100 GPUs in a single server? No. But I do think that you will have servers that have 4, 8, or 16 GPUs in them, and the connection there will probably be through PCIe, right? But the backside network—maybe we can go up a page or two here.
+
+So, it's multi-node. It's cross-node.
+
+Right. It's not just within a single node; it's across multi-nodes. Somewhere in here was a nice picture, where you can see I'm showing four accelerators connected to a host. Think of that as a server. And then, the backside network is the ultra-accelerator link.
+
+Oh, OK.Thanks.
+
+Do we have time for two more, or one more? One more. OK, sorry. I only have one more quick thing. Sorry about that. We will be available for questions afterward, if you wish.
+
+So, do you plan to build a UALink as a memory standard in the future to support memory modules? If not now, when is it expected to happen?
+
+Yeah, so that wouldn't be part of 1.0. Like I said, right now we're focused on sharing memory amongst the GPUs. But we will look at that in the future and say, does it make sense to have memory-specific nodes as part of that module set, to allow you to expand your memory but not necessarily your compute?
+
+OK.
+
+And when is that expected to happen?
+
+Do you… don’t you have a time limit? It’s expected to happen, but it’s not on a roadmap right now, so I hate to say it, but I'd imagine…
+
+They just organized last week, dude.
+
+It is important. It is on the list of things we're considering, so one to two years out would probably be a good estimate.
+
+Thank you.
+
+All right, so we're getting the hook. So, thank you very much. We will be around to answer some questions for a little while. So, thank you very much. Thank you.
