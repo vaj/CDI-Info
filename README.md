@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 313 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 314 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -262,6 +262,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [AMD](#amd-8)
     - [Ampere](#ampere)
     - [Astera Labs](#astera-labs-6)
+    - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
@@ -4948,6 +4949,16 @@ Chris Petersen
 [Text](./311)
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
+### FSAS Technologies
+
+五島康文
+
+[YouTube](https://youtu.be/AOjnprXKE6g?si=RmpvhDwM8RS-0xgQ)
+
+[Text](./317)
+
+[Acronyms](./acronym.md): AI CFMWS CPU CXL DDR DRAM FPGA FSAS GPGPU GitHub HD HDM HPC JSON KVM LSA NUMA OS PCI QEMU RAM SSH SmartNIC VM
 
 ### Google
 
