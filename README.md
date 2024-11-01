@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 315 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 316 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4952,6 +4952,14 @@ Chris Petersen
 
 ### FSAS Technologies
 
+小口 直樹
+
+[YouTube](https://youtu.be/ePJogKrTuBY?si=z0LryQRIsJiynC9u)
+
+[Text](./320)
+
+[Acronyms](./acronym.md): AI CDI CXL FSAS HTTP PCIe
+
 五島康文
 
 [YouTube](https://youtu.be/AOjnprXKE6g?si=RmpvhDwM8RS-0xgQ)
@@ -4960,13 +4968,21 @@ Chris Petersen
 
 [Acronyms](./acronym.md): AI CFMWS CPU CXL DDR DRAM FPGA FSAS GPGPU GitHub HD HDM HPC JSON KVM LSA NUMA OS PCI QEMU RAM SSH SmartNIC VM
 
-小口 直樹
+長谷　仁
 
-[YouTube](https://youtu.be/ePJogKrTuBY?si=z0LryQRIsJiynC9u)
+[YouTube](https://youtu.be/oAFJc3pZP98?si=Bs0vTTZR15veuOe2)
 
-[Text](./320)
+[Text](./319)
 
-[Acronyms](./acronym.md): AI CDI CXL FSAS HTTP PCIe
+[Acronyms](./acronym.md): AI API CDI CPU CXL DRA FSAS GPU IBM NUMA NVIDIA PCI PCIe SIG
+
+Lei Zhang
+
+[YouTube](https://youtu.be/oAFJc3pZP98?si=Bs0vTTZR15veuOe2)
+
+[Text](./319)
+
+[Acronyms](./acronym.md): AI API CDI CPU CXL DRA FSAS GPU IBM NUMA NVIDIA PCI PCIe SIG
 
 ### Google
 
