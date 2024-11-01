@@ -1,1 +1,18 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Good morning, everyone. My name is Naoki Oguchi from FSAS Technologies. Today, I'd like to talk about the future and value of composable disaggregated infrastructure.
+
+We are moving toward a more sustainable world. This presents conflicting requirements. The rise of generative AI demands enormous computational resources, increasing power consumption. Balancing high performance and power saving is crucial for a sustainable future.
+
+We believe composable disaggregated infrastructure offers a solution. It disaggregates existing servers into separate component pools connected by PCIe or CXL switch. This enables us to create custom-made servers on demand by software definition. The flexibility is the key.
+
+The value proposition of CDI is significant. It reduces both CapEx and OpEx through resource pooling and on-demand composability. It also provides flexible hardware resource allocation and adaptive power saving through dynamic device scaling with Kubernetes. Memory sharing and auto-healing functions further enhance performance and availability.
+
+One major benefit of CDI is the reduction of CapEx and OpEx. It reduces development cost, providing the necessary spec with the least necessary components. As you can see in the left diagram, CDI leads to a significant decrease in development costs, up to 40% in some cases, compared to existing servers. It also reduces operation cost by creating custom-made bare metals on demand through software definition.
+
+Adaptive power saving and flexible resource allocations are closely linked by integrating with Kubernetes. CDI dynamically attaches and detaches GPUs to worker nodes based on application load. It provides higher performance and power saving simultaneously. As the diagram illustrates, the number of active GPUs in a cellular base station scales with application load.
+
+Traditional microservice communication by HTTP can introduce latency. Using CXL 3.0, CDI enables shared memory spaces between bare metals. It dramatically reduces latency between microservices compared to HTTP.
+
+To widely spread the CDI architecture, we believe open development is essential. So, we are developing these functions with Kubernetes communities and Linux kernel communities.
+
+In summary, the CDI offers a compelling value proposition: reduced CapEx, OpEx, flexible hardware resource allocation, adaptive power saving, enhanced performance, and availability. We are showcasing our CDI at booth number four. We invite you to visit us and learn more. Thank you very much.
