@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 314 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 315 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4959,6 +4959,14 @@ Chris Petersen
 [Text](./317)
 
 [Acronyms](./acronym.md): AI CFMWS CPU CXL DDR DRAM FPGA FSAS GPGPU GitHub HD HDM HPC JSON KVM LSA NUMA OS PCI QEMU RAM SSH SmartNIC VM
+
+小口 直樹
+
+[YouTube](https://youtu.be/ePJogKrTuBY?si=z0LryQRIsJiynC9u)
+
+[Text](./320)
+
+[Acronyms](./acronym.md): AI CDI CXL FSAS HTTP PCIe
 
 ### Google
 
