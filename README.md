@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 317 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 318 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4996,6 +4996,14 @@ Brian Morris
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
 
 ### Marvell
+
+Khurram Malik
+
+[YouTube](https://www.youtube.com/watch?v=BUX8AqxQoOg)
+
+[Text](./322)
+
+[Acronyms](./acronym.md): CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPU IOV LZ4 PC PCI PCIe SR TCO XPU smartNIC
 
 Nigel Alvares
 
