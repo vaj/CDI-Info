@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 318 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 319 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5108,6 +5108,14 @@ TaekSang Song
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
 
 ### SK hynix
+
+Honggyu Kim
+
+[YouTube](https://www.youtube.com/watch?v=8JOdonT-q-A)
+
+[Text](./323)
+
+[Acronyms](./acronym.md): API CMM CPU CXL DAMON DDR5 DIMM DRAM GitHub HMSDK HTML MemVerge NUMA OS SK YCSB
 
 Jungmin Choi
 
