@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 319 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 320 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5042,6 +5042,14 @@ Ravi Gummaluri
 [Text](./310)
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+Vishnu Balraj
+
+[YouTube](https://www.youtube.com/watch?v=7ibIJrF6spw)
+
+[Text](./324)
+
+[Acronyms](./acronym.md): AI AMD CMM CPU CXL CZ120 DAX DRAM GPU HBM HPPR LLM MLC MemVerge NUMA OS PCIe PPR RAG RAS RocksDB SAS SMC SSD SuperCompute TCO TEP TPC VM1 VM2
 
 ### Microsoft
 
