@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 320 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 321 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -269,6 +269,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Meta](#meta-5)
     - [Micron](#micron-1)
     - [Microsoft](#microsoft-5)
+    - [Montage](#montage-1)
     - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
     - [Samsung](#samsung-8)
@@ -5060,6 +5061,16 @@ Samir Rajadnya
 [Text](./316)
 
 [Acronyms](./acronym.md): AMD BMC CPU CXL DDR DDR5 DIMM DRAM LEO MLC NUMA OS RAS RDIMM TCO UPI
+
+### Montage
+
+Geof Findley
+
+[YouTube](https://www.youtube.com/watch?v=s0IRvn0wwhs)
+
+[Text](./325)
+
+[Acronyms](./acronym.md): AI AMD ARM CXL DDR DDR4 DDR5 DDR6 DIMM DRAM HBM IDE LP MR MXC PCI RAS SK SOC TCO
 
 ### NVIDIA
 
