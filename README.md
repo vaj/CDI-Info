@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 321 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 322 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -273,6 +273,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
     - [Samsung](#samsung-8)
+    - [ScaleFlux](#scaleflux)
     - [SK hynix](#sk-hynix-2)
     - [SUSE Linux](#suse-linux)
 
@@ -5125,6 +5126,16 @@ TaekSang Song
 [Text](./311)
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
+### ScaleFlux
+
+Tong Zhang
+
+[YouTube](https://www.youtube.com/watch?v=f5Fq1KGA5SI)
+
+[Text](./326)
+
+[Acronyms](./acronym.md): CXL DDR5 DIMM DRAM ECC MIT VLSI
 
 ### SK hynix
 
