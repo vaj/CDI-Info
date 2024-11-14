@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 322 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 323 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -262,6 +262,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [AMD](#amd-8)
     - [Ampere](#ampere)
     - [Astera Labs](#astera-labs-6)
+    - [Broadcom](#broadcom-2)
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [Marvell](#marvell-2)
@@ -4952,6 +4953,16 @@ Chris Petersen
 [Text](./311)
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
+### Broadcom
+
+Arvind Jagannath and Sudhir Balasubramanian
+
+[YouTube](https://www.youtube.com/watch?v=OzKy7K8bZX4)
+
+[Text](./327)
+
+[Acronyms](./acronym.md): AI CPU CXL CXL.mem DDR DRAM ESX GA NVMe PCIe ROI SQL TCO VDI VM VMmark VMware VSI
 
 ### FSAS Technologies
 
