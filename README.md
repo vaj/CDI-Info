@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 323 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 324 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -265,6 +265,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Broadcom](#broadcom-2)
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
+    - [Intel](#intel-11)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
@@ -5007,6 +5008,16 @@ Brian Morris
 [Text](./308)
 
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
+
+### Intel
+
+Igor Chorazewicz
+
+[YouTube](https://www.youtube.com/watch?v=uWFL8yHKFLU)
+
+[Text](./328)
+
+[Acronyms](./acronym.md): API CXL DRAM GPU GitHub HBM IPC MPI NUMA SQL
 
 ### Marvell
 
