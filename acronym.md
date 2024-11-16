@@ -103,6 +103,7 @@
 | ByteDance           | (Company Name)                                                            |
 | C2C                 | Chip-to-Chip                                                              |
 | C2M                 | Chip-to-Module                                                            |
+| CA                  | Cluster Autoscaler                                                        |
 | CacheBench          | (Benchmark tool name)                                                     |
 | CacheFlushed        | (request in CXL)                                                          |
 | CacheLib            | (library name)                                                            |
@@ -152,6 +153,7 @@
 | CLI                 | Command Line Interface                                                    |
 | CLKREC              | (PCIe Signal Name)                                                        |
 | CLOS                | (Person's name, topology name)                                            |
+| CloudSuite          | (benchmark name)                                                          |
 | CM                  | Connection Manager                                                        |
 | CMA                 | Component Measurement and Authentication                                  |
 | CMB                 | Controller Memory Buffer                                                  |
@@ -254,6 +256,7 @@
 | DDR6                | Double Data Rate 6                                                        |
 | DDRIO               | Double Data Rate Input/Output                                             |
 | DDRT                | Double Data Rate T                                                        |
+| DDS                 | Dynamic Device Scaling                                                    |
 | DE                  | Distinguished Engineer                                                    |
 | DEC                 | (Company Name)                                                            |
 | DeepImage           | (Weaviate item name)                                                      |
@@ -454,6 +457,7 @@
 | FSA                 | Final Specification Agreement                                             |
 | FSAS                | (Company Name)                                                            |
 | FSDAX               | Filesystem Direct Access                                                  |
+| FTI                 | Future Technology Initiatives                                             |
 | FTL                 | Flash Translation Layer                                                   |
 | FusionFS            | (file system name)                                                        |
 | FVP                 | Fixed Virtual Platform                                                    |
@@ -554,6 +558,7 @@
 | HMAT                | Heterogeneous Memory Attribute Table                                      |
 | HMEM                | Heterogeneous Memory                                                      |
 | HMSDK               | Heterogeneous Memory Software Development Kit                             |
+| HMU                 | Hotness Monitoring Unit                                                   |
 | HNF                 | Home Nodes Fabric                                                         |
 | HomE                | Homomorphically Encrypted Deep Learning Inference                         |
 | HP                  | Hot-Plug                                                                  |
@@ -566,7 +571,7 @@
 | HPE                 | (Company name)                                                            |
 | HPL                 | High-Performance Linpack                                                  |
 | HPM                 | Host Processor Modules, Hardware Platform Management                      |
-| HPPR                | Hard Post-package repair                                                  |
+| HPPR                | Hard Post-package repair, Hardware Platform Power Management              |
 | HTAP                | Hybrid Transactional Analytical Processing                                |
 | HTML                | HyperText Markup Language                                                 |
 | HTTP                | Hyper Text Transfer Protocol                                              |
@@ -653,6 +658,7 @@
 | JEDEC               | Joint Electron Device Engineering Councils                                |
 | JSON                | JavaScript Object Notation                                                |
 | JTAG                | Joint Test Action Group                                                   |
+| K8S                 | Kubernetes                                                                |
 | KB                  | Knowledge Base                                                            |
 | KIOXIA              | (Company Name)                                                            |
 | KMEM                | Kernel Memory                                                             |
@@ -941,7 +947,7 @@
 | OmniDynamic         | (component in OmniCache)                                                  |
 | OmniIndex           | (component in OmniCache)                                                  |
 | OmniPath            | (interconnect name)(Intel)                                                |
-| OneCLL              | OneAPI Collective Communications Library                                  |
+| oneCCL              | OneAPI Collective Communications Library                                  |
 | OneMCC              | One Memory Coupled Computing                                              |
 | ONNX                | Open Neural Network Exchange                                              |
 | oNOC                | optical Network On Chip                                                   |
@@ -987,6 +993,7 @@
 | OSI                 | Open Systems Interconnection                                              |
 | OSLabs              | (NPO name)                                                                |
 | OSS                 | Open Source Software, Object Storage Server                               |
+| OSSJ                | Open Source Summit Japan                                                  |
 | OSU                 | Ohio State University                                                     |
 | OU                  | Open U                                                                    |
 | OVMF                | Open Virtual Machine Framework                                            |
@@ -1347,6 +1354,7 @@
 | TAGE                | TAgged GEometric history length branch prediction                         |
 | TAM                 | Total Addressable Market                                                  |
 | TASER               | Testing and Simulation Rig                                                |
+| TBB                 | Threading Building Blocks                                                 |
 | TBD                 | To Be Determined                                                          |
 | TCB                 | Trusted Computing Base                                                    |
 | TCG                 | Tiny Code Generator                                                       |
@@ -1399,6 +1407,7 @@
 | TSMC                | (Company Name) (Taiwan Semiconductor Manufacturing Company, Ltd.)         |
 | TSP                 | TEE Security Protocol                                                     |
 | TSV                 | Through-Silicon Vias                                                      |
+| TTFT                | Time to First Token                                                       |
 | TVM                 | Trusted Virtual Machine                                                   |
 | TWG                 | Technical Work Group                                                      |
 | TX                  | Transmitter                                                               |
@@ -1425,9 +1434,11 @@
 | UID                 | Unique ID (CXL Host Bridge Structure)                                     |
 | UIO                 | Unordered Input/Output                                                    |
 | UIUC                | University of Illinois Urbana-Champaign                                   |
+| UltraEthernet       | (interconnect name) (UEC)                                                 |
 | UltraPath           | (interconnect name) (Intel)                                               |
 | UltraScale          | (Product name)(AMD)                                                       |
 | UMass               | The University of Massachusetts Amherst                                   |
+| UMF                 | Unified Memory Framework                                                  |
 | UNH                 | University of New Hampshire                                               |
 | UnifabriX           | (Company Name)                                                            |
 | UPF                 | User Plane Function, Unified Power Format                                 |
@@ -1442,6 +1453,7 @@
 | USB                 | Universal Serial Bus                                                      |
 | USBIF               | USB Implementers Forum                                                    |
 | UserLib             | user library                                                              |
+| USM                 | Unified Shared Memory                                                     |
 | USP                 | Upstream Switch Port                                                      |
 | USR                 | Ultra Short Reach                                                         |
 | UT                  | The University of Texas at Austin                                         |
