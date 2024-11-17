@@ -794,7 +794,7 @@
 | MIPS                | (Company Name)                                                            |
 | MIT                 | Massachusetts Institute of Technology                                     |
 | ML                  | Machine Learning                                                          |
-| MLC                 | Multi-Level Cell, (Benchmark name) (Intel)                                |
+| MLC                 | Multi-Level Cell, Memory Latency Checker                                  |
 | MLCommons           | (Name of organisation).                                                   |
 | MLD                 | Multi Logical Device                                                      |
 | MLIR                | Multi Level Intermediate Representation                                   |
