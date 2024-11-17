@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 325 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 326 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -278,6 +278,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [ScaleFlux](#scaleflux)
     - [SK hynix](#sk-hynix-2)
     - [SUSE Linux](#suse-linux)
+    - [Uber](#uber-1)
 
 ## 2017
 
@@ -5047,6 +5048,14 @@ Nigel Alvares
 
 ### MemVerge
 
+Bhanu Shankar
+
+[YouTube](https://www.youtube.com/watch?v=0amNufxSVtM)
+
+[Text](./330)
+
+[Acronyms](./acronym.md): AI AMD CMS CPU CXL DRAM GitHub MLC MemVerge PCM ROI TCO TPC
+
 Charles Fan
 
 [YouTube](https://www.youtube.com/watch?v=Ok8hmHK4EfM)
@@ -5202,3 +5211,13 @@ Hannes Reinecke
 [Text](./307)
 
 [Acronyms](./acronym.md): BIOS CPU CXL CXL.cache CXL.io CXL.mem DRAM GPU HMAT HP HPE IO IOPS MSI MSIX NUMA PCI QEMU QPI RAM
+
+### Uber
+
+Vikrant Soman
+
+[YouTube](https://www.youtube.com/watch?v=0amNufxSVtM)
+
+[Text](./330)
+
+[Acronyms](./acronym.md): AI AMD CMS CPU CXL DRAM GitHub MLC MemVerge PCM ROI TCO TPC
