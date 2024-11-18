@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 326 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 327 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -266,6 +266,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [Intel](#intel-11)
+    - [Jackrabbit Labs](#jackrabbit-labs-1)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
@@ -5020,6 +5021,12 @@ Anjaneya "Reddy" Chagam
 
 [Acronyms](./acronym.md): AI BMC CMS CPU CXL CacheLib DDR DMTF ECN FTI GPU GitHub HPC JEDEC LPDDR OCP PCIe SNIA UAL UEC
 
+[YouTube](https://www.youtube.com/watch?v=biv7R8W5Zhs)
+
+[Text](./331)
+
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+
 Igor Chorazewicz
 
 [YouTube](https://www.youtube.com/watch?v=uWFL8yHKFLU)
@@ -5027,6 +5034,16 @@ Igor Chorazewicz
 [Text](./328)
 
 [Acronyms](./acronym.md): API CXL DRAM GPU GitHub HBM IPC MPI NUMA SQL TBB UMF USM oneCCL
+
+### Jackrabbit Labs
+
+Grant Mackey
+
+[YouTube](https://www.youtube.com/watch?v=biv7R8W5Zhs)
+
+[Text](./331)
+
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
 
 ### Marvell
 
@@ -5202,6 +5219,14 @@ Jungmin Choi
 
 [Acronyms](./acronym.md): AI CMS CPU CXL CloudSuite DCD DDR4 DLRM FPGA GPU HMSDK HMU LLM ML MemVerge NVMe OCP PBS SK
 
+Myoungseo Kim
+
+[YouTube](https://www.youtube.com/watch?v=biv7R8W5Zhs)
+
+[Text](./331)
+
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+
 ### SUSE Linux
 
 Hannes Reinecke
@@ -5221,3 +5246,9 @@ Vikrant Soman
 [Text](./330)
 
 [Acronyms](./acronym.md): AI AMD CMS CPU CXL DRAM GitHub MLC MemVerge PCM ROI TCO TPC
+
+[YouTube](https://www.youtube.com/watch?v=biv7R8W5Zhs)
+
+[Text](./331)
+
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
