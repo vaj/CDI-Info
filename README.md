@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 327 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 328 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5091,6 +5091,12 @@ Manoj Wadekar
 
 [Acronyms](./acronym.md): AI BMC CMS CPU CXL CacheLib DDR DMTF ECN FTI GPU GitHub HPC JEDEC LPDDR OCP PCIe SNIA UAL UEC
 
+[YouTube](https://www.youtube.com/watch?v=wY_NU0-cmkw)
+
+[Text](./332)
+
+[Acronyms](./acronym.md): AI CMS CPU CXL ChatGPT DDR GPU GenAI HBM HBM4 IO KV LLM LPDDR NV NVIDIA NVLink NVMe OCP PCIe RAS SKU SSD TCO UALink
+
 Prakash Chauhan
 
 [YouTube](https://youtu.be/DMTkQuFojKo?si=l5yfS99n8aDRYrnZ)
@@ -5126,6 +5132,12 @@ Samir Rajadnya
 [Text](./316)
 
 [Acronyms](./acronym.md): AMD BMC CPU CXL DDR DDR5 DIMM DRAM LEO MLC NUMA OS RAS RDIMM TCO UPI
+
+[YouTube](https://www.youtube.com/watch?v=wY_NU0-cmkw)
+
+[Text](./332)
+
+[Acronyms](./acronym.md): AI CMS CPU CXL ChatGPT DDR GPU GenAI HBM HBM4 IO KV LLM LPDDR NV NVIDIA NVLink NVMe OCP PCIe RAS SKU SSD TCO UALink
 
 ### Montage
 
