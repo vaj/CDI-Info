@@ -1,1 +1,76 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hey, good morning! Nice to see a good crowd here. So, somebody just asked, "Where's the CXL switch?" and this is a topic that we're going to cover. We're going to talk about enabling a composable, scalable memory system for AI applications—from AI usage case. So, just briefly, my name is JP Jiang. I'm from a startup company called Xconn Technology. So, anybody who has been working with CXL probably knows Xconn, because we provided the switch—a big capacity, two hundred fifty-six lane switch. And we're going to talk about this topic together with H3, which is our partner, and they did a lot of great work in this area.
+
+So, the CMS standard for composable memory system—this is a subgroup inside OCP that, in the past years, has done a lot of great work to put together a memory system targeted for AI applications. So, this is a brief kind of diagram of the CMS system. To provide some background, I think Manoj and Samir have talked extensively about how to utilize all these memory systems in AI applications. And, we can understand that the memory access or memory usage in these AI systems is pretty hard. So, on the one hand, you need a very high bandwidth; on the other hand, you also need a very high capacity. And also, Siamak talked about CXL, how that gets into the system. It's beyond the HBM and also the secondary memory, or the extended memory. So, this diagram shows generally it's a computing architecture where the composable memory gets into play, especially because all these computing systems are getting a lot of usage, we imagine, in the next few years. Once the AI applications really take off, you will see a lot of data centers that are running all these AI inferences, not only just a single host, but multiple computing nodes. So, we could call that an AI inference computing farm or something, right? So, definitely, this is going to really scale, although this picture just shows one computing node. You can really imagine, in the next couple of years, they're going to really explode, because, in the past, we were taken by surprise how the AI really accelerated by 10x every two years, at a pace like that. So, we're a little bit also forward-looking, trying to put together some work that's really targeting a little bit into the future. So, the composable memory system, here, I want to point out, when you talk about being scalable, a switch is really the way to go, because a switch can really connect multiple computing nodes and also connect a very huge pool of memory resources, being that CXL memory at this point. And people come up with a lot of ways to take advantage of this huge memory pool capacity, right?
+
+So, Xconn, we are pioneering a CXL 2.0 switch as of today. And that chip is kind of in the mass production stage. In the OCP exhibit floor, you will see multiple demos. We have one rack, one bigger rack, 42-inch—a 42-inch rack that has two servers and a bigger pool of memory, up to 12 terabytes. That's in collaboration with multiple customers, for example, Micron, Credo Technology, and MemVerge, and all these ecosystem partners. So here, I'm showing a single node with a CXL switch. You can put together a chassis, or a basic building block of this composable memory system, where you have a switch, and you have a couple of ports that connect to the host, and a number port to connect to the CXL memory devices.
+
+Again, because you need to be scalable, we do provide this scalability. Where even at this stage, you see CXL 2.0. You can make the cascading work. So, this is showing a two-level switching, cascade switching.
+
+So, if we take this into a composable memory system and use that in the AI application, you would see some pictures similar to this. So, the computing nodes, we say it's inference, but you could run any other kind of AI workload. So, you could have multiple AI computing nodes on the top of this fabric, where the fabric is composed of multiple switches. And underneath this fabric, you can attach a very huge pool. So, here, we're talking about tens of terabytes, or even hundreds of terabytes, because today, we're at CXL 2.0. But our switch, CXL 3.x, is coming up next year. And with 3.x, you basically can connect thousands of devices into this bigger pool. So then, we are really talking about hundreds of terabytes, and really scalable to a very big computing architecture. All right, with this, I will hand that to Brian, to talk about some of the work that he has been doing.
+
+Thank you. Thank you, JP. Good morning, everyone. My name is Brian. I'm from H3 Platform.
+
+And the switch assistance is finally coming. We've based on the Xconn switch to build up the assistance. And the assistance, we have the 22 E3.S, for four hosts. So this is the lab settings in our lab: we use two Intel EMR servers connected to the memory systems. Of course, this is with the Xconn's CXL switch. And then we do two different things. If we assign a single memory to the different hosts, then we call it pooling. And we also can do the single memory assigned to two hosts, and then they can access concurrently to do the sharing. So later, I will show you the testing result. We have done some testing.
+
+So, here are the testings. If you see the pooling, if you assign one CXL memory to server one and one memory to server two, and you do the SS, the SS is roughly like 27 gigabytes per second. If you use only one CXL memory assigned to two different hosts, and then use it, we use the Intel MLC 3.1 to do the max bandwidth test. And all the tests—at least, we run them for 10 minutes, and then to get a steady state. So, the number that you got is that if you do a sharing, you get 13.5 gigabytes per host. So, it's evenly distributed to the two different servers.
+
+And we also do some of the expansion tests. But this expansion test is going through the, of course, going through the CXL switch again. So, it's a switch-attached memory.
+
+So, we have to do the first string test. If you do the string, we do the interleaving. You see, on the left side is the DRAM interleave. There's a two-socket CPU, right? So, each socket has a DRAM. So, each socket has its own 32-gigabyte DDR. And then we assign one 256-gigabyte memory. And then we do the interleave. So, you see that if you use the higher CXL memory, you get better performance. Roughly like 30% more of the bandwidth compared to DDR only.
+
+We also do one of HPC's OpenFOAM. OpenFOAM is a computational fluid dynamic. I think it's one of the HPC usage models. So, if you see that we have more CXL memory, then you see the performance increase as the memory increases.
+
+So, we have been developing this system for over two years. And then, we built up two different versions: 1.1 and 2.0. In 1.1, we use an Emerald Rapids. And then, of course, the switch simulates a kind of end device for the EMR servers. And then, we reached a very key milestone to develop a CXL 2.0. We have successfully built up the virtual CXL tree for the host. So, we use AMD's Turing servers. The Turing server can see the virtual device that we create with our management CPU. So, currently, we have four devices, or eight devices. Then, we bind real devices—real CXL memory modules—to that virtual device to do the SS. So, I think it's, um, next time that I will bring up the real CXL 2.0 implementations and get some of the data.
+
+So, during the almost two years of developments, you can see that we have so many challenges—from the OS, from the driver, from the device side, from the switch side—everything. We really needed the whole industry's support. For example, if I take the OS as an example, if you have used the CXL memory, if you use it as a kernel module 6.2 or then, you see it as a test driver, but 6.3 or beyond, they finally get a test driver as the CXL memory. So, the behavior will be different. We have lots of different things that go through that: how we use the memory in the OS environment, how we use it in the application environments. So, we need people to help us solve those kinds of issues, and then, of course, we would like more people to use it and, down the road, to get more and more applications for those CXL solutions. Thank you. That is my presentation. Any questions? Yeah, please.
+
+You spoke about OpenFOAM; would you happen to have any other AI-centric, Llama-based—sorry, yeah—distributed over multiple memory controllers, or CXL using a switch?
+
+Yeah, this part, I just—Samir's show it—because originally one of our partners wanted to do that for us. Unfortunately, it takes too much effort to really build up a real environment to do it. So, that's why I do not show it. But sorry, the topic that we say we want to do—the AI or inference. But probably next time, I will show that kind of applications.
+
+There's something I don't understand. You're saying that you support memory sharing. But, my understanding is CXL 2.0 does not support memory sharing.
+
+Yeah, good question. In fact, in the memory sharing in 3.1, they use MLD devices to do the sharing. I mean, in a standard Linux, in a standard spec. What we do is, in fact, we do it the proprietary way by mapping the device to two different hosts at the same time. We don't really lock the data. We don't do that kind of thing. We just map the two devices to the two hosts. So, the testing that I just showed is to the read, to CPU read at the same time.
+
+Of course, you don't lock the memory. The CXL does not. But, in sharing memory, it's not involved with locking. But my question—the problem with the 2.0 server and the 1.1 server—is the way they issue the memory requests. There's a deadlock possibility if you share memory. So, how do you avoid that? You have no control about the way the servers do the load and store.
+
+OK, OK. Because we are on the switcher side, we assign them both. The people need to use; currently, we work with FamFS. They use the file systems, the distributed file system, to control the kind of lock, a data lock. Because that is the way that they can use.
+
+I see, I see. OK, one more question: you're talking about 3.x functions, but you need a 3.1 server. I'm not aware of Intel or AMD even making a server under NDA. Is that right? Or is it?
+
+It's not yet. I think it's probably 2026.
+
+So, somewhere in your presentation, you talked about the switch that can give 3.1 features. But there's no way to use it, right? How do you use it? Like a dynamic capacity device, nobody makes a dynamic capacity device. So, how do you use those? You can't use those things yet, is that right?
+
+No. But wait a moment. In fact, the whole implementation of the CXLs, you probably can take some of the features from 3.1 to 2.0. But there is some proprietary implementation, but there are some limitations. Yeah, that's the whole thing. I think about a DCD, we are talking to the kernel team. And to use the DCD team's kind of ways, give them usage case of how our implementation can do. And whether. So the kernel, the memory management team can accept that kind of a way to do it.
+
+Yeah, OK.
+
+Yes.
+
+I think it was from John Ping's page. I'm not sure whose page it was. But you showed me the Intel MLC 3.1 bandwidth score, right? And pooling cases, and then sharing cases, sharing bandwidth actually dropped by half. So, why is that the case?
+
+You mean the?
+
+Yes. Pooling servers' bandwidth is 27. Yeah, yeah, yeah. But sharing is about just half of it.
+
+Yes, because two SSDs share the same memory. So, it's only like 27 divided by two hosts, right? So, it's a...
+
+But I was assuming that two servers are accessing the same data memory region sequentially, right?
+
+We do it concurrently. Yeah.
+
+But really, OK.
+
+Yeah, we do it concurrently.
+
+But if you access the same data sequentially, sharing the data, then the bandwidth doubles.
+
+Yeah, yeah, I suppose. But because we do it concurrently, it's only an option, yeah.
+
+Thank you.
+
+I just want to make a comment on the previous question that was asked from this side. What I would say is, the dynamic capacity device is possible with CXL 2.0. I have seen implementations of that. Maybe there is some customization required. But, we do not have to wait for 3.1 CPUs or dynamic capacity devices.
+
+Thank you, Samir, especially for the OS expertise. Thank you. Thank you.
