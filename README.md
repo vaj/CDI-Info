@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 328 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 329 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -265,6 +265,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Broadcom](#broadcom-2)
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
+    - [H3 Platform](#h3-platform-3)
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
     - [Marvell](#marvell-2)
@@ -280,6 +281,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [SK hynix](#sk-hynix-2)
     - [SUSE Linux](#suse-linux)
     - [Uber](#uber-1)
+    - [Xconn Technology](#xconn-technology)
 
 ## 2017
 
@@ -5011,6 +5013,16 @@ Brian Morris
 
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
 
+### H3 Platform
+
+Brian Pan
+
+[YouTube](https://www.youtube.com/watch?v=eAuYpbYnJmg)
+
+[Text](./333)
+
+[Acronyms](./acronym.md): AI AMD CMS CPU CXL DCD DDR DRAM EMR HBM HPC MLC MLD MemVerge NDA OCP OS OpenFOAM
+
 ### Intel
 
 Anjaneya "Reddy" Chagam
@@ -5264,3 +5276,13 @@ Vikrant Soman
 [Text](./331)
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+
+### Xconn Technology
+
+Jianping Jiang
+
+[YouTube](https://www.youtube.com/watch?v=eAuYpbYnJmg)
+
+[Text](./333)
+
+[Acronyms](./acronym.md): AI AMD CMS CPU CXL DCD DDR DRAM EMR HBM HPC MLC MLD MemVerge NDA OCP OS OpenFOAM
