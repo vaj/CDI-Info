@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 329 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 330 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -261,6 +261,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Alibaba](#alibaba)
     - [AMD](#amd-8)
     - [Ampere](#ampere)
+    - [Arm](#arm-3)
     - [Astera Labs](#astera-labs-6)
     - [Broadcom](#broadcom-2)
     - [FSAS Technologies](#fsas-technologies)
@@ -4940,6 +4941,16 @@ Seema Mehta
 [Text](./310)
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+### Arm
+
+Jon Hermes
+
+[YouTube](https://www.youtube.com/watch?v=h7qTcefV9Lg)
+
+[Text](./334)
+
+[Acronyms](./acronym.md): AI ALU ARM CMS CXL DDR DIMM ISA ML NUMA PCI QoS RDMA TensorFlow
 
 ### Astera Labs
 
