@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 330 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 331 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5048,7 +5048,7 @@ Anjaneya "Reddy" Chagam
 
 [Text](./331)
 
-[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
 
 Igor Chorazewicz
 
@@ -5066,7 +5066,7 @@ Grant Mackey
 
 [Text](./331)
 
-[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
 
 ### Marvell
 
@@ -5129,6 +5129,14 @@ Prakash Chauhan
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
 
 ### Micron
+
+John Groves
+
+[YouTube](https://www.youtube.com/watch?v=4MsTupxge70)
+
+[Text](./335)
+
+[Acronyms](./acronym.md): CSV CXL DAX DCD DPA DRAM DevOps FAMFS FMS FSDAX GPU GitHub HP LSFMM LSM NUMA RAM RAMFS RAS RFC RocksDB UUID VM XFS
 
 Ravi Gummaluri
 
@@ -5260,7 +5268,7 @@ Myoungseo Kim
 
 [Text](./331)
 
-[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
 
 ### SUSE Linux
 
@@ -5286,7 +5294,7 @@ Vikrant Soman
 
 [Text](./331)
 
-[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK
+[Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
 
 ### Xconn Technology
 

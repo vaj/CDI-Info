@@ -205,6 +205,7 @@
 | CSP                 | Cloud Service Provider                                                    |
 | CSR                 | Configuration Space register                                              |
 | CSS                 | Compute Subsystem                                                         |
+| CSV                 | Comma-Separated Values                                                    |
 | CSx                 | Computational Storage Device – CSP or CSD or CSA                          |
 | CTLE                | Continuous-Time Linear Equalizer                                          |
 | CTO                 | Chief Technology Officer                                                  |
@@ -236,6 +237,7 @@
 | DCI                 | Data Centric Infrastructure                                               |
 | DCIM                | Data Center Infrastructure Management                                     |
 | DCM                 | Data Center Management                                                    |
+| DCMFM               | Data Center Memory Fabric Manager                                         |
 | DCMHS               | Data Center Modular Hardware System                                       |
 | DCN                 | Data Center Networking                                                    |
 | DCO                 | Data Center Optimization                                                  |
@@ -728,6 +730,7 @@
 | LSA                 | Label Storage Area                                                        |
 | LSF                 | Load Sharing Facility                                                     |
 | LSFMM               | Linux Storage, Filesystem, Memory Management                              |
+| LSM                 | Log-Structured Merge-tree                                                 |
 | LSN                 | Logical service node                                                      |
 | LTPI                | LVDS Tunneling Protocol & Interface                                       |
 | LTS                 | Long Term Support                                                         |
@@ -1092,7 +1095,7 @@
 | PPO                 | Proximal Policy Optimization                                              |
 | PPR                 | Post Package Repair                                                       |
 | PPS                 | Pulse Per Second                                                          |
-| PR                  | Public Relations                                                          |
+| PR                  | Public Relations, Pull Request                                            |
 | PR1                 | Pipeline Register 1                                                       |
 | PR2                 | Pipeline Register 2                                                       |
 | PRAM                | Parameter RAM                                                             |
@@ -1534,6 +1537,7 @@
 | XSR                 | eXtra Short Reach                                                         |
 | XStore              | (key-value system)                                                        |
 | XY                  | (Routing Algorithm name)                                                  |
+| YAML                | YAML Ain't Markup Language                                                |
 | YCSB                | Yahoo! Cloud Serving Benchmark                                            |
 | YOLE                | (Company Name)                                                            |
 | YouTube             | (Company Name)                                                            |
