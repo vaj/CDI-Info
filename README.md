@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 331 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 332 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5103,6 +5103,14 @@ Charles Fan
 [Text](./313)
 
 [Acronyms](./acronym.md): AI ARM CEO CPU CXL DDR DGX DRAM DS GISMO GPU IO IP InfiniBand KV MemVerge NVIDIA NVLink OCP PCIe PyTorch RAG SRAM TCP TPC UALink UltraEthernet YouTube
+
+Steve Scargall
+
+[YouTube](https://youtu.be/q-5usfRw1YY?si=hfoqiUayfTr5Kj3_)
+
+[Text](./336)
+
+[Acronyms](./acronym.md): AI AMD BIOS CPU CUDA CXL DAX DCD DDR DDR4 DDR5 DIMPA DMA DRAM FAMFS FM GPU GTC IO LLM ML MRDIMM MSRP MemVerge NUMA NVIDIA NVMe OEM OPT PCIe PCM PDF QEMU RAG RAID RAM SAN TPP VM
 
 ### Meta
 

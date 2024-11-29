@@ -277,6 +277,7 @@
 | DI                  | Data Integrity                                                            |
 | DIF                 | Data Integrity Field                                                      |
 | DIMM                | Dual Inline Memory Module                                                 |
+| DIMPA               | DIMM PAthway                                                              |
 | DirectCXL           | (prototype name) (Panmnesic)                                              |
 | DirtyEvict          | (request in CXL)                                                          |
 | DiskANN             | (application name)                                                        |
@@ -841,6 +842,7 @@
 | MSI                 | Message Signaled Interrupt                                                |
 | MSIF                | Modular Shared Infrastructure                                             |
 | MSIX                | Message Signaled Interrupt                                                |
+| MSRP                | Manufacturer's Suggested Retail Price                                     |
 | MTBF                | Mean Time Between Failure                                                 |
 | MTCP                | Management Component Transport Protocol                                   |
 | MTE                 | Memory Tagging Extension                                                  |
