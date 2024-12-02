@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 333 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 334 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -239,6 +239,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [HYPERION RESEARCH](#hyperion-research)
     - [Intel](#intel-10)
     - [Jackrabbit Labs](#jackrabbit-labs)
+    - [Liqid](#liqid-1)
     - [Liquid Markets Solutions](#liquid-markets-solutions)
     - [MemVerge](#memverge-7)
     - [Micron](#micron)
@@ -4655,6 +4656,16 @@ Grant Mackey
 [Text](./284)
 
 [Acronyms](./acronym.md): AMD API CNI CRI CSE CSE CSI CTO CXL DIMM DRAM FM FMAPI GA GitHub I2C I3C IP OCP OS OpenShift OpenStack PCIe QEMU RESTful TCP VCS
+
+### Liqid
+
+Sumit Puri
+
+[YouTube](https://youtu.be/wuRqN4Bjjoc?si=StV6mandvZRqmKWB)
+
+[Text](./338)
+
+[Acronyms](./acronym.md): AI AMD API CPU CUDA CXL DGX DRAM FPGA GPU GUI HGX HPC InfiniBand MLPerf MX NCCL NIC NUMA NV NVIDIA NVLink NVMe OpenShift OpenStack PCI PCIe QPI RAG RDMA RESTful SXM SuperPOD VDI VMware VR
 
 ### Liquid Markets Solutions
 
