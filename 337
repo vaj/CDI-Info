@@ -1,1 +1,142 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Thank you. Hello, everyone. So, I guess you know what the talk is about.
+
+20 minutes, 14 slides, so going through the first two really quickly. I will have a summary of the current patchset for Type 2 support and the review upstream, and then I will share my concerns, my thoughts about supporting CXL.cache in the kernel, and maybe some potential next steps or first steps for supporting CXL.cache.
+
+So, let me just start by presenting the use case for applying this Type 2 support patchset in the kernel. This is for our network device that has CXL support, and the idea is to use it for lowering the latency. So, we have programmable input-output buffers that rely on PCI bar aperture, and the idea is to use a CXL.mem, CXL region for that, so hopefully, we're getting better latencies. So, the CXL.cache will be used for receiving. It's complicated, so I cannot talk too much about it.
+
+So, what does a Type 2 device require in the kernel? Well, first of all, no one touching it—the CXL.mem at least—no device, no kernel, so no DAX device, because it's specific memory. It's a memory for the device, and it needs to be written to specifically, not generating memory. So, hopefully, if you apply the right flag to the memory, the BIOS will do so. No one is going to touch it, so perfect.
+
+So, CXL, the kernel core has support for PCI class memory class type 3. So, we need to support PCI or the kind of PCI classes like Ethernet network PCI. And for that, well, we need to export the current CXL core API for doing initialization to those accelerated drivers. So, we need to fix some code that relies only on type 3. We need to have a way for creating the CXL regions from inside the kernel. And, well, last one, once that is done, to not create a DAX device from those regions, I suffer that, so that was another work that I had to do after the first implementation because, after installing the driver, suddenly the VM crashed and I figured out, oh, someone is using it. So, that was after the initial work.
+
+So, the summary for the current patch set—well, I need to say this is all based on previous work from Dan Williams. His goal was to start the way for supporting type 2, not specifically type 2 devices. But most of the code is from that initial work. So, the indirect was for comments. And the first patch set, I write my concerns about this kind of BIOS not doing the right thing, the kernel using that memory for that device, and then maybe breaking things. I was told, "Well, if you attach the right flag, no one is going to touch it, so don't worry. Perfect." Not completely convinced, I will talk about that later a bit. So, I initially used not a real device, but an emulated one because I had problems using the real one. We don't have it yet, the physical one. We are using emulation internally for validating the hardware design that I couldn't use at that time. It was said, "Okay, that's fine, but you are not going to implement all the things through that." Through that. So, I used an emulated device. That meant that I had to use the real device in the following patches. Another concern with the request for comment was that should we trust accelerator drivers for touching things in these CXL structs. I think the initial concern was that—the security thing. But, it turns out it's more about manageability. Maybe I'm wrong about that, but that's my impression after the last reviews. And one last thing is that it does not have CXL.cache support. But it's the second part of my talk.
+
+So, in V2, instead of just exporting the current CXL functions for initialization, an API was created for accelerator drivers. And that's it. So, it's not touching the CXL by themselves, but through that API. I used the SFC driver, network Ethernet driver for that. Commenting on the use case as well. While other things, moving just specific parts of the headers, that was moved fully in the first. In the request for common pass it. And I was told not to do so. There were some problems with the capabilities, the mandatory capabilities to work with. That led to another change for V3 that we'll comment on in a second. And also, some concerns about some patches being too complex.
+
+That I fixed in the V3. So, the more important change here was to add a capability field to the main dev, and also to the CXL port. And the idea is, instead of the CXL code discovering the CXL registers and initializing that field, what we've found, and then the driver checking or matching the spected capabilities to be found with those ones, so removing some checks in that CXL core for discovery. I did that about removing complexity from big patches. That, by the way, was in the original dump patches, but I just mixed that in the first one. So, I think that has helped to understand better that specific patch. And, well, I add a fix that I suffered. And I was glad yesterday because Thang told me that he had the same issue with a race condition between the CXL main dev being created, creating a CXL port, and then a race condition because the CXL port is not there yet because it goes through this device model when the main code is trying to use it.
+
+But was not really liked by Jonathan.And...Yeah, this is what I did.
+
+The long and short is, like, there's an ENXIO error somewhere in the stack that just needs to be an EPROBE_DEFER, and that seems to be appropriate. We just need to dig a little bit more into exactly why, for the sake of documentation, I think.
+
+Yeah, I need to work on that. So, this is inside that patch that tries to solve another race condition between the CXL element of creation and the CXL support not being there yet. I don't know if that is a corner case or if it's something that we can expect often.
+
+My best understanding of the problem is that the ordering isn't guaranteed, regardless, so it's a problem we're going to have to just deal with by having occasional retries if we detect a failure.
+
+So, I think Daniel suggested using a lock instead of a retry for this race.
+
+This is dependent on, like, the top of the hierarchy being probed and the devices being probed. So, we're going to have to do it asynchronously, and they have to rendezvous. And so, if the Mem Dev wins, I think we've got to retry. But yeah, I had the question to make sure if that is actually the problem, but it seems like it.
+
+Well, yeah, I think we gave you the patch, right? It's in the...
+
+No, actually, I made it separately, and then I saw yours.
+
+Yeah, it's just the timing. It can't find the route.
+
+Okay. So, it's not a corner case then. Good. Well, the idea is to, well, in my case, to dig a bit deeper. Yeah.
+
+I mean, if you can't find the route, that means probing hasn't finished, right? Why do you expose the device if it's not finished?
+
+Because PCI did. It's a PCI card, not CXL.
+
+Why? Yes. But again, why do you expose the PCI device if it's not fully probed?
+
+This is normal resource racing in the kernel. You defer and go around the game. It's how it's handled all over the place.
+
+Another word for sloppy programming.
+
+Ooh.
+
+Now, I mean...Jesus.Who invited him?Next year, he's not coming.
+
+Okay. So... For before, I think that's the main problem that I need to investigate a bit farther for understanding. I'm maybe proposing something that is like it. And the other problem, not major, but is handling better sysfs files that I just put there a check for, okay, if this is a type two, yes. Forget about it, and I was told maybe that could be better handled now instead of keeping it going. So, the rest of that I hope is fine. I don't know if someone has any comment in their review now, but I hope this is going well and maybe in v4 or v5 can be integrated.
+
+So, if that is the case, I think the following work is, at least with my concern, the least concern is how to handle CXL reset. That is not done. We don't have code in the CXL core for handling that possibility. And the problem here is, what are we going to do? I understand that for type 3, CXL reset is a really bad thing. Maybe the system is going to crash, but I think it's more likely for type 2, where that kind of device reset, including the CXL, can happen. And then, if the HDM registers are being committed, I guess we need to tell the switches that it is not there, or to keep that information to those registers after the reset. Because the way it works is that that device is going to be probed after the reset, and it's going to go through all the CXL initialization. And I guess we don't want to have a different HDM range in that case.
+
+Do you think—I mean, is it the case—that you're going to want to definitely always restore the same configuration? Or that you want to reset and... and do something different next time?
+
+Well, I think what we want to do is to keep the configuration. But that's my idea. But I don't know if that's the case. But in any way, we need to support that.
+
+So, one thing I found kind of obscure in the spec is the... I think the CXL functions that need to be reset are not explicitly listed. I mean... There are some obvious things, like the HDM decoders and all. But, all throughout the spec, like it mentions here and there. But it's not clear to me, 100%, what the impact of reset is across the whole driver.
+
+Well, the whole driver—you mean the accelerator driver or the...
+
+Yeah.
+
+Where it doesn't say, you reset it. So that's the intended implication, is it? It's the equivalent of a normal reset on a PCI device. But we ruled some things off because that was destructive. And this just puts back the rest. So, I think... I don't think there's anything you're not supposed to reset.
+
+In any case, it's a full work. So, I don't want... Because I want to talk about CXL cache. The other thing is to have a way for, if the device memory is taken by the kernel, to have a way of... Oh, I see Dan.
+
+Crash.
+
+But, I mean... The BIOS... I mean, the BIOS doesn't get to pick this. Like, the device... I mean, you're saying the device correctly said in the CDET, 'This is reserved in the BIOS,' and nah, it's gonna put it in the memory map?
+
+I'm saying that maybe we shouldn't trust the BIOS to always do, in all cases, the right thing. At least in the following years. I'm suffering now from a problem with the BIOS related to another thing. And it's hard to get rid of that problem. So what I'm saying is, okay, maybe you can update the BIOS. If not, let's have a way of saying, "Hey, that's my memory."
+
+This is a slippery slope. Fix the BIOS. Really. Every time this happens in anything else in ACPI, if stuff's wrong, we paper over it; it's a nightmare. This is new hardware. It's not like it's been around for ten years and we've got to deal with it.
+
+Yeah, but how long is it going to take to fix the BIOS?
+
+Until then, it won't work. They won't sell any product. They'll fix it quickly.
+
+We can, at least, do—like—a one-time thing. Yeah. We can, at least, do—like—a worn tape from our workaround to, like, put them on blast, shame them, fix your BIOS, and then let people get work done.
+
+A warning, sure. But if they do something like commit decoders that you can't then uncommit...
+
+No, the decoders are fine. This is the type of memory it takes.
+
+Actually, it's in ACPI tables. And you can do them in the kernel. If you're going to put a quirk in, that's where to do it. Don't do it in the driver stack. Do it as an overridden table, which is horrendous. The warnings! And you have to enable extra config options. So, no one ever ships it. Which is great.
+
+I mean, I think the problem is a little bit more fundamental. You have to also tell vendors that if you're trying to build a Type 2 device, you have to have this memory type. So that the BIOS won't screw with you, right? You can't fix stupid if someone builds a bad piece of hardware. But then, I mean, yeah, I agree — if the BIOS doesn't treat it correctly, then fix the BIOS.
+
+Fair enough.
+
+And I really—I mean, half facetiously, Dan—like, get out there and say, "Your vendor, this vendor X, has this broken." That should be loud and proud because that fundamentally breaks this type of device.
+
+Right.
+
+Agreed with Dan that you should print some big, morning error.
+
+And in the end, I mean, if a BIOS vendor puts in something like that, he wants to sell the thing. And if it doesn't work correctly, he has his own interest in getting it fixed so that it works. Because, well, it is new. So, he has to build the BIOS. It’s not like he can say, "Oh, you know, it’s long out of service." No, it’s not—it’s a brand-new thing.
+
+So, what I'm saying is, maybe that is not the right thing to do. But, what I'm saying is, maybe for the next two years.
+
+No, no. I think the thing where...
+
+Spoilers, because the kernel rejects stuff every week.
+
+Okay. I think we're the... Shout at the BIOS team. Where the work is probably best spent is to warn when this happens, hands off, and focus cycles elsewhere.
+
+In our case, the warning is not needed because the machine is going to be partly disabled.
+
+Good. Fine.
+
+So, yeah. I mean, if the DAX device is created, and you have it mapped as write-back, and you try to load your host driver, it just gets pissed off. It doesn't crash.
+
+If it's memory that the kernel is going to use, and it tries to... So, okay. That's done.
+
+Let's talk about CXL.cache. So, I'm going to go straight to this one because I don't have time.
+
+That is about memory—memory for that in the kernel. That needs to go...
+
+Two minutes.
+
+Okay. It needs to go through the, you know, for security reasons, through IOMMU. But there's a case where the IOMMU is not present. So, anyway, it needs to go through the DMA-IOMMU API. But the problem there is that we have a snooping cache in the CXL root complex that needs to be taken into account for not reserving more memory or not allowing more CXL.cache than what that snooping cache requires. So, I think we need some kind of wrapper there for that case. And for other cases, I'm not sure the current IOMMU implementation in the kernel, supporting different devices, is doing this safely. There are different reasons for this. But I think that, in our case, we are going to use the IOMMU for the normal DMA operations. And we are going to use DMA—sorry, IOMMU ATS—for the CXL.cache. So, using the same IOMMU mapping is probably going to be complicated to ensure everything works fine. Because I don't have time, I think that's the main point we need to discuss to get started.
+
+Yeah. I was going to say, like, I am not a fan of how the current kernel policy around ATS is designed. And I think CXL is pushing that off a cliff. We need to have more discussions about what ATS looks like in a world where we need to enable CXL.cache devices, because the current ATS policy is based on whether it's cabled into the system or not, and that's not appropriate for CXL.
+
+Yeah, I think it was... I think initially that it was once the ATS thing is done, the system tries that device. But I think in some cases, if it goes through this PCI, there's a routine there. And if the ATS plug is there and the right routing is not there for that ATS, it's not going to work. But I don't think that is the case for CXL anyway.
+
+Might be a stupid question, but does this have implications for the Linux memory model? Like cache misses, TLB flushes, and so on?
+
+No, no, because that is the CPU.
+
+Yes, but does it need to...?
+
+So... the TLB is for the CPU.
+
+Has anyone checked? Mike?
+
+Here, I want to say: I see, currently, the ATS is working for the PCI root complex. And that means the ATS—most IOMMU services, the translation agent—is just like treating it as a traditional PCIe TLP package. So, if ATS is enabled, I think the endpoint can easily use the ATC and let the ATC send the translation request to the host. I think maybe the current IOMMU on the host could serve in this way. So, I think... I thought, when we enabled ATS, most of the cache types—such as the CXL.cache—could work properly with the ATS service. And second, if we disable the ATS, that would create a problem. That is, the current IOMMU hardware in the host maybe cannot bridge the CXL.cache channel. So, that would involve another hardware requirement. So, I want to ask the people in this room: What do you think about this description? Or, how do you think ATS works with the CXL.cache, or when it is disabled?
+
+Maybe we could talk about that offline. So, I have... If you go through the slides, I have the last one where I put potential roadmaps or actions to follow. So, please comment in that channel that we have for that. So, I'm done. Thank you. Thanks for...
