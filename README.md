@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 334 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 335 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5252,6 +5252,12 @@ Siamak Tavallaei
 [Text](./309)
 
 [Acronyms](./acronym.md): AI AIC AMD ANN API ASIC CMM CPU CXL DDR DDR4 DDR5 DIMM DRAM FPGA GNR GPU HANA HBM IC KNN KV LLM NAND NVLink OCP OMI OS OpenCAPI OpenShift P2P PCI PCIe PM POC RAG REST RESTful SAP SDRAM SLA SMDK SMRC SaaS TCO TPC UALink XConn
+
+[YouTube](https://www.youtube.com/watch?v=34sJtgWwRJU)
+
+[Text](./339)
+
+[Acronyms](./acronym.md): AIC CPU CXL DDIMM DDR DDR5 DIMM DRAM ECC GPU HBM HPC LPDDR ML MRDIMM NAND NUMA OCP PCIe SRAM SSD
 
 TaekSang Song
 
