@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 335 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 336 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -268,6 +268,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [H3 Platform](#h3-platform-3)
+    - [Huawei](#huawei-2)
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
     - [Marvell](#marvell-2)
@@ -5053,6 +5054,16 @@ Brian Pan
 
 [Acronyms](./acronym.md): AI AMD CMS CPU CXL DCD DDR DRAM EMR HBM HPC MLC MLD MemVerge NDA OCP OS OpenFOAM
 
+### Huawei
+
+Jonathan Cameron
+
+[YouTube](https://www.youtube.com/watch?v=gX8uYizefyg)
+
+[Text](./340)
+
+[Acronyms](./acronym.md): CXL DAX DCD FAMFS HP NUMA PMDK QEMU QoS RAM VM
+
 ### Intel
 
 Anjaneya "Reddy" Chagam
@@ -5076,6 +5087,22 @@ Igor Chorazewicz
 [Text](./328)
 
 [Acronyms](./acronym.md): API CXL DRAM GPU GitHub HBM IPC MPI NUMA SQL TBB UMF USM oneCCL
+
+Ira Weiny
+
+[YouTube](https://www.youtube.com/watch?v=gX8uYizefyg)
+
+[Text](./340)
+
+[Acronyms](./acronym.md): CXL DAX DCD FAMFS HP NUMA PMDK QEMU QoS RAM VM
+
+Navneet Singh
+
+[YouTube](https://www.youtube.com/watch?v=gX8uYizefyg)
+
+[Text](./340)
+
+[Acronyms](./acronym.md): CXL DAX DCD FAMFS HP NUMA PMDK QEMU QoS RAM VM
 
 ### Jackrabbit Labs
 
