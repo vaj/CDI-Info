@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 336 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 337 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -271,6 +271,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Huawei](#huawei-2)
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
+    - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory-1)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
@@ -5113,6 +5114,16 @@ Grant Mackey
 [Text](./331)
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
+
+### Lawrence Livermore National Laboratory
+
+Nathan Hanford
+
+[YouTube](https://youtu.be/xF8CWxNmIG4?si=RmgufKP_28g8rtL5)
+
+[Text](./341)
+
+[Acronyms](./acronym.md): AI API CDI CXL DMTF EX GitHub HPC InfiniBand ML NVMe OFA OS OpenShift PCI PCIe RESTful SAN SNIA URI
 
 ### Marvell
 
