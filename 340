@@ -1,1 +1,158 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hi, I'm Ira Weiny from Intel. Navneet should be on the call. He's also from Intel, and Jonathan has had a lot of input on DCD over the years, although I don't think he's going to speak today. Not about this. Navneet, are you there?
+
+Hey, folks. Good morning. Can you hear me?
+
+Yes, we can hear you. Great.
+
+So, I'm going to go over some of the current patch set that I've been pushing upstream for the last two years. Oh, you have something?
+
+We have it.
+
+Okay, we're just making sure we have the cube to toss around and discuss some of the things. We had a quick little boff yesterday to discuss some of the tag handling and whatnot, which is significantly part of what my talk was going to be about. So, I'm going to kind of briefly, quickly move through what we discussed yesterday, what the patch set status is right now. I really apologize. This should have been version 2, but right in the middle of sending version 2, my SMTP server conked out on me. Then, I had some issues with B4, and eventually, I just sent V3 because it just... And so anyway, the patch set is V3. So far, the comments have been kind of mild, but we do have some changes that we want to make. Along with the kernel support, I've been developing the ndctl support to support DCD, to be able to create regions, to CXL extents in those regions. And very importantly, I've mentioned a couple of times, CXL tests. So we've been developing a lot of CXL tests, and it's been very helpful. I can't stress enough how helpful it's been to basically be able to regress things as I make changes, as we've changed the architecture. We've been updating the tests to make sure that the semantics that we've discussed and changed over the years have been reflected in those tests. The QEMU support, thank you to Fan, who got that working, and Jonathan for getting it upstream. I do test a little bit with QEMU, but mainly for interrupt support, because that's the thing that CXL tests just can't test. At the last discussion forum, we had a really meeting that Jonathan just mentioned. Tag support was really important to a number of our users that are looking to use this. And so we had a discussion there, and that's why I focused my talk a little bit on that tag support and how we should go forward. And since V3, I went ahead and added QoS support after I submitted that patch set. So the QoS parameters are also reflected in the regions, just like a regular CXL region is now. With that, though, the sysfs entries had to change slightly. So if people are using V3, just be aware that a sysfs change is going to be coming.
+
+Post V3. So, yeah. So, what's in V3 has kind of the old sysfs entries and then the new sysfs entries. So, there's a little bit of change in the directory structure. And the way extents are seen in the sysfs directory structure. So, just want to make people aware of that. For me, I keep kind of advocating that DCD should not be system RAM. And then, of course, this morning on Discord, there was a little bit of a discussion. And so, I'll kind of skip over this slide. But I really think that we need, as a community, to figure out, for sure, how do we get memory on and offline for VMs, for all kinds of different user space applications, where we want to be able to take that memory away. DCD is sort of hot plug, but I'm going to say it's hot plug light. And, did you have a question or comment? We can throw that.
+
+All right. I did a bit of an experiment with an actual device and found that the results I got make me question whether it's useful to treat it unconditionally as system RAM. So primarily due to the latency, which, unfortunately, is good. Meaning, in my test case, it was even better than talking to the other NUMA node, which makes it a bit unfortunate because it messes up all our algorithms which we have. So I'd be fine if we had a higher latency. Then we could clearly separate things out and say, right, OK, it has a higher latency. Don't use it. Fine. But if it has a lower latency, dah. You start ending up moving device memory over to CXL and then having to, whatever, go via CXL to talk to the device. Good idea. So keep in mind, whatever we design is heavily dependent on the latency of that beast, which we don't know yet. Because what I'm running with is pretty much experimental. But I suspect we, or others, will run into the same problem. So be aware of that.
+
+OK, yeah, I totally agree with you. But I think it's up to the admin and the policy of the user. If they want to online it as system memory because it is more performant, that's great. But if you do that, you will not be able to take it away. And for DCD in particular, where our use cases, our memory is going to come and go, it's going to be very hard to take it away. And a number of our customers have been saying, "Oh, well, we want to online it as system memory." But you might not be able to take it away. So, it kind of breaks the DCD use case.
+
+Well, they just want to online it as a system memory because they have no other means of talking to it. It's not necessary. They want to use it as memory. They want to use it. But the only way they can use it is called malloc.
+
+Well, well, there's other ways. Yeah.
+
+Yeah. But that requires them to change their application and rather push the onus on us. Let them do the work than me, right?
+
+And so, that is something we should know. Oh, I'll pass it forward.
+
+I feel like a show of hands of how many people have alternate, malloc-based memory allocation applications. OK?
+
+Really, the question becomes: Are people able to replace the memory allocator that's providing the malloc, which is a totally different thing? So, you will still use malloc typically, but it'll be based on top of one of the, should we say, smarter allocators that's aware of these things.
+
+One of the concerns is, Device DAX has been around for a long time. We had PMDK, which was an allocator, like a jemalloc allocator in front of that. So, you could get your malloc semantics back. I'm just not aware of another project that's doing Device DAX back to memory allocators.
+
+Right. And I'll be talking about FAMFS later, but it's a way of putting data sets in memory, memory mapping them, accessing them directly.
+
+Anyway, OK, I should have skipped that slide. But I think it's a hot topic. And I think it's something that, going forward, I would like to work on if I can just get this patch set and kind of the basic support at the driver level. Because if you look at the patch set right now, there's about 12 or so patches that are just getting the driver running, accessing the memory, surfacing extents. And there's a little bit in the, there's like three or four patches in the DAX layer to kind of get that off the ground, and then test code. So anyway, so extent handling, this is the current state. Every extent, whether it has a tag or not, and actually this is in flux because I just started changing it this morning, you can create a DAX step device across those extents. The extents are just added capacity to the region. And they will continue to take as much memory as they need. And there's no, there's really no, we really ignore tags.
+
+On our discussion yesterday, we really didn't like that. So, we did have a couple of possible scenarios that I proposed in this slide. And, I updated my slides this morning to cross out a couple of options because we discussed them yesterday. And so, what we really want to do right now, in V4, will be to just reject tags. The current support, base level support, will be no tags. It'll be basically regions will be created as non-tag regions. And the extents will be surfaced. Any extent with a tag will be rejected as not supported yet. And so, that'll create a semantic that our current regions, our current DAX devices, are basically untagged.
+
+In future, when we create the ability to add a tag to our DAX device and specify that we want this tag, we can then go on to this scenario where, in extent A, I've got a couple of scenarios here that don't work. So, we want DAX device A to be bigger than extent A; that fails. DAX device with tag Z—there is no tag Z, so that would fail. DAX device tag B is only allocated out of extent B, and so, you know, once we get the support for DAX devices to be tagged, or if we have some other non-DAX thing, we'll need to come up with the ability to assign tags so that when you create this memory access to a tag, it will look for that tag and it will assign the memory out of those extents with that tag. Dan is giving me consternation looks.
+
+Because we are in charge of allocating extents to DAX devices, and we have a user interface for that, if the user wants to mix multiple tags in a DAX device, why would we stop them? Like, why are we rejecting people's usable capacity?
+
+Well, yeah, because of him.
+
+So, if a tag is a namespace to memory, I know, but that's how we're going to use it. I mean, that's what we put it there for. And so, the reason you can have more than one extent with the same tag is because you might not have been able to allocate that memory contiguously. And so, Andy Rudoff and I put this in here: the extents that are tagged have a mandatory sequence number, so that you have to map them in order because you do have to map them in order if it's a shareable thing, right?
+
+Well, yeah.
+
+I thought the mandate was only if it's shareable, like where it actually matters. You know? The ordering doesn't matter if it's not shared, right?
+
+Right. And the tag field is reserved—or sorry, the sequence number field is reserved—if it's not shareable. I argued it should be sequenced anyway, but, you know. But tags are a namespace to specific memory.
+
+So that's the semantic we're going to go on. Okay. So I was a little bit in your camp. That's the way V3 is. Is that a untagged DAX device is basically "give me any memory." But that does have some semantic issues with, and maybe we will need to do something where we can create a DAX device that is generic. How do I say this? There might be a difference between a zero tag device and an untagged device, although implementation-wise, that's going to be difficult to discern. But so, in my mind, I was kind of in the camp of, you know, an untagged DAX device just gets memory from anywhere. We've got another comment back there. And.
+
+I think, for the shared case, we have to use, we have to be able to restrict the allocations in either case. Because otherwise, we're running into starvation issues. If it's shared, we do have two independent actors trying to allocate memory. And we really do want to avoid one being starved, come what may. So, in the shared case, at the very least, in the shared case, we need to be able to restrict one and say, "No, you can't." The other has to, whatever, has also had to have a chance to do it.
+
+So, right, right. So, no matter what, an enhancement on top of this patch set is going to have to allocate a tag, right? To a DAX device, so that that DAX device can be matched up only with those extents.
+
+Only if it's shared. I mean, it makes sense if it's shared, because you have to. But if you don't have to, then why restrict things?
+
+Because the user asked for it. If, if, if the user says, "I want this DAX device to only be allocated from these tags," I'll, I'll do that. Right. But, but you're advocating if we don't have a tag, if we don't assign a tag to a DAX device, it just—it gets memory from anywhere.
+
+An example of memory for a purpose would be memory that was allocated to be the backing memory for a VM. And so, that's for a purpose. I tagged it so that my orchestrated environment knows what memory the VM should be backed by. And then, it's got to show up as one DAX device.
+
+We, we probably need a wildcard tag that could say, you know, that we could say, "Allocate from anywhere." But, but I think, I think... It just came into my head. So, like, tag zero is maybe like untagged, and, and, and V3. And then, maybe we do a wildcard tag in the future where maybe people are surfacing tags, but they have some use case where they don't really need to, to lock it down to any particular use case.
+
+But it is a tag. Well, we should move on, but is a tag innumerable from the extent?
+
+What do you mean, "seen in user space"? Yes, absolutely.
+
+Yeah, yeah, absolutely. When the other way to look at this is, I want this to all be user-space policy. It's just the kernel has to honor. We have to make the right levers, but user space is going to handle all of the policy here. Absolutely.
+
+The other thing is, what we need to be very careful of is that we don't restrict something we enable initially. So, if it turns out that we do need to ensure that different tags are not used in the same batch device for use cases, we can't do that retrospectively. Yeah. So, we're better off being too restrictive initially, sitting back, thinking about it a little bit. Um, we've, and once we've got tag capacity in there, then thinking, 'Oh, okay, yeah, it does make sense to generalize it' rather than...
+
+Kind of define current DAX devices as tag zero.
+
+Yeah.
+
+And then, if in the future we want to wildcard them, I think we could define, like, all F's is, you know, a wildcard tag. Allocate from anywhere. And that's another reserve tag. Maybe we were, you know, reserve tag zero is reserved now, kind of in the spec, but yeah.
+
+Okay. So that took a little bit longer than I expected.
+
+Um, let's see here. Uh, Nevneet, do you want to—I know there's some folks that want to talk about Fabric Manager orchestrator—so I was going to let Nevneet discuss that a little bit.
+
+Thanks. Thanks. So, uh, this slide is, uh, most specific to DCD as a product point of view, where, uh, you know, we have the orchestrator, we have fabric managers, some sort of daemon service—like we call, we can call it as orchestrator or the host agent on the host—so to communicate to each other in, you know, um, adding the or releasing the memory, right? So, uh, as—so if you see the, uh, figure on the right-hand side, right, this is the basic flow of the DCD: we have a CXL, CXL fabric manager talking to the CXL memory. Uh, there's a predefined—I would say, well-defined—interface to add and release the memory, right? And then we're all aware of how memory has been, you know, or has been populated in the host as extent, right? But the main problem here is, uh, we have been doing, uh, this whole allocation using some of the scripts from the fabric manager, right? But when we see things from a bigger scheme of things, right, we need some sort of orchestrator or the host agent on the host who can talk, which can talk to orchestrator, and also we need some sort of plugin in the orchestrator which can talk to fabric manager, right? So, let's say, um, we have a host, and we are running some workload, we are running, uh, out of memory, or they—
+
+Okay, so as I've mentioned, there's a well-defined interface between the CXL Fabric Manager and the CXL memory to initiate the add and release memory. And also we have the driver implemented to surface this memory as an extent, but the onus lies with the user to create the DCD region, to add the extent as a device text device when it is not required, and destroy it, right? So in the bigger scheme of things, we need some sort of orchestrator, or host agent, or user on the host which can basically detect the memory pressure. If there's no memory pressure, then it can talk to the orchestrator to add and release the memory, right? Let's say if we have a workload which is running on the host and there's memory pressure on the host and a need for additional memory (which is elastic memory from the pool), then this host agent can talk to the orchestrator and say, "I need X amount of memory," right? So some sort of service or daemon is required to do these things: detect the memory pressure, decide whether we can create one extent per tag or multiple extents per tags, right? If it is shared, then generate the tag, communicate to the orchestrator that "please request the memory with this tag." It can also create the mapping - I would say create the DCD regions and set the right set of interleaving configurations and so on, right? When it comes to the orchestrator - because CXL memory Fabric Manager can be implemented as a Redfish or maybe some other way - there's some sort of interface required in the orchestrator to talk to Fabric Manager, and it can use that interface to raise the request to add or release the memory, right? So basically, if we see the bigger scheme of things where we have multiple holes connected to the memory pool, these are the missing pieces of software that we need to stage to get this whole functionality from a product point of view.
+
+We should be careful trying not to overthink here, because the experience shows reconfiguring a host is an event which, well, at least with our customers, doesn't happen that often. One could even say it does not happen at all. There's the classic example of the HP Superdome back in them days, which was fully reconfigurable on the fly. You could do everything you could think of with that thing on the fly. The next release, they turned off completely. No one was using it. Point is that for these kind of applications or these kind of things, it doesn't come cheap. So you won't find them in your user, whatever - handheld devices, laptops, you name it. It will be primarily in the enterprise. And in the enterprise, you buy the systems designed for that specific task. You lay out prior: "This is the task I'm running. I need this and this and this, whatever capacity, memory, you name it," buy the system designed for that task. Full stop. If you were to redesign it, it's not that often.
+
+Yeah. I tend to agree with you, but I do feel that...
+
+And so that's one thing. The other one is if you start doing a dynamic feedback loop, please give me more memory, and so on and so forth. You're not the only one. You will be competing with others having the very same feedback loop. So again, there might be a chance you will not get your memory. Which means, why? Where's the difference for not getting the memory initially? Not that much, because we can't be sure. So shouldn't we rather invest, or shouldn't we rather concentrate on getting the things off the ground first, having some offline interface via Redfish, get it stabilized, and then worry whether we can implement a feedback loop?
+
+Agreed for the feedback loop. Absolutely! Navneet, did you get that?
+
+Right.
+
+So, as somebody who worked at HP on Superdome, I have perhaps a little bit of insight into this, which is that customers did not trust the ability of Superdome to be reconfigured. And we asked them why. And they said, "When your service engineers start believing in it, we'll start believing in it." No comment from that. But what I do want to say is that I think the reconfigurability that we do see today is very much in virtualized environments. And so if customers are going to start treating this kind of physical environment like it's a virtualized environment in terms of, "Oh, we'll squeeze this machine down to its minimum configuration, and then we'll expand it when demand increases," then maybe we'll start to see this. But I think that's much more a thing for virtual environments. It's not so much a thing for physical environments. Maybe that will change. I don't personally see it. I think you're right. I think the vast majority are going to set it, configure it, leave it alone.
+
+I think it's a matter of cost, though. I think we're seeing more customers in the data center who want to be able to dynamically adjust their memory in their machines across their data center.
+
+Yes, but not automatically.
+
+One of the classes.
+
+OK. And I think you're right about the feedback loop and the automation there, where we need to crawl before we walk, run. Totally agree with that. So actually, I was going to ask, are there anybody working on a user space host to manage this stuff? I know there's Fabric Manager people. But is anybody looking at the actual interfaces that I'm implementing? You, maybe, a little? OK. OK, so almost nobody raised their hand. So somebody probably at some company, hopefully. All right. Well.
+
+So, someone at some company is...
+
+OK.Go ahead, Navit.
+
+I think the main question comes here is, on the office, if anybody has started looking into the interfaces to the Fabric Manager?
+
+I think there have been people who are working on the orchestrator, Fabric Manager, right? OK. OK. And are you all on the mailing list? I mean, even though it's user space, the mailing list doesn't have to be only for the kernel. We have our utilities and other things. We have our QEMU discussions. So if you want to fire that up and get in touch with Navneet and start to talk about these things, we'd love to hear that feedback. OK? I think my watch keeps... Actually, I think we're out of time. Oh.
+
+We left a little time.You may be five more minutes.
+
+OK. We've got five more minutes. Did you want to wrap up, Navneet? Navneet?
+
+That's all from my side. Thanks, folks!
+
+OK. Cool. Yeah, I think we should continue this discussion on our communication channels, because it is a system. And I'm just trying to get one piece of the system done.
+
+So, for future support, I already did the QoS stuff. Navneet has been working on interleaving a little bit, but we've kind of deprioritized that. Again, to just get the basic support in. Mapping a tag of slates, we've talked about that. Splitting and merging extents, I don't think that's ever going to get done. I kind of added it here because we've discussed it in the past as a future task. I don't hear anybody saying they really want to be able to see the kernel be able to split and extend or merge extents.
+
+Correct. Right. So it... But the split case, we can probably use this tag.
+
+Agreed. So the comment was that we kind of already split extents through the ability to have a single tag with sequence numbers. We can have multiple extents that are already really part of the same unit. And more importantly, we have our DAX layer that we can then combine or use part of extents all we want. So even though the spec allows you to allocate extents down to a very, as John said, very, very small unit that's almost unusable, we're not really going to support that. I mean, the kernel will honor it if a small extent is surfaced, but we're not going to try to combine it into bigger extents or split big extents into little extents. So the idea of doing something a little bit different than DAX devices kind of gets back into whether we should online system memory or not. And so I need to explore those options a little bit more and understand them better once I get the basic support done. OK. That's OK.
+
+If at all possible, we should stick to the existing DAX device infrastructure.
+
+OK.
+
+Because, OK. While it wasn't perfect, I'd be the first to admit, and the hardware was crap, there are customers.
+
+Why do you laugh if I say there are customers? Anyway. And who happens to have been using the existing interface, for good or worse? Which means... Sorry?
+
+Yeah. Customers here, here.
+
+Right. We have customers here.
+
+Do we have? Right. No. None of those are here. I'm pretty sure of that. And if we were sticking to the existing interface, they could just use the existing framework they have, and it would work with CXL. That will make the adoption of CXL far easier for everyone involved, because they will only have to have very little tweaks to the application to get it off the ground with CXL. We can stick to the existing interface, or whatever, the interface to do whatever it needs. It's needed there. So the adoption will be far easier. If we now start to move things around and do things differently, people will have to change the application, thereby delaying the adoption. Or even at worst, saying, 'Oh, you know what? DAX was crap. We are not going to invest in that one because you messed up again.
+
+Right, and that's why I'm targeting DAX initially. But to get back to your earlier comments, we do kind of need a better way to be able to online system memory and offline system memory. And so that is a much harder problem to solve. But I think that going forward, we can probably do better. And I don't... OK. I've got a stop sign. OK, we're done. Last comment.
+
+Why do you say that onlining system RAM is a much harder problem when you already have memory hot plug?
+
+Because hot plug isn't a guarantee; it might work. But what we're looking for with DCD use cases is that it must work. We must be able to take the memory back.
+
+You can't get the memory back, that's it.
+
+Yeah.
+
+Dan said that just tell people they can't get their memory back, that's it.
+
+Well, that's what I'm telling them: if they online it as system memory, you're not going to get it back. So please don't do that, which was the other slide that was controversial. So anyway, OK, well, thank you.
