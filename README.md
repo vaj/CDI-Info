@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 337 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 338 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4990,6 +4990,14 @@ Chris Petersen
 [Text](./311)
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
+Michael Ocampo and Ahmed Medihoub
+
+[YouTube](https://www.youtube.com/watch?v=zOIG24W_ibY)
+
+[Text](./342)
+
+[Acronyms](./acronym.md): AI AMD ARIES CMS CPU CXL CXL.cache ChatGPT DDR5 DIMM DLRM EPYC GPT GPU IO KV LEO LLM NVIDIA NVMe OCP OPT PCIe SSD
 
 ### Broadcom
 
