@@ -1,1 +1,154 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hey, I'm Robert Richter. This presentation is done by Terry and me; he's also in the audience. We are working at AMD on CXL. There's a second part here which is done by Srini from Micron. It's about RAS page offlining. There are lots of slides on RAS, and I want to go quickly through it and also skip some content here because we are short on time.
+
+So, the CXL RAS specification has a couple of features included. There's first error handling for various protocols, link and protocol errors, device errors. Then there is CXL error injection, poison and viral handling. It's awful. And there are maintenance event records and commands also available, which are available through the CXL mailbox. And there's also CXL error isolation. The main topic here is on CXL error handling, but, yeah, some of the features are related to each other. Okay.
+
+So, CXL error handling. We have link and protocol errors here which are using mainly PCIe AER. We need to consider two modes here; I will talk on this a little later. Then there's the device errors using the event logging facility, the mailbox driver of a device or a component. And the third part here is firmware error reporting. There have been some CXL extensions to ACPI as well, which also needed to be implemented in the kernel.
+
+So, link and protocol errors—there's a variety of things that need to be considered and implemented. We have a number of components involved with the two modes that are available: we have a restricted mode and VH mode. So, the restricted mode obviously has a downstream port and an upstream port, and then there is the restricted CXL device which is showing up as a good complex integrated endpoint. And in VH mode, all the CXL components are visible through the PCI hierarchy: which are the root ports, downstream switch, upstream ports, and the endpoint also as a PCI device. The protocol types supported are CXL.io and CXL.cachemem, which is covering the cache and mem protocol. And there are a lot of register blocks that need to be inspected when an error happens. The first one is the AER error space, or registers, which are in the PCI configuration space. Then there is the DVSEC block for the CXL devices and ports, also in the PCIe config space. And additionally, there's the CXL RAS capability, which is the CXL.cachemem block in the MMIO space, and this is available for all the components: the host bridge, and all this is using PCIe AER, and in the end, the kernel generates trace points, and there will be another talk later on EDAC integration, so it could possibly later or in the future also be forwarded to the EDAC subsystem.
+
+A few words on AER. So, this is the mechanism used for error handling for CXL. All CXL components need to support AER. The I/O errors are locked through the AER extended capability, and cachemem is using correctable and incorrectable internal AER errors. Once this error triggers, then the CXL RAS capability needs to be inspected. There is one challenge in the implementation we discussed yesterday in the PCIe session already, which is the port driver implementation for CXL error handling. We do need basically a custom port driver to further handle the CXL specifics. But the good thing is that PCIe AER basically exists in the kernel already. There are a few explanations.
+
+Sorry, Robert, just to ask a quick question. So for the custom port driver there, how much do we need? What's actually needed for that?
+
+Yeah, if an interrupt triggers, then we need to look up the CXL RAS capability, and for that, we need to do the mapping between the device and the CXL RAS capability. So, and this is only available in the CXL stack.
+
+Okay, yeah, that needs some thought.
+
+Okay, for restricted modes, the things or AER need to be slightly extended here because the devices do not show up in the PCIe hierarchy. We have there's the special RCRB, or root complex register block, where the AER registers are in, and also the RAS capabilities are not mapped through the PCIe member 0 but using the member 0 in the register block. And the notification is done through the event collector. So for restricted CXL devices, we need the RCEC implementation here too.
+
+So, what's done in the kernel? The AER handling, CXL AER handling, and of correctable errors has been extended in 6.2 along with the RAS capability and trace point support. Then, in 6.3, there was error unmasking to enable the intermaps for the RAS capabilities. And restricted mode for downstream ports were implemented or added to 6.5 and 6.7. And there is a patch set posted by Terry on a port device support for ports in VH mode.
+
+Device errors. The device may report poison or viral, non-memory errors—which is the last section I talked about—linkoln protocol errors. And memory errors. The memory errors themselves are using the CXL specifics of event logging and signaling. That means for errors, the general event logs are used, and the notifications are using MSI, MSIX device interrupts.
+
+So, event logging not only uses uh error handling, but also there is an interface used here for the mail box. The errors or the events are for reporting errors and also requests and responses between CXL components, which are used in DCD also. So, the mailbox commands, there are access mailbox commands to read the event log, and the status here that all kinds of events are supported in the kernel and access, whereas DCD support ongoing, but no switch, physical switch support yet.
+
+What went into the kernel in 5.16, there was very early the mailbox support added, and in 6.3, we had the event logging including interrupt support. There is an extension for PoisonList, List, and Injection, and in 6.4, the background command execution for the event log was implemented. In 6.5, and in 6.10, the IO control of the mailbox commands has been extended to also support error handling, or the error commands.
+
+Firmware support, this is ACPI, using the CPER records has been added on GHES. So, for the records, we have support for all the agents that are available in both modes. The error record includes basically the AER configuration space, that is part of the AER error, or GHES, CPER record; there is also the DVSEC space, available, and the CXL RAS capability, which is coming from firmware, then; for the components, we have the record was extended to use, or to also include the event record as specified in the CXL specification.
+
+In addition, we need operating system capability handling for firmware, basically to enable the OS first mode. So, there have also been some changes needed in the kernel, and then also, same here, same for OS first, kernel trace point support, to, yeah, to, to have the ability to report the errors to the kernel.
+
+So here are the achievements: first, OSC support, finally in 6.7; then, CPER event decoding in the ACPI driver, in 6.2; error injection has been added in 6.9, and CPER, CXL driver support in 6.8 and 6.10.
+
+Robert, sorry, before we move on, a really basic question on the error testing thing is: also, the error reporting side of things is, how easy is it to test? Because, should we say, error injection platforms are usually a pain in the backside?
+
+Yeah, we are; some sort of injection is possible, but not always implemented. Terry, do you have something to add?
+
+Job for Mauro here.
+
+So, and I think also in QEMU, there's some support of error injection.
+
+Yeah, what I did with some of the CPER stuff is I literally just hacked something into debug FS, and then didn't submit the patch for that, so...
+
+Over there.
+
+I think it's worth calling out, mainly because he sat there, very briefly, sorry. We do have some work that Mauro's taken over, where we're trying to add to QEMU, the ability to inject pretty much any error through the ACPI Pods. Yeah. We haven't, yeah, I actually dropped the CXL support for that, because it was changing too quickly, but we'll bring that back. But for now, it's, yeah, getting the basic infrastructure in place, but it's going fairly well. So that should solve that problem. He was first. My throwing's terrible.
+
+So, two things. So, for error reporting, and how well it works in practice, I've found that any cache errors are pretty self-evident when the machine, you know, machine checks, and throws some really bizarre errors out of the CPUs. Question about the firmware, though. So, on, like, the vendor side, how many vendors are you aware of that have signed up for this type of ACPI support? Because, in my experience with certain vendors that will be unnamed, their CXL support and ACPI is leaving a lot to be desired, where there's, like, flat-out problems with mapping devices. And Dan knows a little bit about this, but... where it's just flat-out broken.
+
+Yeah, well, I at least know one vendor, so; but.
+
+Fair enough. I mean, we have one big vendor that is just broken, and then other vendors that are like, you know, hold my whatever, and watch this, and then they can fix it, so.
+
+At least anything can be fixed in firmware, somehow.
+
+I guess it's not so much depends on the vendor, but also on the eventual distributor, like hardware vendor, HP, or you name it. Because these are those who tend to be very insistent on firmware-first modes, on the grounds that they have their management agent, BMC, you name it, and want to see everything. Those hardware vendors currently implementing that stuff are not that chuffed about it, because, well, they don't have, like, BMCs as such. And so they are not that worried, and do whatever they've been told. I guess the real push will be coming once the systems go live on real hardware, and then we'll see a push for that.
+
+Thank you. Back to the error injection question. Of course, a lot of that is platform-dependent, using, like, for instance, the EINJ module. But we also have a recent upstream patch that adds it adds injection support using the SFS files. Now, I don't know how complete it is for different components, but it's a good start, such that it'll be independent of the platform. And it should work for QEMU, as well, is what I would expect.
+
+Is that company's name next?
+
+No, actually, Ben on our team upstreamed that. That was for the . . . Isolation in order to take down the upstream port. I'm sorry, the downstream port.
+
+And then I'm also aware that there's a compliance DOE in the spec, but I'm not aware of anybody having enabled that. But you can inject errors via that, I know. But I'm not aware of any tools for that.
+
+You can inject a very, very small subset of stuff. That thing is not super useful. We do, in theory, have QEMU support for it. In practice, it's not wired up to do anything. It just fakes it.
+
+Which tool is that?
+
+This is the compliance DOE. But I think the idea is that no one will ship a part with the compliance DOE turned on. So, unless you can get a prototype, well, I guess maybe we can get prototypes, but...
+
+OK, so I'm not sure if you know me, but I'm the author of RAS Demon and one of the RAS reviewers. And we've been doing this work, as Jonathan mentioned, on QEMU. The idea is that we are adding a script that can inject any kind of CPER record, so it can even be used to generate fuzzy testing. And with that, we can inject not only CXL but also all kinds of errors and even try to crack the kernel by injecting some Defective packages there. So, maybe it would be interesting if you could take a look at our work, and it could be helpful to check the developments.
+
+Thanks.
+
+But back to your question about vendors and their various firmware-first support, I mean, my entire deal with CXL is that the kernel would eventually obviate the need. Like, yes, we can interoperate the firmware first, but the kernel can supplement when the firmware first is not there. I think I've seen people saying, 'Oh, no, we need firmware first.' I mean, so if it's there, great. But if it's not, Linux should fill the gap.
+
+Yeah, there's OS support to enable OS-first.
+
+The kernel rules all.
+
+We need to hurry up, because it's already 17 minutes. So Poison Viral, basically, there's just only one thing that needs to be added here, which is a media Poison and management the mailbox command. Everything else is handled through the generic memory management system. And oh, I'm sorry. I was on the wrong slide.
+
+So for Poison Viral and for CXL isolation, we have this posted patch set from Ben, but that needs a user. And that's all on .error handling. So Srini, are you there?
+
+Firstly, thank you, Robert and Jonathan, for helping in the match of the PPT. Can we go to the first slide? The next slide?
+
+Yeah. So the agenda is like, how is the device fault domains or the error sources and error coverage, error reporting specific to DRAM events, which is specific to this page offline.And we have this PFA, Breakthrough Failure Analysis Algorithm, implemented in RAS daemon.And this is already kind of offloaded in the CXL Type 3 devices as a part of advanced CVME, which can leverage to do page offline.That is what we are going to discuss.Can we go to the next slide, please?
+
+Yeah. So typically, these are the fault domains on the CXL link: either we'll have CXL link faults and memory faults. The area of... The primary focus for this discussion is memory faults. Memory faults including data, single bit, row bit, or different like row, bank, and device specific. Can we go to the next slide, please?
+
+Yes. So here, I want to spend a bit of time. So the errors from the memory, you know, broadly categorized, or broadly, these are primarily most happening is single bit error which can be recovered using ECC, and patrol score, and the other cases, like even if it is corrected by ECC, it can be persistent, then we can use page off lining, and row failures, bank failures, device single bit failure. And the last one is like, you know, you have a device failure, a multi-device failure, which we need a hard paradox for offlining. From top to bottom, the occurrence of errors, you know, the probability is less at the top, it is more probability compared to the bottom row. Uh, can we go to the next slide, please?
+
+So this is an existing, you know, CXL error reporting that we—that we have adapted. The device would log the errors into a logging system, and then it triggers the interrupt to the OS, and the OS will—will—will create trace events for that. And the user-space applications can dual-age this trace event. So far, we—what we have for DRAM events is reporting for the for the DRAM event. So, there is a lacking of acting on the error—that's where you know, this this—this what we are proposing can help. Can we move to the next slide, please?
+
+So, yeah, yeah, so this, this, this is what I was talking about—the predictive failure analysis algorithm that we have in the uh RAS demon, and uh, similar, you know, we have in the CXL spec, advanced CVME. We call uh, uh, section eight to nine, we have this advanced CVME. What it does is that the device, type two device, um, can have the thresholds be being configured, and and the time, and the uh, uh, refresh cycles. And based on that, that uh, after these many, you know, events within the device, it can, it can, it can trigger the event to the, um, to the OS. What we are trying to do here is like, we are, we are uh, segregating the events and reporting to the operating system at once. So, that is advanced CVME you know, PFA. Can we go to the next slide, please?
+
+So, here's what we like, what we can leverage: we have a DVR amendment. When we get a CE, uh, the correctable address for that CE, we have a physical address associated with it. From the hit from the device address to, you know, the host address, the mapping being done, and we have the mapping in the Linux kernel itself. And we are already, you know, having that being exposed to the asset trace event. So now we have the HPA at the user space level for the given record. And with that HPA, what we can do, we can do a page offline in the RAS daemon. And we also need one more input: whether this threshold has been triggered or not. If there is no threshold or if there is no support in the advanced CVME, this similar thing can be done using, you know, EDAC. But here, the advantage of, you know, having thresholds is that the device has more knowledge of the errors, and it can be more accurate, rather than doing it in software and having some thresholds. Um, can we go? We're going to move to the next slide, please.
+
+So, yeah, so once we get uh, see whatever the first four point, which is already exist, and this is one, but what we want to you know, have it in the uh RAS demon, and also then I want to propose some interface in the Linux also to make it easy. Um, so once the CE threshold is set, and if it has a corrected error, what we do is in the RAS demon, we'll try to indicate that it requires a page offline, based on the configuration in the RAS demon. Uh, it can be a soft offline or a hard page offline. Can we go to the next slide, please?
+
+So, this is, you know, I'll go, you know, what we can add—these are the...we, we are getting the HPA from the trace and having a record of it. And we are storing it for persistent uh record. And also, we are, we are, we are reporting instantly. Apart from that, what we are looking at is this is a corrected error, and if the threshold is met, instantly, what we are trying to do is, in the in the last line, we are instantly indicating that this is a good candidate, or you know, this address can be page offline.
+
+And any questions?
+
+We've got a minute or two for a couple of questions, I think, so is that... I think that's your final slide, is it? Yeah, I thought so.
+
+So we had this concern about whether, whether, whether the RAS daemon should grow support for native CXL error records, or whether the CXL driver should be translating memory events into the existing memory error records that the RAS daemon already understands. Um, is there a benefit either way? Uh, like one of them actually pushes the problem to user space.
+
+From RAS's point of view, it doesn't really matter if this is a hardware first or a firmware first event; it can handle both cases. Uh, in the case, we actually use traces to get the event there as a RAS daemon, so whatever it is input, it can be handled the same way internally there.
+
+I think one thing here is that some of the information can be a lot richer than goes through the normal algorithm, so, so for some of this predictive stuff, if you aren't doing it on the hardware, you want to push as much information as possible up to whatever algorithm is running.
+
+So, one question: how complex would it be for the kernel to notify the device that a certain range of addresses has been offline?
+
+So, we have this interface to indicate the software plane, and page offline RAS demon is currently using those interfaces. That is for RAS demon; you just require what HPA that need to be offline.
+
+The point is, the best approach is to have one user space because then you can have your policies in user space, another in character space, and an internal loop at the kernel for it. For example, to offload some pages, it means that you are actually placing your business decisions at the kernel. It's usually not something that we would want to do.
+
+I think what Danilo was asking was slightly different, which was more that when we've done the offline, till the hardware, why does the device care?
+
+The device can optimize some media management operations. 
+
+So stuff that's kind of lighter weight than, say, PPR or sparing. But some...
+
+Avoid sparing if a page is being offline, or a set of users is being offline at the node.
+
+OK.
+
+That's not in existence. I was thinking, sparing.
+
+Yeah, I mean, it's easy to do.
+
+So we could actually fix the page.
+
+Well, we have the slight snag, I don't think there's a hardware-defined interface to do it yet.
+
+No.
+
+So, those of us who are in the consortium may see one shortly.
+
+Yeah.
+
+Well, we still need an interface to tell the hardware, 'If it's useful to the hardware to optimize, it's information that's easy to squirt down.' Yeah. Well, we... Yeah. So I should have added to that at the beginning that we won't discuss anything that's been discussed in the standards organization, however, this has not been discussed in the standards organization, so we can merrily talk about it.
+
+And now that we have talked about it, we can continue to talk about it, even if the consortium talks about it.
+
+Absolutely. Well, yeah, as long as we don't convey any information. But yes, we haven't had to call that out yet today, but I will stop people if they do verge into that stuff.
+
+Right.
+
+But so far, we haven't. So, thank you very much.
+
+Thank you.
