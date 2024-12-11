@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 338 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 339 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4953,6 +4953,22 @@ Kurtis Bowman
 
 [Acronyms](./acronym.md): UltraEthernet AI AMD CPU CXL DMA GPU HPC HPE InfiniBand LinkedIn NIC NVIDIA PCI PCIe TPU UALink UCIE UEC
 
+Robert Richter
+
+[YouTube](https://www.youtube.com/watch?v=uFrTEsYz0IQ&t=1s)
+
+[Text](./343)
+
+[Acronyms](./acronym.md): ACPI AER AMD BMC CE CPER CVME CXL CXL.io DCD DOE DRAM DVSEC ECC EDAC EINJ FS GHES HP HPA IO MMIO MSI MSIX OS OSC PCI PCIe PFA PPR QEMU RAS RCEC RCRB VH
+
+Terry Bowman
+
+[YouTube](https://www.youtube.com/watch?v=uFrTEsYz0IQ&t=1s)
+
+[Text](./343)
+
+[Acronyms](./acronym.md): ACPI AER AMD BMC CE CPER CVME CXL CXL.io DCD DOE DRAM DVSEC ECC EDAC EINJ FS GHES HP HPA IO MMIO MSI MSIX OS OSC PCI PCIe PFA PPR QEMU RAS RCEC RCRB VH
+
 ### Ampere
 
 Seema Mehta
@@ -5218,6 +5234,14 @@ Ravi Gummaluri
 [Text](./310)
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+Srinivasulu Thanneeru
+
+[YouTube](https://www.youtube.com/watch?v=uFrTEsYz0IQ&t=1s)
+
+[Text](./343)
+
+[Acronyms](./acronym.md): ACPI AER AMD BMC CE CPER CVME CXL CXL.io DCD DOE DRAM DVSEC ECC EDAC EINJ FS GHES HP HPA IO MMIO MSI MSIX OS OSC PCI PCIe PFA PPR QEMU RAS RCEC RCRB VH
 
 Vishnu Balraj
 
