@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 340 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 341 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -265,6 +265,8 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Arm](#arm-3)
     - [Astera Labs](#astera-labs-6)
     - [Broadcom](#broadcom-2)
+    - [Dell](#dell-3)
+    - [Elephance Memory](#elephance-memory)
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [H3 Platform](#h3-platform-3)
@@ -275,8 +277,10 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
+    - [MetisX](#metisx)
     - [Micron](#micron-1)
     - [Microsoft](#microsoft-5)
+    - [Mips](#mips)
     - [Montage](#montage-1)
     - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
@@ -5025,6 +5029,26 @@ Arvind Jagannath and Sudhir Balasubramanian
 
 [Acronyms](./acronym.md): AI CPU CXL CXL.mem DDR DRAM ESX GA NVMe PCIe ROI SQL TCO VDI VM VMmark VMware VSI
 
+### Dell
+
+Shyam Iyer
+
+[YouTube](https://www.youtube.com/watch?v=Zmeq8C7pfjU)
+
+[Text](./345)
+
+[Acronyms](./acronym.md): AI API ARM ASIC CMN CMS CPU CTO CUDA CXL DNA DRAM FPGA GPU HBM IO ISA MIPS NVIDIA NVMe OCP ONNX OS PCI PyTorch RAG RISC SDXI SIMD SNIA SOC URL oneCCL
+
+### Elephance Memory
+
+Pankaj Mehra
+
+[YouTube](https://www.youtube.com/watch?v=Zmeq8C7pfjU)
+
+[Text](./345)
+
+[Acronyms](./acronym.md): AI API ARM ASIC CMN CMS CPU CTO CUDA CXL DNA DRAM FPGA GPU HBM IO ISA MIPS NVIDIA NVMe OCP ONNX OS PCI PyTorch RAG RISC SDXI SIMD SNIA SOC URL oneCCL
+
 ### FSAS Technologies
 
 小口 直樹
@@ -5217,6 +5241,16 @@ Prakash Chauhan
 
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
 
+### MetisX
+
+Jay Yeon
+
+[YouTube](https://www.youtube.com/watch?v=Zmeq8C7pfjU)
+
+[Text](./345)
+
+[Acronyms](./acronym.md): AI API ARM ASIC CMN CMS CPU CTO CUDA CXL DNA DRAM FPGA GPU HBM IO ISA MIPS NVIDIA NVMe OCP ONNX OS PCI PyTorch RAG RISC SDXI SIMD SNIA SOC URL oneCCL
+
 ### Micron
 
 John Groves
@@ -5266,6 +5300,16 @@ Samir Rajadnya
 [Text](./332)
 
 [Acronyms](./acronym.md): AI CMS CPU CXL ChatGPT DDR GPU GenAI HBM HBM4 IO KV LLM LPDDR NV NVIDIA NVLink NVMe OCP PCIe RAS SKU SSD TCO UALink
+
+### Mips
+
+Durgesh Srivastava
+
+[YouTube](https://www.youtube.com/watch?v=Zmeq8C7pfjU)
+
+[Text](./345)
+
+[Acronyms](./acronym.md): AI API ARM ASIC CMN CMS CPU CTO CUDA CXL DNA DRAM FPGA GPU HBM IO ISA MIPS NVIDIA NVMe OCP ONNX OS PCI PyTorch RAG RISC SDXI SIMD SNIA SOC URL oneCCL
 
 ### Montage
 
