@@ -47,6 +47,7 @@
 | ARM                 | Acorn RISC Machine                                                        |
 | ARM64               | Acorn RISC Machine 64                                                     |
 | ARP                 | Address Resolution Protocol                                               |
+| ARS                 | Address Range Scrub                                                       |
 | ASIC                | Application-specific integrated circuit                                   |
 | ASL                 | Application Services Library                                              |
 | ASPEED              | ASPEED Technology Inc.                                                    |
@@ -126,6 +127,7 @@
 | CDN                 | Content Delivery Network                                                  |
 | CDT                 | Core Device Table                                                         |
 | CDU                 | Coolant Distribution Unit                                                 |
+| CE                  | Correctable Error                                                         |
 | CEDT                | CXL Early Discovery Table                                                 |
 | CEI                 | Common Electrical IO                                                      |
 | CEM                 | Card Electromechanical                                                    |
@@ -211,6 +213,7 @@
 | CTO                 | Chief Technology Officer                                                  |
 | CUDA                | Compute Unified Device Architecture                                       |
 | CV                  | (numerical formula)                                                       |
+| CVME                | Corrected Volatile Memory Error                                           |
 | CVSS                | Common Vulnerability Scoring System                                       |
 | CWDM4               | Coarse Wavelength Division Multiplexing 4                                 |
 | CWWDM               | Continuous-Wave Wavelength Division Multiplexing                          |
@@ -350,6 +353,7 @@
 | ecoHMEM             | Automatic Data Distribution for Heterogeneous Memory Systems              |
 | ECR                 | Engineering Change Request                                                |
 | ECRC                | End-to-End Cyclic Redundancy Check                                        |
+| ECS                 | Error Checking and Scrubbing                                              |
 | EDA                 | Electronic Design Automation                                              |
 | EDAC                | Error Detection And Correction                                            |
 | EDK                 | UEFI Development Kit 2020                                                 |
@@ -375,6 +379,7 @@
 | EMIB                | Embedded Multi-die Interconnect Bridge                                    |
 | EMR                 | Emerald Rapids                                                            |
 | EMS                 | Elastic Memory Service                                                    |
+| EINJ                | APEI Error INJection                                                      |
 | ENIC                | emulated Ethernet NIC                                                     |
 | EP                  | Endpoint                                                                  |
 | EPI                 | European Processor Initiative                                             |
@@ -1049,6 +1054,7 @@
 | PERST               | (state name)                                                              |
 | PESTI               | Peripheral Sideband Tunneling Interface                                   |
 | PETSc               | Portable, Extensible Toolkit for Scientific Computation                   |
+| PFA                 | Predictive Failure Analysis                                               |
 | PFM                 | Primary Fabric Manager                                                    |
 | PFN                 | Physical Frame Number, Page Frame Number                                  |
 | PFRA                | Pageframe Replacement Algorithm                                           |

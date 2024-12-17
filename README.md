@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 341 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 342 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5113,6 +5113,20 @@ Jonathan Cameron
 
 [Acronyms](./acronym.md): CXL DAX DCD FAMFS HP NUMA PMDK QEMU QoS RAM VM
 
+[YouTube](https://youtu.be/4pB8eP8kitY?si=9BijYBW8fAecwNjt)
+
+[Text](./346)
+
+[Acronyms](./acronym.md): ACPI ARS CSP CXL DAX DPA DRAM ECC ECS EDAC HPA NUMA NVDIMM OCP PCI PMEM PPR RAS
+
+Shiju Jose
+
+[YouTube](https://youtu.be/4pB8eP8kitY?si=9BijYBW8fAecwNjt)
+
+[Text](./346)
+
+[Acronyms](./acronym.md): ACPI ARS CSP CXL DAX DPA DRAM ECC ECS EDAC HPA NUMA NVDIMM OCP PCI PMEM PPR RAS
+
 ### Intel
 
 Anjaneya "Reddy" Chagam
@@ -5276,6 +5290,14 @@ Srinivasulu Thanneeru
 [Text](./343)
 
 [Acronyms](./acronym.md): ACPI AER AMD BMC CE CPER CVME CXL CXL.io DCD DOE DRAM DVSEC ECC EDAC EINJ FS GHES HP HPA IO MMIO MSI MSIX OS OSC PCI PCIe PFA PPR QEMU RAS RCEC RCRB VH
+
+Vandana Salve
+
+[YouTube](https://youtu.be/4pB8eP8kitY?si=9BijYBW8fAecwNjt)
+
+[Text](./346)
+
+[Acronyms](./acronym.md): ACPI ARS CSP CXL DAX DPA DRAM ECC ECS EDAC HPA NUMA NVDIMM OCP PCI PMEM PPR RAS
 
 Vishnu Balraj
 
