@@ -1,1 +1,138 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Shiju, who's online, and myself, and Vandana, who's going to kick things off.
+
+Hello, everyone. Myself is Vandana Salve. I'm from Micron, working on CXL software architecture. And today, along with Shiju and Jonathan, I'll start with an introduction to the things that are to be covered in this. Typically, the goal is to cover the RAS control features, as such. So when we say the RAS control feature, particularly, it refers to this configuration control and the capabilities that are to be exposed to the management agent, as such. And typically, you're...
+
+So, you're in this case, we'll discuss what are these RAS features and why they are to be in kernel, and the different use cases.
+
+And to summarize, the RAS control features that are to be covered are: the patrol scrub, error check scrubbing, memory sparing, and PPR functionality, as such, and the control threshold, as such.  So, particularly, when we are starting with the ECS, as ECS, using the ECC error correcting code allows the DRAM to internally read and do the correction, single-bit correction, and write back to the memory, providing the error counters, as such. And basically, the flow goes through: it provides the configurations, allows the configurations with various parameters, as ECS threshold counters and reset counters, and the mode of operations, as such. And also, it provides the ECS logs so the host can collect the results of these ECS parameters. And patrol scrubbing, basically, ECS handles the correctable errors, whereas the patrol scrub mechanism also handles correctable as well as uncorrectable errors. And it provides, through the various configurations, through the host, such as: like whether this patrol scrub is enabled or not, or how the patrol scrub cycle can be changed, or not, what should be the patrol scrub cycle value, and what would be the smallest number of the patrol scrub cycle, as such. So, those are the configurations that can be controlled by the patrol scrub, as such. And when the number of errors exceed, when the number of errors exceed, exceeds a particular threshold value through the patrol scrub, it generates an event record. Typically, it has been passed through the DRAM event record or the media event record, as such. And particularly, the actions is like the discussion has to be continued later on with Jonathan, like what appropriate actions can be taken from the admin side, like using the RAS daemon, the appropriate action would be to trigger the page offline on those event records, as such, and going back to the memory sparing and the PPR. PPR is basically the post-package repair. It's for the repair operation whenever the error happens, as such. And it was a feature introduced in 3.0 specification, as such. And basically, it works for repairing on a row. A row sparing happens, as such, whereas the more generic definition is evolving 3.1 for the memory sparing, where it provides more modes of operation, like not limited to row sparing, but the cashline sparing, bank level, rank level, as such. And so, yeah, these are the ones, and then the error reporting can be done through the various threshold counters, as such. So, these are... And one more feature that I was applying to talk, but due to limitation, was the memory degradation. That was the announcement to 2.0 specification. Basically, it is like whenever the error occurs, and if the system identifies that the memory can be taken offline altogether, instead of that through this memory degradation, it can report that the memory has been degraded, and accordingly, the system firmware can update the size and report back so that the memory can still be used, as such. Okay, so next, I would hand over to Jonathan to continue on this discussion. Thank you.
+
+Thank you very much. Okay, so now we're going to move on to what we proposed as initially a separate subsystem, but since then it's become enhancements to the existing EDAC subsystem to control all this stuff.
+
+And yeah, one of the opening questions is why do we do this in the kernel at all? We could push it all to user space. We could just have mailbox commands for this. However, there are some of these features that are not safe. One particular one is PPR. So for PPR, there are devices that will implement it so that you can do it safely on memory that's in use. And there are devices where you can't. If you attempt to do so, you get to pick up the pieces because the memory just disappeared underneath you briefly. There are some devices where you have to create all traffic to the device. Hopefully, no one builds those ones, but we do need to support them. The other aspect of this is if we push things down into the kernel, it does allow us an option to generalize. We're talking today mainly about the CXL features that support these things, but there are others. We actually, the very first time we proposed this, it was only with ACPI RAS 2, which provides scrub interfaces. And the reason for that was that the CXL spec hadn't been published yet with the features because this was pre 3.0. So when we originally proposed this topic, the patch set has been through quite a lot of versions. I think we're on version 12. We were having some challenges in getting reasonable feedback on it, whereas actually that, in the meantime, has been reasonably resolved. We've had a lot of good feedback from some of the RAS maintainers and EDAC maintainers. So things are actually ticking along reasonably well. So now I think the focus should be a little bit more on what are we missing, what enhancements are needed, any questions people have about the topic.
+
+So, yeah, why EDAC? Well, it's kind of where the related stuff is. This is more a grouping topic, as much as anything. It's bringing everything together, enhancing existing interfaces. Yeah, EDAC is unusual. It's quite, it's been around a while. Let's say it's mature. As a result, it uses the Linux device model in a somewhat novel fashion. You only have, I think, two devices. You have one called 'Mem' that covers all memory, and one called 'PCI' that covers all PCI, under which you have a whole load of child directories with stuff in.  What we wanted to do while doing this was move to a much more conventional sort of, well, it's a bus as a class. So because EDAC's a bus, we're going to do it that way. But it could just as easily be a sysfs class. And that means that we end up with separate devices. The strategy at the moment is to do a device per kind of instance of the thing that we are controlling on. Now for CXL, sometimes the feature makes sense to control at the level of an individual physical device. Sometimes it makes sense to control alongside the region. So if we mounted it and we got DAX on top of it, et cetera, it may make sense to associate it with that. It may not. So some of these features you'll see in both places. So if we've got scrub control, for instance, the reason you do it on the device side is that actually you quite often want to know if you've got a problem before you do it. You turn the device on and start using it. So a classic thing to do is to scrub on the devices you're not using, because then what you will see is if they've got a bit of a failure rate, you'll get some idea of what it is. And you may elect to not use that device. However, you also want to scrub when live. So you want to associate it with a region, which might be across a whole load of interleaved devices. So the idea here is that basically you get the most frequent scrub anyone's requested is. So yeah, you write to either the region one or the device one. And then we match whatever's requested, and you will report it back through the other interface. It's a little clunky, because you've got two interfaces to the same thing. But it at least means that both those use cases are covered.
+
+So, if you scrub a device that's online under a region, that still works? It's just going to happen underneath?
+
+Okay. Yeah. If you've requested a higher scrub rate for the region, we'll respect that.
+
+And I presume that you are going to have DPA reporting for one, and HPA for the other, kind of thing?
+
+The reporting is, actually, for this stuff, just going to be via the normal error reporting part.
+
+OK, but is it going to be address-based scrubbing? Or is this going to be a scrub device?
+
+For CXL, at the moment, it's just scrub device. The spec, I think, doesn't allow for more detail. Actually, the ACPI RAS 2 thing does. So, there, we may have on-demand scrub of particular regions. You want some differentiated reliability? You've got some region with really important memory in it. So, we're going to use a high scrub rate on that and lower as well.
+
+And when you say region, are you talking about the device partitions or CXL region?
+
+Yes.
+
+OK.
+
+So this is purely the region bit. You could move this all to user space. You could figure out where they are and control down the underlying devices, or not.
+
+Here, we are talking about both for CXL stuff. But what about the normal memory? Are you also planning to have a separate bus for that? Or what are you thinking about?
+
+Yeah, no, this is all on that bus. You can see there that we have a third entry, which is ACPI RAS 2. And that's representing the normal memory, assuming it's using that particular ACPI interface. We only have one vendor that we're aware of is actually using that today. A number of others have evaluated it. Should we say that spec has problems? One of the absolute classics is it doesn't define the units. So you can control scrub, but you've no idea what the multiplier is. So that will hopefully get fixed, and we will update the code to support that. But today, yeah, these little details that sneak through. But it is in use. And we have had, there are complexities around that to do with, it's supposed to be per NUMA node, the control. You're supposed to have a, you basically pick which NUMA node it is. But there are people who have implemented the mailbox, so there is only one across the whole system, so you can end up trampling on each on each instance, trampling on the other ones, so you have to be a little bit careful. So we've got a few quirks in there from what the spec actually says.
+
+Yeah, at least for me, splitting this per NUMA node or per memory controller, actually would make sense.
+
+Yes.
+
+Because it may have differences, and the, or
+
+Oh, absolutely.
+
+Yeah.
+
+Yeah, I mean, the intent here is to push the figuring out which memory you're actually controlling to sort of the next layer up. So we do that from rest. So this is just exposing all of the information you need to figure that out. In many cases, a CXL region is going to correspond to a NUMA node. But you can have multiple regions for reasons of how you set the thing up. And you still want to be able to control them separately. So yeah, I mean, it's possible we'll end up with yet another layer on top of this. And we'll have a NUMA node one with yet another scrub. Yeah, we'll have to see how that works out. OK.
+
+So we do have a RAS daemon. So Shijie wrote this proof of concept to do scrub control. We thought, well, OK, what's the algorithm here? Well, we need a reason to increase how often we're scrubbing. Let's just use a threshold on the number of corrected errors that are reported. So if you get a load of corrected errors, we crank the scrub rate up. Now, the idea here being that you'll fix the things earlier. You will, of course, end up with more corrected errors reported. So it's a very, very simple algorithm. We only crank it up to the, this device, this is bad level, and then we leave it there. So there's no control theory going on here. There's no dynamic control at all. It's just a, it's looking bad. Scrub it more. That obviously is garbage. There's no way anyone's going to ship that. But the point of this was just to show that the interface provides everything that's necessary to implement something sane. If anyone does have suggestions on what such an algorithm would actually look like, yeah, get in touch. We'd love to put something more realistic on there. But until these devices are out there, we're kind of assuming, clunky hack is the way to start, and come around later.
+
+This is my ignorance about how these things can actually get deployed in the wild, but like, I mean, is the open-source thing? But do each CSP environment have their own RAS policy thing? So like, this would be a sample policy for those people to adopt?
+
+Yeah, so I mean, well, there's several things here. This was one of the two obvious use cases. The other one is, the hot plug case, which is that you need something to squirt in an initial set of settings. And that one's much simpler, because that'll just be a hard-coded udev policy. Well, not hard-coded. It'll be per particular vendor, or a particular cloud, or whatever. They'll have a policy for how often they scrub their memory. And you just plug them into the devices, all is good. This one, yep, you're going to need some policy type controls on top of it. At the moment, it's just one value. Maybe two, actually. I think there's a scrub rate and a threshold, which is obviously silly. But it gets us going, shows that the thing works.
+
+So you just said something that confused me. Do the devices periodically scrub on their own, or is it?
+
+OK. This is all hardware scrubbing. So the devices are merrily doing it. Any sane device is going to scrub. By default, it will be on at the beginning. All we're typically doing here is tweaking the parameters of that. You can, in theory, turn it off. The only reason I know anyone ever does that is benchmarking.
+
+OK.
+
+Where what they're actually trying to do is, they're trying to get rid of a source of noise.
+
+OK, well, that's just my ignorance of the hardware. 
+
+So, yeah.
+
+So yeah, that side of things. Yeah. Yep, as I said, there are some issues. I think we already touched on those. Oh, yeah, yeah. The RAS 2 also allows multiple scrub ranges. So you can say, well, I want to scrub this range at this rate and this range at a different rate. Unfortunately, there's no way of discovering how many there are or what the restrictions are. So it's just give it a go. That doesn't make for a nice software model. So one of those things I am interested in, which is obviously not so CXL-related, is if people are interested in fixing RAS 2, it's definitely a place for code-first ACPI proposals. And it would be nice to tidy that up. Because while it is sad, not all memory is going to comply with the CXL spec for a while. I mean, maybe we'll get there and everyone will use our nicely defined control. But it's not happening today. I mean, there are efforts to try and generalize some of that stuff. So there's some stuff going on in OCP, I think, which may bear fruit. And people might eventually implement it on their host memory controllers. But probably not today.
+
+Okay, so open questions. Now, I put these down purely on the basis we might get here and no one had asked anything. But jump in with anything that you're interested in knowing more about. I mean, the opening one. It's kind of obvious. Does what we've defined so far actually meet people's requirements? Are there things out there you can't control? Is the granularity wrong? Information wrong? Any of that stuff? If you haven't reviewed the patch set, you may find this a challenging question to ask.
+
+So the CXL standard, besides the host-controlled mode for some RAS functions, such as PPR and memory sparing, also has the device-initiated mode. In this mode, the device autonomously has its own policy to perform, for example, soft PPR, and informs the host through an event about the occurrence of these actions. So, is there any initiative also to enable these modes in the kernel? Or are there some drawbacks?
+
+Yeah, so enabling that mode. My, well, I don't know. It's an interesting question. Are people going to ship devices with that on by default? Or is the expectation that it's opt-in?
+
+No, no, no. It's the software must discover the capability, and then enable the capability on the device.
+
+So far, not something we've actually enabled. But it would be dead easy to add a flag for it. We already have, for patrol scrub, one of the specs includes a sort of background scrub always, which is kind of an enabled bit that would be a bit similar to that. It's just a mode you switch into, at which point, yeah, you get reporting, et cetera. We would need to wire the events up so that with some interface, maybe we just squirt them out as tracepoints and make it a RAS daemon problem to deal with it, much like we do with all the CXL events today. We just add those ones, I think. Has anyone added those?
+
+I'm sorry.
+
+The PPR, memory events.
+
+Sparing.
+
+Would that say that PPR occurred? I think they're in the normal DRAM event, which we do have. But I think the fields were added later. So it might just be a spec update. OK. Well, there's a job. So someone, take a note of that one.
+
+Just one more question, which is somehow related. So, still in the standard, some of these operations can become background commands. And there is also a command to request to abort a background command. Not sure if this is planned for the kernel to support?
+
+OK, so the reason we've talked about enabling the background command abort has primarily been for those commands where we want to expose them to user space. So it's things like component state dump. And the reason for that is that there's no defined maximum time, which is obviously problematic if the kernel needs to do something with the device. For these, the only reason the kernel would probably abort, then, is going to be down to some timeout. Which absolutely, we could implement. And if people think we should have a timeout on things like PPR, I mean, I'd like to think quite what aborting an in-flight PPR actually means. I suspect it would leave you in a fairly odd state.
+
+I think the device has a timeout defined in the capability. So, it can be used also for requesting to abort.
+
+So if we don't trust the device vendor to put the correct timeout in there,
+
+OK.
+
+Yeah, OK. There'll be a bad one sometime. So, yeah, it makes sense to potentially use those timeouts as a hint. And maybe abort if it takes twice as long. I guess in theory, we might have something that needs to be acted on very quickly by the kernel. And then abort something like this that was in the way. Mm-hmm. But I can't, today, think why we'd do it. But we do, yeah, the background command abort stuff is definitely coming for uses like the firmware control interfaces. So if it goes on forever, we need to go, 'No, no bailout.' So yeah.
+
+Thank you.
+
+Here's one for Dan's favorite: NVDIMM ARS. Do you care if we add support for it? Or does anyone else care? I mean, I can open it up to other lovers of PMEM devices of various types.
+
+Well, they don't love it, apparently.
+
+Ah, so we'll just delete ARS. It's much nicer. So ARS is just the kind of on-demand scrub equivalent for persistent memory, and an ACPI spec thing.
+
+Yeah. I'd say we leave all that alone until somebody asks for it. Excellent. Not doing work is my favorite sort of work. Absolutely. Yeah. So one question that came up in review that I threw down here is this question of, from the various drivers passing the interfaces as a big attribute group and basically making it so that the drivers can add anything that makes sense for a given driver versus the callback type strategies. I got a couple arguments for why one way or the other. One is that EDAC is all callback. So for keeping with local style, yeah, it kind of makes sense to stay with callbacks. And the other one is, should we stay with callbacks? Should we say everything that's ever gone the attributes route and has grown to any scale at all has given up and gone the other way?
+
+Well, I mean, I like the object-oriented nature of, like, 'hey, here are the core attributes, and here I'm going to include that set, and I'm going to add my own set.' And so we do that in CXL. So I'll take a look at me. I like that property of, 'here are the attributes, and here's my set of extra stuff,' and not having callbacks all over the place.
+
+Yeah, and it's fair enough. I mean, one of the reasons this also is, if you're doing things like PPR, if you do it via attributes, you've got to have a dance where the driver has to do the sanity checks. Whereas if you've got it pushed into the core, the core itself knows what the situation the memory has to be in in order to be able to safely do PPR. So it's things like that: the page has to be offline. We don't really want to do the offline check in every one of the drivers. I mean, we can. It's a perfectly good model.
+
+No, we shouldn't.
+
+So, at that point, that one needs to be callback-based because we need to initialize the thing from somewhere else.
+
+Right. If it's a general attribute that has like a sub-function that the driver needs to do, that should be a callback. But if it's like a wholly-owned, like we don't want to teach the EDAC layer about this policy, but we just want to have some extra files show up, then that should be an attribute.
+
+OK, so when we add tags, that should definitely be an attribute because we've got to have tags here as well. Yeah, OK. For now, I mean, my cynical attitude on this is adding attribute support generally means that people abuse it. So I'm kind of inclined to hold off on doing it until we have a clear use case.
+
+But I really think it really depends on what functionality you're trying to enable. 
+
+Yeah, yeah. That's fair enough. It's easy enough to combine a bit of both. Yeah, do we need policy control in the kernel? So, one of the things on these is you can shoot yourself in the foot. So, one thing that people have talked about before is things like not allowing disabling of Scrap. You can change the rates, the idea being that the thing won't go to an insane rate. My personal view is no, but it has been asked. So, anyone in favor of the kernel? Basically, the ask was along the lines of: no sane manufacturer should allow anyone to disable this stuff because you're just going to get horrible errors and lots of bug reports, and your field application engineers are going to go mad. Nope. Good.
+
+Yeah, no. I mean, if the user has root, they can do whatever they want to their machine.
+
+To be fair, my answer on this is slightly different, which is that a sane manufacturer is going to have hard-limited these things.
+
+Sure. So, if the hardware wants to limit it, because there's a reason that the hardware should protect itself, but the user can go in and pull memory and do whatever they want. They've got the hardware.
+
+Yeah, OK. Cool. Any other questions? I think we have zero minus one minute. So, if anyone can talk backwards, anyway, I'm happy to take continuing questions on these topics. And now it's coffee break. I will add that there are two gifts which will be handed to whichever speaker gets the most interesting discussion going. So I have no idea on who that is today.
+
+Well, if I had known that, I could have stirred more.
+
+I didn't say controversial. Thank you.
