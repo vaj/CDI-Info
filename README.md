@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 342 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 343 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -270,6 +270,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [H3 Platform](#h3-platform-3)
+    - [HPE](#hpe-6)
     - [Huawei](#huawei-2)
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
@@ -5102,6 +5103,16 @@ Brian Pan
 [Text](./333)
 
 [Acronyms](./acronym.md): AI AMD CMS CPU CXL DCD DDR DRAM EMR HBM HPC MLC MLD MemVerge NDA OCP OS OpenFOAM
+
+### HPE
+
+David Emberson
+
+[YouTube](https://youtu.be/DDJjd1pwtzc?si=UiEfI40ezxGXpR9u)
+
+[Text](./347)
+
+[Acronyms](./acronym.md): AI AMD API ARM CCIX CHIPS COVID CSR CTO CXL DAOS DDR5 DOD DRAM EX FAM FlexBus GenZ GitHub HANA HBM HP HPC HPE HyperX IBM IT InfiniBand LPDDR MI300A MPI NIC NVIDIA NVLink NumPy OpenCAPI OpenFAM PCIe RAM RDMA ReRAM RoCE SAP SST TSMC UAL XGMI
 
 ### Huawei
 

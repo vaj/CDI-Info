@@ -304,6 +304,7 @@
 | DNO                 | Datacenter Network Optimizer, Density Optimized                           |
 | DOC                 | Direct Attached Optical                                                   |
 | DOCA                | Data-Center-on-a-Chip Architecture                                        |
+| DOD                 | Department of Defense                                                     |
 | DOE                 | Data Object Exchange                                                      |
 | DOM                 | Digital Optical Monitoring                                                |
 | DPA                 | Device Physical Address                                                   |
@@ -436,6 +437,7 @@
 | FIPS                | Federal Information Processing Standards                                  |
 | FIT                 | Failures in Time                                                          |
 | FlashCore           | (Storage device name) (IBM)                                               |
+| FlexBus             | (interconnect name)                                                       |
 | FlexIO              | (Hardware specification name)                                             |
 | FLIT                | Flow Control Unit                                                         |
 | FLOPS               | Floating Point Operation Per Second                                       |
@@ -1345,6 +1347,7 @@
 | SSH                 | Secure Shell                                                              |
 | SSL                 | Secure Sockets Layer                                                      |
 | SSM                 | Scalable Storage Management                                               |
+| SST                 | Structural Simulation Toolkit                                             |
 | STAC                | Securities Technology Analysis Center                                     |
 | StarlingX           | (Project name) (OpenInfra Foundation)                                     |
 | StorageX            | (Company Name)                                                            |
