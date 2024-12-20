@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 343 disaggregated computing-related talks published on YouTube between March 2017 and October 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 344 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -266,6 +266,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Astera Labs](#astera-labs-6)
     - [Broadcom](#broadcom-2)
     - [Dell](#dell-3)
+    - [Delta Electronics](#delta-electronics)
     - [Elephance Memory](#elephance-memory)
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
@@ -5039,6 +5040,16 @@ Shyam Iyer
 [Text](./345)
 
 [Acronyms](./acronym.md): AI API ARM ASIC CMN CMS CPU CTO CUDA CXL DNA DRAM FPGA GPU HBM IO ISA MIPS NVIDIA NVMe OCP ONNX OS PCI PyTorch RAG RISC SDXI SIMD SNIA SOC URL oneCCL
+
+### Delta Electronics
+
+Tzi-cker Chiueh
+
+[YouTube](https://youtu.be/N5KoXgU-mas?si=ompGwX8MSWLFFYwA&t=5219)
+
+[Text](./348)
+
+[Acronyms](./acronym.md): AI AMD ASIC CPU CXL CXL.cache CXL.io DMA DRAM FPGA GPU IOWN NIC PCI PCIe SK SSD XConn
 
 ### Elephance Memory
 
