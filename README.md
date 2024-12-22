@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 344 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 345 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -289,6 +289,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Samsung](#samsung-8)
     - [ScaleFlux](#scaleflux)
     - [SK hynix](#sk-hynix-2)
+    - [Supermicro](#supermicro-1)
     - [SUSE Linux](#suse-linux)
     - [Uber](#uber-1)
     - [Xconn Technology](#xconn-technology)
@@ -5468,6 +5469,16 @@ Myoungseo Kim
 [Text](./331)
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
+
+### Supermicro
+
+Tau Leng
+
+[YouTube](https://youtu.be/N5KoXgU-mas?si=8A9T29auuOmXAurJ&t=3203)
+
+[Text](./349)
+
+[Acronyms](./acronym.md): AI CPO CXL DCI DLC GPU IOWN JBOD NTT OCP PCIe TSMC
 
 ### SUSE Linux
 

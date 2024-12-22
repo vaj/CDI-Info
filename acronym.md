@@ -287,6 +287,7 @@
 | DL                  | Deep Learning                                                             |
 | DL1                 | Data Level 1                                                              |
 | DL2                 | Data Level 2                                                              |
+| DLC                 | Direct-to-chip Liquid Cooling                                             |
 | DLID                | Destination Local Identifier                                              |
 | DLIO                | (Benchmark tool name)                                                     |
 | DLLP                | Data Link Layer Packet                                                    |
