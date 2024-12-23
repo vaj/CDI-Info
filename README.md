@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 345 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 346 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -284,11 +284,13 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Microsoft](#microsoft-5)
     - [Mips](#mips)
     - [Montage](#montage-1)
+    - [NTT](#ntt-1)
     - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
     - [Samsung](#samsung-8)
     - [ScaleFlux](#scaleflux)
     - [SK hynix](#sk-hynix-2)
+    - [Sony](#sony)
     - [Supermicro](#supermicro-1)
     - [SUSE Linux](#suse-linux)
     - [Uber](#uber-1)
@@ -5366,6 +5368,16 @@ Geof Findley
 
 [Acronyms](./acronym.md): AI AMD ARM CXL DDR DDR4 DDR5 DDR6 DIMM DRAM HBM IDE LP MR MXC PCI RAS SK SOC TCO
 
+### NTT
+
+Masahisa Kawashima
+
+[YouTube](https://youtu.be/N5KoXgU-mas?si=Su-Vx_nXGEvsxFF8&t=2195)
+
+[Text](./350)
+
+[Acronyms](./acronym.md): AI APN GPU IOWN IT NTT NVIDIA PoC RAN SK
+
 ### NVIDIA
 
 Rob Davis
@@ -5469,6 +5481,16 @@ Myoungseo Kim
 [Text](./331)
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
+
+### Sony
+
+Katsutoshi Itoh
+
+[YouTube](https://youtu.be/N5KoXgU-mas?si=Su-Vx_nXGEvsxFF8&t=2195)
+
+[Text](./350)
+
+[Acronyms](./acronym.md): AI APN GPU IOWN IT NTT NVIDIA PoC RAN SK
 
 ### Supermicro
 
