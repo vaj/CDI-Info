@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 346 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 347 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5213,6 +5213,14 @@ Nathan Hanford
 [Acronyms](./acronym.md): AI API CDI CXL DMTF EX GitHub HPC InfiniBand ML NVMe OFA OS OpenShift PCI PCIe RESTful SAN SNIA URI
 
 ### Marvell
+
+Gaurav Agarwal
+
+[YouTube](https://www.youtube.com/watch?v=J16arolC3fQ)
+
+[Text](./351)
+
+[Acronyms](./acronym.md): AI ARM CMS CPU CXL CXL.mem DDR5 DLRM DRAM GPU HBM KV LLM LZ4 MFU ML MLP NMC NVIDIA OCP PCI POC SIMD SLS XPU
 
 Khurram Malik
 

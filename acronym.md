@@ -810,6 +810,7 @@
 | MLCommons           | (Name of organisation).                                                   |
 | MLD                 | Multi Logical Device                                                      |
 | MLIR                | Multi Level Intermediate Representation                                   |
+| MLP                 | Multi-Layer Perceptron                                                    |
 | MLPerf              | (Benchmark name)                                                          |
 | MLSD                | Mean Likelihood Sequence Detector                                         |
 | MM                  | Memory Management, Memory Machine, Mirror Mezz                            |
@@ -888,6 +889,7 @@
 | NILFS2              | (file system name)                                                        |
 | NISTP               | Neuroimaging Sciences Training Program                                    |
 | NLP                 | Natural Language Processing                                               |
+| NMC                 | Near Memory Compute                                                       |
 | NMI                 | Non-Maskable Interrupt                                                    |
 | NMS                 | Non-Memory Store                                                          |
 | NOC                 | Network-On-Chip                                                           |
@@ -1292,6 +1294,7 @@
 | SLIT                | System Locality Information Table                                         |
 | SLM                 | Subsystem Local Memory                                                    |
 | SLOB                | Silly Little Oracle Benchmark                                             |
+| SLS                 | Sparse Lengths Sum                                                        |
 | SMA                 | SubMiniature version A                                                    |
 | SMART               | (Company Name) (SMART Global Holdings)                                    |
 | SmartNIC            | Smart NIC                                                                 |
