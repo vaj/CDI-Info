@@ -1,1 +1,136 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Hello, my name is Davidlohr Bueso. I work on CXL at Samsung.
+
+This talk is mostly about bringing a way for users to communicate or send commands to the different ways that CXL allows it within the direct attached domain. And it's really a unification or based off of what fmapi tests paved the way for a way of communicating through standard commands with different components. And added to that, the kind of administrative wrappers or interfaces that NVMe provides. And if people are familiar with libnvme-mi, that's exactly what this is about. Yeah. And it's adopted by the manageability model of CXL devices as well as the CCI. And this library could also be called libcci, really.
+
+So this is not intended to compete, replace, or do anything with libcxl. It's really mostly about not having the protections that the OS gives us for communicating with devices. So, basically, users have to know what they're doing, and if not, they get to keep the pieces. And it supports both out-of-band and in-band CCIs, but it's really mostly about out-of-band. Potential users are BMCs, fabric managers, and firmware. And the reachability is what fmapi-tests kind of modeled with the Type 3 SLDs, MLDs, and CXL switch. Again, it does not support GFAM devices. And there's no concurrency. It tries to be somewhere, at least for the non-vendor-specific things. And the idea for this is to have a standard and open building block for building fabric managers and dealing with BMCs. And right now, this is very obscure and fragmented, I think. There's no clear open-source software. There's very little information about what's going on. And this was previously discussed with the DCD. Kind of loop.
+
+So I'm not one to put code in slides, but I think instead of going through all the different library calls, it's better just to show by example. This is really just an MCTP component discovery using Dbus. Here, you basically discover all the components within the system. And there's really two—two library-specific components, which is the library context that keeps track of all the open endpoints. And the actual endpoint, which is whatever MCTP will discover or whatever Linux has for the SFS devices and how you do the ioctls. So here, you're basically discovering everything that there is to discover and iterating through each of the endpoints. And basically showing some trivial information. That's really what this is about.
+
+And there are really three ways of discovering things or opening them. One is passing the tuple, the network ID and the endpoint IDs for MCTP. Linux does the MCTP stack. It includes the network ID for sort of like an address space. Work around to not be limited by I think it's 255 devices, something like that, the maximum. So you can basically open everything. You can open one at a time. Or you can just do the old-fashioned libcxl way of Linux. When probing or opening devices, I call them endpoints—a generic term. The library can track different instances of the same underlying device, but it is limited by what the spec dictates: there needs to be a one-to-one MCTP and mailbox. You can also do it for secondary mailboxes if, like, I know Linux doesn't support secondary mailboxes, but in theory there's nothing that would prevent having it.
+
+And the calls are really all about expressing what command to send to what endpoint and how. You can do it directly or the tunneled way, as we're going to see. So the functions themselves, they're called as best as possible, the same as the payload data structures. Keeping it simple. It can be like a mouthful to type and all, but it's really pretty intuitive. The AD character width is really, really hard to follow. So, yeah. And it's really, like, depending on the payload, you get the kind of function that you want to use. So commands that don't have any payloads, they'll just have them. They'll have the endpoint and the tunnel information. And the ones that have input payloads only will have its input parameter, output parameter. Or if they have both, they'll have both. And the data structures themselves, the payloads, are basically exporting exactly what the spec says. So users are expected to know what they want to get from this.
+
+So, normally for the tunneling information, if you just pass null, you're referring to direct communication. But the more interesting use cases are obviously with the tunnels. And the spec has three that are not GFAM, basically. So, for the... to send... the first example is tunneling commands to an MLD through a CXL switch. The spec diagram is pretty straightforward. And basically, all you have to do is arm the parameter with the level you're using. Normally it's one, but you can also have two levels of tunneling. And if you're sending it to a switch, in this case, you give the port number. And that's pretty much it.
+
+Very similar when sending to an LD within an MLD. You specify the LD, and you just pass it. So again, very, very straightforward.
+
+And the double tunneling is basically you set the level. And you set both the... information for the outer tunnel and the inner tunnel. And yeah. That's... that's all that's required.
+
+The return values... Usually minus one with no set or the respective CXL return code. And of course, in this example, you can't always check for 'if error' or 'if RC,' whatever, because if it's a background command, you have to keep that into account. Silly things like that that are necessary to give users the most flexibility as possible.
+
+And this is really what I wanted to open up the floor for. Is this sort of thing useful to the community? There's been no release. I know that some people are already using it successfully, and are pretty happy with it. But things can change. A lot of... Testing is very hard for this sort of thing. QEMU has opened a lot of doors for this thing, and I think that the increasing interest in out-of-band use cases are making QEMU... QEMU was always very tied to the kernel development side of things. And now it's really... Not necessarily only that. Now it's... People are wanting to have the testability of QEMU for this sort of thing. So it really expands the necessity of the emulation. Yeah. The current state of the art use of the aspeed-i2c. That's pretty much all we have for testing right now. But... It has been successfully used with the SMBus.
+
+This looks great. I think we're happy to join forces with you. We have something very similar internally, but we haven't... We were planning to open source it at some point if no one else did, but we can... I'll talk to you after. See how we can work together.
+
+Okay. Nice. Yeah.
+
+Throw a trivial request on there which is: if anyone has an MCTP device that they can publish a spec for, if we have any realistic hope of integrating with upstream QEMU, it would be extremely helpful. The thing being used here is an appalling hack. I mean... it's bodged into an x86 PC. They all have aspeed-i2c controllers on them. I mean, it works. But we also have to hack the kernel drivers to make it work. So it's a bit ugly. So if anyone has any real hardware, it'd be very valuable.
+
+And if anybody is going to test this with real hardware, I'd really like to have input on it. Because again, right now, most, if not all, of the testing I've done has only been with QEMU. The one thing that's open is the tunneling for MHDs, and basically, adding the rest of the commands. I haven't looked at the GFAM devices. But the idea ultimately, I got this question, is it not supported, will it never be supported, or is it just not supported now? I think that this library should have the same reachability as CCI in general. If you can send a command to a device defined by the spec, this library should be able to do it. But for now, the tunneling we have has proven useful for the use cases we know that have this.
+
+Well, having done libraries like this in the past, I do kind of wonder about defining the header file with particular payload responses and how that will fit. I guess if everything's in a spec, it probably is pretty safe. But then that led me to ask: the question, why not Rust or a different language? Is there any thought on doing that?
+
+I'm a C guy, but Rust wrappers, I totally see it. Unlike the kernel, I totally see Rust wrappers. Because fabric managers are planned on being written in Rust, at least I know a couple of cases.
+
+Actually, that's right. I heard it from somebody.
+
+Two things. The one is that, as you mentioned, libnvme-mi. We found it quite helpful for just implementing all features and everything, just to have a test spec for the spec itself, just to see, all right, where do we stand? That's one. So that's quite helpful. The other one is you maybe want to talk to Javier, because they have built a scraper for the spec file. So you can scrape the header files off the spec file, which turned out to be incredibly useful, because then, you're reasonably sure you didn't make any typing mistakes when creating the header files. And you can even then validate whatever's in the spec, whether they didn't mess up and define a bit twice or stuff like that, which never happens, obviously.
+
+No, never.
+
+So you said earlier in one of the slides, the intent is to, I guess, not compete, if you can use that word, with libcxl or cxl-cli, however you want to interact with it. In that sense, there is some level of duplication of functionality, um, is the intent and I guess this might be more on on your side, is the intent to keep libcxl for the kernel-specific management, like the inbound side, and have this more focused outbound? But obviously, you can do the inbound management via this as well?
+
+That's exactly the approach I took. I did not want to contaminate the ndctl library, just because libcxl is so Linux defined.
+
+And yeah, I want to keep this straight because my mental model right now is ndctl being the parent package for it—seems highly tied to the kernel version you're running on. And if you can decouple that from, I guess, the CXL...
+
+That's, yeah.
+
+General CXL.
+
+Yeah, and we also have this firmware control interface we're talking about. We're thinking about calling it auxiliary control, but that's about having a path to send on better, more specific commands. But we also need to support the libcxl interfaces. So I think we need to be able to build a Linux that can do anything anywhere at once, but I'm wondering how do we... When we have the local interface and we're the BMC interface, how do we maintain the... maintain the... maintain the case that the kernel interface can be protected, but when you're in BMC mode, you can do anything you want. That's the part I'm trying to figure out.
+
+I think that the users will just... If you send a command out of band and it screws up something and the kernel doesn't know what to do, that, to me, is the user's fault.
+
+I guess, yeah. I guess if you're on a BMC platform, you get to keep all the pieces.
+
+Yes, yes. Mm-hmm.
+
+Again, taking a cue from libnvme, where we had exactly the same problem, that the nvme-cli was actually there in the first place, and then Keith did the libnvme for whatever, for his toy project, but in the end, we decided to move the existing NVMe CLI over to libnvme, such that we have a common code base for formatting the commands, for having the commands, blah, blah, blah, blah, such that we don't have to do the work twice. Because in the end, even though ndctl might be Linux-specific, at the end of the day, it still has to deal with the very same commands, so you will have to use the very same headers and everything, so it really makes sense to combine them both, converting ndctl as just whatever something calling then your library there. So it is a lot of work, but in the end, it turned out to be really worth it.
+
+Are you advocating for actually combining the libraries or just the package?
+
+Just the package. That's basically existing front-ends to use from the libraries, or the other way around.
+
+Yeah, but the kernel only cares about a small subset of the commands. Like, I think for management interfaces, there's a whole command set, but for the kernel, it only cares about a little... a few things that might exist inside the kernel.
+
+There's about five commands that you would use in both. They're things like get and set timestamp. The rest of it is totally separate, and the message formats and everything are different, so... How much you'd actually save? Remarkably little in this case.
+
+Yeah, but it maybe makes sense.
+
+Yeah. Oh, yeah, sorry. Good point. He was just saying that the same thing happens for libnvme, where they only actually have, what was it, three, roughly, commands that are in there. In this case, where they get overlapped. I'm sorry for not throwing the mic.
+
+The one benefit I... Really nice thing that I would have liked to do for CXL was when I noticed the libnvme integration with the nvdimtool, the integration allowed immediate out-of-band usage for all the commands it already supported. That was pretty nice. But... Yeah. Other than that, like, we talked about the integration of both libraries and the ndctl, but it just never really clicked for me because this was so much more with the Wild West than...
+
+A different paradigm.
+
+Exactly.
+
+This will be a fun, loaded question. So, in the context of enabling, I guess, some vendor-specific things, are we going to keep that kernel warning splat, the first time you...
+
+The position has evolved. And... and... and so, at the maintainer summit, we talked about the device pass-through topic, and we're going... And, like, CXL is one of the... is one of the example drivers to get that new subsystem upstream. And so, there are green rules about it. Like, this is to enable things that are not the primary function of the device. This is to give you access to... to vendor-specific things that the kernel should not care about yet, kind of things. Like, it may care about it later, but... but, yeah, so that... we're going to have a path to have relaxed and more... a lot of vendors to pass their commands.
+
+This doesn't fit in that category at all. Because this stuff... No, no, no. But if we did use the firmware control for this, which is something I chatted to Jason about, it's certainly a potential, but it's not the normal use case. This really is... We win. There are no rules. You'll blow yourself away if you turn it on.
+
+Yeah, but there will be no splash.
+
+Right. Yeah, I mean, like, if... if you turn on the BMC mode, then all of a sudden, this firmware control thing can do anything at all. Yeah.
+
+And we had talked about a config BMC, or something along those lines.
+
+Right. Right. To say, like, I... This kernel is going into a security model where we absolutely trust this thing to either destroy everything or be well-behaved. Yeah.
+
+Yeah.
+
+Just a quick one. Any distro folk like to comment on how we restrict this to keep it on BMCs? Not looking at any distro folk in particular? Apparently not. Very wise.
+
+And, yeah, here I have an extra slide for anybody who's interested in the MCTP Linux stack. I think the one kind of quirky thing we have is the VDM stuff, which is kind of passed down through the switch, which does the MCTP VDM method. There's... So I think there's lacking a host-defined... The host-defined spec for VDM. I'm not... I don't know what... when that will be addressed, if ever.
+
+So there are host controllers that will issue PCI VDMs for MCTP, if that's what you're asking. They exist. The problem is, no one's ever published a spec.
+
+Yeah.
+
+Now, if anything... that was the open question earlier. I think it's fair to say we have one. But it's not in a state, for reasons of its use cases, that we... Basically, I have no way of testing the hardware. So yeah, if anyone can fill that one. Though I don't think there's any intent to define a general spec for it.
+
+Okay.
+
+So it's always going to be some magic platform device or similar.
+
+I have a question about how do you approach discovery? You said you do auto-discovery of finding all the end points, empty end points. Okay. So can you explain how...
+
+Dbus.
+
+So, do you rely on the Dbus infrastructure on kind of a BMC type?
+
+Yes.
+
+Okay.
+
+Dbus does all the magic there.
+
+That stuff was all added by the openBMC fork.
+
+Yep.
+
+So, hopefully, they're happy with it.
+
+And they're calling that libcxl, enough, right?
+
+Right.
+
+Just fill in that. It's not libcxl. That's what he said. I'm not able to throw the microphone fast enough. Any last questions?
+
+That's all I have.
+
+Okay. Thank you very much.
