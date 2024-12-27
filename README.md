@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 348 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 349 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -276,6 +276,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory-1)
+    - [Magnition IO](#magnition-io-2)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
@@ -4940,6 +4941,14 @@ Alejandro Lucero
 
 [Acronyms](./acronym.md): ACPI API ATS BIOS CPU CXL CXL.cache CXL.mem DAX DMA HDM IOMMU PCI PCIe TLB TLP VM
 
+Craig Carlson
+
+[YouTube](https://youtu.be/5IMss2wpoFs?si=3kksbPGcHxrp2TOR)
+
+[Text](./353)
+
+[Acronyms](./acronym.md): AI AMD CLI CPU CSE CTO CXL DCD DDR DNA DRAM FMAPI FMS GPU GitHub IO InfiniBand NUMA NVMe PCI PCIe QEMU QR RAM SDXI SNIA SSD VM YouTube
+
 J Metz
 
 [YouTube](https://youtu.be/_oQjOLj2-W4?si=pLWhNihP7ldDEVkN)
@@ -5202,6 +5211,12 @@ Grant Mackey
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
 
+[YouTube](https://youtu.be/5IMss2wpoFs?si=3kksbPGcHxrp2TOR)
+
+[Text](./353)
+
+[Acronyms](./acronym.md): AI AMD CLI CPU CSE CTO CXL DCD DDR DNA DRAM FMAPI FMS GPU GitHub IO InfiniBand NUMA NVMe PCI PCIe QEMU QR RAM SDXI SNIA SSD VM YouTube
+
 ### Lawrence Livermore National Laboratory
 
 Nathan Hanford
@@ -5211,6 +5226,16 @@ Nathan Hanford
 [Text](./341)
 
 [Acronyms](./acronym.md): AI API CDI CXL DMTF EX GitHub HPC InfiniBand ML NVMe OFA OS OpenShift PCI PCIe RESTful SAN SNIA URI
+
+### Magnition IO
+
+Andy Banta
+
+[YouTube](https://youtu.be/5IMss2wpoFs?si=3kksbPGcHxrp2TOR)
+
+[Text](./353)
+
+[Acronyms](./acronym.md): AI AMD CLI CPU CSE CTO CXL DCD DDR DNA DRAM FMAPI FMS GPU GitHub IO InfiniBand NUMA NVMe PCI PCIe QEMU QR RAM SDXI SNIA SSD VM YouTube
 
 ### Marvell
 
