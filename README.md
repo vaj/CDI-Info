@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 349 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 350 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5441,6 +5441,14 @@ Adam Manzanares
 
 [Acronyms](./acronym.md): AI AMD ARM CPU CXL DAX DC DCD DMA HDM KVM LBA MCTP MMIO NUMA NVMe OS PCI PCIe QEMU RAM SDXI VM VMware
 
+Changho Choi
+
+[YouTube](https://www.youtube.com/watch?v=vJYSLCUJj5s)
+
+[Text](./354)
+
+[Acronyms](./acronym.md): AI API AxDIMM BIOS CMM CMMD CMMDC CMMH CMS CPU CXL CXL.io CXL.mem DC DCC DIMM DLRM DRAM GPU HANA HBM IP ML NAND OCP PIM PNM PyTorch REST SAP TCO TPCDS UXL XPU
+
 Davidlohr Bueso
 
 [YouTube](https://www.youtube.com/watch?v=j8hJVnvy73Q)
@@ -5464,6 +5472,14 @@ Kapil Sethi
 [Text](./310)
 
 [Acronyms](./acronym.md): CMS CPU CXL DIMM DRAM OCP QR SSD TCO
+
+Sangsu Park
+
+[YouTube](https://www.youtube.com/watch?v=vJYSLCUJj5s)
+
+[Text](./354)
+
+[Acronyms](./acronym.md): AI API AxDIMM BIOS CMM CMMD CMMDC CMMH CMS CPU CXL CXL.io CXL.mem DC DCC DIMM DLRM DRAM GPU HANA HBM IP ML NAND OCP PIM PNM PyTorch REST SAP TCO TPCDS UXL XPU
 
 Siamak Tavallaei
 

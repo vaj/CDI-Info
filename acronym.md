@@ -162,6 +162,8 @@
 | CMIS                | Common Management Interface Specification                                 |
 | CMM                 | CXL Memory Module                                                         |
 | CMMB                | CXL Memory Module - Box                                                   |
+| CMMD                | CXL Memory Module DRAM                                                    |
+| CMMDC               | CXL Memory Module with DRAM and Compute                                   |
 | CMMH                | CXL Memory Module Hybrid                                                  |
 | CMN                 | Coherent Mesh Network                                                     |
 | CMN700              | Coherent Mesh Network 700                                                 |
@@ -236,6 +238,7 @@
 | DBMS                | Database Management System                                                |
 | DC                  | Direct Current, Dynamic Capacity                                          |
 | DCA                 | Digital Communication Analyzer                                            |
+| DCC                 | Data-Centric Computing                                                    |
 | DCD                 | Dynamic Capacity Device                                                   |
 | DCI                 | Data Centric Infrastructure                                               |
 | DCIM                | Data Center Infrastructure Management                                     |
@@ -1415,7 +1418,8 @@
 | TP4a                | Test Point 4a                                                             |
 | TPC                 | Transaction Processing Performance Council                                |
 | TPCC                | TPC-C                                                                     |
-| TPCH                | TPC-H                                                                     |
+| TPCDS               | TPC-Decision Support                                                      |
+| TPCH                | TPC-ad-Hoc                                                                |
 | TGPIO               | Time General Purpose Input/Output                                         |
 | TPM                 | Trusted Platform Module                                                   |
 | TPP                 | Transparent Page Placement                                                |
@@ -1476,6 +1480,7 @@
 | USR                 | Ultra Short Reach                                                         |
 | UT                  | The University of Texas at Austin                                         |
 | UUID                | Universally Unique Identifier                                             |
+| UXL                 | Unified Acceleration                                                      |
 | VA                  | Virtual Address                                                           |
 | VAX                 | (Product name) (DEC)                                                      |
 | VC                  | Virtual Channel                                                           |
