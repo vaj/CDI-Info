@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 350 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 351 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -273,6 +273,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [H3 Platform](#h3-platform-3)
     - [HPE](#hpe-6)
     - [Huawei](#huawei-2)
+    - [IBM](#ibm-2)
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory-1)
@@ -5161,6 +5162,16 @@ Shiju Jose
 
 [Acronyms](./acronym.md): ACPI ARS CSP CXL DAX DPA DRAM ECC ECS EDAC HPA NUMA NVDIMM OCP PCI PMEM PPR RAS
 
+### IBM
+
+Viacheslav Dubeyko
+
+[YouTube](https://www.youtube.com/watch?v=gcKbGNiU7DE)
+
+[Text](./355)
+
+[Acronyms](./acronym.md): AI BIOS C2C CXL DCPerf DRAM GH200 HBM NUMA NVIDIA PCI PHY RAM TCO
+
 ### Intel
 
 Anjaneya "Reddy" Chagam
@@ -5440,6 +5451,12 @@ Adam Manzanares
 [Text](./344)
 
 [Acronyms](./acronym.md): AI AMD ARM CPU CXL DAX DC DCD DMA HDM KVM LBA MCTP MMIO NUMA NVMe OS PCI PCIe QEMU RAM SDXI VM VMware
+
+[YouTube](https://www.youtube.com/watch?v=gcKbGNiU7DE)
+
+[Text](./355)
+
+[Acronyms](./acronym.md): AI BIOS C2C CXL DCPerf DRAM GH200 HBM NUMA NVIDIA PCI PHY RAM TCO
 
 Changho Choi
 

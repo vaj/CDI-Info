@@ -248,6 +248,7 @@
 | DCN                 | Data Center Networking                                                    |
 | DCO                 | Data Center Optimization                                                  |
 | DCOH                | Device Coherency Engine                                                   |
+| DCPerf              | (benchmark neme)(Meta)                                                    |
 | DCPMM               | DC Persistent Memory                                                      |
 | DCS                 | Dynamic Capacity Service                                                  |
 | DCSCI               | Datacenter-ready Secure Control Interface                                 |
