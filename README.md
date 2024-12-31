@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 351 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 352 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -296,6 +296,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Supermicro](#supermicro-1)
     - [SUSE Linux](#suse-linux)
     - [Uber](#uber-1)
+    - [UC Santa Cruz](#uc-santa-cruz)
     - [Xconn Technology](#xconn-technology)
 
 ## 2017
@@ -5601,6 +5602,24 @@ Vikrant Soman
 [Text](./331)
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
+
+### UC Santa Cruz
+
+Andrew Quinn
+
+[YouTube](https://youtu.be/nC73P8G_Ahc?si=t-BBHS-BQ5h_Zltw)
+
+[Text](./356)
+
+[Acronyms](./acronym.md): CDF CFM CPU CRSS CXL DRAM EPVM FIFO LLC MLP MS NUMA PMU PhD RC TCO TMC UC US
+
+Heiner Litz
+
+[YouTube](https://youtu.be/nC73P8G_Ahc?si=t-BBHS-BQ5h_Zltw)
+
+[Text](./356)
+
+[Acronyms](./acronym.md): CDF CFM CPU CRSS CXL DRAM EPVM FIFO LLC MLP MS NUMA PMU PhD RC TCO TMC UC US
 
 ### Xconn Technology
 

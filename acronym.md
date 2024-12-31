@@ -121,6 +121,7 @@
 | CCI                 | Component Command Interface                                               |
 | CCIX                | Cache coherent interconnect for accelerators                              |
 | CDAT                | Core and Device Attribute Table                                           |
+| CDF                 | Cumulative Distribution Function                                          |
 | CDFP                | CD Form Factor Pluggable                                                  |
 | CDI                 | Composable Disaggregated Infrastructure                                   |
 | CDMI                | Cloud Data Management Interface                                           |
@@ -198,6 +199,7 @@
 | CRC                 | Cyclic Redundancy Check                                                   |
 | CRI                 | Container Runtime Interfac                                                |
 | CRPS                | Common Redundant Power Supply                                             |
+| CRSS                | Center of Research in Systems and Storage                                 |
 | CRUD                | Create, Read, Update, Delete                                              |
 | CS                  | Computational Storage                                                     |
 | CSA                 | Cloud Service Agreements                                                  |
@@ -390,6 +392,7 @@
 | EP                  | Endpoint                                                                  |
 | EPI                 | European Processor Initiative                                             |
 | EPS                 | Event Per Second                                                          |
+| EPVM                | Extended Parallel Virtual Machines                                        |
 | EPYC                | (Processor name) (AMD)                                                    |
 | EQ                  | equalization                                                              |
 | ER                  | End-to-end Round trip, Error Rate, Extended Reach                         |
@@ -1409,6 +1412,7 @@
 | TLP                 | Transaction Layer Packet                                                  |
 | TLS                 | Transport Layer Security                                                  |
 | TMAC                | Truncated MAC                                                             |
+| TMC                 | Total Memory Cost                                                         |
 | TMO                 | Transparent Memory Offload in 2022                                        |
 | TOPS                | Tera Operations Per Second                                                |
 | TP1                 | Test Point 1a                                                             |
@@ -1438,6 +1442,7 @@
 | UAL                 | Ultra Accelerator Link                                                    |
 | UALink              | Ultra Accelerator Link                                                    |
 | UBB                 | Universal Building Block                                                  |
+| UC                  | University of California                                                  |
 | UCC                 | Unified Communication Collectives                                         |
 | UCIe                | Universal Chiplet Interconnect Express                                    |
 | UCIE                | Universal Chiplet Interconnect Express                                    |
