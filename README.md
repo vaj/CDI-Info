@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 353 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 354 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5028,6 +5028,12 @@ Chris Petersen
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
 
+[YouTube](https://www.youtube.com/watch?v=oXYLYipaFJI)
+
+[Text](./358)
+
+[Acronyms](./acronym.md): AER AMD ARM ASIC BIOS BMC CLI CPU CXL CXL.io DDR4 DDR5 DIMM DRAM FRU IDE MCTP OCP OS OpenBMC RAS TCO UART
+
 Michael Ocampo and Ahmed Medihoub
 
 [YouTube](https://www.youtube.com/watch?v=zOIG24W_ibY)
@@ -5333,6 +5339,12 @@ Prakash Chauhan
 [Text](./308)
 
 [Acronyms](./acronym.md): AI ASIC CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPGPU GPU HBM LD ML NAND NVIDIA OCP RAM RAS SKU SNIA SRAM SSD TBD TCO YouTube
+
+[YouTube](https://www.youtube.com/watch?v=oXYLYipaFJI)
+
+[Text](./358)
+
+[Acronyms](./acronym.md): AER AMD ARM ASIC BIOS BMC CLI CPU CXL CXL.io DDR4 DDR5 DIMM DRAM FRU IDE MCTP OCP OS OpenBMC RAS TCO UART
 
 ### MetisX
 

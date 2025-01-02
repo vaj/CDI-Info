@@ -1443,6 +1443,7 @@
 | TxFIR               | TX Finite Impulse Response                                                |
 | UAL                 | Ultra Accelerator Link                                                    |
 | UALink              | Ultra Accelerator Link                                                    |
+| UART                | Universal Asynchronous Receiver-Transmitter                               |
 | UBB                 | Universal Building Block                                                  |
 | UC                  | University of California                                                  |
 | UCC                 | Unified Communication Collectives                                         |
