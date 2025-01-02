@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 352 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 353 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -298,6 +298,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Uber](#uber-1)
     - [UC Santa Cruz](#uc-santa-cruz)
     - [Xconn Technology](#xconn-technology)
+    - [Zeropoint Technologies](#zeropoint-technologies)
 
 ## 2017
 
@@ -5317,6 +5318,14 @@ Manoj Wadekar
 
 [Acronyms](./acronym.md): AI CMS CPU CXL ChatGPT DDR GPU GenAI HBM HBM4 IO KV LLM LPDDR NV NVIDIA NVLink NVMe OCP PCIe RAS SKU SSD TCO UALink
 
+Nara Vijay
+
+[YouTube](https://www.youtube.com/watch?v=N3MBj5K12A0)
+
+[Text](./357)
+
+[Acronyms](./acronym.md): AI CEO CMS CPU CXL CacheBench CacheLib DCD DRAM FBGEMM FPGA GEMM GPU HBM LC4 OCP PCIe TCO ZeroPoint
+
 Prakash Chauhan
 
 [YouTube](https://youtu.be/DMTkQuFojKo?si=l5yfS99n8aDRYrnZ)
@@ -5630,3 +5639,13 @@ Jianping Jiang
 [Text](./333)
 
 [Acronyms](./acronym.md): AI AMD CMS CPU CXL DCD DDR DRAM EMR HBM HPC MLC MLD MemVerge NDA OCP OS OpenFOAM
+
+### Zeropoint Technologies
+
+Klas Moreau
+
+[YouTube](https://www.youtube.com/watch?v=N3MBj5K12A0)
+
+[Text](./357)
+
+[Acronyms](./acronym.md): AI CEO CMS CPU CXL CacheBench CacheLib DCD DRAM FBGEMM FPGA GEMM GPU HBM LC4 OCP PCIe TCO ZeroPoint

@@ -423,6 +423,7 @@
 | FAST                | Fabric Address Segment Table                                              |
 | FatTrees            | (topology name)                                                           |
 | FBER                | First bit error rate                                                      |
+| FBGEMM              | Facebook General Matrix Multiplication                                    |
 | FCC                 | Flow Control Credits                                                      |
 | FCI                 | Fast memory Cache Instance                                                |
 | FCS                 | Frame Check Sequence                                                      |
@@ -692,6 +693,7 @@
 | LAN                 | Local Area Network                                                        |
 | LBA                 | Logical Block Addressing                                                  |
 | LBBR                | Linux Base Boot Requirements                                              |
+| LC4                 | (compression algorithm name)                                              |
 | LCD                 | liquid crystal display                                                    |
 | LCRC                | Link Cyclic Redundancy Check                                              |
 | LD                  | Logical Device                                                            |
