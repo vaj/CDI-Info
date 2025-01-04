@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 354 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 355 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -291,6 +291,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Open Compute Project](#open-compute-project)
     - [Samsung](#samsung-8)
     - [ScaleFlux](#scaleflux)
+    - [Seagate](#seagate-2)
     - [SK hynix](#sk-hynix-2)
     - [Sony](#sony)
     - [Supermicro](#supermicro-1)
@@ -5551,6 +5552,24 @@ Tong Zhang
 [Text](./326)
 
 [Acronyms](./acronym.md): CXL DDR5 DIMM DRAM ECC MIT VLSI
+
+### Seagate
+
+Hongjian Fan
+
+[YouTube](https://www.youtube.com/watch?v=jhEliHyr9MU)
+
+[Text](./359)
+
+[Acronyms](./acronym.md): AIC API ASIC BMC CFM CLA CLI CMA CMS CTO CXL DCD DIMM DMTF FPGA GUI NUMA OCP PCIe SIG UI
+
+Mohamad El-Batal
+
+[YouTube](https://www.youtube.com/watch?v=jhEliHyr9MU)
+
+[Text](./359)
+
+[Acronyms](./acronym.md): AIC API ASIC BMC CFM CLA CLI CMA CMS CTO CXL DCD DIMM DMTF FPGA GUI NUMA OCP PCIe SIG UI
 
 ### SK hynix
 
