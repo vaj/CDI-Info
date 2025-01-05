@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 355 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 356 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -259,6 +259,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Xconn](#xconn)
     - [ZeroPoint](#zeropoint-2)
   - [2024Q4](#2024q4)
+    - [(Independant)](#independant)
     - [Alibaba](#alibaba)
     - [AMD](#amd-8)
     - [Ampere](#ampere)
@@ -298,6 +299,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [SUSE Linux](#suse-linux)
     - [Uber](#uber-1)
     - [UC Santa Cruz](#uc-santa-cruz)
+    - [University Of Illinois Urbana-Champaign](#university-of-illinois-urbana-champaign)
     - [Xconn Technology](#xconn-technology)
     - [Zeropoint Technologies](#zeropoint-technologies)
 
@@ -4925,6 +4927,16 @@ Yiannis Nikolakopoulos
 
 ## 2024Q4
 
+### (Independant)
+
+Brian Hirano
+
+[YouTube](https://www.youtube.com/watch?v=BIoAM0NZBLE)
+
+[Text](./360)
+
+[Acronyms](./acronym.md): CEO CMS CMU CSF CXL ChatGPT EDA IP ISCA IT MICRO MIT NDA NSF OCP PIA PhD SDC USPTO VLSI
+
 ### Alibaba
 
 Fangzhi Wen
@@ -5660,6 +5672,16 @@ Heiner Litz
 [Text](./356)
 
 [Acronyms](./acronym.md): CDF CFM CPU CRSS CXL DRAM EPVM FIFO LLC MLP MS NUMA PMU PhD RC TCO TMC UC US
+
+### University Of Illinois Urbana-Champaign
+
+Nam Sung Kim
+
+[YouTube](https://www.youtube.com/watch?v=BIoAM0NZBLE)
+
+[Text](./360)
+
+[Acronyms](./acronym.md): CEO CMS CMU CSF CXL ChatGPT EDA IP ISCA IT MICRO MIT NDA NSF OCP PIA PhD SDC USPTO VLSI
 
 ### Xconn Technology
 

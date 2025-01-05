@@ -445,6 +445,7 @@
 | FIO                 | Flexible IO tester                                                        |
 | FIPS                | Federal Information Processing Standards                                  |
 | FIT                 | Failures in Time                                                          |
+| FLA                 | Four-Letter Acronym                                                       |
 | FlashCore           | (Storage device name) (IBM)                                               |
 | FlexBus             | (interconnect name)                                                       |
 | FlexIO              | (Hardware specification name)                                             |
@@ -652,6 +653,7 @@
 | IRL                 | Integrated Return Loss                                                    |
 | ISA                 | Industry Standard Architecture, Instruction Set Architecture              |
 | ISC                 | the Information Security Conference                                       |
+| ISCA                | International Symposium on Computer Architecture                          |
 | iSCSI               | Internet Small Computer System Interface                                  |
 | ISE                 | Integrated Systems Europe                                                 |
 | iSER                | iSCSI Extensions for RDMA                                                 |
@@ -806,6 +808,7 @@
 | MI210               | (Product name)(AMD)                                                       |
 | MI300               | GPU 名 (AMD)                                                              |
 | MI300A              | GPU 名 (AMD)                                                              |
+| MICRO               | International Symposium on Microarchitecture                              |
 | microLED            | Micro LED                                                                 |
 | MilanX              | (Processor name) (AMD)                                                    |
 | MIMO                | Multiple-Input and Multiple-Output                                        |
@@ -911,6 +914,7 @@
 | NRAM                | nanotube-based RAM                                                        |
 | NRE                 | Non-Recurring Engineering                                                 |
 | NRZ                 | Non Return to Zero                                                        |
+| NSF                 | National Science Foundation                                               |
 | NTB                 | Non-transparent bridge                                                    |
 | NTT                 | (Company Name)                                                            |
 | NUMA                | Non-Uniform Memory Access                                                 |
@@ -1077,6 +1081,7 @@
 | PhotoWave           | (Product name)(Lightelligence)                                            |
 | PHY                 | Physical Layer                                                            |
 | PI                  | Principle Investigator                                                    |
+| PIA                 | Principal Investigating Authority or Principal Investigator Agreement     |
 | PIC                 | Photonic Integrated Circuit, Platform Infrastructure Connectivity         |
 | PID                 | Port Based Routing ID, Process ID                                         |
 | PIDF                | Process ID File                                                           |
@@ -1409,6 +1414,7 @@
 | TimePlus            | (Company Name)                                                            |
 | TIPL                | Texas Instruments Precision Labs                                          |
 | TL;DR               | Too Long; Didn't Read                                                     |
+| TLA                 | Three-Letter Acronym                                                      |
 | TLB                 | Translation Lookaside Buffer                                              |
 | TLC                 | Triple Level Cell                                                         |
 | TLP                 | Transaction Layer Packet                                                  |
@@ -1486,6 +1492,7 @@
 | UserLib             | user library                                                              |
 | USM                 | Unified Shared Memory                                                     |
 | USP                 | Upstream Switch Port                                                      |
+| USPTO               | United States Patent and Trademark Office                                 |
 | USR                 | Ultra Short Reach                                                         |
 | UT                  | The University of Texas at Austin                                         |
 | UUID                | Universally Unique Identifier                                             |
