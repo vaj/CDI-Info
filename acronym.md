@@ -541,6 +541,7 @@
 | GTC                 | GPU Technology Conference                                                 |
 | GTH                 | (name of transceiver) (AMD)                                               |
 | GUI                 | Graphical User Interface                                                  |
+| GUID                | Globally Unique Identifier                                                |
 | GVMI                | Guest Virtual Machine ID                                                  |
 | GZIP                | GNU zip                                                                   |
 | H2D                 | Host to Device                                                            |
@@ -566,6 +567,7 @@
 | HDMDB               | Device Managed Coherence with Back-Invalidation                           |
 | HDMH                | Host Managed Coherence                                                    |
 | HDR                 | High Data Rate                                                            |
+| HEVC                | High Efficiency Video Coding                                              |
 | HFT                 | High-Frequency Trading                                                    |
 | HGX                 | (Product name)(NVIDIA)                                                    |
 | HIB                 | Host Interface Board                                                      |
@@ -937,6 +939,7 @@
 | NVMP                | NVM Programming                                                           |
 | NVMZ                | Gen-Z SSD                                                                 |
 | NVMz                | Gen-Z SSD                                                                 |
+| NVRAM               | Non-Volatile Random Access Memory                                         |
 | NVShmem             | (library name) (NVIDIA)                                                   |
 | NVSwitch            | (Switching chip name)(NVIDIA)                                             |
 | NVswitch            | (Switching chip name)(NVIDIA)                                             |

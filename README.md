@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 356 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 357 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -277,6 +277,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [IBM](#ibm-2)
     - [Intel](#intel-11)
     - [Jackrabbit Labs](#jackrabbit-labs-1)
+    - [KIOXIA](#kioxia-2)
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory-1)
     - [Magnition IO](#magnition-io-2)
     - [Marvell](#marvell-2)
@@ -294,6 +295,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [ScaleFlux](#scaleflux)
     - [Seagate](#seagate-2)
     - [SK hynix](#sk-hynix-2)
+    - [Solidigm](#solidigm-3)
     - [Sony](#sony)
     - [Supermicro](#supermicro-1)
     - [SUSE Linux](#suse-linux)
@@ -4957,6 +4959,14 @@ Alejandro Lucero
 
 [Acronyms](./acronym.md): ACPI API ATS BIOS CPU CXL CXL.cache CXL.mem DAX DMA HDM IOMMU PCI PCIe TLB TLP VM
 
+Bill Lynn
+
+[YouTube](https://youtu.be/O5_COTXN8T0?si=0huclpEMIWtwynS8)
+
+[Text](./361)
+
+[Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
+
 Craig Carlson
 
 [YouTube](https://youtu.be/5IMss2wpoFs?si=3kksbPGcHxrp2TOR)
@@ -5074,6 +5084,12 @@ Shyam Iyer
 [Text](./345)
 
 [Acronyms](./acronym.md): AI API ARM ASIC CMN CMS CPU CTO CUDA CXL DNA DRAM FPGA GPU HBM IO ISA MIPS NVIDIA NVMe OCP ONNX OS PCI PyTorch RAG RISC SDXI SIMD SNIA SOC URL oneCCL
+
+[YouTube](https://youtu.be/O5_COTXN8T0?si=0huclpEMIWtwynS8)
+
+[Text](./361)
+
+[Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
 
 ### Delta Electronics
 
@@ -5249,6 +5265,16 @@ Grant Mackey
 
 [Acronyms](./acronym.md): AI AMD CLI CPU CSE CTO CXL DCD DDR DNA DRAM FMAPI FMS GPU GitHub IO InfiniBand NUMA NVMe PCI PCIe QEMU QR RAM SDXI SNIA SSD VM YouTube
 
+### KIOXIA
+
+Frederick Knight
+
+[YouTube](https://youtu.be/O5_COTXN8T0?si=0huclpEMIWtwynS8)
+
+[Text](./361)
+
+[Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
+
 ### Lawrence Livermore National Laboratory
 
 Nathan Hanford
@@ -5286,6 +5312,14 @@ Khurram Malik
 [Text](./322)
 
 [Acronyms](./acronym.md): CPU CXL DDR DDR4 DDR5 DIMM DRAM FMS GPU IOV LZ4 PC PCI PCIe SR TCO XPU smartNIC
+
+Mats Oberg
+
+[YouTube](https://youtu.be/O5_COTXN8T0?si=0huclpEMIWtwynS8)
+
+[Text](./361)
+
+[Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
 
 Nigel Alvares
 
@@ -5608,6 +5642,16 @@ Myoungseo Kim
 [Text](./331)
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
+
+### Solidigm
+
+Jason Molgaard
+
+[YouTube](https://youtu.be/O5_COTXN8T0?si=0huclpEMIWtwynS8)
+
+[Text](./361)
+
+[Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
 
 ### Sony
 
