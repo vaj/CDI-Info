@@ -1202,6 +1202,7 @@
 | REV                 | Revision                                                                  |
 | RF                  | Radio Frequency                                                           |
 | RFC                 | Request for Comments                                                      |
+| RFI                 | Request for Information                                                   |
 | RFP                 | Request for Proposal                                                      |
 | RIP                 | Re-Reference Interval Prediction                                          |
 | RISC                | Reduced Instruction Set Computer                                          |

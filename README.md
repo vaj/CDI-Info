@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 357 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 358 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -302,6 +302,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Uber](#uber-1)
     - [UC Santa Cruz](#uc-santa-cruz)
     - [University Of Illinois Urbana-Champaign](#university-of-illinois-urbana-champaign)
+    - [Wolley](#wolley-2)
     - [Xconn Technology](#xconn-technology)
     - [Zeropoint Technologies](#zeropoint-technologies)
 
@@ -5726,6 +5727,16 @@ Nam Sung Kim
 [Text](./360)
 
 [Acronyms](./acronym.md): CEO CMS CMU CSF CXL ChatGPT EDA IP ISCA IT MICRO MIT NDA NSF OCP PIA PhD SDC USPTO VLSI
+
+### Wolley
+
+Bill Gervasi
+
+[YouTube](https://youtu.be/p-9vuEbZzq4?si=EO-ANt1bkZH03zMv)
+
+[Text](./362)
+
+[Acronyms](./acronym.md): AI ASIC CMB CPU CXL DAX DDR DDR3 DDR4 DDR5 DIMM DMA DOE DRAM FMS FPGA HBM HDM IBM IO LLM MRDIMM MemVerge NAND NVDIMM NVMe PC PCIe PHY RAM RAS RDIMM RFI SDC SSD UC USB
 
 ### Xconn Technology
 
