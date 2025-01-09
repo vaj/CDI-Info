@@ -739,6 +739,7 @@
 | LP6                 | (LPDDR6)                                                                  |
 | LPC                 | Linux Plumbers Conference                                                 |
 | LPCAM               | Low Power Content Addressable Memory                                      |
+| LPCAMM              | Low Power Content Addressable Memory Module                               |
 | LPD                 | Logical PCle Device                                                       |
 | LPDDR               | Low Power DDR5                                                            |
 | LPDDR4              | Low Power Double Data Rate 4                                              |

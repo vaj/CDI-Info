@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 359 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 360 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5378,6 +5378,12 @@ Manoj Wadekar
 
 [Acronyms](./acronym.md): AI CMS CPU CXL ChatGPT DDR GPU GenAI HBM HBM4 IO KV LLM LPDDR NV NVIDIA NVLink NVMe OCP PCIe RAS SKU SSD TCO UALink
 
+[YouTube](https://www.youtube.com/watch?v=JwSeMEmpxT8)
+
+[Text](./364)
+
+[Acronyms](./acronym.md): AI CMS CPU CXL GPU HBM JEDEC NVLink OCP PCI PCIe RDMA SK TCO UAL UALink UCIE UCIe
+
 Nara Vijay
 
 [YouTube](https://www.youtube.com/watch?v=N3MBj5K12A0)
@@ -5467,6 +5473,12 @@ Samir Rajadnya
 [Text](./332)
 
 [Acronyms](./acronym.md): AI CMS CPU CXL ChatGPT DDR GPU GenAI HBM HBM4 IO KV LLM LPDDR NV NVIDIA NVLink NVMe OCP PCIe RAS SKU SSD TCO UALink
+
+[YouTube](https://www.youtube.com/watch?v=JwSeMEmpxT8)
+
+[Text](./364)
+
+[Acronyms](./acronym.md): AI CMS CPU CXL GPU HBM JEDEC NVLink OCP PCI PCIe RDMA SK TCO UAL UALink UCIE UCIe
 
 ### Mips
 
@@ -5587,6 +5599,12 @@ Siamak Tavallaei
 [Text](./339)
 
 [Acronyms](./acronym.md): AIC CPU CXL DDIMM DDR DDR5 DIMM DRAM ECC GPU HBM HPC LPDDR ML MRDIMM NAND NUMA OCP PCIe SRAM SSD
+
+[YouTube](https://www.youtube.com/watch?v=JwSeMEmpxT8)
+
+[Text](./364)
+
+[Acronyms](./acronym.md): AI CMS CPU CXL GPU HBM JEDEC NVLink OCP PCI PCIe RDMA SK TCO UAL UALink UCIE UCIe
 
 TaekSang Song
 
@@ -5763,3 +5781,11 @@ Klas Moreau
 [Text](./357)
 
 [Acronyms](./acronym.md): AI CEO CMS CPU CXL CacheBench CacheLib DCD DRAM FBGEMM FPGA GEMM GPU HBM LC4 OCP PCIe TCO ZeroPoint
+
+Nilesh Shah
+
+[YouTube](https://www.youtube.com/watch?v=JwSeMEmpxT8)
+
+[Text](./364)
+
+[Acronyms](./acronym.md): AI CMS CPU CXL GPU HBM JEDEC NVLink OCP PCI PCIe RDMA SK TCO UAL UALink UCIE UCIe
