@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 360 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 361 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -279,6 +279,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Jackrabbit Labs](#jackrabbit-labs-1)
     - [KIOXIA](#kioxia-2)
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory-1)
+    - [Linaro](#linaro)
     - [Magnition IO](#magnition-io-2)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
@@ -5291,6 +5292,16 @@ Nathan Hanford
 [Text](./341)
 
 [Acronyms](./acronym.md): AI API CDI CXL DMTF EX GitHub HPC InfiniBand ML NVMe OFA OS OpenShift PCI PCIe RESTful SAN SNIA URI
+
+### Linaro
+
+Manivannan Sadhasivam
+
+[YouTube](https://www.youtube.com/watch?v=sV0WOE6gVLs)
+
+[Text](./365)
+
+[Acronyms](./acronym.md): BAR EPF IMS IOMMU MSI MSIX NVMe PC PCI QEMU SOC SPDM
 
 ### Magnition IO
 

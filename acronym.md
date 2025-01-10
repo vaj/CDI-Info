@@ -390,6 +390,7 @@
 | EINJ                | APEI Error INJection                                                      |
 | ENIC                | emulated Ethernet NIC                                                     |
 | EP                  | Endpoint                                                                  |
+| EPF                 | Endpoint Function                                                         |
 | EPI                 | European Processor Initiative                                             |
 | EPS                 | Event Per Second                                                          |
 | EPVM                | Extended Parallel Virtual Machines                                        |
@@ -629,6 +630,7 @@
 | IMDB                | Internet Movie Database                                                   |
 | IMDD                | Intensity Modulation with Direct Detection                                |
 | IMEC                | (Company Name)                                                            |
+| IMS                 | Interrupt Message Store                                                   |
 | INF                 | Information Document For                                                  |
 | InfiniBand          | (interconnect name)                                                       |
 | INT                 | Integer                                                                   |
@@ -1358,6 +1360,7 @@
 | SpotSurfer          | (functional name) (MemVerge)                                              |
 | SPPR                | Soft Post Package Repair                                                  |
 | SPR                 | Sapphire Rapids                                                           |
+| SQ                  | Submission Queue                                                          |
 | SQL                 | Structured Query Language                                                 |
 | SR                  | Single-Root, Short Reach                                                  |
 | SRAM                | Static Random Access Memory                                               |
