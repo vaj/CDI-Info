@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 361 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 362 disaggregated computing-related talks published on YouTube between March 2017 and November 2024, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5297,7 +5297,7 @@ Nathan Hanford
 
 Manivannan Sadhasivam
 
-[YouTube](https://www.youtube.com/watch?v=sV0WOE6gVLs)
+[YouTube](https://youtu.be/8R247YCoe94?si=jQGQTS7gy8N8vmlC)
 
 [Text](./365)
 
@@ -5625,6 +5625,14 @@ TaekSang Song
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
 
+William Martin
+
+[YouTube](https://youtu.be/pmg2ZYyZmio?si=uLkiYhK0eYim2eF5)
+
+[Text](./366)
+
+[Acronyms](./acronym.md): API BAR CMB CPU CSD CSE CSEE CSF CSP CSS CSx DMA FDM FMS FPGA HDD IO KV MMU NVM NVMe PCIe QR SDXI SLM SNIA SSD TWG UC ZNS
+
 ### ScaleFlux
 
 Tong Zhang
@@ -5688,6 +5696,12 @@ Jason Molgaard
 [Text](./361)
 
 [Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
+
+[YouTube](https://youtu.be/pmg2ZYyZmio?si=uLkiYhK0eYim2eF5)
+
+[Text](./366)
+
+[Acronyms](./acronym.md): API BAR CMB CPU CSD CSE CSEE CSF CSP CSS CSx DMA FDM FMS FPGA HDD IO KV MMU NVM NVMe PCIe QR SDXI SLM SNIA SSD TWG UC ZNS
 
 ### Sony
 

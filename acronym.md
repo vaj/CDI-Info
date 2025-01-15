@@ -203,6 +203,7 @@
 | CRUD                | Create, Read, Update, Delete                                              |
 | CS                  | Computational Storage                                                     |
 | CSA                 | Cloud Service Agreements                                                  |
+| CSD                 | Computational Storage Drive                                               |
 | CSE                 | Computational Storage Engine, CXL switch emulator                         |
 | CSEE                | Computational Storage Engine Environment                                  |
 | CSF                 | Computational Storage Function                                            |
