@@ -495,6 +495,7 @@
 | GDDR6X              | Graphics DDR6X                                                            |
 | GDDR7               | Graphics DDR7                                                             |
 | GDP                 | Gross Domestic Product                                                    |
+| GDRDMA              | GPU Direct RDMA                                                           |
 | GDT                 | GFD Decoder Table                                                         |
 | GeLU                | Gaussian Error Linear Units                                               |
 | GEMM                | Matrix-Matrix Multiplication                                              |
@@ -581,6 +582,7 @@
 | HMACs               | Hashed Message Authentication Codes                                       |
 | HMAT                | Heterogeneous Memory Attribute Table                                      |
 | HMEM                | Heterogeneous Memory                                                      |
+| HMM                 | Host Memory Manager                                                       |
 | HMSDK               | Heterogeneous Memory Software Development Kit                             |
 | HMU                 | Hotness Monitoring Unit                                                   |
 | HNF                 | Home Nodes Fabric                                                         |
@@ -641,6 +643,7 @@
 | IOL                 | InterOperability Laboratory                                               |
 | IOMAP               | (API Name in the Linux kernel)                                            |
 | IOMMU               | Input-Output Memory Management Unit                                       |
+| IOMMUFD             | Input-Output Memory Management Unit File Descriptor                       |
 | IOPS                | Input Output Per Second                                                   |
 | IoT                 | Internet of Things                                                        |
 | IOTLB               | Input/Output Translation Lookaside Buffer                                 |
@@ -1137,6 +1140,7 @@
 | PRI                 | Page Request Interface                                                    |
 | PROM                | Programmable Read-Only Memory                                             |
 | PRP                 | Physical Region Page                                                      |
+| PRS                 | Page Request Services                                                     |
 | PSL                 | Power Service Layer                                                       |
 | PSLC                | pseudo SLC                                                                |
 | PSM                 | Performance Scaled Messaging                                              |
@@ -1452,6 +1456,7 @@
 | TSP                 | TEE Security Protocol                                                     |
 | TSV                 | Through-Silicon Vias                                                      |
 | TTFT                | Time to First Token                                                       |
+| TTM                 | Translation Table Maps                                                    |
 | TVM                 | Trusted Virtual Machine                                                   |
 | TWG                 | Technical Work Group                                                      |
 | TX                  | Transmitter                                                               |
