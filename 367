@@ -1,1 +1,104 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Okay, hello everyone. My name is Liang Yan. I'm a software engineer from CoreWeave. Yeah, today I'm going to share a journey. We are trying to optimize the—it's actually the peer-to-peer DMA things there, even though this is based on an NVIDIA stack. And the limitation we met between here, from the software side and hardware side, and it's just that we thought we found a solution to their H100 system, but then we hit it to the GH200, a totally different architecture. So we will see the details later here.
+
+So yeah, today we're going to look at this here. So I think before, yeah, just like I said, the motivation here is simple. We have a quite limited timeline there. We try to get the best performance for the GPU to network card, go to the other network card and go to the GPU. So basically the GDRDMA there. And the performance is really bad at first look, but then we, yeah, we saw it from software side, hardware side, and then we get a better results there. But we do see there's some limitation, or see lacking our flexibility. And then also, come to some GH200.
+
+Yeah, I think before we start, we can have some quick background here. I think we have all of the experts here, so this should be quick. The test, we are using the RDMA perftest. So we are using the ib_write, which is right because we are more focused on the GPU stuff. So the NCCL, actually the write is more fit for the NCCL test there. And yeah, some terms, tech terms we met here, GPU RDMA, I already talked a little bit. And then there's ACS, ATS from the PCIe term, and IOMMU of course.
+
+So, just like I said, GPUDirect RDMA. With all of that, we know that all the device's memory goes to the system memory, to be pinned, and then for communication with each other. GPUDirect RDMA is actually, like here, the network card is allocated memory from the GPU. It's actually using the memory allocated from the GPU, the base address there. So basically, all the addresses here are GPU addresses. So GPU memory goes to the network card cache, if they're using one, and then goes to the kernel, and goes to the other side. Finally, it goes to the GPU memory.
+
+Yeah, I put the ACS and ATS here just because they're so similar, but they are quite different stuff here. ACS is more like a PCIe; it's more like a protocol, a PCIe capability there. So it could control the connection between the PCIe endpoint to the other one. So you can decide to control it. If they could direct, redirect, block, or something. ATS, the other side, is quite familiar with us. It's more like a TLB to the device, rather than the, yeah, rather than the, yeah. It's more like a, ATS to device is more like the TLB to system memory. So it's more like a cache system. Save the page table, the physical page table, mapping to the system page table to the physical address there. So this is actually quite important in all the systems. Because we know that TLB saves a lot of the, the performance from the main system. ATS is also doing the same thing here in the IOMMU. We can see that later.
+
+So, and yes, IOMMU. I think this is quite familiar. So we actually try to isolate the device, make it more safe, more independent. This is a very important tech to the cloud scenario, even mostly in virtualization. But I think people are more, notice it from a containerization scenario.
+
+So yeah, here's the beginning. So yeah, during our test, we are using Mellanox CX7. So the physical speed would be 400 gigabit. So yeah, that, so we are trying to hit this limited line as much as possible. However, it's so frustrating at the first place. If you see that, we actually only get 85. And with ACS, after we disable ACS. So the disable ACS is more like we could allow the device could communicate with each other, peer-to-peer DMA. Otherwise, it will need all goes to the PCIe switches. If there is a downstream port, goes to the root complex there and get the address and come back. So it's a long detour there. Yeah. We see it. It's frustrating because it's even worse than the device peer-to-peer connect without, not under the same PCIe switch. It's like even if we see the device, they connect under the same NUMA, not the PCIe switch. It's actually much faster. It's 255 there. And even because the UPI goes to the other NUMA, it's even faster. It's 250. So the direct response. The feedback to us is that this is definitely something wrong with the PCIe switch. Why the shortest path has the slowest speed there? Yeah, the later also confirmed this conclusion. And yes, this is because the hardware perspective side. Yeah, we can go there. So later that, we also. Yes. We contact with the vendor there. We actually using two different vendors there. As you know, for the AI, for the GPU, HPC machine server there, there's not so many vendors. Dell, SMC, and even that CT system, which is required by AMD there. But there's still a slight hardware difference there. For this one, of course, it's not good to the hardware. It's not good to the. The PCIe topology, like the general hardware, is more good to the PCIe switch. So yeah, we can just see the data here. So first, we updated the PCIe switch there. And boom, we did get the improvement. But only for bare metal system here there. So if you see, the bare metal could reach to the near limit there, 400. It's very well. Of course, it's with the disabled ACS, which means allowed the PCIe peer-to-peer. However, when it goes to the virtualization, we know in virtualization, we definitely need to IOMMU group there. So there's a DMA remapping there. There's address translation. We thought that this is the issue. But we couldn't identify. So. It turned out also some kind of hardware issue. But we can get that later.
+
+So, do you want to know the issue?
+
+Yes, I'll go there. 
+
+OK, yeah. You can't run virtualization and turn off ACS, and really expect it to work unless you do a whole bunch of special stuff to expose the actual physical addresses and physical topology to the VM because it's not virtualized anymore once you turn ACS off.
+
+We actually, we can. I agree with that. There's a portion about that one. I think we can get into the virtualization without IOMMU. Like I said, for ACS, ACS is more like a PCI device there. You can enable it. You can disable it. It's still... But with IOMMU there, because after you enable ACS, actually, ACS, there's an override to ACS. So when you enable ACS, or you see you want to enable ACS, you need to enable P2P translator bits there. This bit is actually overriding the P2P redirect and the ingress control, ingress the bit there. So I would see some point you're right there. Like even if you enable ACS there, it's kind of being disabled, overridden by the ATS bit there.
+
+Right. Translated requests have different routing rules than non-translated requests because they have different requirements. I'm just saying, like, if you turn on, if you disable ACS and try and run a VM, the addresses in the VM are not going to match the physical addresses, and it's not going to work the way you expect. And that's why you're getting these weird performance numbers, because you're still going through the IOMMU because you're not using the physical address that would go direct anymore because your virtualization has got the wrong address in it.
+
+Well, ACS is not about the...
+
+I think he's saying, though, that he's enabling the direct translation in the ACS capability, which should allow the redirect at the closest switch.
+
+It doesn't matter if the address is wrong.
+
+If they're using ATS.
+
+Yes.
+
+Are these with ATS turned on?
+
+Yes, I'll go to there. So, you are very ahead of my topic here. You're thinking where... So this is... Yeah, this is actually... This is actually an issue with ATS. Like, ATS is kind of a preventer. So for CX7, there they just announced this feature. It's quite new. It's not right. So once we update the firmware there, the ATS works as normal. We could get a better... When it goes to the conclusion side, I'll show you. We could get very good results. So eventually, this is more like... I think a—like, my perspective here, the ACS is not about the address at all. It's just about how to control the device connection in the PCIe bus.
+
+True, ACS interacts with the switch routing registers. Like the BAR editors in the switching interact with the ACS bits to decide where to send the packets. So if you send an address, that’s not going to be matched by the decoders in the switch, it’s still routed to the host bridge. And that’s what happens in virtualization; you put addresses on the bus that don’t match the decoder windows because the virtual BARs inside your VM don’t match the physical decoders, and it still goes to the IOMMU anyway. And effectively, your ACS doesn’t get a chance to go on the direct path because your address is wrong. Like that’s when you don’t have ATS involved, that’s why ACS doesn’t help you when you turn on the VM unless you’re very, very careful in how you construct your VM’s address map.
+
+Yeah, I, yes, yes, that's that thought. We thought we enabled ATS there because when you have a CX7 card, there's only one option you could do that then, even you couldn't set in the firmware to enable the ATS from MLX configure, so you're right, you're right, at this moment the story is is not finished yet, so, but I, like said, when when you enable the ATS, it's actually overriding the ATS, even if you enable it or disable it.
+
+Well, it uses different enforcement rules because it's translated requests use different enforcement rules from non-translations.
+
+Yes, I also go, this is also comes as a concern like how because when we enable ATS, there's still the, the it is still needed to enable the P2P translation there, there's still security concerns there. So we are thinking like even we we have the ATS, we have the ATS maybe we but because ATS is not not that flexible. It needs to be either a root part or an up part of the PCIe switch. So it doesn't work like if it's a portion of the downstream part of a PCIe switch. So we actually want some more flexible for all of the ACS there. But I agree that you said that the ACS is partial for the virtualization scenario. It's just overwritten by the ATS there. Somehow, you have to deal with that. We still kind of disabled it in a VM with ATS. Does that make sense to you?
+
+I mean, our expectation with these solutions is that you'll run ATS for your VMs. Like, that's the recommendation.
+
+Yes. Yes. The timing is that we can't talk about that.
+
+It sounds like you have more.
+
+Yes, we can talk about that. I think that's a very good question. So yes. So like I said, so PCIe topology there, we have the Dell-SMC. We're looking... It's a little bit different. For example, I talked about the ACS control range there. It only works for the root part. And also some upper part of the PCIe switch there. So which means if you put a multiple device under the same PCIe switch, you need to kind of assign the same IOMMU group to it. However, this is not true in a cloud scenario. Sometimes we may want... Like, for example, we bound the GPU in the PCIe switch and the CX7. We actually also have the NVMe controller there. The different part of the Dell is that they also put some CX7. The CX7 you are using for the GPU fabric, and there's also the network for the management network there. They also bind it to one of the PCIe switches there, which caused that we can't totally isolate the device there. So we want a case that even that they are under the same PCIe switch we kind of want to just pass through partial of the device there. That's what we can do in all the current kernel development.
+
+Well, no, you're supposed to turn on ACS. You're supposed to turn on ATS, and set ACS enforcement so you get discrete groups, and that's how the solution is supposed to work when you use virtualization. That's the only option that satisfies all of the requirements.
+
+Yes, that's what I said. But this is, we do, you do that thinking you have multiple devices under the same PCIe switch. You kind of enforce it. You enable ACS there, but it's not really working. When you enable the ATS there, it could still pass to... No matter you enable the P2P direct or the Egress control there, they could still use the... Once the address is translated, the AT is confirmed from there, so it could still be transferred to the other device. This is kind of a behavior similar to the disabled ACS there.
+
+Yes, that's why it's a recommended solution. You turn on ATS, you get the translated bit, it goes peer-to-peer, you get multiple IOMMU groups, and you still get all your security. This is the correct...
+
+Yeah, that's a thing to do. Yes, but we can't get... For this same device, there, we can't get multiple IOMMU there.
+
+Why not?
+
+Once you add under the same PCIe switch, it will all bound to the same group.
+
+You turn on ACS, and you'll get multiple groups.
+
+Yeah, but we don't want this case. We want to put some... Yeah. Yes, I... Because we want a second layer security there, we... ACS, I think, yeah, from the software side, because of the ACS, IOMMU could... Because, yeah, your question is a little bit... Because from here, I did talk something about this part issue. I'll come back... We can go there, okay?
+
+We... Let's talk... I think you have a very good question here. So I... Yeah.
+
+So did you come up with a solution that satisfied what you wanted?
+
+Here.
+
+Okay. Why don't we talk to that?
+
+So is this what you...
+
+This is what you're supposed to do. Yeah.
+
+Yeah. Yeah. But we said that we still have limitations. Yeah. So we said that we should go to this here. We still couldn't like... I think... Yeah. That's why I... 
+
+It's not your question. But let's see our limitation here. So if we... 
+
+Yeah. We kind of want to like... Because it's out there, you will have a different group there, but it's actually... Even if they are actually in different groups, they actually still could connect with each other.
+
+Well, no. According to the defined IOMMU and VFIO security model, they can't because we're trusting that the ATS mechanism is trusted. That's the security model of PCI.
+
+Yeah, ATS is based on the trust address there, but you can still have the... But we are thinking like, if we could, because this is also include the... I can go to this part. I think for this part, yes, with this solution, we could get the best results. But we have some limitation there because we put some device... Because of the vendor difference there, sometimes they put all the device under the PCIe switch. We want to like, if we could totally innovate, the real innovation, there's no override there. We still, we want to add another layer of IOMMU group there. This is just the theory. We haven't to do that. I think maybe we are hitting the issue you mentioned before.
+
+But so, actually, when we come to the GH200 there, the situation is a little bit more different. It's because, like, because from this area, it looks more similar to the CXL memory, actually. So for example, for the current GH200 scenario, we saw... Because of the NVLink C2C, so the system memory and the device memory, they are actually, yeah, they are actually, unified virtual memory address there. But if you see the CXL, they put a CXL there, but actually it's not actually under the PCIe switch with the, not CXL, it's a DPU anymore.
+
+So I guess we're running out of time. But... but on the system you're talking about here, there's no need for a PCI switch or a peer-to-peer path because the underlying C2C and everything else has more than enough bandwidth to do what you want to do. So you just, it's very simple. You just use the IOMMU, you don't worry about ACS and there's no problems.
+
+This is not only about that. This is also, yeah, I'm talking about is actually, I'm thinking for, for this here, like, uh, uh, if, if you enable that, you, you could see, uh, there's, it's, it's more like, uh, CPU-less NUMA node there now. So, uh, there is no NUMA per, per GPU node there because, uh, but it is still have the NUMA for the NVLink connection there. So if you, you enable a kernel there, you could see, uh, there's still not NUMA group there. That's weird. But, uh, the, the system memory and the, the, the, the local GPU memory is under the same NUMA, but with, there's still some, uh, some memory from other device. So this, uh, this is very like, uh, the, the CXL memory there, the memory tearing, but a little different is that, uh, here, the memory is actually faster than the system memory. So it's, it's, HBM and, uh, the CXL memory. Uh, it, it's much faster. That's why they put the, uh, a scalable coherency fabric there. So, uh, in general, I think so. Yeah. For this is a little bit of transfer from the, the current IOMMU here from here is more like, uh, how, how do we do the device memory? Especially the fast device memory there, uh, like the, the, uh, the GPU memory. HBM. I think that there will be more and more other memory in the future, suit up. Similar here, uh, this would be more like, uh, it would be more, I think, uh, it would be more similar with the CXL or the HMM there. And, uh, they, we are, uh, make the IOMMU is more similar with the MMU and, uh, so like using the PRS, uh, oh, so you don't need a pin and, uh, all the behavior would be more similar. Like even it's a device memory. Uh, system memory there. So this is a totally new, I think the current IOMMU is a little bit different, but, uh, like I said, this is just the beginning. We just to GH200 of them.
+
+Yeah. I need to ask you to wrap up. Do you have any last questions for the audience? So, perfect timing. Okay. I mean, there is a, I know that there is a raised hand, uh, I'm sorry. But, we can take it offline. I'm sorry, but we need to keep on going because otherwise, we will be running late. Otherwise, so any questions?
+
+Yeah, I, I think I would more like, uh, because of what I'm working on, especially, I first is like, uh, I think, uh, it also probably related to the question he asked because I'm also a question, like, uh, can we do the future? Like, uh, if we regroup. Uh, from the IOMMU, I didn't see the API from the IOMMUFD, but is it possible? Like, uh, we, we could regroup the, I know with the ATS, uh, you don't need it to, but, uh, if, if we want to do that, is it feasible to steal kind of, uh, no, then the fact of the question is goes to the, uh, it goes to the, the GH200 there for CXL memory there. So I think so far it's all about, uh, because of the GPU memory is a little bit different from other device memory. We actually, when we saw the P2P DMA there, we saw this issue here, the device, the device memory is not maintained by the page. It's it's has like, it's best for the GPU. It has its own TTM management system. So we are thinking like, uh, if. Make it a more look at the, the device map, is it possible to make it a more look at device memory, similar with the system memory, like a page allocation page management. I saw there's some, uh, uh, legacy patches there, but, uh, while ago. So I'm curious, what's the latest, uh, trends for development or research on this area?
+
+We have to take it offline, but thank you very much for your
