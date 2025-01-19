@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 363 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 364 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -308,6 +308,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Zeropoint Technologies](#zeropoint-technologies)
   - [2025Q1](#2025q1)
     - [CoreWeave](#coreweave)
+    - [NVIDIA](#nvidia-5)
 
 ## 2017
 
@@ -5828,3 +5829,13 @@ Liang Yan
 [Text](./367)
 
 [Acronyms](./acronym.md): ACS AI AMD API ATS BAR C2C CPU CXL DMA DPU GDRDMA GH200 GPU HBM HMM HPC IOMMU IOMMUFD MMU NCCL NUMA NVIDIA NVLink NVMe P2P PCI PCIe PRS RDMA SMC TLB TTM UPI VFIO VM
+
+### NVIDIA
+
+Jason Gunthorpe
+
+[YouTube](https://youtu.be/ZkzqRznaR44?si=oCCC0hvxnW53ilBu)
+
+[Text](./368)
+
+[Acronyms](./acronym.md): ACPI AI AMD API ARM BBM CPU CUT DMA DPDK IO IOMMU IOMMUFD IOVA KVM MMIO NVMe PCI PGD PMD PRI PT PTE PUD QEMU RCU RFC SIOV SMMU SVA TDISP TLB VDPA VDT VFIO VIOMMU VM VSVA

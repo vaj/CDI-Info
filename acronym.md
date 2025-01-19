@@ -64,6 +64,8 @@
 | BAR                 | Base Address Register                                                     |
 | BARD                | (Foundation Model Name)                                                   |
 | BAS                 | Base System Architecture                                                  |
+| BBM                 | Break Before Make                                                         |
+| BBML                | Break Before Make Level                                                   |
 | BBR                 | Base Boot Requirements                                                    |
 | BDF                 | PCI Express Bus Device Function                                           |
 | BeeGFS              | (file system name)                                                        |
@@ -217,6 +219,7 @@
 | CTLE                | Continuous-Time Linear Equalizer                                          |
 | CTO                 | Chief Technology Officer                                                  |
 | CUDA                | Compute Unified Device Architecture                                       |
+| CUT                 | Concurrent Update Transactions                                            |
 | CV                  | (numerical formula)                                                       |
 | CVME                | Corrected Volatile Memory Error                                           |
 | CVSS                | Common Vulnerability Scoring System                                       |
@@ -648,6 +651,7 @@
 | IoT                 | Internet of Things                                                        |
 | IOTLB               | Input/Output Translation Lookaside Buffer                                 |
 | IOV                 | Input/Output Virtualization                                               |
+| IOVA                | I/O Virtual Address                                                       |
 | IOWN                | Innovative Optical and Wireless Network                                   |
 | IOX                 | I/O Expansion (Grand Teton)                                               |
 | IP                  | Intellectual Property                                                     |
@@ -1087,6 +1091,7 @@
 | PFN                 | Physical Frame Number, Page Frame Number                                  |
 | PFRA                | Pageframe Replacement Algorithm                                           |
 | PGAS                | Partitioned Global Address Space                                          |
+| PGD                 | Page Global Directory                                                     |
 | PhD                 | Doctor of Philosophy                                                      |
 | PhotoWave           | (Product name)(Lightelligence)                                            |
 | PHY                 | Physical Layer                                                            |
@@ -1106,6 +1111,7 @@
 | PLX                 | (Company Name)                                                            |
 | PM                  | Power Management, Persistent Memory                                       |
 | PMCI                | Platform Management Communications Infrastructure                         |
+| PMD                 | Page Middle Directory                                                     |
 | PMDK                | Persistent Memory Development Kit                                         |
 | PMEM                | Persistent Memory, Persistent Memory Module                               |
 | PMFS                | (file system name)                                                        |
@@ -1146,8 +1152,11 @@
 | PSM                 | Performance Scaled Messaging                                              |
 | PST                 | Pacific Standard Time                                                     |
 | PSUs                | Power Supply Units                                                        |
+| PT                  | Page Table                                                                |
+| PTE                 | Page Table Entry                                                          |
 | PTM                 | Precision Time Measurement                                                |
 | PTP                 | Precision Time Protocol                                                   |
+| PUD                 | Page Upper Directory                                                      |
 | PUE                 | Power Utilization Efficiency                                              |
 | PXB                 | PCI Expander Bridges                                                      |
 | PyTorch             | (library name) (OSS)                                                      |
@@ -1307,6 +1316,7 @@
 | SIGCOMM             | Association for Computing Machinery's Special Interest Group              |
 | SIM                 | Single Inline Memory Module                                               |
 | SIMD                | Single Instruction Multiple Data                                          |
+| SIOV                | Single-Root I/O Virtualization                                            |
 | SIP                 | System In Package                                                         |
 | SiP                 | System In Package                                                         |
 | SiPearl             | (Company Name)                                                            |
@@ -1387,6 +1397,7 @@
 | SuperPOD            | (Product name) (NVIDIA)                                                   |
 | SuperRAM            | (Product name)(ZeroPoint)                                                 |
 | SUT                 | system under test                                                         |
+| SVA                 | Shared Virtual Address                                                    |
 | SVE                 | Scalable Vector Extension                                                 |
 | SWMR                | Single Writer Multiple Reader                                             |
 | SXM                 | (form factor name)                                                        |
@@ -1521,6 +1532,8 @@
 | VCSEL               | Vertical Cavity Surface Emitting Laser                                    |
 | VDI                 | Virtual Desktop Infrastructure                                            |
 | VDM                 | Vendor Defined Message                                                    |
+| VDPA                | Virtual Data Path Acceleration                                            |
+| VDT                 | Virtual DMA Translation                                                   |
 | VertIO              | Virtual I/O Device                                                        |
 | VF                  | Virtual Function                                                          |
 | VFIO                | Virtual Function I/O                                                      |
@@ -1529,6 +1542,7 @@
 | VHDL                | VHSIC (Very High Speed Integrated Circuit) Hardware Description Language  |
 | VI                  | Virtualization Intermediary                                               |
 | VIAs                | Vertical Interconnect Accesses                                            |
+| VIOMMU              | Virtual IOMMU                                                             |
 | VIP                 | Verification Intellectual Properties                                      |
 | VL                  | Virtual Lane                                                              |
 | VLARB               | Virtual Lane Arbitration                                                  |
@@ -1557,6 +1571,7 @@
 | vSCSI               | (tool name) (VMWare)                                                      |
 | VSI                 | (benchmark name)(Login VSI)                                               |
 | VSR                 | Very Short Reach                                                          |
+| VSVA                | Virtual Shared Virtual Address                                            |
 | VXLAN               | Virtual eXtensible Local Area Network                                     |
 | WAF                 | Write Amplification Factor                                                |
 | WAKE                | (PCIe Signal Name)                                                        |
