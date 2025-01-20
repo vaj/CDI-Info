@@ -309,6 +309,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
   - [2025Q1](#2025q1)
     - [CoreWeave](#coreweave)
     - [NVIDIA](#nvidia-5)
+    - [Red Hat](#red-hat-1)
 
 ## 2017
 
@@ -5839,3 +5840,13 @@ Jason Gunthorpe
 [Text](./368)
 
 [Acronyms](./acronym.md): ACPI AI AMD API ARM BBM CPU CUT DMA DPDK IO IOMMU IOMMUFD IOVA KVM MMIO NVMe PCI PGD PMD PRI PT PTE PUD QEMU RCU RFC SIOV SMMU SVA TDISP TLB VDPA VDT VFIO VIOMMU VM VSVA
+
+### Red Hat
+
+Chris Wright
+
+[YouTube](https://youtu.be/wYg552AAlpY?si=p94w7q7rpAJlZEFR)
+
+[Text](./369)
+
+[Acronyms](./acronym.md): AI CXL IOWN
