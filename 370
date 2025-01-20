@@ -1,1 +1,48 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Now it's Ilpo with the PCIe bandwidth controller, thank you, Ilpo. Yeah, so we continue with the pod driver related stuff now, so I'm going to talk about this PCIe bandwidth controller.
+
+So, what is the bandwidth controller? So, it basically is built to control or throttle the PCIe link speeds. So, this is primarily done for thermal or power—power—reasons, but there could be other reasons beyond that. And it adds an internal API to change the link speed, and for user space control, there is this third thermal cooling device, which can be used by, by the thermald or some other user space applications. And when, when PCIe 6 comes, the also the link feed might, might be eventually controllable. So, this is not something the current patch it adds, but it might be possible in the future.
+
+So the link speed management in PCIe, it consists of a few bits in the register. So we have this link bank with management status (LBMS) and then also this autonomous status; there they are asserted when the link speed or width is changed. And then we have the associated interrupt, which can be enabled. So this binds this driver to the to the power driver. So because we are using the interrupt, interrupt, it needs to be underneath the four driver, so it's a service driver, and uh, this interrupt and the bit allows allowing keeping the current link speed in the PCI bus structure up to date, and it's it's something that's actually not done, done currently because there used to be this bandwidth notifications driver but it got got reverted. So, so currently, this speed is only only on read when the operating system asks for it, but of course, the hardware could change change the speed on its own, and we don't currently capture these speed changes. And then there is the support and link speed vector in link couple is to register and target link speed in link control. And of course, there is also the current link speed in the status register and things like that.
+
+And so, the bandwidth controller, the link with control procedures, as shown on this slide. So, first we calculate the intersection of the support space. So we have the root part, and then the endpoint underneath it. And they both have these link speed vectors, and we calculate the intersection of them. And then, when we have the desired speed, we take the highest speed out of those. And this algorithm is currently written such that it also is able to handle these gaps in the link speed. So, the spec query requires that there are no gaps, but it also has an implementation note which tells that it might be allowed in the future. So, this is kind of future-proofed. And once we have the speed, we adjust the target link speed register and then ask for the link to retrain and see what is the result.
+
+And this has certain integration challenges. So, the LBMS is already used in the kernel. It's used for this one quirk, which I call the target speed quirk. So, I will come back to this on the later slide. And then also, because we are adding this new API to change the target speed or the link speed, whether the bandwidth controller can anymore be disabled, if some device depends on that. But I will also talk more about that on the upcoming slides. And then the third thing is, which is kind of a heads-up thing. So, I have solved this. So, there is this bit in the link control and in control-through registers, and there are different drivers which alter different bits there. So, we need to do this safely so that we don't lose any any of the any of the bits. So, if you are changing any of any of the bits in these these registers, please use the set and clear uh capability accessor, so so that you get the proper blocking working and no updates are lost.
+
+So, what is the target speed quirk? As I mentioned earlier, so, some devices which fail to bring up the link at maximum speed, so so, and this quirk was added to deal with such devices. So, it's indicated; it's identified using the LBMS speed and the fact that the link did not come up. So, so, it set this uh, one bit but not the other. Then we, then we try to try this work, and it's, it, it goes goes to lower, lower the link speed first first to see if the link then comes up. And at least for some devices, this is this this works, and and they come up. And then, then there are also devices which, once they have gotten the link up for for the lower speed, they can then then bring it up on the higher higher speed too. And because this quirk is changing the link speed, so it should use the new API, obviously. And the challenge is monopolization of LBMS speed, so one time it can run very early into the boot up process or the discovery process. And at that point of time, there is no PCI bus yet, there is no port driver or these service drivers yet at that point of time. But it can also be run... later down, so the controller code now needs to deal with both of these cases, which is kind of annoying and adds a bit of complexity. And the quirk is usually on, so it can only be disabled if one toggles the expert thing on, so it's kind of assumed to be there.
+
+And I'm at this table about the current approaches. So there are various cases to consider. So there's first of all the PCI_QUIRKS and then the PCI_BWCTRL. So when both are off, then of course there's not much to do. But when we have the quirks enabled, then the LBMS is handled directly. So without the... much from the bandwidth controller side, because it's mostly disabled, but there is little code to bridge this gap that the bandwidth controller is there. And then the case is when both are on, even that has this complexity. So during the initial scan, we don't have the bandwidth control up yet, so we need to do again this LBMS bit directly and not counting. And later, in the later phases, the LBMS is counted and there are also some variations in the locking. So it would be possible to simplify this if the PCI_BWCTRL is also hidden behind the expert config, so that you have to enable it. So then I would say that I just don't support certain things, but if somebody goes to disable it, so it would simplify. But still the last two rows are something that the current port driver timeline does not allow to get rid of. So from the point of view of the bandwidth controller, it would be nice if the port driver would kind of bring this thing up earlier or something else from the PCI core.
+
+And this brings me to the Kconfig integration. So because we have this Intro API for changing link speed, so, do the users require it always to be available? So I can imagine that they're... And I think some of the... Some of the cases in the kernel kind of, which are currently changing the link speed, kind of seem to indicate that this would be done because the device does not, for some reason, want to operate on a higher speed because it isn't reliable or it doesn't really work. So it would kind of indicate that you always need this API to change the link speed, even if the bandwidth Controller would be disabled. So this is kind of the question then, whether it's useful at all to allow disabling it if there are things which depend on it.
+
+So my view is that the idea or the motivation for the bandwidth controller is that we want to be able to throttle the bandwidth on PCIe devices; if the case of a laptop becomes too hot and or if... to just reduce power consumption. And if... I think that is a common enough feature that we don't want to hide it behind the expert option. So I think it shouldn't be hidden, and well, we have to make it work somehow with a... With that quirk, that's just my two cents.
+
+I'm not sure exactly which way you said that...
+
+So don't hide it behind the expert option.
+
+I mean, hiding the ... disabling it behind the experts, so...
+
+Another use case here might be just throttling a device in general. So, VFIO introduced migration, and we might want to slow down devices so they dirty pages less quickly. I don't know if uh devices can do that transparently, uh, but so there might be a non-thermal use case for this as well.
+
+Yeah, yeah, I I I I know there there might be other use cases, but
+
+here five minutes 
+
+A question, uh, why do we want to hide bandwidth controllers, all?
+
+Uh, uh, I I I meant that if, if it's not so easy to disable it, so, so, so, then then then I don't I I we don't need to solve all the all the complexity because I I I
+
+Why do we want to be able to disable it? Like, what's the reason? Why do you want it to be possible to disable it?
+
+Well, uh, I I kind of expected that somebody would want to disable it, but
+
+If there is no reason, then I wouldn't worry. If somebody comes up with a reason, then yeah, but, but till now
+
+yeah
+
+Any other questions from the audience?
+
+Yeah, I don't have any thing else, so.
+
+Anyone else having comments? You're good, thank you.
