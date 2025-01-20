@@ -308,6 +308,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Zeropoint Technologies](#zeropoint-technologies)
   - [2025Q1](#2025q1)
     - [CoreWeave](#coreweave)
+    - [Intel](#intel-12)
     - [NVIDIA](#nvidia-5)
     - [Red Hat](#red-hat-1)
 
@@ -5830,6 +5831,16 @@ Liang Yan
 [Text](./367)
 
 [Acronyms](./acronym.md): ACS AI AMD API ATS BAR C2C CPU CXL DMA DPU GDRDMA GH200 GPU HBM HMM HPC IOMMU IOMMUFD MMU NCCL NUMA NVIDIA NVLink NVMe P2P PCI PCIe PRS RDMA SMC TLB TTM UPI VFIO VM
+
+### Intel
+
+lipo Järvinen
+
+[YouTube](https://youtu.be/04ejb9GcmbI?si=JKz8QIa64fkQQN8K)
+
+[Text](./370)
+
+[Acronyms](./acronym.md): API LBMS PCI PCIe VFIO
 
 ### NVIDIA
 

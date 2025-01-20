@@ -702,11 +702,13 @@
 | KV                  | Key-Value                                                                 |
 | KVM                 | Kernel-based Virtual Machine                                              |
 | L0P                 | Low Power State                                                           |
+| LABS                | Link Autonomous Bandwidth Status                                          |
 | LAI                 | Logic Analyzer Interface                                                  |
 | LAMMPS              | Large-scale Atomic/Molecular Massively Parallel Simulator                 |
 | LAN                 | Local Area Network                                                        |
 | LBA                 | Logical Block Addressing                                                  |
 | LBBR                | Linux Base Boot Requirements                                              |
+| LBMS                | Link Bandwidth Management Status                                          |
 | LC4                 | (compression algorithm name)                                              |
 | LCD                 | liquid crystal display                                                    |
 | LCRC                | Link Cyclic Redundancy Check                                              |
