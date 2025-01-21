@@ -589,6 +589,7 @@
 | HMSDK               | Heterogeneous Memory Software Development Kit                             |
 | HMU                 | Hotness Monitoring Unit                                                   |
 | HNF                 | Home Nodes Fabric                                                         |
+| HIP                 | Heterogeneous-compute Interface for Portability                           |
 | HomE                | Homomorphically Encrypted Deep Learning Inference                         |
 | HP                  | Hot-Plug                                                                  |
 | HPA                 | Host Physical Address                                                     |
@@ -1459,6 +1460,7 @@
 | TPCC                | TPC-C                                                                     |
 | TPCDS               | TPC-Decision Support                                                      |
 | TPCH                | TPC-ad-Hoc                                                                |
+| TPCXAI              | TPCx-AI                                                                   |
 | TGPIO               | Time General Purpose Input/Output                                         |
 | TPM                 | Trusted Platform Module                                                   |
 | TPP                 | Transparent Page Placement                                                |

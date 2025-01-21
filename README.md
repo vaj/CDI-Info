@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 364 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 366 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -281,6 +281,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Lawrence Livermore National Laboratory](#lawrence-livermore-national-laboratory-1)
     - [Linaro](#linaro)
     - [Magnition IO](#magnition-io-2)
+    - [MangoBoost](#mangoboost)
     - [Marvell](#marvell-2)
     - [MemVerge](#memverge-8)
     - [Meta](#meta-5)
@@ -4982,6 +4983,12 @@ Craig Carlson
 
 [Acronyms](./acronym.md): AI AMD CLI CPU CSE CTO CXL DCD DDR DNA DRAM FMAPI FMS GPU GitHub IO InfiniBand NUMA NVMe PCI PCIe QEMU QR RAM SDXI SNIA SSD VM YouTube
 
+[YouTube](https://www.youtube.com/watch?v=UwxQkOQ8_2s)
+
+[Text](./371)
+
+[Acronyms](./acronym.md): AI AMD AMX API ARM ASIC CPU CUDA ChatGPT ConnectX DPU DSP DeepSpeed ETA FIO FPGA GPU GitHub HBM HIP HPC IO IP IPU InfiniBand LLM MI210 MI300 NIC NPU NVMe PCIe POSIX PyTorch RDMA ROCm RoCE SOC SPDK SSD SmartNIC TCP TPCXAI smartNIC
+
 J Metz
 
 [YouTube](https://youtu.be/_oQjOLj2-W4?si=pLWhNihP7ldDEVkN)
@@ -5317,6 +5324,16 @@ Andy Banta
 [Text](./353)
 
 [Acronyms](./acronym.md): AI AMD CLI CPU CSE CTO CXL DCD DDR DNA DRAM FMAPI FMS GPU GitHub IO InfiniBand NUMA NVMe PCI PCIe QEMU QR RAM SDXI SNIA SSD VM YouTube
+
+### MangoBoost
+
+Eriko Nurvitadhi
+
+[YouTube](https://www.youtube.com/watch?v=UwxQkOQ8_2s)
+
+[Text](./371)
+
+[Acronyms](./acronym.md): AI AMD AMX API ARM ASIC CPU CUDA ChatGPT ConnectX DPU DSP DeepSpeed ETA FIO FPGA GPU GitHub HBM HIP HPC IO IP IPU InfiniBand LLM MI210 MI300 NIC NPU NVMe PCIe POSIX PyTorch RDMA ROCm RoCE SOC SPDK SSD SmartNIC TCP TPCXAI smartNIC
 
 ### Marvell
 
