@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 366 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 367 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5579,6 +5579,14 @@ Adam Manzanares
 
 [Acronyms](./acronym.md): AI BIOS C2C CXL DCPerf DRAM GH200 HBM NUMA NVIDIA PCI PHY RAM TCO
 
+Bill Martin
+
+[YouTube](https://www.youtube.com/watch?v=-59Punn7qIo)
+
+[Text](./372)
+
+[Acronyms](./acronym.md): BAR CMB CPU CSD CXL CXL.io CXL.mem DMA HDM HPA IO IOMMU MMIO NVM NVMe OCP OS PCI PCIe PMR QR RAID SLM SNIA SSD UIO
+
 Changho Choi
 
 [YouTube](https://www.youtube.com/watch?v=vJYSLCUJj5s)
@@ -5724,6 +5732,12 @@ Jason Molgaard
 [Text](./366)
 
 [Acronyms](./acronym.md): API BAR CMB CPU CSD CSE CSEE CSF CSP CSS CSx DMA FDM FMS FPGA HDD IO KV MMU NVM NVMe PCIe QR SDXI SLM SNIA SSD TWG UC ZNS
+
+[YouTube](https://www.youtube.com/watch?v=-59Punn7qIo)
+
+[Text](./372)
+
+[Acronyms](./acronym.md): BAR CMB CPU CSD CXL CXL.io CXL.mem DMA HDM HPA IO IOMMU MMIO NVM NVMe OCP OS PCI PCIe PMR QR RAID SLM SNIA SSD UIO
 
 ### Sony
 
