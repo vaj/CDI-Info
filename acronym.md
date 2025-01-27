@@ -11,6 +11,7 @@
 | ACS                 | Architecture Compliance Suite                                             |
 | AD                  | Additional Authentication Data                                            |
 | ADAS                | Advanced Driver Assistance Systems                                        |
+| ADBC                | Arrow Database Connectivity                                               |
 | ADC                 | Analog-to-Digital Converter                                               |
 | ADDR                | memory address                                                            |
 | ADR                 | Asynchronous Data Refresh                                                 |
@@ -124,6 +125,7 @@
 | CCIX                | Cache coherent interconnect for accelerators                              |
 | CDAT                | Core and Device Attribute Table                                           |
 | CDF                 | Cumulative Distribution Function                                          |
+| CDF4                | Common Data Form version 4                                                |
 | CDFP                | CD Form Factor Pluggable                                                  |
 | CDI                 | Composable Disaggregated Infrastructure                                   |
 | CDMI                | Cloud Data Management Interface                                           |
@@ -567,6 +569,7 @@
 | HCI                 | Human-Computer Interaction                                                |
 | HD                  | High-Density                                                              |
 | HDD                 | Hard Disk Drive                                                           |
+| HDF5                | Hierarchical Data Format version 5                                        |
 | HDFS                | Hadoop Distributed File System                                            |
 | HDM                 | Host-managed Device Memory                                                |
 | HDMD                | Device Managed Coherence                                                  |
@@ -606,6 +609,7 @@
 | HTML                | HyperText Markup Language                                                 |
 | HTTP                | Hyper Text Transfer Protocol                                              |
 | HTTPS               | Hypertext Transfer Protocol Secure                                        |
+| HVAC                | Heating, Ventilation, and Air Conditioning                                |
 | HVM                 | High Volume Manufacturing                                                 |
 | HyperCube           | (topology name)                                                           |
 | HyperTransport      | (interconnect name)                                                       |
@@ -1313,6 +1317,7 @@
 | SI                  | System Image, Signal Integrity                                            |
 | SIAM                | the Society for Industrial and Applied Mathematics                        |
 | SIE                 | Security Interface Extension                                              |
+| SIEM                | Security Information and Event Management                                 |
 | SIF                 | Shared InFrastructure                                                     |
 | SIFT                | Scale-Invariant Feature Transform                                         |
 | SIG                 | Special Interest Group                                                    |
@@ -1387,6 +1392,7 @@
 | SRIOV               | Single-Root Input/Output Virtualization                                   |
 | SSD                 | Solid State Drive                                                         |
 | SSDT                | Secondary System Description Table                                        |
+| SSE                 | Server-Side Encryption                                                    |
 | SSF                 | Storage Form Factor                                                       |
 | SSH                 | Secure Shell                                                              |
 | SSL                 | Secure Sockets Layer                                                      |

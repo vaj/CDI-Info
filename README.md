@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 367 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 368 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -260,6 +260,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [ZeroPoint](#zeropoint-2)
   - [2024Q4](#2024q4)
     - [(Independant)](#independant)
+    - [AirMettle](#airmettle)
     - [Alibaba](#alibaba)
     - [AMD](#amd-8)
     - [Ampere](#ampere)
@@ -4946,6 +4947,16 @@ Brian Hirano
 [Text](./360)
 
 [Acronyms](./acronym.md): CEO CMS CMU CSF CXL ChatGPT EDA IP ISCA IT MICRO MIT NDA NSF OCP PIA PhD SDC USPTO VLSI
+
+### AirMettle
+
+Donpaul Stephens
+
+[YouTube](https://youtu.be/QApFU547fYE?si=TPxDImnfIl7OWumS)
+
+[Text](./373)
+
+[Acronyms](./acronym.md): ADBC AI API CDF CDF4 CEO CMB CSV DRAM FPGA HDF5 IBM JSON LBA NVMe PhD RAID SIEM SQL SSD SSE ScaleFlux US XOR
 
 ### Alibaba
 
