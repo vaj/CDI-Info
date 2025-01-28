@@ -164,6 +164,7 @@
 | CM                  | Connection Manager                                                        |
 | CMA                 | Component Measurement and Authentication                                  |
 | CMB                 | Controller Memory Buffer                                                  |
+| CMBMCS              | Controller Memory Buffer Multi-Cast Support                               |
 | CMIS                | Common Management Interface Specification                                 |
 | CMM                 | CXL Memory Module                                                         |
 | CMMB                | CXL Memory Module - Box                                                   |
@@ -870,6 +871,7 @@
 | MPO                 | Multi-fiber Push On                                                       |
 | MPOL_PREFERRED_MANY | NUMA Memory Policy 名                                                     |
 | MPP                 | Massively Parallel Processing                                             |
+| MPS                 | Maximum Payload Size                                                      |
 | MPU                 | Memory Protection Unit                                                    |
 | MQSim               | (SSD simulator)(OSS)                                                      |
 | MR                  | Multi-Root, Multi-Ranked, Medium Reach                                    |
@@ -880,6 +882,7 @@
 | MRU                 | Most Recently Used                                                        |
 | MS                  | Master of Science                                                         |
 | MSA                 | Multi-Source Agreement                                                    |
+| MSC                 | Memory Set Command                                                        |
 | MSI                 | Message Signaled Interrupt                                                |
 | MSIF                | Modular Shared Infrastructure                                             |
 | MSIX                | Message Signaled Interrupt                                                |
@@ -1049,6 +1052,7 @@
 | OVS                 | Open vSwitch                                                              |
 | OWI                 | Optical Wavelength Interval                                               |
 | P2P                 | Peer to Peer                                                              |
+| P2PDMA              | Peer-to-Peer Direct Memory Access                                         |
 | P2V                 | Physical to Virtual                                                       |
 | P3DFFT              | Parallel Three-Dimensional Fast Fourier Transforms                        |
 | P4                  | Programming Protocol-independent Packet Processors                        |
