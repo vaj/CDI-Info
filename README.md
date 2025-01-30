@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 369 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 370 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5316,6 +5316,14 @@ Frederick Knight
 [Text](./361)
 
 [Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
+
+Mohinder Saluja
+
+[YouTube](https://www.youtube.com/watch?v=RkqMDjW8Rwk)
+
+[Text](./375)
+
+[Acronyms](./acronym.md): CMB CPU DDR DMA DMAC DPU DRAM FMS FPGA GPU HBM IO KIOXIA LFS NVMe NVRAM PCI PCIe PRP PoC RAID RAM RDMA SDXI SGL SRAM SSD XOR XPU
 
 ### Lawrence Livermore National Laboratory
 

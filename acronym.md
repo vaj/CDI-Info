@@ -310,6 +310,7 @@
 | DM                  | Device Manager, Domain Memory                                             |
 | DMA                 | Direct Memory Access                                                      |
 | DMA32               | (Name of zone)                                                            |
+| DMAC                | Direct Memory Access Controller                                           |
 | DMC                 | Data Management Chip                                                      |
 | DMP                 | Device Media Partition                                                    |
 | DMTF                | Distributed Management Task Force                                         |
@@ -735,6 +736,7 @@
 | LevelDB             | (key-value Database name) (OSS)                                           |
 | LF                  | Linux Foundation                                                          |
 | LFEDGE              | (organisation name)                                                       |
+| LFS                 | Log-Structured File System                                                |
 | LGA                 | Land Grid Array                                                           |
 | LID                 | Local Identifier                                                          |
 | LightCounting       | (Company Name)                                                            |
