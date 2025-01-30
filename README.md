@@ -5317,7 +5317,7 @@ Frederick Knight
 
 [Acronyms](./acronym.md): AI API ARM CMB CPU CRC CSEE CSF CTO CXL ChatGPT DMA DPU DRAM DSA FPGA GPU GUID HBM HEVC IO ML NUMA NVM NVMe OCP PCIe PI RAM RocksDB SDC SDXI SLM SNIA SmartNIC TCO TWG VP YouTube
 
-Mohinder Saluja
+Mahinder Saluja
 
 [YouTube](https://www.youtube.com/watch?v=RkqMDjW8Rwk)
 
