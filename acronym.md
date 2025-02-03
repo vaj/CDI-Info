@@ -5,6 +5,7 @@
 | ACCEL               | (benchmark name)(SPEC ACCEL)                                              |
 | ACF                 | Accelerated Compute Fabric                                                |
 | ACK                 | Acknowledgment                                                            |
+| ACL                 | Access Control List                                                       |
 | ACM                 | Association for Computing Machinery                                       |
 | ACMM                | Advanced CXL Memory Module                                                |
 | ACPI                | Advanced Configuration and Power Interface                                |
@@ -534,6 +535,7 @@
 | GMI                 | Global Memory Interconnect                                                |
 | GNR                 | Granite Rapids                                                            |
 | GNU                 | GNU's Not Unix!                                                           |
+| GPA                 | Guest Physical Address                                                    |
 | GPF                 | Global Persistence Flush                                                  |
 | GPFS                | (file system name)                                                        |
 | GPGPU               | General-purpose computing on graphics processing unit                     |
@@ -1099,6 +1101,7 @@
 | PERST               | (state name)                                                              |
 | PESTI               | Peripheral Sideband Tunneling Interface                                   |
 | PETSc               | Portable, Extensible Toolkit for Scientific Computation                   |
+| PF                  | Physical Function                                                         |
 | PFA                 | Predictive Failure Analysis                                               |
 | PFM                 | Primary Fabric Manager                                                    |
 | PFN                 | Physical Frame Number, Page Frame Number                                  |
@@ -1488,6 +1491,7 @@
 | TWG                 | Technical Work Group                                                      |
 | TX                  | Transmitter                                                               |
 | TxFIR               | TX Finite Impulse Response                                                |
+| UABI                | User ABI                                                                  |
 | UAL                 | Ultra Accelerator Link                                                    |
 | UALink              | Ultra Accelerator Link                                                    |
 | UART                | Universal Asynchronous Receiver-Transmitter                               |

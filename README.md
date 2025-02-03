@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 370 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 371 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -4764,6 +4764,14 @@ Richard Graham
 [Text](./296)
 
 [Acronyms](./acronym.md): UROM UCC SPDK RMA PPN PML P3DFFT OSU ODOS MPMD ISC IPDPS HPCX GVMI GNU ETH SIAM ACCEL AI AMD API ARM BSC CPU CUDA DMA DOCA DPA DPDK DPU DRAM ECC FPGA GCC GPU HPC IOPS IP IPU InfiniBand LAN LLVM MPI NCCL NIC NPU NVIDIA NVMe NVMeOF OS OpenSHMEM P4 PCI PGAS PRI RDMA RISC SDK SHMEM SIMD SPEC SmartNIC TCP TLS UCX XPU smartNIC
+
+Zhi Wang
+
+[YouTube](https://youtu.be/e5OW1pR84Zs?si=amRtyRaFXPNm2wT2)
+
+[Text](./376)
+
+[Acronyms](./acronym.md): ACL AMD ARB BAR CXL CXL.cache CXL.io CXL.mem DOE DPA DVSEC FD GPA HDM HPA IO LPC MESI MMIO MSI MSIX MUX NVIDIA PCB PCI PCIe PF QEMU RAM RAS RFC UABI VFIO
 
 ### Objective Analysis
 
