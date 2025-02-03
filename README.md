@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 371 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 372 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -310,10 +310,13 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Xconn Technology](#xconn-technology)
     - [Zeropoint Technologies](#zeropoint-technologies)
   - [2025Q1](#2025q1)
+    - [Canonical](#canonical)
     - [CoreWeave](#coreweave)
+    - [IBM](#ibm-3)
     - [Intel](#intel-12)
     - [NVIDIA](#nvidia-5)
     - [Red Hat](#red-hat-1)
+    - [SNIA](#snia-1)
 
 ## 2017
 
@@ -5891,6 +5894,16 @@ Nilesh Shah
 
 ## 2025Q1
 
+### Canonical
+
+Phil Williams
+
+[YouTube](https://youtu.be/S_0p4TNBbHU?si=fLac61jtDXsXOUW6)
+
+[Text](./377)
+
+[Acronyms](./acronym.md): AI AIOps API AWS CERN CPU CST CSV DLRM GFS GPT GPU GitHub HTML IBM IO IT IoT KVM ML MapReduce NFS NVIDIA NVMe OpenStack PCI POSIX PyTorch QAT QEMU RAG RAM RBD SAS SMB SNIA STS TCO TF TLC TPCDS iSCSI
+
 ### CoreWeave
 
 Liang Yan
@@ -5900,6 +5913,16 @@ Liang Yan
 [Text](./367)
 
 [Acronyms](./acronym.md): ACS AI AMD API ATS BAR C2C CPU CXL DMA DPU GDRDMA GH200 GPU HBM HMM HPC IOMMU IOMMUFD MMU NCCL NUMA NVIDIA NVLink NVMe P2P PCI PCIe PRS RDMA SMC TLB TTM UPI VFIO VM
+
+### IBM
+
+Kyle Bader
+
+[YouTube](https://youtu.be/S_0p4TNBbHU?si=fLac61jtDXsXOUW6)
+
+[Text](./377)
+
+[Acronyms](./acronym.md): AI AIOps API AWS CERN CPU CST CSV DLRM GFS GPT GPU GitHub HTML IBM IO IT IoT KVM ML MapReduce NFS NVIDIA NVMe OpenStack PCI POSIX PyTorch QAT QEMU RAG RAM RBD SAS SMB SNIA STS TCO TF TLC TPCDS iSCSI
 
 ### Intel
 
@@ -5930,3 +5953,13 @@ Chris Wright
 [Text](./369)
 
 [Acronyms](./acronym.md): AI CXL IOWN
+
+### SNIA
+
+Michael Hoard
+
+[YouTube](https://youtu.be/S_0p4TNBbHU?si=fLac61jtDXsXOUW6)
+
+[Text](./377)
+
+[Acronyms](./acronym.md): AI AIOps API AWS CERN CPU CST CSV DLRM GFS GPT GPU GitHub HTML IBM IO IT IoT KVM ML MapReduce NFS NVIDIA NVMe OpenStack PCI POSIX PyTorch QAT QEMU RAG RAM RBD SAS SMB SNIA STS TCO TF TLC TPCDS iSCSI

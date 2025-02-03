@@ -28,6 +28,7 @@
 | AIGC                | AI-Generated Content                                                      |
 | AiM                 | Accelerator In Memory                                                     |
 | AIML                | Artificial Intelligence and Machine Learning                              |
+| AIOps               | Artificial Intelligence for IT Operations                                 |
 | AlexNet             | (Neural network architecture name)                                        |
 | AlphaWave           | (Company Name)                                                            |
 | ALU                 | Arithmetic Logic Unit                                                     |
@@ -218,6 +219,7 @@
 | CSP                 | Cloud Service Provider                                                    |
 | CSR                 | Configuration Space register                                              |
 | CSS                 | Compute Subsystem                                                         |
+| CST                 | Cloud Storage Technologies                                                |
 | CSV                 | Comma-Separated Values                                                    |
 | CSx                 | Computational Storage Device – CSP or CSD or CSA                          |
 | CTLE                | Continuous-Time Linear Equalizer                                          |
@@ -519,6 +521,7 @@
 | GFP                 | Get Free Page                                                             |
 | GFP_EXMEM           | (flag name)                                                               |
 | GFP_NORMAL          | (flag name)                                                               |
+| GFS                 | Google File System                                                        |
 | GH200               | (Product name)(NVIDIA)                                                    |
 | GHES                | Generic Hardware Error Source                                             |
 | GIC                 | Generic Interrupt Controller                                              |
@@ -1177,6 +1180,7 @@
 | PXB                 | PCI Expander Bridges                                                      |
 | PyTorch             | (library name) (OSS)                                                      |
 | QAM16               | Quadrature Amplitude Modulation 16                                        |
+| QAT                 | QuickAssist Technology                                                    |
 | QDR                 | Quad Data Rate                                                            |
 | QEMU                | (Processor emulator name) (OSS)                                           |
 | QLC                 | Quadruple Level Cell                                                      |
@@ -1200,6 +1204,7 @@
 | RAR                 | Read After Read                                                           |
 | RAS                 | Reliability, Availability and Serviceability                              |
 | RAW                 | Read After Write                                                          |
+| RBD                 | RADOS Block Device                                                        |
 | RC                  | Root Complex, Reliable Connection                                         |
 | RCCL                | ROCm Collective Communication Library                                     |
 | RCD                 | Restricted CXL Device                                                     |
@@ -1411,6 +1416,7 @@
 | StarlingX           | (Project name) (OpenInfra Foundation)                                     |
 | StorageX            | (Company Name)                                                            |
 | STP                 | Single-Threaded Pipelines, Start of Packet                                |
+| STS                 | Security Token Service                                                    |
 | SuperCompute        | (Conference Name)                                                         |
 | SuperPOD            | (Product name) (NVIDIA)                                                   |
 | SuperRAM            | (Product name)(ZeroPoint)                                                 |
@@ -1446,6 +1452,7 @@
 | teraFLOPs           | tera FLoating point number Operations Per Second                          |
 | TeRM                | Extending RDMA-Attached Memory                                            |
 | TetraMem            | (Company Name)                                                            |
+| TF                  | TensorFlow                                                                |
 | TFA                 | Trusted Firmware-A                                                        |
 | TFRecord            | (Data format name)                                                        |
 | TI                  | (Company Name) (Texas Instruments)                                        |
