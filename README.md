@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 372 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 373 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5435,6 +5435,12 @@ Steve Scargall
 [Text](./336)
 
 [Acronyms](./acronym.md): AI AMD BIOS CPU CUDA CXL DAX DCD DDR DDR4 DDR5 DIMPA DMA DRAM FAMFS FM GPU GTC IO LLM ML MRDIMM MSRP MemVerge NUMA NVIDIA NVMe OEM OPT PCIe PCM PDF QEMU RAG RAID RAM SAN TPP VM
+
+[YouTube](https://youtu.be/nKm8NYk6FfI?si=qwfraNgApyCTHqcf)
+
+[Text](./378)
+
+[Acronyms](./acronym.md): AI BF16 CHMU CMMB CPU CUDA CXL DBMS DCD DMA DRA DRAM FAMFS GISMO GPU GitHub KV LLM ML MLC MemVerge NUMA NVIDIA OCP POC PyTorch QEMU RAG RAS SK TPCC TPP TSP TensorFlow UAT XFS YouTube
 
 ### Meta
 

@@ -151,6 +151,7 @@
 | CHF                 | Critical Heat Flux                                                        |
 | CHI                 | Coherent Hub Interface                                                    |
 | CHIPS               | Clearing House Interbank Payments System                                  |
+| CHMU                | CXL Hot Page Monitoring Unit                                              |
 | CIFAR               | Canadian Institute For Advanced Research                                  |
 | CIM                 | Computer Integrated Manufacturing                                         |
 | CINECA              | Consorzio Interuniversitario del Nord-Est per il Calcolo Automatico       |
@@ -759,6 +760,7 @@
 | LLVM                | Low Level Virtual Machine                                                 |
 | LMS                 | Least Mean Squares                                                        |
 | LoginVSI            | (VDI benchmark name)                                                      |
+| LORA                | Low-Rank Adaptation                                                       |
 | LP                  | Low Power                                                                 |
 | LP5                 | (LPDDR5)                                                                  |
 | LP6                 | (LPDDR6)                                                                  |
@@ -1502,6 +1504,7 @@
 | UAL                 | Ultra Accelerator Link                                                    |
 | UALink              | Ultra Accelerator Link                                                    |
 | UART                | Universal Asynchronous Receiver-Transmitter                               |
+| UAT                 | User Acceptance Testing                                                   |
 | UBB                 | Universal Building Block                                                  |
 | UC                  | University of California                                                  |
 | UCC                 | Unified Communication Collectives                                         |
