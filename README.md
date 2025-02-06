@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 373 disaggregated computing-related talks published on YouTube between March 2017 and January 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 374 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -314,6 +314,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [CoreWeave](#coreweave)
     - [IBM](#ibm-3)
     - [Intel](#intel-12)
+    - [MemVerge](#memverge-9)
     - [NVIDIA](#nvidia-5)
     - [Red Hat](#red-hat-1)
     - [SNIA](#snia-1)
@@ -5939,6 +5940,16 @@ lipo Järvinen
 [Text](./370)
 
 [Acronyms](./acronym.md): API LBMS PCI PCIe VFIO
+
+### MemVerge
+
+Steve Scargall
+
+[YouTube](https://youtu.be/I7lAqkrUKRg?si=wSC9ezLw_BCFgGp3)
+
+[Text](./379)
+
+[Acronyms](./acronym.md): AI AMD API CEO CPU CUDA CXL DIMM DevOps GPU HBM HPC IT MIG MMAI MMU MPS MPS MSP MemVerge NIM NVIDIA PyTorch QAT RAM RBAC SM SRDF SaaS TCP UI VMware
 
 ### NVIDIA
 

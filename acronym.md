@@ -205,6 +205,7 @@
 | CQE                 | Completion Queue Elements                                                 |
 | CRAP                | Create, Read, Append, Process                                             |
 | CRC                 | Cyclic Redundancy Check                                                   |
+| CRD                 | Custom Resource Definition                                                |
 | CRI                 | Container Runtime Interfac                                                |
 | CRPS                | Common Redundant Power Supply                                             |
 | CRSS                | Center of Research in Systems and Storage                                 |
@@ -840,6 +841,7 @@
 | MI300A              | GPU 名 (AMD)                                                              |
 | MICRO               | International Symposium on Microarchitecture                              |
 | microLED            | Micro LED                                                                 |
+| MIG                 | Multi-Instance GPU                                                        |
 | MilanX              | (Processor name) (AMD)                                                    |
 | MIMO                | Multiple-Input and Multiple-Output                                        |
 | MindShare           | (Company Name)                                                            |
@@ -856,6 +858,7 @@
 | MLPerf              | (Benchmark name)                                                          |
 | MLSD                | Mean Likelihood Sequence Detector                                         |
 | MM                  | Memory Management, Memory Machine, Mirror Mezz                            |
+| MMAI                | MemVerge Memory Machine AI                                                |
 | MMAP                | (system call name)                                                        |
 | MMAT                | Memory Management Area Type                                               |
 | MME                 | Mirror Mezz Enhanced                                                      |
@@ -880,7 +883,7 @@
 | MPO                 | Multi-fiber Push On                                                       |
 | MPOL_PREFERRED_MANY | NUMA Memory Policy 名                                                     |
 | MPP                 | Massively Parallel Processing                                             |
-| MPS                 | Maximum Payload Size                                                      |
+| MPS                 | Maximum Payload Size, Multi-Process Service                               |
 | MPU                 | Memory Protection Unit                                                    |
 | MQSim               | (SSD simulator)(OSS)                                                      |
 | MR                  | Multi-Root, Multi-Ranked, Medium Reach                                    |
@@ -895,6 +898,7 @@
 | MSI                 | Message Signaled Interrupt                                                |
 | MSIF                | Modular Shared Infrastructure                                             |
 | MSIX                | Message Signaled Interrupt                                                |
+| MSP                 | Managed Service Provider                                                  |
 | MSRP                | Manufacturer's Suggested Retail Price                                     |
 | MTBF                | Mean Time Between Failure                                                 |
 | MTCP                | Management Component Transport Protocol                                   |
@@ -931,6 +935,7 @@
 | NIC                 | Network Interface Card                                                    |
 | NIC450              | (IP core name) (ARM)                                                      |
 | NILFS2              | (file system name)                                                        |
+| NIM                 | NVIDIA Inference Microservices                                            |
 | NISTP               | Neuroimaging Sciences Training Program                                    |
 | NLP                 | Natural Language Processing                                               |
 | NMC                 | Near Memory Compute                                                       |
@@ -1206,6 +1211,7 @@
 | RAR                 | Read After Read                                                           |
 | RAS                 | Reliability, Availability and Serviceability                              |
 | RAW                 | Read After Write                                                          |
+| RBAC                | Role-Based Access Control                                                 |
 | RBD                 | RADOS Block Device                                                        |
 | RC                  | Root Complex, Reliable Connection                                         |
 | RCCL                | ROCm Collective Communication Library                                     |
@@ -1355,6 +1361,7 @@
 | SLM                 | Subsystem Local Memory                                                    |
 | SLOB                | Silly Little Oracle Benchmark                                             |
 | SLS                 | Sparse Lengths Sum                                                        |
+| SM                  | Streaming Multiprocessor                                                  |
 | SMA                 | SubMiniature version A                                                    |
 | SMART               | (Company Name) (SMART Global Holdings)                                    |
 | SmartNIC            | Smart NIC                                                                 |
@@ -1405,6 +1412,7 @@
 | SRAM                | Static Random Access Memory                                               |
 | SRAT                | System Resource Affinity Table                                            |
 | SRD                 | Scalable Reliable Datagram                                                |
+| SRDF                | Symmetrix Remote Data Facility,                                           |
 | SRIOV               | Single-Root Input/Output Virtualization                                   |
 | SSD                 | Solid State Drive                                                         |
 | SSDT                | Secondary System Description Table                                        |
