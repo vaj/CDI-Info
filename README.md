@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 375 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 376 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5942,6 +5942,14 @@ lipo Järvinen
 [Acronyms](./acronym.md): API LBMS PCI PCIe VFIO
 
 ### MemVerge
+
+Bernie Wu
+
+[YouTube](https://youtu.be/LYGT99FN6-A?si=Y8JuHmBc1tJ06wZt)
+
+[Text](./381)
+
+[Acronyms](./acronym.md): AI AMD CPU CRD CUDA GPU GTC HPC InfiniBand KubeCon LLM MMAI MemVerge NVIDIA NVLink PyTorch RAG RDMA SRDF TensorFlow VM VP
 
 Charles Fan
 
