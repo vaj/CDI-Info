@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 376 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 377 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -318,6 +318,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [NVIDIA](#nvidia-5)
     - [Red Hat](#red-hat-1)
     - [SNIA](#snia-1)
+    - [Oktay Technology](#oktay-technology)
 
 ## 2017
 
@@ -5959,6 +5960,12 @@ Charles Fan
 
 [Acronyms](./acronym.md): AI AMD API CEO CPU CUDA CXL DDR DRS ESX GPU GenAI IDE IP IT MIG MPS MPS MSP MemVerge NVIDIA NVLink OpenAI RAG TCP UALink VMware
 
+[YouTube](https://youtu.be/FPcsTFX8lDA?si=DFWds5czaGc_mqJu)
+
+[Text](./382)
+
+[Acronyms](./acronym.md): AI CTO GPU HPC IT IoT MIG MemVerge NVIDIA US VMware
+
 Steve Scargall
 
 [YouTube](https://youtu.be/I7lAqkrUKRg?si=wSC9ezLw_BCFgGp3)
@@ -5996,3 +6003,13 @@ Michael Hoard
 [Text](./377)
 
 [Acronyms](./acronym.md): AI AIOps API AWS CERN CPU CST CSV DLRM GFS GPT GPU GitHub HTML IBM IO IT IoT KVM ML MapReduce NFS NVIDIA NVMe OpenStack PCI POSIX PyTorch QAT QEMU RAG RAM RBD SAS SMB SNIA STS TCO TF TLC TPCDS iSCSI
+
+### Oktay Technology
+
+Steve Yatko
+
+[YouTube](https://youtu.be/FPcsTFX8lDA?si=DFWds5czaGc_mqJu)
+
+[Text](./382)
+
+[Acronyms](./acronym.md): AI CTO GPU HPC IT IoT MIG MemVerge NVIDIA US VMware
