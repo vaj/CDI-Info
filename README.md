@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 377 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 378 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -310,6 +310,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Xconn Technology](#xconn-technology)
     - [Zeropoint Technologies](#zeropoint-technologies)
   - [2025Q1](#2025q1)
+    - [AMD](#amd-9)
     - [Canonical](#canonical)
     - [CoreWeave](#coreweave)
     - [IBM](#ibm-3)
@@ -5901,6 +5902,16 @@ Nilesh Shah
 [Acronyms](./acronym.md): AI CMS CPU CXL GPU HBM JEDEC NVLink OCP PCI PCIe RDMA SK TCO UAL UALink UCIE UCIe
 
 ## 2025Q1
+
+### AMD
+
+Kurtis Bowman
+
+[YouTube](https://youtu.be/0Jwsh52w3PM?si=a-uC-MrqB5UMB3G2)
+
+[Text](./383)
+
+[Acronyms](./acronym.md): AMD AWS CPU GPU HPE IO NVLink UALink UEC
 
 ### Canonical
 
