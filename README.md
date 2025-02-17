@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 378 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 379 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5281,6 +5281,14 @@ Anjaneya "Reddy" Chagam
 
 [Acronyms](./acronym.md): CCI CMS CPU CXL DCD DCMFM DDR4 DDR5 DRAM EMR FPGA HTML NUMA OCP SK YAML
 
+Debendra Das Sharma
+
+[YouTube](https://youtu.be/-GJzE7zwX4c?si=P16JJWApbnwoXooz)
+
+[Text](./384)
+
+[Acronyms](./acronym.md): AI BGA BIOS CPU CRC CXL DDR DMA ECR FCVC FD FIFO GM GPU HPC IDE IO IoT ML MMIO NIC NP NVIDIA OS PC PCI PCIe SIG SSD SoC TC TLP UIO VC VMM YouTube
+
 Igor Chorazewicz
 
 [YouTube](https://www.youtube.com/watch?v=uWFL8yHKFLU)
@@ -5602,6 +5610,14 @@ Rob Davis
 [Text](./314)
 
 [Acronyms](./acronym.md): AI ASIC BMW CPU CUDA ChatGPT DMA GPU HBA IP InfiniBand NIC NVIDIA NVLink OCP PR QPI RDMA RoCE
+
+Steve Glaser
+
+[YouTube](https://youtu.be/-GJzE7zwX4c?si=P16JJWApbnwoXooz)
+
+[Text](./384)
+
+[Acronyms](./acronym.md): AI BGA BIOS CPU CRC CXL DDR DMA ECR FCVC FD FIFO GM GPU HPC IDE IO IoT ML MMIO NIC NP NVIDIA OS PC PCI PCIe SIG SSD SoC TC TLP UIO VC VMM YouTube
 
 ### Open Compute Project
 

@@ -441,6 +441,7 @@
 | FCC                 | Flow Control Credits                                                      |
 | FCI                 | Fast memory Cache Instance                                                |
 | FCS                 | Frame Check Sequence                                                      |
+| FCVC                | Flow Control Virtual Channels                                             |
 | FD                  | File Descriptor                                                           |
 | FDDI                | Fiber Distributed Data Interface                                          |
 | FDI                 | Fit Aware / D2D Interface                                                 |
@@ -944,7 +945,7 @@
 | NOC                 | Network-On-Chip                                                           |
 | NOP                 | No Operatio                                                               |
 | NOVA                | (file system name)                                                        |
-| NP                  | Non-deterministic Polynomial-time                                         |
+| NP                  | Non-deterministic Polynomial-time, Non-Posted                             |
 | NPO                 | Near Package Optics                                                       |
 | NPS                 | NUMA node per socket                                                      |
 | NPU                 | Neural Processing Unit                                                    |
@@ -1446,6 +1447,7 @@
 | TASER               | Testing and Simulation Rig                                                |
 | TBB                 | Threading Building Blocks                                                 |
 | TBD                 | To Be Determined                                                          |
+| TC                  | Traffic Class                                                             |
 | TCB                 | Trusted Computing Base                                                    |
 | TCG                 | Tiny Code Generator                                                       |
 | TCO                 | Total Cost of Ownership                                                   |
