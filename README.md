@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 379 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 380 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -274,6 +274,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [FSAS Technologies](#fsas-technologies)
     - [Google](#google-3)
     - [H3 Platform](#h3-platform-3)
+    - [Hammerspace](#hammerspace)
     - [HPE](#hpe-6)
     - [Huawei](#huawei-2)
     - [IBM](#ibm-2)
@@ -5220,6 +5221,16 @@ Brian Pan
 [Text](./333)
 
 [Acronyms](./acronym.md): AI AMD CMS CPU CXL DCD DDR DRAM EMR HBM HPC MLC MLD MemVerge NDA OCP OS OpenFOAM
+
+### Hammerspace
+
+Trond Myklebust
+
+[YouTube](https://youtu.be/CpyRHjNycBY?si=Lhz_k4AI4OgEi9kW)
+
+[Text](./385)
+
+[Acronyms](./acronym.md): AI API BSD CTO GSS HPC IETF IO NFS PC PNFS POSIX RFC RPC RPCsec SMB TCP TLS
 
 ### HPE
 

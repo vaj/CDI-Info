@@ -556,6 +556,7 @@
 | GroqRack            | (Product name)(Groq)                                                      |
 | gRPC                | gRPC Remote Procedure Calls                                               |
 | GSI                 | Gigascale Integration                                                     |
+| GSS                 | Generic Security Services                                                 |
 | GTC                 | GPU Technology Conference                                                 |
 | GTH                 | (name of transceiver) (AMD)                                               |
 | GUI                 | Graphical User Interface                                                  |
@@ -1150,6 +1151,7 @@
 | PMP0A08             | (driver name) (ACPI)                                                      |
 | PMR                 | Persistent Memory Region                                                  |
 | PMU                 | Performance Monitoring Unit                                               |
+| PNFS                | Parallel NFS                                                              |
 | PNM                 | Processing-near-Memory                                                    |
 | POC                 | Proof of Concept                                                          |
 | PoC                 | Proof of Concept                                                          |
@@ -1270,7 +1272,9 @@
 | ROM                 | Read Only Memory                                                          |
 | RP                  | Root Port                                                                 |
 | RP_PIO              | root port I/O error reporting                                             |
+| RPC                 | Remote Procedure Call                                                     |
 | rPCIeBench          | (Benchmark tool name)                                                     |
+| RPCsec              | RPC Security                                                              |
 | RPM                 | Remote Persistent Memory                                                  |
 | RPO                 | Recovery Point Objective                                                  |
 | RPS                 | Restart Pipe Start                                                        |
