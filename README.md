@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 380 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 381 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5979,6 +5979,14 @@ lipo Järvinen
 [Text](./370)
 
 [Acronyms](./acronym.md): API LBMS PCI PCIe VFIO
+
+Mahesh Natu
+
+[YouTube](https://youtu.be/xAyy33GwzII?si=LBoMRRMmfLXpChpH)
+
+[Text](./386)
+
+[Acronyms](./acronym.md): AI API CCIX CHMU CPU CRC CSF CSP CXL CXL.cache CXL.mem DDR4 DDR5 DPA ECN HDM IDE JEDEC LD ML MMPT OS OpenCAPI PAM PCI PCIe PHY POST TCO TDISP TEE TLS TSP VM YouTube
 
 ### MemVerge
 
