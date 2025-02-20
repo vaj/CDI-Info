@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 381 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 382 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -296,6 +296,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [NTT](#ntt-1)
     - [NVIDIA](#nvidia-4)
     - [Open Compute Project](#open-compute-project)
+    - [Oracle](#oracle)
     - [Samsung](#samsung-8)
     - [ScaleFlux](#scaleflux)
     - [Seagate](#seagate-2)
@@ -5639,6 +5640,16 @@ James Kelly
 [Text](./311)
 
 [Acronyms](./acronym.md): AI CPU CXL DNA DRAM GDDR GPT GPU HBM IT NIC NUMA NVLink OCP OpenAI PC PUE RAG RAS SRAM UALink
+
+### Oracle
+
+Charles Lever
+
+[YouTube](https://youtu.be/W4h7oLmame8?si=xZ7aqGVAZg4VsF3b)
+
+[Text](./387)
+
+[Acronyms](./acronym.md): ACL AEAD AES BtrFS COVID CPU DES FIPS FS FUSE IO IP ISA InfiniBand LSF LTS LUN NFS NVMe NetApp OAuth PNFS POSIX QUIC RAID RDMA RFC RoCE SCSI SHA SIW SMB SunRPC TLS UDP URL VFS XDR XFS ZFS iSCSI iWARP
 
 ### Samsung
 

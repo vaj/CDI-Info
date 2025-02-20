@@ -16,6 +16,7 @@
 | ADC                 | Analog-to-Digital Converter                                               |
 | ADDR                | memory address                                                            |
 | ADR                 | Asynchronous Data Refresh                                                 |
+| AEAD                | Authenticated Encryption with Associated Data                             |
 | AEC                 | Active Electrical Connection                                              |
 | AER                 | Advanced Error Reporting                                                  |
 | AES                 | Advanced Encryption Standard                                              |
@@ -286,7 +287,7 @@
 | DeepSpeed           | OSS 名 (Microsoft)                                                        |
 | DEF                 | DEF CON (hacker convention name)                                          |
 | DenseMem            | (IP name) (ZeroPoint)                                                     |
-| DES                 | debug error injection and statistic features                              |
+| DES                 | debug error injection and statistic features,Data Encryption Standard     |
 | DesignCon           | (Conference Name)                                                         |
 | DevCon              | (Conference Name)                                                         |
 | DevKit              | Developer Kit                                                             |
@@ -494,6 +495,7 @@
 | FSDAX               | Filesystem Direct Access                                                  |
 | FTI                 | Future Technology Initiatives                                             |
 | FTL                 | Flash Translation Layer                                                   |
+| FUSE                | Filesystem in Userspace                                                   |
 | FusionFS            | (file system name)                                                        |
 | FVP                 | Fixed Virtual Platform                                                    |
 | FYI                 | For Your Information                                                      |
@@ -788,6 +790,7 @@
 | LTPI                | LVDS Tunneling Protocol & Interface                                       |
 | LTS                 | Long Term Support                                                         |
 | LTSSM               | Link Training and Status State Machine                                    |
+| LUN                 | Logical Unit Number                                                       |
 | LVM                 | Logical Volume Manager                                                    |
 | LZ4                 | (Name of lossless compression algorithm)                                  |
 | M-PESTI             | Modular-Peripheral Sideband Tunneling Interface                           |
@@ -983,6 +986,7 @@
 | OAI                 | Open Accelerator Infrastructure                                           |
 | OAM                 | OCP Accelerator Module                                                    |
 | OAPS                | Optimized Architecture for Parallel Systems                               |
+| OAuth               | Open Authorization)                                                       |
 | OBD                 | On-Board Diagnostics                                                      |
 | OCI                 | Optical Compute Interconnect                                              |
 | OCP                 | Open Compute Project                                                      |
@@ -1205,6 +1209,7 @@
 | QSFPDD              | Quad Small Form Factor Pluggable Double-density                           |
 | QTG                 | QoS Throttling Group                                                      |
 | QTG_DSM             | QTG DSM                                                                   |
+| QUIC                | Quick UDP Internet Connections                                            |
 | RabbitMQ            | (middleware name) (OSS)                                                   |
 | RAG                 | Retrieval Augmented Generation                                            |
 | RAID                | Redundant Arrays of Inexpensive Disks                                     |
@@ -1339,6 +1344,7 @@
 | SGI                 | (Company Name) (Silicon Graphics International)                           |
 | SGL                 | Scatter Gather List                                                       |
 | SGPIO               | Serial GPIO                                                               |
+| SHA                 | Secure Hash Algorithm                                                     |
 | SHARP               | Scalable Hierarchical Aggregation and Reduction Protocol (NVIDIA)         |
 | SHMEM               | (library name) (SHared MEMory)                                            |
 | SI                  | System Image, Signal Integrity                                            |
@@ -1354,6 +1360,7 @@
 | SIOV                | Single-Root I/O Virtualization                                            |
 | SIP                 | System In Package                                                         |
 | SiP                 | System In Package                                                         |
+| SIW                 | Software iWARP                                                            |
 | SiPearl             | (Company Name)                                                            |
 | SK                  | (Company Name)                                                            |
 | SKU                 | Stock Keeping Unit                                                        |
@@ -1432,6 +1439,7 @@
 | StorageX            | (Company Name)                                                            |
 | STP                 | Single-Threaded Pipelines, Start of Packet                                |
 | STS                 | Security Token Service                                                    |
+| SunRPC              | Sun Remote Procedure Call                                                 |
 | SuperCompute        | (Conference Name)                                                         |
 | SuperPOD            | (Product name) (NVIDIA)                                                   |
 | SuperRAM            | (Product name)(ZeroPoint)                                                 |
@@ -1654,6 +1662,7 @@
 | YV4                 | Yosemite V4                                                               |
 | ZeRO-Infinity       | (library name) (OSS)                                                      |
 | ZeroPoint           | (Company Name)                                                            |
+| ZFS                 | (file system name)                                                        |
 | ZiptilionBW         | (Product name)(ZeroPoint)                                                 |
 | ZMM                 | Gen Z memory modules                                                      |
 | ZMM0                | ZMM 0                                                                     |
