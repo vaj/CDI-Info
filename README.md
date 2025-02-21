@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 382 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 383 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5038,6 +5038,14 @@ Kurtis Bowman
 [Text](./315)
 
 [Acronyms](./acronym.md): UltraEthernet AI AMD CPU CXL DMA GPU HPC HPE InfiniBand LinkedIn NIC NVIDIA PCI PCIe TPU UALink UCIE UEC
+
+Pratik Mishra
+
+[YouTube](https://youtu.be/ucDsyFKOdYI?si=hRbjUebOIKFliwLn)
+
+[Text](./388)
+
+[Acronyms](./acronym.md): AI AMD CPU DLRM DPU DRAM ETL FP16 GPU HBM HPC IO IOPS MTBF NIC NVMe RAG RDMA RocksDB SLA UALink UltraEthernet
 
 Robert Richter
 
