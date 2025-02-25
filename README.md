@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 383 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 384 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5017,6 +5017,12 @@ Craig Carlson
 
 [Acronyms](./acronym.md): AI AMD AMX API ARM ASIC CPU CUDA ChatGPT ConnectX DPU DSP DeepSpeed ETA FIO FPGA GPU GitHub HBM HIP HPC IO IP IPU InfiniBand LLM MI210 MI300 NIC NPU NVMe PCIe POSIX PyTorch RDMA ROCm RoCE SOC SPDK SSD SmartNIC TCP TPCXAI smartNIC
 
+[YouTube](https://youtu.be/hyCCcbntNzM?si=pRTLZW1UyJn44OU6)
+
+[Text](./389)
+
+[Acronyms](./acronym.md): AI AMD CMSI CPU CXL DDR DMA DNA GPU HBM HPE IT LAN ML NVMe RAG SDC SDXI SNIA UEC
+
 J Metz
 
 [YouTube](https://youtu.be/_oQjOLj2-W4?si=pLWhNihP7ldDEVkN)
@@ -5242,6 +5248,14 @@ Trond Myklebust
 [Acronyms](./acronym.md): AI API BSD CTO GSS HPC IETF IO NFS PC PNFS POSIX RFC RPC RPCsec SMB TCP TLS
 
 ### HPE
+
+Curtis Ballard
+
+[YouTube](https://youtu.be/hyCCcbntNzM?si=pRTLZW1UyJn44OU6)
+
+[Text](./389)
+
+[Acronyms](./acronym.md): AI AMD CMSI CPU CXL DDR DMA DNA GPU HBM HPE IT LAN ML NVMe RAG SDC SDXI SNIA UEC
 
 David Emberson
 
