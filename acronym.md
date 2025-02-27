@@ -403,6 +403,7 @@
 | EMS                 | Elastic Memory Service                                                    |
 | EINJ                | APEI Error INJection                                                      |
 | ENIC                | emulated Ethernet NIC                                                     |
+| EO                  | Electro-Optical)                                                          |
 | EP                  | Endpoint                                                                  |
 | EPF                 | Endpoint Function                                                         |
 | EPI                 | European Processor Initiative                                             |

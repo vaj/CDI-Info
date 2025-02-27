@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 384 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 385 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5338,6 +5338,14 @@ Ira Weiny
 [Text](./340)
 
 [Acronyms](./acronym.md): CXL DAX DCD FAMFS HP NUMA PMDK QEMU QoS RAM VM
+
+Mohiuddin Mazumder
+
+[YouTube](https://youtu.be/K4zf5zEzsWk?si=kNi9ufb54VW2B9W0)
+
+[Text](./390)
+
+[Acronyms](./acronym.md): AI CEM CMIS CPU CXL ChatGPT CopperLink DOE ECN EEPROM EO FR4 GPGPU GPU IBM IO IRL MCIO MIT ML NRZ NVMe OCuLink OIF PAM PCB PCIe RX SFF SI SIG SNIA TA TPU USB
 
 Navneet Singh
 
