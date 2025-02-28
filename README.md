@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 385 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 386 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5264,6 +5264,14 @@ David Emberson
 [Text](./347)
 
 [Acronyms](./acronym.md): AI AMD API ARM CCIX CHIPS COVID CSR CTO CXL DAOS DDR5 DOD DRAM EX FAM FlexBus GenZ GitHub HANA HBM HP HPC HPE HyperX IBM IT InfiniBand LPDDR MI300A MPI NIC NVIDIA NVLink NumPy OpenCAPI OpenFAM PCIe RAM RDMA ReRAM RoCE SAP SST TSMC UAL XGMI
+
+Jeff Hilland
+
+[YouTube](https://youtu.be/qbCFjnD1BqM?si=HXgRkJwE0p9uLiQO)
+
+[Text](./391)
+
+[Acronyms](./acronym.md): BMC CIM CPER CSDL CXL DCIM DIMM DMTF DNA IPMI InfiniBand MCTP NVMe OCP OEM OPAF OpenBMC PCIe PICMG PLDM PMCI RDMA SAS SMBIOS SMI SNIA SONiC SPDM YouTube
 
 ### Huawei
 

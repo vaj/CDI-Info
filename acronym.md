@@ -154,7 +154,7 @@
 | CHIPS               | Clearing House Interbank Payments System                                  |
 | CHMU                | CXL Hot Page Monitoring Unit                                              |
 | CIFAR               | Canadian Institute For Advanced Research                                  |
-| CIM                 | Computer Integrated Manufacturing                                         |
+| CIM                 | Computer Integrated Manufacturing, Common Information Model               |
 | CINECA              | Consorzio Interuniversitario del Nord-Est per il Calcolo Automatico       |
 | CLA                 | Contributor License Agreement                                             |
 | CleanEvict          | (request in CXL)                                                          |
@@ -214,6 +214,7 @@
 | CS                  | Computational Storage                                                     |
 | CSA                 | Cloud Service Agreements                                                  |
 | CSD                 | Computational Storage Drive                                               |
+| CSDL                | Common Schema Definition Language                                         |
 | CSE                 | Computational Storage Engine, CXL switch emulator                         |
 | CSEE                | Computational Storage Engine Environment                                  |
 | CSF                 | Computational Storage Function                                            |
@@ -1131,6 +1132,7 @@
 | PI                  | Principle Investigator                                                    |
 | PIA                 | Principal Investigating Authority or Principal Investigator Agreement     |
 | PIC                 | Photonic Integrated Circuit, Platform Infrastructure Connectivity         |
+| PICMG               | PCI Industrial Computer Manufacturers Group                               |
 | PID                 | Port Based Routing ID, Process ID                                         |
 | PIDF                | Process ID File                                                           |
 | PIM                 | Processing-in-Memory                                                      |
