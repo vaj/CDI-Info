@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 386 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 387 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -5546,6 +5546,14 @@ Prakash Chauhan
 [Text](./358)
 
 [Acronyms](./acronym.md): AER AMD ARM ASIC BIOS BMC CLI CPU CXL CXL.io DDR4 DDR5 DIMM DRAM FRU IDE MCTP OCP OS OpenBMC RAS TCO UART
+
+SeongJae Park
+
+[YouTube](https://youtu.be/mRU1ZeNB9WY?si=IEbbLFf4Y28JJSqZ)
+
+[Text](./392)
+
+[Acronyms](./acronym.md): ABI API AWS BPF CPU CXL DAMON HMSDK LRU LSFMM PSI SK THP VM
 
 ### MetisX
 

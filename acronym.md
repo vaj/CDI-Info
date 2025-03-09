@@ -1183,6 +1183,7 @@
 | PROM                | Programmable Read-Only Memory                                             |
 | PRP                 | Physical Region Page                                                      |
 | PRS                 | Page Request Services                                                     |
+| PSI                 | Pressure Stall Information                                                |
 | PSL                 | Power Service Layer                                                       |
 | PSLC                | pseudo SLC                                                                |
 | PSM                 | Performance Scaled Messaging                                              |
@@ -1482,6 +1483,7 @@
 | TF                  | TensorFlow                                                                |
 | TFA                 | Trusted Firmware-A                                                        |
 | TFRecord            | (Data format name)                                                        |
+| THP                 | Transparent Huge Pages                                                    |
 | TI                  | (Company Name) (Texas Instruments)                                        |
 | TIA                 | Transimpedance Amplifier                                                  |
 | TIK                 | Transaction Integrity Key                                                 |
