@@ -435,6 +435,7 @@
 | F2FS                | (file system name)                                                        |
 | FabreX              | (Product name)(GigaIO)                                                    |
 | FAE                 | Field Application Engineer                                                |
+| FAISS               | Facebook AI Similarity Search                                             |
 | FAM                 | Fabric-Attached Memory                                                    |
 | FAMFS               | FAM FS                                                                    |
 | FAST                | Fabric Address Segment Table                                              |
@@ -1398,6 +1399,7 @@
 | SMS                 | Spatial Memory Streaming                                                  |
 | SMT                 | Software Memory Tiering, Surface Mount, Simultaneous Multi-Threading      |
 | SN                  | (Connector name) (SENKO Advanced Components)                              |
+| SNC                 | Sub-NUMA Clustering                                                       |
 | SNIA                | Storage Networking Industry Association                                   |
 | SNP                 | Snoop                                                                     |
 | SNR                 | Signal-Noise Ratio                                                        |

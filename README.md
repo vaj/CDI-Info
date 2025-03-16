@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 387 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 388 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -6028,6 +6028,14 @@ Kyle Bader
 [Acronyms](./acronym.md): AI AIOps API AWS CERN CPU CST CSV DLRM GFS GPT GPU GitHub HTML IBM IO IT IoT KVM ML MapReduce NFS NVIDIA NVMe OpenStack PCI POSIX PyTorch QAT QEMU RAG RAM RBD SAS SMB SNIA STS TCO TF TLC TPCDS iSCSI
 
 ### Intel
+
+Anil Godbole
+
+[YouTube](https://youtu.be/bsOcDPqLnUs?si=9snHjWIziruyruts)
+
+[Text](./393)
+
+[Acronyms](./acronym.md): AI AMX BIOS CPU CXL CacheLib DDR5 DRAM EMR FAISS GPU HPC IHV LLM MemVerge NUMA OS RAG RAID SNC TCO
 
 lipo Järvinen
 
