@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 388 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 389 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -6036,6 +6036,12 @@ Anil Godbole
 [Text](./393)
 
 [Acronyms](./acronym.md): AI AMX BIOS CPU CXL CacheLib DDR5 DRAM EMR FAISS GPU HPC IHV LLM MemVerge NUMA OS RAG RAID SNC TCO
+
+[YouTube](https://youtu.be/eYztQx4IVrM?si=MEmIw9BBOzFsapiA)
+
+[Text](./394)
+
+[Acronyms](./acronym.md): AI BHS CPU CXL DRAM InfiniBand MapReduce MemVerge TAM
 
 lipo Järvinen
 
