@@ -126,6 +126,7 @@
 | CCG                 | CXL/CCIX Gateway                                                          |
 | CCI                 | Component Command Interface                                               |
 | CCIX                | Cache coherent interconnect for accelerators                              |
+| CD                  | Continuous Delivery                                                       |
 | CDAT                | Core and Device Attribute Table                                           |
 | CDF                 | Cumulative Distribution Function                                          |
 | CDF4                | Common Data Form version 4                                                |

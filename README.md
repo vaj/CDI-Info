@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 390 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 391 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -6091,6 +6091,12 @@ Steve Scargall
 [Text](./379)
 
 [Acronyms](./acronym.md): AI AMD API CEO CPU CUDA CXL DIMM DevOps GPU HBM HPC IT MIG MMAI MMU MPS MPS MSP MemVerge NIM NVIDIA PyTorch QAT RAM RBAC SM SRDF SaaS TCP UI VMware
+
+[YouTube](https://youtu.be/aDuWXeauDa4?si=-OajtaiRqOuLulXF)
+
+[Text](./396)
+
+[Acronyms](./acronym.md): AI AMD AWS CD CPU CUDA CXL DNA DRAM GPT GPU GenAI IT LLM LSF LoRA MIG ML MemVerge NVIDIA PyTorch QR RAM UAT UI
 
 ### Netflix
 
