@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 392 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 393 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -6084,6 +6084,12 @@ Charles Fan
 [Text](./382)
 
 [Acronyms](./acronym.md): AI CTO GPU HPC IT IoT MIG MemVerge NVIDIA US VMware
+
+[YouTube](https://youtu.be/D9yzm8GWi_I?si=67dHNnQHnUweotVv)
+
+[Text](./398)
+
+[Acronyms](./acronym.md): AI AMD API AWS CEO CXL ChatGPT DDR GPT GPU IP MemVerge NVLink OpenAI RAG SaaS TCP UALink
 
 Steve Scargall
 
