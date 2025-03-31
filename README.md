@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 393 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 394 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -6028,6 +6028,14 @@ Kyle Bader
 [Text](./377)
 
 [Acronyms](./acronym.md): AI AIOps API AWS CERN CPU CST CSV DLRM GFS GPT GPU GitHub HTML IBM IO IT IoT KVM ML MapReduce NFS NVIDIA NVMe OpenStack PCI POSIX PyTorch QAT QEMU RAG RAM RBD SAS SMB SNIA STS TCO TF TLC TPCDS iSCSI
+
+Thomas Parnell
+
+[YouTube](https://youtu.be/zuphRuQuQEc?si=m7Ej5vp_46wCcEyq)
+
+[Text](./399)
+
+[Acronyms](./acronym.md): AI AMD API AWS AnyScale GPU GitHub IBM KV LLM NVIDIA OpenAI OpenShift PyTorch TTFT UC
 
 ### Intel
 
