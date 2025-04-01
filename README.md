@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 394 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 395 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -324,6 +324,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [SMART Modular Technologies](#smart-modular-technologies-3)
     - [SNIA](#snia-1)
     - [Oktay Technology](#oktay-technology)
+    - [UnifabiX](#unifabix)
 
 ## 2017
 
@@ -6172,3 +6173,13 @@ Steve Yatko
 [Text](./382)
 
 [Acronyms](./acronym.md): AI CTO GPU HPC IT IoT MIG MemVerge NVIDIA US VMware
+
+### UnifabiX
+
+Ronen Hyatt
+
+[YouTube](https://youtu.be/6NaWxPEkiZQ?si=qcB8LDQ6D-7Xe2Uk)
+
+[Text](./400)
+
+[Acronyms](./acronym.md): AI API C2C CEO CPU CXL DCD DDR DDR5 DRAM FLOPS GDDR GPU HBM HBM3 HPC HPCG HPE IO LLM LPDDR5X MemVerge NVIDIA NVLink OS PCIe SCM SKU SXM TCO UALink UPI UnifabriX VRAM

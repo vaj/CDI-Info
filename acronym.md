@@ -1626,6 +1626,7 @@
 | VPN                 | Virtual Private Network                                                   |
 | VPPB                | Virtual PCI to PCI Bridge                                                 |
 | VR                  | Very Short Reach                                                          |
+| VRAM                | Video RAM                                                                 |
 | VRM                 | Voltage Regulator Modules                                                 |
 | VSA                 | Virtualization Services Accelerator                                       |
 | vSCSI               | (tool name) (VMWare)                                                      |
