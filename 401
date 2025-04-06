@@ -1,1 +1,70 @@
-(Negotiations are underway with the YouTube channel concerned.)
+
+Um, hello. This is, uh, Siamak Tavallaei. Uh, welcome to this, uh, forum. Uh, last year, through Memory Fabric Forum, I shared with you, uh, some material. It was in the summertime. 
+
+Um, it was very exciting concepts about a moonshot project called Stargate. The goal was to build a system of one million GPUs or XPUs for AI/ML workload and get it done by the end of this decade. 
+
+As you know, it started a lot of activities. It requires collaboration in different facets of computer science. Basically, the concept was to dream big, communicate, and work with collaborators and execute. 
+
+And as engineers, we break things apart and build them back up again. So, we're building into, uh, 1 million GPUs. It starts with 16 elements at a time 
+
+and a stack of 16, another stack of 16 of that, and soon we get to 1 million. So, in doing that, we addressed the concept of scale-up using native interconnects that produced some concepts for short-reach optical interconnect technologies. 
+
+Then we discussed how to scale out using network semantics. Ultra Ethernet, InfiniBand, and Ethernet are very prevalent in that area, and we realized that if we wanted to connect multiple subclusters together, we needed fat pipes with high bandwidth. 
+
+And then we realized that packet switching, although it is very nice, it has a lot of added delays in through any hierarchy. So, circuit switching created some opportunities. 
+
+So, basically, to build a 1 million GPU cluster, it takes a lot of networking, a lot of memory—2000 domains of 500 CPUs each, for example. 
+
+So, people have to tackle the compute elements. Algorithms and frameworks are coming together, but we also see capabilities and requirements in the memory and storage area and interconnect area. So, I'll try to dig into that a little bit.
+
+So, as you know, to build a processing element—XPU, GPU, DPU—you start with a substrate. Normally, the core die is very large, and they put chiplets around that, either for I/O or for memory. For example, if we were to build an HBM stack, we could build 192 gigabytes of HBM in several different ways. The DRAM die technology could be 16 gigabit or 32 gigabit, and through-silicon vias will give us a number of high stacks—four, six, up to twelve stacks of die. And then the bandwidth is an important factor. Uh, the bus width of one thousand or two thousand pins and the bit rate of eight, 10, or 12 gigabits per second creates a lot of local bandwidth. So, in doing that, space is an important factor—substrate that all of these chiplets are on. The trace lengths, how far these devices or dies could be placed from each other, and the shoreline—how much I/O space we have. Therefore, the attach points to these devices are very important.
+
+So, one model is to have a large die in the middle and a number of chiplets around that, surrounding that device, close to the edge of the package, so the I/O can leave or the memory can be placed. 
+
+A different topology suggests that instead of having a large core die, we might start with a number of smaller dies. So, the die-to-die interconnect will be different In this model, on a substrate, maybe these devices are placed at two millimeters apart, and one can create a two-dimensional torus. And issues with the substrate will include trace channels, how many layers of traces we could have for signal, and how do we route these, and what is the farthest distance the signals can traverse on these trace lengths. Therefore, signal integrity, power, and cooling integrity will be a major factor as we place all these on the substrate. So If we were to create a toroid, the farthest elements need to be interconnected as well, and sometimes that is a challenge on regular substrate. Signal integrity will be hard to maintain using regular substrate material. So people have come up with clever ways of attaching to these interconnect things other than just substrate. Copper wires or optical wires or fibers are suitable for these cases. 
+
+Well, we can also think of a switch. In a lot of these systems, we need large switches. A switch is in a similar composition as well. It could have a number of switch chiplets around the perimeter, and those chiplets could be interconnected fully, either through an aggregator or substrate itself or silicon substrate, for example. And we could imagine having switches with a number of ports—64, 256, or 1,000 ports each. We'll soon see how important high-radix switches are.
+
+So, on the memory side, memory technology is driving density on individual die packages. 16-gigabit is transitioning to 32-gigabit memory technology. Stacking those through TSV (through-silicon via) all the way to 12 high are feasible. People are working on that. Signaling bit rate—what's the bit rate bandwidth that we can achieve communicating to these DRAM dies—is important as well. So, different packaging of DRAM, then, in the form of HBM or LPDDR, GDDR, DDR bus, and soon CXL, are tradeoffs that we are making about the number of devices we can package in a small space, and bit rate, and fault tolerance that we can get from them. 
+
+For example, if we were to stack several HBM devices, each comprising of, for example, eight stacks of dies, each die being at 32 gigabit, and therefore four gigabytes, we can achieve a 192-gigabyte ensemble of six devices. In a similar way, RDIMMs are produced a different way. Devices are not stacked on top of each other; they are placed on a PCB. In that model, with 32 devices plus eight devices for ECC, we can get to 128 gigabytes. And then, on a large PCB, we could have multiple RDIMMs placed together to come up with a much larger memory footprint. 
+
+So, a system then can comprise of XPUs, GPUs with local HBM for high-bandwidth interface to memory, and then local memory through another controller or a CPU that might be attached to LPDDR. And of course, for a system to be complete, we need networking and storage. And with the prevalence of CXL extended memory, we can also include terabytes of DRAM in an extended memory space for these devices to use, either for the CPU or for the GPUs.
+
+So, on an interconnect side, once we have an XPU that is fully integrated, has many, many, many cores—thousands of cores—they need to be interconnected. So, if we were to build a collection of eight GPUs, each GPU needs to connect to seven other GPUs. So, a GPU with seven ports can fully interconnect to create an eight-GPU group. 
+
+If we want to extend beyond only eight, it is reasonable to have switches, and these switches could be high-radix switches. In this diagram, we’re showing eight GPUs that are fully connected through one layer of switches, and each switch is capable of connecting to other switches outside of this grouping. Packet switches provide all-to-all interconnect, but if that’s not needed, circuit switches are much simpler and less costly.
+
+Now, if we were to represent that diagram with this mnemonic, then we can put these clusters together and build a much larger cluster that are fully connected. So, again, each one of these triangles represents a collection of eight or 16 XPUs, each having their own switches, and those switches are interconnected to each other. 
+
+With this, we can then imagine a subcluster of 256 GPUs. And that is when the short-reach optical interfaces are going to play a good role. In this model, every GPU can be connected to another GPU within this 256-GPU cluster. 
+
+So, the important factor then is interconnect. Comparing copper to photonics, copper can be an order of 10 gigabits per second on signal signaling bitrate—when we use techniques to multiplex, pulse amplitude modulation, for example—we can think of an order of 100 gigabits per second. And we could think of a thousand of these signals being connected as a wide bus, and therefore we can get to terabits per second of bandwidth using copper. And of course, we can bundle these in a form of by four, by eight, or by 16 cables, but the large bend radius is a key factor to think about. In contrast, with photonics, the bit rate per wavelength is about 60 gigabits per second, and we could have up to one terabit per second per port. Multiple ports can be on the same device, and then, because the fibers are interconnecting, those are rather small and structured. We could have many, many, many fibers bundled together to interface these subclusters. 
+
+There are a number of companies that are active in this area. I’ve listed some of them here for your reference. They are active within the photonics domain or copper domain around building substrates and connection points to the substrates to bring photonics interconnects outside of individual packages.
+
+So, on extended connectivity, when we have switches, as I mentioned earlier, the radix of the switch is important. And on this example, I’m showing 16 links for GPUs that are within the subgroup, and each switch can be connected to 16 other switches or entities. So, if we were to have a collection of 16 switches interconnected, you see we will have an extra port available, and that can be connected to a special device that might act as a parameter server. That’s for in-memory computation or in-fabric computation, helping reduce the traffic required going from subclusters. 
+
+Um, this is an example from, uh, Celestial AI. They have shared with me to share with you. They have seen about 85 percent of traffic is actually for the collectives that are going between subclusters. That’s a very good observation that gives relevance to the concept of aggregation points that we will talk n a minute.
+
+So, again, uh, left and right-hand diagrams—each are representing, each is representing 256 GPUs that are fully interconnected. But, um, you can imagine interconnecting every GPU to any other GPU in other subclusters is prohibitive. So, aggregation points are necessary. 
+
+But the observational that subcluster-to-subcluster traffic for primary exchange and collectives is a smaller portion of, actually, a big portion of the traffic requirement. If we were to do some operation on the data before the data is sent from subcluster to subcluster, we could reduce the requirement for the bandwidth between these subclusters. And therefore, a concept of over-provisioning or tapering off might make sense. 
+
+By doing that, then we can create a supercluster of 1 million GPUs using many of these subclusters, 16 at a time. 
+
+But observation is: all-to-all is prohibitive. Therefore, other concepts of all-gather all-reduce and having aggregation points are going to be necessary to include snapshots, checkpointing, embeddings, and, basically, these regions of aggregation could act as data stages, memory servers, and collective execution elements.
+
+And an example diagram here shows that a similar structure as the GPU grouping that we mentioned earlier could include several of these switches inside that ensemble. It could be GPUs or XPUs that are specially purposed to be connected to multiple CPUs and a cluster of memory and storage elements to act on behalf of each subcluster. 
+
+So, once we do that, then our supercluster becomes a collection of compute subclusters and memory stages along the way to help out in this large hierarchy. 
+
+So, a diagram representing that shows a subcluster connected to another subcluster using fat pipes in between—very, very high bandwidth transport—and each one of those aggregation points can include other elements such as memory or processing compute as a parameter server to help with all the embeddings and reduction points that we need for aggregating solutions from one subcluster to reduce the required bandwidth across subclusters.
+
+So, if we were to put all of this together, then we see that to build up to one million XPUs, we need a massive hierarchy of networking switches and memory stages along the way. 
+
+There are a number of people working on these topics. I’m active with OCP, and I see that a good group of people at several projects and several sub-sub-projects and OCP AI co-design are addressing a number of these topics. 
+
+So, to summarize again, we can scale up using natively connected interconnect to the extent that is feasible within the native interconnect, 
+
+and then to do anything more than that, we resort back to the networking techniques. In that area, InfiniBand, Ethernet, and Ultra Ethernet are very active. So, I close on this and thank you very much for your attention.
