@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 395 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 396 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -321,6 +321,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Netflix](#netflix)
     - [NVIDIA](#nvidia-5)
     - [Red Hat](#red-hat-1)
+    - [Samsung](#samsung-9)
     - [SMART Modular Technologies](#smart-modular-technologies-3)
     - [SNIA](#snia-1)
     - [Oktay Technology](#oktay-technology)
@@ -6143,6 +6144,16 @@ Chris Wright
 [Text](./369)
 
 [Acronyms](./acronym.md): AI CXL IOWN
+
+### Samsung
+
+Siamak Tavallaei
+
+[YouTube](https://youtu.be/7sMiCV-KxfQ?si=W11GOpVVxjU0GCSV)
+
+[Text](./401)
+
+[Acronyms](./acronym.md): AI CPU CXL DDR DPU DRAM ECC GDDR GPU HBM InfiniBand LPDDR ML OCP PCB TSV XPU
 
 ### SMART Modular Technologies
 
