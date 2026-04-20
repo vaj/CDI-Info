@@ -6212,3 +6212,17 @@ Arthur Sainio (SNIA), Anil Godbole (Intel) Andy Mills (SMART Modular Technologie
 
 [Acronyms](./acronym.md): CXL GPU CPU DRAM LLM RAG DDR5 HBM PCIE PCIe RDMA TCO SMART AMD FIT MemVerge NUMA NVMe DDR4 DMA
 
+### AMD
+
+Robert Hormuth (AMD)
+
+<a id="403"></a>
+
+2025/08/12 2025_OCP_APAC_Summit_Keynote_-_AMD
+
+[YouTube](https://www.youtube.com/watch?v=WRiWgvLsIIw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/403)
+
+[Acronyms](./acronym.md): OCP AMD UAL CPU DCMHS GPU RAS UEC OAM PCI FAST HBM HPC HPM NIC OEM PCIE PCIe RISC ROI
+
