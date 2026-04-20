@@ -6200,7 +6200,7 @@ Ronen Hyatt
 
 ### SNIA
 
-(unknown)
+Arthur Sainio (SNIA), Anil Godbole (Intel) Andy Mills (SMART Modular Technologies) and Steve Scargall (MemVerge)
 
 <a id="402"></a>
 
