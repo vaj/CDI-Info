@@ -6194,3 +6194,21 @@ Ronen Hyatt
 [Text](./400)
 
 [Acronyms](./acronym.md): AI API C2C CEO CPU CXL DCD DDR DDR5 DRAM FLOPS GDDR GPU HBM HBM3 HPC HPCG HPE IO LLM LPDDR5X MemVerge NVIDIA NVLink OS PCIe SCM SKU SXM TCO UALink UPI UnifabriX VRAM
+## 2025Q3
+
+### (Independent)
+
+### SNIA
+
+(unknown)
+
+<a id="402"></a>
+
+2025/07/22 2025_0722_Accelerating_AI_with_Real-World_CXL_Platforms
+
+[YouTube](https://www.youtube.com/watch?v=rxerUzjPTJ0)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/402)
+
+[Acronyms](./acronym.md): CXL GPU CPU DRAM LLM RAG DDR5 HBM PCIE PCIe RDMA TCO SMART AMD FIT MemVerge NUMA NVMe DDR4 DMA
+
