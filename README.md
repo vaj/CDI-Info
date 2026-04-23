@@ -6194,9 +6194,23 @@ Ronen Hyatt
 [Text](./400)
 
 [Acronyms](./acronym.md): AI API C2C CEO CPU CXL DCD DDR DDR5 DRAM FLOPS GDDR GPU HBM HBM3 HPC HPCG HPE IO LLM LPDDR5X MemVerge NVIDIA NVLink OS PCIe SCM SKU SXM TCO UALink UPI UnifabriX VRAM
-## 2025Q3
+## 2025Q2
 
-### (Independent)
+### Open Compute Project
+
+Brian Vandecoevering (AMI) and Anil Agrawal (Meta)
+
+<a id="406"></a>
+
+2025/05/10 AI_Infrastructure_Rack_Management__Exploring_Scalable_Solutions_Through_Open-source_Collaboration
+
+[YouTube](https://www.youtube.com/watch?v=vZwJ9Jo9wJ4)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/406)
+
+[Acronyms](./acronym.md): META BMC GPU FAST HPC AMI API ARM HBM PCIE PCIe RDMA
+
+## 2025Q3
 
 ### SNIA
 
