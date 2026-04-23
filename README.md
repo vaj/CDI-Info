@@ -6240,3 +6240,17 @@ Chris Verne (Google)
 
 [Acronyms](./acronym.md): OCP AMD GPU RAS SPEC TPU ARM BAR CPU META NVIDIA NVMe PCI SDC SOC SoC
 
+### Open Compute Project
+
+Cliff Grossner (OCP), Colley Huang (DigiTimes), Jasmeet Bagga (Meta), Shang Y. Hou (TSMC), Yin Chang (ASE), Robert Hormuth (AMD), Yosuke Aragane (IOWN Global Forum), Mohamad H El-Batal (SEAGATE), RT Huang (SuperMicro), Ram Velaga (Broadcom) and Chris Verne (Google)
+
+<a id="405"></a>
+
+2025/08/12 2025_OCP_APAC_Summit_Keynotes
+
+[YouTube](https://www.youtube.com/watch?v=nX5GggThs6Y)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/405)
+
+[Acronyms](./acronym.md): OCP GPU AMD META XPU TCO CPO HPM CPU TSMC UAL FIT PIC RAS CAPEX SPEC DCMHS HPC NVIDIA NVMe
+
