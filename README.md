@@ -6282,3 +6282,19 @@ Cliff Grossner (OCP), Colley Huang (DigiTimes), Jasmeet Bagga (Meta), Shang Y. H
 
 [Acronyms](./acronym.md): OCP GPU AMD META XPU TCO CPO HPM CPU TSMC UAL FIT PIC RAS CAPEX SPEC DCMHS HPC NVIDIA NVMe
 
+## 2025Q4
+
+### AMD
+
+Mark Papermaster (AMD)
+
+<a id="408"></a>
+
+2025/10/15 A_Fully_Open_and_Collaborative_AI_Ecosystem,_presented_by_AMD
+
+[YouTube](https://www.youtube.com/watch?v=Z36PjXFBmig)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/408)
+
+[Acronyms](./acronym.md): AMD OCP GPU CPU CXL HPC PyTorch UEC CEO DCSCM FAST HTTP ISA META MHS NIC NVIDIA OEM OpenAI PCIE
+
