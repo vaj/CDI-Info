@@ -6298,3 +6298,17 @@ Mark Papermaster (AMD)
 
 [Acronyms](./acronym.md): AMD OCP GPU CPU CXL HPC PyTorch UEC CEO DCSCM FAST HTTP ISA META MHS NIC NVIDIA OEM OpenAI PCIE
 
+### Open Compute Project
+
+Karthik Padmakumar (Arm) & Luis E. Rodriguez (Siemens EDA)
+
+<a id="409"></a>
+
+2025/10/23 A_Modern_Approach_to_SoC_Verification_From_Virtual_Models_to_Emulation
+
+[YouTube](https://www.youtube.com/watch?v=wkGrLOMtx9U)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/409)
+
+[Acronyms](./acronym.md): ARM PCI OCP CXL FAST RTL Rtl ASIC AXI SSD UCIE UCIe UEFI AMBA CMN CPU EDA FLIT NVMe SPEC
+
