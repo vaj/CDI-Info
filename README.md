@@ -2773,6 +2773,18 @@ Svetly Todorov
 
 [Acronyms](./acronym.md): CPU CXL DRAM FPGA GPL IBS LLC LSFMM MM NAND NUMA PFN PID PMU RFC SQL SSD VMA
 
+Steve Scargall (MemVerge)
+
+<a id="411"></a>
+
+2023/11/10 A_Software_Stack_for_CXL_Environments
+
+[YouTube](https://www.youtube.com/watch?v=EYMTRgV4lVQ)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/411)
+
+[Acronyms](./acronym.md): CXL DRAM NUMA BIOS DCD AMD CLI DAC API ARM BAR BMC CMS CPU DAX FIT MemVerge OCP PCI PCM
+
 ### Meta
 
 Anil Agrawal
