@@ -1,0 +1,13 @@
+Accelerating Early Stage Exploration with Virtual Prototyping for a Flourishing Multi-Vendor (Chiplet) Ecosystem, presented by Raghu Shankar (Entrepreneur)
+
+Raghu Shankar frames a **vision of a multi-vendor chiplet economy** for AI-driven and adjacent markets, and argues for **virtual chiplet ecosystems** built on existing **virtual prototyping** flows. The pitch is **shift-left**: model **multi-organization, multi-die** systems virtually **before** long physical design cycles, to support **investment and product** decisions.
+
+**Motivation** — Use cases and technologies are proliferating (CPUs, GPUs, memory, many interconnects, custom silicon at hyperscalers). The next bottleneck is **evaluating technical and business value** across combinatorial chiplet mixes (e.g. HBM/DDR with logic or **RISC-V** chiplets) and **interop** at architecture level.
+
+**Challenges today** — Hard to discover vendors and suitable designs in early exploration; **architecture interoperability** validation is slow; processes vary by company; few shared **best practices**, **reference designs**, or a common notion of **value** for buyer–seller negotiation.
+
+**Proposed benefits** — Vendor-neutral, **cross-silo** collaboration; **larger addressable pools** and reuse; faster **interop** baselines; **automation and scale**; clearer **technical/business value** framing; **reference subsystems** (not necessarily production-ready); **gap** identification in offerings.
+
+**Open framework (concept)** — Subset / layer on broader “open chiplet ecosystem” visions: reuse **commercial, lab, and academic** tools; add a **multi-party collaboration hub** with a **system-level (e.g. SystemC) chiplet repository** and **architecture interoperability** workflows (simulation through **FPGA** / **emulation** / prototyping, benchmarks, workloads). Paths sketched include **RTL → SystemC** for the hub, and **HLS** from SystemC models toward **PPAC**-oriented **ROI** exploration for decisions. Positioned **above** **UCIe**’s physical/adapter/protocol stack—**architecture** of chiplets and subsystems (e.g. memory/complex behavior, caches) for early trade studies.
+
+**Call for participation** — OCP-related blog/program materials, weekly **open forum** series from early November onward; audience includes commercial chiplet vendors, **EDA**, **IP**, labs, and academia.

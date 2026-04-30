@@ -6348,3 +6348,15 @@ Young Paik (FADU)
 
 [Acronyms](./acronym.md): NAND SSD CPU PCIE PCIe GPU IOPS DRAM NIC TCP HPC NVMe TLC
 
+Raghu Shankar (Entrepreneur)
+
+<a id="413"></a>
+
+2025/10/23 Accelerating_Early_Stage_Exploration_with_Virtual_Prototyping_for_a_Flourishing_Multi_Vendor
+
+[YouTube](https://www.youtube.com/watch?v=UYlxEe5kbe8)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/413)
+
+[Acronyms](./acronym.md): FPGA UCIE UCIe EDA FAST RTL Rtl AMD ARM DDR HBM HPM LABS MIPS NVIDIA OCP RISC ROI SOC SoC
+
