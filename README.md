@@ -6360,3 +6360,15 @@ Raghu Shankar (Entrepreneur)
 
 [Acronyms](./acronym.md): FPGA UCIE UCIe EDA FAST RTL Rtl AMD ARM DDR HBM HPM LABS MIPS NVIDIA OCP RISC ROI SOC SoC
 
+Tong Zhang (ScaleFlux), Tushar Krishna (Georgia Institute of Technology), SHRIKANTH VENKATESHAPPA (Rittal Gmbh co & KG), Puneet Sharma (HPE), Mike Klasen (ZincFive) and Wongyu Shin (Rebellions)
+
+<a id="414"></a>
+
+2025/10/23 AI_HPC_Lightning_Talks
+
+[YouTube](https://www.youtube.com/watch?v=b-8betRwV40)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/414)
+
+[Acronyms](./acronym.md): SSD CPU GPU DRAM OCP NVIDIA InfiniBand NAND NIC REST
+
