@@ -6294,6 +6294,20 @@ Cliff Grossner (OCP), Colley Huang (DigiTimes), Jasmeet Bagga (Meta), Shang Y. H
 
 [Acronyms](./acronym.md): OCP GPU AMD META XPU TCO CPO HPM CPU TSMC UAL FIT PIC RAS CAPEX SPEC DCMHS HPC NVIDIA NVMe
 
+### The Linux Foundation
+
+Yuning Liang (DeepComputing)
+
+<a id="417"></a>
+
+2025/09/05 Advancing_AI_Application_Development_on_RISC-V_Platforms_-_Yuning_Liang,_DeepComputing
+
+[YouTube](https://www.youtube.com/watch?v=_-i5F3XY_V8)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/417)
+
+[Acronyms](./acronym.md): RISC SOC SoC ARM CPU PCIE PCIe SPEC FIT GPU PyTorch REST TSMC BoW CEO COVID CUDA ChatGPT DDR FPGA
+
 ## 2025Q4
 
 ### AMD
