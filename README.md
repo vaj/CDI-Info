@@ -6422,3 +6422,15 @@ Rama Bhimanadhuni (Microsoft), Jicksen Joy (Google)and Taniya Siddiqua (AMD)
 
 [Acronyms](./acronym.md): RAS GPU CPU OCP AMD API SPEC ARM CSP JSON META BMC CRC NVIDIA PCI PCIE PCIe SLA
 
+Justin King (AMD) and Samer El-Haj-Mahmoud (ARM)
+
+<a id="419"></a>
+
+2025/10/23 Advancing_PLDM__Structured_Sensors,_Scalable_Modeling,_and_the_Server_Host_SoC_PLDM_Specification
+
+[YouTube](https://www.youtube.com/watch?v=JsoHlORFBlc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/419)
+
+[Acronyms](./acronym.md): PLDM SOC SoC SPEC DMTF PMCI CPU UEFI NIC OEM AMD ARM CXL DSP FIT OCP PCIE PCIe UUID
+
