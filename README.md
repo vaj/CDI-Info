@@ -6410,3 +6410,15 @@ Jungmin Choi (SK hynix) and Dimitrios Palyvos (zeropoint technologies)
 
 [Acronyms](./acronym.md): DRAM CPU TCO CXL OCP SPEC ASIC DLRM FPGA META AMD DDR4 RAM RTL Rtl
 
+Rama Bhimanadhuni (Microsoft), Jicksen Joy (Google)and Taniya Siddiqua (AMD)
+
+<a id="418"></a>
+
+2025/10/23 Advancing_Hyperscale_AI_Fleet_Quality_Through_Standardized_Debug,_Diagnostics,_and_RAS
+
+[YouTube](https://www.youtube.com/watch?v=k_JbQ3TuHbA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/418)
+
+[Acronyms](./acronym.md): RAS GPU CPU OCP AMD API SPEC ARM CSP JSON META BMC CRC NVIDIA PCI PCIE PCIe SLA
+
