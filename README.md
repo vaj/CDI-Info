@@ -6434,3 +6434,15 @@ Justin King (AMD) and Samer El-Haj-Mahmoud (ARM)
 
 [Acronyms](./acronym.md): PLDM SOC SoC SPEC DMTF PMCI CPU UEFI NIC OEM AMD ARM CXL DSP FIT OCP PCIE PCIe UUID
 
+Ullas Kumar (Rakon) and Greg Armstrong (Renesas)
+
+<a id="420"></a>
+
+2025/10/23 Advancing_Timing_Resilience_in_Edge_to_Core_Systems_From_White_Rabbit_to_PCIe
+
+[YouTube](https://www.youtube.com/watch?v=IRa5VsCOxrs)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/420)
+
+[Acronyms](./acronym.md): NIC OCP PCI PCIE PCIe DSP JTAG SPEC PAM4 ChatGPT FAST GPU IEEE MUX NVIDIA REST SIG USB
+
