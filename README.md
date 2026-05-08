@@ -6236,6 +6236,20 @@ Carlos Fernandez (Meta)
 
 [Acronyms](./acronym.md): CPU PCIE PCIe HBM DDR FAST ARM DDR5 META RAS RDMA
 
+### CXL Consortium
+
+Anil Godbole (Intel), Sandeep Dattaprasad (Astera Labs), Aravind Ramesh (Micron), Oren Benisty (UnifabriX) and JP Jiang (Xconn Technologies)
+
+<a id="421"></a>
+
+2025/06/04 Advantages_of_CXL_Memory_Sharing_for_Emerging_Applications
+
+[YouTube](https://www.youtube.com/watch?v=gyqpH8UVXkk)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/421)
+
+[Acronyms](./acronym.md): CXL FAMFS PCIE PCIe SPEC TCO LEO CPU DAX SMART GPU RAS RDMA TSP DDR5 DMTF IDE RocksDB SSD API
+
 ## 2025Q3
 
 ### SNIA
