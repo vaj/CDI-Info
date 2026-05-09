@@ -6460,3 +6460,15 @@ Ullas Kumar (Rakon) and Greg Armstrong (Renesas)
 
 [Acronyms](./acronym.md): NIC OCP PCI PCIE PCIe DSP JTAG SPEC PAM4 ChatGPT FAST GPU IEEE MUX NVIDIA REST SIG USB
 
+Louis Ferraro (AMD), Miguel Osorio (Google), and Ravi Sahita (Rivos)
+
+<a id="422"></a>
+
+2025/10/23 An_Update_on_OpenPRoT
+
+[YouTube](https://www.youtube.com/watch?v=P7PZfXzZCVM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/422)
+
+[Acronyms](./acronym.md): SPDM BMC SOC SoC OCP AMD DMTF PLDM SPEC ARM COVID CPU DOE IDE ISA PCI PCIE PCIe RISC SIG
+
