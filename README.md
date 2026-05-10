@@ -6472,3 +6472,15 @@ Louis Ferraro (AMD), Miguel Osorio (Google), and Ravi Sahita (Rivos)
 
 [Acronyms](./acronym.md): SPDM BMC SOC SoC OCP AMD DMTF PLDM SPEC ARM COVID CPU DOE IDE ISA PCI PCIE PCIe RISC SIG
 
+Kurtis Bowman (UALink Consortium), Chris Petersen (Astera Labs), Rohit Mittal (UpscaleAI), Josh Collier (Intel) and Priyank Shukla (Synopsys)
+
+<a id="423"></a>
+
+2025/10/23 Applications_and_Use_Cases_for_UALink_Enabling_Efficient,_Open_Networking_for_AI_Scale-Up_Systems
+
+[YouTube](https://www.youtube.com/watch?v=B82qmSyDhAw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/423)
+
+[Acronyms](./acronym.md): SPEC UALink OCP UAL PCI SIG CPU IEEE LABS CXL TCO BAR CUDA ChatGPT DMTF ECN FAST FLIT FPGA GPU
+
