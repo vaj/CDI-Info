@@ -6507,3 +6507,28 @@ Chris Peterson (Astera Labs) and Ahmad Danesh (Astera Labs)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/425)
 
 [Acronyms](./acronym.md): UALink BMC LABS OCP RAS XPU FAST CPU FEC GPU SPEC TCO
+
+Seth Kane (University of California Davis)
+
+<a id="426"></a>
+
+2025/10/23 Biochar_in_Data_Center_Decarbonization
+
+[YouTube](https://www.youtube.com/watch?v=et40_CRinfM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/426)
+
+[Acronyms](./acronym.md): LCA DOE OCP CO2 US CEMENT STEEL ARPA
+
+Kevin Donnelly (Eliyan) and Morgan Whately (Infineon Technologies)
+
+<a id="427"></a>
+
+2025/10/23 BoW_2_1_Enhancements_for_New_Applications
+
+[YouTube](https://www.youtube.com/watch?v=CqBj3vWpJDk)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/427)
+
+[Acronyms](./acronym.md): BoW SPEC OCP UCIE UCIe ASIC HBM IoT DRAM ECC HBM4 HPC PHY AIC CPO DDR5 FAST FEC I2C SRAM
+
