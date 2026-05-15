@@ -6532,3 +6532,14 @@ Kevin Donnelly (Eliyan) and Morgan Whately (Infineon Technologies)
 
 [Acronyms](./acronym.md): BoW SPEC OCP UCIE UCIe ASIC HBM IoT DRAM ECC HBM4 HPC PHY AIC CPO DDR5 FAST FEC I2C SRAM
 
+Kash Johal (YorChip)
+
+<a id="428"></a>
+
+2025/10/23 Breaking_real_world_barriers_for_Open_Chiplet_Adoption
+
+[YouTube](https://www.youtube.com/watch?v=2XXLV605Btc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/428)
+
+[Acronyms](./acronym.md): OCP PHY ARM UCIE UCIe NDA SPEC TSMC
