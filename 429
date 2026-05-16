@@ -1,0 +1,71 @@
+CDX Innovations in Chiplet Design From Standardization to System Realization
+
+Ready to go? All right. Good afternoon, everybody. I hope you have had your coffee and no, not yet. Okay.
+
+Sorry about that. So I'm David Rashkov. I co-lead the CDX Work stream under Open Chiplet Economy. And this is Syngman Wu, who is gonna. So, today, what we wanted to cover for you, give you a little bit of introduction to what CDX does, where we are, where we stand with the work we have done.
+
+And probably the exciting part of our presentation is gonna be: we'll cover some of the results. On a chiplet design that we have been working on, some results, some status, and what we're working on next. And definitely, as always, we'll end up with a little bit ask for help. So, if you can help us out, please do. So, CDX basically has. two pillars.
+
+One is to our in our charter our main focus is on data exchange. How do we exchange how do we describe chiplets and how do we exchange that data? We typically look for ready formats which are available and if there's gaps we fill those by defining new standards. For that we when defining new standards we collaborate with JEDEC. A lot of the stuff we have done has been has been Contributed to JEDEC and is now part of the part model standard, also known as JEP30.
+
+Or JEP30, also known as Part Model. It depends on which way you prefer. And on the other side, we look at workflows. How do we integrate chiplets into systems, including package? You know, what are the workflows to do that?
+
+And underlying all of that, we thought it's going to be a good idea to create a design to demonstrate our capability and to kind of put the rubber on the road and see how these models go and what issues we find. Our overall focus is on. 3DIC design kits. It consists of several different parts. We have completed the definition of CDK, test design kit 1.0, material design kit is has been contributed and released, and the assembly design kit.
+
+Uh the thing we are working on right now is the SIPI kit that would allow a uh chiplet vendor basically to describe uh the uh interfaces on on their chiplets, the electrical and um I think at w at one point oh we are gonna do the electrical side of things and in two point oh we're gonna Take a look at if we can basically work with the other work streams and see what we can define on the protocol side to ensure the compatibility of chiplets. And the other one that we are working on is Test Design Kit 2.0. That's really intended to enable automated workflows for a test design. Insertion for chiplet systems, where you do as little work as possible manually, right? To get data sheets, create spreadsheets, things like that.
+
+We think all of that should be mostly automated. And hopefully, with the different tools from different vendors would be able to work. Together. And the package DRM is one of the important things. There's a lot of struggle in reading PDF files and emails and describing the package rules.
+
+We want to automate that. And then we can start really some automation. The automation can take advantage of that so you don't have to manually encode rules. Looking at the workflow, how these different kits would apply, right? Going from architecture to design to sign-off, all of them would apply to different steps.
+
+And the idea is that we should be able to use those across the entire workflow, right? That's one unifying kit. And some of the kits actually. kind of interesting, they would undergo a transformation when you start with your chiplet at the architecture stage and when you end up as the final product, that file is going to be a living file that's going to get modified and updated and improved or Maybe some data gets removed, like for example, sacrificial paths, right? You probably don't want to define those on your final products, but you want to have them when you're doing wafer sort. So things like that are going to be happening.
+
+So the idea is to have a design kit that you can use across your entire flow. S input and both as output. So the demo design that we kind of defined consists of four CPU chiplets, four HBM4s, and four IO chiplets. And we wanted to put that, we actually put that on on a glass substrate and see how the SI looks, what thermals look like and so on. Where we are, quick update on that.
+
+Some of the things have been completed. I'm not gonna read that table. But we have completed some of the important steps. Well, they're all important. We have completed some of the steps and some of the steps are still work in progress.
+
+And we should be able to complete those. Probably the most, right, it's typical chiplet implementation flow. We started with chiplet definition, web map definition, put that on a substrate, define connectivity, look at power, look at thermal, what does the system make. Or does it not make sense? How do we route it?
+
+What the rules we need to route this and to make SI successful. Okay, so with that, I'm going to hand it off to Syngman, who is going to describe some of the results and some of the work he's done. Yeah, so uh I'm gonna dive into more details about the demo design uh we built. Um like uh what resources we used and how we designed the chiplet and substrate and how we analyze them. So uh first of all uh our uh One of our main objectives is to make a workflow as an open source.
+
+So we found some open source resources, including architecture, libraries, and even the tool. So for open source architecture, we use OpenPTON, which is designed for Many core application and has a RISC-V core. Speak louder. And can you hear me? Yeah.
+
+So for open source libraries, for now we use 3PDK45. And since we are designing a processor, OpenPTON, we need SRAM cells. So, in order to generate the SRAM cells, we use an open source SRAM compiler, which is called OpenRAM. And OpenRAM is compatible with the 3PDK45. EDA tool, we use OpenRoad.
+
+So, with these resources, we're going to go through this design analysis process. So, first of all, with open source libraries, we're going to synthesize the OpenPtone architecture and then A gate level and gate level netlist with SRM cells. And then we go through flow plan and placement for the chipted design. And once the triplet design has been completed, we move on to the 2.5 against. 3D substrate design, as shown on the right figure.
+
+And with this design, we analyze triplet PPA and signal, power, thermal, and mechanical integrity analysis for substrate. So I'd like to summarize our recent progress on demo workflow. So first we manipulated the libraries and architecture to be featured in our flow. For now we use commercial ED tools but we will be will migrate our flow to the open source CD2 later. Uh after the libraries and architecture is ready, uh we designed the CPU and memory shiplan with our current resource and 2.5 D glass substrate as well with uh four CPU and four memory configuration.
+
+And after that, we analyze PPA and signature and power and thermal as well for those layers. So, chiplet design. Since we can't, there there's not available Open source DRAM or HBM, we figured out a way to implement CPU and memory chiplet with open source resources. So first we partitioned that list, one single OpenPITOM tile. OpenPutant tile consists of computing unit, of course, and level one, level two, level three caches.
+
+And we maximize the level three cache capacity and partition into two parts. So one part to have Have LS3 cache and related control logics, and the other to have the rest of the NetList. And I'll call this as a core. And after that, we merged multiple components, multiple core, and multiple LS3 cache with CPU and Memory wrapper. And of course, we inserted the IO driver, the AIB IO driver, which is available as an open source.
+
+And after the Netlist is ready, we design the chiptest as shown on the right. Yeah, so key takeaway here. Here is we designed the CPU and memory chip with only with the open source resources. And it's configurable. So we can put the number of core and R3, whatever you want.
+
+And we can also run architectural simulation for this CPU and memory. And so let's move on to the substrate design. So we first planned the bump map. Instead of using Using a random bump map, we adopted a real-world I/O interfaces. So, and the real-world I/O interfaces, such as like HBM or UCIE.
+
+And we decided the version or the Number of uh interfaces based on the uh connections between each triplet. So for example, um between the CPU and memory, uh there's twenty two thousand uh number of connections. So we use H H4 fi uh HMM four bump map here. And for CPU to CPU connection, there are 680. So we use 22 model of UCIA X3245 micrometer bump pitch.
+
+And we also made the IO chriplet for the CPU external IOs. So it basically takes external IO from the CPU with the UCIE and outputs those signals with the PCIe. plan the bump map uh we place the chiplet and define the connectivity and uh set up the technology. So uh so we are we are going to design the two point five D glass substrate. So we define the glass technology which is from uh Pection Research Center at Georgia Tech. And we also configured the RDA layer for the signal routing.
+
+So we performed the signal routing and on the glass substrate. So this is the one example of routing. This is a CPU to CPU connection. And after designing after after routing the signaler, we investigated the signal intuitive. So on this slide, I this is for CPU to CPU connection, which is UCIE based.
+
+So we pick up one victim net, which has the longest wire length, and enough number of aggressors adjacent to that victim net, and extract the S parameter. And after that, we simulate the I diagram with the IO construction. Described in a UCI reference one. And yeah, in this case, we our design satisfied the UCI requirements showing the right figure. And also, we investigated the Between the CPU and HPM.
+
+In the same way, we pick up the victim and aggressors and extract the S parameter and see the I diagram. Yeah, as you can see, this signal routing also satisfies the HPM phi requirement. Yeah. So in this way uh we simulated the signal integrity and for the rest of the slides David will okay, thank you. Okay, so um when it comes to power I have a little bit of feedback.
+
+Hello. Okay. Okay. So we were wondering how exactly do we set up the power tree? And for that one, actually, we got help from the POC workstream.
+
+So the way we set it up is we thought we'll do some boring stuff. And some interesting stuff. The boring stuff is we assume uh the at the PCB we get uh uh forty-eight volt supply we get forty-eight volt supply, we convert that to twelve volt and then uh we further convert it to five volt and then that five volt gets into the package and on package we are gonna have uh the necessary IVRs to convert it to the necessary power supplies. So, in package, we have six IVRs that convert to the different power supplies for core, HBM, UCAE, and so on, and PCAE. So, we have quite a bit of conversion, and the reason we wanted to do that is we wanted to capture not the power in the chiplet themselves, but also the power loss.
+
+From power conversion. So, right now we are looking at about 600 watts of power. And looking at the power density and power maps, I think we are like at any typical project where our temperature right now is at 145 degrees. So, now we're going to go back and see. See how we can reduce power and what we're doing, or change the cooling solution.
+
+So we are doing real-world stuff here. Okay, and last slide, call to action. Really, what we one ask that we have is we design those signal routes, and when we analyze them, we make. Assumptions based off of publicly available data and standards. But what we would really like is if you have a PHI, whether it's UCAE or HBM PHI, if you could run a simulation with your FHI and with our models and tell us how those look.
+
+We would really appreciate that. And additionally, if you want to help on the definition of new standards or to help with the design itself, we meet every Thursday at 10 a.m. Pacific. So please join us and help us out. Thank you.
+
+Any questions that we can answer? At the risk of inviting a whole lot of work on myself, is this design available in public? Are the definitions of these? I just tried to look for it, and I do not know the right terms to search. for to find this? Why don't you send me a message?
+
+Actually we are on at at the table next to you, so we will chat after this. I'll I'll tell where to find that. But good point though, I'll make sure next time I have a link on the slides where to find all this data. Sorry about that. Excellent.
+
+Yeah, it kind of assumes that the whole world knows about C D X and where all that data is. How come you don't know? I wanna say special applause to the academia participant. Especially Sung Men Pool at Georgia Tech where we've been so if you are looking to hire any young engineer industry. Thank you.
