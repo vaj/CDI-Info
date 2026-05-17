@@ -6555,3 +6555,19 @@ Seungmin Woo (Georgia Institute of Technology), David Ratchkov (Anemoi Software 
 
 [Acronyms](./acronym.md): CPU HBM SRAM UCIE UCIe HPM JEDEC REST DRAM EDA PCB PCIE PCIe PDF POC PoC RISC
 
+## 2026Q2
+
+### SNIA
+
+Luis Freeman (IBM), Rohan Mehta (Micron Technology) and Jayanthi Ramakalanjiyam (Celestica)
+
+<a id="430"></a>
+
+2026/05/14 AI Stack_ Deconstructing the Storage Software Stack_ From Legacy Silos to AI Scale Architecture
+
+[YouTube](https://www.youtube.com/watch?v=VmUT7cr8H1c)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/430)
+
+[Acronyms](./acronym.md): NVMe SNIA AI RDMA PCIE PCIe SSD CPU TCP API HPC InfiniBand OS BMC IO IP VM
+
