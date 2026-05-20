@@ -6595,6 +6595,18 @@ Chaitanya Kulkarni (NVIDIA)
 
 [Acronyms](./acronym.md): GPU NVMe CPU AI DMA PCI SSD HPC IO LLM ML LBA PNFS SCSI
 
+Erich Haratsch (Marvell)
+
+<a id="434"></a>
+
+2026/05/12 SNIA SDC_ StorageAI 2026 - Data Storage Innovations for Scalable AI Infrastructure
+
+[YouTube](https://www.youtube.com/watch?v=EEh1FPwAkHA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/434)
+
+[Acronyms](./acronym.md): AI GPU NVMe CPU RDMA SSD ChatGPT HBM LLM PCI DRAM GPT NAND NVIDIA PCIE PCIe SNIA TCP QLC KV
+
 ### Open Compute Project
 
 Jean-Marc Philippe (Thales) and Loic Nacelo (Thales)
