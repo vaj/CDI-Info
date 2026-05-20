@@ -6571,6 +6571,18 @@ Luis Freeman (IBM), Rohan Mehta (Micron Technology) and Jayanthi Ramakalanjiyam 
 
 [Acronyms](./acronym.md): NVMe SNIA AI RDMA PCIE PCIe SSD CPU TCP API HPC InfiniBand OS BMC IO IP VM
 
+Wes Vaske (Micron Technology)
+
+<a id="433"></a>
+
+2026/05/12 SNIA SDC_ StorageAI 2026 - Enabling AI Storage Benchmark Evolution at the Pace of AI
+
+[YouTube](https://www.youtube.com/watch?v=S9gLjuEqBgM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/433)
+
+[Acronyms](./acronym.md): AI CPU GPU ML HBM LLM HPE NVIDIA NVLink OS SNIA SSD MLPerf PCIe REST
+
 Chaitanya Kulkarni (NVIDIA)
 
 <a id="431"></a>
