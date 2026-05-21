@@ -339,7 +339,7 @@ Brad Benton
 
 [Article](https://github.com/vaj/CDI-Articles#22)
 
-[Acronyms](./acronym.md): AMD API ARM BlueLink CAPI CCIX CPU DDR DMA DSDA ESM FNVMe FPGA GenZ GPU HPE IBM InfiniBand IP MPI NIC NVLink NVMe OFA OFIWG OpenCAPI OpenPower PCI PCIe PCIE PHY PIM PRI PSL SCM SHMEM
+[Acronyms](./acronym.md): AMD API ARM BlueLink CAPI CCIX CPU DDR DMA DSDA ESM FNVMe FPGA GenZ GPU HPE IBM InfiniBand IP MPI NIC NVLink NVMe OFA OFIWG OpenCAPI OpenPower PCI PCIe PHY PIM PRI PSL SCM SHMEM
 
 ### Gen-Z Consortium
 
@@ -6606,6 +6606,18 @@ Erich Haratsch (Marvell)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/434)
 
 [Acronyms](./acronym.md): AI GPU NVMe CPU RDMA SSD ChatGPT HBM LLM PCI DRAM GPT NAND NVIDIA PCIE PCIe SNIA TCP QLC KV
+
+Simon Lund (Samsung)
+
+<a id="435"></a>
+
+2026/05/12 SNIA SDC_ StorageAI 2026 - AiSIO_ Orchestrating Storage I_O Across CPUs and Accelerators
+
+[YouTube](https://www.youtube.com/watch?v=AJe22Nah5KA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/435)
+
+[Acronyms](./acronym.md): CPU GPU NVMe IO DMA NVIDIA OS PCI PCIe DRAM MMIO NUMA VM AI AMD BIOS CUDA GDS AISIO
 
 ### Open Compute Project
 
