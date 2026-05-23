@@ -6645,3 +6645,15 @@ Jean-Marc Philippe (Thales) and Loic Nacelo (Thales)
 
 [Acronyms](./acronym.md): OCP AI CPU PCI PCIE PCIe ASIC DC FPGA IO NIC SSD USB VM MHS
 
+Robert Hormuth (AMD)
+
+<a id="437"></a>
+
+2026/05/14 From Training Titans to Inference for Billions_ Open Infrastructure for the Next Era of AI
+
+[YouTube](https://www.youtube.com/watch?v=tXiwtpVXcZI)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/437)
+
+[Acronyms](./acronym.md): OCP AMD UEC DRAM GPU NIC OAM CPU FAST FIT GPT NVIDIA PCI PCIE PCIe REST SPEC
+
