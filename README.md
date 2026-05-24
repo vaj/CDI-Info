@@ -6657,3 +6657,16 @@ Robert Hormuth (AMD)
 
 [Acronyms](./acronym.md): OCP AMD UEC DRAM GPU NIC OAM CPU FAST FIT GPT NVIDIA PCI PCIE PCIe REST SPEC
 
+### The Linux Foundation
+
+Suresh Vasudevan (Clockwork.io), Gavin Cohen (Clockwork.io) and Jordan Nanos (SemiAnalysis)
+
+<a id="438"></a>
+
+2026/04/23 LF Live Webinar_ Handling Hardware Failures During Training
+
+[YouTube](https://www.youtube.com/watch?v=cnqwKadEsR4)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/438)
+
+[Acronyms](./acronym.md): GPU META NVIDIA PyTorch TCO LABS API CPO CUDA NDR NIC BAR CEO CPU GTC HBM NVLink NVMe RDMA REST
