@@ -326,6 +326,23 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [SNIA](#snia-1)
     - [Oktay Technology](#oktay-technology)
     - [UnifabiX](#unifabix)
+  - [2025Q2](#2025q2)
+    - [Open Compute Project](#open-compute-project-1)
+    - [Meta](#meta-6)
+    - [CXL Consortium](#cxl-consortium-6)
+  - [2025Q3](#2025q3)
+    - [SNIA](#snia-2)
+    - [AMD](#amd-10)
+    - [Google](#google-4)
+    - [Open Compute Project](#open-compute-project-2)
+    - [The Linux Foundation](#the-linux-foundation)
+  - [2025Q4](#2025q4)
+    - [AMD](#amd-11)
+    - [Open Compute Project](#open-compute-project-3)
+  - [2026Q2](#2026q2)
+    - [SNIA](#snia-3)
+    - [Open Compute Project](#open-compute-project-4)
+    - [The Linux Foundation](#the-linux-foundation-1)
 
 ## 2017
 
