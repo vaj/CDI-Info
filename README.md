@@ -6572,6 +6572,20 @@ Seungmin Woo (Georgia Institute of Technology), David Ratchkov (Anemoi Software 
 
 [Acronyms](./acronym.md): CPU HBM SRAM UCIE UCIe HPM JEDEC REST DRAM EDA PCB PCIE PCIe PDF POC PoC RISC
 
+### Linux Plumbers Conference
+
+David Airlie (Red Hat)
+
+<a id="439"></a>
+
+2025/12/18 drm_and_cgroup_memory_management_-_two_great_tastes_-_David_Airlie
+
+[YouTube](https://www.youtube.com/watch?v=q4QTGCPGif4)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/439)
+
+[Acronyms](./acronym.md): GPU NUMA LRU MEM CPU DMA PCI AMD FAST RAM APU ARM DRAM HPC NVIDIA NVLink OPT RISC
+
 ## 2026Q2
 
 ### SNIA
