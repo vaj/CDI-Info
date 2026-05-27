@@ -6599,6 +6599,22 @@ David Airlie (Red Hat)
 
 [Acronyms](./acronym.md): GPU NUMA LRU MEM CPU DMA PCI AMD FAST RAM APU ARM DRAM HPC NVIDIA NVLink OPT RISC
 
+## 2026Q1
+
+### SNIA
+
+Eric Smith (Dell), Anthony Constantine (Micron), and Tom Palkert (Samtec)
+
+<a id="441"></a>
+
+2026/01/29 _AI Stack_ Accelerating AI Infrastructure_The Role of 400G and PCIe 8.0 in Next-Gen Interconnects
+
+[YouTube](https://www.youtube.com/watch?v=UTTMYqPGfQ8)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/441)
+
+[Acronyms](./acronym.md): PCIE PCIe PAM DSP SSD PAM4 GPU CPO PCI META SPEC ASIC NVIDIA PCB SFF SNIA IEEE SIG CMOS CPU
+
 ## 2026Q2
 
 ### SNIA
