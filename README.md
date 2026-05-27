@@ -6560,6 +6560,7 @@ Kash Johal (YorChip)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/428)
 
 [Acronyms](./acronym.md): OCP PHY ARM UCIE UCIe NDA SPEC TSMC
+
 Seungmin Woo (Georgia Institute of Technology), David Ratchkov (Anemoi Software Inc), and Jawad Nasrullah (Palo Alto Electron)
 
 <a id="429"></a>
@@ -6571,6 +6572,18 @@ Seungmin Woo (Georgia Institute of Technology), David Ratchkov (Anemoi Software 
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/429)
 
 [Acronyms](./acronym.md): CPU HBM SRAM UCIE UCIe HPM JEDEC REST DRAM EDA PCB PCIE PCIe PDF POC PoC RISC
+
+Abe Garcia (Meta)
+
+<a id="440"></a>
+
+2025/10/23 Yosemite_v5,_Metas_next_generation_modular_compute_and_storage_platform
+
+[YouTube](https://www.youtube.com/watch?v=qIYdQHKWoig)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/440)
+
+[Acronyms](./acronym.md): NIC OCP BMC CXL META BAR CPU DCSCM FPGA MCIO PCB SSD DCMHS DNO I2C PCI PCIE PCIe PIC SIG
 
 ### Linux Plumbers Conference
 
