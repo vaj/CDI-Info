@@ -6730,3 +6730,18 @@ Suresh Vasudevan (Clockwork.io), Gavin Cohen (Clockwork.io) and Jordan Nanos (Se
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/438)
 
 [Acronyms](./acronym.md): GPU META NVIDIA PyTorch TCO LABS API CPO CUDA NDR NIC BAR CEO CPU GTC HBM NVLink NVMe RDMA REST
+
+### CXL Consortium
+
+Jinin So, Wonjae Lee, Hojin Nam and Han Deok Lee (Samsung)
+
+<a id="442"></a>
+
+2026/04/04 Vertical Optimization of the CXL Stack Webinar
+
+[YouTube](https://www.youtube.com/watch?v=LPhs-f8t9uk)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/442)
+
+[Acronyms](./acronym.md): CXL CPU DRAM API PCI NUMA OCP RDMA AMD CMS DCM DMTF FAST FPGA IEEE LinkedIn PCIE PCIe RAS RESTful
+
