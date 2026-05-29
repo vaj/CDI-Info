@@ -6615,6 +6615,18 @@ Eric Smith (Dell), Anthony Constantine (Micron), and Tom Palkert (Samtec)
 
 [Acronyms](./acronym.md): PCIE PCIe PAM DSP SSD PAM4 GPU CPO PCI META SPEC ASIC NVIDIA PCB SFF SNIA IEEE SIG CMOS CPU
 
+Himabindu Tummala (Dell), John Cardente (Dell), Fatemeh Azmandian (Dell)  and Michael Hoard (SNIA)
+
+<a id="443"></a>
+
+2026/02/13 How Agentic AI Transforms the Role of Storage
+
+[YouTube](https://www.youtube.com/watch?v=YlFdpbuU1L8)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/443)
+
+[Acronyms](./acronym.md): GPU LLM API NFS RDMA SNIA CPU NVMe IOPS JSON RAG SQL SSD TCP URL
+
 ## 2026Q2
 
 ### SNIA
