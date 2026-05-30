@@ -6599,6 +6599,20 @@ David Airlie (Red Hat)
 
 [Acronyms](./acronym.md): GPU NUMA LRU MEM CPU DMA PCI AMD FAST RAM APU ARM DRAM HPC NVIDIA NVLink OPT RISC
 
+### The Linux Foundation
+
+Jin Hase (Fujitsu) and Tsubasa Watanabe (Fujitsu)
+
+<a id="444"></a>
+
+2025/12/19 Dynamic GPU Provisioning in Kubernetes With Composable Disaggregated Infrastructure
+
+[YouTube](https://www.youtube.com/watch?v=OhMmSVSPhpM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/444)
+
+[Acronyms](./acronym.md): GPU DRA CDI NVIDIA CPU OSS SPEC API CXL PCI PCIE PCIe SAN
+
 ## 2026Q1
 
 ### SNIA
