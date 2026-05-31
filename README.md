@@ -6599,6 +6599,18 @@ David Airlie (Red Hat)
 
 [Acronyms](./acronym.md): GPU NUMA LRU MEM CPU DMA PCI AMD FAST RAM APU ARM DRAM HPC NVIDIA NVLink OPT RISC
 
+Sumit Garg (Qualcomm)
+
+<a id="445"></a>
+
+2025/12/18 Protected DMAbufs and its dynamic memory assignment woes - Sumit Garg
+
+[YouTube](https://www.youtube.com/watch?v=VG-a5mUpz5E)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/445)
+
+[Acronyms](./acronym.md): DMA CPU API DRAM IOMMU AMD APU ARM EDK GPU OEM OSS RISC SOC SoC TLB
+
 ### The Linux Foundation
 
 Jin Hase (Fujitsu) and Tsubasa Watanabe (Fujitsu)
