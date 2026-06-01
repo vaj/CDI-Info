@@ -6611,6 +6611,18 @@ Sumit Garg (Qualcomm)
 
 [Acronyms](./acronym.md): DMA CPU API DRAM IOMMU AMD APU ARM EDK GPU OEM OSS RISC SOC SoC TLB
 
+Wei Huang (AMD)
+
+<a id="446"></a>
+
+2025/12/18 Plumbing SDXI into Linux: From DMA Engine to User‑Space Offloads - Wei Huang
+
+[YouTube](https://www.youtube.com/watch?v=ZYY8Cr9TstM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/446)
+
+[Acronyms](./acronym.md): SDXI CPU DMA MEM MMIO AMD VM1 HPA IOMMU API ATS CRC PCI PCIE PCIe RFC SNIA VMware
+
 ### The Linux Foundation
 
 Jin Hase (Fujitsu) and Tsubasa Watanabe (Fujitsu)
