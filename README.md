@@ -6623,6 +6623,18 @@ Wei Huang (AMD)
 
 [Acronyms](./acronym.md): SDXI CPU DMA MEM MMIO AMD VM1 HPA IOMMU API ATS CRC PCI PCIE PCIe RFC SNIA VMware
 
+Jens Wiklander (Linaro) and Sumit Garg (Qualcomm)
+
+<a id="447"></a>
+
+2025/12/18 Kernel TEE subsystem BoF - Jens Wiklander, Sumit Garg
+
+[YouTube](https://www.youtube.com/watch?v=fE_3Evxkzxg)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/447)
+
+[Acronyms](./acronym.md): DMA RISC ABI ARM IoT API IOMMU AMD BIOS CPU EDK GPU KVM NVMe OPT PCI SOC SoC
+
 ### The Linux Foundation
 
 Jin Hase (Fujitsu) and Tsubasa Watanabe (Fujitsu)
