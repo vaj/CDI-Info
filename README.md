@@ -338,6 +338,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [The Linux Foundation](#the-linux-foundation)
   - [2025Q4](#2025q4)
     - [AMD](#amd-11)
+    - [CXL Consortium](#cxl-consortium-7)
     - [Open Compute Project](#open-compute-project-3)
   - [2026Q2](#2026q2)
     - [SNIA](#snia-3)
@@ -6366,6 +6367,20 @@ Shane Corban (AMD)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/412)
 
 [Acronyms](./acronym.md): UEC GPU AMD OCP RDMA UAL CPU NIC PCIE PCIe DPU ECN HPC InfiniBand MIT REST
+
+### CXL Consortium
+
+Debendra Das Sharma and Mahesh Natu (Intel)
+
+<a id="451"></a>
+
+2025/12/04 Introducing the CXL 4.0 Specification Webinar
+
+[YouTube](https://www.youtube.com/watch?v=9vm210yUKsY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/451)
+
+[Acronyms](./acronym.md): CXL CRC PCI FEC FLIT CPU MEM CXL.io CXL.mem DDR SLD DRAM FIT RAS ATS DLP DMA GPU HDM IDE
 
 ### Open Compute Project
 
