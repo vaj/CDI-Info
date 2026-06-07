@@ -338,6 +338,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [The Linux Foundation](#the-linux-foundation)
   - [2025Q4](#2025q4)
     - [AMD](#amd-11)
+    - [SNIA](#snia-4)
     - [CXL Consortium](#cxl-consortium-7)
     - [Open Compute Project](#open-compute-project-3)
   - [2026Q2](#2026q2)
@@ -6367,6 +6368,20 @@ Shane Corban (AMD)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/412)
 
 [Acronyms](./acronym.md): UEC GPU AMD OCP RDMA UAL CPU NIC PCIE PCIe DPU ECN HPC InfiniBand MIT REST
+
+### SNIA
+
+Suresh Rajgopal (Micron), Chandra Gura (Micron) and Pierre Labat (Micron)
+
+<a id="452"></a>
+
+2025/11/15 SNIA SDC 2025 - Why does NVMe Need to Evolve for Efficient Storage Access from GPUs?
+
+[YouTube](https://www.youtube.com/watch?v=GaQ6UY4uroQ)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/452)
+
+[Acronyms](./acronym.md): GPU NVMe CPU SSD DMA UEC FAST PCIE PCIe IOPS MSIX AMD QOS QoS SMART CUDA IDE OEM REST
 
 ### CXL Consortium
 
