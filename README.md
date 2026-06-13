@@ -6443,6 +6443,18 @@ Scott Shadley (Solidigm) and Andy Banta (Magnition IO)
 
 [Acronyms](./acronym.md): SSD TCO CAPEX OPEX IOPS LLM NVMe REST CXL DRAM FAST FIT GPU HPE NUMA SATA SDC BAR CEO CSP
 
+Alessandro Goncalves (Solidigm)
+
+<a id="458"></a>
+
+2025/11/15 SNIA SDC 2025 - Scaling RAG with NVME
+
+[YouTube](https://www.youtube.com/watch?v=YPw26UZ67pk)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/458)
+
+[Acronyms](./acronym.md): RAM DRAM FAST CPU KNN GPU GTC RAG SSD AMD CUDA LLM NVIDIA NVMe SQL
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
