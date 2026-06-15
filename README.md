@@ -6467,6 +6467,18 @@ Dan Helmick (Samsung)
 
 [Acronyms](./acronym.md): VMM SSD NVMe REST PCIE PCIe CPU GPU IEEE LBA NVM QOS QoS BoW FMS FPGA IOV TCG VMware
 
+Satish Kumar (Samsung)
+
+<a id="460"></a>
+
+2025/11/15 SNIA SDC 2025 - Rethinking Storage for the AI/ML Era: Disaggregation Powered with FDP
+
+[YouTube](https://www.youtube.com/watch?v=HhIIq6mRRU0)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/460)
+
+[Acronyms](./acronym.md): GPU RDMA NVMe LBA LLM SPDK TCP XFS AMD API CAPEX CPU FMS META NIC OpenAI PyTorch RAM REST ROI
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
