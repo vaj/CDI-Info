@@ -6915,6 +6915,18 @@ Rory Bolt (Kioxia)
 
 [Acronyms](./acronym.md): AI SSD GPU ECC NVIDIA PCIe HBM NAND CPU IO OS PCB SOC KV QLC CMX NVMe IOPS DRAM
 
+Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
+
+<a id="461"></a>
+
+2026/06/11 AI Stack: AI Meets Storage Comparing On Prem, Cloud and Hybrid Architectures Across the AI Lifecycle
+
+[YouTube](https://www.youtube.com/watch?v=fVntohytJpk)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/461)
+
+[Acronyms](./acronym.md): AI GPU NVMe CPU RDMA SSD API SNIA IP
+
 ### Open Compute Project
 
 Jean-Marc Philippe (Thales) and Loic Nacelo (Thales)
