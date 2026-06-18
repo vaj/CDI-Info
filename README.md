@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 396 disaggregated computing-related talks published on YouTube between March 2017 and February 2025, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 454 disaggregated computing-related talks published on YouTube between March 2017 and June 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -338,13 +338,18 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [The Linux Foundation](#the-linux-foundation)
   - [2025Q4](#2025q4)
     - [AMD](#amd-11)
-    - [SNIA](#snia-4)
+    - [SNIA](#snia-3)
     - [CXL Consortium](#cxl-consortium-7)
     - [Open Compute Project](#open-compute-project-3)
-  - [2026Q2](#2026q2)
-    - [SNIA](#snia-3)
-    - [Open Compute Project](#open-compute-project-4)
+    - [Linux Plumbers Conference](#linux-plumbers-conference)
     - [The Linux Foundation](#the-linux-foundation-1)
+  - [2026Q1](#2026q1)
+    - [SNIA](#snia-4)
+  - [2026Q2](#2026q2)
+    - [SNIA](#snia-5)
+    - [Open Compute Project](#open-compute-project-4)
+    - [The Linux Foundation](#the-linux-foundation-2)
+    - [CXL Consortium](#cxl-consortium-8)
 
 ## 2017
 
@@ -6478,6 +6483,18 @@ Satish Kumar (Samsung)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/460)
 
 [Acronyms](./acronym.md): GPU RDMA NVMe LBA LLM SPDK TCP XFS AMD API CAPEX CPU FMS META NIC OpenAI PyTorch RAM REST ROI
+
+John Mazzie (Micron Technology)
+
+<a id="463"></a>
+
+2025/11/15 SNIA SDC 2025 - Small Granularity Graph Neural Network Training & the Future of Storage
+
+[YouTube](https://www.youtube.com/watch?v=ytYC3whZv2Q)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/463)
+
+[Acronyms](./acronym.md): GPU CPU IOPS NVIDIA LLM SSD NVMe PCI SPDK META NAND DRAM FIT GTC LBA NVM PCIE PCIe REST
 
 ### CXL Consortium
 
