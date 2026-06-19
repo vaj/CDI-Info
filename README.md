@@ -6496,6 +6496,18 @@ John Mazzie (Micron Technology)
 
 [Acronyms](./acronym.md): GPU CPU IOPS NVIDIA LLM SSD NVMe PCI SPDK META NAND DRAM FIT GTC LBA NVM PCIE PCIe REST
 
+William Moyes (AMD) and Shyam Iyer (Dell Technologies)
+
+<a id="464"></a>
+
+2025/11/15 SNIA SDC 2025 - SDXI v1.1 Data Movement Accelerator Interface Update
+
+[YouTube](https://www.youtube.com/watch?v=4-LUdRVXz2A)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/464)
+
+[Acronyms](./acronym.md): SDXI CRC PCIE PCIe CPU BMC ISA NPU NVMe SPEC AMD DMA DPU DRAM GPU GUID LABS OPT REST SNIA
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
