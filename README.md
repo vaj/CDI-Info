@@ -6508,6 +6508,18 @@ William Moyes (AMD) and Shyam Iyer (Dell Technologies)
 
 [Acronyms](./acronym.md): SDXI CRC PCIE PCIe CPU BMC ISA NPU NVMe SPEC AMD DMA DPU DRAM GPU GUID LABS OPT REST SNIA
 
+Stephen Bates (AMD), Nilesh Garya (NUMEM), Jungmian (SK hynix), Vikas (MaxLinear) and Nilesha (Zero Point Technologies)
+
+<a id="465"></a>
+
+2025/11/15 SNIA SDC 2025 - Panel Discussion: Do We Disrupt GPUs?
+
+[YouTube](https://www.youtube.com/watch?v=N7NMQR_7H4g)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/465)
+
+[Acronyms](./acronym.md): GPU TCO HPM NVIDIA HBM SMART RAG MRAM AMD CAPEX CPU OPEX SPEC DMA DRAM AWS CXL FAST PDF PIM
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
