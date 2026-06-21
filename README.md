@@ -6520,6 +6520,18 @@ Stephen Bates (AMD), Nilesh Garya (NUMEM), Jungmian (SK hynix), Vikas (MaxLinear
 
 [Acronyms](./acronym.md): GPU TCO HPM NVIDIA HBM SMART RAG MRAM AMD CAPEX CPU OPEX SPEC DMA DRAM AWS CXL FAST PDF PIM
 
+David Flynn (Hammerspace)
+
+<a id="466"></a>
+
+2025/11/15 SNIA SDC 2025 - Open Flash Platform: An Initiative for Open, Highly Efficient AI Storage
+
+[YouTube](https://www.youtube.com/watch?v=3E2e6aPfNoE)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/466)
+
+[Acronyms](./acronym.md): NFS NVMe DPU GPU NIC CPU RDMA SMB TLC DGX META PCI SPDK SSD NAND OCP TCP CTO IPU NVIDIA
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
