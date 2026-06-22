@@ -6532,6 +6532,18 @@ David Flynn (Hammerspace)
 
 [Acronyms](./acronym.md): NFS NVMe DPU GPU NIC CPU RDMA SMB TLC DGX META PCI SPDK SSD NAND OCP TCP CTO IPU NVIDIA
 
+Lee Pruitt (Microsoft) and Mike Allison (Samsung)
+
+<a id="467"></a>
+
+2025/11/15 SNIA SDC 2025 - Host Management of NVM Express Exported NVM Subsystems in PCIe SSDs
+
+[YouTube](https://www.youtube.com/watch?v=1ytJDToO_9M)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/467)
+
+[Acronyms](./acronym.md): NVMe NVM SSD VFIO PCIE PCIe CPU NVIDIA PCI VMA API FAST SPEC DOE DRAM IOPS LBA OCP QEMU REST
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
