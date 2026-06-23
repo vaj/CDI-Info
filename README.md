@@ -6544,6 +6544,18 @@ Lee Pruitt (Microsoft) and Mike Allison (Samsung)
 
 [Acronyms](./acronym.md): NVMe NVM SSD VFIO PCIE PCIe CPU NVIDIA PCI VMA API FAST SPEC DOE DRAM IOPS LBA OCP QEMU REST
 
+Jason Molgaard (Solidigm)
+
+<a id="468"></a>
+
+2025/11/15 SNIA SDC 2025 - Host Addressable Subsystem Local Memory
+
+[YouTube](https://www.youtube.com/watch?v=i5KB8xnJiFY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/468)
+
+[Acronyms](./acronym.md): CXL SLM BAR NVMe UIO PCIE PCIe CMB HDM NVM SSD CXL.mem MEM CPU DMA FIT MMIO NVIDIA PCI
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
