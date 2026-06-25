@@ -6568,6 +6568,18 @@ Suresh Rajgopal (Micron) and Brent Byron (Micron)
 
 [Acronyms](./acronym.md): DRAM GPU SSD NAND PCB FIT LLM CPU PCIE PCIe AMD DNA FAST NVMe OCP PCI QOS QoS SDC SPEC
 
+John Groves (Micron Technology)
+
+<a id="470"></a>
+
+2025/11/15 SNIA SDC 2025 - FAMFS: Get Ready for Big Pools of Disaggregated Shared Memory
+
+[YouTube](https://www.youtube.com/watch?v=SHbVEd9WX-I)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/470)
+
+[Acronyms](./acronym.md): FAMFS DAX CXL RAM FIT CPU DCD NVMe SPEC TLB XFS CLI CSV OPT PMEM POSIX RDMA UUID ARM BAR
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
