@@ -6580,6 +6580,18 @@ John Groves (Micron Technology)
 
 [Acronyms](./acronym.md): FAMFS DAX CXL RAM FIT CPU DCD NVMe SPEC TLB XFS CLI CSV OPT PMEM POSIX RDMA UUID ARM BAR
 
+Wes Vaske (Micron)
+
+<a id="471"></a>
+
+2025/11/15 SNIA SDC 2025 - Discussion and Analysis of the MLPerf Storage Benchmark Suite and AI Storage Workloads
+
+[YouTube](https://www.youtube.com/watch?v=6lXbL5BrmWA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/471)
+
+[Acronyms](./acronym.md): GPU CPU NVMe FAST LLM FMS HBM HPM META REST AMD DMA FIT HPC LABS MLC NVIDIA RAG RDMA ResNet
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
