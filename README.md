@@ -6592,6 +6592,18 @@ Wes Vaske (Micron)
 
 [Acronyms](./acronym.md): GPU CPU NVMe FAST LLM FMS HBM HPM META REST AMD DMA FIT HPC LABS MLC NVIDIA RAG RDMA ResNet
 
+Eshcar Hillel (Pliops)
+
+<a id="472"></a>
+
+2025/11/15 SNIA SDC 2025 - Disaggregated KV Storage: A New Tier for Efficient Scalable LLM Inference
+
+[YouTube](https://www.youtube.com/watch?v=aEUuqzjMOCM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/472)
+
+[Acronyms](./acronym.md): GPU LLM SLA HBM SSD SRAM API DPU NVIDIA CPU DRAM SMART IOPS NIC BAR CEO FAST FIT HPM IBM
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
