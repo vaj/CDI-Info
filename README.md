@@ -6616,6 +6616,18 @@ Sergei Platonov (Xinnor) and Ned Pyle (Tuxera)
 
 [Acronyms](./acronym.md): NFS SMB CPU RDMA GPU TCP XFS AMD MAC NVIDIA ARM DPU FAST FMS HPC IBM OSS PID POSIX REST
 
+Jason Molgaard (Solidigm) and Shyam Iyer (Dell Technologies)
+
+<a id="474"></a>
+
+2025/11/15 SNIA SDC 2025 - Can SDXI Work with NVMe?
+
+[YouTube](https://www.youtube.com/watch?v=n65rBnb1cZE)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/474)
+
+[Acronyms](./acronym.md): SDXI NVMe CMB PMR DMA IOMMU SPEC NVM FIT CPU DRAM CXL JSON MMU NIC PCIE PCIe SDC SLM SNIA
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
