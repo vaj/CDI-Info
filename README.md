@@ -6652,6 +6652,18 @@ Adam Manzanares (Samsung) and Anisa Su (Samsung)
 
 [Acronyms](./acronym.md): CXL DAX NVMe BMC DCD MCTP RAM API CCI CPU FMAPI HPC ARM PMEM CLI KVM USB CMS CXL.io DAC
 
+Huihuo Zheng (Argonne National Laboratory)
+
+<a id="477"></a>
+
+2025/11/15 SNIA SDC 2025 - Beyond Throughput: Benchmarking Storage for the Complex I/O Patterns of AI with MLPerf Storage and DLIO
+
+[YouTube](https://www.youtube.com/watch?v=OIO5AVJB1Qs)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/477)
+
+[Acronyms](./acronym.md): GPU HPC FAST NIC PyTorch NVMe CPU DOE NVIDIA TensorFlow HTTP ChatGPT IBM JSON PCIE PCIe RAG ResNet
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
