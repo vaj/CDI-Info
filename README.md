@@ -6676,6 +6676,18 @@ Venkat Pullela (Keysight Technologies)
 
 [Acronyms](./acronym.md): RDMA GPU FAST NVIDIA PCIE PCIe META AWS CPU CTO DMA HPM LABS NFS NIC POC PoC SNIA TCP
 
+Anil Godbole (Intel)
+
+<a id="479"></a>
+
+2025/11/15 SNIA SDC 2025 - Advantages of CXL for Storage Applications
+
+[YouTube](https://www.youtube.com/watch?v=LuS5fyfrefY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/479)
+
+[Acronyms](./acronym.md): CXL DRAM PCI SSD TCO DDR4 DDR5 CPU DDR NVMe GPU REST ASIC CXL.io FPGA HBM META NVIDIA OCP OPT
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
