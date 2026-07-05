@@ -6688,6 +6688,18 @@ Anil Godbole (Intel)
 
 [Acronyms](./acronym.md): CXL DRAM PCI SSD TCO DDR4 DDR5 CPU DDR NVMe GPU REST ASIC CXL.io FPGA HBM META NVIDIA OCP OPT
 
+John Geldman (Kioxia), Mike Allison (Samsung) and Anthony Constantine (Micron)
+
+<a id="480"></a>
+
+2025/11/15 SNIA SDC 2025 - 448G/lane, PCIe 7.0, and E2 Form Factor
+
+[YouTube](https://www.youtube.com/watch?v=n2ol5jSnMEo)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/480)
+
+[Acronyms](./acronym.md): PCIE PCIe SFF SSD SPEC PCI OCP NVMe AMD EDSFF FAST FIT SIG PCB ASIC CPU CXL E3S GPU I3C
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
