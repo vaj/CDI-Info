@@ -6712,6 +6712,18 @@ Anthony Constantine (Micron)
 
 [Acronyms](./acronym.md): SSD NAND SPEC EDSFF PCB DRAM SFF FIT OCP SATA DRA FMS META NIC NVMe PCI PCIE PCIe PMIC SAS
 
+Gary Smerdon (MEXT)
+
+<a id="482"></a>
+
+2025/11/15 SNIA SDC 2025 - Radical Reduction in Computing Costs with AI-powered Predictive Memory Technology
+
+[YouTube](https://www.youtube.com/watch?v=can07RLOS4Y)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/482)
+
+[Acronyms](./acronym.md): DRAM CPU AMD NVMe AWS CXL META FAST SRAM ARM FIT GPU HPE IBM MAC NUMA REST VMware CEO ChatGPT
+
 ### CXL Consortium
 
 Debendra Das Sharma and Mahesh Natu (Intel)
