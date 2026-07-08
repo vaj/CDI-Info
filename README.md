@@ -7044,6 +7044,18 @@ Wei Huang (AMD)
 
 ### The Linux Foundation
 
+Joongi Kim (Lablup Inc.)
+
+<a id="483"></a>
+
+2025/11/12 Sokovan - An Acceleration-first Kubernetes-compatible AI Container Engine
+
+[YouTube](https://www.youtube.com/watch?v=NtMeN3ocpEw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/483)
+
+[Acronyms](./acronym.md): GPU HPC CPU DRA OpenAI RDMA NVIDIA AMD API GTC HPM JSON PyTorch TCP
+
 Jin Hase (Fujitsu) and Tsubasa Watanabe (Fujitsu)
 
 <a id="444"></a>
