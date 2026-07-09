@@ -6956,6 +6956,18 @@ Abe Garcia (Meta)
 
 [Acronyms](./acronym.md): NIC OCP BMC CXL META BAR CPU DCSCM FPGA MCIO PCB SSD DCMHS DNO I2C PCI PCIE PCIe PIC SIG
 
+Jason Molgaard (Solidigm), Gary Grider (Los Alamos National Laboratory), Anupam Thakur (Microsoft), Pankaj Mehra (The Ohio State University), and Nader Salessi (MaxLinear)
+
+<a id="484"></a>
+
+2025/10/23 Where has DCC been and where should DCC explore next?
+
+[YouTube](https://www.youtube.com/watch?v=Alr3pTgwXgo)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/484)
+
+[Acronyms](./acronym.md): NVMe CXL CPU SQL GPU IBM LABS API AWS CEO CMS CUDA DOE DRAM FAMFS HPC HPE NVLink OCP PIM
+
 Phil Leech (HPE), Dave Heinrich (HPE), Jeff Kennedy (Dell) and Todd Rosedahl (Jabil)
 
 <a id="449"></a>
