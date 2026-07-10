@@ -6956,6 +6956,18 @@ Abe Garcia (Meta)
 
 [Acronyms](./acronym.md): NIC OCP BMC CXL META BAR CPU DCSCM FPGA MCIO PCB SSD DCMHS DNO I2C PCI PCIE PCIe PIC SIG
 
+Kwangsik Shin (SK hynix)
+
+<a id="485"></a>
+
+2025/10/23 The Journey of CXL-PNM Research - Architecture Evolution and Software Environment
+
+[YouTube](https://www.youtube.com/watch?v=l0ZAuTV0hH0)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/485)
+
+[Acronyms](./acronym.md): ARM CPU CXL API CMS GPU DRAM FAST KNN LLM PCI PCIE PCIe PIC POC PoC
+
 Jason Molgaard (Solidigm), Gary Grider (Los Alamos National Laboratory), Anupam Thakur (Microsoft), Pankaj Mehra (The Ohio State University), and Nader Salessi (MaxLinear)
 
 <a id="484"></a>
