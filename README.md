@@ -6956,6 +6956,18 @@ Abe Garcia (Meta)
 
 [Acronyms](./acronym.md): NIC OCP BMC CXL META BAR CPU DCSCM FPGA MCIO PCB SSD DCMHS DNO I2C PCI PCIE PCIe PIC SIG
 
+Jack Luoh (QCT and Quanta Computer)
+
+<a id="486"></a>
+
+2025/10/23 The Blueprint for Brilliance - QCT's Modular Approach to AI Solutions
+
+[YouTube](https://www.youtube.com/watch?v=FngOwv20VRY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/486)
+
+[Acronyms](./acronym.md): GPU NVIDIA AMD CPU ASIC DCMHS PCIE PCIe XPU ARM BIOS HPC HPM Neoverse OCP OSS PCI
+
 Kwangsik Shin (SK hynix)
 
 <a id="485"></a>
