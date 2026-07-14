@@ -6956,6 +6956,18 @@ Abe Garcia (Meta)
 
 [Acronyms](./acronym.md): NIC OCP BMC CXL META BAR CPU DCSCM FPGA MCIO PCB SSD DCMHS DNO I2C PCI PCIE PCIe PIC SIG
 
+Siamak Tavallaei (Samsung)
+
+<a id="489"></a>
+
+2025/10/23 Short-reach Optical Interface Scale Connectivity for Optimized Data-movement Through Memory for AI/ML Applications
+
+[YouTube](https://www.youtube.com/watch?v=RzW_5ibyExg)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/489)
+
+[Acronyms](./acronym.md): GPU CXL CPU DDR HBM UCIE UCIe HPC HPM InfiniBand LPDDR NVMe OCP RDMA TCO WDM XPU
+
 Ross Stenfort (Meta), Ayberk Ozturk (Microsoft), David Black (Dell Technologies), Paul Kaler (HPE), and Chris Sabol (Google)
 
 <a id="488"></a>
