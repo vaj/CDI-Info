@@ -6956,6 +6956,18 @@ Abe Garcia (Meta)
 
 [Acronyms](./acronym.md): NIC OCP BMC CXL META BAR CPU DCSCM FPGA MCIO PCB SSD DCMHS DNO I2C PCI PCIE PCIe PIC SIG
 
+Hemal Shah (Broadcom) and Damien Chong (Meta)
+
+<a id="490"></a>
+
+2025/10/23 Scaling OCP NIC to 1.6T and beyond for AI
+
+[YouTube](https://www.youtube.com/watch?v=R_cTdaws_iQ)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/490)
+
+[Acronyms](./acronym.md): OCP NIC OSFP PCIE PCIe GPU PCI CPU META PMM SFF XPU
+
 Siamak Tavallaei (Samsung)
 
 <a id="489"></a>
