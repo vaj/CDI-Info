@@ -6968,6 +6968,18 @@ Hemal Shah (Broadcom) and Damien Chong (Meta)
 
 [Acronyms](./acronym.md): OCP NIC OSFP PCIE PCIe GPU PCI CPU META PMM SFF XPU
 
+Ahmad Danesh (Astera Labs)
+
+<a id="491"></a>
+
+2025/10/23 Scale or Stall: The Case for Purpose-Built Connectivity in Open Ecosystems (Astera Labs)
+
+[YouTube](https://www.youtube.com/watch?v=IiU-bMWq6rU)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/491)
+
+[Acronyms](./acronym.md): GPU LABS BMC SPEC CXL AMD ARM CPO CPU OCP OpenBMC PCI PCIE PCIe SIG UALink
+
 Siamak Tavallaei (Samsung)
 
 <a id="489"></a>
