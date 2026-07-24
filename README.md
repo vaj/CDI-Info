@@ -7418,3 +7418,18 @@ Jinin So, Wonjae Lee, Hojin Nam and Han Deok Lee (Samsung)
 
 [Acronyms](./acronym.md): CXL CPU DRAM API PCI NUMA OCP RDMA AMD CMS DCM DMTF FAST FPGA IEEE LinkedIn PCIE PCIe RAS RESTful
 
+## 2026Q3
+
+### CXL Consortium
+
+Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
+
+<a id="498"></a>
+
+2026/07/21 Scaling CXL® to Millions of Servers: Vistara for Hyperscale Efficiency
+
+[YouTube](https://www.youtube.com/watch?v=fyBqaG2V5Xk)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/498)
+
+[Acronyms](./acronym.md): CXL CPU DRAM PCIE PCIe AMD DDR DDR4 DDR5 NUMA ASIC PCI OS ML AI BIOS ACPI MEM TCO
