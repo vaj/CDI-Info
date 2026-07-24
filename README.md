@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 489 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 490 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -352,6 +352,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [CXL Consortium](#cxl-consortium-8)
   - [2026Q3](#2026q3)
     - [CXL Consortium](#cxl-consortium-9)
+    - [The Linux Foundation](#the-linux-foundation-3)
 
 ## 2017
 
@@ -7435,3 +7436,17 @@ Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/498)
 
 [Acronyms](./acronym.md): CXL CPU DRAM PCIE PCIe AMD DDR DDR4 DDR5 NUMA ASIC PCI OS ML AI BIOS ACPI MEM TCO
+
+### The Linux Foundation
+
+Rob Nertney (NVIDIA) and Spencer Gilson (NVIDIA)
+
+<a id="499"></a>
+
+2026/07/17 NVIDIA Confidential Computing Attestation for Next-Generation AI Hardware
+
+[YouTube](https://www.youtube.com/watch?v=hTCHZTdVV5Y)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/499)
+
+[Acronyms](./acronym.md): GPU NVIDIA CPU PCIE PCIe PCI AI ARM FPGA
