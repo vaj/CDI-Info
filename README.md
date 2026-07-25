@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 490 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 491 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -7450,3 +7450,15 @@ Rob Nertney (NVIDIA) and Spencer Gilson (NVIDIA)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/499)
 
 [Acronyms](./acronym.md): GPU NVIDIA CPU PCIE PCIe PCI AI ARM FPGA
+
+Sonali Mishra (Nutanix)
+
+<a id="500"></a>
+
+2026/07/17 Running AI Agents Inside TEEs Without Losing Your Mind
+
+[YouTube](https://www.youtube.com/watch?v=R9Suxhgjo8E)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/500)
+
+[Acronyms](./acronym.md): AI GPU CPU AMD NVIDIA PCI PCIE PCIe VM LLM ARM OS HBM HIPAA AWS
