@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 491 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 492 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -7462,3 +7462,15 @@ Sonali Mishra (Nutanix)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/500)
 
 [Acronyms](./acronym.md): AI GPU CPU AMD NVIDIA PCI PCIE PCIe VM LLM ARM OS HBM HIPAA AWS
+
+Tanya Verma (Tinfoil)
+
+<a id="501"></a>
+
+2026/07/17 Characterizing NVIDIA Confidential Computing Overheads Across Model Inference & Training
+
+[YouTube](https://www.youtube.com/watch?v=Bk-EBW9VhLY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/501)
+
+[Acronyms](./acronym.md): GPU NVIDIA CPU PCIE PCIe PCI AI DMA NVLink LLM VM DRAM TDX
