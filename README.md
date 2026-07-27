@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 492 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 493 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -7474,3 +7474,15 @@ Tanya Verma (Tinfoil)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/501)
 
 [Acronyms](./acronym.md): GPU NVIDIA CPU PCIE PCIe PCI AI DMA NVLink LLM VM DRAM TDX
+
+Kapil Mehta (Cisco)
+
+<a id="502"></a>
+
+2026/07/01 53 Years of Ethernet: Evolving With Open Standards for AI Infrastructure
+
+[YouTube](https://www.youtube.com/watch?v=vB0QrUiY-28)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/502)
+
+[Acronyms](./acronym.md): AI GPU OCP UEC RDMA NIC CPU NVIDIA IP HPC InfiniBand NVLink TCP ECN IBM
