@@ -6379,6 +6379,18 @@ Shane Corban (AMD)
 
 ### SNIA
 
+William Moyes (AMD) and Shyam Iyer (Dell)
+
+<a id="504"></a>
+
+2025/11/15 SNIA SDC 2025 - SDXI v1.1 Data Movement Accelerator Interface Update
+
+[YouTube](https://www.youtube.com/watch?v=4-LUdRVXz2A)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/504)
+
+[Acronyms](./acronym.md): SDXI CRC PCIE PCIe CPU BMC ISA NPU NVMe SPEC AMD DMA DPU DRAM GPU GUID LABS OPT REST SNIA
+
 Suresh Rajgopal (Micron), Chandra Gura (Micron) and Pierre Labat (Micron)
 
 <a id="452"></a>
