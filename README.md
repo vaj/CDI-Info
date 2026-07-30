@@ -7447,6 +7447,20 @@ Jinin So, Wonjae Lee, Hojin Nam and Han Deok Lee (Samsung)
 
 ## 2026Q3
 
+### SNIA
+
+Kalyan Gunda (Dell) and Masoud Noori (Seagate)
+
+<a id="505"></a>
+
+2026/07/29 Architecting AI Data Foundations: Object Storage Patterns for Scale, Access, and Longevity
+
+[YouTube](https://www.youtube.com/watch?v=LzKt3fZRiWs)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/505)
+
+[Acronyms](./acronym.md): AI GPU NVMe CPU SSD API SNIA RDMA IO NVIDIA DRAM HBM
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
