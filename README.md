@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 494 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 497 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -351,6 +351,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [The Linux Foundation](#the-linux-foundation-2)
     - [CXL Consortium](#cxl-consortium-8)
   - [2026Q3](#2026q3)
+    - [SNIA](#snia-6)
     - [CXL Consortium](#cxl-consortium-9)
     - [The Linux Foundation](#the-linux-foundation-3)
 
@@ -7066,6 +7067,18 @@ Ross Stenfort (Meta), Arthur Lai (Molex), Peter Choi (Pure Storage), and Anthony
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/497)
 
 [Acronyms](./acronym.md): SPEC EDSFF NAND OCP SFF SSD FAST PCIE PCIe FIT FMS FR4 NVMe DDR DRAM NIC PCB PCI SNIA TLC
+
+Hemal Shah (Broadcom) and Travis Hamilton (Arm)
+
+<a id="506"></a>
+
+2025/10/23 PCIe 7.0 Enhancements for high-speed I/O connectivity for OCP server Infrastructure
+
+[YouTube](https://www.youtube.com/watch?v=FXQxrB1JalU)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/506)
+
+[Acronyms](./acronym.md): UIO PCIE PCIe OCP PCI REST NIC TLP ARM DMA HPC OAM SPEC VCS
 
 Siamak Tavallaei (Samsung)
 

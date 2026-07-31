@@ -1,0 +1,93 @@
+PCIe 7.0 Enhancements for high-speed I/O connectivity for OCP server Infrastructure
+
+Hello, everyone. I'm Hamil from Broadcom. My colleague here, Travis, from ARM. So, we have been working together on Gen 6-based platforms and the NIC designs together.
+
+As we go through this, we started talking about next generation as we discussed in the previous talks. Like, AI requires high and high bandwidth NICs, high and bandwidth transfer within the system. So, PCI Gen 7, when we started the discussion, we started talking about what.
+
+The features and enhancements that are there. And then we started really thinking it from the infrastructure design consideration standpoint. And that's the focus of this talk. We will introduce to you, I'll introduce the PCIe 7.0 feature enhancement, and then we will specifically zoom into
+
+On-order I/O, which is where Travis will go over in depth what are the considerations and challenges we have. So, with that, let's dive into it. This is the agenda. So, if we look at from just the spec standpoint, PCA Gen 6 or PCA is 6.
+
+6.0 went through significant change where they added a lot of features plus the flip mode transfer and other. 7.0 is more like an incremental update to it. It pretty much preserves what is in the 6.0, doubles the data rate, which is obvious, and then it uses the same.
+
+Signaling. There are things around enhancements around the channel parameters and improvement on the powering efficiency side. And then, just like any PCA technologies, it's still backward compatible with 6.0. Specifically, some of the features that you see in
+
+7.0 obvious one is the doubling of data rate, but then there were things around the security, which helps with the platform level security, feature like TDISP. There were management features which allows PCI MI.
+
+To be used to manage PCA device from the out-of-band. There were extensions or enhancements around LTR and other power efficiency-related. And also, like virtualization SIOV. What we are going to focus on is unordered I/O. And the reason why we want to focus on this.
+
+This is as we go to high speed, what happens is PCIe ordering rules like write after write or read after write or completion after write, those are when you go to high speed, create some of the bottlenecks and which Travis will get into detail. So unorder I
+
+I.O. gives you this semantics which allows you to have multiple streams without having this kind of strict ordering. I mean, relaxed ordering in PCIe helps a little bit, but unordered I/O takes it to the next level, which allows you to build really a multi-path fabric that you can load balance within the system.
+
+That's what we will focus on. Before we get into it, from the OCP standpoint, what are those use cases? So, primarily is HPC and AI, those systems where we are seeing, if you see in the box, you have your server box, within that, you have this internal.
+
+Fabric which is connecting your XPUs, CPUs, NICs, and storage together. Right? And then you have for network connectivity memory semantics provided by the scale-up network, and then scaling out with scale-out network. We will focus inside that internal connectivity.
+
+Which used to be more like root complex endpoint connectivity, it's becoming more like a fabric which connects all this together. And then, specifically for OCP, where this plays into is you have the OCP NICs, we have the OAM module, which are used by the accelerators, and then your server.
+
+Platforms as well as AI platforms. So, this is the area of focus. With that, I'm going to hand it to Travis to introduce UIO and then go over the challenges and the consideration. Great. Thanks, Amal. So, I'm going to start with kind of some of the basic challenges.
+
+Of PCI ordering. And we're going to zoom in on kind of a host platform here in particular. This is interesting to me. And we can kind of start at the top. This slide shows the different components that a transaction takes from the beginning of its life till it terminates either at the memory or at a remote peer. So, first we have
+
+I can't actually see this, so I'm going to step over. First, we have the initiator device, which is going to be generating the transactions. It'll flow into the host, where it'll go through the root port for some processing and validation. It'll go through an address translation block through a coherent interconnect and either to memory or maybe to a target root port and then ultimately to.
+
+A target device, right? So if you kind of look in the upper right-hand corner, let's keep these ordering rules in mind as we walk through the rest of this presentation. You've got writes must push writes, reads must push writes, completions must push writes, all the way through this path. And that's really where a lot of the challenge comes from. So if we look at the initiator itself, it actually takes a lot of benefit from this.
+
+Ordering model. There's many independent engines trying to access the PCIe link. A lot of devices, Nix in particular, really like to rely on the write-after write dependencies so they can launch data, follow it with a completion, follow it with an interrupt. You don't have to track transactions, you don't have to worry about what's going to happen. You just launch it into the fabric and it's guaranteed that the ordering is going to be.
+
+Maintain. But when you push that complexity through the rest of the system, you end up getting kind of some system-level challenges from a complexity, a buffering, and a latency perspective. Since I don't have enough time to kind of cover all of these, I listed the laundry list. I encourage you to take a look at it if you want. But what I'm really going to focus on, because
+
+This is kind of the modeling exercise focused on this one point: is the address translation requirements. So if an initiator device fires two writes, completely unrelated, right, and they go into the link together and they show up at the host at the address translation unit, that first write might incur a translation mission.
+
+So we might be looking at two microseconds of latency until that miss gets serviced. The next write after it was completely unrelated to that first write, but it still has to sit there waiting for that first write to complete. When the completion finally comes back, the second write can then be released. And instead of seeing one write take two microseconds and the other write take 10 nanoseconds, now we've got two writes that both took.
+
+Two microseconds with completely unrelated traffic. And so, what this incurs, and every single one of these bullets kind of hits on that point at a different point in the system. And it incurs complexity, buffering, and latency all throughout the path. So, what UIO offers is the ability to completely unorder your traffic, right? So, any TLP may pass any other TLP.
+
+So, those ordering rules go out the window. Every transaction is now acknowledged. So, the source now has to track both reads and writes instead of just tracking reads like it does today. It's going to be sent on a separate VC, and it is an optional capability. What it enables, as Himal alluded to, is kind of a robust multi-path ecosystem.
+
+Of the host, and like at a system level, you can build kind of like PCI fabrics on UIO. But even inside of the host, on that single channel, from like a NIC to memory, there's many kind of multiple sub-paths that can be taken. And UIO alleviates a lot of the problems there. There's an elimination of false ordering, which I talked about in the previous example with the two unrelated writes victimizing each other.
+
+Other. And then it does push the complexity to the source, but it does offload the rest of the path from having to support this. So, quickly, I'm going to cover, I'm going to show some data on the specific example that we've got. What I want to highlight is that we kind of have a robust host performance model, and then we wrote a separate kind of device model to stitch an entire system.
+
+Together. And just quickly, what this model does is a really rough estimate of kind of like what a NIC would do. So it's got a TX pipeline with a descriptor fetch, a payload fetch, and then ultimately a completion write. And then on the RX side, you've got the RX Wookiee fetch, the payload write, and then the completion write. Now, you would
+
+You typically expect both the discharging a descriptor queue in memory to get pretty good benefit from the SMMU. You're going to hit in the same page, so those should see very low latency from a read perspective. And oftentimes, they'll actually be available in the cache. The payload reads and writes are going to tend to hit around the address range.
+
+You might end up with kind of a variable miss rate inside of the SMMU. Okay, so if you take each of those individual modules, those are kind of each launching individual DMA transactions at the host, right? And when we ran this simulation, what we're showing here is a histogram of the round-trip time latency as seen by the device.
+
+Doesn't track write, so there is no latency for the write components. But the fetches, the payload reads, and the descriptor reads all end up with this really high latency profile. It's almost kind of surprising, right? The problem is that what you're seeing is that the payload writes themselves are getting caught up in the SMMU, and they're blocking the reads from making progress.
+
+So, what happens is you end up with the write flow that isn't even seen by the device itself impacting all of the latencies for every single engine that the device is launching. And this causes everybody's latency to go up together. And then, when you turn on UIO, what you see is each individual engine.
+
+Is now an independent engine, right? Its latency is a function of its transaction and no one else's. So there are no more dependencies. And if you have an engine that is hitting in the SMMU and hitting in the coherent cache, you'll see very low latencies for the responses. And then, as you can see, you'll see write latency now appearing as well because writes are now tracked.
+
+And we think this is kind of one of the big, powerful second-order effects of UIO that people might not see when they look at it from a first-order perspective. So, in addition to the latency distribution, we've got the throughput curves here, because ultimately, this is probably what you care about. You don't actually see the latency, you see the bandwidth, right? And what we've shown on the
+
+X-axis is the total buffer address space of those payload accesses. So if you kind of look at the X-axis as the farther right you go, the more you're missing in the translation cache. You can see strict ordering tends to fall off immediately and then kind of flatline, whereas UIO tends to have a more gradual curve. And we've got plenty of data that shows that.
+
+This happens not just for translation misses, but for caching effects where certain cache nodes are resident and then others are remote in a socket-to-socket case. We've got cases where the root port can potentially incur these types of latencies. And so we view UIO as a way to kind of create this.
+
+To kind of eliminate the performance jitter that you might otherwise see on PCIe. So there are challenges with UIO. So the device complexity, so the initiator device now has to take all of the tracking for the reads and the writes. And the internal pipelines need to be built to cover write latency, right? That data to completion to interrupt loop.
+
+That I was talking about is no longer zero nanoseconds. It's an additional VC, it's not an independent new thing that you can throw away, the old ordering model. You still have to support the original strongly ordered VC in addition to the UIO VC. And then, from a system perspective, there's a lot of complexity in turning UIO on. I mean, if anybody's kind of experimented with relaxed order.
+
+Ordering, we kind of understand how long it took to really get that stable. UIO is taking it to the next level, and there will be device-level interaction complexities and traffic-level interaction complexities, as well as just managing and discovering and understanding which components in your system support UIO versus which ones don't. And then, in certain cases, UIO can degrade performance.
+
+If you have a big stream of writes and you need to rely on them to be in order in order to hit performance targets, UIO is going to have difficulty there. Okay, call to action. We just basically, really, it's mostly targeted at kind of device vendors to really explore UIO and kind of understand whether or not this works for you.
+
+The rest of the PCIe Gen 7 enhancements and feel free to engage with either of us on questions or concerns that you see. And submit proposals for anything that you want for Gen 7 to OCP. That leaves us a couple of minutes for questions, I think. If you have questions, just go to the mic and.
+
+We have a couple of minutes, so we can take one or two questions. I know we didn't have any pictures of hardware up there like everybody else has, so maybe this wasn't as exciting.
+
+What are some of the software implications for using UIO? So, from a software standpoint, it should be transparent. Maybe some of the configuration aspect might need to be exposed because now we are talking about multiple VCs and other, but if you are looking
+
+at really like higher level programming model that shouldn't change. So like using barriers and things like that, would that come into the play? Memory barriers. Memory barriers should uh come into place where from the software standpoint if you need some kind of synchronization and that should be also supported at the PCA level.
+
+But unorder I.O. is meant to be like allowing you to have this kind of different implementations where you can have an implementation without requiring any barriers. There's definitely going to be a challenge from a legacy software perspective. You know, there's certain components of the ordering model that are exposed to software where you might.
+
+Depend on something like a classic example is issuing a read to a device and expecting the completion to pull all of the right transactions out of the pipe. You don't have to build the hardware correctly to kind of be able to emulate that exact same capability because now your data plane might be on a different VC than the VC that you launched that read on that you expect the completion to pull it back on. So there's going to be plenty of
+
+Of nuance in making sure that this works from a software enablement perspective. And like Kimal said, just discovering and understanding when a device can send a UIO transaction to another device. That's less of a software, maybe data plane aspect and more of just making sure that your system is configured correctly. And it'll all impact software at the end of the day. Thank you. Yep. Thank you.
+
+I think we are out of time. If there are any additional questions, they are going to be on the side and we can discuss. Thanks, everyone. All right. Thanks, everyone.
