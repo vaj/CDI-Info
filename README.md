@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 497 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 498 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -7079,6 +7079,18 @@ Hemal Shah (Broadcom) and Travis Hamilton (Arm)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/506)
 
 [Acronyms](./acronym.md): UIO PCIE PCIe OCP PCI REST NIC TLP ARM DMA HPC OAM SPEC VCS
+
+Hanung Jong (Samsung) and Wanja Li (Samsung)
+
+<a id="507"></a>
+
+2025/10/23 OneMCC Building an Open Software Ecosystem for NDP Devices
+
+[YouTube](https://www.youtube.com/watch?v=9hW3neiQQGU)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/507)
+
+[Acronyms](./acronym.md): API CXL POC PoC PyTorch XPU GPU SPEC CUDA PIM SQL CPU DRAM LLM PCIE PCIe SDK CMM DDR HBM
 
 Siamak Tavallaei (Samsung)
 
