@@ -2,7 +2,7 @@
 
 ## About this book
 
-This document lists links to YouTube content and transcript texts for 498 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
+This document lists links to YouTube content and transcript texts for 499 disaggregated computing-related talks published on YouTube between March 2017 and July 2026, by publication date and speaker (organisation and name of affiliation).  
 This publication does not include titles of speeches or presentation materials.
 
 Please note that although the transcription has been prepared with the utmost care and accuracy, it may contain mishearing or typographical errors.
@@ -7091,6 +7091,18 @@ Hanung Jong (Samsung) and Wanja Li (Samsung)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/507)
 
 [Acronyms](./acronym.md): API CXL POC PoC PyTorch XPU GPU SPEC CUDA PIM SQL CPU DRAM LLM PCIE PCIe SDK CMM DDR HBM
+
+Thomas Ng (Intel Corporation), Joseph Hanson Vazquez (Intel Corporation), Jason Rock (Dell Technologies), and Satyam Saini (Meta)
+
+<a id="508"></a>
+
+2025/10/23 OCP NIC 2025: Now and Beyond
+
+[YouTube](https://www.youtube.com/watch?v=mjGZbmki6BQ)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/508)
+
+[Acronyms](./acronym.md): NIC OCP SPEC SFF PCI ASIC PCIE PCIe OSFP SIG USB DCMHS DCSCM NVIDIA OEM QSFP
 
 Siamak Tavallaei (Samsung)
 
