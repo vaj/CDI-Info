@@ -1,0 +1,89 @@
+OCP Composable Memory Systems (CMS) Sub Project Technical Update
+
+Alright, good morning everybody. I know people are going to trickle in and walk a long walk to the breakfast place and come back. So, they will be all energized by the time they will get back. But we will get started, we have a full day. I am Manoj Wadekar, and this is Reddy, and we are going to talk about the composable memory systems.
+
+For this whole session today, and we have lots of exciting talks lined up today. First, we'll start with how the work group has been doing. We have been getting together for a long time and where we are and how we are organized and what work we are doing so that anybody who wants to join has an idea of where they can contribute and how they can contribute.
+
+So, we'll start with the in general overview of the group and work we are doing. Then we'll go into the work streams, talk about different work streams, who is doing what, and what exactly the scope of those work streams. And then we're going to get into some more details about the work that has been done so far this year. And Reddy is going to walk us through the whole overall CMS architecture and
+
+Different work streams, what they are doing specifically as a deliverables this year. And then maybe appeal to you guys to join and talk about what you would like to see it happen. So in general overview, what Composable Memory System has been trying to do is to make sure that we have a way to standardize, a way to
+
+Make sure that everybody has the same way of looking at it from hardware and software perspective, how the tiered memories can work in the general purpose computing as well as the AI systems. Now, of course, the AI systems here is where there's a lot of discussion in this OCP, but then there are a lot of use cases that are very important that are getting deployed from a memory perspective. This is the first time memory got
+
+Away from the traditional parallel bus and got into the tiered memory, which can go a little further, have a little latency, but make sure that it works in a unified way from the use case perspective. And that's what the composable memory system is about. What are the use cases that are driving this? How can people adopt? Because the goal for OCP is to make sure that we provide that guidance.
+
+Guidance to the industry about how we can adopt the new technology, what products are coming in, and how they can be used. Whole OCP is not a standards place, but we can provide the blueprints and we provide the recipes. So, that's what CMS has been doing. In that perspective, we have different ways of defining the workloads for these use cases that are going to be used.
+
+Adopting, potentially adopting these technologies and making sure that the benchmarks are well known. So, when the products are defined, they can be made to work with those benchmarks and demonstrate the value they have for the use cases. So, when product vendors are talking to the adopters, they have a common language of talking. And so, there is an easy way for
+
+Communicating the value of the product. So, overall, driving that industry to align with that is a goal. We also work with the academia. So, we have worked with the this is a new area of work, and as we get into the AI systems, we can think about it even more where AI systems are pushing that envelope even further. It is important that actually the academia is involved.
+
+Because we are working on the product problems which are next 1 to 3 years, maybe sometimes up to 5 years when things from the hardware perspective. But the use cases that require a lot of new adaptation, the changes for AI systems are coming fast. So, we want academia to look at it from the new use cases, new semantic way of looking at the memory.
+
+Make sure that we are future-proof from that. So, we have all this work going on in different industry. Since we are not a standards body, we work with the different standard bodies. CXL Consortium defines memory fabrics for C Excel, JDEC defines the memory systems, NIA defines a storage-related. So, IETF, all of the IEA, all of these organizations, our goal is.
+
+To make sure that as the use cases demand specific changes in the standards, we can drive that input back into the standards bodies and help the customers with the blueprints. That's what the CMS group is doing. Let me spend a few minutes about the use cases that we started with and where we are on that. This is the chart we started two years back, or three years back almost.
+
+Where we talked about how composable memory systems can evolve over time. The first use case has been very, very clear about and urgently required. That was memory expansion. As the systems basically run out of the amount of memory and the bandwidth of memory that you can land on a compute node, because of the limitation of the number of channels you have.
+
+Capacity of memory on those channels that you can put. You need additional memory, CMS allowed you to do with the memory fabric, whether it is CXL is a great way of starting with that. So, that was the first use case that was a native memory expansion or direct attached memories. Second use cases that have had a significant industry champions for is allow use cases.
+
+Where you can have much more efficient utilization of memory with pooled memory. Case in point, Microsoft has talked about this use case much loudly in the industry and much more openly and clearly about it, where public cloud systems can benefit from having pooled memory because that can be a more efficient use case as many machines may or may not use the amount.
+
+Of memory that they have been allocated. So, having that additional pool of memory will allow them to reduce the overall cost of operation. So, this is where most of the work has been going with the C Excel 2.0 and going to C Excel 3.0, enabling those use cases from a memory component perspective, interconnect perspective, as well as the software that.
+
+That is required to enable this into the different operating systems, whether it is Linux, whether it is Windows, all these components is something that we talked in the CMS. We demonstrate. So, if you are not in the Innovation Village in the Expo Hall, please do visit there. There are many booths of CMS.
+
+That are demonstrating the different aspects of this. You will see the direct attachment, you will see the pooled memory, you will see the different software companies that are going to demonstrate how to do this seamlessly in the infrastructure. Also, the future-looking things that how can change complete memory architecture for the operating systems or the applications themselves. So, that's what is being demonstrated today.
+
+Next thing is going to be fabric memory. I think that's why you can see that left side is basically something more hardened, right side is something that is evolving. Fabric memory is where we can see fabric attached memory, where you have multiple systems using the common memory that is attached to common fabric. This is an area where solutions.
+
+Exist in the proprietary format today. If you take in EI systems, you can almost imagine basically the scale-up or the way GPUs talk to each other. They are accessing each other's HBM memory, HBM capacity, which is essentially tiering their memory from the local GPU memory to the remote GPU memory on the HBM. But that fabric is not open.
+
+Slowly, a lot of work is happening in this space which can meet the bandwidth and capacity and then the interface requirements for that memory. This is work that is in progress. There is a lot of activity in this space. You have heard about UL, ULINC talked about from the opening of that interface. CXL has been talked about.
+
+Of course, CXL is more focused on the left side of the use cases today with the kind of capacities that they can enable. There is a lot more discussion about Ethernet playing the role in there. So, you have been hearing the announcement for ESUN yesterday. So, I expect a lot of activity to happen as we go along for this discussion. What I'm going to hand over.
+
+To Reddy now is basically for all of this, it requires common architecture, common way of doing things, and common vocabulary for developers to develop software as well as hardware components. So, that's the all discussion that is happening in CMS. So, as we go through the whole day, I'm sure you guys will have a lot more engagement and discussion about it. So, with that, let me hand over to Reddy. Thanks, Manoj.
+
+So as Manoj talked about, the focus for the CMS is not only looking at the direct attached, multi-ported, but also looking at the fabric attached memory. For us to actually do this, we actually structured, we have focused work streams.
+
+So, the work streams are essentially looking at starting with what are the use cases that we need to be targeting for all these that spans across the general purpose compute as well as the AI. So, the use case is a very specific focus area for us, driven by hyperscalers like Metro.
+
+Data, Microsoft, Uber, and so on. That essentially pivots our focus to what we need to deliver collectively in the community, all the way looking at the app lands, chassis management, and everything else, to the top-level stack. The next one is really the workloads. We have to have a set of workloads for.
+
+us to actually characterize different configurations and be able to actually correlate performance data. The third one is really the orchestration. So the focus here is CXL is a very complicated technology. You know, from if you look at from the device all the way connecting to the host and how you manage the
+
+NUMA attached memory or DAX device. If it is a fabric attached, it adds one more level of complexity as well. So the goal here is to essentially look at all the orchestration control plane components, bring them together, and showcase that in the Kubernetes using the standard DMTF Redfish profiles as real.
+
+Really, the interface that we want to actually focus on. So that's the orchestration work stream. And then computational programming is a little bit forward-looking in the sense, you know, most of the workloads today are essentially load-store, and you're pulling the data in close to the compute and doing the work. But we also see that as we progress towards, you know,
+
+AI workloads, there is a need to actually have the compute closer to the memory as opposed to closer to the far away from the memory. So the computational programming is another focus area. The last one is really the academia. We want to keep an eye towards what we want to do on the emerging use cases and
+
+You know, the algorithms and all that stuff, like data movement, as an example, automated tiering and all that stuff. We need to be able to focus on that part as well. So, I will quickly cover the logical architecture. So, fairly busy slide. What you see is there are essentially two foundational constructs when it comes.
+
+To composable memory. One is you have the devices attached to the host, X86R ARM-based host, and it is actually managing the attached memory. The second piece is actually the CXL, switch-based interface where you have the media.
+
+Type 3 memory buffers and PCIe devices and all that stuff behind the switch. And then you are essentially pooling memory resources as well as the compute resources behind the switch. So let's take a look at quickly. I will browse through the use cases. So general purpose compute. So general purpose compute, you have diagnostic.
+
+Attach C Exia and memory. Or it can actually come from the CXL memory behind the CXL switch. So you could consume in both ways. The tiered host memory, so if you have a PCA accelerator like GPU as an
+
+Example, if it wants to use the additional memory for KV cache for inference workloads, you essentially use the host extended memory expansion capability and then actually consume it that way. You could also do P2P behind the switch, so you don't have to go through the host. So, especially in the CXL3, you have constructs.
+
+Where you have back-invalidate and all that stuff, so you can actually do the P2P flows as well. If you have a CXL-capable AI accelerator, then it can actually use the CXL native CXL.name protocol behind the switch, and then you can actually do the P2P without going through the host. So we essentially focus on enabling direct attached general AI.
+
+With all the optimizations, including P2P flows behind the switch, as a way to actually deliver the lower store capability very efficiently. So, those are all the targeted areas for the community. So, wrap up. So, CMS is actually.
+
+A sub-project. It's been there for about what, six, four, four, four plus years or so. We have been working in the community in all those work streams. So we request you guys to actually engage. Whatever area that you are interested in, we always welcome you guys to come and contribute. Project Wiki has all the
+
+Details about the meeting, logistics, as well as the white papers, all the recordings as well, prior recordings. With that, I think we'll conclude. I don't know if we have time for QA. We do? Okay. Maybe we can go back a little bit and talk about people who are involved, just to take that opportunity.
+
+Since we have a few more minutes, I forgot to cover. Okay. Steam, you want to just kind of give who are the people that people can get in touch with for each work stream? Yeah, so if you guys, so we have Vikrant here. That's right here. Yeah, okay. Vikrant. He is actually responsible for the workloads, memory fabric orchestration. It is me.
+
+And Hong Chin. Hong Chin is Hong Chin is there. And system side, we have Manoj here. I don't know if Samir. Samir is on the way. Samir is on the way. Okay. Mohad, I don't know if Mohamed is there. Mohad is here. Okay. All right. Mohad. Computational programming, where is Pankaj?
+
+Is the guy, Academy? I don't know if Brian is here. Brian is not here yet. Okay, all right. Yeah, and we have meetings every Fridays, 9 to 10. So anybody who wants to join, it's an open meeting. There is also a wiki which you can check out for all the logins.
+
+Well, all the calendar information, as well as all the work that has been put out there. So, if you look for OCP-CMS wiki, you should be able to find information. So, please feel free to join and chime in as we get into memory composability, even more as we look into the future use cases as we have started realizing.
+
+Those technologies to the products. If not, we'll be ready for the next one. I think Hangjan needs to be mic'd up. Okay, all right. All right, thank you.
