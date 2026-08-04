@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Ankur (Oracle)
+
+<a id="510"></a>
+
+2026/08/01 TAP UII Unified Intelligent Infrastructure workstream 2026-07-31
+
+[YouTube](https://www.youtube.com/watch?v=sP6ibNFNA8M)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/510)
+
+[Acronyms](./acronym.md): OCP TAP UII AI GPU CPU MCP PCIe RDMA PTP Oracle AOS LLM API
+
 Jean-Marc Philippe (Thales) and Loic Nacelo (Thales)
 
 <a id="432"></a>

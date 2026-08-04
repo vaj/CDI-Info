@@ -1,0 +1,357 @@
+TAP UII Unified Intelligent Infrastructure workstream 2026-07-31
+
+Hey, everyone. Hey, Paul, hey, hey, Sham, Debbie's. Hello. Hey, I'm here. How are you doing?
+
+Doing good, better than last week for sure. Yeah, sorry, I was like literally, you know, this tough and cold, like, you know, just the worst illness I can say. Hi, Ankur, how are you? Hey, Esha, I'm good. How are you?
+
+Very good. So, I did the summit share. To the paper to improve it based on your last comments. But I got from Deep Shah very good comments. Is Deep Share is a member of the group?
+
+Yeah, he is. Oh, but he works for Google? He used to work for Meta. He's here already on the call now. Oh, Deep, Deep Share.
+
+Yeah. Yeah, he's here, folks. How are you, Deep? I'm good, Isham. How are you?
+
+Yeah, this is very good comments you sent me. I like it. Oh, yeah. Some m most of the numbers in the tables are illustrative. I we don't have any empirical analysis.
+
+Yeah. I put a comment saying they are illustrative because other reviewers for the paper told me the missing The main drawback of the paper is lack of empirical analysis to validate assumptions, validate numbers, and which is really what Ankor is going to do. He's leading this, which will improve both the theory, the results, and everything. Okay, makes sense. Makes sense.
+
+Yeah. But I will still go through your comments because some of it are really technically sound. I like it. Yeah, yeah. Some of are like specific to the illustrative analysis and some are actual like technical.
+
+Yeah, agree, agree. The sketches and all of this, I agree. So I will look at those, but again, the equations themselves may get improved by doing empirical analysis. Deep, are you working for Google or Meta? I used to work for Meta.
+
+Now I am. Meta startup, yeah. Oh, but you left to Google, you're right. Oh, Meta. Meta.
+
+I was at Meta, yeah. Yeah, excellent. It's good that you left. This guy is crazy, man. Anyway, thanks for your comment and let us.
+
+Sorry for the interruption, Anko. No, no, no. I mean, it's good. Like, since we are just talking about that topic, so maybe, you know, just a quick. So, I based on the paper that you shared, Hesham, so there are a few tests I'll start with validations.
+
+Basically, I'll start with the synthetic block. Inversion validation first. I think there is all the data we need for this one. For then, then I'll go ahead in this order. And then I'll probably have to defer some of the tests because I don't have that hardware in the lab.
+
+Unless this is something, you know, maybe David, you can help to validate. Because this needs H100 and some specific environment. I can't, I don't have any H100s right now. I have some fairly old K80s, but the rest of it I could probably do. Does it have to be specifically on the H100?
+
+Anything, I believe. Haishav, in your opinion. You mentioned the H100 environment. Do you want to be like in that environment? I don't think it will really matter.
+
+It doesn't matter. It's just an example. Okay. So any GPU, yes, absolutely. Fine.
+
+Absolutely. Yes. Perfect. GPU. It doesn't have to be this, just any GBU from any company.
+
+It doesn't matter. Gotcha. Okay. So, yeah, I'll start looking into this one and I'll reach out if anything, Hisham, and yeah, I'll stay in touch on this. That would be excellent.
+
+The idea, as you know, Ankor, is to establish confidence in the timestamp, you know, which is going to be done by some layer above BTB or NTB or any of those. Right, right, right. Yeah, and just to, you know, so the other thing, Isham, if you remember, like we talked about. OpenCC last week. I don't know if you were there, but the whole idea is I'll be validating this as part of the OpenCC.
+
+Where is that one? Yeah, okay. So the whole idea for OpenCC is. I said, I explained last time, like, I mean, this is a complete causality confidence framework, but it will use tempo trace your logic for specifically checking confidence and trust with the timestamps. Yes.
+
+And if you want, Ankur, I will look. First, at SHA Deep Shah comments. Okay. And then I would like to send you the word document. Oh, okay.
+
+Perfect. Yeah. This way you can edit it and change it the way you see it fit. Sure, yeah, that would be great. And you can add your name as one of the.
+
+Okay, yeah, that'll be great. Because it's our effort. Sure. Because we can go back and forth, back and forth, but we can work together on it, improve it, and make it part of the framework you are talking about. Yeah, absolutely.
+
+I think, yeah. So, maybe what I can do is, you know, since a couple of you were not there last time, let me just give you a quick thing: what we are doing here for people who were not on the call last time. So, basically, like, you know, we all know, you know, how. Causality works in distributed systems. I think Paul is here.
+
+Definitely, he's also very deep into that topic. Now, what we are trying to do is, you know, for specifically for distributed AI systems, where, you know, there is a lot of things which can go wrong, not just time strength. So, there is a lot of factors that play the role in ensuring the quality of the traces that we receive once the inferencing and training workloads process through different GPUs. Now, in that case, what we are trying to do is I'm trying to focus. On get this open CC, which is basically trying to reconstruct the cosmograph.
+
+And this is the thing, Paul, I was talking about, like, you know, which I was supposed to do that presentation, but I just got sick at that time. So, basically, we'll be looking at different parameters, and time steps will be one of those things. Where what we were talking about, Hesham's logic of tempo trace that will basically be introduced here. Now, this is where we will use tempo trace to find more trust and factors in the time stamps itself, how those can contribute to causality. But not just that, and we'll look at some other factors as well.
+
+Well exactly. Yeah. And also also if you notice Ankor, I added based on our discussion some text to the some section about bolusi using bullets. Yeah. It is not available.
+
+So you can not only the algorithm, but you can use bullis. This is part of your operating system, you know? Exactly. Yes, this all goes into AOS. Exactly.
+
+Yes, I know, I know. You can look at uh info the policy stuff I put in and see how it fits in your overall grand scheme of things and and we can and we can use it. But The OpenCC, this is you, your OpenCC is not industry OpenCC, right? It was something new. This is something new, yes.
+
+Got it. Excellent. Yeah. And based on what it will do, is like, you know, in this PLC last time, what we demonstrated, you guys can go and look at the recording. So we've Basically, had a multi-agent deployment where one agent is kind of working as a planner, the other one retriever tool and verified.
+
+So, four basic agents which are, you know, which where the planner takes the first request and then they based on the ordering of skills, you know, the The request goes through all these ones. But if time stamp is on and off, of course, the ordering can change. If any of these factors change, we get different results. Even though we may get the right output at the data level. But at the execution, at the observability layer, it may basically not be right.
+
+So, you know, based on how this plays out, OpenCC is basically supposed to generate an outcome, which will be telling the SRE or whoever the user or system is that. At how much you can rely on this execution. So, or the trace that spanned through those systems. So, if everything looks good, it will generate the scoring, it will tell some different reasoning: how much you can trust, what is out, what is good, what is bad, so all that stuff. Yeah, so I mean, this is basically, you know, just to compare with the today's world, how things happen.
+
+So there are a trace, and you know, the operator looks at it and just starts debugging based on that. But, you know, there is a lot which is missing in here. So that's where this, you know, will help looking at more than just Basic trace, there will be more information available through OpenCC, and then the user can take more smarter decisions or systems can take more smarter decisions. Anchor, just to make it concrete, what's an example where, say, you know, the exact causality of events, and the timestamps are totally wrong, but because you have sequence numbers, you know, basically like source. And then output for each pair, where you do need the timestamps in particular.
+
+I mean, I can think of some in terms of like latency spikes, but yeah, yeah. So, I mean, if I get your question right, so what you're asking is that you know, we can still get it to, sorry, can you depend on? I'm confused. So, in a lot of systems where you have these sort of directed graph data flows, you tend to use sequence numbers. So, you know definitively that this output packet is what's triggering some next step that then triggers another packet or step, so on and so forth.
+
+So, basically, you know the chain of causality perfectly. If you don't even have time stamps, let alone if they're correct. But you don't necessarily know the processing time, depending on how you're doing it. But that's I'm just curious for the motivation for you and others working on this. What are some of the most important cases where you may still get the causality, but really having those time stamps is very important, specifically, especially for AI?
+
+Oh, yeah. I mean, I don't have a lot of use cases, but one of the reasons is one of the very common examples is the straggler situations happening in the inferencing. Sometimes what happens in, you know, like if one GPU goes down, if you have like thousands of GPUs, and if one GPU goes down, Down, you know, you just cannot just continue from there. Like, you know, like how in distributed systems, you just replace that node in Kubernetes and start quickly, you resume the activity. In this case, you cannot just do that thing.
+
+So, if one GPU goes down, you have to start all over again. Like, you know, literally just look at every evidence that was available from every GPU. You have to build a whole relationship order and then start from the very beginning. So it's not just the sequence ID which tells you that information. You need to know everything that happened in that system.
+
+So it really is knowing the latency, essentially. Exactly. Yes. And latency is just, again, one of the things. Clear, is that on an individual at the GPU level, or you tend to have one x86 machine that may have eight GPUs, or is that really at the machine?
+
+It's at the GPU level. Okay. David, when you talk about latency, do you mean one-way latency or two-way latency? You could apply it either, but basically. Amount of time something takes, and you can do it on the compute side, you can do it on the transfer side.
+
+But and also for some of these GPUs, they also do partitioning, right? I know those are just, I know those are very popular for the hyperscalers when you're reselling them. Is that used at all if you're an exclusive to the extent they still exist using it exclusively for? Your own training is that even relevant where you can have part of a GPU that's up and working fine and a sub-segment that's not? Oh, yeah, exactly.
+
+That can happen and it happens. Yeah, definitely. And does NVIDIA provide any tracing on that? Because you would think that have like timeouts or similar. I'm not sure.
+
+I'm pretty sure they. Provide, like, I think it's with their, I forgot the name of their control plane. Uh, was it like, but they have something? Let me check on that. I'll get, I'll send you that.
+
+Like, Nvidia does provide some level of traceability, but again, this is those that's within their control plane. If you're if you're using. Their control planes. Do you mean like NV link control plane? I think so.
+
+Yeah. Yeah. Gotcha. But that is only like in case of NVDAP. I mean, for other GPUs, yep.
+
+And if you have hybrid deployment, it is even worse. Yeah. And so you're getting. A mix of PCIe and whether NVLink. And I think AMD is now pushing XGMI, which it sounds like it's vaguely their equivalent.
+
+Right, right. Yeah. And did you know offhand just when a particular GPU does have this stalling, what is causing that? Is this a literally a hardware fault? Is this just blocked for data?
+
+Is this a A coding bug? All of these things, to be honest. Like it could be network delays, which can cause this slowness. It could be hardware failure. So definitely either of those things, any of those things can cause that problem.
+
+Okay, gotcha. Thank you. I think. I remember Deep, you mentioned in Meta you guys saw some issues. Do you want to provide any inputs from there?
+
+Yeah, so I want to differentiate although step back a little bit in terms of two things: one is training, and one is inference, right? And inference. Is at much, much smaller scale. Like we hardly have for a single request, the number of GPUs involved in that is like even for this larger models is at like probably eight GPUs or 16 GPUs at max for a request inferencing. Whereas in case of training, where you have like thousands and thousands of GPU working in lockstep, this problem is much worse.
+
+And specifically in the context of like GPU collectives, and where, like, I mean, as you most people know, that like the training goes in two parts. Compute and communication, right? And when the compute happens, and when they are communicating weights or whatever, the data between GPUs, there is the GPU kernels which can be waiting on another GPU kernel and the chain of causality. In that case, that if a failure happens on a GPU, it shows up and the symptoms show up on completely different GPUs. And tracing that back and all was one of the efforts that Ankur is, I think, referring to that we did at Meta, where we added PTP timestamp tracing.
+
+To be able to do this kind of correlation, that all the events and which event happened at which particular GPU first, so that we could do some automated triaging and all. But I just want to be like explicit that at inference level, this problem is there, but. It's not that as worse as it's in training. Makes sense. That's very helpful.
+
+And so, what you were seeing there is this a sort of construct built into the GPU itself where it knows and it's busy spinning for other data that hasn't arrived yet? And is this something that's coming in over PCIe? Or over InfiniBand, or yeah, it's mostly like, I mean, it can be over PCIe, it can be over RDMA. It's, but the main point being that, like, it was never the GPU who showed the symptom, was the issue. As like, And the majority of the failures are in this collective communication constructs, which are like the GPU kernels, which are doing like this all reduce and all gather operations for their weights.
+
+And they get stuck in waiting for or. They get stuck in the receiver being ready, or either sender being ready in their communication patterns. And then eventually their timeout. Those timeouts bubble up as: hey, this particular node failed in doing this particular operation, but the root cause always used to lie within some other node doing. Like again, as Ankur said, could be a hardware failure, or there was a coding bug that just didn't send those, didn't participate in that communication kernel or whatever.
+
+Makes sense. The reason I'm asking is very useful to know to understand the specific types of failures that are happening in terms of to what extent can we trace it or not? And then, if so, how. That's why I'm digging into. This is a little bit because if it's like at the network level, it's much easier to instrument.
+
+If it's like you're getting some weird silent corruption at HBM level or PCIe, where often the visibility is a lot less, things get more difficult. Yeah, yeah. Okay, great. Thank you. Yeah, in fact, like, I think, David, you brought up a good point.
+
+But, like, you know, I mean, these things, what we are currently accounting for is may not be the entire list. I mean, of course, there could be more things which may contribute to the failure of the system and which will help. So, yeah, if you guys see anything, let us know. Like, you know, we can bring it up here and we can. We can improve this.
+
+Okay, so yeah, so basically that's the whole concept behind what we are doing. And we'll be working as next steps to validate the theories in that tempo trace that HAM has. And that will be one of the things we'll Work into this open CC stuff. And Hisham, for the tempo trace, is that strictly something for PDP, or could we also include in that other things like pulse per second? Uh, currently BTB, but you know, uh, David, we can add it if you want to because I'll all.
+
+Of the more advanced, they support both and it makes things much, much easier because it's just a coax cable. Yeah, sure. You know, uh, David, um, I will look at Deep Share uh technical comments. Some of them are really good comments. I like them.
+
+And uh, then I will send us a word document. Now it is open for you to add whatever you want whatever you think is appropriate. And Ancor specifically will really update this paper based on the results of the empirical analysis and the evaluation, including the equations themselves. Might need to be changed based on the outcome of the empirical analysis. For sure, good idea, David.
+
+Very good idea, actually. I'm biased on this. I've had so many issues in the world. And it's just like, or you just run coax cables like we did 80 years ago. It works.
+
+Yeah, very good point. And you can add a section in the paper about it and see, to be honest with you, I didn't look at it when I looked at the equation. So maybe the equation will change it too. Yeah, good idea. I like it.
+
+And the other context for this, I was actually reviewing, I think, Anchor, you're on the side. Group for one of the timing conferences. And it was a PDP implementation for these very low-cost MCU boards. So, like single-core processor, but it does support PDP built in. But it had a feature I've been trying to find or get working on, like the Raspberry Pi or others for years, which is picosecond-level time tagging.
+
+Of GPIOs. And so the reason this is so exciting is we kind of know how to measure at the like 10-gig Ethernet. We can time stamp very precisely. But historically, whenever people want to monitor pulse per second, whether it's pulse per second out of different devices, like your primary source, and also pulse per second in, people bust out oscilloscopes. And it doesn't really.
+
+Tend to scale if you've looked at the cost of like even a four input that goes down to this level, let alone if you have 16. But some of these devices maybe actually be able to do it in very cheaply. So I got very excited for the idea of building like PPS monitoring. And then you can use that both to help send stuff out, but especially to check literally to within, I think it's like 100 picoseconds what the sync of each. Nick is on the rack.
+
+Well, yeah, it was exciting because we know how to do this. It was how do I do this without breaking the bank? It was the tough part. Yeah, I think, though, David, you'll have to be careful. I mean, when that hardware exists, we're going to.
+
+Get that GPIO very precisely timestamped, you'll get a value. But I'm sure you know that there are going to be a lot of individual latencies in the system that you'll have to account for, especially inside the processor. And I'm not exactly confident that the processor. Vendors will know how to do that. Oh, that's true.
+
+Everything I'm saying is strictly regards to what they call the PHC, the clock in the nick. Once you try to get it out of there, I wash my hands of this. But the advantage is, at least for some of this stuff, where you can use that, is if you know all of the data is coming. In or out of the network, then you can at least have those time stamps, even if later the host itself does Zaney things. Yeah, exactly.
+
+You got it. Yeah, well, you're 100% right. Well, once you got off air, especially where you only have a few systems that have PTM support, and then how is it implemented and how many sockets, and all bets are off. But if you can at least get it, the Network level, the ingress and the egress, at least you have something you can hold your head on, assuming the PHC is this thing. Okay, that's great.
+
+Any other comments, questions from anyone on this plurality thing before we switch topics to A? US. My only comment, Ankor, how we can publicize Obam CC, how we can make it. Yeah, i.e., good concept, but we need to publicize it outside this group to make it an industry-wide. Effort.
+
+Yeah, I'm actually very close to getting like a first 1.0 release version. I'm just waiting to integrate the tempo trace logic into this. That way, we can introduce tempo trace also. I think once we have at least like These factors and a way for us to integrate with existing observability systems. I think that's probably the time I feel we should we should pub start publicizing it.
+
+And did your document approved by global summit for presentation? You said you'll submit it. I did, but actually, you know, it probably went to a different working group or a session. And they said, you know, this topic doesn't align with this session. So I reached out to Ahmad and see if we can do something there.
+
+But maybe he put it in his group. Yeah, definitely. Like his session, you know? The tab session, yeah. Yeah, the tab session, exactly.
+
+So because it has to do with time synchronization, like Timbo trace and blah, blah, blah. So and confidence. So maybe Akma can squeeze it into his tab. And get some time for a presentation to a wider audience. Yeah, absolutely.
+
+Let me follow up with them. Yeah. And just to clarify, so I had searched OpenCC beforehand because I wasn't aware that it was in-house. This is not related to this other OpenCC that pops up on Google, it's some kind of Unified AI APIs like a query router. I mean, I haven't like I just gave it name OpenCC because CC stands for causality confidence.
+
+So I just gave it name. It's not a like a validated name, I would say. We could change it, definitely. Okay, yeah, because there was a few that there's also something to do with some. Sort of Mandarin translation software.
+
+And then there's another one that's some kind of, I think, AI corpus of text. That's how I was Google. I didn't want to make it, you know, be so like, wait, what open CCC is it? The further I went down the rabbit hole. I'm like, okay, it's one of these five things.
+
+Yeah. No, I mean, there has to be, like, I mean, like, yeah, let we can figure out a name for this, definitely. This was just, I gave, just wanted to put a name so it makes sense for us to understand what it is, what it means. Totally. And the reason I put open is that it will work with any observability system.
+
+So we need to get the feedback, like what David just did from the community, from that was like it is very useful. Useful anchor if you present this to during the global summit. Yeah, let me check with Ahmad Albi. I'll definitely. I was planning on presenting it until I got that notification that it's pushed back.
+
+But you will attend. You will attend the Global Summit. I will, right? Definitely, yes, yes. So when you attend, We can have small meetings.
+
+Oh, that will be perfect. I think we we can yeah, you can people meetings uh uh during lunch, a one hour uh break, something. Absolutely, yeah, yeah. We need to get input from everybody. Right, right, yeah.
+
+And that also will help improve the whole proposal. I can probably help. I'm one of the OCP organizers, and one of the things we could do is to try to get a room at the end of the corridor where we have meetings. We've done this in the past with OCP TAP. So, one possibility is that we'll pull together a meeting where we can all get together.
+
+At OCP. How do you feel about that? Oh, that'll be great. Yeah, I think that will be great. And I think one of the topics on the agenda, or maybe the topic on the agenda, should be exactly this, which we're discussing here.
+
+Yeah. So Ankor, Pacma, myself and Dan, then Dan Beatman from Ridu. Yeah, I know him. Yeah, we talked to what Michael to give us a room for the tab round table discussion. Oh, right.
+
+Yeah, I saw that conversation. I was on that thread. And we prefer to have that meeting, the roundtable discussion, after the same day of the tab, after the tab meeting. Guess what? This topic can be part of the discussion.
+
+Oh, yeah. I mean, I would rather. have it as part of a discussion forum rather than presentation so that's even better exactly just you know it w last time it was two hours first time it was three hours half day if we can have a room for a half day you can take one hour for back and forth to discussion That sounds great. Yeah. And that actually aligns with what Paul was saying.
+
+Like, you know, maybe that solves a room problem. Yeah. Okay. So one of the things that we might do, if we've got like two to three hours, then there's plenty of time on the agenda for discussion items. And I do agree, absolutely, that it should be discussion and not presentation.
+
+So let me try and contact Dan Biederman and see if we can coordinate and make sure that things either happen in one bigger meeting or in coordinated meetings that don't overlap. Absolutely. Yeah, yes, absolutely. Good idea. Thanks, Rishan.
+
+Thanks, Paul. Yeah, that'll be great. Yeah, we need to beat people. Yeah, exactly. And we need some partners somewhere we can validate this also.
+
+You know, that will be another thing. I get a new batch of students in three weeks. So right now I'm on a boss. David, if you can make it to the global summit, that will be really great because I like to talk to you about all these things. I can make it.
+
+It's what is that, mid-October? I'll try. 12 through 15. Great, great. Yeah.
+
+I feel like there's a ton of events, and maybe that's why they're all tied right around that period. There's also a bunch of different AI summits that AMD and a lot of the different vendors are doing. And it's hard to keep track of them all if they're all part of the same thing or not. But that would be another one that could be interesting, would be to try. If we can't get access to the hyperscalers, presumably both NVIDIA and AMD should also have these own at least mini-sized clusters and try to then, even if we just can get borrowed time on that, I could reach out to a friend, at least at AMD, and see if that's possible.
+
+I attended the AMVD conference, I forgot last week or so, people. For my memory, but it was a big conference in San Francisco, like the GTC for NVIDIA. Exactly. So I was invited to this one. And one of the sessions they talk about how they help academia, professors for using the stuff for.
+
+Their own research. So I wonder, David, I think I know the name of the guy who the charge of university collaboration. You can talk to him. Yeah, that'd be great. Because I think that's one of the biggest issues holding back this space: there's like maybe a handful of companies on the planet who.
+
+Actually, they have the scale to recreate and see a lot of this. Yeah. And just academia is like poking at it. They get like one H100, maybe, or they get, you know, minimum time on a cluster, but then it's managed by an external team of sysadmins. And so they don't have root to go in, let alone tap it.
+
+And so it just massively inhibits it, even in some cases, just getting the Metrics, even if you can't run your own workloads, I think would be extraordinarily useful. So, for example, in the paper, the attempts, I say H100. That was in my mind, but when I attended AMED, the equivalent of GTC for AMED, they are even easier to. Get their stuff for experimentation, their GPUs, and the GPUs, but maybe based on what they presented to us, looks like they make it easy on a small scale. The problem is when you need 10,000 of them and you're talking like a gigawatt data center, and that's the you know, exactly.
+
+The example of how do academics do research on not that they should, but thermonuclear bombs? Like there's certain experiments we can't normally do, even if we were allowed to. It's like, well, first I'd eat a lot of uranium, and then so there is another perspective on this, and um, this might provide some insight. Um, we Once we've started to find what was happening on the large 10,000 run GPUs, we started understanding the problem better and then digging down and seeing if we can reproduce this in small clusters. Now, this is not, there's two sides to this information, one of which is we have found that many distributed systems Problems and transaction failures can be reproduced in small clusters of four to eight machines or whatever else, standard CPUs in the distributed systems case.
+
+But also, we've found that we've put together a Mac Mini cluster, and we have them here. They're not here actually, they're in Palo Alto. But we've reproduced the entire problem of link flapping over Thunderbolt. Most of the problems appear to be in PCIe, although clearly we're obviously interested in what the impact is on Ethernet as well. So, Anker, I have a bunch of machines that's probably very Close to your house, where we have six machines.
+
+All of them run this software, which actually does the causality detection. Mostly, the use case is clean failover from one link to another when links are flapping, but it's completely reproducible on six machines. This was a surprise. To us too. But all of this was demonstrated in April at the Selimar Microcomputer Conference live.
+
+We're letting people pull cables and actually see and try and break the system. This was all built, it's all working. There's code for it, it's up on GitHub. I'd be happy to help. This instrumentation to kind of like tune in to where the problem is and then try to reproduce it might be helpful because then you don't need to have all the money that David says is necessary to test a 10,000 GPU system.
+
+If you know where to look, sometimes you get really good data. You can see. The problem happening. Yeah, that will be great. Like, I think the more systems or, you know, if we can reproduce it on, even I have like a five or six server lab, which doesn't have any GPUs right now.
+
+Yeah, I think if we can reproduce it on lower, smaller systems or smaller scale systems, yeah, that would be great. And I think the more validations we'll do, that will even be better. And if you want to go Paul's route, you could even look at just buying a bunch of Raspberry Pis or Arduinos. Yeah. You know, then you can easily get like 100,000, 10,000 of them.
+
+Although I pity the person who has to wire them up, but well, the point I'm. Get across is that once you understand the problem, you're actually able to tune in and reproduce it and make it deterministic. And you don't need a lot of machines to do that. Now, David, I have done this on Raspberry Pis and on small x86 boxes in a previous company. What we found was that.
+
+The administration overhead was absolutely staggering. It just took forever for us to build these systems, to get them working, to change them, to modify the drivers. So that's why we're kind of excited about the fact that we can now use a fleet of Mac Minis, and we're using Thunderbolt as the link test. Can now reproduce and generate the instrumentation that is 10 or 100 times easier and less effort in system administration than would otherwise be. Makes sense.
+
+Yeah. Yeah. So I agree definitely. I think, yeah, I mean, Like, yeah, let's try to reproduce. I mean, and that will be great help, Paul, if you can run this into, once it is ready to be tested in other labs, I think that will be great help as well.
+
+The thing that happened two weeks ago and at the IEEE 802 meeting. Meeting in Montreal is we had a parallel meeting going on concurrently in Rome with the net dev community. And one of the things that we did is we instrumented this unilateral versus bilateral primitive in two places. One at the application syscall. And showed literally that you can reproduce this in a virtual machine.
+
+Once you understand the problem, you can instrument a virtual machine to show that the Linux networking stack fails under these circumstances. That was interesting, but even more interesting is the fact that you can do it in two places now, you can do it at the link level. On the Thunderbolt rig or in standard Ethernet on the machines you have, and exactly the same pattern appears. This is why Open Atomic Ethernet is trying to have a mathematically valid description which goes into syscalls, which gives you an API to bits on. A wire completely non-proprietary stack, which gives you this deterministic behavior when you know where to look.
+
+Oh, wow. Do you think, Paul, we can integrate or validate that? Like, I mean, is oh, I think, I think we talked about that sometime ago. So, yeah, I'll. Let's try to work on that as well.
+
+That's a great point. I don't want to diminish what David is saying, because I think David's got a great deal of experience here. But I just wanted to illuminate the fact that when you know where to look for this problem, you can do it on a much smaller cluster, either in your lab, Anchor, or in the Mac Mini. That we have is just six machines. And it just pops right out there when you know where to look for the problem.
+
+And this causality violation is, we weren't specifically looking for the causality violation, but it turns out the instrumentation provides exactly that. What we were looking at is how to instrument link flapping. So for Surprisingly, we found the leg flapping problems were like PCIe. And of course, Thunderbolt is just PCIe on steroids. So that gave us a really good instrumentation laboratory to dig into the problem.
+
+Interesting. David, what are your thoughts on that? You and I have lots and lots of discussions about where we're thinking, looking at this elephant from different sides. But do you think that it's feasible to actually check out these failure modes on small clusters? I think the fundamental question is: you need to understand what are causing what.
+
+Percent of the failures on which systems. And so the way that a $10 billion installation of H100s fails may not be the same as someone unplugging a computer. Some basic things you sort of know from first principles of networking, I think, yeah, you can recreate, but getting those details again from the hyperscalers of. What are the different subsets of issues? And okay, let's say they fix one and it's actually trivial to do, like rewire your data center.
+
+Okay, now what's failing? And so you also hear stories of things like they're being overclocked too much. Is it a heating issue? And that's very difficult to recreate by proxy on completely different hardware. It's like trying to diagnose what's wrong.
+
+With the latest generation of a Boeing 777 using your bicycle. Like they're both transport vehicles, they both move, but radically different systems. But there's some use in it, I think, for sure. Well, I'm just trying to gi you know, provide some insight and illumination on. The real problem that we're having here.
+
+And the great use case here is just link flapping. And it turns out that when we instrumented both sides of the link completely separately without timestamps, we have to have a third party. It turns out that one link obviously is always going to fill because once it's disconnected, you can't. Talk to the other side. So it takes triangles, and that's what we did with this mesh of each one has three Thunderbolt ports.
+
+So you can create quite a few interesting meshes just with a Mac Mini cluster. Once you have the triangle failover, you can then monitor it from both sides when you see the link flail. And when you do that, You see, this flapping on PCIe, not just on Ethernet. And it turns out to be masked over by timeouts and retries and PCIe. That's kind of, I'm an experimental physicist.
+
+I don't believe anything I can't measure. And so this is like, you know, real gold for me. It's like I can. Now, put the instrumentation in to ask not just theoretical questions, but questions which have very significant practical significance to the industry, not just in inference, but also in training. Yeah, I think this is a very interesting conversation.
+
+Anchor, I just want to make sure we don't run out of time because I know there's another meeting. Some of us will be going in in 17 minutes. So it's just so we can get through to the other slides. Yeah, yeah. No, I think, yeah, so maybe we can switch the gears.
+
+And if nothing else on the OpenCC, let me switch. So, just wanted to quickly provide some. One second, let me open up that case. Are we going to go through slides three and four? Oh, I think we did already.
+
+One second, did we not? Yeah, I mean, one second. Yeah, three. Oh, yeah, this one, I think the idea. I went over this one, like today's world and how the next thing.
+
+And of course, this is pretty much the summarization slide. Like, you know, we're basically comparing between the causal sequence order, like how things should be, and then time-stamping order. And, you know, this is just one of the factors I was testing. And then select like the Overall arrival order. Like, so all of based on different factors, we basically, the system creates different observations.
+
+And based on those different observations, it will basically just tell the con the, you know, give a recommendation like how this should be treated. So that's, yeah, this is working progress. I should have a more like, you know, with I'll integrate tempo trace and have more data on this in the next two weeks. And for four, is the intent that the actual analysis is then done by a human being, or is it to build an agent that can then automate these workflows? Both ways.
+
+Like, if there is another agent that can take the Of data and process it. Yeah, of course. I mean, the goal is to be able to automatically do everything. Yep. The reason I ask is, and it's something that's extraordinarily relevant to this exact space.
+
+In the last week, there's been this news, and the nightmare keeps growing about how bad it was of OpenAI's cyber tool hacking itself, jumping. Different systems and open AI and then jumping to others. Cybersecurity analysts have the exact same problem you're describing, but instead of it's why did I crash, it's how did I get hacked? Or in this case, who did they hack? And knowing that daisy chain of systems.
+
+So it's especially if you get an agent that could do that, it has a lot of other uses as well that are very valuable. That's why I really like this. Absolutely. Yeah. That recent hugging phase.
+
+Also, one of the things, since I'm at Oracle right now, so I'm also working closely with the cybersecurity team, which is looking into AI security also. So, yeah, with that hugging phase thing came recently, you know, it's like literally trying to, you know, that's been the biggest focus right now for enterprises, like, you know, not to let these agents. Take over. And then, if they did take over, how did they take over? And apparently, it even left notes.
+
+So, like, once they removed it, it could then find its way back. And it's like an attack plan. Yeah. And there is more and more focus on creating that loop now, because that was a missing piece now. But because of that, Creation of loop, it is becoming more and more prone to these kinds of attacks.
+
+100%. So, yeah, I think, yeah, so that's pretty much on this one. So, let me switch gears quickly. And the other one, I think the other project that we are working on is, I think last time we talked about. This agent operating system.
+
+So, a lot of work has been done thanks to Deep, also, who's helping with the development work on the agent operating system. Now, this is again, I think there has, I saw a lot of discussion on WhatsApp recently, also, which is evident that we need a more governing an observable framework, which basically can make things easier. So just to quickly touch on the problem statement. So most of the systems right now, agentic systems, can answer these things clearly. I think we've talked this about this in previous meetings also, but just for quick reiteration.
+
+But what these don't answer is like, you know, the determinism, like capabilities, how do we discover those? If an enterprise wants to use a capability, which could be an API, it could be an agent, it could be an MCP, it could be any interface that could be available on AWS, GCP, any local enterprise. Price capability. So, how do we discover these capabilities globally? And then, how do we establish trust in those?
+
+And how do we get confidence out of what these are used for? So, and how do we keep that all under policy or create auditability, all that? So, you know, all of that OpenCC stuff that you saw, it's basically also going to. Get into this whole AOS framework. Now, the whole idea is initially we started off with just the first layer, which is control and governance.
+
+But then, you know, we realized, and based on feedback from all of you, and it makes sense to have runtime and coordination work closely with this. So now our focus. It is to have these two layers become an agent operating system, which will work on any compute or storage or networking stack or any operating system like Linux versions. So that's a goal. And right now, I'll give you a quick demo of how this is turning out to be.
+
+I mean, that's a demo. But of course, you know, we'll start. And of course, like right now, Deep and I believe Mark also from Meinberg is helping contribute on this one. But if you guys want to contribute and take a look into the code early basis, let me know. I can make you a collaborator on this code base.
+
+So, give me one second. Of course, I'm going through the procedure here. So, it has basically, you know, just for the demo today, I've created some capabilities. So, let me show you how this works. And I'll show you the UI version also for this one.
+
+So, I'm into this project. So, what I'm checking is. I'm just taking the prerequisites first. Okay, so here you can see it works, checks all the prerequisites that it needs Docker or orchestration system where we will deploy stuff. And then it also uses open source.
+
+Like we are integrating why we need Olama because we are testing, because this is a framework and you. Can integrate any model, any agent, any MCP service, or anything. So, to test this framework or demonstrate, I'm using OLAMA. And then, of course, these are additional information which we are just checking. So, pre-checks are good.
+
+We don't need to reset, just double-check if everything is clean. And okay, so yeah, so now we'll start this. You know, this is typically how a user will start or enterprise will start this on their system. So, what it's doing is basically building the whole AOS stack, whatever libraries, functions we need. It is creating its own metadata store, which is Postgres.
+
+In this case, and recording in progress. Oh, sorry. Okay. So it's creating its pro. So we have this Postgres, which is its own local metadata store for any information that AOS wants to store for itself.
+
+And then Quadrant is a vector database. Again, we don't need it, but I'm just using it for demo right now. The setup is pretty much done. And now I'll just show you some stuff, you know, Postgres. Right now, we have two images here: Postgres, and like, you know, this is just for the metadata stuff.
+
+And let's see, these are the other two Docker volumes for Postgres. We currently don't have anything, like, you know, there is only one image that is there. Okay, so I think let's start at this point. So, currently in quadrant, we'll see like there is no knowledge base. You know, currently, it's all empty.
+
+So, And we'll check our MCP endpoints. This is what I'm using for the demo right now. So there are like four MCP tools. Also, like, you know, just to show you, there is a UI, which is, wait, where is the UI? Actually, One second.
+
+This one. All right, give me one second. Want to show you guys that the UI? There's a UTI link of a lot. Oh, there we go.
+
+Oh, actually, this will, let me see. If this is there, okay, there we go. So, right now, this is the UI. I mean, it's basically using some local authentication. So, I'll log in in a minute.
+
+So, but before we go there, let's go through the next steps. So, okay, so I showed you the MCP, so I'll show you the list of. MCP. Oh, what I'm wrong copy. So this is going to show you.
+
+So these are the four MCP tools. Basically, just for the demo, extract invoice, verify vendor, check duplicate, submit payment. Now, this submit payment is like a call. Which will require an approval because we don't want to just do any transactions. So, the reason why I added this step is to show the capabilities and policies that can be capabilities which can be controlled using policies.
+
+So, you just don't let users run. And this is where we need to put the Guardrails and this framework helps with that. It's like, you know, if you have capabilities, you can put those capabilities behind those guardrails. And, you know, you can say whether those need approval or human in the loop intervention or anything. So those are things you can easily build.
+
+And of course, On the UI, all of that capability, you know, you can configure all of that. I'll show all that stuff in a minute. Okay, so, okay, so let's start the setup. So now we have the MCP tools, we have the vector database, we have the metadata store. So I don't have agent integration yet.
+
+But that should be ready for next demo next time. But let's set it up. So, right now, okay, so let me log into the UI. I need to check this one. I mean, this is just local authentication.
+
+So I'll just go here, write it demo, and I put this. So once I log in, okay, so here you can now see this has four capabilities. You know, it has four adver MCP tools which are advertised. It has its local vector store. It has these Embeddings and reasoning capabilities, which are integrated.
+
+So, and then all that. It also gives you the usage, basically, you know, how much you're using, how many tokens are in and out. Basically, this will show you an end-to-end picture of how everything is being used. And then it also gives you. A capability to add policies.
+
+You can add capabilities. You can add whatever. I mean, this gives you, I need to simplify the UI a little bit more. So once it is there, I'll give it for you guys to play around and get some feedback. And also, it gives you an audit log, which basically tells you, you know.
+
+How everything is happening. So, all of that will be visible. So, going back now here. So, okay, so let's do the actual demo here. So, I'll just do a quick wallet check.
+
+This is basically. A step to see if you know what all knowledge is available in the vector database and the systems. But this is early, like, you know, stuff like this is still work in progress. And now I'll run the actual workflow, which will use. All these MCP tools.
+
+So now we'll trigger the workflow, which is where, you know, I'm submitting a natural language intent. You know, it's basically not, it could be an API call, but it's in the natural language format. So that's where that first part comes in picture, which is this intent. Internally, it goes to Cover the capabilities which we already have, the MCP tools, and then it will check for policies and then it will generate confidence and also create audits and everything. Ankor, I have to leave to go to start my meeting with the invitation.
+
+So I will see you. Shortly. Sure, I'll be there. Yeah. Thank you very much.
+
+Bye-bye. Thanks. Thanks. Sorry for this. I have to start with the people who start joining anyway.
+
+Yeah, no problem at all. Yeah, too, too bad. Yeah. So, just what you've done so far looks phenomenal. And there was one thing in particular I was thrilled to see you already had.
+
+I didn't see it on. The PowerPoint, maybe I missed it, but you're tracking cost. And so, one of the single biggest problems that all the institutions are running into right now is not just how do I get something done with AI, but how much does it cost me? And how do I optimize that when I have 50 or 100 different models and they have radically different costs per query? So that you're already doing that, and then you can set the layer to later optimize.
+
+I think it's phenomenal. Yeah, this was actually one of the biggest pain points. And even at Oracle, we are running into this every day. So that's why I thought, you know, it feels good to have this integrated here. Yeah.
+
+We should be a first-class citizen. This is something we never did with operating systems. I think it was a big mistake. We say CPU utilization, we don't say. Okay, if I go through all this, how much power am I burning?
+
+What is my TCO ticking in real time? And we'd schedule things very differently if programmers would directly saw that. Right, absolutely. Yes, yes, yes. Yeah, I mean, for somebody, I don't know, this probably is causing some error.
+
+I don't know. I need to look into this. But yeah, so basically. Yeah, so maybe I can, you know, I need to probably look into what is causing this failure. But the whole idea is that it will, let me show, I don't think I have the executed logs.
+
+No, I don't have it. Yeah. So, yeah, but basically, after this, once it executes it, you know. So, this approve step is where I was telling about that payment thing. You know, if there is a step that requires that where the policy triggers the human intervention, it basically will require for the user to approve.
+
+So, currently, I'm using this step to approve it, and then the approved step is nothing but it should. You, the traces of audits, like what all happened, just on the command line, but you can see it on the UI also. So, so that's where I think right now it is. I mean, most of it is there, but I need to integrate a few more things. And thanks to Deep and you know, for helping on this coding as well.
+
+And if you guys are interested in helping on this, that will be great. But the whole idea is that we want to achieve this whole framework, which can work with any system and any compute storage stack. In fact, just a quick thing. So, I had one of the discussions with somebody at Crusoe, and they were very Interested in having something like this because they currently have a really good modular chassis model, energy efficient system, but they don't currently have anything which is like a control plane for them. So even Core Weeve started looking into this direction.
+
+So just Some facts. You're doing it right. I love this. Awesome. That's good feedback.
+
+Thank you. That helps. It's something I was thinking about in the back of my mind. You could imagine a future where you have all these different entities that have some amount of GPUs and they have different utilization rates in different data centers across the globe. Imagine real-time auctions where you can flash a particular query and say, I want this model or this level of complexity.
+
+And then everybody bids instantaneously, somewhat like what we do with financial markets. And then you can adjust it in real time. That's why I love this. This is great. Actually, that's a great point.
+
+I mean, that's a really good capability we can, like, you know, between these. Capabilities, yeah, you can just pick whatever is, you know, at that time cost-efficient. Yeah, actually, because like for some models, you're going to have a lot of people, their desktop computer, a lot of Macs now can actually do mind-blowing things, especially if you use NVMe as a cache. And so this starts to get very amenable. It's very exciting.
+
+Awesome. Yeah. And actually, you know, Lot of feedback I'm also getting is that currently nobody, you know, just recently I saw that Microsoft, Google, they have started to realize they needed something. You know, right now, the focus is more on agents and MCP and those tools, but there is no focus on frameworks. So now they have started looking into.
+
+So I'm hoping by that time they start looking into or you know exploring. We should have this ready. So, yeah. This is great. And start thinking about, too, can you build out the interfaces and then do the vendor-specific mapping to each of the hyperscalers, for example, so that it's turnkey for everybody else.
+
+And we have no one that way, everyone doesn't have to reinvent the wheel every time they go to AWS, Microsoft, et cetera. And then that's also very advantageous. You know, not to pitch your own employer, but Oracle, from what I remember, tends to be better on the cost structure side. And so, if you get this right, then it's very easy to pit the hyperscalers against each other and say, Well, I can do this exact same thing here. And here's the pattern to just immediately migrate it.
+
+Exactly. Yeah. Yeah. I'm actually trying to pitch this with an Oracle, also, if they can use if you. Any of your help making that case, let me know.
+
+I can do the finance and the AI. Sounds good. Yeah. Okay. Last not least, of course, we'll be publishing all these specs also, which are the series of AOS papers.
+
+So currently, with this one is ready to publish, and I'm working on writing these two. And yeah, we'll go from there. I'll share this word. I think I've shared this with some of you last time. And if any still any feedback, let me know.
+
+But I'll share this combination. I'll combine two and three together because they are related and then send it over for reviews. Great, great, great. Okay, I think we are at a couple of minutes over. Anything else?
+
+Anyone, which is pretty seriously, yeah. Thanks to you guys for great, great feedback. This helps a lot. Awesome. Sounds good.
+
+See you all in a couple of weeks. Thank you. Take care, everyone. Have a wonderful weekend. Thank you.
+
+Yeah.
