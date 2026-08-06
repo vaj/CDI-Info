@@ -1,0 +1,339 @@
+TAP TSIAW workstream 2026-08-05
+
+Hi, Hesham. Hello, how are you, Milen? To see you. Yes, thanks very much for hosting our talk. Hello, come on.
+
+This is our pleasure and honor to have you. Yeah, and Professor Lucia is also here. Hello, hi, Professor Luci. How are you doing? Hi, Hashan.
+
+How are you doing? Yeah, we have. Sorry, we missed last time, but I'm glad we can do it. This time, so we still got almost 80 people accepted the invitation. If even half of those will join, that will be great.
+
+Great, great. And your previous presentation, Milan, was really, really excellent, and everybody said great things about it. So, yeah, thank you. Really, last time you did great. So, people now have high expectations, which is now you are making me maybe nervous.
+
+The big shoe to feel. No, really, the last one was really excellent. Yeah, Minglan is great. Everybody mentioned. Great things about her presentation after the call.
+
+Yeah. So, Minglan, just logistically, would you like to advance from one side of the slides, or we will switch slides as we go? Maybe as you are starting the talk, maybe let you flip the slides. Okay. stick with me uh yes with me advancing the slides right so but uh who will start milen or no no we'll start and i will jump in yeah we we we take turns in in making the presentation i will introduce both of you but i will say you will start as a presentation and then Million will jump in whenever you will co-present, yeah.
+
+Exactly, exactly, exactly. And everybody knows both of you. You guys are famous. And I already sent the bio for each one in the invitation. But before you start, you can provide maybe.
+
+One-minute introduction of what you are doing and what your research things like this, maybe half a minute, half a minute or so. And the project, what the project is all about, the Marshall project. Great. You know, my daughter was graduated. From Harvard.
+
+Oh, which year? 2019. Wow, what's her concentration? It was literature or things like this, but it's not computer science or something. Yeah, but she said Harvard is great, but not easy.
+
+You're proud, you're proud. Harvard parent, exactly. But she said Harvard is fantastic, but difficult to survive. We kind of get in the bright students, and then the bright students compete with the bright students. And she says the professors are very small.
+
+And you have to keep up. The students are smarter. It is a mutual motivation. I'm really happy to have both of you. This is excellent.
+
+So, usually we start like what we did with Millian last time, maybe five minutes after the hour. Make sure many as many people as we can get, and then others will join who are you are presenting. Sounds good. Oh, we got many people joining already. Wow, abroad.
+
+People are sending there. So, you are in Cambridge. I am in San Jose, California. I love Cambridge, actually. Yeah, it's this is the best time of the year.
+
+Very beautiful. The river, and I like illegal seafood and Harvard Square. Yes, first time I visited Cambridge, I was watching TV, and one lady on doing some advertisements said, Everybody loves. Harvard Square. It is a very lively place.
+
+400-year history now. And the library, the bookstore. Bookstore is a jam. Exactly. It has all kinds of books.
+
+I love it. Yeah. I like to take my kids there too. Yeah. My daughter loves to read, and she is there when she wasn't studying there.
+
+She is in the store all the time. Yeah. It's an excellent community. So, Hisham, can you give some background on who are the main? sustainability so yeah it is i invited i invited mainland based on your request on the topic people who are interested in ai and sustainability group in ocb and there is also a research team research group in irtf Who are working on sustainability and energy management and all of those, I invited those two.
+
+And I invited many others, but I don't remember everybody, seriously. But I made sure that they are all interested in the subject matter. That is why we got almost, oh, wow. We got almost 80 people. So, who are the main companies in this space?
+
+Oh, any company you can imagine. Okay. Networking companies, energy company, you name it. If you want a demographic, I can say. It you I can tell you exactly after uh the meeting, I will look because I know who who accepted.
+
+Actually, I can do it even after the meeting. I don't have to wait for anything. I know who accepted and I know which companies he belonged to. But Nvidia is there, ARM is there. AMED is there, everybody's there.
+
+Right. So lots of people will know about your project and what you're doing. So what you're doing is very beneficial to many people and many companies. Oh, 36 for so far. That's good.
+
+That's good. And there is an OCB global summit uh in October. You should really come and we you can arrange for I don't know uh there is enough time to do the arrangement, but you can. We can make an arrangement for you to present there your projects, your yours. Yeah, I know some of my collaborators present our work at OCP last year.
+
+Good, good, good, good, good. Although I'm not personally there, I've been tracking all the news. Excellent, excellent. Yes, of course. Provide great keynote speeches to many conferences.
+
+Like Norms, I think you were in Norms. Yeah. Yeah. We were asking who we should bring, and we all agreed we should bring Milmen. Thanks, thanks for inviting me.
+
+Yeah, you know, Roberto did it, yeah. So let us wait. That we still need more time, maybe one more minute, and then we you can start. Uh I will do a brief introduction and then Professor uh Luci can start and then Milenu, you can jump in whenever Whenever you guys decide, sounds good. Do you see the slice well?
+
+I see. Yeah, okay. We are in good shape. Oh, we got 40 people now. That's good.
+
+Oh, I ask for companies. Here is David from Intel joining. Right. Many companies, believe me, all of them, all of the company can imagine. So it is 9.05.
+
+And uh I really we are very honored and happy to have Professor Minlen and Luci from uh Harvard to present their project uh about power and AI initiatives uh in in Harvard. And I'm sure we'll have an excellent presentation and very interesting discussions. Without any further ado, I give the floor to Professor Li She. He can start the presentation. I don't think I have to mention much about any one of them.
+
+They are very well known and famous, and we are very happy to have them. And thank you, Professor Milan and Professor Luci, for accepting the invitation to present to the team here. Thank you very much. And Professor Luci, go for it. Thank you.
+
+Thank you. Good morning or good afternoon, everybody. Thank you, Hashan, for the kind introduction and setting up the event. My name is Le Xie. I'm a professor of electrical engineering.
+
+I'm working on power systems. And together with Professor Ming Lan Yu, who is my colleague in computer science, we have been spearheading the very new and very exciting power and AI. Initiative here at Harvard School of Engineering and Applied Sciences. What we would like to do in the next 40-45 minutes or so is that we would like to share with you why we do this, what are some of our vision, and some of the concrete research that we are doing along this space. So we really Are sort of thinking about the infrastructure for the future of energy and AI.
+
+And that's why we felt like it is really important to bring these two perspectives together, both in terms of the power grid and also in terms of AI. So it really. Sort of from a very get-go, the goal is to break the silos that traditionally may have existed in many academic units, where there are units focusing on the electrical power systems side of things. There are people who are working more on the computer AI side of things, and there are more people working on the Energy and AI policy and market side of things. We don't take any of these silos.
+
+We want to embrace them all. And the reason we want to embrace them all is because the problems we're facing really need a full-stack research perspective. And then the research that we are addressing here is really. Really, about how is AI advancing the future of the electricity power industry, and vice versa. How can the power industry get ready for this rising surge of electricity demand coming from AI?
+
+Just to kind of give you a sense. Of what we have been doing, we actually showed you these two pictures. These are two pictures taken from the lab we have right now here in the science and engineering complex at the beautiful Harvard Austin campus next to the Harvard Business School. On the top, we have instruments. And it probably is the highest resolution measurement devices on GPUs in the lab so that we can capture the power fluctuation at the very fine minuscule time scale up to megahertz, namely microphones.
+
+Microsecond time scale on AI's impact on the power grid. And on the bottom, you see a digital twin of a control room of the future for the electric grid, where we're testing state-of-the-art agentic AI and generate AI capabilities for the future. It. We do a lot of research along these directions, but we kind of do not want to stop at just publishing the papers. We really wanted to build a community to shape standards and policies.
+
+And eventually, the goal is to train the future. Leaders who can take on what they have done with us and then move on to impact the world at this intersection of this very exciting intersection of what I call energy intelligence infrastructure. So, this energy intelligence infrastructure is really part of this broader question. To get everybody excited these days. That is, how are we thinking about the architecture of industrializing AI or intelligence?
+
+I like this sort of a five-layered cake view by Jensen, where he articulated sort of the five different layers that is. Needed to get to that industrial scale intelligence. What we are focusing on perhaps is at the bottom layers, namely the energy and the sort of computer systems layers, where A lot of the details actually matter, and a lot of the complexities live at these layers. And our goal is to understand, unpack these complexities, and so that we can actually make some concrete progress along those directions. Some of the big questions that have been certainly.
+
+Kept many of us busy over the past a year and a year and a half is listed here. I'll just kind of give you a very quick rundown of these questions. One I think is very much on top of everybody's mind is that how are we going to deploy agentic AI that is safe, reliable, And compatible with existing power sector, electricity power sector. What kind of a benchmark, test beds, and safety guardrail that is needed? We have been doing a lot of work along those directions.
+
+The other one is: how do we see about the future? Of the data center grid architecture. And this is a very fast-moving question because our thinking might be different now versus 12 months ago. And for those who are in this industry, this common sort of thing. Is should these large data centers be grid connected to the public grid, or should they be more like BYONG?
+
+That is to say, bring your own new generator, but off the grid? How do we see a Architecture that is likely to unpack in the next five to ten years. And then, very related question is: suppose a big chunk of that, we don't know the number, it could be 50% or more or less, we will see, but suppose a good chunk of The data center are indeed connected to the public grid. How can we enable these large data centers to provide the necessary operational flexibility so that the power grid is not scared away and not too much concerned about this big influx of new electric demand? Those of you who are in Professor Loshi, will you accept the questions now, or you would like to defer them to the end?
+
+I would appreciate a clarification question now and longer questions at the end. So I have. David, Professor David Larry Vere had a question about the five cake, five layers cake. So, David, what's your question? It was just that we were showing that the energy is the first layer.
+
+But I was curious, you keep hearing more and more that the biggest issue now is in all. Even just powering these data centers, it's how do you extract the heat once you've spent it? And so, to what extent is cooling also really at the very forefront? Similarly, we talk about grids, there's a lot of concerns about water consumption, for example, and what it can impact the local area. David, that's a great question and great perspective.
+
+I think cooling and water, you Usage is on the rise of a lot of concerns. You can probably argue that this, in the broader sense, as part of the energy challenges, both in terms of providing the energy and also providing the energy to cool it. But yes, I agree with you. There is another one from Li Yang Gu. That might not be a clarifying question.
+
+Maybe you can defer this till the end. Sounds good. Sounds good. Yeah. So let me just continue on saying the fourth question, which maybe for this community, you don't think too much, but for us, certainly for the power community, we think a lot about is that given the Multi-stakeholder ecosystem of the US electricity industry.
+
+And given the fact that many of these big decisions have to be done through a market-driven stakeholder-engaged process, much of the needed action are indeed not taken. So I'm asking: what is the cost of inaction? And what is the future government? Governance and stakeholder engagement process. For those who are into this area, you probably have heard about about 10 days ago the first conference on this very topic.
+
+So, these are some of the sample research that we are doing in our teams that Professor Minglan and I co-led. Roughly in the broader bucket of AI for power and power for AI, but let's just kind of give you some more in-depth view of what's happening here. For this interactive area between AI and power, it certainly is a very fast-moving area, but one of the biggest, perhaps interesting Takeaway trend from last year, this time, to now, is that I think the reasoning token is increasing significantly, largely due to coding. And that actually has a lot of annotations and implications on the way that the Power system should think about these AI data centers, and the power system should worry about the way they plan as well as operate this. So, on the AI for the power side, let me just kind of give you a particular example where we are very proud to be probably the first of.
+
+Its kind partners with the actual power industry, in this case, with the independent system operator, ISO New England. And that is the regional grid operator that covers six states in the New England area, where we develop the agentic AI to help. Help them not only speed up the transmission planning process, but also provide the corrective measure and the summary capabilities that would have taken many, many more hours of engineering simulation time. And this is a fast-evolving and fast-growing community. And we are proud to say it's probably one of the largest open source agentic AI community for the power sector with more than 500 now, actually, not 400, 500 contributors coming together.
+
+We are happy to sort of be the convener, but really, thanks to the Broader community, where almost all of the major power sector decision-making software are now interfaced with the capability of Agent Tei. That's a great, great pride that we take. And next, I'm going to. Turn it over to my colleague Minglan to give you a sample research questions in the general area of powerful AI. Yeah, so Lo has talked a lot about the innovations at the power grid side, but I think on the AI infrastructure side, We're also seeing great challenges, and we're also thinking about how to redesign our infrastructure to be more friendly to the power grids.
+
+So, the main challenge, as Lou already mentioned from the open router data, is that the amount of tokens we've seen in the past year has been surging, like 14%. To 16 times. And in 2026, the number would be the growth rate of these numbers would be even bigger. Next slide. And it's not only the total number of tokens that's increasing, but for individual queries, it's also growing significantly.
+
+It can be visioned by the sequence lengths. It has also tripled in the past year, as meaning due to the coding agents. So, this means for each query, we also are consuming a lot more energy than before to generate more complex answers. Next slide. So, what's the implication of the significant growth of inference for AI data centers and for the power grid?
+
+So, we want to, at Harvard, we want to understand these kinds of questions from more fundamental layer and trying to understand what's the key difference of the growth. Most inference data centers comparing to the training data centers, which are in the news. We already know people are building a lot. And also, what's the difference with traditional CPU data centers that was serving the web queries? Now it's serving token queries.
+
+What are the differences and what's the implication of the data center design? And the power design for these settings. Next. So, comparing to training data centers, people often think that maybe inference data centers would be smaller, but that's not necessarily true. In fact, our vision is that the in-ference data center would be too, many gonna be too.
+
+Classes. The first class would be those large data centers as large as the training data center, so ranging from 100 megawatt to gigawatt scale. The reason is that a lot of previous generation of training data centers with older generation of GPUs nowadays get recycled to inferences. Already at the scale of 100 megawatts or even beyond. And with such a larger data center scale, it also facilitates the multexing, capacity planning, building, and management of data centers for a diverse set of inference queries from different users around the world.
+
+In addition to the large data centers, will there also be many smaller inference data centers closer to the users? Well, our thinking is that maybe there will only be medium-sized data centers, essentially in 10 megawatt scale. This is because geographical diversity for users still matters. Due to AI policy, data policy, and reliability reasons, we still want a set of diverse data centers. But these data centers won't be too small.
+
+The reason is that the token generation today takes longer time comparing to the network latency. So you don't get all the benefit of getting. Getting super close to the user. And instead, if you have a medium-sized data center, you get a bigger benefit of multiplexing and maintenance. Next slide.
+
+Comparing to the CPU data centers, there's also a big difference between inference data centers and traditional CPU data centers. In two aspects. The main reason is that the compute now becomes more dominant resource for energy and cost. So, if you think about traditionally how we optimize CPU data centers, we often over-provision the hardware. So, there are plenty of hardware, then we do all types of software optimizations to leverage the redundancy.
+
+Hardware to improve the performance. But unfortunately, as inference heavily relies on GPU, as you see in the top table here, we can see that HR100 comparing to CPU is taking 65 to 70% of cost and up to 55% of power. Power compared to the whole data center cluster. And when we move to GB200 or even beyond, the amount of cost, the concentration of cost and power only gets higher. So this means that it's no longer possible for us to optimize.
+
+The hardware like by providing the redundant hardware and letting the software to do optimization. Instead, we have to do joint optimization between hardware and software given the high cost and power concentration of these GPU devices. Another significant design choice difference for Inference data centers comparing to CPU data centers is the reliability. Traditional data centers, we care about 4 9 and 5 9 of reliability. And because of that, we typically over-provision the system.
+
+So, if you look at the lower part of the table, you can see that 4 9th. means that there are only 53 minutes left downtime we can afford for each data center and five nines means five minutes only for the whole year. And to achieve such high reliability, we have to build redundant devices. But today for inference GPU data centers, it's really Expensive to over-provision GPUs and not to use them for relying and only use them when failure happens for reliability reasons. So that means we have to rethink about flexibility.
+
+Instead of keeping the high standard for reliability, we're now willing to trade off reliability for better access to. To capacity. So that also enables a lot of interesting trade-offs. How do we enable such flexibility of AI jobs? Next slide.
+
+So in our group, we just start to rethink about efficiency and the flexibility with a series of ongoing work. Here, I'm just giving you a sneak peek. Of what we are working on. For rethinking efficiency, we've been doing cross-deck optimization for different AI models and use cases. And for rethinking flexibility, we have been thinking about new knobs to trade off reliability for better capacity.
+
+Yeah, next. So, how do we rethink efficiency? This is just a recap of what inference means. Usually, when the user sends a query, we go through the pre-fill phase that starts to process the full input prompts and build the KV cache. And then we go to the decoder phase that will generate Token by token to re and also grow the use of KVCache to generate the answers.
+
+So inside this, next slide. So inside the inference deck, there are lots of software optimization decisions one have to make, such as how to do scheduling, how to do caching. How to do load balancing. And a lot of these challenges in system design become different for inference systems because of three key issues. First is that inference system, as we see, there is a tight coupling of compute and memory.
+
+They have heavy GPU consumption. Both pre-fill and decode phase, but in addition to that, there's KVCACH that we maintain for keeping record of the processed tokens and newly generated tokens. So that memory keeps linear growing as we do compute. So, we have how do we do scheduling to consider both types of resources becomes interesting. Second, if we zoom out a bit, today AI agents are actually the dominant use cases for AI inferences.
+
+So that means a lot of the requests are no longer single step. They are multi-step, including tool calling, including reasoning, and multi-steps of dynamic processing. So that means how do we schedule requests for these multiple-step complex queries becomes challenging. And the third challenge is the workload varies widely. If you're doing document processing, your input tokens big, but output is simple.
+
+But if you're doing coding, your input is just One query, but the output could be the whole software suite. So we can see that for different workloads, the input and output could vary widely. And within a genetic workflow, each step, the workload could also vary widely. So that brings significant challenges: how do we make all these resource allocation decisions and caching? Decisions.
+
+Next slide. So, to address all these problems, the key theme we've been leveraging is called learning-augmented algorithms. The key idea is that all these systems of software optimizations can improve when they have more information. So a natural idea would be if we do prediction, example, if we can predict the output token length, then it could better guide the decisions. Or if we can predict the agentic workflow steps and the potential two calls and the two call length, it can also help us make better decisions.
+
+But prediction comes with cost. We have to collect more information. We have to take the same ML model to make predictions. So we have to justify the use of the prediction while considering the cost of maintaining obtaining the information. Next slide.
+
+So, as a snake pick, what we see, we can show you a simple example of AOM scheduling, which means when there are many users sending many requests to the LM serving system, I think you can just flash out all the animations. What we can see is that the scheduler would be the one. That peak the request to reduce the latency. And to make the scheduling decision, we have to know the request size from each user and whether the preemption or log. And we have to make strategic decisions instead of serving the users based on first-in, first-out fashion, we have to make.
+
+We reschedule the requests in terms of their order so that we make sure the shorter request gets first, so the overall average latency gets smaller. Next slide. So that's why we developed the TRAIL learning augmented scheduling system that essentially will do predictions on. Where the input and output token lens would look like. But this prediction is super lightweight because we can take the internal information of the LM system so that we can, as the ML model is trying to predict the next tokens or the output tokens.
+
+Tokens for this query, we at the same time use information to predict the number of tokens, the length of the request. And by leveraging that information, we're able to do shortest sRPT scheduling that would get better performance. But of course, we would need to consider the KVCH or the. Occupation, and also, if you swap short jobs with long jobs, what do you do with the KV cache? So, we have introduced a limited preemption strategy that also helps improve the job completion time.
+
+So, overall, if you see in the next slide, we have evaluated our System with more LAMA 3 models and also the NVIDIA GPUs. And you can see that TRIO is able to reduce the mean latency by 1.66x to 2x lower comparing to the state-of-art VOM system. And this is just one. One simple idea of how do we process simple LM requests. Next slide.
+
+And if you look at the broader AI inference domain, we actually have quite a different set of models, such as reasoning, mix of experts, quite different settings. Instead of simple generation, we have tools. Calls, batch processing versus interactive, and also genetic systems. We have different metrics. We've shown you how do we reduce latency, but in practice, people may care about throughput, energy, cost.
+
+So we have been building a full suite of prediction-based scheduling algorithms that. Could handle these diverse models, settings, and metrics. Next slide. As our most latest work, we have been thinking about how to do scheduling of agentic LM workflow to support energy efficiency. To make the agentic AI more energy efficient.
+
+The key idea of the OLA system is that we can able to separate the application layer, essentially what the agentic workflow is, what are the steps of the AOM queries and tool calls should look like, versus The workflow execution, where do you actually run the tools and the queries? Which model do you choose? And also, how do you do harnessing, workflow orchestration, memory management? Ola is the one who helps you make such decisions and help you match the workflow intents into the Info AI. Infrastructure.
+
+OLA is an open source project that has been widely used by many people, and we are looking forward to more collaborations on how to enable new types of scheduling decisions on OLA framework. Next slide. So we've talked about how to To improve the efficiency of AOM inference, reliability is another important concern. So, the question is: how can we enable the flexibility of AI jobs so that we can get better capacity, especially in the power constraint scenario, especially when power grid gives us? A specific power budget, or for reliability reason, it has to turn down certain power supply for the data centers.
+
+Then, on the AIE friends' job perspective, how can we be flexible in meeting these different power budgets? So, that's our POW system that we have been running in collaboration. With A.C. Cozcon from Boston University. And our idea is that the POWs can be the one who picks different types of configurations, such as the parallel schemes, KVCache of executions, and the batching decisions, so that we can meet not only.
+
+Only the throughput target, but also maximize the token per duals. So the essence idea of PALS is to treat the GPU power cap as a first-class control knob comparing to and use that in addition to the other inference job knob. Such as batch size. Next slide. So here's a running example of how POWs work.
+
+We have been taking the real-world power information from the power grids and then trying to adapt the LM serving knobs as we discussed the batch size, the parallelism. Schemes, but also the power caps. So we can see that with power tuning, we're able to always follow and match the target power cap, power scenario, but while maximizing the throughput. So the left-side side shows some statistics. We're able to Achieve 26% energy efficiency in terms of token per joules comparing to baseline VOM systems.
+
+We have 4x to 7x fewer cost violations on the power caps and improve the throughput by 22% comparing to static batch baselines. Quick clarify question. This is very interesting, by the way. I was curious, does it yet, or is the plan to eventually have it where you can even in real time look at the connectivity between different power plants and their proximity and connectivity to different data centers to choose which data center to route the tasks to? Pulse is for a single data center, it's already real-time, taking the real-time power grid constraint and making the adaptation of the jobs.
+
+We have ongoing work that's looking at more complex flows than just ALM serving, the agentic AI workflow, where there are multi-steps of ALM. I'm serving a tool calling. And for that, we've been looking to how to distribute the jobs across multiple data centers, as you're saying, because different data centers sees different signals or power grids. And I would think, even for just the real-time inference, too, a lot of times there tends to be a front-facing load balancer that then chooses where to route. Particular queries, even regionally, could have been integrated there, even on the inference side?
+
+Yes. So I think this is one example for only one replica, but in the paper, we also have multiple replica examples where there are also load balances sitting in front to decide the number of replicas. But the decision there is simpler because if Simply, the replicas are essentially the same. You just need to decide how many replicas to run based on your workloads. But the low-level knobs of how do you do load balancing, how do you manage KVCache, and all the batching decisions are the actual knobs that would affect the power usage.
+
+Really great work. Thank you. Other questions? If not, I'll hand back to Lu so he can talk about how the flexible AI workloads would enable him on the grid side to do that. So, as you can see, we do this back and forth now.
+
+All the more efficient and more flexible AI jobs that Minglan can design and articulate. How does that map into the power grid level planning and operations? We'll give you a snapshot of some of the ongoing research we're doing along those lines. One of the things that we are very excited about, thanks to again to the lab setup we have here, is that we are able to collect very fine granular data that captures all the way to milliseconds or microseconds level our flow. Fluctuation that is coming out of AI jobs.
+
+One of the benefits of having this high-resolution power data is that one can then begin to map their fluctuations at different frequency ranges. Most of us here are engaged. Engineers, we have taken a class in signal and systems, and we sort of have been comfortable about this switching from time domain signals to frequency domain signals. And that's sort of exactly what we are trying to do here: to understand the power. Spectrum density of AI workload from a frequency domain perspective.
+
+That has a lot of potential implications, both in terms of designing the energy buffer that is needed for data centers, as well as designing and operating the power grid control devices. To mitigate some of the potential dynamic instability issues that are coming to the grid. For those of you who work in this area, you may have heard about this world record event that just took place about 10 days ago in Virginia, where A 3000 megawatt data center was tripped out of the grid because of these dynamical instability issues. Thankfully, it did not create cascading failure, but losing a 3000 megawatt data center is no small thing. So, a lot of investigation has been put now into that particular event.
+
+This kind of higher visibility of what's happening at a very fine granular time scale allows us to have a much better understanding of the dynamic characteristics of the AI loads and the data center power consumption. And another piece of the work is at the core. Challenge right now facing the US data center power grid interconnection, and that is we don't have enough power. Many of you may have heard about this from different venues. The reality is that the grid is kind of running short of power supply.
+
+But If you really take a deeper look at this issue, you'll realize that the grid power is never flat. So the demand curve on the electricity grid is a time-varying thing because not everybody turns on their air conditioning at every single hour, right? You only turn on your air conditioning when it's very hot. So that means that the energy profile of a large grid can be characterized by these so-called load duration curves that you see here on the blue line. So in one year, there's 8,760 hours.
+
+So, the one that you see on the very right is the base load. That is the load that is on 24/7, right? It's only about, in this particular case, only about 10,000 megawatt. But in the same grid, there is one hour. A particular hour that has run the demand up to 70,000 megawatt hour.
+
+That's a ratio of 7 to 1, right? So that means in the same grid, there's a particular peak hour where the demand is 7 times more than. The baseload that this power grid is handling. So instead of asking how much of more firm 24/7 demand can we supply, we are trying to ask if we are able to just like the data center to be just off for that one, two, three. Or 10 of the very high peak demand hours to not use the grid power, then you will be able to have them onto the grid majority of the other hours without requiring a major upgrade from the grid.
+
+Don't get me wrong, we need to build a lot more supply. We need to build a lot more network, but that will take time. But for now, this is something right off the bat, right? So, this paper actually is already being accepted, so it will appear in the next months. But it provides you that viewpoint of the theoretical limit and how much we can take the power off.
+
+bed right now if you just allow a few hours of the year that data center not to be turned on. Another piece is one level deep into rethinking about the planning and interconnection permitting process for a regional grid operator. Here, the idea is that instead of the kind of a current status quo where the grid company basically sits there and waits for the data center developer to submit their request for interconnection and then do the study and then after a few months and then say, no, we cannot do that. We are saying, how about you proactively, meaning how about the grid operator proactively look around their own electrical network territory and then figure out what are the regions and locations that are most amenable for adding new big loads? With minimum impact on the grid reliability and minimum impact on the wholesale electricity prices.
+
+So basically, the argument is that the grid companies are the ones who actually have the model and details of their electrical networks. You might as well just leverage. All this knowledge and compute that you have to preemptively study what are the most animal locations, amenable locations, that would allow them to have a quote-unquote fast lane interconnection if they decided to do so in those locations. Shows that once you study the reliability gate as well as the impact on the wholesale prices, you can land at a few locations that are sort of most amenable to have least impact on the reliability, as well as the least impact on increase. The prices at the wholesale market level.
+
+And these would be, quote unquote, the fast-track locations. If a developer decided to build or submit a request along those fast-track locations, presumably the grid companies could give a green light for them as opposed to. Having them to wait for a number of months in order to get interconnection studies. And these are just a sample of many, many papers that we have published over the past year and a year and a half. It's a very active field.
+
+We have a lot of very dynamic and bright students. We not only work on technology, but we also work on a lot of the policy-related issues, as you can see from the top right paper, the joint work with the Harvard Kennedy School. And we're doing also major convenings, as you can see right here. We held Event just about two months ago, two and a half months ago, where we had a great turnout. On a sort of a more regular basis, we are hosting a regular both seminar as well as informal discussion series collaboration.
+
+With many, many entities and researchers and practitioners. We welcome your participation. I know many of you are probably in the West Coast, but if you ever come on to the East Coast, we welcome you to stop by and visit us. And we are going to do a A few more things in the coming year. One thing that is very exciting is that we're going to have a joint session with some of the colleagues at MIT on a sort of a series of deep dive issues facing the power grid.
+
+And we'll continue to develop a digital twin that looks at this energy intelligence infrastructure. Building upon what we already have in the lab, we imagine that we want to make it much bigger scale and mimicking a lot more real-world scenarios. And hopefully, this is sort of the eventual one of the our dream. Dream target is to have a digital training that really allows a cross-time scale and cross-sector decision-making at AI, compute, the grid, engineering, as well as policy. And we think that we have built some strong momentums to move towards this direction.
+
+And we are also in a very active phase of recruiting industry affiliates, like many of you, to join this Power and AI initiative. This is an industry affiliates program that has been approved by the highest level of decision maker at Harvard. And we have already welcomed the first cohort of the industry affiliate members into the Power and AI initiative. And they have already been shaping and actively benefiting from the work we do and the people we have. And just like a good party, you know, you.
+
+We want to have a few selected high-quality participants into this. And we hope that this conversation could be the beginning of engaging with many of you along these lines. So, with that, I thank you for your attention and be happy to take. Any questions? Milan and I both will be happy to take any questions.
+
+So, Professor Xi, can we attend these meetings via Zoom? The short answer is some of them yes. For example, we will plan to have a Power and AI initiative webinar series where The English Free Affiliate members will have access to his webinar series via remote participation. Yes. Excellent.
+
+I have a few questions and comments. Let us start with Li Yang Wu. She is saying, What is your perspective on 800 V DC? Thank you, Li Ying. That's an excellent question.
+
+800 V DC is on a lot of people's minds these days. So, for those who are not in power electronics, this is sort of a new power conversion architecture within the data center. And the reason they want to go for 800 volts is because higher volts. Means lower current for the same power delivery. And they want to go for DC instead of AC because of some efficiency gains.
+
+So, yes, this is something that kind of NVIDIA has imagined and has kind of a challenge the community, and a lot of people are working on that. I think it's going to be an exciting delivery, exciting technology to enable. I would say even more compact, more energy-efficient design of the energy provision to the compute, as well as the cooling of this compute. You know, maybe I missed to invite the power distribution good. Group in OCB, where they talk about this kind of things.
+
+Right. I didn't know you'll be handling it. But I want to send us a recording and slides. I will include them. Sure.
+
+Yeah. And we have, David, you have a few comments, questions. Yeah, I think I answered David along the way. Oh, yeah, right. So let us let us we have one from Robert Langston.
+
+He's saying, are you viewing the big hours as the DC actually being offline or running on local power generation and effectively being off grid? That's a great question, Robert. As far as from the grid perspective, both options are acceptable. Both options are acceptable. So you could either be offline at that particular locality and push the compute elsewhere, or you can still keep on, but it's just switching from the grid power into local off-the-grid power.
+
+The point is, the research, that particular research, the point is that we. We wanted to identify those particular hours that they need to be switched off the grid. Yeah. Thank you. And we have also, yeah, from Tuesday.
+
+So, Tuesday, do you have a question? Or, do you have a comment? I do. Thank you so much for this presentation. My question was on the topic of cascade failures.
+
+Some colleagues and I at Oxford had written about that just recently for Rexis. And I was wondering if there were any new technologies, I've learned of quite a few today to mitigate. The cascading failures from data center like to prevent catastrophic, like massive outages. Any direction or any post. I haven't got, I just saw it, so I haven't got a chance to read your post.
+
+But thank you for your. Question. I interpret your question about cascading as the one that is a cascading on the power grid level. Is that correct? Correct.
+
+Yes. Okay. For that, you need a few things to come together. One is that the power grid is not very comfortable. of having a large gigawatt data center just all of a sudden tripped offline.
+
+That to the power grid is a major disruption. So to the extent possible, we would like to reduce that risk of tripping a major, large load just suddenly off the grid. That's something. The second thing is, you know, even if that happens, it does not necessarily directly mean you'll always have a cascading failure. In other words, there are several guardrails, there's several kinds of protective control that is likely to take place.
+
+And for that to be effective, you will need to have some smart combination of local energy storage and energy buffer at the data center level and within the data center level, and some smart control devices at power grid level, something that the power system protects. Folks have worked for many years, one of which is called special protection schemes, which is essentially a wide area kind of a coordinated control capabilities. Like if this happens at that location, you do that in that location, and then you try to mitigate that cascading failure. So having this large one-off load. Tripping like data center certainly is putting even more challenges to that.
+
+So that triggers a lot more renewed interest in that direction. Yeah, I work on inferencing and benchmarking with the ML Commons. So we have the ML Perf benchmark. Is inferencing and benchmarking, is there a third? Party auditing system for that, or is that all controlled privately?
+
+I know, Minline, do you have any? I'm not sure, I understand your question. So, I do aware of the ML Common Inference Benchmarking effort. Your question, like, in addition to the That right. So I'm not, I don't have a background in electrical engineering.
+
+So please excuse me if it's a redundant question. But I was wondering if there's a body, like, is there a governance body for that? Or is that all done through private, like when they have to submit their requests? For energy? Is that through the state or is that private?
+
+Okay, yes. So let me comment on the electrical side of things, and maybe Minlan can comment on the AI training side. If a large load wanted to connect to the grid, they need to submit this request for interconnection to first to their local transmission. Transmission companies, the so-called utility companies. And then the utility companies will have to do the study in coordination with their regional grid operators, places like ERCOT or PJM or ISO New England.
+
+And then all of them will then be subject to the North American. Electric Reliability Corporation, NERC, for short, NERC standards. NERC is a standard setting body. And then NERC is actively working on the standards for interconnection for these large AI compute loads right now, as we speak. Thank you so much for answering.
+
+I appreciate it. Yeah. Any questions from anybody? I have a question. Now people talk about recursive self-improving agents a lot.
+
+I was just in a conference in Berkeley, maybe Midland, and you heard about it. Yeah. And I wish you guys came, or many people came. And we discussed this RSI, recursive self-improving agents. So, the question I have is: can we use the technology and algorithms behind recursive self-improving agents to reduce the power consumed by these agents or at least adapt their behavior to suit the power that you can get from the grid.
+
+Is that something makes sense? Yeah, I think that relates to both low and me. I think on my side, we have already been using this agentic solution to tune the inference deck, like the PDD segregation, spectral decoding, different configurations of inference for performance. Reasons. I think it can be naturally extended to consider the power grid signal as well.
+
+And I guess for, and I think these kind of self-improving agents are great in that they can take all the simulation or previous history information. And keep identifying new knobs and new configurations that could improve the system that's tailored for the workloads. I guess for Lur's side, since he has done the power agent work, it's already getting to agents, I guess. Maybe Lu, you can say more that. Oh, I think it's a great idea.
+
+That's a great question. Yeah, I think this is a great suggestion. It's actually something we are looking into. Yeah. You know, an IETF meeting, last one in Vienna in July, there was a two-day meeting.
+
+Organized by Sustain Research Group, and which is a group that I invited also to attend this talk. And the discussion of these two days is exactly about what you are doing. In fact, In fact, before the meeting I mentioned to them the work that IC is doing in the University of Boston and the work you are doing. So what you are doing is very, very relevant and to what IRTF and the community are working on. So, I really am going to talk to the chairs, the three chairs of IRTF Sustain, to really look at this work and maybe join also your seminars and conferences and meetings.
+
+That's exactly why we are here. We hope to make people aware of the Harvard effort and look for opportunities that can align our research observations, insights with the practitioner that accompanies current needs. Of questions they have in mind. I know many people are building data centers in this community and having trouble accessing powers or having all kinds of reliability challenges for accessing power grids. So I think it would be great if we can partner together.
+
+Yes, I will take care of this. And that's essentially why I think we established this industry affiliate program you'll have on the screen. If anyone are interested, please reach back to us. We can have individual discussions on it. It is it's a hot topic and as you mentioned, IC has been working on it for quite some time.
+
+So, and I will send you some feedback I got already. Christine asks the same question I asked. Is virtual participation possible? I think yes, the answer is for some meetings or sessions, yes. So, that question.
+
+Been answered. We got two on you. Christine, would you like to speak about your question? She said hello. If you can speak, it will be great.
+
+Yes, sorry. Go ahead, Christine, because you have a long question here. Go for it. Thank you so much. So I have a couple of questions.
+
+The first one is that there seems to be like a chicken and egg situation right now, where like AI companies try to seek locations where there already is like power to build their data centers. And then at the same time, of course, like power has to now come to locations where there are data centers. So it's like both. Ways. If we were to ignore the fact that, okay, there already are existing data center locations and we have to provide the power there, and it was just up to the power folks to design the grid appropriately.
+
+Like, would you recommend moving to smaller, decentralized, like minimum? Mini grids rather than this current traditional centralized structure of the power grid. And then secondly, it seems like China doesn't have as much of a th of a problem with power like the US, which could be partly because they've, I guess, got to grow their systems later. But I wonder if you know what they're doing with the grid that perhaps the US could learn from. Thank you for your questions.
+
+Both are excellent questions. For the first one, it's very convoluted because there is. Is value to be said about having a large data center and a large grid because of efficiency and resource pooling. But it's also something to be said about having more resiliency and more reliability if you were to move to a smaller, decentralized structure. Given what we have.
+
+Now, I think a reasonable approach might be to take whatever we have and try to be realistic about what we might be able to construct and then move the rest perhaps to some off-the-grid solutions. Regarding China, as you mentioned, it's an infrastructure that is. Developed much later than the US grid. So there is a sort of a late commerce advantage. The other one is that the decision process in the Chinese system is very different.
+
+It's a very, very top-down, centralized decision-making process, as opposed to a multi-stakeholder, bottom-up, decentralized. Decision-making process. And in terms of the sheer volume, it's about two to three times as large as the US grid. So that's the situation there. So that's why the power problem is more acutely felt here.
+
+The US. By the way, you have mentioned a few papers, but there is one, I think, that you and Millian co-authored, right? Yes. But which one is this? Because we need to make sure people will get these papers.
+
+Right. So we have co-authored several papers together, actually. Perhaps one that is worth the first look at is the top right one. Train. The top right one on the very top right.
+
+Data Center and the US electric grade. Yeah, that is the one I'm looking for. Yes, yes, yes, yes. And please send me the slides to share it with everybody. I will share it along with the recording.
+
+And I will take the action item to talk to people in Sustain RG research group because they are. Very much interested in what you are doing. It is the subject. And there will be a report coming out of this two-day workshop in Vienna. I have the presentations from the last IRTF meeting in July.
+
+I will send the presentations to. You and when the report comes out, I will also send it to you. That's good. And I will make them aware of fully aware of this presentation, what you are doing, which is really excellent and timely. Thank you.
+
+Yeah, and thank you for giving us the opportunity to present. Thank you. And we look forward to. To continuing the engagement through the Power and AI initiative. Thank you.
+
+Can I ask a quick question or two? Yeah, sure. Very important subject. Thank you very much. Go ahead, David.
+
+Sure. So, one for feedback. So, on the financial side, one of the things that many companies, depending on their regulatory regime, especially in Europe, some cases in the US, though it goes back. And forth that they want to be able to present is what their carbon footprint is. Given you're actually instrumenting the grid and have the details of the different power plants involved, you can presumably estimate what the relative carbon footprint, if any, is for each source.
+
+Can you see an easy way to then instrument so that per LLM call, as part of the response, you actually get back? What the carbon footprint was. So that way, individual companies can, one, do the accounting, but then also do the optimization and reporting. And then the other question was: you mentioned microsecond-level time granularity for measuring. How are they doing time synchronization with that?
+
+This is something that Hasham and I often talk about. And I'm just curious, also, then, with regards to vulnerability, if it's GPS. Based. Okay, so for the first question, I think for research paper-wise, we're able to just profile the kind of energy usage of the and GPU utilization, memory utilization of the inference engine so that can try. Translate into carbon numbers, and hopefully that can also be used to optimize carbon numbers as well.
+
+But that's research-wise. It requires instrumentation. So I'm not sure in production setting how much of those, how precise you need to know the. Carbon footprint, and also how much instrumentation is possible. That's related to the precision question.
+
+Yeah. Does it answer your question? I think we are very interested in building a carbon plane that can announce for the AI inference what other. Carbon usage for different settings. Harvard is actually part of the NSF expedition project that's targeting exactly these points on building the carbon plane, understanding plane for data centers.
+
+Yeah, but bringing a two more practitioner view is important for us. Yeah. And that's what I'm curious. Does an individual data center know in real time the composition of who's providing its electricity? Or is this really just really managed at aggregate at the grid level and therefore even they can't tell?
+
+So maybe yeah, go ahead. Maybe I can just provide sort of a two-layered quest answers. Physically, this question is an invalid question because the electricity is electromagnetic waves. Like, even if you can do a thought experiment in your mind, like if you can color every single electron and you can trace back, it's just like turning on the water faucet in your house and that's the Oh, that water is coming from that pond or that reservoir. That is kind of a wrong analogy here because electricity does not trace back like the water trace back to the reservoirs.
+
+It's electromagnetic waves. So that is sort of physically, it's just a wrong analogy. But contractually, one can. Make the case that, depending on what kind of a contract, power purchasing contracts the data center has made, you can argue that they are using what kind of generation technologies. For example, companies like Apple and so on have made a lot of pledges on sort of a zero-carbon power.
+
+It doesn't mean that they are not. Burning any electricity that is coming out of a fossil generator. It just means that contractually they have been paying those who are producing from zero carbon, like solar and wind, to match make with their supply on a contractual basis. Yeah, exactly. Because data centers.
+
+Made these pledges internally, they have been measuring not necessarily in the finest gravity, as we see, but they have been estimating the carbon usage for their job. Yeah, I think the issue with the analogy is historically when you're doing it at the company level, it's done in aggregate over long-term periods, where you can imagine there are startups. Or other companies, you need to know. And I think the electromagnetic algae is still valid because at any one point in time, minus speed of light issues, there's going to be some composition of power plants and/or battery storage that is generating those electromagnetic waves. And so it should at least theoretically be possible to backtrack that and know.
+
+The question is: Who has the data? Is it already being recorded? If not, how can you make it available and then provide that to customers? And then the follow-up to that as well is: if a company is debating, do they spin up a larger load? How is that incremental load going to be met?
+
+And often you'll have different power coordinators that will do this that. Have pre-done contracts, but can you provide that a priori so they don't find out the hard way of, okay, we're going to spin up a massive, let's say, 10-megawatt load, and oh, it's going to a coal plant versus battery storage or something greener. Yeah. So, on your second question about microsecond scale, right? In our testbed, it's just a single GPU server with multiple GPUs.
+
+So we don't have that issue of synchronization that much. The monitoring and the single GPU server are well synchronized. But as we go larger scale measurement, I think that's a solid question. But today, I think for most AI data centers, they rely on standard synchronization techniques. So, we probably will just reuse those instead of introducing new synchronization strategies.
+
+Okay. And just a thought, again, I really love what you're doing. That's exactly what's necessary. One thing to consider, and some of my students were doing this initially as well. For doing computational fluid dynamics simulations of the data centers, you can get real-time telemetry at a lot of these devices.
+
+They have things like IPMI, there's BMC. A lot of academic data centers, though, by default, don't enable or use these. It may even be worthwhile to see what you have internally at Harvard and in some of the other major academic labs to just get that. Data because that can be a gold mine and an opportunity for optimization. Sometimes it's just things like setting the power saving mode, whether it's enabled or not.
+
+Yeah, yeah, we are in contact with Harvard data centers, and yeah, these are on the discussion. That's very interesting. Yeah. And then one other one: that some of the CAD vendors are spilling out a lot of. Very interesting tools.
+
+And they're looking for ways to provide use cases that they could demonstrate to commercial customers. And so, for this reason, they're often willing to give the licenses for free to what is normally extraordinarily valuable intellectual property. So, everything from monitoring power, heat flow, electromagnetics, mechanics. Airflow, you name it. That could be another one potential to look at.
+
+Because if you look at some of the scale of these build outs, things that people never ever considered before, like I have 24 slots to stick in one hard drive, which of those 24 do I choose to put it in? Right. Or similarly, when you're putting PCI Express cards at the back or a lot of these other. Settings, suddenly those details make an enormous difference for the areas you're targeting. And often the firmware for this is not optimized at all.
+
+Things like fan speeds, it's comical. I have workloads that'll suddenly spin up 100%, and it's actually wasting more power and generating more heat than if you manually override the firmware, assuming you're willing to risk the hardware to do that. But that could be another potential one to look at is even within the servers themselves and then the components on top of that. Yeah. So if you have recommendations on who may be able to give us more detailed power measurements, especially all these additional components, yeah, please, please send your information.
+
+I think it would be very valuable to us. Happy to help. I talk with the different OEMs, and then there's also a protocol on the motherboard itself called I think PM Bus. And most people don't normally do it, but it is one of these serial-based protocols. And so you can literally tap in directly with external devices, something like a Raspberry Pi, and then query it at whatever the max speed of the buses.
+
+You just need to make sure you don't step in. On door to the onboard management computer, but that can also be turned off. Yeah, I think these things we know we're doing. These are very low level. The vast majority of even commercial customers do not do this.
+
+But if you're doing certain things, they can come in handy. Yeah. But on the other hand, I think we do recognize the limitations of our local GPU setting. I think, as you mentioned, the cooling, the power are not industry standards. Le and I will be sharing our microsecond-level fluctuation results soon with the paper.
+
+But I think if there are any industry members here who are interested in partnering with us to do all these fine-grained measurements and seeing. In the fluctuation, even mitigating it for your inference data centers, that'll be very exciting collaboration opportunities. And one of the ones that could help, because there's only so many firms that have the large-scale ones, try reaching out to the actual vendors who provide the test labs. So I know, for example, I think NVIDIA and definitely AMD, they have cloud-based ones, they provide the customers. Customers, they may be willing to provide you the metrics as well.
+
+And then they can also give you more details on the internals, possibly only under NDA, but give really, really fine granularity that typically only the people who design that particular circuit board or chases may know. But even they're looking for opportunities to collaborate. Collaborations, yeah, they're available. I think David also the tab group and OCB which I invited has many people who can contribute to this time synchronization stuff. Yeah, I think more broadly it's about the fine range measurement of the fluctuations in the real AI data center.
+
+I think that's where We'd love to partner. Okay, okay, good point. So I think this is an excellent presentation and excellent work, really, and very timely. And thank you very, very much, Professor Xi and Professor Millian, for taking the time to present to us. It is really great.
+
+And I will take action items to spread the word and get people to join your your your consortium or your your projects because this is beneficial for the entire industry. That's exactly what everybody's talking about. AI is good, but it takes too much power. Thank you. Very expensive.
+
+So, thank you very, very much. And we'll continue talking for sure. And have a great week. Thank you. Bye bye.
+
+Thank you very much. Another great presentation from Harvard.
