@@ -1,0 +1,217 @@
+Server OCE Modularity for HPC and AI workstream 2026-08-04
+
+Hello, Boone. Hello. Can you hear me? Yes, I can hear you. I think we can wait for.
+
+More minutes. Okay. Hello. Hey, David. We are good, good.
+
+Um we're waiting to start at twelve oh five. Okay. Okay. Good morning. So I think I didn't send an agenda yesterday because, you know, I was not sure where we were because I haven't been able to attend the last two meetings.
+
+I didn't want to, you know, I wanted to catch up with you guys first. And then I imagine that's the reason why we have low attendance today. So maybe we can use this time to catch up and then to see where we are and where we're going. So maybe Josh, do you want to do you want to talk about what we have been doing? So I'm on a phone right now, but do you have that Google Docs?
+
+Um we can screen share with that. That that has notes from the last few meetings. Is that the um the white paper genomic? It's yeah, I think you sent to me a while back as a start of a white paper, and then I started taking notes there from the meeting. Okay, cool.
+
+Um let me share my screen. Um okay, so this is it. Um and then you have notes Yeah, so exactly. I mean, there are not a lot of notes, but I was trying to capture what we're talking about. And it summarizes basically what I mentioned.
+
+And I think, hold on, let me check. I think the end answer is more or less here in the previous meetings. About trying to come up with an iterative process that starts with a reasonable design. So, of course, we talk about what is a reasonable design for the genome bedstar, and then come up with criteria, ways to estimate positive performance so you can iterate. Okay.
+
+Um okay so how can we come up with a reasonable design? What would be yeah so how should we Move forward with that reasonable design. Yeah, so that's what led to the discussion of tooling. I mean, we have the benchmark. I'm sorry, we have the profile information for the batch, or at least some of it.
+
+So we can start with a design that even doesn't have a fixed function accelerators if we want to go that way. We know more or less how much memory bandwidth it has support and capacity. So, and then we We might have to guesstimate when it comes to like scaling up the the compute resources. So I forget how many GPU uses this run on, but if we want to achieve that with more compute resources and different ones, we have to scale accordingly to the throughput and then have another estimate about the data movement between compute. And memory through the NOC or whatever we have there, that's also a function of the memory bandwidth.
+
+And then that can give us an initial design. And then, if we want to scale have specialized RTL, we'd have to scale up the the computer throughput accordingly, which would scale up the memory bandwidth. It's simplistic, but it's something to start with. Mia, so can you go back to the first step you mentioned? I think the first one I mentioned was about memory bandwidth.
+
+And that has to do with, so if we look at the profile information from the benchwork, They give us how much memory bandwidth it has. Now, I forget if it was a time series. There definitely was an average. I can't remember if there was a matchmoon, but at least it gives us a target. Yeah.
+
+So, memory bandwidth, let's talk. Step back and then let's talk about memory. We talk about memory. What do we want to do with this? So, I guess we have off-chip memory and then we have on-chip memory.
+
+And then, for off-chip memory, for both of it, right? So, we have, you know, I guess we can close. Memory according to the location. I'm just going to from what you said, George. I don't know if it is the right way to start, but we can start from there.
+
+Okay, so memory. So I'm going to say instead of memory, bandwidth, I'm going to say memory. And then location. So we have off-chip memory and then we have on-chip memory. And instead of off-chip, I'm gonna use off-package memory and then on-package memory.
+
+And then after the location, we can say the technology we wanna use for this. Or we want, or we should use for it. I don't know. And then we have DDR and older variants. But I think in general, DDR is the low power DDR and the fast, I guess, DDR.
+
+If I don't know, if Boon. Or David, do you guys have some different idea about um you know the different DDR technologies? And we have HBM. Um I don't know if there are different types of HBM. I guess the main difference here is it's planner and I guess we have three D.
+
+Is there anything any other decision we have to make about memory? Of course, we have capacity and then we have bandwidth, but is there can you guys think about any other decision we have to make about memory? I think here is how I think about this. And I think this is in line with what George was suggesting. Our top-level parameters are memory bandwidth, right, based on the benchmark that based off of the three benchmark, right?
+
+We have a number for memory bandwidth that this Model needs. And then the other top-level decision is how many gigaflops or teraflops per second. I think that was also in the benchmark, if I'm not mistaken. So we take those two. And in terms of which memory to use, I think really the choice is we pick one memory type and then see how do we support that memory.
+
+Bandwidth with that memory type, right? Do we need to have multiple channels, multiple chiplets, and so on? And then in terms of the flops performance, the compute performance. We can if we can translate that into a Matrix multiply size that would be good. It may be I think the matri matrix multiplies size Am I books still here?
+
+I think we lost David for a second. Okay, so I think, well, David was talking about compute at this point. I think he was moving on to compute. And then for compute, he was thinking in terms of Of you wanted to have, you know, it's a matrix, matrix multiplier. I guess he was thinking about an accelerator, but when he comes back, we can ask him.
+
+Yeah, so let's. But while while David comes back, let's come back to the memory to the memory situation. What I would propose is to take a look at the bandwidth and the capacity that the that the report give us. And then figure out if we can map this with some of these technologies and what will happen if we put it on package and what will happen if we put it off package. So, basically, what require, you know, yeah, so how would that system look like?
+
+And we start writing about it. I don't think we need anything more complicated than that to start with. There are, I think there are plenty. Well, I don't know that I haven't looked into it, but there might be plenty of maybe documentation about the specifications of this DDR. I don't think there is a lot of information about how to integrate DDRs into the chiplets, and that's where we can, you know.
+
+Come up with a couple of suggestions as part of our white paper. So, David, I see you're back. Yeah, sorry, where did you lose me, guys? You were, you know, you finished talking about memory and then you moved on to. Compute and you were talking about if we can map things to matrix-matrix multiplication.
+
+Okay, yeah, so the two top-load decisions were the memory bandwidth that we want to achieve, and then from that we derive we pick one. memory uh type and see uh how many we will need to get that memory bandwidth. On the other side is uh yeah, the compute basically um of I think the benchmarks did uh report a gigaflops uh per second compute. It's escaping my mind right now if they didn't, but, or max per second kind of number. If we have something like that, then we can create a size for the compute, hook the compute, hook up the compute, and the memories in a topological.
+
+Run simulation and see what is the actual performance that we get and kind of move from there, right? But the idea is to create one design and then iterate on that design to optimize it. So, David, what I'll go. Go ahead, sorry. No, please go ahead.
+
+Yeah, so what I was proposing based on that is to start tackling one thing. George mentioned first memory, then you mentioned compute. I think we can start with either of one, any of those, any of those. options I would say let's start with memory just because um honestly just that's because that's where I am less thirst. So what I would suggest is we have the we have the the bandwidth necessary.
+
+And how much memory do we need for this to work? So what I wanted to propose to the group here is to let's do some research about What would it take to integrate the DDR either on package or off-package to our system given the bandwidth that we have and the capacity that we have? So we do have those numbers, right? Based on the reports. I can do, I can go ahead.
+
+And maybe later on look for those reports and put the numbers here. So I can populate this to the bandwidth and the capacity. And then we can start this section of the white paper, just saying if we want, something like if we want to integrate. Unpackage high-density memory, we would have to, you know, we would have to, you know, with that capacity and that bandwidth, we would have to integrate, you know, as you, I think one of you mentioned X number of channels. And then, you know, the interface looks like looks like, you know, and then it depends on what the vendors are giving us.
+
+I don't think there is any possibility for anyone to fabricate EDR other than the Typical vendor, so I guess we have to stick with that. You know, the IP, so that means that we're gonna need an IP. We will need this IP and the IP will be in, you know, in wish shape, right? So it will be an. IP or it will be part of a chiplet.
+
+Can we make only this IP a chiplet or we can do it as part of what you know? We have seen a lot of proposals from other companies saying, you know, we will sell. this chiplet, but this chiplet usually has a lot of interfaces integrated. Um something like Creda, I think. I saw I remember two of those companies that we saw.
+
+Um so so yeah. So do you guys think we can start tackling this um um in the way I'm proposing? Yeah, I think that's fine. We can if you want to poke to start with one particular Memory type, we can see what that means in terms of how many we will need and how many channels and so on. And then that will be revealing in terms of whether it's doable or not.
+
+What I'm thinking is: say, if you say, let's start with the LPDDR5 and looking at the memory needs and the modules available from vendors, it turns out we need 20 of those. Well, that's not gonna going to work either way, right? But if we need two, then that's definitely doable. So you're saying if we need if we need to if we need to LPDDR modules to satisfy the bandwidth and size requirements, I think that that is a realistic implementation, right? But it you said if we need how many it was not doable?
+
+Twenty. Okay. All right. Those are two easy examples. If we if it turns out we need eight, that's gonna be interesting Thinking process to see if eight can be accommodated on package with a single compute chiplet or maybe two compute chiplets.
+
+I don't know, right? And I think that that's where, yeah, I agree. Let's start with the memories and then let's see how many we will need of a particular type. Okay, and then see what that tells us. Okay, so what I would support, what I would propose is let's start with the state of.
+
+The art. We don't need a review or an evolution or history. We just need to know what is available. And so basically, availability, and then maybe you know, vendors, and then maybe possible solutions. And then I guess there are which startups are in this are in this game and then with that with that if we can generate a table like that, we can map it with whatever bandwidth and capacity we have from the Profiling results.
+
+With that, who wants to take a lead on doing this state of the art in memory? I guess who here has more? You know, has looked into the DR closer. Unfortunately, I'll be traveling for OCP, Taiwan. So, if somebody else would like to take on that, that would be awesome.
+
+Oh yeah, I enjoy Taiwan, David. Nice. Yeah. So I don't know, maybe Victor Boon, would you guys be interested in looking into DDR technologies? Myself actually just came back from vacation.
+
+Welcome back. Yeah. And so I'm interested in it, but I'm not really a hybrid expert. So this article being worked on right now, I don't know what's the current state. This early what, sorry?
+
+Oh, this white paper genomics. Yeah, so it is very early. We just have notes from previous meetings. We don't have anything much. What I wanted to do today is set up your.
+
+Know the sections so we can start working on it section by section. We can even do it during our meeting. We don't have to, we don't have to be, you know, we don't have to do it, we don't have to do a lot outside. I was just wondering if someone here had a little A bit more experience with DDR. So it might be easier for that person to deal with it.
+
+But Victor, if you have not necessarily looked into DDR, maybe it's not necessarily a task that you might be happy or interested in doing. Yeah. No, not I'm not really deep into DDR. So in the previous meetings, we talked about like the last year's work versus what's going to happen this year. I know we did even when I was traveling, I actually still called in a couple of times.
+
+So, I see there's a lot of discussion. Has there been any conclusion or plan? What will be different from last year's work? Yeah, so yeah, good point. You just reminded me, hopefully, it is completely different because it's going to be hopefully.
+
+we're going to do it in a very different with a very different methodology and a very different focus um so just starting from the memory um it's going to be something that we didn't look into for the other paper the other paper was more looking into into um you know, the the connectivity between the chiplets, um, showing that um if we can come up with a recipe and a set of chiplets, we could actually build um three different versions. But this one is is a little is hopefully we can have um a different vision for that. Now that you mentioned, we have a new deadline for that paper. So the new deadline for that white paper is going to be September, sorry, it's going to be August 15. So my plan is to take a look at it this week and then.
+
+Bring it up, you know, you know, we'll probably have to work through emails and then bring it up on August 18. So, so we can, that week, you know, the week of August 21, we can submit it to OpenDig Shell for approval. But the idea is to close that paper. As it is, and then try to focus this paper, this new white paper, on more on AI, you know, on this particular AI data set that is AI-oriented. I don't know if that makes sense.
+
+Yeah. Um, so what's uh originally I proposed there'd be more kind of a cross-group collaboration, uh, like for example the the memory hierarchy and leverage uh like information from other groups, right? So um the after that. in the in the co-design working group uh we actually have some uh new uh work that's done recently and uh the conclusion uh is uh other than that their last year's work ended in a in a in a uh ai fabric uh white paper The next step conclusion is there will be good to have more kind of how to stay other than white paper, kind of a standard. For example, there are AI fabric standards.
+
+There's a lot of discussion about like Both the software architecture standard versus the hybrid hybrid standard. And separately, there's also neuromorphic computing discussion about what standard can be created, even if that technology is still in the early stage of the. Production use cases. So, yeah, so that's the conclusion there. So, when it comes to chiplet, which is definitely important piece in the whole puzzle at this point.
+
+I don't believe there's a lot of discussion in that white paper about Chiplet, but I wonder what do you think Chiplet's role in the bigger like hybrid software co-design ecosystem, what chiplet role? In that field. Yeah, so what is the role of chiblets in setting up the AI fabric standard or on and on a standard for neuromorphic computing, right? Actually, yeah, actually, there's a there's a Neuromorphic is actually, I know a lot of things to talk about, so it's kind of confusing. One is there's two topic actually.
+
+One is AI fabric. So that's so how do I describe it? So it's more of a non-neuromorphic. Neuromorphic it's it's is a is a a separate topic, but it's it's also um basically w how i i it it more it's it's more of how does OCP um what is OCP's role in hardware standard? That that's probably the I guess that's a the that's the bigger question.
+
+Because so far, if you look at the standards created or even white paper created in most of the OCP working groups, most of the working groups the the the the end result product is usually actual hardware spec. For example, You know, how big is what was the cooling spec? What is the actual size of any particular component, right? Hybrid component. But how does that meet the new requirements of like?
+
+Agentic AI requirement, Kubernetes, how does it meet the requirement of neuromorphic computing? So that's why there's a conclusion, at least by the co-design working group, that it needs to be more than just harvest. Specs it needs to be both how those higher specs help integrate the new technologies. Yeah, I think that is a very good question that I definitely don't have the answer for because you know I'm relatively new to this area, but David. I don't know if you've been around for longer.
+
+Maybe we can you know, we can also Victor, we can also ask Anu. But David, is there, you know, any path from for what we're doing become a standard? Um or is it something that you have never seen done? I don't what off the top of my head I'm Having a hard time figuring out which part could be standardized. Right.
+
+Because here what we are trying to do is prove that we can build a custom system to meet a specific target. Right? Is my understanding correct? That we can optimize a system to meet a target, right? At this point, I guess yes.
+
+So I think that is. Victor, what I would suggest is to bring up that to the Friday meeting where we talk with Anu and Jawad. I'm pretty sure they have seen, you know, the whole picture, they have a better vision of the whole picture. I would say, you know, like we. If we get these two white papers out, right now, the first one that is kind of seminal and basic, and then this one that is going to be a little bit more relevant and current.
+
+I don't see why not at some point we got. Enough momentum to start looking into standards. My only concern is that we are a small group. We are very few people, so I don't think necessarily just us are going to write the standard, but I do think we would be able to contact. And we'll have something to say if we wanted to go in that direction.
+
+Yeah, I can. Yeah, go ahead. Yeah, I think there are pieces that definitely can affect standards. One is that comes to mind is In terms of description of the chiplet, right? Now I'm putting on my CDX hat, but what description: if somebody comes and gives me a chiplet and I have a way to Estimate the performance of the chiplet in my system, right?
+
+What is what how would they describe the chiplet to me such that I can do my estimation? Right. Facts per second, all that's needed, or there is more, right? I think there is more, right? Because they have to describe poly caches, interfaces, latencies, and so that then I can take that and estimate for my model what that would be.
+
+Right? Yeah, actually, Hisham just joined. He's a main driver behind one of the topic: the neuromorphic computing. So, Hisham, do you mind maybe? So, we're talking about standardized standards.
+
+How do we do standards, right? So, when it comes to triplet and neuromorphic, do you see any opportunity for the two topics to be talking the same when it comes to? Generalization, anything that's related to both? Yes, absolutely. Currently we don't have any standard for neuromorphic.
+
+If we can add this tablet to it, that will be great, actually. But who's gonna do this in OCB? Uh Luisa group, this group or some other group? Develop the standard for the morphic and the triplet. Will this be done in this group?
+
+So go ahead. Sorry. Yeah, so I think there there's a two. Two sides of it from the discussion in the co-design working group is we need to understand the requirements, the code requirements, right? Whether it's neuromorphic or agentic AI.
+
+For example, I paste the list of organizations. This is a guy called Masut. He is also. Active on the software side. He is proposing so-called GPU virtualization for cloud native, basically for Kubernetes.
+
+So he proposed that we need to talk to standard organizations such as Ultra Ethernet Consortium. Gen TI Foundation, CXL, which is definitely relevant to OCP, et cetera. So, this is for by understanding the requirement, then we know what kind of hardware solutions they needed to meet those requirements. That's what that's part of the co-design. Same thing for a neuromorphic.
+
+Has invited lots of experts in neuromorphic. I think it is definitely there's a lot of opportunity to understand from their perspective what can be standardized. For example, neuromorphic can save energy, which is pretty big, right? Pretty big nowadays because data center energy is. Is a big problem, short of energy.
+
+So, how do we standardize it so that the neuromorphic solutions, which is still kind of in infancy in the production life cycle, because most of the neuromorphic is still not considered production ready yet? I could be wrong. So, but how do we design? What is the requirement for those solutions when it comes to hardware? And what can we standardize so that, for example, if we have a regular chiplet and we have a neuromorphic chiplet.
+
+How does the two can be put together in the same enclosure in a computer rack so that both the neuromorphic application use cases and the regular AI workload use cases, or even HPC use cases, how can that requirement? Met by the harbor standard. Yeah, I think that's so. So, so, Victor, there are computing and there is communication, which is the fabric. So, when you talk about a standard, you talk about the computing, neuromorphic computing.
+
+Or new neuromorphic or the fabric that connects all these processors that do neuromorphic computing. Yeah, remote. I'm actually talking about the full stack. For example, neuromorphic, that's the if we want to put a neuromorphic chip. Or neuromorphic, the whole stack together with the classic HAI hardware.
+
+What is the requirement for the maybe the stack coding requirement, for example? Does it need different coding? Cooling requirement because quantum, definitely some of the quantum computing needs a totally different cooling requirement, right? So putting a quantum chip, a qubit that needs a zero temperature, zero degree temperature together with a regular chip is not feasible. So, the question is: what about neuromorphic chip?
+
+Can we put them together? What is the harbor spec? What is the temperature requirement? Yeah, that's what I mean about standard. Probably so.
+
+So, if we want to do something combining neuromorphic is classic, even Is quantum. What are the requirements? And specifically about triplet, what are the requirements for triplet to be what it can be the connectivity, it can be the interconnect, or it can be the chiplet itself. So, as you know, a vector, I wrote two white paper. One, I already submitted.
+
+To our group, the Code of Line Group, which will talk about neuromorphic computing and discussing many aspects of the neuromorphic computing. This is a 50-page document that I think our group is working on it to create the OCB-wide paper. I touched upon some of the Issues, but you're right. I don't think I specifically talked about a triblet. There is one paper I just sent it to the group yesterday, or actually this morning, about the fabric, how neuromorphic computing fabric looks like.
+
+But in this one, I talked about interoperability between GBUs and neuromorphic computing processors, how they can interwork with each other, with different fabric or the same fabric. And that this I submitted the paper today, this morning, and I think Victor Wiefang mentioned to me will be leading the discussion or the meeting this Friday, which I will not be able to attend because I'm attending another meeting in Stanford. So we can discuss these issues. In summary, yes, a triplet needs to be addressed in more details than what I covered in both white papers and interoperability between the GBUs and TB. and neomorphic computing processors that also need more more discussion.
+
+So you are raising good points. So both a tablet and interoperability need to be discussed. And but I really don't know which group is gonna talk about a standardization or discuss this topic in details. Maybe Louisa can, for the tablet, Louisa group, this group is the right place to do it from a tablet perspective and the other group, co-design group, can discuss other Issues like the fabric. But from a computing perspective, standard, maybe Luisa group can take care of it.
+
+I don't really know. I don't know which work stream is best to handle the standardization effort for neuromorphic computing and fabrication. Or computing and communication. Yes, I think this is, I mean, you guys are bringing up really exciting topics, right? We can definitely have, I think, George and What do you think?
+
+But we can definitely have a case of a study where we look into how chipless will help neuromorphic computing. Definitely, I think that's pretty cool. We'll just have to decide. Want to finish the white paper genomic, or if we want to transition to this new other topic. I'm excited about both, so I don't think I'm the kind of person who can make that decision by myself.
+
+But I would say, I would suggest let's do this. Let's bring it up. I'm going to set up. email to Anu and then so I'll bring it up. I don't know if and then she'll tell me if we wan if we can discuss this on Friday or not or what would be the right forum to discuss this.
+
+So the first thing I'm gonna bring up is standard decision, what c what part of our work can become standards and how. does OCP has a path for that. I think I heard Anu discussing that at some point. So I think we just she's she's the right person or she will point us to the right person. The second thing I will bring up to her is there is this new exciting topic that is neuromorphic and Victor and Hijam are suggesting that we can look into a cheapized architecture for neuromorphic computing, which I think is going to be really cool, novel, impactful.
+
+So I'm super excited about that. So I'll bring it up to her as well. Yes, that is this would be interesting because as I mentioned, Uh, I personally, for all the meetings I had and the paper I wrote, I don't think I focused enough on the tablet. The other thing I wanted to mention, Hisham, can you share? Um, I was actually, I stopped, um, I stopped sharing.
+
+because I was looking for that, but I couldn't find anything on my email. If you can share the two documents, I I shared the one with you because I invite you to my meetings, but you you travel a lot and you are very busy. But yes, I can sh I can share it again. I know you have lots of travels. Louisa.
+
+I know, I know. But the good news is that summer is over. I don't have any travels on the horizon. So I'm hopefully going to be more available. We need your brain, Louisa.
+
+That is so nice. You have a big Brain, so we need it. Well, thank you so much for saying that. I you made my day, uh, but yeah, so I will do. Um, if you can share those two documents, I'll do my two homeworks.
+
+Um, and then okay, so I guess what we can do as homework to finish either, you know, even if. we do neuromorphic or we continue with this one, we're gonna have to figure out the memory. So I guess the homework that I would give to everyone is um is is if you guys can recruit a a person for you know, it it doesn't have to be one or it doesn't have to be, you know, for the remaining of the time, but If you can recruit a person that can help us put together this state of the art on DRAM for the next couple of weeks, I think that would help. So I understand no one here, no one that is in the meeting. I know has the expertise.
+
+But if you guys can reach out to your network and find that person that can help us write this little section and give us a pretty clear understanding of the numbers, I think that would help. And now that I remember, George, didn't you already do that in one of your? Slides for memory? I yeah, you know, I was trying to remember when you were talking about it. I think I did do that, but I would not call myself an expert.
+
+All I did was a web search release. So we can use it if we don't have a better option. But I don't know if we if we have. We should probably try to do better. Okay, but let's do this then.
+
+Would you mind sharing, like when you have a chance? No, Harry, would you mind sharing those slides with me? Where I remember you have a table with specifications. So let's start with. That table.
+
+Okay, so I want to finish the meeting. We have 10 more minutes with a to-do list. I'm going to call you by name next time, but come, don't get scared. So, the first thing we're going to do is we have to reach out to Anu and then we figure Standards. So I know.
+
+So I'll do that. But then I'll also copy Victor and Hisham. I can copy everyone if you guys want, if you guys don't mind to be a spam. So let me know. And then, you know, a little bit of shift in.
+
+Focus to neuromorphic. Luisa, do you have people? I think you have people in Berkeley Labs, Lawrence Lab, who are working on neuromorphic and they can help. We have tons of people working in neuromorphic. I know, I know.
+
+And you are all connected there. Maybe we can get them to help address these issues. Who did you talk in Berkeley? I didn't talk to people in Berkeley as far as I remember. Okay, okay.
+
+I talked to them mostly, I talked. To Sandia, because they have lots of work in this domain, but I know Berkeley labs do a lot of work as well. Yeah, and we can connect us with people there, that would be great, Louisa. Okay, yeah, I'll try to see who can reach out here, but yeah, definitely Sandy. And they are the people.
+
+Okay, so I'm gonna um so that's what we have to uh to to reach out to Anu for. Um so George uh please um uh share the table with the DDR. And then all please look in your network and reach out for someone that can help us with a state of the art in DDR. And then, you know, so we can figure out all the tip all the different interfaces, standards, vendors and DDR chiplets. I think this is what we need to figure out the most.
+
+Yeah, Patricia, I just sent to the email list. I'm not sure if you received it yet or not. A list of kind of general LPDDR5 organization that has per channel, bandwidth, speed, and how many channels per module that gives us basically what we're doing. We get is 50 gigabytes per second per LPDDR5 by 4 module. Okay, that's for LPDDR.
+
+Okay, got it. Yeah. So this will go on package. Yeah, I think we can use that as a starting point if everyone agrees. This will go inside the package, so you will receive the chiplet, you will receive it as a chiplet.
+
+Yes, okay, so let oh sorry, I shouldn't share this one. This is not what. Okay, so it's desktop to share. Okay, so let's okay, let's start from this. I'll put it on the document and then next week what we can do is, you know.
+
+We'll discuss again, you know, our to-do list, but then basically we can start from this one and from George's table, and then we can come up with the section. Let's close that section. Let's start closing that section. Yeah, okay, I'll approve, I'll approve as soon as. As we finish the meeting.
+
+Okay, is there anything else that we have to add to the to-do list that I'm missing? Is there anything else I'm missing? I have a question about overall chipping memory versus the memory topic that's been discussed in the CXL company. posable memory and the data-centric computing because they also talk about like HBM, et cetera, but they talk more not from the tablet perspective, but more for like how do we, for example, design API even. So that based on the workload, design the system to use the near-memory infrastructure more effectively.
+
+So, how does those two topic, I guess, how those two topics related? Yeah, I think this is super relevant. You're saying this is the co-design work stream, and do you guys have a document, or I don't know, or and do you guys have a document for that? No, that for that meeting, I'm more of a listener. Which meeting is that one?
+
+It's called data-centric computing. It's usually Tuesday, Tuesday. Usually, there's a meeting to Tuesday at 5. P.M. Eastern, not today, it looks like.
+
+Yeah, and yeah, they talk about more of how to do near-memory near-compute storage computing, for example. So the idea. is if you have a like sparse workload where the data uh uses a very uh small percentage of data. So you actually can store those data closer to memory instead of offload earlier. And so that it's more effective.
+
+That way, because it would be more readily reused. Yeah, so that's a discussion there. So it feels like it's kind of related to the chiptos design here, because chiplet is, I mean, It's more about how to do within the triplet, how do you deal with this memory efficiency, right? The caching efficiency. But they're talking about if you have to offload it offline, how do you deal with it?
+
+So it's just kind of different stage of the same thing. Okay, so yeah, I think that's definitely super relevant. We can include some of it into our section of memory, the section that we're going to cover, you know, memory. That would be really cool. So I'll added a new task here, Victor.
+
+Oh, since you are. Oh no, what happened? So, since you are a listener and maybe you know a little bit more about them, can you check if they have some documentation or somewhere that we can learn what they are doing or maybe invite someone to talk to? us for fifteen, twenty minutes or do you uh di d uh do you know manuz? I don't.
+
+Because he's chairing the CMS composable memory system meeting every Friday and he's sharing the whole thing. And you can contact him to tell you what he's doing against Guru. I can send you his name, Banoosh. Yeah, I mean, if you don't mind, if you don't mind introducing me, I can definitely. No problem.
+
+Easy. Okay, cool. And then, okay, so, and then. Can you please put a link to this white paper you are talking about? Put a link of what?
+
+This white paper that you are mentioning, you just mentioned. You are working on a white paper. Oh, this white paper. Yeah, yeah. There is nothing in there though, but yes, of course, I'll share it.
+
+And it should be part of the where is it? Okay, so I'll do it now, and then with this, we can finish the meeting. I think let's stick to the plan, to this plan, to this to-do list. To make progress. Of course, we're open to other ideas.
+
+And if you guys have other ideas, let's figure out how to do that. So I'm going to share it in the chat before we all go. Yes. Okay, it's there. Thank you very much.
+
+So everyone knows what they have to do. Please, for all of you, don't forget, put it in, like, put it in maybe in the background. If you find someone that knows about DDR and HBM and the chiblets and the interfaces and all those things, you can invite it. That person, too, maybe for one or two meetings, that would be great, like Hesham just suggested. So, that would be amazing.
+
+Okay, have a good rest of the week, everyone. Nice to see you. Bye-bye. Thank you very much.
