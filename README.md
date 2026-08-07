@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Art Fewell (Hedgehog) and Lowell Lamb (Broadcom)
+
+<a id="513"></a>
+
+2026/08/07 Strategic Initiatives Open Cluster Designs for AI workstream 2026-08-06
+
+[YouTube](https://www.youtube.com/watch?v=I9H2kT_lNRw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/513)
+
+[Acronyms](./acronym.md): OCP AI GPU xPU OPG XOC inference LLM RDMA HBM NVIDIA AMD
+
 Le Xie (Harvard University) and Ming Lan Yu (Harvard University)
 
 <a id="512"></a>
