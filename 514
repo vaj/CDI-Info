@@ -1,0 +1,311 @@
+Server CMS Composable Memory System workstream 2026-08-07
+
+Another sharp Probably still on mute. Good morning. You're recovering from the all week yeah that's okay i have to recover and then fly out tomorrow to taipei which is a long flight 16 hour flight wow Yeah, I had it. We're not old yet. We're not old yet.
+
+Yeah, I had a red-eye flight myself. So you're recovering from lack of sleep or lack of comfortable sleep. Not sure if we have a show tonight or today or not. Anybody's joining? I'm not sure if Manoj and Ready canceled it or not, but we will find out soon.
+
+We're early a little bit, so they probably canceled that, and I didn't pay attention. Good morning. Good morning. Good morning, good to meet you. See you there yesterday.
+
+Oh, yeah. I think it was a long week, but very Hey, good once, AMEC. I'm seeing you. We missed you for some time, I think. At least I wasn't there yet last week.
+
+Yeah, this week was FMS was actually very interesting this year. Yeah, I missed most of it. Was there yesterday morning, but I did most of it would love to hear how that one went. I think there was a lot of good energy last year. I didn't feel the same amount of energy.
+
+This year, I think my Impression is people are kind of making money off of these, or have at least a line of sight to making money. There is a lot of funding happening maybe outside, but People are willing to take a little bit of a better risk now than they were last year. And some of the things, technologies that we are interested in, seem to be taking hold because it's been several years of building to it. See things and check it out. It is more real now than before.
+
+Right. Absolutely. Yeah, I think CXL was definitely looking a lot more real this year. Yeah. Yeah, that, I mean, CMS, CXL is getting real deployments.
+
+So that means. Makes people confident and hopeful. So is the, I saw the paper on the meta C Excel deployment or announcement, but is it deployed at this point? Yeah, it is deployed, yes. So, okay, so it's being deployed on demonstrated card in Yv4 a couple of years back, if I remember, I think, not last year, but a year before one in the global.
+
+CP in the innovation area. Yeah. Demonstration is one thing, and then deploying mass deployment in the demo. So that's why I hesitated. I don't know exactly what's the attachment application deployment rate and all that stuff.
+
+Got it. Got it. It would be nice to see if the recycling. of DDR4 is is uh being realized eventually right finally because it was there yesterday and the the the the fact that uh the media or DIMS plugged behind it whatever style it is Is, in my opinion, is a business decision that, in this case, Meta is making. But from the technology and architecture and things that we're talking about, regardless of what kind of thing you plug behind, CXL is showing value, it gets reviewed.
+
+It gets debugged. It gets, I mean, a lot of other things around it that need to be right: RAS, security, and performance, and everything else. So, regardless of what kind of memory medium you pick in the back, it is showing resilience, it's working. Absolutely. Absolutely.
+
+Yeah, I agree. I think the only reason I'm interested is I was challenged by someone at FMS who was saying that they're seeing a massive amount of DDR4 shipped to China. From the hyperscalers, and instead of being redeployed internally within the data center, that they're actually deploying DDR5, instead of recycling internally, they're just selling it to people who are actually deploying it. Overseas, which I really think that that's kind of far-fetched, but you know, I I wanted to kind of validate if if we're if we're deploying internally,'cause it sounded that we are, but until we see mass deployment, um you know, it it's not real. Yeah, I think what CMX said, a similar thing was echoed by Rita yesterday when I was talking to her offline.
+
+Right. That no, and I I remember actually when we started talking about TX, also we listed a bunch of points there. And one of them was that this is the first time that we can create a platform with Different generations and independence of generation of the memory module itself. And then, of course, additionally, the additional bandwidth and capacity that we enable to that. I think most of the solutions, especially the one which we talked about, also, it's like a combination of both.
+
+You know, it is independence, but also it allows us to add. More capacity, and of course, the bandwidth also, because some of our platforms you can't just compromise completely capacity for all anybody. And that's why that solution is enabling that. Now, TCO math that CMX was talking about is true, and also sometimes time. Time-driven, you know, it's significant also.
+
+And the new model prices are very high, then of course the recycle makes more sense. This is the first time that with CXL actually we can think of a platform. There is no way of thinking of a platform without it. So that's the great. Strength with CSS.
+
+That's the great news, right? It was very refreshing. I have to shift to the Arnett saying to because you already have a solution for that. Yeah. All I was saying is it's good to see it happening.
+
+Yes. And, you know, one thing, I don't know. You attended the NVIDIA ballroom panel. Did you get a chance to attend that on Thursday? It was between 10 to 12, right?
+
+Yeah. That was a very good panel, I believe. There were some jewels there that I don't know if you guys picked up on from Dr. Sharmar, I believe, from NVIDIA. He was indicating how sharing.
+
+Or pooling of memory behind GPUs could facilitate the change in their software that would alleviate the pressure on them replicating a KV cache. Apparently, he confirmed multiple times. That they're duplicating KV cache for preservation, for resiliency. And they feel that the current path is consuming a lot of the DRAM. And if they can ensure that it gets Flushed or cached to another tier of memory and then to flash, that's basically where they could see reduction in pressure on the primary HBM and cache.
+
+CPU DRAM. So it reduces the pressure on them to hold it in multiple locations. Right. Sorry, Monica, I was going to ask Mohamed: is that the goal of a Reducing the replication through CXL attaches that there don't or uh or is there okay yeah as long as CXL was explicitly mentioned oh this is this is the one which actually I've been saying for some time if somebody has any data right because today Hierarchy, simple path is basically, you know, you have, of course, the first thing in VRAM or HBM, second thing you have is that you have a warm user sitting in DRAM, and then once we get full on DRAM, we start spilling onto the local SSDs. No.
+
+Correct, but they feel that the local SSD is not fast enough to absorb that. So they mentioned CXL specifically as a method to match the throughput. Did they have any data on performance, any benchmark? This is the one which I was talking about. I would love to see that more.
+
+We can actually invite him. If we can invite him to come talk to us, that would be great. This is the one which I've been talking about, but I basically talking about that. Yeah. Guys, you all know this, but let's just say it again.
+
+Applications and end users don't really care what technology we use underneath. The high-level Tomorrow says KVCash as an example can benefit from sharing. The next is: okay, sharing. Can I share? The first sharing we can do today, we've been doing it, is on storage subsystem through PCIe.
+
+We can do that. And they, so that was sharing adds value. Then they say, hey, I need fast things, I need lots of. Throughput. SSDs currently, as they are, are serving a different business, so they're not keeping up.
+
+So they're coming up with high IOPS and low latency and such for even storage subsystem. Okay, now if they get a Storage subsystem that's meeting their requirements, they don't need CXL. But what we are saying is that, well, the method to do that right now could be through memory and could be through CXL until several generations from now, storage. Subsystem grows to be that. But he actually went out and mentioned CXL.
+
+Dr. Sharma did specifically state that CXL is finally causing them to modify their. Software or their firmware to remove the replication and count on it. And apparently, something is in design. Otherwise, they would not change their firmware.
+
+They must have tested and validated that C Excel can handle the throughput required and the latency required. To facilitate a pool. He did mention pooled. I'm trying to remember. I wish I have the recording, but I think he mentioned pooled, but in other words, he did shared memory.
+
+So I think Pankaj, you were in the Call. Do you remember if you mentioned shared or pulled exactly? Sure. I remember. Siabak, to your point, the NVMe, I mean, the storage versus memory, there's You know, huge performance difference, right?
+
+So, are you saying? I didn't get what you're saying. CXL and memory pooling serves a different workload versus storage. Are you saying? What I'm saying is that the people Who are running workloads on GPUs have HBM available to them, they know how it works.
+
+Then they want more storage or memory capacity. Then they would like to share things because they realize. Replication is not good, duplication is not good, regeneration of data is not good for different reasons, they would like to share. Now, if we, as a community of smart engineers and architects, can give them a pool of Of shared HBM, they're just happy with lots of memory. They don't want anything else.
+
+But we don't have it. We don't have it. I think they're not waiting for us, to be honest with you. I think they already know. I know, I know, I know, I know.
+
+So, this is the story I'm telling: is that they Underlying physical layer, underlying memory device or storage or whatever is to software guys is secondary. First, they want a feature. They block it down and say, I need more throughput, I need better things. Now we are saying, well, the thing that you want, we can give it to you in two, three years' time. Today, what can you do?
+
+Well, build your software around sharing data across storage subsystems. We have done that. Now we're getting to a point of being able to maybe massage your software to share across memory subsystems through CXL. The fact that they're doing it and they're showing value is good because the same kind of software tomorrow with a little addition can do the final stage of sharing everything across the HPM. Okay.
+
+Yeah, I think the other point that I'm sorry, go ahead. No, no, just saying that Samira has a hand up, so I want to make sure that I'm. Okay, please go ahead, Samir. Yeah, sorry, I missed that session, but encouraging points. So, one thing I would say is there is a, you know, the bad thing about storage is there is a jitter in the system, right?
+
+And if you want to really pre-fetch things, Over, say, remote storage. And if there is a jitter in the overall system, things may not land with your GPU compute engine exactly when you want it. So, just to give an analogy, if you order a package on Amazon and if it is getting shipped from New York, If they give a precise time window, that will never work directly coming from beyond. So they stage it somewhere 30 miles from your home, right? And that's when they can give the precise window when the package can be delivered, when it is in that facility.
+
+The same analogy here. You get it from storage. But you need to have another tier which is more predictable. And then you share over that tier. I think that is an added benefit.
+
+I agree. Yeah, I think what I was going to say is that basically we identified already that. The HBM, the data in the HBM is at risk, right, of that GPU failing, and you're going to lose that context or whatever KV cache is still sitting there. So that's why they're replicating that across their NV link to Sure, that it's not only in one GPU and potentially also flushing it to CPU DRAM. And at this point, that's not sufficient.
+
+So a shared memory would alleviate some of that pressure. And that's what. I came off mute. Go ahead. I know you were asking me what I heard in the Vikram Sharma talk.
+
+I think you're right that Manoji was not specific about pool versus other. And I think the CXL comments were non-stop. Specific, but CXL was mentioned as the way to get to that shared context in memory. I also talked a little bit, Manoj, with Ross Sanford, who used to be at Meta, is now at Sandisk, about other technologies that are. Coming in that might not do a pooled hierarchy, but might do might deepen the GPU-centric hierarchy with Flash.
+
+And I think the use case for that is not going to be KVCache because it's so write-intensive. It's very update-intensive. I think that. You know, just summarizing two, three points here. We discussed whether DRAM or flash technology is right for this.
+
+We discussed whether, you know, per GPU versus pooled, and if it's pooled, is it going to be through CXL? So I think the answers I heard were: yes, CXL, yes, DROM. DRAM and no, for the KV cache workload, flash is not the right match. But maybe for some of the vector database, like they talk about these G3.5, G4.5s. That's what Vikram talked about.
+
+And the Flash tier. Really only plays in the memory that is in the agentic context memory tier, like members just doing. But in the KV cache or the internal eaten-up cache, I'm sorry, when the embeddings have been eaten up and turned into KV entries, that stuff, the debate is not. About flash, it's about SRAM versus DRAM versus HPM. So let's just be very clear about the write characteristics because some caches are very update intensive.
+
+I think that's the main point. The writes will kill the flash, right? The performance is not good too. It's too hot of a data, right? So the heat level is too high for flash, and it basically demands something other than that.
+
+But I'm starting to wonder if PMEM, you know. Persistent memory, we'll start seeing the light of day in that aspect of a pool or some level of preservation. You know, Mohmut, this is a fool's errand. I built persistent. Memory for 25 years.
+
+And what I learned was that, you know, the only good use cases of persistent memory are in things like space applications and laptops and battery-operated devices. In the data center, persistent memory is more a curse than a blessing. So, you know. I can have an over-the-peer discussion on that one. I agree.
+
+I think I've lived through the various versions of it, but I'm hopeful that there is light at the end of the tunnel with some high-density, fast. Ferroelectric that could get us there. But, you know, to give you a little bit on that one, there was some discussion in NVIDIA's requirements on just one quick point, Manoj. Sorry. On SSDs, the high IOP.
+
+SSD is like 3 million IOPS and in that range that are being demanded now by the NVIDIA stacks. They are demanding a lot of open write pages to keep hot data from different streams separate. And so what used to be the These capacitor-backed DRAM buffers are now being replaced in some cases with possibly MRAM or other technology. So, Mohammad, there might be some application, but it probably is going to be inside SSTs. I would stop chiming in.
+
+I see Anil waiting. I would like to also see if we can plan on the CMS AI take day agenda today. So, us Anil, go ahead and let's hear the agenda. Yes, can you guys hear me? Yeah, I can hear you.
+
+Now, again, back to that panel. I think that panel was a big endorsement for CXL, Open. For the first time, Nvidia, yeah, that that same Nvidia person, he so for and the other big point about you know, he openly mentioned memory, C Excel memory pool would be a great answer. And everywhere, you know, I went to few sessions like the one from that Google deep mind engineer, what's his name? She or Some name like that.
+
+So, all of them are talking about, you know, at the same time, reduced power consumption, reduced power consumption. So, memory pool's biggest advantage is data is co-located to the GPUs or the XPUs, right? And that's how, and also it's accessible. So, like, they are all they. All this talk about place the data near where the processor is.
+
+And memory pool is the best way because it has a byte semantics. So you don't have to send blocks of data flying all over through networks or anything. And so that's another, that's all the point I was trying to make. Yes. The memory pool helps it from that point of view as well.
+
+In a way, It's co-located with all the hosts which are attached to the pool. So I'm glad to hear that. One quick question to all of you guys who attended that. I think we should get back to the agenda because I just want to make sure that we will definitely, and then we'll come back to the situation. FMS, because I'm sure there were more sessions that we want to talk about.
+
+I just had one quick question, which was the Vera CPU has C Excel, right? Was there any data point on what it was used for? No, so they didn't mention because see, today Vera CPU in that whole NVL 144 or whatever the next thing. Is there's no mention of C excell so the Vera CPU is there, but there are no C excel links going out to any right that not that I could see. I will I'll find out at OCP, I'm going to probe more because they'll be showing a Vera Ruby and we should all find out.
+
+Have they routed those C excellence of Vera CPU to a pool or something, right? So Maybe then that is a question to Samir and Manoj. Let's let's are you guys uh looking at the system architecture? Yes, I know, and we will. And Dhridesh was used to be here, who is the one who was very actively involved when we put those things as a requirement some time back.
+
+So, hey, we can. Do without Vera 2. Well, yes, of course, the key. That's the key. Hey, let's get please.
+
+Can we get back to the agenda definition? Because we have the reservation on 19th, August 19th, and I wanted to really look at two things. One is basically, people are aware of the sign-up sheet which is there, and I think we had shared it. And you can put your name there, whoever is signing up. We have a limit of 30 on-site attendance.
+
+So please do. Put in there. Otherwise, we will plan for August 19th meeting. People can join in online also. But just want to make sure that people have access to that sign-up sheet.
+
+I think we do. We did verify that we had access. It'd be great. I would like to put a slot there for. Demonstrating the optical and ACC cables that we're working with with Terra.
+
+Yeah. So I think, so I can see, I don't think your name. So, can you put your name just to make sure that I will do that? Yeah, I put that in. Can you send the link again to make it easy?
+
+I just put it on the chat. I did okay. Yeah, I did put it there. Put it on this sign-up sheet. Agenda, on the other hand, let's make sure that we talk through it here.
+
+No, let's not, we can put it there, but then I'll just have to move it around again. But I just put down some slots based on what we had. To still adjust the timings properly here based on the times. So, and virtual is okay, right? Yeah, yeah, yeah.
+
+Yeah, we can virtual is fine. So, Manoj, can we put the sessions? Proposed session. So, over here, ourselves, or do we send it to it? If you can, let's discuss it.
+
+If people want to put suggest topics here, you can just put it at the bottom also so that I'll move it into the right slot. Okay. So, either way, it's fine. But if you have time right now, maybe let's go and discuss it based on. What we had discussed in the past.
+
+Gaurav, I remember especially talking about you. I know you are working on a few things. So I'd put just as a question mark right now. If you have a topic and content that you want to discuss there. Yes, I have.
+
+I would be happy to share our experiments and lab results. Of using some optimized path for pods for KV cache storage and transfer. So we have two different architectures. One is where the C Excel is close to the XPU. That resides in the along, you know, I mean, in the compute node.
+
+And the other is the photonic fabrics-based appliance where we have C Excel over photonics and some. Results that we have that I would be happy to discuss there. Okay, that is awesome. I'll just put decide, I think, approximately 20 or 30 minutes is what we will do. I'm just going to put right now 30, but let's see how that goes.
+
+Okay, Just maybe starting on the top, I know we had a keynote that Pankaj, you are exploring. I'm putting that as a TBD. We can decide whether it goes the beginning or middle, wherever we'll find the right spot. I'm just going to hold that slot for now. But you're talking about the possible PyTorch Foundation or PyTorch Foundation.
+
+Right, if you think, I mean, I would say. Still let you decide whether you know, once we look at all the agenda with that gel in properly or not, I'll let you decide that. But, Manoj, you need to, there were some follow-through for you to, I, because Chris Godbrath left Meta looking at a couple of names. Kapil Sharma and Jason Choi. So I just want to keep reminding you till you have a chance to follow through.
+
+Okay. Okay. Yeah. Let me follow up on that one. Okay.
+
+Yeah. Sorry. No, no, no. Good, good one. Good time to mind you.
+
+I know you shared it last time on the chat. I'm not able to find that link, but I just put it today. I didn't see it maybe because I just switched from my phone to my computer. That somebody has liked it. Steen Larson had been able to see it.
+
+Can you somebody? Can anybody else see it? Oh, here it is. I see it now. Okay, okay, gotcha.
+
+So CMAC received it. Thank you. Okay. Yes, I can see CMX name there. Okay, cool.
+
+Manuj, would you please update Reddy's company? Or Reddy's company? Know who uh oh, I don't know. Somebody who paid no, it's copied from the previous, yeah. Okay, so maybe it's there.
+
+Okay, so if we can get to that, I'll update those then. Anil, is the hand old or did I miss it? Okay, okay, all right. Okay, so on the presentation side, I'll talk through the inference use case for meta perspective for AV cache, where I'll walk through the what we see as a AV cache tiers and Well, not meta, it just generally care what exists and data pass that what I had talked about, and also we will have Hassan talking about hyperscale CXL deployment at meta with Stara basically. Um okay.
+
+Sameer, do you have anything that you wanted to cover this time for Perhaps Excel deployments at public cloud, something like that? Yeah, I can give a short update. Okay, okay. One question before you start, Samir: Is there in the same sheet for signing up for the? Innovation Village?
+
+No, no, no. This is well, did I say the wrong one? Let me see. No, I said right one. I was just looking for that so I can add also in that.
+
+Oh, you wanted the Innovation Village link also? As well, yes, if you don't mind. I think it's there. Ready is not Reggie had just stepped out because she had got saved a call. So I don't know whether this is the latest one, but I just shared a sheet on village.
+
+I'm not sure if it's the latest, yeah, but it's yeah, okay. Um, okay, I see that now. Neither and Sakul have added a presentation here, okay. KV cache access pattern. So I just pasted the link to the sheet for Innovation Village.
+
+Right, yes. I didn't hear that you were saying something on the KVCache access button. Is that something that you'll cover in the AI? Use cases, Manoj? I will cover the in the KBCASH data paths, yes.
+
+Oh, okay, okay. Yeah, cool. So, Manoj, uh, I don't think everybody has right access to that sheet, so if we want to put in something, that we'd be good to get right access. I see. Is this the latest or something I'm seeing actually?
+
+Last time for right access, you can make a request and the owner, I think, is ready, is going to provide. Yeah, I haven't seen the ready back yet. So can you just send a request? I'm sure he'll, once he comes back, I think he'll update it. Manoj, I have a suggestion on keynote.
+
+See if anyone who has done a lot of work around HBF who can come and update us what they have found and what's the company use case. That's a great suggestion, Samir. I actually attended a talk yesterday, and we should put that up. That is, of course, wonderful. However, will that impact our composable memory system?
+
+That's the point I'm trying to figure out. Is any disruption coming to our land because of HBF? How many of you attended that session? It was a great session. Again, the Google Deep Mind Engineer Xiao, Yao.
+
+Sorry, I'm not saying his name right. But, and then I asked him, okay, if you can localize, basically, he said. the the data is the the pattern of access is random locally, but in a long uh over a long time it is very sequential. That's why HBF works. So you can always take things out and then put it in a DRAM buffer and GPU can crunch.
+
+So the keynote also showed how four HBFs or something can match the HBM. Right, you guys saw the keynote from Sandisk. So I asked him then, why is Nvidia pushing people for this drive SSD guys for doing 512 byte blocks instead of because they want millions of IOPS and things are random? But he said, no, you can take both. I didn't quite understand what it was.
+
+Planned, but we should all think about that. Yeah, the word HBF seems not to be very clear. There are two presentations: one from Kyaksia, one from Sandys and SK Hynex. They both use the word high-bandwidth flash, but the implementation. Very different.
+
+Okay. One on the PCIe bus, one on HBM bus. So if we get multiple ideas and multiple presenters, we can make it a panel. It doesn't have to be keynote just to get because if this is the topic. Of interest, which I think it can be because it can fit really well.
+
+Yeah, so we should invite Mahinder. The high bandwidth flash from Kyoxa is that Excel flash, right? They are actually now put out C Excel module. Then, hey, we are another alternative now. So, if somebody can take a lead and see.
+
+Maybe we can get two or three solutions which exist out there or at least being talked about out there. We can make a 30-minute panel. I think that will be good. Somebody from Google joined the consortium. I don't know who that person is at Google.
+
+That person may be a good candidate. So what? Google has joined the HBF consortium. Right, because see, they acknowledged this Xiao Yao's ideas from a few years ago as being the contributor to this. So that's why he was very much there.
+
+So I won't be surprised if Google was part of this HBF thing. It was his idea that, hey, we don't have. To buy this expensive DRAM. And we said, because of this locality of reference, we can pre-fetch and simply use HBF for everything and have some DRAM buffers. So that's exactly that talk.
+
+It was a session yesterday or day before, nine o'clock. Okay, gotcha. Mohamed, sorry, coming back to my agenda. Samir, maybe I'll take it offline with you and see if who we can, maybe and what we can do, and who can get the channel. Okay.
+
+Continuing on the topics, I think Vikrant. I had put there because we had a KV cache tiering benchmarks discussion in the past. Is that something that we want to cover in the meeting? We, yeah, sure. You can put that in.
+
+If not, I can also, I know grant is out for the next few weeks. So maybe you can also give an update on the I'll let's confuse Grant. Name. Yeah. Yeah.
+
+I can call for him. I know he's out on leave for the next few weeks. Okay. And then maybe then one more thing. So I'll put here Microsoft.
+
+I think this can be covered by. Sameer. Let me know, Vikrant, if you wanted to cover anything also from the CXL updates or actually in general AI memory tier use cases, KVCASK, anything from your side that if you wanted to cover from a use case point of view, we can add a topic there too. Especially on the training. Side, if somebody has anything that they want to talk about, Shamir or Vikrant or anybody from, or enterprise side for that matter.
+
+So I was just making it. I think our training infra is pretty lean in terms of footprint. Right. Yeah, it requires, does not require too much of. Connect or scale out components.
+
+But I don't know if how much of research or insights people have on agentic workloads. I think that's actually where Uber is spending a lot of time. Just the agent usage on a trained model is where I think our footprint is moving, which right now. Uses general purpose compute. So, now if there is a place and time to discuss how agentic workloads could leverage CMS-like solution, I think that might be interesting.
+
+So, do you want to talk about that because? I just have ideas. I just know where we use agents or where we are deploying agents. Yeah, I'll put a question mark right now. Think about it.
+
+It yeah, and then I'm just putting it as a placeholder for now, but maybe we can decide it by next week. Um, actual agenda point of view, because we can keep it light from the content preparation perspective, but make sure that you know we have the time constraints perhaps. Have to take okay. So I'll bug you on that one, Vikranta. So we have two things, right?
+
+From your side. Gauru, I think I got your Chandra. Did you have any follow-up that you wanted to do that? Because you had presented already KV cache. No, not right now.
+
+I'm Right now, working on something else. Our team is working on something else, but no, nothing related to memory at KVCASHRA at this time. Okay, okay. I know we have a proposed for securing design memory. Let's find a slot there also for this.
+
+I know. And then I was going to come to Mohammed. For pooled memory, did you have anything that we want to discuss? For I know last time, Hangjan, I talked, I think also we were thinking of getting more performance numbers that can be helpful. And maybe discussed in the case of pooled analysis.
+
+Yeah, I think Hajin may have already done that. He did quite a bit of benchmarking stuff. So is he on the call? Or I see Anjan? Yes, I'm on the call.
+
+So. I got my tests running. I'm collecting data. So I can give a review, but I just I'm not sure if the data will be. Fully available.
+
+Okay. At least I can talk about architecture, what I change to the inference model or inference engine and get it to work. So I will just put that as a inference model on pool. Memory solution. It's actually shared memory.
+
+Sorry, perfect. Yes. Even better. So both Hynix and Samson were showing off memory pooling, CXL memory pooling demos in their booths. So it would be nice if someone from Hynix could come and talk about right, they use the XCON, now Marvell switch, and they were showing off how by using software-based techniques.
+
+And because the thing is, how GPU doesn't have a CXL link, but the switch can have dual PCI or C Excel ports. So it's a very interesting way. So yeah, it would be a nice one for them to show. Either Hynex or Samsung, both of them. I took pictures also.
+
+Maybe Siamak can look into who's the Samsung person and Hong Jingman. Yeah. If somebody Siamak, if you wanted to bring in any discussion from that in general, actually. Did you want to cover everything from anything from the memory solutions perspective that we should benefit from discussion here? I'm actually thinking how to respond to the request here.
+
+Things have been published. Present it, are you suggesting that we repeat that or are you looking for new data? If there is anything that you think we have we should be looking at, even if it is published, that will be good. If you think that in the so the topic for this discussion is going to be CMS in AI, that's the take-depth topic. So, a few things that we are looking at is that, okay, what are the use cases that are being driven?
+
+Then, we are talking about what are the various experimentation and data collection that is happening, and then the architecture that, and then the third thing would be actually products that are relevantly important. I mean, all things are important, memory is important. But specifically, tiered memory that you think we should be looking at from a product perspective, product exploration perspective? Okay. So, yeah, you can put my name in there.
+
+I'll collect what's been done and look at. Have an open discussion, whoever else wants to participate. I think Anil was right. SK, Samsung, and Micron, all memory guys, talked about value that CXL is providing to. Whatever they're promoting.
+
+Yeah, the CXL memory pool, Micron keynote also mentioned, but Micron didn't have any demos. Although the big demo for them is that Abaco supercomputer, right? So they are going to great lengths to talk about that. They are doing this pool, the next supercomputer of US after El Capitan. So Aurora.
+
+El Capita and now Abaco, the his focus is going to be uh AI workloads. So they are doing a hundred uh terabyte memory CXL memory pool. And they are already shown so many good use cases. So if someone can Micron can present, or I can ask Louis. Oh, I think now we are filling up the agenda.
+
+No, no, no, I there's nothing no problem. I mean, we if you think we we can always rearrange things. I'm just thinking that one I just want to cover before I close on the agenda is ready anything else that we think we should be covering? Because right now I have twenty around what? 20 minutes, maybe we have we can swizzle things around, but time we can manage.
+
+Yeah, fabrics included also the proposal for security disagreement from Damneet. Is there anything that we actually moved this from the The AI fabrics. Right. Okay. I mean, in a way, we are looking at memory fabric here, but we are not covering it.
+
+So, part of the data paths, I will cover the various interconnects it will use. Scale out, scale up, and also the memory fabrics. But yeah, if there is anything, and then the pooled memory or shared memory should be part of it coverage from Hungchen and CIMAC, we'll ask for the pooled and shared memory products for AI use cases. Hopefully, that should cover some. But if there is anything else that we pankaj, anything else that you think we should add?
+
+Manuj, I just wanted to point out that Chris Godbrath from PyTorch Foundation is attending. Chris, is this your first time joining our meeting? Yes, it is. Just being a fly on the wall. A little bit and listening in.
+
+I introduced myself to some folks in a, I think, a LinkedIn thread that Manoj had created. And yeah, hello to everyone. I'm at this point really just listening and learning, but interested in this general space. Awesome. Welcome to the team.
+
+Chris awesome. Chris, would you please say what your interests are, what your focus is, which teams, which companies? Sure, sure, sure. Sorry, I guess I said that on one of the on that thread, but not everyone is probably on that thread. Yeah, so.
+
+So Chris Gottbrath, I'm recently ex-Meta. I worked for the last seven years on PyTorch, actually more like eight. Before that, TensorRT. So I work in the sort of compute framework layer within the AI stack. Mostly as a product manager, TPM type role.
+
+So I know a lot of folks. I know the technology, but I'm not a coder. I'm not one of the architects or anything like that. And I'm interested in this space because I feel like this heterogeneous, accelerated, heterogeneous, increasingly diverse compute. Substrate is really important for squeezing everything we can out of systems, especially large ones.
+
+And so, this idea of doing compute close to memory, which Minoj was pointing out to me, seems really interesting. And I'm hoping. That I can be helpful in kind of connecting the dots with some of the software folks in this sort of framework layer that I think will be important for being sort of a bridge between end user applications and this kind of hardware so that we can really have good use cases and we can have a well formulated and And thoughtful way of surfacing this to users. So, compilation technologies, data loading libraries, that kind of stuff. So, yep.
+
+Hey, Chris, thanks. We should have you sign up for the 19th, actually, attendance. I would like to. I have not yet nailed down my exact travel plans. But if I can make it up there, that'd be great.
+
+If I can join virtually, that will be a a a close second. But yeah, I'd love to meet you guys in person then or or at a subsequent event. Glad to have you here, Chris. I'm glad Pankash rope UN Pankash has been mentioning us and talking to you and he created the thread. So I'm really glad that you're dialing in here.
+
+Because definitely, there is an advantage for us to get somebody who can connect these things together where we are building products and how they're going to be used or can be used. And sometimes it's just that capabilities are developed, but then there is a lack of visibility from the applications, and sometimes application needs, which takes time before they. So I'm glad you're on. Absolutely. And if anybody wants to get together and chat, either at this meeting off to the side or before, like I've been talking with Pankaj, but I'm happy to talk to other folks as I'm kind of coming up to speed on this technology.
+
+I'm sure there's tons of gaps of my knowledge. So it'll be learning. Awesome. Awesome. On that topic, one of the things that Chris can do, because he's sort of one step removed from PyTorch only, is he's kind of trying to internalize the nature of our needs.
+
+And middleware alignment activities. And on that, he wants to see which framework out of several that are out there would be a good first candidate for us to deeply engage with the architects. So, Chris, in fact, we want to make that your homework. Is to produce your first recommendation, should be that understanding how late binding or other dynamic the correct characteristics of these are code-wise and just architecture-wise, what seems to be best aligned for us to engage with, in your view. Yep, that sounds fair.
+
+I'm not going to have that homework due tomorrow or anything like that, but I'm happy to dig into that and help explore that angle of this larger question. So, yeah, makes sense. Yeah, I think I put a slot for that. I think that's what I think you are suggesting, Pankhaj. Just maybe identify that.
+
+In fact, you know, this topic starts with Gaurav's talk at a couple of places in OCP. This whole idea of heterogeneous compute. And I think we just want to build on it now that Structura AX are both real products with real users. That Gaurav can't make enough of. Okay.
+
+Gaurav, why don't you kind of take over in the conversation a little bit here? Yeah, no, I am very thankful to you for this initiative. And I find Chris's addition sort of like a breath of fresh air in this community, as we have done a lot of groundwork, but we need some smoking gun here to be able to make some headway. And we have been able to build many. Foundational blocks that are in place.
+
+So the foundations well built, and now I think we just need to build upon it. That's all I have to say. And I promise my full cooperation and support, and looking forward to some meaningful results in the near future. Future. Thank you.
+
+So, Gaurav, one thing that I want to point out here is that Chris, right away, because he's going to be talking to people who do a lot of their work in Python and are professional software developers. So, he asked about GitHubs, and thankfully, You know, on the computational side, Samsung had just made some of the NDP framework and APIs available. So he has gotten in touch with them. And then, Chris and Vikrant, I think you guys would be a good next step here in terms of. Of taking a stock of the assets that we can start putting in front of various teams.
+
+So, you two might not want to have a one-on-one offline. Yeah. Yes. That sounds great. That's a nice next step.
+
+Let me move to the right slots in that case. Yeah. Yeah, and also, I think it would be good for us to have that special interest group meeting, Pantaj, you and I had discussed, where we can at least discuss the architectural elements and the Approach and direction to be sure that we have directional alignment, at least within the like-minded folks. And not just for computational memory, right, Kaurav? Correct.
+
+Okay. I think we are there with the agenda in that case. We have a couple of more slots properly to be clarified yet. Hey, hey, Manosh, can I jump in a little bit? I'm with Penguin Solutions, and we're doing kind of an optical memory pooling across CXL interfaces, you know, in the 10, 32, 30 terabyte range.
+
+If someone drops out or if there is a slot, I'd certainly be very happy to chat about it and get feedback. Yeah, I think we should be able to do that because we are not final. I think if we cover this with Punkaj, and then instead of, yeah, let me write down. The agenda, and then let me find a spot there. I apologize for being late to this.
+
+No, this is great discussion because definitely something that we yeah, and it's over optical, and so there's some interesting kind of spreading across a non-switched fabric. So that might be of interest to the The audience as well. Would you say pooled or shared memory over optical network? Is that what you're saying? Over optical fabric with CXL interfaces.
+
+Manauch, if possible, you can use the slot. My slots because my work I'm not able to guarantee the result will be available. And I'm targeting to talk about this topic at the global summit anyway. Gotcha. I'm going to make that rate, and maybe perhaps we can replace that with this.
+
+I'll rearrange it because I definitely want to keep it. Closer to Gaura's talk between these two. So, okay, thanks, Anjan, for sure. Yeah, basically, you're not sure that you may be able to get the enough data for us. Okay, my nurs, as you know, communication overhead is usually.
+
+More than the competition work that we do. So, what's happening in the morning of that day? If we are already there, could we not stay a little bit longer, come a little bit earlier to get more things done? The room was available only in that slot for me. That's really.
+
+My logistical constraint. How about we make a mean at a time, like the last time? After the meeting. Yeah. Yeah, absolutely.
+
+You can hang out a little bit like an that's why I'm a little flexible on the later. Part also, maybe we can instead of five, we'll go up to 5:30 because I'm sure I can keep the room for another half an hour or one hour, and then we can retire to beer. And then also, it's agenda at one. But I think primarily this half a day was primarily my constraint on getting the room. But if you have agenda, we can look for another dates.
+
+You have to run a very tight shift here, Maj. Before we go, Steve, can you put a pointer to your pooled memory product in the chat? Yeah, certainly. Give me a minute. Yeah, it'll be good.
+
+So that actually, then I'll find a slot. This is from Penguin, right? Yes. Yeah, and just to two cents on the earlier topic. Of DDR4 reusage, we're certainly doing our own circuit boards for DDR4 repurposing across CXM.
+
+Okay, awesome. Something that you wanted to cover during the talk? I can touch on that. Yeah, I'm not directly involved, but yeah, certainly. Thanks.
+
+Okay. So, since Hongjin has basically already made the spot available, we'll slot that in so that I can try to close the agenda today. Okay. So, this gives us, we reach us up to 5:30, which is which sounds perfect. So, we'll start at 1, we'll start.
+
+To make sure that we close, come there if you can check in by 12:45, that we actually will not waste time when I'm doing my back and forth runs. And that will be really appreciated for people who are ready to attend. And also, my request would be people to dedicate. That time when we come there, one to five, that we again, I don't want to start running down people, and because I see that actually that becomes distractions for distractions for the meeting because I tend to vanish for five minutes, and so discussions kind of get derailed. So, my request would be: if you're going to attend in person, please.
+
+Commit your time for four hours. Four hours in the sense from the beginning of the meeting to the end of the meeting. That will help me a lot to make sure that we can continue the meeting running. Any concerns, questions on that? Because I know everybody's time is very critical, so people have a Adjoining meetings.
+
+In that case, I will request online on joining. And so please put your name if you think that's something that would work. Oh, shoot, what is this name? And then we'll go from there then. Ready?
+
+Anything I missed for the meeting? Planning? No. And meanwhile, by the way, while you were out, actually, there was a question about Global Village, sorry, the Innovation Village. Yeah, I haven't heard the data.
+
+Yeah. Okay. All right. In that case, I think we are all set. I'll get this thing and I'll stop this next Friday, this sign-up sheet, or if we hit 30 before that for in person.
+
+I'm excited to have our third take day there then. All right, guys. Thank you. Thank you very much. I'll see you next week.
+
+All right. Thanks very much. Thank you.

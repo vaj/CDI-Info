@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Manoj Wadekar (Meta)
+
+<a id="514"></a>
+
+2026/08/08 Server CMS Composable Memory System workstream 2026-08-07
+
+[YouTube](https://www.youtube.com/watch?v=HKHLoq-iP5M)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/514)
+
+[Acronyms](./acronym.md): OCP CMS CXL GPU HBM KV cache DDR4 Meta NVIDIA FMS
+
 Art Fewell (Hedgehog) and Lowell Lamb (Broadcom)
 
 <a id="513"></a>
