@@ -1,0 +1,233 @@
+Server AI HW SW CoDesign sub-project 2026-08-07
+
+Yay everyone. Hello. Hello, Ashley. Victor is the way to yes. Ashley is on the plane, so I'm just logging in his account right now.
+
+If you want, you can, I think, change the name on the screen, on the Zoom. Yeah, that's a good idea. Yeah, I think so. Yeah, so that way people won't keep calling you Way Fang. Yeah.
+
+Okay, perfect. So, Victor, I'm assuming you have the agenda sheet because I think I didn't get the access to that document yet. But yeah, well, I don't believe there was an agenda created for today either. No, but that document which Wave and Uses usually which has like all the items which are ongoing currently. So yeah, let me see.
+
+I can find it. Paul, I see you very active on the UEC. Yeah, I'm the editor. I'm the editor of the UEC specs. Yeah, yeah, yeah.
+
+I noticed this one. confirm that's yeah and i'm uh i'm also kind of working on the um c sig back to sender signal and stuff yes i saw saw you there too yep yep yep well that's good and good to have Well, we're starting a project in IEEE 802.1 as well. So we got to figure out how the two organizations work together and don't overlap. And, you know, this is more LLR related stuff? No, it we're actually we have a we have two CSIG We have two projects in 802.1 that just started.
+
+Well, they officially haven't started yet. They're going to officially probably start in September. But one of them is standardizing CSIG, and the other is a backward notification standard, which is likely. It also adopts what UEC does, but it may have slightly different scope. We'll see.
+
+And IEEE taking it because uh it is more like a a frame uh framing stuff? That's the reason. Yeah, I mean, it's really sort of a congestion control and and algorithms that Need to be implemented in bridges, right? In switches. And that's where, you know, typical switch standards are done is, you know, in 802.1.
+
+So. Yeah, I think I saw some presentation you or somebody give where they're talking about IEEE into like a two sections. One is more at the Physical level and all those stuff. And other is more, I think, the signaling and features. And I don't know what they were calling it, but they divided into the two parts.
+
+Yeah, I mean, you have different groups, right? You have Ethernet group, they do Phi and Mac layer stuff, and then you have 802.1, which the switch is. And protocols and things, usually higher layer stuff. Oh, you're talking about this bridging group, 802.1, which cool is that VLAN stuff and that 802.1 AD, I guess, provider bridging IC. Okay, got it.
+
+Yeah, I mean, those are historical things they'd worked on in the past. did a bunch of data center things and we're sort of trying to bring some of that back to life so okay okay no that's interesting I'll be interesting to uh interested to participate let me know anytime I have the background on the all the metro ethernets and then VXLAN and This, we implemented this software-defined access in Cisco and all those stuff. So I can help out if there's anything needed. 802.1. I was not listening correctly to you, 802.
+
+You keep on telling 802.1, I was still thinking 802.3. So that's what I was thinking how the IEEE. Is getting to CSIG. I was not in, but now I'm hearing it well: like, okay, it's a bridging group. So, yes, that makes sense for the C6.
+
+There was some work done with the IOAM, if you remember. And it's a kind of similar looking to me. Ah well that's IETF, right? Yeah. Yeah, yeah, yeah, yeah, yeah.
+
+Yeah, every there's always a little bit of gray area where these these organizations operate. They can overlap a little bit. And tho because those comes more at the protocol level, this coming more at the is uh all the ASIC vendors and these people are interested. Now. So yeah, I mean, historically, yep, that's where the ASIC switch ASIC vendors used to collaborate in that.
+
+But I would say the last 10 years, the 802.1 group got real focused on what they call time-sensitive networking, which is like TSN, yeah. Yeah, TSN, you know, for. Automotive and putting Ethernet in cars and airplanes. That was a big market. So, a lot of focus there and less on data centers.
+
+But I think they're running, they're interested now in the United States. Yeah, interestingly, I was in IT. I am now part of Celestica, but earlier I was part of MIPS, so we were doing this and it was kind of interesting to see that how this two parallel words are going on industrial Ethernet and this all TSN and the automobile and all those and then data center but there doesn't need to be different. Just like a different scale and different things. So they're also solving the same problem: congestion control and then lossless communication.
+
+Yeah, yeah, I mean, it's yeah, they're not always the same solution works for all the different spaces. But they're definitely all trying to solve similar problems. There's no question about that. Yeah. Because looking at the UEC features, they apply to there also, if you're talking about the LLR and all those stuff, so it's a different scale or different thing, but yeah.
+
+Yeah, they haven't started doing. some of those yet. And it's unclear if they will do something like LLR in 802.1 or not. It makes sense to, but there it's already pretty well specified, so in UEC, so it's not clear they need anything. But but something like uh CBFC and you know, those things could be you know related.
+
+To PFC, you know, so they're definitely maybe of more interest. More interest, yeah. Yeah, yep, yeah. No, I'll uh uh I'm in that area, so let me know anytime and help and how to join and all those. I can sure probably help out.
+
+I cannot really find. Document. I think usually we can just put in the email the agenda for the day. And I did talk to him and Hisham as well, and Hisham is not available. So, yeah, this is more of a free form discussion if there's any particular topic.
+
+So I think just on that, we have a few related standard discussions, right? One is previously agentic discussions. So Mesout has a proposed Some list of standard organizations we can reach out about that. And he hasn't joined the last couple of weeks. So the other one is HMS Neuromorphic related standards.
+
+And so, yeah, so we can definitely, when they're back next time, next meeting. That's probably what we're going to follow up on. When it comes to that, I did, as a generalist, I do go to a lot of different places and try to figure out what people are doing. This week, I did join the triplet meeting. So, so far, the organization that we've been discussing before does not include.
+
+Chiplet. So I did discuss that with that group. And I believe they are interested in as well. For example, when it comes to Chiplet, right now, the work being done last year was doing some benchmarking for a Single GPU chipted benchmark. And then it's focusing on basically on-chip performance.
+
+So my question to that group is: number one, we probably that's that's the the benchmark they did was not a real really a realistic use case. More realistic is really full stack, which means you have to do not only on-chip, obviously, you have to do off-chip and network, et cetera. So that will go be, so for them, that means talking to the like, like the CXL people, for example, and then, and in turn, You know, from for this working group and what kind of standard organization we need to reach out when it comes to triplet. So, in collaboration, obviously, with that working group. Yeah, so that's just something new in addition to what has been discussed before: standardization related to.
+
+Chiplets. One point means one thing in this could be the chiplet interconnects because most of these the way the direction is going right now is that most of the things, like most of the network, which used to be outside the chip, now going into the chip. So maybe if you get a chance or somebody can come and present, we would like to probably it's a good idea to have them present about different technologies of the chip chiplet interconnects. Right. So that will probably be the interest of this group, and then probably that will define all these different streams we are talking about, neuromorphic computing and all those.
+
+For that, there are two. Follow up to what you just said. One is the chiplet. That working group, at least my impression, is focusing on chip design, which means the on-chip networking design and the off-chip networking. That's something they will definitely care.
+
+I'm not sure whether it's. That's something they work on, but it's good, good idea. We'll probably, once they agree that this is something they want to be involved in, I'll definitely invite that group to give a presentation here and see how we collaborate there. When it comes to neuromorphic, Hisham actually was also the There this week in the triplet meeting. So, yeah, so so far, triplet is mostly, not mostly, it's 100% about classic computing triplet, right?
+
+Because the quantum, the neuromorphic, those are not ready yet, but it's good to. To understand if you put those together, the traditional classic chiplet and the neuromorphic, how do they work together? So, when those discussions start, and there will be really how what's needed and what kind of standard. Need to be created. Is there already a standard body that's out there that's doing this?
+
+If not, can this be done with the OCP? I think that's the discussion happening that meeting. Yeah, yeah. And off-chip, like off-chip network, which you were talking about, they are now moving to the on-chip. So I see a lot of people or at least a lot of this new switch ASIC vendors, they are now trying to build, condense a lot of stuff using this 3 nanometer or 4 nanometer and all those technology into one.
+
+Of chip using this chiplet design because now they have the chiplet brings all the modularity so they can fit in like multiples of those to one and so this off-chip network now is becoming more like an on-chip network. So that's and then this silicon photo. And all those new technologies of the interconnects also coming in, which are built in. Yeah, the optico is another thing that's pretty interesting. Although, it's how does all this?
+
+I guess, because OCP, this is one thing I find having. Discussion in multiple groups and OCP groups about what standard can be created in OCP. By default, OCP is not an organization that focuses on standard creation. It's not a standard body. However, it's more of a, so that's why co-design actually is a right word.
+
+It's more of how to bring all those different standard bodies together and find identify the need and then probably then reach out to the individual organization. Only if there's no nothing, nobody else is doing it. For example, when you're marketing, nobody's creating a standard. That's probably that's what we're, we can actually create a standard here from scratch. Yeah, no, you actually rightly pointed out this is more of work to integrating different standards and open forum stuff together and then and coming out like a final product or coming out a final kind of system, system of systems.
+
+whatever we call that using that so so yeah neuromorphic is the new thing uh i see uh i think we talked to paul i see rudra pomik uh oh hey uh yeah i this is my first ocp meeting I just I'm trying to get onto space and with the format of the meetings. Yeah, so and but probably this is not meeting because we have a lot of people not attending today because I think some of people are traveling. And this is the region. So you have a very low audience or low number of people today. But if you want, you can introduce yourself so that we know your background and then you can plug into whichever stream you would like to.
+
+Yeah, yeah. So I am on the hardware design side of things. I have worked on. Uh, network visibility style, uh, you know, server hardware for quite some time. And the last six years, I have been designing iPhones, and now I am uh, I have joined the server team within Celestica.
+
+So that's why I'm trying to like. Oh, you are from my company, I didn't know that. Okay, I'm from Celestica. Too. Oh, you are?
+
+Okay. When did you join Celestica? One and a half months ago. Okay, perfect. Let's sync up in the office then.
+
+You are in San Jose? No, I'm based out of Austin. Okay, you are in Austin. That's the reason. We never came across.
+
+I'm in San Jose. That's the goal for this meeting: for the people who work for the same company to come here and meet each other. It's good that you actually come to know each other here. So Paul, which I forgot, my memory is terrible. Which company do you work for?
+
+Well, I'm an independent consultant, but I have two contracts. One, with the Linux Foundation, I'm the editor of the UEC specs. So I'm the final guy, you know, that integrates all the stuff and publishes the specification. And then my other contract is with Huawei. So they are, you know, as a consultant for, you know, AI data center type activities and standards.
+
+Yeah, UEC is actually. Identified under the protocol standard that the Agentic created. Actually, so that was the main Ethernet consortium. So this is. More like developing the GPU to GPU communication vector?
+
+Well, yeah, for the scale-up activity that's going on right now. Yeah, that's the latest UEC specs were including the kind of ESUN, you know, stuff that's kind of related to ESUN. I also work in the 802.1 IEEE. Standards area, and I think you may have identified them as well. I'm not sure, it might be lower priority, but as another standards body to liaise with, but yeah, I'm here for that interaction.
+
+Yeah, so the UEC, um, Masood, he probably got busy lately, he's not hasn't attended. The last couple of meetings, but the reason he actually gave a proposal in the CNCF meeting, not a presentation. So his project, you probably already know what it's called. I forgot his name of the project. So it's about GPU virtualization.
+
+And so, yeah, for example, you got like NVIDIA GPU, right? You can do partitioning, slicing, and so you can give more granular GPU access to individual containers. So, that's only available. For NVIDIA. So his project is basically doing the same thing: the GPU virtualization, but for all resources other than including NVIDIA, obviously.
+
+So that's probably why UUC, when he proposed UEC, This is important for that purpose. How to standardize that so that when you scale up the GPU, this is a network question basically, off-chip. So, how do you scale up whether it's the hardware itself, the APIs? And all the good stuff. So, yeah.
+
+So, maybe, Paul, maybe since we don't have many people here today, do you mind maybe give us a short description? You don't have to share anything, but just a description of what the current status of UEC, what do you say? Need to be standardized so like things like GP virtualization can work for all vendors. Yeah, yeah. So we're just nearing publication of the next spec.
+
+It's called version 1.1. And there are a number of of new technologies that got rolled into that spec. CSIG congestion signaling being one of the kind of important ones. And then UFH or the unified forwarding header, which is the compressed headers that are specific for or had been designed specifically for scale up. So they're now being considered as part of the eSUN, OCP eSUN activity as well.
+
+And then there were changes to the UET protocol, the transport protocol, that were specific for scale up or GPU, GPU kind of communication. And so they've simplified and reduced the overhead of the protocol to make it more wire efficient, right? So that is just about getting ready to be shipped. Now, that's just sort of the base protocol and wire formats and things to allow variables. Efficient wire communication between GPUs and in a single sort of switch fabric.
+
+There is a header that supports like a little bit more complicated fabrics, sort of multi-hop or multi-plane, let's say. So, you know, that's also a possibility, even though the Focus initially was on sort of single switch. The new work that's going to come after this that they're working on now is adding INC or in-network compute or in-network collectives. There's a lot of different definitions of that acronym, but that's really. Really, to allow the switches to help perform a lot of the GPU operations themselves in the data path for collective operations and offloading that stuff.
+
+And so there's two efforts that are really very, very closely related. One is Just defining the protocol, if you will, for how the collectives can be operated or exchanged on that scale-up network. And then there's a follow-on next step that is. How the MOE, how you know, the how the addressing and how that the ability to link in a bunch of the experts directly into the protocol is the next step. So, in other words, the MOE type.
+
+Environment is so dynamic that it doesn't lend itself to like static configuration, you know, programming the address tables or whatever of these scale-up switches. So they need that basically the addressing to address the experts in the collective operations needs to be part of the program. Protocol. And so that's the next thing that they're incorporating. But so those are all going to be future, let's call it 1.2.
+
+And they're just kind of getting started now. So I couldn't tell you the exact timeframe for when that would be delivered, but they move pretty quick in UEC. So, I don't know. Did that answer or give you a yeah? Yeah, very, very interesting.
+
+So, personally, I'm not a Harvard person, actually. I'm a generalist. So, Prakash, Rudra, do you have any question for Paul about UEC, the upcoming standards? I'm part of UEC. So, I know what Paul is talking about.
+
+I've been working in that since it started. So, yeah, I think one thing to ease simply put it in a few lines: Victor, the UEC is more handling the GPU to GPU. Communication part of it. It's not doing something in the compute side, but one of the things which is making the network as a compute is the in-network collectives which Paul just talked about. So, what is happening is that some of the compute stuff which used to be happening earlier on.
+
+The compute now is happening on the network. Right. So that's where now this compute is moving on the network. So that's another shift which is happening. And this helps in a lot of like reducing the data movement and freeing up the GPU in a Order to just to like removing the data or moving the kind of part of the calculations from here to there and doing that.
+
+And they're kind of offloading that to network. So that's the interesting area in which UVC can come. It's definitely a co-design type of topic, right? Where you're you're Offloading some of the calculations of those collectives into the network. So while the data is being transferred, let's say from one GPU to another, we can do the reduction operations in the network itself and avoid extra copies or extra movement of data, right?
+
+Just do it while it's moving and then, you know. Significantly reduce the latency and power consumption and blah blah blah. So, yeah, it's definitely a co-design type of topic. And the easy equivalent to is a nickel, which the NVIDIA GPU does, right? So, that's a kind of stuff there.
+
+Yeah, there's definitely. Existing other technologies exist, right? Like, you know, UA-Link has an INC solution as well. You know, so UEC is kind of starting off on one. They're trying to align them as closely as some of these other existing solutions so it can make it easier for hardware implementers to.
+
+These things. I guess one other comment about the version 1.1 UEC spec that's coming out that it added the scale up functionality. So now you have in one protocol and potentially in one implementation, one NIC, both a scale up and scale out. You know, network support, if you will. So it's kind of trying to converge those fabrics.
+
+Interestingly, Paul, that's the one we started in this forum: hardware, software, co-design. If you see last year's paper, we just got published. That's where you'll see one section of the convergence. Of the scale up and scale out. And I've been like since I joined UAC, I've been talking about there, but that time nobody was listening.
+
+But now I'm happy that that's been kind of carrying forward. And both of our white paper from this group is advocating on that part. Actually, we now. Went ahead in this current white paper, we went ahead with even converging the scale across as well. Yeah, yeah, okay, yeah.
+
+And that, well, so the other thing that's going on in UEC that I mentioned that I'm related to and percussion, I talked about that before a lot of people joined, but is the congestion management. There's a back-to-sender type of backward signaling congestion, and one of the target use cases of that is the scale across network, right? So rather than waiting for a complete round trip for congestion signals, you can do a shortcut. Backward signal: if you're gonna, you know, if we're hitting the scale across network and there's something we want to resolve before waiting all the way for the round trip. So, that's a so now UEC is in some ways starting to address scale across issues as well.
+
+Yeah, yeah, very. Very cool. So, Rudra, Pavan, do you have any question for Paul or Prakash? No, I'm just trying to listen. Yeah, I just joined now.
+
+Yeah, just trying to understand what topics you're talking about. been there in this group or new join me if you can introduce new joining actually yeah okay go ahead and if you want to introduce yourself yeah so I uh work at Broadcom I was I work in the wireless LAN systems team so yeah so it's a different domain for me yeah so it's That's what the scale across is going over. So it's going over the VAN and RAN as well. So you are not that far. Is it optical or wireless?
+
+No, it still needs to be kind of defined. So, but what we are focusing here in this group is this agentic AI stuff. Which is moving towards the edge. So that means it needs to go over now the WAN and the RAN network. So that's where it's so no it you are not totally off like you are pretty much into this.
+
+I thought wireless has no role to play in the in this. No, no, no, it's going to be this. If you heard about that, Nvidia and the Nokia partnership that's been working on this area too. And then scale across, just Paul was talking about. And I think we have also one section in this current white paper, which is currently ongoing from this group, in this group.
+
+That also we are talking about kind of now. And that's going in the same direction of integrating what Paul and we are just talking about: that how to converge all these different kinds of network. At least I see Paul, I also have one ITF draft going on. On that part, so anywhere if you think that is relevant, we can bring that up on this convergence topic, especially. Especially on the control plane, the management plane, there's no reason why everything cannot be like a single system instead of having three different systems of.
+
+Managing and the control plane of the scale up, scale out, and scale across when there needs to be converged anyway for end-to-end networks. Yeah, I'd love to see your draft. What working group is that? And this is in the Lisp ITF. If you just look for the Lisp AI infrastructure, Lisp-based AI infrastructure.
+
+probably find it if you just google it but i can send you okay i'm definitely uh will be presenting or part of it in the global summit ocp global summit i have my proposal of the presentation got accepted okay i don't know if i'm representing this group or or something But yeah, we'll be talking about that in the ECEN as well. So, okay. I call that a unified fabric. So, okay, yeah, I recall seeing some that is somewhere. Okay, I'll take a look.
+
+Yeah, I think you probably heard me in the Eastern forum as well. Well, kind of talking about it. That's where I think I heard it. You mentioned it there. Yeah, UEC as well.
+
+UEC kind of they keep on postponing it, but looks like now it's coming up with scale up already integrated and then congestion signaling and all these end-to-end. It will probably go in that direction. Very cool. So, one thing I'd like to get your opinion is when it comes to actual requirements from the software side, not just use case side, I would say, or customer side. What do you think are necessary to get those kinds of requirements more clearly?
+
+The reason I'm saying that is in the other working group, like I said, CXL, there's also a working group called Data Centric Computing Working Group. There was a lot of discussion of understanding. So, right now, OCP. standard that's being created in OCP when it comes to adoption. Sometimes there are problems, right?
+
+Because most of the standard created focusing on hardware only. I mean, that's partially being addressed by the, at least nominally, the co-design world. But how do you actually get to that? In that working group, PyTorch, for example, has been invited to join and then to actually understand from a training framework like PyTorch, as well as compilers, all those different requirements. How all those requirements trickle down to the actual hardware requirements.
+
+There's also discussion about creating like a storage API, whether it's SNIA or just separate storage API to support the orchestration of a different memory. Heterogeneous memory components on the memory side. Then, when it comes, so coming back to this working group, do you think most of the you already, when you create those standard, where do we need to, when it comes to getting Feedback and finalize that. Do you think we need more feedback from people like Nasood from the software side? Or maybe it's more on the median hardware ecosystem, OCP, just different parts, such as Chiplet.
+
+CXTR and all that. What do you think are needed for those feedback? I would say there are two parts of it, I think, in the software, also, right? One part of the software, which you're talking about, more like a GPU tooling kind of stuff, how to the compilers and all. Those stuff.
+
+And I'm assuming that's where the Masood comes into the thing, his expertise in that area, and also working on the virtualization and all those. And the other part of the software is more like what earlier we were talking about: the UEC and other protocol-level stuff where we need some sort. Of the software to kind of manage these networks or provision these networks, or and when I say network means I'm talking about the still the GPU to GPU communication network and INC requires some kind of software component like INC manager. It so there are multiple streams of the software, I would say, and it depends on like which software you're talking about, and that's where different people will probably get involved. But my understanding from Masood is that he's probably on the more on the GPU like compiler.
+
+And optimization there, or maybe storage like I don't know if he's also working on the lib fabric and those kind of API stuff, which is kind of a starting point in the UEC because everything comes down for the Transfer level from the lib fabric. So that's another software, like Linux kernel and lib fabric, and those kind of APIs. So different the software has a kind of different roles here. So it depends on the which kind of role. One thing, On your point, I would say that in part of this group should be like which I thought that there's another group in the OCV, but if it's kind of open, then we can also take it here.
+
+Where you define the complete system, right? We, as a cellistica, we manufacture most of the OCV. OCP-based hardware. We are kind of provider of those. So we know that some of these things are in the some OCP different forums are already defined, like I think one is the RAC group, so which defines the OCP recommended RAC designer.
+
+all those so if we don't have a particular ocp group which is more type of building the the complete system including all the scale up scale out and scale across we talked about that could be the one of the good areas to Take into and then kind of dissects it into the hardware, software, and different parts of the software systems we talked about. Yeah. Actually, Masood is his focus is on the GPU virtualization only. So he probably knows compilers, but I don't do. I believe that's his focus.
+
+The other working group is really talking to people who like PyTorch. There is actually a guy that recently, he actually is one of the very active PyTorch contributors. So he's going to join pretty soon. Then, yeah, so that's that's yeah, that's different. But you're right.
+
+When it comes to OCP, this is my observation: the one working group you're talking about, probably the main one is probably the OCP server working group, which is supposed to be the parent working group for this working group. So they, so far, I attended several meetings there, and including several related working groups, such as modular, HPC, and all that. Mostly working group really focusing on, as I said, the rack design, boolean, and all those really pure hardware. Specs, which is still important, right? For example, when you combine eventually, right now we're talking about agentity, right?
+
+But what if we wanted to go beyond that and then connect the neuromorphic and quantum, right? And so when that happens, there's definitely some rack-specific specs that need to be. Spelled out. I think this working group is more of an actual co-design. Like, how do we get the requirement from the software side, the algorithm side, the actual end user side, and the hardware side?
+
+And how at least that's my impression. This working group is the best place to discuss. About those topics. Yeah, yep. I think, yeah, that's what the hardware software core design is.
+
+But I think the little confusing part for me is that because a lot of these computers are moving on the network side, sometimes it's kind of become like, okay, The compute has to be come out of what the traditional compute used to be. And then we start talking about in that sense the networking, which is sometimes really hard to convince the pure compute people that, hey, you need to think of the network as well. But yeah, uh since my expertise is on the network side, so I'm more kind of think in that direction more uh than the pure hardware software co-design what it used to be so far. You you see I see Roger you're you're off off you you want to say something yeah. I actually have a question.
+
+I'm sorry. I won't be able to contribute very wisely because I'm just trying to get on space. But what we are talking about is on a really high level, like connecting all of these GPUs within a data. Center and across data centers in like different geographical areas. And because there is a massive flow of data, that's why we are trying to get some of the compute along the way in the network.
+
+Is that the idea? Yeah, that is there. That's the right way to put in because these GPUs. And so now this GPU cannot like only few GPU or GPUs within like a one system. The number of GPUs which needed to do the whatever the applications for it like in going into the hundreds of thousands or and some some people now start talking about the millions of The GPUs as well.
+
+So now they need to be connected in the network, and the network has to be pretty quick and efficient to reduce the tail link latencies and all those stuff to match the 800 gig or 400 gig links requirement as well as GPUs own calculation requirement, right. That they have to do that. So the network has to be pretty efficient. And then you're right, that all these movement of the data has to be optimized. Like it cannot be like now that on one side of the one GPU is doing and then it's taking help from others and now everything is moving to this and then from back to it's going to the other.
+
+So that's the reason why the central network become like a key point to reduce that movement and do this all other collective operations which need it for the AI algorithms or whatever the matrix operations and vector operations. And all those. I see. Yeah. So coming back to the dilemma, what we are discussing here is that earlier the hardware software co-design used to be on the compute side, right?
+
+We need to focus on all these different. Tooling and the virtualization techniques and all those, like in stand kind of standalone system. Right. But now, since this GPU needs the network and the other GPUs on that network scale up, scale out, and scale across, the compute is shifting. Now we are trying to figure it out what this hardware-software core design means now in this new paradigm of the network as a compute.
+
+And at least I'm trying to bring the awareness in this group on that part of it in all these white paper. We kind of put, and the same thing is now going forward in the Future, the neuromorphic computing, right? They have the similar requirement, but now it is more optimized in terms of okay, out of these millions, which one will be like doing it working at a time, and how we can optimize those kinds of things. From the networking point of view, still that neuromark computing is the next stage of the same network as a compute, but more now in the optimized way of how we can emulate the functionality in the brain, which is so efficient. It doesn't need so much of Megawatts of powers to kind of operate.
+
+It just needs some 12, 14 watt power. Right. Because you're distributing the compute across different nodes. Yeah. So the power is not concentrated.
+
+I think with that also, it's Significant, like, if once this is like implemented and it becomes a little bit more like how to like implemented in its fullness, it's also gonna probably put less load or relatively lesser load on cooling solutions and stuff like that. So that's what the Target is because think of the brain, like it doesn't need any kind of cooling, right? And then, if the equivalent work is done by the GPU, how much cooling does it need? So, right. So, that's the kind of neuromorphic computing focus: is that like how we can optimize that?
+
+And that's the kind of next one of the action items we took after, I mean, so. Or, in addition to the agentic AI work, we've been planning to do in this group. What is the agentic thing? Like, I thought the neuromorphic thing was coming to fruition because the AI is getting more and more efficient in agentic workloads. So agentic requirement has changed in form of like earlier all these AI used to be stateless in the data center boundary, right?
+
+Within the data center, where all the training and inference and so far, whatever the scale up and the scale out and UEC and UAL and ECEN, whatever you're talking about, is within the data center. Data center. Okay. But now, since the inference has to be done on the edge, and that's where the agentic agents will be running on the edge, right? On the edge, or on the kind of devices, users' devices, and all those.
+
+So the inference. Part has to be done near to them, near the devices. So that's where the network is moving beyond the data center boundary. And that's where we are talking about the scale across and all those things. Now, so whatever the problem we were talking about within the data center in this context of the scale up and the scale out, now we are talking about the scale.
+
+Talking in terms of like a whole network, right? End-to-end network, which is including, I think Pawan was talking about the wireless network and all those. So the same dilemma which we are talking about, this hardware, software co-design, now kind of all over on the network, right? That inference has to be done, and how the training will be done in the because again, the inference we want to kind of go into more close to where the devices are, but the training has to still happening, the devices which are. Across the network as well because the learning has to be done, all these things.
+
+So, still, kind of, in my view, I still see that maybe training still needs some kind of centralized or some kind of coordination with the data center, and then the inference has to be kind of going more towards the end. And there's a new kind of architecture of everything will be coming. And then you need to probably architect the link between the data center where most of the trainings are to the portion that actually are doing. Yeah, that's something which is open and I think. I will try to bring that up on the OCP summit and these forums and all those.
+
+But I think this the dilemma we have, like some people who are more compute focused, they are focusing on the you know traditional compute side, while the people like me who are in the network, now we are seeing the compute is moving on the network. we are kind of trying to bring out the importance of the network. Network is very important for the compute. And all these UEC, UL, all these forums are to make that compute moving to the network more kind of easy and efficient or standardized and all those stuff. This is how I look at Paul Peel, please correct me.
+
+I'm more biased on the networking side. The UEC as a standard, how is it related to the in-network computer? In memory compute? So, no, in network compute is a little different than the in-memory compute, right? In memory compute, we are still talking.
+
+I know the difference. I wonder how does UEC play in that? So, UEC is playing on the in-network compute space. Because the UEC is defining the GPU to GPU communications, it has the endpoints, like which is kind of on the rack, but then it has the switches in between, right? And then those switching layers could be single layer, multi-layer, and all those.
+
+The in network collective, we call it in network collective. In network collectives now has like a two different flavors. One is the in network collective for the scale up, which is within the rack or within the pod, within the one kind of thing. And then other uh l l level is the which is scale out. In network collective, when we are talking about across the racks or across the pod communication, maybe third version will be coming soon will be scale across, where we are talking about across the data centers and across the network stuff.
+
+So, UEC right now is playing in network. Collective or scale up and scale out. And then I'm assuming soon it will be moving to scale across as well. That answer your question, Victor? Yeah.
+
+So other than making sure that the API is standardized, what additional new features are being added to? Enable in our computing? Fun thing is the coordination because for in-network collectives, you need to identify a group of the GPUs where the collective operation will be happening, right? It's kind of so there's a there's some coordinate. Coordination needed, like, okay, which is this group where this all reduce or all scattered or and whatever different operations are happening, right?
+
+Paul, you want to say something? Yeah, well, I was going to mention, so scale out and scale up are fairly different approaches for. How the in-network compute stuff is done. But in the scale-out scenario, yeah, Procreas is correct. There's a kind of a considerable software layer that is responsible for orchestrating the collective operation.
+
+So, like he said, you have to identify the group of XPUs or GPUs that are going to that are involved, and then also the group of switches that interconnect those and some software layer. We call it the IIM or the INC manager. Yeah, it has to, you know, it has to more or less program, you know. know orchestrate the collective operation across those devices so there's a there's a pretty significant software layer and for that and as I mentioned in scale up it's it's a little bit more closely integrated with the hardware if you will right so So, you know, it's in the rack. And so, again, it's probably slightly different software that's coordinating things.
+
+And when you get to the MOE style of operation, you can't really have that orchestrator. It's too dynamic, too quickly reacting. And so you kind of can't use that software layer anymore. You need some inline protocols to do that coordination and grouping. Does that make sense?
+
+So that software layer, that's something being developed by people in UE. community or is it some OCP or it's more from the actual software user layer, like the Kubernetes? It's both. So there is a one part which is the more related to the forwarding plane or more onto the data part. That is more implemented in the hardware and this coordination stuff and all this provisioning and all those which Paul orni were just talking about is more on the software.
+
+So there are both part of it, the hardware and the software in UEC for the INC network. Computer collectives. So for example, for Mesus GPU virtualization, that's probably where that virtualization layer will play a part of it as a consumer of the UEC. APIs from the hardware side. Is that correct?
+
+I don't know exactly Masool's work, but if he's playing with the, let's say, libfabric APIs, right? So then, yes, those APIs will be underneath, will be using the UEC. And all these other nickel kinds of which is INC in the UEC case, is those kind of APIs and all those. One thing, I don't know whether it's related to, I'm not an expert of that field, but whatever the MOE stub mixture of expert Paul was talking about, that might be someone. Of the things interesting for him.
+
+I guess, Paul, go ahead, Chris. Yeah, I was going to mention that the APIs are a little also different. Proketch keeps mentioning scale, libfabric, and that is definitely an API used in the scale-out networking. But in the scale up where you have GPUs talking to GPUs directly doing kind of memory semantic operations, right? Doing reads and writes of an atomics of cache lines or memory, you know, memory moves directly, that the APIs may be a little bit different right there.
+
+They're sort of a custom API for. hardware, you know, they're sort of hardware implemented FIFO type APIs. So they're a little bit diff you know, it's different how the information moves in scale up than it does in scale out. Yeah. And at least Paul, um my thinking that we should integrate even that part too.
+
+Right now and probably it's going to happen as the uh UEC will integrate uh will converge on both scale up and scale out and the lift fabric level also the API has to converge for the scale up and the s scale out. But there are two different uh operation as you pointed. One is scale up is more on the Load and store kind of semantic, and then a scale out is more the RDMA kind of semantic. So they have two different what when it comes to UEC spec, do you think it's something that we should just wait until you publish the? Version, then reach out to the software side more, or you think you still need to get more, hear more from what the software/slash agent algorithm side, what's the requirement?
+
+Yeah, I would say Masood can start looking at the 1.0 spec for the If anything is find he finding interesting, right? It's more mainly for me, it will be primarily for RDMA kind of stuff, but then it's been also getting extended for the load in store as we go into more next versions of the thing. And I think Paul mentioned that one dot one is already released, Paul, or it's it's not we're we're in you know, we're in internal review, so we're I would say we're weeks away, you know, from from publishing it. And some of these stuff, Victor, we can't also talk about unless everybody is part of UEC. So I would say You say the Masood should focus on the release spec, which is 1.0, and if he can find there something which can help him on the agentic AI or the virtualization stuff he is doing.
+
+The reason why I Asking that, I'm not sure because Masood seems to be quite busy lately. So, and also, I actually, he came to OCP from me talking about this just several months ago. So, we can definitely, if he's too busy, I can definitely go there again and ask other people who might be interested in. Now, the question is, so it sounds like it does for the new stuff, for example, the in-network compute, the new stuff, you do not really need any like kind of requirements per se from the software side, right? It's just whenever you publish those specs, then we take it to the software.
+
+side and and they start to use those in in the UEC itself we have a software group we have the software stream as well the people who work on more on the kernel and the APIs we are talking about right live fabric API and the kernel stuff and so if let's say we need to ligand with that group will be the right group to kind of work with to look into what a specific thing can be done or needed for the agentic AI stuff. Right now UEC more focusing on the UA the scale up and the scale out. Assuming the agentic AI will come into their focus when it goes over the scale across. And that's where probably it will be a good idea to, if let's say we need to lysen with them, the software group in the UEC is the right group to do that. Very interesting.
+
+Half the hour. It would be great for you, Paul Prakash, to present about UEC in one of these meetings to understand where they are right now and the exciting stuff about in network computing. Definitely not something, at least I'm interested in those future meetings. Sure, definitely. Yeah, sounds good.
+
+All right. Thank you. Thank you for joining. Have a good day. Thanks, Kate.
+
+Thank you. Yeah, bye-bye. Thank you.

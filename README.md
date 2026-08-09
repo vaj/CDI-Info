@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Victor Lu (Independent) and Prakash Jain (Celestica)
+
+<a id="515"></a>
+
+2026/08/08 Server AI HW SW CoDesign sub-project 2026-08-07
+
+[YouTube](https://www.youtube.com/watch?v=vTBrM7K4lUo)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/515)
+
+[Acronyms](./acronym.md): OCP AI GPU UEC CXL CSIG INC chiplet neuromorphic IEEE LLM
+
 Manoj Wadekar (Meta)
 
 <a id="514"></a>
