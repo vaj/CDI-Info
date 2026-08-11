@@ -1,0 +1,327 @@
+HM DDD Datacenter Diagnostics and Debug workstream 2026-07-30
+
+I just realized that the thing muted me automatically, so I don't think you heard me. Say hello. No, how's it going? I thought you might have, since I joined a little early, I thought you might have stepped away for a second. No, I on the pop-up, I had it unmuted.
+
+Okay. And so I guess when it joined, it the settings, the OCP is setting. Up for this thing overrode that. Oh, geez. Yeah, I notice sometimes with at least Zoom, I think my headset doesn't sync up with the.
+
+If I hit the, what's it called? The mute on my headset, it doesn't sync up with the mute on the I can see that. I have a my problem with Discord because I've got a headset, I've got a streaming microphone, got a webcam with a built-in microphone, I then have earbuds plugged into my streaming microphone to. To use instead of my headset, and my monitor has a set of speakers. So every time I open up Discord, it just randomly decides what combination of those six items it's going to use today.
+
+Yes. It never uses the default, but it just goes. Yeah, exactly. WebEx used to do that to me. It would never pick my default.
+
+It would just pick, like you said, a random craziness. Discord. Pain of my existence. Yeah. Unfortunately, so two of my Primary hobbies, actually my two primary hobbies at the moment.
+
+Both heavily use Discord for people talking. So yeah. And my my first experience with Discord was like um somebody was like, Oh, you just use Discord, it's cool. And I was like, installed it and got like uninstalled like five, three minutes later because, you know, I don't know, I clicked on five servers or something and got bombarded with notification to the point where I just couldn't handle it. Like within five minutes, I was like, no, I can't have a notification on my phone every seven seconds.
+
+So then I've got like first thing was just completely uninstalled, and then all more of my friends use it for organizing things that. Um both my primary hobbies are okay, I I reinstalled it and deleted and uh disabled all notifications so I can at least want to look at it, but I'm interested. Yeah. That's what I noticed with a lot of apps. They just you gotta dis disable all the notifications and there's and do it on demand like when You gotta specifically look at it.
+
+Yeah, that's my PKM. Like any app I installed, notifications are disabled by default. Yeah. Including work email on my phone. That was the best move ever.
+
+Oh, I've never put my work email on my phone because that would have been oh. Yeah, I thought like at one point in time you they didn't have um like data numbers for for Teams meetings, so I kind of needed it. And I was like but then I found out that if I uninstall if I don't don't log notifications Um, now it doesn't own me anymore. Like, I look at I can look at it when I'm interested in it. Like, okay, do I have a meeting this morning?
+
+Um, do I have to pull up my laptop? Which is I appreciate, but it does not bombard me. Yeah, right. Should we six minutes in? Should we just go into it?
+
+Yes, we should just get going. Yeah. Yeah, so that so what I was saying, Enrique, right before Rose was muted, was: I guess it's going to be a quick meeting if it's just the two of us, but I guess with just the three of us, it may still be a quick meeting. Yes, yeah, we'll see. Yeah, we have at least the JSON schemas to look at.
+
+That yeah. All right. I guess opens. If anyone had any, we'll go a couple. I got a couple updates.
+
+Is it sharing? It's sharing. Yeah, yeah. Okay. Mini update I have, or mini or not it's not an open, but it's just an update is that the We now have a YouTube playlist.
+
+Ah, yes. And so you're you will no longer see me probably either of us posting individual like links to recordings. They're just all on the playlist. And you all can hate me now for my life for five idea I had a while ago because that's like the something else always somebody's face. Sorry, Donald.
+
+That's fine. All right. So, yeah, that's. If I can survive Disney World wearing red and a Santa Claus Mickey Mouse hat in December, I can survive a few YouTube videos. Awesome.
+
+Kick you out. They apparently have like rules for guests showing up in costume. It's kind of funny. Yeah, they do. Well, the problem.
+
+So the problem is that I was bounding. I wasn't actually dressed in a Santa Claus costume. I was wearing a hat that they sell. And just, you know, actually, I was wearing a hat that they sell in a red fleece. Jacket from Animal Kingdom that had Animal Kingdom patches on it.
+
+And it's just, you know, it was just normal clothing. It just happened to set an unreasonable expectation amongst the kids and several of the adults. Awesome. Awesome. All right.
+
+All right, well, you see the agenda there's status, the status stuff, and the concurrency stuff for the JSON. So let's move on. On the summit updates, I think I don't remember, Mark, if we said this in the group, but our submitted abstract wasn't accepted. I think I mentioned that before, but we're going to get it. Opportunity.
+
+I don't forget how many you said, one or two slides with the fault management. So I'm not sure what we need to do there, Marco. But yeah, I don't know either. It might actually not even be even be this, it might be like the hardware management project that goes into our. We should ask tomorrow.
+
+Yeah, we should ask what they're doing. Yeah. Okay. But anyway, there's still going to be some level of opportunity of putting something out there. At least, hopefully, a little broadcast of our spec is, I think, the hope there.
+
+But the bigger one, maybe the more, the cooler one to talk about. Is who's going, and I thought, hey, if we're, you know, hopefully most of us are going to be there to set up something, you know, we can meet in person, have a lunch together since they provide lunches, dinner together, or whatever, just at least get to meet everybody and face to face. I'm pretty sure we're not going to get a breakout room. So, like, unless Quarko wants to post it, I don't even know if you guys have a campus anywhere close by. So, see, the other option is to have a face-to-face working session and maybe more.
+
+Faster, but uh, that's uh, yeah, that that could be doable. I mean, I know I'm I live in Sacramento, you know, outside Sacramento, so I'll be driving, so I could drive somewhere. I mean, if we wanted to do something, I don't. Know my campuses very well yet how they do those things since I'm in a center. I don't know what I can and can't do at the Santa Clara Intel campus, and it's pretty far away from that place too.
+
+Yeah, but I guess the meals were like, you know, the so they're huge rooms, so I didn't know if we could like grab a table in the corner or something, you know. We could do something like that, yeah. Okay, that's that's okay. Here's my um suggestion contradicting myself because it's Fun is let's don't do anything like as in getting a formal breakout room kind of stuff. Yeah, yeah, yeah.
+
+I had, or you know, a room at Intel or whatever. I don't want, I don't know, I'll try to figure, pull that one off. Sorry. Let's just do something that's you know along the lines of. Meeting internal for lunch or dinner.
+
+I'm okay with either. Well, actually, so first who's going to be there? I just booked my flight, so I'm there. I'll be there. Yeah, I've had tickets in the hotel for a while now.
+
+So, like I said, I'll be probably just driving down. So, yeah, that's easy. Will you be there, Don? Yeah. No, unfortunately, I won't be there this year.
+
+Oh, that's too bad. Okay. Okay. Well, let's keep this on the agenda for the next couple of weeks, hear from the others. I know Rolf will be there because he's got a presentation, actually.
+
+They're doing a presentation. He mentioned that last week. So I know he'll be there. So we'll have to see on the others. We'll keep that as a standing open.
+
+Yep. As far as the MIPI debug work group stuff, we made some progress. So, we had some technical reviews done on their approval for the approval of the spec that we were asking them to do. So, that got approved, no technical issues or anything. There's just a couple other reviews they got to go through.
+
+So, that should be done by mid-August. And then, officially, there are. Off and running. Then I don't know why it says OCM. I don't know who the heck OCM is.
+
+Let's change that to OCP. The liaison agreements also were reviewed. No issues there. That's going to get moving. Again, they'll have their.
+
+Final reviews by mid-August, and that's going. The liaison owner on the liaison owners have been notified. The MIPI side is going to reach out to OCP hopefully in the next week or so to get things moving. We've already had. Some discussions with both sides already.
+
+So neither side thinks there's going to be any issues. So that's good. As far as, you know, I think we've talked about getting review copies and things to the team here. So I don't see any issues there. And then maybe a commercial though, work group.
+
+Is actually doing a face-to-face. The MIPI work group is doing that to do the deep dive technical discussions. They haven't set the date yet, but it's looking like the week of November 30th in Cambridge, the UK. We'll know in a few weeks if that's. Fully confirmed, but it's trending that way.
+
+Any MIPI contributing member is invited to attend, and we're hoping people from here do, you know, if they're interested, they can attend. I'll get more information if you don't want to attend, but can't make the travel. There may be some ways. It's harder because these are usually brainstorming, whiteboarding kind of sessions. So it's not so great over the phone.
+
+But we may. Maybe they're going to be in the middle of the night. We can make some adjustments and trying to do it like, you know, after. After noon-ish Cambridge time, so that it's more like all right, five or six in the morning here. Yeah, okay.
+
+So we can make those adjustments if we know people are doing that. So once we make those 10 a.m. Central Time. I used to have to have a meeting with Shannon, Ireland, Central Time, and Pacific Time, and 10 a.m. was like the only time, only hour slot that was business hours for all three.
+
+Yeah. But anyway, yeah. So they're going to have normal. But I mean, like slightly extended business hours. Pretty, pretty doable.
+
+Yeah, I mean, it's a face-to-face. I mean, it's we're kind of flexible. We usually work, I mean, usually these MIPI conferences, we do like an 8:30 to 5:30 kind of thing in the local time and things like that. But I think the harder part is if you're not face-to-face, if you're not there. Person, and you're doing over the phone, it's a little tough because, like I said, in these, and especially with this spec being just started, there's a lot of whiteboarding.
+
+So, it's a little hard when you're just on the phone. So, being the one person on the phone and a face-to-face is pretty, yeah, it's a little tough, pretty depressing, yeah. Plus, you miss out on all the activities we do, like all the food. I mean, last we did this last year in Cambridge, and ARM hosted. So it was nice.
+
+They got a lot of great food, and you know, we went out to the pubs afterwards. Nice. It's a fun time. But I'll get the details. Certainly, a fun place to be.
+
+And I'll get the details a little bit more again. If you're a contractor, remember, I put it on my wish list. Yeah. Yeah. But it's nice.
+
+It's nice. I mean, what I did is you fly into London to take the train to Cambridge. It's pretty quick, pretty easy. Not hard. And we typically will find a usually what the MIPI team does is we'll find a hotel that we can all stay at that we all kind of are within our budgets and agree to.
+
+We found a nice one last time that we all stayed and then we took like some Ubers to the campus and it was pretty easy. Worked out real well, so okay. Okay, um, that's it on the updates, and so I guess um, Donald, I have your I think uh what you were showing, so I'll just stop sharing. Okay, so let me know when you can see my screen. Yep, thank you.
+
+So, as I mentioned, I'm still kind of learning JSON schema stuff. I was actually reading some introduction stuff this week just to make sure I knew what I was talking about. So, this was created by generative AI based off of my example. At least because it's a starting point. The first thing that I wanted to bring up is that this decided that numeric values represent strings in the source payload.
+
+I wasn't sure we wanted to do that, me thinking about it, because we're, you know, we're talking about voltages and currents, we're talking about numbers that we want. Want to be used as numbers, not as strings. I'd say that I'll agree with that. Yeah, I would agree. Okay.
+
+And I mean, the one thing too, when I was Kind of when I was building the example was that I think we want how do we do this? Okay, so I was just looking at. The code currency schema, right? So the one, as I was building my example, so okay, quick preview. When I was building my example, right, I was like, okay, I want to build a better example.
+
+I was like, you know what, I should use the same system I built the code currency example on. Now that feels like very consistent, right? Yeah. So that was like, I will use the same example. I built the code currency example because that feels very consistent.
+
+And then, as I was doing so, I was like, well, we should probably really make Those schemas very aligned. So you kind of build them on, almost build this data stamp schema on top of the code currency schema, because they have, you know, they have certain things in common, like the naming of things. And the system topology, those are the two things they have essentially in common. And then where they're different is the, you know, this is calling out voltage values, but the other one is calling out firmware versions. Right.
+
+The notion of having assemblies and sub-assemblies still exist. So I have literally no ego in this. So if you if you want to share yours and us look at yours, I will be very happy to just copy yours into here and we can go from there. You know, yeah, I mean, we can let's see what you have here. Why don't I merge it?
+
+Right, I mean, okay, sure. Okay, so okay, so the yeah, I think numbers things that are objectively numbers should be numbers, yeah, yeah. Yeah, I was wondering that's why I was wondering why. It was done that way, so it's so it was just an artifact in AI did that, right? It was an artifact, and I'm like, you know, it is literally one of these.
+
+If I saw it and I was going to fix it, and then I'm like, okay, I might be missing something here, so I'll wait until, yeah, yeah, yeah, yeah, okay, makes sense. Um, okay, so yeah, that makes, yeah, so anywhere where it's. He says string or number, that's just gonna be a number. Yeah, pretty much. I'm gonna copy this into Notepad and do a finder place all more than likely.
+
+Makes sense. Okay. So you get your power, which is a type object, voltage with a value, and the current with current value. The examples here have bolts, which I think is going bolts and amps for our currents, but I think is going to be the only options that we're going to want there. And all the types should be derived from the PLEM.
+
+DSP something something. Yeah. So I probably have open one second. I can give you the right number. Because I have it open because there was nothing with that yesterday or the other day.
+
+And the question is: does me having something open know anything? Probably not. That two best I have a computer question. couple of times. Okay, our um well yeah anyway, it's the um let's be something that describes type two Okay.
+
+Did you say you put it in chat? No, I'm looking for it. I thought I had to open it, but I don't. Okay, no problem. It's um okay, I got it.
+
+It's TSP 0248. And amps and vaults are correct, by the way. Actually up in the top, uh it says OCP system status document is video system. So, where are you seeing where it says in the page content, right? Under ID, it says title and it says OCP system styles document.
+
+I don't know why. Well, it's probably an artifact of. Yeah, it is. Yeah, it it is. It's um stump.
+
+It's because the that that was a copy that's a copy and paste from that's what the title of the um example page was. Okay. That's why. So then you said this. DSP, what was the number?
+
+Well, that's a comment further down when you talk about the like the vaults. Oh, okay, so pretty huge. Yeah, yeah, I would say it caused. Say that the value should be based on DSP was it? 248 248 is 0, 248, by the way.
+
+Okay. And then we have this performance type object. And this is the performance metrics that we had in here. The example that we had used was network metrics. So sorry, sorry, one thing.
+
+So Marco, with that zero two four eight, should we just make that generic? Meaning, in our spec, should we just say, look, all usages of numbers and these types should shall follow just across all our schemas and everything? Yeah, I think so. Okay, so maybe we'll put that in the beginning notation and saying, hey, we're going to use, yeah, let me look at that, but okay, I'll look at that as maybe we'll just make that an overarching requirement for us. Okay.
+
+Okay. Sorry. No problem. You know. So, then this was just kind of a generic performance based upon the device, which is why it's got several different things in here, depending upon what type of device it is.
+
+And they have probably many options. So, yeah. Be a lot of different options here, so at some point we probably need to flesh this out. But I figure for the first cut, we're more worried about getting the clones right. Yeah, and I mean, the first thing about the fleshing out, right?
+
+Because that's really the notion of. Like, I don't want one company schema talking about package loss and the other one about package resent. And the third one has the way you have it here. And we have three keywords that mean the same thing, right? Yeah.
+
+Okay. I will have to probably make that like an appendix or something here. Here are the predefined keywords, what they mean. And then everybody's encouraged to pick from there and only make their own when that fails. Yeah.
+
+Okay, and then we also had utilization. Which I think was a generic remember correctly. This was like how much of the CPU is in use or the GPU or the RAM. Yeah. Or aspect of the CPU.
+
+Yeah. This vendor here was vendor-specific information. This was kind of our catch-all. For, hey, you need data for yourself that has nothing to do with the spec. Here's a block for you to put it.
+
+Here's the reason it has the option for null. Okay. And then this one, yeah, yeah. So this one I'll um yeah, so the vendor's fine, the user. Um so that um in the code currency um schema is called physical location.
+
+I will be grumpy about changing that actually. So that should be physical location. It's all one word. This camera case and location. Okay, okay, it's okay.
+
+Okay. Like I said, I have no ego in this. So, if there's any changes you want to make, I'm happy to make them. I'll explain why I chose what I did, but you know, at the end of the day, whatever. Exactly, somebody can make a mega value.
+
+Yeah, so those other properties, rack, floor, you, maybe. I don't know about you, but floor and rack probably should have a lowercase first letter. Usually we've been doing lowercase first letters. Yeah. Sorry, I instinct.
+
+One of my neurodiversities is when I'm thinking about something specific, I capitalize like it's a proper noun. I am so used to that too. I know. About this floor and that rack, yeah, and you'll want to fix it. Put yourself into my shoes in German grammar, every noun is capitalized, and I still have not flushed it out of my system.
+
+Um, well, yeah. But you don't believe in sentences. No, you do. You do? Because everything I've seen has been: we'll just take all the words out of the sentence and make one compound word out of it.
+
+Well, yes, that's another thing. That's the thing we believe in, yes. Yeah. I guess it's better to say you don't believe in spaces. I think it's the technical.
+
+Yeah, we believe in we believe in um constructing words on the fly. Yeah um you um I mean the only the only thing about the location is um um So we just require the location as a string, right? Because when we get into when we get from like trace to into like the sub-assemblies, right, they may not have a flaw anymore, right? It might be PCE cards. Number five.
+
+Yeah. So we'll take that out of the required list? Yeah, so like having a location. Yeah, because well, this was, so this physical. Location because at the system level.
+
+Yeah. At the subcomponent level. Okay. I mean, let's just take the AI offline to the physical location definition should be aligned with the code currency. Otherwise, somebody's got a coming.
+
+colorful and be right about it, which I'm not a somewhat cool, cool-ish. Okay. I have no idea if if the JSON will blow up on that, but that's how I think of notes. Component base is similar, a similar story about this is basically what is the thing, right? Yeah.
+
+And so let's see if you. So that part also needs some aligning with the with the code currency yet again. Actually, I get into it when I get into my part. Sure. So We're here.
+
+So when I was doing the example, that's nice thing we're doing the example. Um oh maybe I do it later. So since you're okay. You still on the vid and pit. Yeah, the the vid and the vid and pit are actually missing from the code currently.
+
+They have to be added there. I think I like them a lot. Yeah. Um that we take bid and fit from PCIe, right? So this was right.
+
+So that's one thing about, I wasn't sure how to break this out because the original plan was that we were going to basically, I'll call it, qualify organizations. And we were originally starting with OCP and PCI Express, and basically saying, okay, you can pick from one of these organizations for how your company is represented in this value, but you have to tell us which organization list to go look at. That's what. whole idea behind OCP or PCI Express. And stick an extra M at the end of Pokemon.
+
+Okay. I should, I think my example is wrong then, but this is good. Okay. Yeah. Yeah.
+
+And then that's why it has to be a string. Yeah. Okay. But it's because it wouldn't be like PCAE like for Intel, it would be PCAE 8086. I think that's the pit for USB as well.
+
+Okay. Perfect. Yeah, Intel tried to market everything under 80, 86. Pretty fun. Makes it easy to remember.
+
+Yeah. And then the PID was a string because that's just some kind of qualifier. That the vendor is allowed to pick what their PID is. That's a product ID. Do we say we use the PID that's also associated with the organization?
+
+Or is it one option? I mean, that's an option if there are PIDs associated with the PID. With all these different pieces. I mean, because like I know, I know USB, I think the USB standard, the PID is a USB class. Yeah, so USB device, you know, is a bit in PID and There's like at least until there's somebody who's in charge of assigning PIDs and he's um has a you know reasonably high bar before you get a PID,'cause they're worried about running out.
+
+Um So here's the question. What organization issues PIDs for CPUs? So, PITs are product IDs, right? So, Intel is assigning PIDs to the Intel CPUs, for example. Right.
+
+And Qualcomm is probably doing the same. Yeah. So, I'm pretty sure there is going to be a, you know, Quarkom CPU and. Little CPU with SAP it. But I yeah, so okay.
+
+It sounds like we're kind of on the same page here, where that was why I had it just as I said as a generic string is because theoretically Intel could issue. A PID and Qualcomm could issue the same PID, but they're two different items because they're not outside of the USB standard. They're issued by the vendor. Well, they basically have different bits, right? Yeah.
+
+It's the PID pair that's unique, not the PID. Yeah. But I okay, sir. Yeah, hold on to the sort of identification because there's some okay, so we yeah, so hold on to the sort of identification as easiest look at when we look at my example. Okay, so this is actually not a physical location here.
+
+I just realized what this one is. This is the one that you were this location here, I think, is when you were talking about Marco, which is where it's located inside of the sub the system. Yeah, so in code currency, we call all of those physical locations, even if they're not expressed in rack in backwards. So calling it physical location is perfectly fine. Yeah.
+
+Okay. And then we have the help, the system, or the device. Yeah, so when I was building, this is the nice thing about actually building the example. by hand right when i was building the example um like the um the difference between or the um the difference the delineation between health mode and status were kind of um making making my head head space Okay. So I was basically saying, oh, health is healthy.
+
+Status is healthy. Okay, why do I have to say why am I saying this twice? What's going on here? I think we need, maybe we need to drop one. Maybe we need to.
+
+So the either drop one or they say to the Things. Okay. But like any, in all, all of, all of, I think the mode was kind of okay, mode is online, offline, right? That's sort of, that's, that's sort of the easier one. But like, I could not like delineating status from health was, I failed.
+
+Yeah, I forget I forget what the why we originally had both. I think it may have been just kind of a overall system health versus the stat a status code out of a out of a device. But um I know it wasn't spawned all right. It's there. I just love, there it is.
+
+I was gonna say, I just love when my spelling is so bad that the auto-craig's like, I don't know. What you're trying to say. Yeah. It's always fun. Yeah, so, um, yeah, we just keep status for oh, what's healthiest, crash is a narrow state.
+
+Yeah, I agree. And then, I mean, if you at some point in time that doesn't a few is overloaded, then we're It's something that's just going to be different. Yeah. The last error was the very last terror. So, one thing with stat, one thing with status, sure, it may be good to standardize a positive.
+
+Status versus a negative, meaning if you see status is okay, then you know you're fine versus if you see something other than okay, then there's a problem. What that problem may be could be user-defined, but maybe that's the go, maybe that's the thing between. Being status and healthy and health, right? Like the status is okay or not okay. It's always binary.
+
+And then health is: I crashed. I'm not feeling good. My foot hurts. Well, see, see, I would be the opposite. If we're going to do health, I'd be the opposite.
+
+Health is, are you healthy? Yes, no, it's a Boolean. Yeah, that should be a boolean. Yeah, that would. Be better.
+
+That could be, yeah, yeah. Health would be bullion. Yeah, I'm healthier. I'm sick. Yeah.
+
+And then status would be, yeah. Yeah, yeah. I like that. Yeah, that's the that was like the um yeah, that was the delineation I was looking for, right? At least, yeah.
+
+I'm going with that. Health is binary and status is a string. Status is a string. I mean, health may still want to be a string with two options. So you don't have to figure out what health equals one means.
+
+But from a Yeah. But I want something where my script can go and look at health in this case and say, is it positive? If I have positive health, if it's good, then I can kind of skip over and go to the next one. Yeah, the only reason to make it a string a little bit. So, if it is string, then it's okay or not.
+
+It's okay. It's a little more readable. It's yes, no, exactly. Like, what's health zero mean versus okay? Okay.
+
+But it should only be two values. It should be like okay, bad, or whatever. Good and bad. Yeah, yeah, yeah. It's absolutely from a from a Logic point of view, it's binary.
+
+Yeah. So, to be honest, the reason I was thinking a Boolean there was I was thinking about it from a piece of monitoring software, where if you throw it as type Boolean, then whatever your script is written in. Your if statement could be yeah, your if statement is just if not, if not healthy. Go do this. That was that was my that was a boolean, but it doesn't.
+
+Oh, oh, you just said it, Donald. Change it from health to healthy. Okay. Because a one health, healthy, if I'm healthy, I'm a one. Yeah.
+
+Look at the boolean then. Okay. That's a bit. Yeah, there you go. That's because, yeah, if healthy, if, because then when you're writing your If statements really easy, if healthy, if not healthy, then yeah, then do something otherwise.
+
+Because I was just trying to think of things that make it simple, because I'm assuming you're going to have a huge set of these things. And if it's already, if I'm healthy, I'm just going to skip over you. Right. Yeah. And I'm also thinking about this from an API call.
+
+Of API calls of, okay, you know, it's a lot easier for me to, if I've got a huge data center, send out a call that says, hey, just return me a Boolean value to a thousand different devices than it is, hand me a bunch of data, and then I'm going to go out and parse it. And how much processor time am I going to do deal with? Yeah, you want to lowercase the agent healthy. Sorry, that's fine. You do not want to know how many times I start conversations with.
+
+Okay, I'm going to be pedantic at the moment. Yeah, I did that with, I think, I did that to Marco in his document. There's a lot of like those kinds of little. Oh man, I was helping a guy total personal stuff and he did not use Oxford Comment. And it was causing some confusion.
+
+And plus, I just like it literally got to the point I would just circle and type and write OC beside it, just circle OC, circle OC. I was like, I didn't even. Okay. So there we go. So now we have healthy, we have status, we have very clear differentiators.
+
+Yep. Then the last, like I said, the last error is just whatever the last error code was. And then if you need to deep dive, Can actually do aerolog, which is an array. This life cycle, I think, was just a general production offline. Yeah, production offline.
+
+So then the question becomes: what's the difference between? Lifecycle and mode. Okay, I mean, yeah, that's so that's actually fine. So production is it is currently running real workload. And then there is this idea of quarantine put aside for testing purposes.
+
+So that's something. Could be in production and offline, means it's supposed to run real workload, but got um but crashed, and something can be quarantined and um and running for future. Yeah, and I would also think of development here as well. Yeah, yeah, there's just a couple of those, yeah. Yeah, those are good examples.
+
+Yeah. Okay, and then we have the power usage, which I think this would technically probably need to be a number and what. Yeah, should there be a power value? Yeah, exactly. Power value of watts.
+
+So let me jump up here. One was bolts. You had one right below that one. Did I have another one? Yeah, with temperature.
+
+Ah, temperature. Yeah, temperature value. There we go. We did actually mention the DSP standard. Yeah, so the temperature value example should be degree C'cause that's a or two forty eight.
+
+Way of describing it. Just you said C? No, degree C. Degree C, okay. There we go.
+
+Exactly or degrees. Shit. Just putting that in right now, and then we can figure out if that's the correct value or not. Yeah, second letter should go up for example. Degrees CL and the degrees is capital.
+
+I didn't make it up. I just copied it. Yeah, I mean, that's when they're standard, right? Yeah. Perfect.
+
+So, the one time I don't capitalize, so Enrico doesn't tell me I don't need to capitalize, you're saying it's supposed to be capital. Yeah. Okay. Just checking. Yeah.
+
+So, Donald, can you scroll back up to their power value? Yeah. You change that to number? Should we? Well, weren't we discussing that those values would be numbers instead of strings?
+
+But I thought power was the actual number, and power value is the. Oh, okay. Ah, see what you're saying now. Okay, gotcha. Yes, yeah, that one should be type, yeah, type number.
+
+Yeah, sorry, I don't know that there's any other options than what, but yeah, and then the same thing with temperature, you might as well fix it. Yeah. Yeah, because to be completely honest, you're right. This is probably going to be in milliwatts more than it's going to be in watts. I hope so.
+
+It depends on what it is. If it's a yeah, if it's a if it's a tray, I want the option for kilowatts. To be honest, I was about to put megawatts for some of these AI racks. That's not wrong. Yeah.
+
+And your temperature has two commas at the end of type. Yes. It's marked in the blue circle there. Yep. This one has no oh no, wait.
+
+This one doesn't have a comma. Okay, that doesn't it's not required. Okay, then the vendor is another one of those of just general vendor stuff and utilization. Walk speed, I think. Should be optional.
+
+But that was. And then interface type. So, so with that one, Donald, should because you added gigahertz and megahertz, should that be also split out clock speed and clock speed val? Yeah, probably. I could do it this way.
+
+If I had been thinking, I would have copied it. It well, it was still string. Yeah. And then put get rid of the example here. Yeah.
+
+And for the value, it is gigahertz, megahertz, right? And not thorough numbers. So should we spell it out or is the unit designator okay? We double check it against the O two forty eight. Okay.
+
+Turkey, yeah. We have The interface type and what communication it's using. So that was one when I was. So, what's the difference between the two? Like, it's kind of like okay.
+
+I got hurts as your clock speed versus your data rate. They're different. They're different, right? Okay, so interface. Oh, sorry.
+
+Okay. Interface is the physical layer. Okay. Is this communicating across a PCIe bus? Is it communicating across a USB bus, et cetera?
+
+Communication is the protocol layer. So why don't we just call it physical interface? You know, interface, actually, interface is protocol. I think the it's the examples that we can fix, right? Like interface examples should be PCE, USB.
+
+Yeah, that's why I had Northbridge here. Because that was one that I thought about. And then the examples for communication are Redfish and PLDM. Yeah. No, no, no, it's all making sense.
+
+Yeah. Right. Because PCI, well, yes, th the I know the P the PCI Express is kind of weird because it's both uh Physical layer and a data bus layer? Yeah. Yeah, so I would actually remove it from there.
+
+Yeah, remove it from here, even if it's a valid choice. Yeah. And instead of JDEX DDR, even that might be true, but like. PLDM there. PLDM, okay.
+
+Yeah. So those are more PLDM, not JPDM, JPLDM. Unless Jace stands for Anuco somehow and he gets used. Well, you know, Jimmy has his own special version. Yeah, and then data value.
+
+It's a string, right? So, this is going to be a type number. This should be a number. Yeah, like I said, I'm going to go through here and do a, it'll be a lot quicker if I do. All at once because I can just copy, you know, type number and then highlight, pays, highlight, paste, highlight, pay someone to.
+
+I'll do that after the meeting. So I've got some time. How is latency and error rate measured? Because I can say. Three three what, yeah, latency to me is typically measured in um in milliseconds, yeah.
+
+I was gonna say, it's usually in a seconds-based kind of thing, right? So, do we need latency and latency value? I hate always doing this, but well, but you know, if that's the standard, that's the standard. We want them all to be the same. Yeah.
+
+And yeah, I mean, yeah, let's do it. Keep it keep it monolithic. Consistent even for the places where it's and does Marcus, since I don't have that spec open, does that DSP2 something or other, does DSPP? Yeah, does that have things like latency and everything? Error rates and things like that listed as okay, these are the standard, these are the standard ways to measure.
+
+Let me open it. Because I like the fact that we could just use that spec as, okay, these are the ways we name things. It also tells us those kinds of things. Yeah. Well, it the the table I'm thinking of is pretty much it's very um or even one-dimensional in a way.
+
+Because I know some schemas they'll have like, okay, this is we, you know, if you're going to measure error rates, this is it's always, you know, errors per second kind of thing, right? It could be errors per millisecond, but it's errors per second, right? Not, you know, errors per 1,000 clocks or something. Yeah. Error one's pretty easy.
+
+The latency was like, okay, is it latency, you know, number of clocks or seconds, or yeah, where should take me to 241? Go buy that. Glad it should be in seconds because number of clocks, it's like, oh, well, then what clock? And then you'd have to define that somewhere. And it's just like, oh.
+
+So, Marco, while you guys are looking that up, I'm assuming I guess we'll push your example till next time. Seems like it. And stupid me, for some reason, I wrote up the slides in the agenda as your example was for code currency. It's not. It's for this, right?
+
+Yeah. Yeah. I was an idiot. I wrote that up wrong. So we'll just push that for.
+
+I'm not sure you're in good company, but you're in my company. I'll fix that. Can't fix it in the email they sent, but I'll. Fix it up the slot. The slides just go on to YouTube forever.
+
+Yeah. Yeah. So it's not actually interesting. Um the The 248 is only calling our base units. And that's fine.
+
+I mean, that's okay. But then any. You know, they call it base units, and then they have a unit modifier for the 10 to the power of unit modifier kind of things to get to Millie and. Seconds and then, if you wanted it to be milliseconds, you would put in a modifier of minus three. Exactly.
+
+Yeah. I don't know that I love that. I mean, it's a poor. Okay. Well, we're getting on time.
+
+There's a little bit left. It's mostly, I think, just the grouping. So, why don't we go ahead and wrap this up? And whoever's doing the agenda for next week, why don't you add an item to discuss the DSP0248 method? Yeah, yeah, to the US.
+
+Yeah, let's just go. Yeah, so let's discuss the So, this is you're pretty much done here, right? Yeah. And pretty much, you can see it's just the rest of it's just kind of the breakup in the system and the initial properties of what they are. Yeah, so I'll go.
+
+Yeah. So let's do that. So finish. The schema, review that DSP document, and then get to your examples. Yeah, so finish the schema.
+
+I mean, I'm probably gonna take yours and kind of see if I can sure run it into the code currency and make sure. Should I find all the, you know, find all the additional little things that need I don't think we can't describe two different ways. For example, the code currency does not have an idea of subcomponents. It talks about assemblies and sub-assemblies, which is basically the same thing. So, but that kind of stuff.
+
+So, I'll do that. And then, yeah, I'll have a slide on the 48 and then my example. Okay. Just do me a favor and wait until at least tomorrow. And I'll spend the rest of the day doing the cleanups that we've discussed so that you've got a cleaner version.
+
+Yeah, just send me an email. Send me an email when you think it's appropriate for me to poke at it. Okay, good stuff. Thank you. All right.
+
+Thank you. Hey, thanks.

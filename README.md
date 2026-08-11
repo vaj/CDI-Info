@@ -7490,6 +7490,18 @@ Ankur (Oracle)
 
 [Acronyms](./acronym.md): OCP TAP UII AI GPU CPU MCP PCIe RDMA PTP Oracle AOS LLM API
 
+Marko Bartscherer (Intel) and Donald Haroun
+
+<a id="516"></a>
+
+2026/07/31 HM DDD Datacenter Diagnostics and Debug workstream 2026-07-30
+
+[YouTube](https://www.youtube.com/watch?v=xB-SvJTXCkc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/516)
+
+[Acronyms](./acronym.md): OCP HM DDD JSON MIPI RAS debug diagnostics Intel
+
 Jean-Marc Philippe (Thales) and Loic Nacelo (Thales)
 
 <a id="432"></a>
