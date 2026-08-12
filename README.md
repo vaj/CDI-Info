@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Adam Grinzbaum (Micron) and Drew Walton (Microsoft)
+
+<a id="518"></a>
+
+2026/08/12 HM FMFM Fleetscale Memory Fault Management workstream 2026-08-11
+
+[YouTube](https://www.youtube.com/watch?v=iqiCb2u4fa0)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/518)
+
+[Acronyms](./acronym.md): OCP FMFM HM DRAM DDR5 DDR6 RAS ECS ECC CPU API SoC
+
 Jonmichael Hands (Farm GPU) and Drew Pletcher (Lightning AI)
 
 <a id="517"></a>
