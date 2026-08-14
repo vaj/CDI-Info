@@ -1,0 +1,203 @@
+FTI Data Centric Computing workstream 2026-07-28
+
+Hello there. I'm going to hi. How are you doing? Hi, Sakur. Hi.
+So today it's just you and I think we have time to discuss our maybe talk
+
+Bye, Bunker.
+So, you know, I did receive the slide.
+From Harry came from Exinaf the last week's piece for the last week's presentation. Yeah. But I could not upload it upon the groups. Okay, can you email to
+To my OCP project email address, and I will post. Okay. Okay, you have access to this OCP TCC? Yeah, I do. Okay, okay. I will do that. I think meeting transcripts.
+recordings presentations yeah under presentations i do not see the upload link uh link available i mean upload tab or link whatever enabled for me so
+Okay, so I we are almost five minutes into the meeting time now. I doubt if others are joining. So we don't really have a critical mass.
+What are your guys' thoughts? I did have the agenda. You did. And I wanted to update you guys. Sakul, you were not on the thread, but everybody who is
+Working on the PyTorch side, I tried to set up a small group discussion with Chris Godbrath, who came and visited me yesterday at my home. And he was at Meta and he's
+Is continuing to work with PyTorch team and PyTors Foundation. And I kind of briefed him on the direction and approaches that the different vendors are taking and.
+Our needs for trying to unite around a single API so that we can unleash developers on computational memory and storage. And he actually
+Is very in tune with where we are and is trying to get the right people, you know, with the right mindset from the fighter side involved in this. Okay. So he could not make additional time this week.
+We were trying to soam, Gaurav, myself. We were talking about possibly having a session with not just me, but somehow, between his constraint and you all's constraints, it didn't work out this week to have a physical meeting. I also told him about upcoming events.
+Friends, especially the OCP Global Summit, and told him about the dates when that will be. So he's busy recruiting, and Manoj and Samir are also part of that group. And Manoj is trying to find internally at Meta also.
+So we are trying to, you know, not just push our ideas at each other, but starting to engage other people around the direction that we have sort of been developing together. Okay. That said,
+I think that's it. You know, right now that's that and some of the open formats work I'm just doing in prep for the next set of things that Jason and I are trying to do in SNEA around open partitioning, and also we will have discussions.
+Discussion at FTI DCC. Is the agenda for that someplace? Sorry, agenda for which one? Agenda for which one? The FTI DCC.
+Spreadsheet for that. Oh, you mean for the global summit? Yeah, at the for FTS symposium, right? Because we, this group is part of the future technology symposium. No, I.
+So you're talking about the XLS spreadsheet, right? Yeah. I thought you would have the access. I do not know where that is. Okay, let me check. I thought you had the access to it. I know. Question is true.
+Through which email address, because I am in a particular Chrome profile, the OCP project profile. And I see some other sheets like our OCP Globe. Oh, here, track sheet. Okay. Let me show you guys what I see. Karovoke.
+to share absolutely hey so welcome guys sorry later we are just kicking off i was just updating them on the linkedin discussion we were having timing didn't work out right
+For all, but he did come and spend about a couple of hours with me some yesterday. Okay, yeah, great. As long as we have some agreement on the problem and then how we can do that, so that will be great.
+So, are we like this Thursday? Are we planning to meet, or we'll not have the quorum? No, we will not. He does not have time on Thursday, unfortunately. So, I discussed with him whether he can make extra time.
+And he said, no, I had planned Monday to review your group's materials and to discuss with you. And then he had a bunch of other things going on. So we left it there. I mean, he's pretty well brought up to speed on.
+The fact that he, you know, he can now start talking to coming to sort of basically, I told him that you know Samsung has a contribution. We tried to go through the Samsung GitHub. It's very thin, the NDC GitHub SOM.
+Okay, uh thin means like uh there's hardly any contact there. Okay, oh, I thought that uh they open source everything, not here. Why don't you check? Okay, I'll check with oh, see, one jee is here. You can you can ask. Hey, one ji open source of which one?
+So, our spell it will take some time because we are working on that. But Vanjay, isn't that NDC is all open source? Vanjay, you are there?
+Sorry, my mic was off. NSAPI is already opened in OCP GitHub. OCP GitHub, not the NDC GitHub. Can you share the link again so I will have the proper GitHub?
+Link to share. And Von Jal, I don't know if you are connected with me on LinkedIn. We are trying to have a discussion with PyTorch team. So I want to make sure you are part of that discussion. Som is, but Som was busy yesterday.
+Yeah. So at home, yeah. So you're going to attend the title team regarding the PNM device? Yeah, the data placement and all that we are discussing, right? So we need to have.
+their blessings to have an open means change the API the way user will be using so actually we can have some kind of help like lazy alloc of the tensor memory and also actually while executing we decide everything and then allocate properly rather than copy.
+So, yeah. So, so yeah, so Pankaj and the team here, right? Gaurav, so cool. Maybe, yeah, I think we once we have some quodam and all, as I said, right, I can host it here and then.
+We can probably face to face will be a very good discussion for that. Let me know once you guys are available and have a meeting. One jay, maybe we can. I think if we do it during this time, one jay also can join that time remotely. So, yeah.
+Know and we can host. So let me give one Jay my LinkedIn so he can join. At least, you know, let's let's have let's have the planning for that quickly.
+Finish that in the LinkedIn, move it to email so we can, you know, do it properly through the usual systems. Right now, I don't the problem with OCP setup is that not everybody sees everybody's email address. So
+And you know, the external people, when we talk to them, they are not part of the OCP message boards. So it's a little bit tricky where to have this conversation. Okay. So I just, you know, a lot of you guys were on my LinkedIn. So I just.
+Put together a quick chat together with Chris Crodbrath that seemed like the most expeditious thing to do to kick off. But it's not the right place to have any in-depth discussion. So we want to finish the intro.
+Production quickly in LinkedIn so you guys can all see each other and connect. But then after that, I think the detailed discussion, including additional meta people, we will have to figure out whether to make everyone join groups.io, which doesn't seem like the right thing to do.
+Or Chris was suggesting, you know, Slack channel or like that's the usual way people coordinate such things. Okay. So Punkaj, any pie corch?
+Folks have already been identified or yet to be identified? I mean, we, you remember, right, I suggested some, he suggested some people like Kapil Sharma and Jason Choi. And he had some other names that he was starting to think about based on, you know, the more details that I showed him about the APIs.
+And what we are thinking, and sort of what are the remaining issues. So he likes the possibility that there is a single coordinated effort beyond the current symmetric memory code that is where PyTorch is at, right?
+And emitting Nvishmam in the back, right? To think about, he roughly, you know, Gaurav, he thinks about middleware alignment for heterogeneous computing. Okay. And this is, I was so pleased because you have been taking us in this direction in your presentation.
+Presentations, right? That the customers don't want to do something special for computational memory. Okay. They like the idea that there is going to be a journey from a symmetric set of GPUs sharing each other's memory over whatever vendor proprietary or.
+Open fabric such as ESUN. But beyond that, there will be a world where it will not just be NVIDIA GPUs. It might be NVIDIA GPUs and MTIAs or other hyperscale proprietary accelerators. And then
+You know, one or the other with disaggregated fabric memory of some kind. So they like the idea of considering that in such an environment, whether you offload from new GPUs to old GPUs, from A6 to GPUs, GPUs to A66.
+Basics, GPUs to devices, et cetera, that you don't see 50,000 APIs depending on which vendor you are trying to work with. That there is an effort to move the community into a direction where there's some widely supported framework. And he liked.
+The, you know, some of the things that we were discussing were around the idea of memory objects and how will you know memory be arranged in such a way that collectives and other things can be offloaded on.
+Rich enough data structures. So he just posted a message, by the way, in that LinkedIn chat. I got off. So let me share this with you guys.
+I think you will see my LinkedIn screen? Yeah. So, sorry, Somnath, I'm on your page. But the more important thing is this message you just came in with.
+After yesterday's meeting. Right, so this is this, he's correct that our crisis is adoption, widespread adoption, which is what we are seeking. Okay.
+So, and he understands the challenges that it's in bridging the gap between what hardware is capable of and the current architectures that folks use and the software stacks that would orchestrate and delegate work to those near-memory devices. Okay. And he's.
+Thinking exactly the right thing, which is he wants to bring in these AI framework community people into the discussion at the right time. So I think there are a lot of, how do you say?
+You know, what we don't want, right, is that busy people come in and we are not ready. Okay, so we are trying to recruit the right people who sort of are thinking about the future of these stacks without like asking for.
+For it right now. Can I just do this right now? If you would like frequently, when I've gone to Google with something new, like say Samsung Smart SST or something, what you hear is if it's not on somebody's committed roadmap,
+As a fully supported product, we will not even try it, right? That's what you hear from people like Google. So we are not ready as a community to do that because yesterday, last couple of weeks, I was told by SK Hynex that, you know, JRK told me basically.
+That there is some withdrawal of support for computational memory. So we don't want to expect withdrawal. I mean, just they are not seeing the returns. I mean, Horsik has complained several times, right?
+So, just amplification of that, but more serious this time. Okay. So, I think, you know, as we are engineers, most of us, and sometimes even our own executives or like the financial and product planners, they are asking us for things that we cannot deliver.
+They're saying, Hey, you know, find me a buyer who will pay for this right now. Okay, it's like, where do I get them from? You know, we have a proprietary device with a proprietary API and it's in prototype form. You know, so many of us in various levels have struggled with that. Okay. And the thing.
+That we are as a community trying to bridge is: hey, let's find that middle where there are people committed at the top so that they are developing to it, and there are people at the bottom who are developing under it, so that there is a sense of a market.
+Market, community, and commitment, which is backed by people who can actually deliver on both sides of it, meaning on the framework side and device side, and whatever, you know, the fabric components and software components that need to go with it. So it takes, it has a lot of enabling technology feel.
+That is achieved through community work. And so, part of this is getting the people who are approved by their respective organizations and development teams to.
+To perform that function over a period of time, like one to two years, during which standardization, prototyping, demonstrations will mature. So he's trying to find the right people. We went through the profile of some people.
+That could get involved in various places. And he's kind of thinking in the right mindset. He himself has the right mindset, as you see from his messages, and is the right person for us to be championing because he hangs out in the framework community quite a lot.
+It can kind of straighten us out also if we are trying to go too far astray. Okay. Now, you know, we can combine that with our own experiences and other engagements that we are having as vendors with our customers, respectively. So, there's no, this is not going to be a funnel through which we will go.
+Everything, but he's the right person to involve, one of the right people to involve in the efforts. Okay. I just wanted to share with you. I think this is a very important development, is the way I see it, Pankach. And thanks for, in fact, big thanks.
+For initiating it and coordinating it and carrying it forward. What you mentioned about, like, you know, the readiness to, you know, for the moment.
+When you have the application folks, okay, interested and get their time of day in some meaningful way, that I think is a very big, it's a significant requirement, I would.
+Say for this effort to go somewhere. And to that end, like, you know, I think I am of the mind that we should prepare some kind of a progressive path in the
+Sense of, like, you know, today, as you mentioned, other than the symmetric memory support in a homogeneous AI accelerators cluster, there is nothing else that exists today, right? For that now from there,
+Getting tools, you know, all the way to any kind of custom computational memory or storage device, having that kind of total flexibility, I think that's a long road.
+So it would be worthwhile for us to break our heads and prepare some kind of a progressive path. For example, just be able to have asymmetric memory support.
+That would allow someone to have memory devices on the fabric shared with the AI or basically XPUs would in itself be a big step forward.
+I think so, Gaurav. I think we all feel strongly about some piece of the puzzle. I mean, if you look at Exena's presentation, right, that they made, they are cracking the problem of how do you even take like very high.
+High core count computational subsystem and start to break it up into units that can be provisioned using, say, something that might be eventually redfish compliant. So that's something that kind of is at
+Addressing the gap from where the control plane is in the fabric orchestration meetings that we have had to where is the control plane for computational memory. And it's kind of going beyond the low-core count ideas that we have had already covered in our.
+Various documents to say what do you do when you have 3000 risk-five cores. So I think there are some open issues like Som and I have been working on. There are some places where
+We have closed issues where at least one vendor has a good solution. Okay. But we need to keep updating something akin to the principles and best practices document, which is now getting two years.
+So, a lot of progress has been made in the last two years. And when we meet these communities, you know, PyTorch is just the first one, we need to think about what do we share with them with respect to.
+An ongoing, always current, current status document for where our work is at as a community. So part of this is: hey, yes, we are presenting to each other and making contributions, but as a community,
+Do we have a status update that doesn't matter whether somebody asks Gaurav or Wanjay or Jinen or Soam? Any one of us should be able to point to that document and present it. Something like that. Something like what, say, Soam and I presented.
+When Jason said we can do an update for OCP server CMS team. Now that was close enough, but one of the things that came up in the conversation with Chris yesterday was that the frameworks are actually quite different in their architecture. So he was pointing.
+Pointing out that PyTorch is kind of has a very lazy architecture in terms of resource binding. So they make decisions about what function and what data to place where, kind of very dynamically. He was saying that it is possible that other frameworks.
+Like JAX, TensorFlow, might be a bit of a better fit for where we are in terms of our state of things. So, part of the learning we are going to have through these discussions with framework people is they're going to look at how do our stacks look like.
+How does our stuff get discovered and configured and programmed? And where is the near-term match, like Gaurav, you were saying, you know, coming back to your point about preparing a path forward, I think some of that input will also come from these people. So I see two parts.
+To your question, suggestion. I see one part which we can handle completely ourselves, which is just being on the same page, always having a current document that can be presented by any one of us and shared by any one of us. And then the second is refine.
+Continuing to refine that with input from the quote-unquote customer base, right? The developer that we are targeting. And I think there is something more to it. Additionally, from the applications perspective,
+We want to have, like, you know, what are the solutions that we should strive for in what time frame? So, you know, those folks would be looking at like, you know, what are the real products that need to be made to work?
+Work in that environment, following those principles and best practices, not totally academic or vaporware, right? I mean, what do I call vaporware? Like, you know, somebody just digging around with some FPGA, putting some one function.
+One logic in near memory or in memory, that's not enough to get the solutions folks excited because they won't be able to build anything at system level with that. So, I mean,
+If there are like you know real memory devices, for example, I think in the case of C Excel, there are plenty. Okay. If there are any similar memory or storage devices that actually have support for, let's say, some higher-speed fabric, okay.
+For those who have concerns about CXL's limited bandwidth or something based on silicon photonics, whatever it is. So that's what I consider sort of like a progressive path. Yeah, I mean, I think, you know, Gaurav.
+This gets into some really good areas, right? Which is, I think, the high-level point you are making, if I understood you correctly, is that when we are successful, we will unleash developer creativity to do something that we didn't already think of.
+So, yes, we will have our demonstrations and prototypes, right? But the power of platform standards and supporting software is that, like you're saying, solutions, right? Solutions for problems.
+That are brought to us that are not already solved, but somebody looking at what we have solved and prototype can build, can solve their problem using our infrastructure, if that problem is MA.
+To near data processing optimization. So I think part of the goal is to unlock some of that, not try to pre-discover or to over focus on yesterday's problem, right?
+I think we have that tendency, like you know, right now pre-filled disaggregate, pre-filled decode disaggregation is a very common case in point, right? And what he was saying, what Chris was saying yesterday was interesting, Dharav, about that.
+He said, yes, you guys need to have a solution that lines up with the hottest problem of the day. Okay, but that's not the only thing that you should have. And I think that's roughly the, you know, the way we.
+Want to think about solutions, Gaurav, is that there is that part which says, hey, yes, this stuff as it is put together is useful for something that's the burning problem of the day, but it's not the last problem it will solve. So you can deploy it and it will remain.
+Useful to you and your customers in the infrastructure. I think that maturity that we want to communicate sort of to qualify as beyond academic or vaporware is important. Yes. And, you know, I mean, one could think.
+Be creative and think of what products can be used. You mentioned, Pankaj, that a cluster of heterogeneous devices, for example, let's say new and old GPUs, for example, right? Or GPUs and TPUs together.
+another example. So I think there there is there are ways to be able to get to some solutions to very interesting and hot problems.
+That can be achieved following the principles and best practices and guidelines, which is actually centric to our vision. But I mean, my simple point simply, I mean, basically, being that.
+Only focusing on the ways of solving in terms of, like, you know, abstractions and standardized formats will not be as exciting to the
+Applications, folks, without putting it into a frame of like you know, solution that they would be able to achieve. Yeah, I agree. So, I think that's in addition to like you mentioned, right? That
+We need to have common understanding so that we can represent and articulate accordingly whoever happens to field any related question.
+In this area, but also, I think, have clarity on what problems are we trying to solve in what timeframe and so on and so forth. So, I think all of this requires some kind of a
+Concerted effort. And I think this forum that you are proposing seemed to be a good place for that. So, to that end, I have a question, Pankaj. So, this special, call it special interest group or focus group, how would it, how do you?
+you see it be connected to or aligned with OCP? I mean it's it's it's a tricky question because you know the OCP is where the critical mass has happened.
+We are finding that whether it's SDXI in SNIA or other computational storage work in SNIA or Apache Arrow and work on open formats for data and compute there, and even other places might be there, right, Gaurav, where, like you
+Intel and others are making contributions in some of their Apache Foundation efforts. I think OCP is where the critical participation of hyperscale customers and memory vendors and memory interface.
+Component vendors is. So we also recognize our limitation in not being a standards organization. So, you know, we can use our OCP groups as kind of the most
+Appropriate forum for identifying maybe multiple concurrent task forces that go take care of things and then periodically and ongoing basis report back with the idea that.
+You're not just starting another parallel activity forever, but you're going to, you know, really have the mindset of a study force or a task force, depending on the nature of your deliverable, and you're going to come back and finish someday, not just start.
+So, I think with that mindset, the SIG, for example, is only useful to a point where requirements are flowing from the framework community into the computational memory.
+And storage community, or the broader heterogeneous computing community toward the enablement of the first standards-based prototypes. And so we can define a mission, right, Gaurav, for the SIG.
+And we can, you know, everyone who signs up for the SIG should have the mindset of delivering on that mission and declaring success. So we can then work on the next thing. So, in some sense, you know, I mean, the first
+Set of devices that display the principles and best practices are a real product that makes revenue for the vendor and solves problems for the customer and for developers.
+A return on investment, right? Which is if you code to the standards that we propose, then you have investment protection for devices cross-vendor and for all shapes of memory hierarchy that your own infrastructure teams may deploy.
+I think that's where, you know, Gaurav, I want to come back to one thing. I hope you find my answer useful. Yes, no, absolutely. Let's do one thing, Pankaj. So let's list down some of these key points in.
+Let's include these in the next meeting that you are planning to have on this topic.
+Help, right? I think this fails. This fails when any critical element goes missing. So we do want device vendors, interface vendors, and solution integrators. Chris is going to help.
+He said some former members of PyTorch team have gone to NVIDIA, and he is going to try and enlist some people from NVIDIA in this. Okay. I consider that like another key element. And then, of course, hyperscale participation, et cetera, right, Gaurav.
+And customer and developer framework developers. So we need to kind of list these critical criteria for, you know, what is the mission? What are the cap, you know, what are the parameters of success, right? Yes.
+That sounds good to me. What's the timeframe you are thinking of having the next meeting? So, I mean, you know, there is some work that Jason and I started doing as part of the lead up to this event.
+We are thinking at STC, which is: I am doing a long format presentation, and we have received approval to do a birds of feather session, which SNIA hasn't publicly announced that yet in the agenda, but it is approved.
+So, SDC, we will kick off a sub-team of quote-unquote computational storage, which is going to rebrand itself computational memory and storage. But this initial team will take care of some stuff on.
+Open formats and partitioning within SNIA. And I think the SIG is more something that we are doing here. We should continue the name SIG or task force or study group, whichever seems most appropriate for what we are trying to do, Gaurav. Continue to maintain membership.
+And I don't have to be the chair. If some of you want to take a leadership role and push it with more cycles and more commitment, I'm actually very, I want to encourage you. Okay. Yeah, no, I think SIG has its own place.
+SNIA, I feel is a good place to get some real work done, but I'm afraid that might not be the place for the framework folks, you know, the PyTorch folks or the consumers from high.
+Hyperscalers trying to come up. So I think SIG is probably the right place for that. Once you have the directional alignment with the consumers and the famer folks and requirements kind of distilled, and then I think.
+The SNIA effort. But SNIA effort, you know, has a purpose, right? That there's a very specific type of thing that I would like to achieve in the SNIA BOF and then the subgroup that will be established following that. Okay. And that is the following.
+That SNEA computational storage effort has had fairly good, detailed engineering spec-level work on how to define, enumerate, and invoke a fixed function on.
+Device. Okay. And it's not, you know, some of these things are like you can easily put them on PowerPoint. But to actually, you know, think about everything, like what happens when there is a failure, what when device is on a fabric, et cetera, et cetera, they have been good about.
+Going through some of that for a couple of years. Their initial thinking was that a fixed function is a single operator. And the thing we are trying to achieve based on the learnings we have had in OCP DCC and OCP CMS, CXP.
+Is that, hey, the fixed function can be an execution engine for expression trees in open format. So to the SNIA standard, it looks like something you install, but how much
+Does it matter to them whether instead of doing a single select operator on a relational data set, it does an entire expression tree of select, project, and join operators? So we are trying to make sure that we build upon the work that the members.
+Of Keoxia and SolidDyme and other companies who are good engineers, the effort that they made, we build upon the back of that effort to achieve some of the objectives that we see from the perspective of this team while eliminating the
+The constraint that the protocol only travels over NVMe transport, which was their initial constraint. So, you know, there is that leverage, and we will then hopefully attempt a similar level.
+Leverage with the STXI effort, okay, which I think will be a little bit easier exercise. So, that group that is forming in SNIA has some specific targets to achieve the leverage that you and I had identified and.
+Communicated to the CMS team is possible with outside standards effort and pre-existing standards effort, and which also Jason felt we have some leverage of CS API and initial Samsung presentations actually went there, right, from Oscar and some of the other people who presented here.
+From Samsung initially. So the SNIA effort is limited in scope. The SIG effort, like Gaurav, you were saying, is a better place for PyTorch and AI infrastructure people to talk to us. So it's going to be a
+More comprehensive charter, more aware of fabrics and hyperscale memory infrastructure, and kind of more representative of the work of your team is doing with Structura or Exena is doing with their MP1x.
+System and uh or MX1 sorry uh system and then uh uh Samsung team is doing both in their PNM and uh PIM efforts as well as Hynix team LPDDR PIM effort right so we want to
+you know, take be cognizant of what we have heard from the vendors, what have they got working in Python and C. And we want to sort of you know build upon our learnings with OpenXLA and PGRT, got of that you and Srihar.
+Srihari presented. And I think that's not going to happen in SNIA as much as that's going to be happening here. I think we need to scope these things out. We need to figure out what the alignments look like.
+Yeah, let's discuss this more. Pankat, I'll also call you discuss some more offline and looking forward to that next meeting on this topic. But I just wanted to do a quick time check here before we run out of time in this meeting today.
+was any other important topic one of the thing i wanted us to uh look at is the uh ocp global summit um uh you know the the talk sheet that you have uh if you don't mind pulling that back up because we are we will not have a meeting next week right
+The next week's meeting is being canceled because of FMS. And then, so we should just be cognizant of the timeline. Because I think the end of September is the absolute deadline to have the final presentations. And I think.
+I think the next time we will meet in this forum will be so we will be meeting in this forum when in two weeks, right? So around the middle of August. So I just wanted to be sure that.
+You know, there were some invited talks. What is the schedule? You know, what is the, if there is any update, do we have any confirmation or denial? No, Gaurav, good question. So I think for the panel, I was supposed to.
+Invite some people that I can share with you the names. So, Gary Grider from LANL, Anand Jairajan from Nvidia. By the way, you know, just very quickly, Gaurav, Anand Jairajan, what he's doing is he's looking.
+Looking at ways in which you can use SQL expression trees in Apache substrate to process linear algebra data for analytics, not just SQL tabular data. Okay, that's the refine work that he did, which Nvidia acquired. So he's one person I'm trying to.
+And he has worked on compiler intermediate representation so that starting from queries that analytics people type, you can actually mine tensor data and other things by.
+You know, framework operations that are GPU-friendly. Evangelos from Intel was the other person I was thinking of. He did the one on space-filling curves and partitioning tensor products. And Chris Godbrath, whom we have all been talking to on middleware alignment.
+What I had been thinking for the panel, I would end up moderating on open formats for partitioning and such. And my backup was a grad student from Stanford.
+His name is Authar Vachogyul, who has done some work on partitioning sparse tensors data. So, nice work on taking large operators and breaking them up into small operators while having very clear metrics of goodness, like communication balance, compute balance.
+And communication awareness, like total the amount of data that flies over the fabric should be small as well. So, load balance should be good for both how much compute load and communication load each piece gets, and overall communication should be reduced. So, it's a very nice.
+Both idea and approach that he has. He is my backup right now. So those are some people that I'm supposed to line up for this panel. I don't know, I don't see that on the schedule yet.
+I think you're likely not on the right page, right? I think you want to go to the FTI DCC. You are at FTS. I don't know what's the FTS for. So I go here. I guess. And we haven't filled out, but we have these two panels.
+And I think I am doing this one, the 150 to talk about. I just wanted to quickly go over, if you were to scroll down, right? Yeah. So there are some invited talks here. If we could maybe make a note somewhere.
+Here on the right side, in one of the columns, which ones have been confirmed or canceled. I mean, so that we at least know if there is any AI any one of us has to follow up.
+Good. Gaurav, let me do one thing. Let me freeze the top row. So then. Okay, just give me a second here. You guys can see my screen, right? I do. Yeah. Okay. Okay. Sorry. It's not just top row. I need to freeze up to here.
+Okay. Okay. So if we go through quickly, like you were saying, Garo. Yeah, let's look at the external guys, meaning, like, who is not one of us. So LPDD, so this is the SKP.
+Yeah, this is the repeat of what we previously, right? Okay. And I think that's the idea, right? Yeah, so that's fine. But do we know if there is, if anybody approached them and got some kind of a confirmation? Right, right. So let's.
+Let's like you were suggesting, let's do a note. Maybe under notes you can put it, right? Yeah, just next step. Okay. So, correct. Let's do this quickly. Okay. So I can do unless some.
+From Hynix is present here. Okay. Okay. Minjan, I think he does not have permission to travel.
+Okay. Then elephants, yes. Let us put down yes to maybe just say confirmed, right? Okay. I actually checked with Daniel on this. So I do know.
+Right. So, on these frameworks, I had an idea because there are these two plus Sina, Xina. So, I think we may want to convert these into a panel. Right. What do you guys think? Bonjay, you are here? Actually, we have updates on NDC API integration.
+To one API and OpenXLA and PyTorch with SOMS teams. So we think presentation is better. Okay. We don't have to speak. Another point being that, you know, there will be, there is limited time.
+Right? So there will be only so many sessions that can be made to fit. Right. But you know, would you reopen to a panel, or are you rejecting a panel altogether? I think he's saying, Gaurab, they have too much content. So it will not fit enough inside just.
+panels okay and and we don't have to we don't have to split separate uh we don't have to do separate session we we can uh we can present together in one slot meaning all the samsung yeah people okay yeah okay
+Gaurav, that's okay, right, with us? I mean, let's put that down. We'll see where we what's the tally where we end up, right? Okay. But certainly, it would help to consolidate for sure. Okay. See, another thing is, Pankaj, what I
+What I think we should consider, what would it be like if different vendors come in and present, here is my API, here is my API, here is my API, right? Then, for example, if so, that's something we wouldn't want, right? I mean, from the DCC side, I think we want to up-level this.
+As opposed to my API. So good. Something to be discussed, I would say. I think panel number two, Cora, you're having this idea, right? Which is, I think, let's call this middleware.
+Well, that's roughly what I'm doing, but in a limited way in the middleware alignment panel. Tell me, frameworks and APIs, right? Okay. I think just this is good. I think we can say that, right? So these vendors have different APIs, and this is our job to consolidate.
+So that's what actually we are working on because we don't want these vendors to have different APIs. Exactly. So, Matt. So, I think it would be best if we talk more about not the APIs, but sort of like directional alignment, architecture.
+The programming models and steps forward. I think that's unfortunately we don't have that yet, right? So that's why these are different things, and we are working on towards actually making it in one framework standard. So, yeah, I think.
+I agree that okay, we should not actually give everyone having its own APIs, but we can actually give. I think we need to align on that, like saying that, okay, these are the things we have today, and vendors are coming up with that, and maybe some slides actually.
+What are the plans for converging that to a one API? Maybe we can have that something like this. Yeah, which is why I propose that we can have different ideas that need to be converged and sort of like anyway, I think this can be a joint panel or something like that.
+That can be let since we are running out of time. If you want to quickly Pankaj, go back up and let's go through that one pass to the list. Yeah, let me just put the words here: panel number one.
+Yeah. Okay, just to complete this portion, but we go back to that list, like you were saying. I think so one Jay just clarified. And so, does that mean that spell presentation is included in this, or is that?
+Yes. Okay. We can converge to one presentation from Samson. Okay. OneGIS team and Spell team here. Okay. Thanks. Yeah, but
+I think we should have something at on that presentation or or actually one session that how we are converging with these ideas in this yeah that's the panel number two I am thinking some but the ideas that we started discussing with Chris and and and
+I think we wanna put something along those lines there. Yes, yes. Okay. Because we wanna present more of a higher level sort of like grand vision and how we wanna.
+Make headway into getting this done as opposed to: I have an API. This is the API I want everybody else to follow. Who will reach out to Exena people? Harry Jim. Can you do that? Can you do that? Yes, I can do that.
+And I think this will go in the same, right? Like Sina's API, what Harry Kim talked about last time. So then let's just keep going, Sakal. No, but what happened to the
+32 one. 32. Who remembers this one? I don't remember this. This was for genomics, or was what was this one for? I think you propose, right? I don't think Shayan Ghosh ever presented in this forum.
+At least I like I'm being becoming a senior person, completely banking out. Okay, and the SK, okay. Well, let's just put a question mark on this. We don't know, maybe this is for Jason, right? And the next.
+One is oh, this was from a UCSC seminar. I remember now. Okay, yeah. So, what was the SK Hynix presentation? Computational CXL memory?
+Is LL, then there is number 36, which is also LLM serving with Structera. So, Structera is, I think, we should perhaps include it as part of consortium.
+It with Gora, right? Because this is also structural. I can reach out to John Riul and ask him what is John Riul's.
+Plan is and then what is the other computational? There was one more on from SK, right? Computational CXL memory, the line number 33. Yes, go ahead.
+My mouse just fell off the table and I don't know where it went. Sorry. Just give me a second here. Okay. Okay. So maybe I can ask John Rio to check with them. I will request you, Pankaj, if you don't mind sending me a copy of this.
+Okay, let me do that right away, Gauram. But PyTosh developer, developer community response to partitioning. Let's see if Chris can identify somebody to come and I think I'll.
+Say because Manoj is also working right on this. Perfect. Let me just.
+This is a good, yeah, confirmed. Confirmed. Okay. So, Gaurav, let me just email all this to you. Yes, up to notes. Okay.
+In fact, okay. Okay. Gaurav, you can close out while I'm getting this out in email. Okay. That sounds good. So next week's meeting is cancelled.
+I think we'll reconvene in two weeks. Have a great time at FMS. Yes, you're all there. Okay, sounds good. I'll email you the Axina presentation. Yes, thanks. Okay.
+Thank you so much, folks. Thank you.
