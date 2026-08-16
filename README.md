@@ -7430,6 +7430,18 @@ Mohamad El-Batal (Seagate) and Majid Foodeei (Terra Signal)
 
 [Acronyms](./acronym.md): OCP CMS CMA CXL PCIe PCI PCIE IO AMD TCO API SIG QSFP
 
+Mohamad El-Batal (Seagate) and Majid Foodeei (Terra Signal)
+
+<a id="522"></a>
+
+2026/08/14 Server CMS CMA Composable Memory Appliance Hardware workstream 2026-06-01
+
+[YouTube](https://www.youtube.com/watch?v=4mWEcGwgcDY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/522)
+
+[Acronyms](./acronym.md): OCP CMS CMA CXL PCIe PCI PCIE SIG QSFP PAM4
+
 Adam Grinzbaum (Micron) and Drew Walton (Microsoft)
 
 <a id="518"></a>
