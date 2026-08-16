@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Mohamad El-Batal (Seagate) and Majid Foodeei (Terra Signal)
+
+<a id="521"></a>
+
+2026/08/14 Server CMS CMA Composable Memory Appliance Hardware workstream 2026-07-06
+
+[YouTube](https://www.youtube.com/watch?v=V80e3v7gxIE)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/521)
+
+[Acronyms](./acronym.md): OCP CMS CMA CXL PCIe PCI PCIE IO AMD TCO API SIG QSFP
+
 Adam Grinzbaum (Micron) and Drew Walton (Microsoft)
 
 <a id="518"></a>

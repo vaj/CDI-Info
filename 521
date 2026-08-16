@@ -1,0 +1,123 @@
+Server CMS CMA Composable Memory Appliance Hardware workstream 2026-07-06
+
+How's everybody? Very good. How are you? Not bad, not bad. Waiting for Muhammad and the Marquis.
+Guess I'm good. I haven't been on this call for um probably more than a year. I'm just curious. Oh, okay. Welcome back. What's happening? Welcome back. We're trying to lift it. Yeah. Reinvent. Right. So you're.
+Previously attended the calls? Yeah, I was involved actually probably more than 18 months ago, actually. I mean, a year would be generous when the group first got started, and also with the similarly similar group in.
+PCI SIG. I see. Okay. Good, good. So we'll come back and thank you. I hope there's a good reason to stay. Yes, exactly. No, we'll, it depends on all of us. Right.
+Hi guys. I mentioned. Hi, Mohammed. So let's see who else. Sam had accepted. I don't know if he attends. Well, I was hoping he would attend.
+Yeah. I was just looking at the list of people who had accepted, and he was one of them. David was just saying that he hasn't been on these call for 18 months and he
+Uh, was just checking in. We should have a reason to stay, yeah. Yeah, I haven't been on these calls in uh in some time. I was just curious what activity might be going on.
+Paul, did you notice that the name has changed slightly? Yes. Yes, I did. So, yeah, I think that's one of the things that we're doing. I'm sure there was a long discussion.
+Yes, yes, we wanted to sort of align with the state of industry and sort of widen the use of it. And then the other, the other Mohammed, you could correct me if I'm wrong, the other debate was.
+Because also there is a short reach optical interconnect group, SROI, that's also some overlap. But I was talking to Jeff, who's active there from Branabus.
+He was saying that right now, you know, the white paper is that's that's all they're doing. They're not, he doesn't expect yet to have a scope of writing spec. While here, I think we do want to see if we could try a revision.
+Or 1.1, whatever there is enough change that has happened that we could bring in.
+And what's your interest, I guess? What would you like to see, David? Oh, I'm just very interested in generally the whole transition from optics to or from copper to optics and how it's progressing in.
+In PCIe, for example. And, you know, I keep asking my colleagues, you know, is this something you're going to need? And actually, I don't always get a clear answer to go. And what I ask them is basically, I make it a.
+Very simple question: like, you know, would you ever need to go box to box with PCIe? And I don't think my colleagues have thought it through that much. David, you're with Dell, but you know, I think there's a lot of.
+Thoughts within Dell at some point about pooling and memory disaggregation. Yes. If it's renewed, that would be good, right? And I think that would, because CXL and PCI already have a construct for DOM.
+Mem and.cash, it's a shame that the industry has not materialized. So, remote connectivity would be the next phase. And I, you know, as you all know, it's public info because, you know, Microsoft is.
+Is co-chairing this team because of that. I do have interest in that. Yeah, and I guess, Bobby, you also are involved in that short reach calls.
+And yeah, I would like to also. I think with Mohammed, we were asking how the two activities have or do not have overlaps helping the two groups.
+Am I having connectivity issues, or am I no, no, I think it's about background noise on mute separate calls. Okay, just listening, listening, yeah. So, um
+So, I think the follow-ups that were done, at least on our side, was good. Yeah. And I think we, you know, it'd be good if we could get to that point of having some modules, right? Yeah, so I see the emails as.
+You know, I sent a bunch of emails and seeded the potential between, yeah. Hopefully, they would one of them would latch on and get us some samples soon. And I think serial cable is interested and
+Amphenol is interested. Now let's see what we can do. May I answer? So let me clarify, clarification question. So by module, you mean the module for the QSFPDD cable active cable?
+Right, yeah, okay. Yeah, so I do have some update from my side. So, uh, Machit, so um, so it would be great if you can send me the NDA so that I can find the my lawyer to do a quick review and.
+and sign that. Yeah. But my team, because they have been working on active cable for a while, they do have a design that should be suitable.
+uh however uh obviously it doesn't use a terra signal redriver it is it use another vendor's redriver that uh lowez has been partnering with for a while and we need to probably tweak the design just a little bit
+Because QSFP natively is for Ethernet. Going for PCIe, then we want to dial the impedance a little bit for PCIe purpose. So can you clarify, Raymond, on that aspect? Because, like, a lot of the PCI.
+API and Ethernet cables in the past used similar impedances because, like at least my experience from talking to other vendors, that they didn't try to do 85 ohm.
+They stayed closer to 90 ohm, or you know, Ethernet is 100 ohm. So even if it's not ideal, it was a better choice. Yes. That is one thing that we also discussed.
+internally. Basically, it's like what is the penalty if we don't move the impedance from the even that a lot of people do 92. You are correct, closer to 90. But just stay with the PCIe 85.
+Given we are doing an active cable, the impedance mismatch may be okay. The V driver may be able to compensate for that. Exactly. I was going to say that. Yeah. And that's my hope is, and the reason we are enticed to stay.
+With a single cable is because the volume of Ethernet is definitely going to help us with economy of scale. We don't want it to be a unique solution. That was CMAC and myself from the beginning.
+I'm glad that I mentioned that. So now I'll write down my notes. And I'd like to test that cable with our solution if you have it. You said it's a Kia SF PDD. Yeah, so we don't have it yet. So we have the module more or less designed, and we are getting.
+the uh the QSFP, the the the outside, the con the cache and and and and the other hardware together. So my my question the next question is, what is the timeline you want the proof of um the POC again?
+So the biggest deadline is the fact that we have an endpoint. I rushed our passive card. As you all know, we're doing a passive card that basically allows us to get out of the server with dual QSFP.
+Connections and a chem connector by 16 chem connector. It's all Gen 5 right now. And we're going to test it in AMD and Intel servers and connect those to our endpoint. We do have an endpoint. We have an endpoint that does not.
+Have a retimer on the other end. So we want to have the redrivers inside the QSFPDD package on both ends of the cable. And hopefully, we wanted to publish that data and some of the signal integrity parameters and bit error rate.
+And stuff at the summit, at the OCP summit, as a hopefully a success story that we were able to provide a solution that can be passive card on the server. So it's not burdening the server with too much cost, and then it's not burdening the latent.
+With too much added latency. Okay, so you want to show a demo in the Global Summit? We want to show the demo at OCP in the village. And I already put in for a presentation.
+Would allow us to publish the data that would be, you know, how we were able to reduce the latency from retimer-based implementation and cost advantage and all the whole theory, right, of showing how we're getting closer to help.
+The TCO of remote memory given the memory prices. So the global summary is middle of October. So if we can have a proof of concept by one month ahead of that, is that enough? Or you feel that you want more? No, a month would be.
+Plenty of time. A month will be plenty of time. Okay. So middle of September will be plenty of time. Okay. Yes, sir. And I think it would be great if you can also start a parallel design with Terra Signal because.
+I believe that their solution has unique implementation that that could spell out success. Yeah, yeah. I saw the cheat's presentation in PCI Sec. It's actually very impressive. It is. And that's why we're.
+That's why we invited Majit to be co-chair on this so he can help us, you know, not to push this beyond where it's needed, but it's push it as a success criteria, hopefully. Yeah, bring some substance, you know, to add.
+Our forces together. I think that's the key point. Yeah, it gives us a chance to succeed, I think, because my ask is very tough. To have an engineered solution that does not rely on a retimer card is a tough quest. Yeah, and the other.
+The other big value, I think, is the automatic placement and automatic link training. So it's not as much engineered, right? Correct. Some people may still call it engineered, but it's well engineered. Let's put it this way.
+Yeah, so we by the way, we are making good progress. Right now I'm not supposed to disclose, but there is a ECOC event also where we're gonna show stuff there. But most mostly on the management side. So
+But this would be a kind of a nice opportunity for us to say a common cable for Ethernet and PCI can be used in SRAS, sRNS mode for remote connectivity, and the management can happen on a separate Ethernet connection.
+Overall spirit of what we started with with 1.0, 2.0 would help materialize it further. Yeah, and I think the LPO, the optical, you know, people were asking, there are companies who are trying to do also similar thing.
+For with the, and I think the PCIe is a FUCA. So that's something that I have to ask them if I can mention their name and invite them to come here Japanese. I think we should. We should. Yeah, I think I invited Samsung as well as Liquid.
+As well as a whole bunch of people. And I would like to have see them here, right? And, you know, some of them may sway us to have different solutions or multiple solutions, and that would be great. But my goal is not to fight anybody's path, right? My goal is, you know, personal goal.
+right is is to achieve the best tco for the end user yeah and i think ocp is the right uh kind of context for that kind of goal so people they don't have to hide too much if it's good
+advertise it, show it, prove it to others, and let be challenged. So I think it's that perspective. So yeah, so Raymond, let's follow up offline and I
+I think if we could create a plan for this OCP with some milestones, then we we kind of can work it backward and make sure that
+And we don't lose precious time. Yeah, I agree with you. I think, Raymond, just to remind me, your solution is an ACC, right? It's not an AOC. Yes, active copper cable. Yes. Yeah. And that's fine. I think we want to have that as well as the AOC.
+see what yeah so because yeah because you are talking about gen five maybe gen six for the next step a we driver uh able to cover two meters maybe potentially three meters may be pushing it but two meter probably is
+Quite doable. That's my gut feel. So, yeah, with terror signals, I redriver, if I read, if I remember the data correctly and interpret it correctly, even Gen 7 is quite within reach. No, Gen 8, Gen 8. Yeah.
+How long? That's the thing, right? Up to three meters is quite long. So, but anyway. Yeah, yeah, no, I think I think, you know, that's the point. We have to do some lab work. Right now we are quite a bit focused on Ethernet and, you know, but the for the PCI C Excel, uh, it follows.
+I think. And I think we, you know, people as to be realistic, I think PCIe 6.7 would be great already to show. Now, if you have a sort of a capability that eight is also in the picture, that could be a roadmap.
+Attractiveness, but I think people are focusing on 100 gig max from what I saw. 128. So, yeah, so I think let's see if we could plan this, Raymond. And David, on your side, is
+anything from what you hear internally that people want you know the the the driver for this you could contribute
+You're on mute. Yeah. Sorry, I'm having trouble getting to my mute button. No, no, no, in terms of bringing some end user perspective would be good.
+Going to revisit this with some of our people, especially on the memory side, and just to kind of understand their perspective. And, you know, so let me internally talk to some people here because I'm actually fundamentally a connectivity and.
+Optics guy, I'm not the big network guy or the big applications guy. Okay. No, no, that's good. No, and if we could also take a look at the optical, I mean, the presentation I brought to PCIe has an optical focus as well. And in the ECN,
+That was done actually worked on the phylogical. The hooks are there, even though the ACN didn't go through the board. But the hooks are there. So I think we are, if the driver for this is there, we could definitely show. And I think it's even more attractive once it's.
+PCIe 7 and beyond, because I think optical really then creates a roadmap as well. So, whatever, copper or optical, if you have an end-user perspective, it would be useful.
+Useful, I think. Okay. The calls are every two weeks, yeah. Right. Yeah, let me, as I said, let me do some research on this. Okay, great.
+These two are from the keywords and statistics report. Yeah. Yeah, our goal is to, you know, like I said, to have some workable solution of some sort for helping the ecosystem start thinking about.
+Remote memory as an incremental benefit. There are two aspects of CXL that were brought in, or why CXL got the momentum to be created in the first place.
+And maybe some of you would feel that this is a repeat, but I'm going to say it quickly. There's the memory wall aspect of it, of needing more memory bandwidth and capacity. And then there's memory efficiency, which comes from pooling.
+Memory wall could be addressed with expansion, but memory efficiency comes from a disaggregated composable infrastructure. That's why we are part of the CMS group. And the whole idea of gaining that extra 30%, whoever.
+whoever data you want to believe. Some people say 30% more efficiency by composable pooling. And now the third branch of that came in from memory sharing with software orchestration for AI as another tier.
+of of um you know in in the infrastructure to to provide additional pool of memory for the for the ai utilities uh that are connected to servers ai servers
+This is almost like nearly a half a year. Our first time is the festival, he called an end. So I think since you said,
+That you want the ACC solution and AOC solutions. Our cables that you tested earlier should have have the the active chip inside, also have the game. So I was thinking that maybe.
+we can work together to to tune that to meet into your requirements that remove all the additional retirement cards or or things. Absolutely. I think that's the plan. We tested with the retirement cards and they worked. So next the next stage is to test with
+The passive card. The passive card went out for Fab last actually Friday. I think my expectation is before the end of the month, we'll be ready to test with your Light Telligence solution.
+And that would be um our goal. And and we may need tuning from you or um you know and I'll reach out, Bobby. Yep. Okay. Yeah, no problem. Cause I I uh I don't know what would be the loss from your host to
+The camp slot would be from my engineered solution that we were talking about because of we don't know either. Yeah, because from my previous experience, I'd been tested with a passive car on the
+A supermicro server, eight Genova supermicro servers. We are able to achieve a very reliable Gen 4 with passive car. And Gen 5 is a little bit push. So, what you will see is some.
+Poor Rx errors or recovery counts increase, it's unlike that you're going to have nothing for a long time. You will see some error, but that is for that particular server. So I think.
+That particular passive card, right? So on this passive card, we're using the highest impedance control material possible. We rounded everything, made it so that it's very efficient and hopefully as good as it gets.
+We are hoping that it will be slightly different. I'm familiar with the testing of other passive cards that were not ideal, but maybe this will help. I don't know. Are you, you know?
+Have you guys given up on trying to repeat that test, or do you think you're willing to help us tune it? Definitely willing to help. Definitely, because the situation is case by cases. So, are you willing to help also, Bobby, close?
+On the NDA with TerraSignal and hopefully create. We already have NDA with TerraSignal. Okay. Yeah, we should have that. So we just need to create those alternative options once you guys are ready.
+Yeah, I think to integrate their system, we actually talked to them in OFC before. And I'm not sure if their chip that can directly drive you the PIC one is ready because, you know, we're
+Thinking about the AOC solutions, right? And so that driver will directly drive to the silicon photonic chip. But as far as I know, they have their one that drives for the copper cable ready, but I mean.
+Not sure if the optical both of them are ready. I think since you last spoke or OFC, we have effectively a shippable part. So for both copper and optical.
+Great, so we'll have to talk again on asking about the evaluation boards. So our team will be able to try on that. Right. Okay. Yeah. So if we can get the project going with you, Bobby.
+And, like I said to Raymond, if we can get it, get some cards built by mid-September, we can still test them and publish that data. Yeah, so you just said card. Do you mean?
+The active cable? Yeah. Yeah, yeah, okay. Okay, yeah. That's what we can offer. Yeah, so what I'm talking about, Raymond, you're working on the ACC, and I think I'm hoping that Bobby can provide us the LOC version with the CC.
+Yeah, understood. All right. So I guess the actions I think we should see if we could execute on Raymond.
+get back to you. I guess Bobby, if you want to come back to us on the state of the products. And I suppose the question is how can we help the the goals that Mohammed has set to see if
+The use case with this endpoint and card is doable within timeline. Yeah, the endpoint is ready. It's just the host side, passive card is what we're waiting for now.
+The cables will need to connect into with it with your retimer. Oh, I'm sorry, redriver on both ends of the cable, and that would help just to be clear. Yes.
+We have a new uh new person, Tahura. Yes, Anthony. Replacing Sam, no, no, I'm not Sam forwarded me the meeting invite, so this is the first time I'm joining this meeting.
+Do you want to summarize, Majid, about what we talked about and where Nahura can help is maybe provide another source? Sure. I think, Taura, we've been hoping that Sam can come and.
+Join here as well. Mohammed has been active in reviving this group and a little bit helping as well. And the proof of concept that we're targeting.
+Is for OCP global and there is a passive card of dual QSFP and chem card and the endpoint has no retimer. So we have this intelligent redriver.
+that we're trying to to see to build it for both active copper and active optical. Optical would be helped light telegens. And then Lottus Raymond is saying that they could also help.
+On the active copper. And obviously, we need help from companies like yours. Okay. And we can start by, you know, setting the stage of what the requirements are, including pinout being identical.
+To Ethernet and the cable being common with Ethernet would give us a cost advantage, right? Because we don't want a unique part number for PCI, because what we're asking for is strictly SRIS SRI.
+RNS support. The only thing that you know we would use is the flex IO signals for things like pursed and you know running pursed through pin 31.
+Was proposed at some point by Infinol within the SIG, and that would be optional. Taura, which group are you part of?
+So I was part of high speed IO tables team. Right now I'm with standards working with Sam. Great. Yep. Welcome to the team, I guess. Yeah, thank you. Yes, Sam, actually after the holidays and everything. So he forwarded this meeting to me. So I'm new to everything.
+So I assume you have access to the proposal Sam and Chris from Coherent did to the SIG OWG for the pinout of OSFP DD.
+I'm sorry, QSFPDD as well as OSFP XD. I think there was a presentation dated from 2024 they did, and I participated in the creation of that as part of this team. Okay, I see.
+Again, maybe what I should do is provide for the next meeting, have ready the requirements, including, I guess, with your permission.
+I needed to get okay from Sam to share the pinout uh proposal with the use of PIN thirty one FlexIO before I can share it because it's currently confidential for that presentation within the SIG. It's SIG confidential.
+Yeah, sure, sure. I also will ask some about the context of this project. So I'm new to optical. So I'm part of EWG and Cables workgroup in the SIG, but I'm not part of OWG.
+Yet I can request access. Okay. Yep. Our goal is to do an ACC as well as an AOC. We concluded that the DAC is not doable without a retimer. And the DAC.
+Was ideal for some people, but it requires too much cost built into the server and the endpoint. And an ACC would be more plausible with minimal cost adder, hopefully.
+Yeah, I'll store the information from the patient. I will talk to Sam. And the active electrical with retimers built in turned out to be too much power, too much cost, and too much variability.
+Between retimer implementations. And believe me, we spent 18 months trying to make retimers work. And we failed because of various incompatibilities with regards to bifurcation or.
+You know, various aspects caused us to fail with retimers, and hence it left a bad taste in our customers' mouth.
+Good. So I guess we have a plan, hopefully. Mohammed, I guess I other than the actions I have with myself, Raymond,
+And anything that feel free to delegate, I'll help out. Yeah, I'm going to be on vacation. I'm actually on vacation today. I'm traveling overseas for two weeks. So I'll be back on the same.
+17th. Okay, so the next meeting is when? It will be the week of the 20th. Yeah, 20th. Okay, so you'll be back for the next meeting. Okay, great. All right, thanks. Yeah, Raymond will follow up between us.
+As well, I will not, I will cancel the CMA meeting. I already canceled them because I think we need to resolve this one before we can start CMA. Okay. Good. Have a good vacation. Thank you. I'm going to be in your continent. Oh, you are.
+It's very hot. Hopefully you're not. I heard. I hope you're not going too much south. I am. I'm going to Malaga, Spain. Oh, Malaga. I was there not long ago for OIF. So yeah, it's it's not bad. It's a nice place actually, small and it's good.
+So enjoy. All right. Take care. See you. Bye-bye. Bye, everyone. Thank you. Bye-bye. Bye. Thank you.
