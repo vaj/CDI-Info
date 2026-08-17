@@ -7418,6 +7418,18 @@ Rohan Mehta (Micron Technology) and Bindu Tamala (Dell)
 
 ### Open Compute Project
 
+Allan Cantle (Nallasway) and Don (Credo Semiconductor)
+
+<a id="523"></a>
+
+2026/08/14 Server OCE LSI Lightweight Serial Interconnect workstream 2026-08-11
+
+[YouTube](https://www.youtube.com/watch?v=r7ndJ9xn_Zw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/523)
+
+[Acronyms](./acronym.md): OCP OCE LSI CXL CPU PCIe PCI DRAM DDR DDR5 FLIT CRC FEC AXI UCIe
+
 Mohamad El-Batal (Seagate) and Majid Foodeei (Terra Signal)
 
 <a id="521"></a>
