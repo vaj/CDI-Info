@@ -7690,6 +7690,18 @@ Jinin So, Wonjae Lee, Hojin Nam and Han Deok Lee (Samsung)
 
 ### SNIA
 
+Jim Handy (Objective Analysis) and Tom Coughlin (Coughlin Associates)
+
+<a id="526"></a>
+
+2026/08/20 SNIA PM+CS 22 Inventing Our Way Around the Memory Wall
+
+[YouTube](https://www.youtube.com/watch?v=4SmJfDNpYbA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/526)
+
+[Acronyms](./acronym.md): SNIA DRAM SSD GPU CPU AI PCIe CXL HBM MRAM PIM NVIDIA ML FPGA RAM OpenCAPI NVM
+
 Kalyan Gunda (Dell) and Masoud Noori (Seagate)
 
 <a id="505"></a>
