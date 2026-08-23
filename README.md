@@ -6320,6 +6320,18 @@ Robert Hormuth (AMD)
 
 [Acronyms](./acronym.md): OCP AMD UAL CPU DCMHS GPU RAS UEC OAM PCI FAST HBM HPC HPM NIC OEM PCIE PCIe RISC ROI
 
+Shivank Garg (AMD)
+
+<a id="529"></a>
+
+2025/08/18 Overview_of_Linux_Page_Migration_and_Accelerating_It_With_Multi-threading_and_DMA_Of..._Shivank_Garg
+
+[YouTube](https://www.youtube.com/watch?v=F0i3KAtetqU)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/529)
+
+[Acronyms](./acronym.md): DMA CPU NUMA TLB CXL FAST AMD PCI SDXI GPU DRAM RFC HBM LRU MEM NVIDIA OSS PCIE PCIe REST
+
 ### Google
 
 Chris Verne (Google)
