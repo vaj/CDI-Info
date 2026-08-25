@@ -6362,6 +6362,18 @@ Cliff Grossner (OCP), Colley Huang (DigiTimes), Jasmeet Bagga (Meta), Shang Y. H
 
 ### The Linux Foundation
 
+Manivannan Sadhasivam (Qualcomm)
+
+<a id="531"></a>
+
+2025/07/02 Virtio_for_PCI_Endpoint_Subsystem_in_Linux_Kernel_-_Manivannan_Sadhasivam,_Linaro_Ltd
+
+[YouTube](https://www.youtube.com/watch?v=SyR2GTmq7Tw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/531)
+
+[Acronyms](./acronym.md): PCI SPEC GPU SOC SoC NVMe REST USB MSI BAR MSIX NVIDIA DDR AMD ARM IBM NVM RFC KVM
+
 Sumit Garg (Qualcomm)
 
 <a id="530"></a>
