@@ -6362,6 +6362,18 @@ Cliff Grossner (OCP), Colley Huang (DigiTimes), Jasmeet Bagga (Meta), Shang Y. H
 
 ### The Linux Foundation
 
+Sumit Garg (Qualcomm)
+
+<a id="530"></a>
+
+2025/08/18 Kernel_TEE_Subsystem_Evolution_-_Sumit_Garg,_Qualcomm_Inc.
+
+[YouTube](https://www.youtube.com/watch?v=ZfG8p9O5_EY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/530)
+
+[Acronyms](./acronym.md): ARM DMA API SOC SoC AMD RISC OSS ABI CPU OPT UUID DRAM EDK2 GPU IoT PCI REST TPP USB
+
 Yuning Liang (DeepComputing)
 
 <a id="417"></a>
