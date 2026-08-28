@@ -1,0 +1,127 @@
+Binding_TDISP_&_Platform_Attestation_Reports_for_Confidential_VMs_-_Anna_Trikalinou
+
+Hello everyone and welcome to my presentation. My name is Anna Trikalinou. I am from Microsoft and today I am going to present to you about binding TDSP and platform attestation reports for confidential VMs.
+And here is the agenda for today. I'm going to start with a small primer on confidential computing, and then I'm going to talk about TDISP. How does IO look like in confidential computing without TDISP, and how does it look like with it? What is the value that TDSP?
+Ads. Then I'm going to talk about attestation and specifically the two different types of attestation that we have: the platform attestation and the TDSP device attestation. I'm going to introduce the problem of not having the
+Evidence bound together, and then I am going to talk about the proposal solution, the proposed solution that I have for solving this problem. Finally, I'm going to conclude with a few open questions that I have regarding my.
+My proposal. Okay, so let's do the briefest of primers for what confidential computing is. Today, we already have protection for when data is addressed via something like disk encryption, and we already have protection for when data.
+Data is in transit by something like TLS. The value that confidential computing adds is that it protects while data is in use by protecting it in DRAM. According to the Confidential Computing Consortium, confidential computing is
+Is the protection of data in use by performing computation in a hardware-based, attested, trusted execution environment? The types of attacks that it addresses is an insider threat, like a privileged admin abusing their right and trying to access customer information.
+While they shouldn't. It protects against hackers that are exploiting bugs in the hypervisor or the host OS. Even though a hacker might still be able to exploit a bug there, because the hypervisor and the host OS
+Are not trusted in the confidential computing model, they will still not be able to have access to the confidential data of the customer. And finally, it protects against any third party trying to access the customer.
+Data without their consent. An important feature of confidential computing is that it adds verifiable assurance for data integrity, code integrity, and data confidentiality. The verifiable assurance part is what it gets added through a design.
+Station and that is what will be important for today's presentation. Next, let's talk about TDISP. TDISP stands for Trusted Execution Environment Device Interface Security Protocol, a mouthful. TDISP is a specification that
+Is written by PCA SIG and it defines three main things. First, it defines how to establish trust between confidential VM and a device, and this is done mainly through device attestation so that.
+The device after attestation can be added into the TCB of the confidential VM. Next, it defines how to secure the interconnect between the host and the device. This allows for any messages that go.
+Between the host and the device to be protected, meaning they will be encrypted, integrity protected, and replay protected. And finally, it also defines how to securely attach and detach a device interface.
+To and from a CVM. This is mainly done through a new state machine that is introduced for every trusted device interface. In order to support T-Disp, we require changes throughout the
+The entire hardware and software stack. It needs changes on the device side, both hardware and firmware, because the device needs to support this encryption at the link. It needs to support.
+The new device security module that is the one that is coordinating with the trusted security model on the host side in order to establish the secure connection between the two. It needs the state.
+Machine that I mentioned earlier, it needs quite a lot of changes. Then we need changes on the host CPU. It needs changes on the TSM for to define the new ABI, it needs also the other end of the
+The encryption for the encryption of the communication between the host and the device interface, and so on. The first generation of TDS support from CPU vendors is going to be GNR or Granite Rapid for.
+Intel and Turin for AMD. TDISP also requires changes in the hypervisor, host OS and CVM in order to take advantage of this new ABI and also use the new way to interact with.
+The device. Finally, it needs lots of infrastructure changes in order to support the station, in order to support deployment and then recovery. Now, let's talk about how I/O is being done in a confidential.
+shell VM without TDISP. I'm explaining first how IO is being done without TDISP in order to show what is the problem that TDISP architecture addresses. So in a CVM architecture the memory is divided into private memory and into shared memory.
+Private memory, as the name suggests, is only accessible to NTCB components, and that will be things that are trusted by the confidential VM. On the other hand, shared memory can be accessed by things that are not necessarily trusted by the CVM.
+Will be things like the hypervisor, the host OS and devices. So without TDISP, since the device cannot be added into the confidential VM's TCB, it only has access to the CVM's shared memory. So let's take
+An example of a smart NIC. In order for the CVM to use the Smart NIC, the device driver will have to take data from the CVM's private memory, encrypt it, and copy it into.
+To the shared memory region of the CVM, and then the device can then access it through here. On the other way, when data is coming from the SmartNIC into the private memory, the device will need to copy the
+Already encrypted I/O data into the CVM shared memory, and then the CVM will have to decrypt it and copy it inside the private memory region. Looking at how other types of devices are going to behave in a
+confidential VM without TDISP, let's take the example of a GPU. In contrast with the Smart NIC that doesn't necessarily need to have access to the plain text information of the confidential VM.
+It just needs a blob that transfers from one place to the other. The GPU needs to have access to the plain text confidential data in order to do something like, for example, training. And that is
+In contrast with the confidential computing principle, and which is that only NTCB components can have access to the plain text confidential data. Now, there is one special case where NVIDIA's Hopper architecture.
+Offers a confidential architecture that is not TDSP but has a lot of similarities with that. And through this special architecture, the GPS.
+CPU can be added into the TCB of the CBM, so it can have access to the confidential data and perform something like training. However, this is a one-off architecture.
+Similarly, if we take an example of a crypto accelerator, that type of device will also have to have access to the plaintext data because the sole purpose of the crypto accelerators is to make crypto operations.
+Faster so they need to have access to plain text. In order for these types of devices to work with confidential VMs, we will also have to have custom confidential computing architecture.
+In order to add those devices into the TCP of the CVM, so ultimately, the impact of not having a T-Disp in a confidential VM in the context of a SmartNIC is that
+The CPU will need to do this extra encryption and decryption for all data entering and exiting the TE, which consumes CPU cycles, and the CPU, instead of working on the CVM customer workload, is
+By those extra operations. This has an impact on I/Os per second and reduces performance. And ultimately, it increases the cost of confidential computing because the same workload will need a smaller
+VM size to be executed in a general purpose VM as opposed to the VM size that you will need in confidential VM. For GPU and crypto accelerator types of devices, the impact
+Is even more significant because either those devices cannot be added into the TCB of the CVM, so they cannot function, or we need to define a custom T-Disp-like architecture.
+Architecture in order to add them into the CVM and make them functional. So the confidential computing becomes more complex, less performant, and much more expensive than general-purpose computing.
+That we've seen how IO is being done in a confidential VM without TDISP, let's see how things change if we add TDISP into the equation. So, with TDISP, the confidential VM can now do a device attestation and the CVM can.
+Can choose to add the device into the CVM's TCB. So, as soon as the device is being added into the TCB, it can then access the VM's private memory directly and without having to go through this bounce buffer.
+So in the case of a SmartNIC type of device, the SmartNIC will access the IO data from the private memory region of the CVM directly. As a result, the CVM's performance becomes closer to the GP performance.
+Performance. We still have some discrepancy which makes the CVM a little bit less performant than the general purpose VM. Some reasons for that is, for example, the introduction of IDE. IDE stands for integrity.
+In data encryption, it's basically the protocol that secures the interconnect between the host and the device, and that is specific to TDISP. There are also non-TDISP CBM reasons that make CBM a little less.
+Performant than GPVMs. A few of them is that CVMs encrypt the memory in DRAM, so there is some performance penalty there. They also introduce integrity for DRAM memory.
+And finally, the inter-processor interrupts are less efficient than GP. Also, with T-Disp, we have less cost and complexity to support other type of accelerators like
+GPUs, crypto accelerators, and so on. So now that we've seen that T-DISP adds a pretty attractive feature, let's move on and talk about attestation in confidential computing. So CC offers a verifiable assurance.
+As I mentioned earlier, and that is being done via attestation. Now, this is the definition of attestation according to the remote attestation procedures architecture and the associated figure. It's a little bit complicated, but bear.
+With me, I'll try to explain it step by step. So, attestation is the process by which an attester produces evidence which is then evaluated by a verifier, and the evidence is believable, verifiable information.
+about its own state. So let's take an example of an Intel CPU producing evidence that shows what is the microcode version, SVN and hash that is being using.
+So, the attester in this case will be the Intel CPU and it will sign this information using an Intel private key that is fused in the CPU hardware and the signed evidence will be delivered to
+The verifier. The verifier then appraises this evidence using trusted inputs like endorsements, reference values, and produces an attestation result. So, in our example, the endorsement would be
+an Intel certificate that is provided by an Intel service and that certificate can be used to verify that the evidence is indeed signed by a genuine Intel CPU that has genuine Intel key.
+The reference values will again be provided by an Intel service that will say that this is the expected microcode SVN that you should expect, this is the associated digest, and so on.
+The appraisal policy for evidence could be some addition policy that we can add to the verifier and say, for example, that I only accept a microcode SVN that is greater or equal than X.
+The attestation result would be whether the evidence matches with all of the above: the endorsements, the reference values, and the policy, or not. This result is then used by the relying party to make.
+Trust decision about the attester. Essentially, the relying party is the one that says whether the attestation result is acceptable, and if so, it will go ahead and release some secrets, some workloads, some keys.
+To be processed by the CVM, or in this case, the Intel CPU that we just attested to. A thing to note here is that the platform attestation process and the
+The T-Disp attestation process both follow this same design but are distinct from each other. Starting with platform attestation and the evidence that it produces.
+The goal with platform attestation is to describe all the in TCP components of the CVM. I have here two figures that try to show different aspects of the same thing. The picture on the left shows.
+Shows all the components that are trusted within the CVM, starting from the CPU hardware and firmware, and then extending to the confidential VM, which consists of
+The VM firmware, VTPM, UEFI, operating system, and application. All of those are the components that are within the TCB, and the things like Azure, HostOS, and hypervisor are outside of the TCB. The picture on the
+Right shows what is the relationship between those components. The way that platform attestation works is that it uses a chain of trust where one component measures the next, and the root of
+Trust is the CPU hardware. So here you can see that the CPU hardware is the one that is responsible for measuring and producing the evidence for the CPU firmware and the microcode. And this is going to be
+Signed using the platform key that is here. Now, a verifier would verify that yes, I trust this key because I trust that this is a valid key by the key, but the
+The CPU manufacturer and it trusts this firmware and microcode that has measured. If the verifier trusts that, then it will trust that the CPU firmware will do.
+a good job into measuring the next component in the this chain of trust which is the VM firmware and UEFI so the CPU firmware is the one that is measuring the VM firmware and UEFI
+As VM firmware you you can think of it as the paravisor that Azure has this is called Open HCL or a firmware like Coconut SVSM which is in another which is another
+Example of that. Both of those firmware components will also include implementation of virtual TPM, and that virtual TPM will contain an attestation key which is bound.
+Which is bound to the platform key in the platform attestation report. Now, next part of the attestation process is that the VM firmware and UEFI is
+Responsible for measuring the guest OS and the applications that are running within the CVM. Now, I'm saying here that it's part of the guest OS and the applications because this really depends.
+On the policy that is being used for that CVM. Usually, the JEST kernel drivers are measured at the boot, and then runtime attestation relies on things like IMA and system D and how.
+Their policy gets configured. An important thing here is that this does not contain any TDISP device information. This is solely for just the CBM.
+On the other hand, the T-Disp device attestation and the evidence that it produces describe the in-disp components of a particular T-Disp device that will contain information about
+The device's certificates, the device's measurements, and the device interface report. Here you can see the new pieces of information that gets added as part of the TDS attestation. So, here the device hardware is the one that measures the device.
+Firmware and configuration, and then the hardware delivers the evidence to the CVM. Since the CVM collects both the platform evidence and the T-Disp device.
+Evidence, the CVN can verify that both pieces of evidence are mapped to the CVM itself. However, a remote verifier cannot know if the TDSP device evidence that was
+Collected originated from the same CVM as the platform evidence. And the reason for that is that because there is no existing binding between the platform and the T-DISP device evidence.
+This gap can allow an attacker to replay old T-Disp attestation evidence with a CVM that doesn't have that device and cause a relying party to disclose secrets.
+To the CVM that wouldn't otherwise. So, for example, a relying party may have a policy to release some proprietary training data to a CVM, assuming that this CVM will have a
+Confidential T-DISP GPU. An attacker can use this way in order to fool both the verifier and the relying party and saying, Yes, I have a T-DISP GPU, while in reality it would not.
+Result: this data can be exposed to a third party. So, this is the heart of the problem that I'm trying to solve. I want to find a way to bind the two pieces of evidence together, and I want to do it in a way.
+That is the same across operating systems and cloud providers because this way it is easier for anyone to implement their own verifier. Usually, the cloud provider will have their own verifier service, but the whole point of
+Confidential computing is that the customer does not have to trust the cloud provider. So, if they have their own implementation of the verifier, they don't have to. The proposed solution that I have is that the
+CBM would collect the TDSP device attestation evidence as it does today and will use this evidence to extend a new virtual TPM NV index. Then, this NV index will get signed using the virtual TPM attestation key, which is already.
+Part of the platform attestation report. So, this will be the way to bind the two pieces of evidence together through the VTPM attestation key. As a very quick
+Introduction of what TPM and B indexes are. The TPM 2.0 specification defines that each TPM or virtual TPM implementation needs to have at least some kilobytes of non-volatile storage, and this storage is used.
+In order to store TPM internal data like seats, counters, clocks, etc., that are needed for the TPM implementation to function. And we can also use this storage to store user-defined data, and that will be accessed via.
+NV indexes. So an NV index is basically a handle or a pointer to a specific region in the non-volatile memory and it includes what is the size of the data that is being addressed.
+The NVI index includes attributes that define what is the behavior and the access rules for using the NVIDIA. Those attributes are defined at the creation time of
+NB indexed and cannot be changed afterwards. So, for example, a non-volatile data region can act as a counter, as just raw data storage, or as a PCR. An attribute can define
+Defined which hierarchy can read or write this NBA indexed and so on. Finally, the NB indexed has some access control policy which defined what are the
+Authorization rules on who can access the NVIDIA. Attributes are used to describe the static behavior. The access control policy are used to describe the dynamic access control behavior, essentially. And the access control policy can say that.
+These non-volatile data regions can only be accessed using this password or key, or if the PCR value has a specific value or whatnot. So, the proposed solution is to.
+Define a new NV index that acts like a PCR and that gets extended with the hash of each T-Disp device attestation evidence. We will also need to create a file to store.
+Event lock records for any new event or new extent operation that happened to the NVIDIA. And every time a new TDS device attestation evidence is being retrieved by the CVM, the CVM would
+Create the hash of the TDISP device evidence. So it will take the device ID, will take the device certificate measurements and interface report and create a digest. Then that digest will be
+Be used to extend the NVIDIA. Next, we'll need to create a new event log record that will say that the NVIDIA has been extended, and this is the associated digest.
+That has been extended with, and then append the new event log record to the nvindex event log file. And then ultimately, every time the CVM wants to invoke the remote verifier to perform attestation.
+The CVM would first sign the NVIDIAx value using the VTPM attestation key. Again, this is the key binding method of signing the NVIDIAx value with the VTPM attestation key.
+Is part of the platform attestation report. And then the request to the verifier would include sending the platform attestation evidence and the T-Disp device attestation evidence as is.
+Today, and then it will, in addition to that, it will also include the NVIndexed quote, which is the signed NVIndex value, and the NVIndexed event log file. And having this, by having this information, the remote verifier.
+Can verify that if both the platform evidence is correct and the TDISP evidence is correct, and on top of that, those two are bound together.
+And here you can see in the picture that essentially that this proposal all it does is that it adds this green arrow here where it says that by generating the NV index code using the VTPM attestation key
+We bind the platform attestation chain of trust to the TDISP attestation evidence right here. A few more details on the proposal. The NVIDIA needs to be defined by.
+Using the platform hierarchy, which is owned by the VM firmware. Usually, the platform hierarchy is under the control of either the platform manufacturer, if it's a physical TPM, or the VM firmware if it is a
+Virtual TPM. And the reason why we need the NV index to be defined using the platform hierarchy is because we need to use this attribute that is only available in the platform hierarchy. This attribute is the TPMA NV policy.
+Which restricts everyone else, for example the guest or an application, from deleting and redefining the NVINText and its data. If we don't have this attribute,
+An attacker could, with kernel privileges, could basically delete this NV index and redefine it. Which means that, let's say that the CVM receives TDISP.
+Evidence of a device that is vulnerable and would normally be denied by the verifier. The attacker could replace this evidence with T-Disp evidence.
+That would be accepted by the verifier and thus masking the not acceptable TDISP device. So that's why we need this NVPolicy delete attribute. A few other attributes.
+That we could use are the ones that I have listed here. We want the owner right, which allows the guest kernel to write to the to extend the.
+NV indexed. We want the NVIDIA to be extent only and not directly writable. So it acts like a PCR. And we would also likely want for the NVIDIA to be reset.
+On reboot. Also, we can use the canonical event log record format for our event log for capturing events on the NB index. And finally,
+I have a few open questions. This proposal would maintain the history of all the T-DISP devices that were ever evaluated by this particular CVM, and that would include T-DISP devices that were rejected or
+T-Disk devices that were previously accepted but then updated with newer evidence. The size of each T-Disk device evidence is not very large, it's only a few kilobytes in size, but
+Still it can result in unnecessary bloating because we could have a long click of the C V Ms and all this key disp evidence will be part of the attestation request that is being sent to the remote verifier every time.
+On the other hand, however, a relying party might want to have this type of information. For example, imagine a CVM that has previously accepted a device with vulnerable firmware.
+That could have become compromised, and then subsequently, the device firmware has been updated with the newer version that is non-vulnerable. However, because the TDSP device for some period.
+of time had accepted the device with the vulnerable firmware, it might have become compromised during that period. So it doesn't matter that it's not vulnerable anymore because it was in the past.
+That might have affected the security of the entire CBM, and the relying party might want to have this type of information to apply policy on it. So, yes, maybe we need to have a way to configure what is the
+Policy for resetting the history of this NVIndex and event log. And another open question is: what is the location and the permissions for the event log file and the NVIDIAX extend?
+Should we isolate it to kernel drivers, or is there a use case for applications to be able to access it as well? And with that, I would like to thank you for attending my presentation. Enjoy the
+The rest of the conference. Thank you. Bye.
