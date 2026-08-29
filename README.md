@@ -7826,6 +7826,18 @@ Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
 
 ### The Linux Foundation
 
+Hoyeon Lee (SUSE) and Taehee Yoo (Rebellions)
+
+<a id="535"></a>
+
+2026/08/28 KNOD_ In-Kernel Network Offload Device for GPU-Accelerated Packet Processing - T. Yoo & H. Lee
+
+[YouTube](https://www.youtube.com/watch?v=9DmHIUe9XJ0)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/535)
+
+[Acronyms](./acronym.md): GPU XDP BPF NIC CPU AMD DMA TCP API REST RFC JIT KFD HSA
+
 Rob Nertney (NVIDIA) and Spencer Gilson (NVIDIA)
 
 <a id="499"></a>
