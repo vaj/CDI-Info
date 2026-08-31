@@ -7382,6 +7382,18 @@ Wei Huang (AMD)
 
 [Acronyms](./acronym.md): CPU AMD NIC ACPI API ARM DMA PCI PCIE PCIe SMART TLP MEM MSIX QOS QoS SDC SOC SoC TCP
 
+Daniel Wagner (SUSE) and Nilay Shroff (IBM)
+
+<a id="537"></a>
+
+2025/12/18 Towards_Real-Time_NVMe_Monitoring_nvme-top_-_Daniel_Wagner,_Nilay_Shroff
+
+[YouTube](https://www.youtube.com/watch?v=op8Bqn4UrBU)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/537)
+
+[Acronyms](./acronym.md): NVMe CPU ANA NUMA CLI API DMA GPU HPC IBM IOMMU MEM PCI PCIE PCIe RDMA REST SUSE TCP
+
 ### The Linux Foundation
 
 Joongi Kim (Lablup Inc.)
