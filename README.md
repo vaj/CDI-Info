@@ -7394,6 +7394,18 @@ Daniel Wagner (SUSE) and Nilay Shroff (IBM)
 
 [Acronyms](./acronym.md): NVMe CPU ANA NUMA CLI API DMA GPU HPC IBM IOMMU MEM PCI PCIE PCIe RDMA REST SUSE TCP
 
+Davidlohr Bueso (Samsung Semiconductor)
+
+<a id="538"></a>
+
+2025/12/18 CXL_HDM-DB_support_for_Linux_-_Davidlohr_Bueso,_Samsung_Semiconductor
+
+[YouTube](https://www.youtube.com/watch?v=rMO56FsNjlA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/538)
+
+[Acronyms](./acronym.md): CXL PCI DCD HDM PCIE PCIe CPU CXL.cache DAX DMA MEM REST UIO AMD ARM CXL.mem FAMFS
+
 ### The Linux Foundation
 
 Joongi Kim (Lablup Inc.)
