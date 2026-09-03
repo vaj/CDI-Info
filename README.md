@@ -7406,6 +7406,18 @@ Davidlohr Bueso (Samsung Semiconductor)
 
 [Acronyms](./acronym.md): CXL PCI DCD HDM PCIE PCIe CPU CXL.cache DAX DMA MEM REST UIO AMD ARM CXL.mem FAMFS
 
+Alejandro Lucero (AMD)
+
+<a id="539"></a>
+
+2025/12/18 Kernel_CXL_Cache_safe_support_-_Alejandro_Lucero,_AMD
+
+[YouTube](https://www.youtube.com/watch?v=mph6g63L_mM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/539)
+
+[Acronyms](./acronym.md): CXL CPU AMD DMA IOMMU PCI PCIE PCIe API ATS MEM VM GPU HPC MMIO NUMA REST TLB
+
 ### The Linux Foundation
 
 Joongi Kim (Lablup Inc.)
