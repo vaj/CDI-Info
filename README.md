@@ -7418,6 +7418,18 @@ Alejandro Lucero (AMD)
 
 [Acronyms](./acronym.md): CXL CPU AMD DMA IOMMU PCI PCIE PCIe API ATS MEM VM GPU HPC MMIO NUMA REST TLB
 
+Dan Williams (Intel)
+
+<a id="540"></a>
+
+2025/12/18 Confidential_Devices_TEE_I_O__A_series_of_modest_proposals_-_Dan_Williams,_Intel
+
+[YouTube](https://www.youtube.com/watch?v=hHsCfBWE7W0)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/540)
+
+[Acronyms](./acronym.md): TEE PCI TSM DMA TDISP SPDM CMA IOMMU MMIO API AMD CPU GPU IDE REST SOC SoC VM
+
 ### The Linux Foundation
 
 Joongi Kim (Lablup Inc.)
