@@ -7430,6 +7430,18 @@ Dan Williams (Intel)
 
 [Acronyms](./acronym.md): TEE PCI TSM DMA TDISP SPDM CMA IOMMU MMIO API AMD CPU GPU IDE REST SOC SoC VM
 
+Rajneesh Bhardwaj (AMD)
+
+<a id="541"></a>
+
+2025/12/18 Parallel_Paths_to_High-Bandwidth_Memory_for_ML_AI__Specific_Purpose_Memory_vs_Driver-Managed_-_Rajneesh_Bhardwaj,_AMD
+
+[YouTube](https://www.youtube.com/watch?v=oXgL6LqeBZM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/541)
+
+[Acronyms](./acronym.md): HBM GPU CPU NUMA DAX DDR CUDA AMD NVIDIA CXL EFI API MEM MMU PCI PCIE PCIe REST SPM
+
 ### The Linux Foundation
 
 Joongi Kim (Lablup Inc.)
