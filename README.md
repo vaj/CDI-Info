@@ -7455,6 +7455,18 @@ Rajneesh Bhardwaj (AMD)
 
 [Acronyms](./acronym.md): HBM GPU CPU NUMA DAX DDR CUDA AMD NVIDIA CXL EFI API MEM MMU PCI PCIE PCIe REST SPM
 
+Fenghua Yu (NVIDIA)
+
+<a id="543"></a>
+
+2025/12/18 Microconference_for_resctrl_-_Fenghua_Yu,_NVIDIA
+
+[YouTube](https://www.youtube.com/watch?v=pw5xhSRId54)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/543)
+
+[Acronyms](./acronym.md): CPU MBA MBM NUMA MPAM AMD ARM API ACPI MMIO QoS ABI GPU HPC MEM PCI REST
+
 ### The Linux Foundation
 
 Joongi Kim (Lablup Inc.)
