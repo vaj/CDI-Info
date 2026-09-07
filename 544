@@ -1,0 +1,152 @@
+How_To_Accelerate_Software_Defined_Vehicle_SDV_With_OSS_-_Yuichi_Kusakabe,_Honda_Motor
+
+Hello everyone, thank you for joining today's my presentation. First is I'm a quick introduction about myself. I'm using Sakai from Honda Moda. I'm a software.
+Embedded software engineer Kerala started 2005. And 2020, I joined the Honda Motor Internal Software Development team. And last year, Honda launched the OSPO open source program office. And currently, my responsibility.
+SDB software chief architect and hospotech creat. And last year, this logo is open chain self-certification. So left side is open chain compliance open source compliance program, and the right side
+Open source security assurance. Honda Motor, first company in the automotive world, get both get a self-certification. And next is last two years.
+Honda launched many software studios in Japan. So Hetokota is in Tokyo. And Honda has Omiya, Nagoya, Fukuoka, and Osaka Software Center launched two years ago. And I'm working on this in Osaka.
+And uh this year uh Osaka have uh Osaka Expo, so very uh good uh location to this uh software center i in Japan. So if uh foods are uh coming to Japan, so I will quickly introduce Osaka a very good uh restaurant.
+So this is today's agenda. So first is background Honda Internet Software Development Team. And another is overview of the SDB and key components. Some quick introduction.
+Finally is collaboration, the cooperation to open source community working together SDB software development. And today I have many presentation pages, 53 pages. So some part I'm very quick introduction to this material.
+So first is a background Honda in-house software development. So as you know, Honda is a very unique big development company. One is Wai Gaia.
+guys very honda unique culture and very flat and unique discussion one big room uh working together uh very top one manager manager and software engineer uh
+Talking about uh dream and ideas uh three days. So this is uh uh one very uh unique culture in uh Honda. And uh another is uh A zero zero. Uh so A zero zero is uh uh so uh
+Concept and guideline big development. So because big development many times conflicts different software design approaches.
+In this case, we checked A00 which best pattern approached A or B checked to this A00 concept. So this is a very unique Honda culture, Y and A00.
+Another one is uh uh uh product quality. For example, uh some company is uh maybe one uh one hundred percent product quality is uh uh gold, but uh Honda is uh one hundred twenty percent product quality. So this is a very
+Unique uh culture to uh uh Honda original uh culture. So uh this uh focus uh uh our background uh in our IBI software development. So, first is uh IBI. IBI is an in-big info infotainment.
+So as you know, uh current uh big have uh many uh inter uh input device uh DIY the camera, steering switch, USB, and another is uh starter connector uh Wi-Fi, Bluetooth. And the big means uh uh
+Uh B uh co uh area network uh for example CAN or Ethernet signals. And another is uh connection to uh e internet to using to TSU. And uh output means uh display and speakers. So current uh our IBR system uh uh
+Speaker support over 32 speakers support this eyewear systems. So, in this means that this eyewear system is a very big ECU in big and many functions. So, next.
+This is traditional our IBI approach to left side. So please look at this A B means IBI, IY issue, A issue and B issue, and the model is B code.
+Name uh for example, a code Shibik. So in this case, uh uh traditional methods uh Honda, uh very different uh uh TI1 company to each because uh for example uh uh so sometimes happen to uh software development costs.
+is a very high cost uh because uh Honda have many a lot of uh TR1 vendors and sometimes happen to uh Honda resource uh management uh very limitations and finally sometimes happen to uh uh software uh quality issues uh many these vehicles.
+So seven or eight years ago, Honda changing to IBI development approach to in-house approach. So please look at this red area.
+Area is Honda internal software team development, and the bottom side is TR1 vendor developing hardware and some HARO and other functions. So this is current our software in our software.
+Development approach this so this is uh focus on uh our IBI software uh software diagram. So currently we using the Android automotive OSA and uh this layer uh is uh
+Haru layer. Uh bottom size is uh our TR1 vendor uh developing to HARU uh uh some Linux kernel customized and developed hardware and bottom size uh Honda uh depl uh developed uh our original framework and uh
+Applications. So this desert, 2023 US Honda Code, we first model in-house software development this IBA systems. So this IBA systems are good.
+Google Building. So Google Building is in this accord using Google Maps and the Pressor and Google Assistant very similar to your Android smartphone. So this is a very good fast.
+Uh in-house software development in our site. Okay, so this is uh main topics. So first is uh overview of the SDB. So SDB is uh uh software-defined vehicle. So as you know this is
+This is a this is a very uh no no no no, but uh two years ago. And right-size uh uh SDV image that generates uh AI. So, but uh this is uh too difficult to understand. The first is SDV, and many people.
+People, I think, are not clear to SAB. So this slide focuses on overview, big and auto-vehicle site. So please look at this
+Main area. So, this main area is a big and uh another per product and connect to uh this uh arrow. So, and big data to uh server side. And the server side uh we uh using.
+to describe software development and another sign is a connection to a third party uh provider. So please look at this uh keyword. So function is uh uh update means uh uh so
+So as you know Android smartphone is every month we update a security fix and some Android application many times updates very quickly. So SDB is a very similar to approach to this
+functional updates. So this functional update depends on VQ data and user scenarios. So in this means two very important points BQ data collection.
+And get a user scenario. And our site analyzes this data. And if a user requests a new feature and very quickly software development they start to inside and update the function a new feature.
+Every month, week, day. So, this is depend on our customers. So, this is a very overview SDB systems. And the next is focus on big site. So, this
+Uh slide to uh explain to uh uh E and E architecture uh this one. So data collection uh bases it it's a very too uh difficult to uh uh get uh some uh
+connection another ECU. So in this case our approach one of a very big ECU this is a quite ECU and connect to another zone ECU.
+So in this means our next A and D architecture have a very big central issue and connection to a small another issue, zone issue or area issue. So this is a key technology next.
+So I uh focus uh uh s quite issues uh side. So please look at the uh left side. So left side is uh uh high uh performance.
+Performance computing uh running on some uh high uh performance uh application running to uh left side. And right side is uh toleration and uh uh it does depend on uh many uh automotive uh basic functions running to uh uh
+So this is a very uh rough uh block diagram but uh very easy to understand. Uh many different applications running one ECU. So in this means uh uh very two key points uh mix critical
+Software architecture in this uh diagram. So next is uh uh I explained uh some key points uh uh SDB's uh software. So uh this is uh uh same uh block diagram the uh
+Uh ambiver section. And uh I put uh many uh current uh S D B issues to uh this uh red parts. But uh I think it's many parts of uh uh current uh S D B architecture have uh many issues.
+So I uh explained uh some uh typical issues to uh this uh part. So first is uh uh central ECU have uh very high performance in uh computing uh
+For example, please look at the CPU quads. This CP uh this is uh one of uh example to uh high performance computing uh SOC. So this SOC have uh 32 um uh CPU.
+And real time processing uh lo uh six and uh AI accelerator is uh uh four hundred tops and GP is uh four terraps and uh chiplet uh chiplet is uh uh SOC uh connect uh external uh uh
+uh hardware acceleration, for example uh AI uh uh acceleration and GP acceleration connect the cheapest technologies. So so in this means uh uh very easy to uh realize uh hardware uh uh spec to uh if a customer needs to
+So I I think this uh spec server side and curl side is uh uh not specific uh uh hardware, but uh in automotive industry and embedded Linux side is uh uh uh uh uh uh uh uh uh uh uh
+uh very to uh uh sorry uh very to uh hard work to support this uh very high uh performance SOC. And the next is uh uh very different uh uh type to application.
+Running to one SOC. So please look at this display. So left side and right side is instrument cluster display to speed meta and tachometer. And this middle area.
+Is another IBI display to car navigation and map information. So in this means if this display only meta or IBI output this information
+Is a very easy to software development, but this is a combination to this new function to difficult isolation to different software. So, for example, I would
+UI side is very uh high uh highly up-to-date, but uh meta side is uh dependent on H0. H0 is uh uh after this uh present uh after this slide uh I have a quick uh explain to this.
+And next is uh uh some uh OEM and TR one uh toleration automotive software uh very depend on RTOS based uh software. So so uh last time is uh
+Uh Linux kernel uh scheduling policy. Uh as you know, Linux kernel support uh uh P4 and RR uh sketch policy and uh uh new one is uh data running scheduling policy. So in this means uh uh Linux kernel uh easy to run to uh RSS.
+However, if uh traditional uh our uh RTOS based software running uh all uh RTS rate for example one thousand artist rate running to the one uh SOC side so
+It's a very too complicated many system performance issues to happen to this software. And right side is one of examples to Android Automotive OS. So
+Uh so currently our uh Android Automotive OS are running uh six thousand threads on uh one SOC but uh RT thread is uh very too uh small part. I put uh this uh uh snippet uh RT thread.
+Uh s so this is uh uh audio server and the graphic part uh very small part uh using the artist late. So this is uh very important uh uh uh using the Linux kernel uh to uh traditional our
+Uh automotive industry uh softwares. And the next is uh uh different uh software life cycles. So uh as you know uh three years ago Linux kernel community decided to uh
+Uh LDS kernel turn uh six to two years. So h so in this means that uh latest kernel uh six to twelve version uh EUL is uh 2026. However, uh RASA is uh uh Android
+uh ACP is uh uh Android common kernel. So please look at uh this uh EOL. So same kernel version, uh six twelve is uh uh AOSP support uh four years and EOL is uh two thousand twenty nine.
+So this is uh different uh uh software life cycle. But uh this uh another part is uh uh same situation happened to uh uh different uh life cycle uh running uh one uh SOC. So this is uh too difficult to uh handling to uh life cycle uh some
+Component life cycles. And the next is some automotive industry software using the contract software, commercial software. So if we use commercial
+So, in this case, we have very long road software development. Start is NDA, and the next is SOW, and next is some contracts, contracts, contracts. So, in this means maybe half years or some very
+Long time needed to start the software development. However, in open source, so RAS is one of AGL source code operations. So very easy. First is repo unit and repo sync and configure to
+some hardware. Finally is a bitwake. So left size is maybe typically six or seven months needed to start the software development. But the right size is open source based.
+Starting with uh three or two minutes. So it b it's a very two uh different uh approach uh lead time to uh commercial license software and open source softwares. And the next is uh uh functional safety. So this is uh regulation
+Automotive product safety ISO regulation 26262. So this regulation is some analysis federal rank and we put A0A B C D
+So H A is uh uh A or B or is uh instant cluster and uh C or D is a A DAS or uh A B S and another to uh be cr uh common function. But uh uh some software uh
+Without HL part, so so in in this means uh uh very uh different uh uh software uh Q QM software and HLD software learning one one SOC. So this is uh
+uh very uh hard work to integration to uh one uh SOC. So uh finally uh this is uh uh soft-viral materials topics. So as you know uh Android automotive OS
+Using the many external open source software. So this is uh uh n I can I check the uh number of uh repositories. So uh eight hundred uh repositories uh uh Android automotive OS using
+With the external open source software. So, in this case, we are very important and open source license checked. So, currently, Android supports automatic.
+Uh generate uh uh S BOMS. So this is uh very easy to uh operations. But uh some uh S BOM part uh missing part uh for example one of uh package down package down location. So
+Is uh uh no assertions. So in this means uh we uh modify the manually uh it's bombs uh uh over uh many two thousand or uh over two thousand uh depotary checks.
+To manually and modification to generate new SBOMs. So, this is a very hard work to our site. So, okay, so that's all SDB.
+Overview and the key components to SDB topics. So, next is how to solve the cooperation to the open source community working on SDB software development. So, first is I put another
+Of Linux Foundation are open source communities. So as you know, this is a very popular open source community to Linux Foundation. Also, ICRIS Foundation and another foundation.
+Foundation is uh a very good uh open source uh key component. Uh but uh yeah this is uh no space I put I I can't put uh another logos. So I p explained to uh some uh open source uh project. Uh first is uh AG error.
+Uh AGL is an automotive grade Linux uh Linux Foundation project. So please look at this uh part. So AGL uh developed a starting point uh six, seven to eighty percent uh starting point uh product project is uh very important.
+And uh AGL have uh some expert group. So one is uh uh SDB expert group. So this uh SDB expert group is uh about IO uh support and uh non-hypervisor
+Like a looper support and uh unified HM support. And finally, the SDB Difference Platform under development. So this expert group Jerry are from Panasonic leader and I'm a co-leader this expert group.
+And this is uh uh before m uh my presentation uh the same uh software block diagram. And I put uh some uh open source projects uh this uh SAB architecture. So this uh looks like uh very uh
+Some part uh already uh open source community uh project uh uh sort of SDB issues. So first is uh uh hypervisor part. One is uh uh hypervisor is a Zen. So then is uh type one uh
+hypervisor uh an open source uh hypervisor license is uh GPL boots. And this is a very uh strong uh good uh architecture to uh automotive industry because uh currently uh
+then support uh but IO support. So this is a very key component to uh our SDB software development because uh uh as you know uh h hondown another uh OEM begin have uh many
+uh different grade and area. So in this means uh we have uh very very a lot of uh support uh hardwares. So so in this means uh uh one Android automotive software support uh uh social vendor
+A and another uh area is uh support uh SOC B. So in this means uh uh if uh but not but IO support we uh apply to uh uh many part of the uh another SOC vendor.
+But if bar tile support, so in this means basically binary compatibility to another hypervisor running on bar tile port. So this is very important.
+Binary and server side. So SDB is a key technology they started seeing. So in this means the same binary image running to server side and cloud side. So in this means very easy software development OEM and TL.
+One side. So this is bar dio support is a very key uh technology to our SDB software development. And uh next is uh uh then is uh SL support. So these topics uh uh some uh SOC vendor
+Lunas and AMUD will get a certification ISO 26262 HUB or HUD. So this is a very good activity. And the next
+First uh key component is uh real-time OS uh open source base uh Zephyr. So Zephyr is uh very uh lightweight uh kernel and uh supports uh many software stacks, uh brutes, uh network stack and uh many support uh uh vendables.
+So this is uh very uh looks like uh good uh uh automotive industry uh uh some issues. So Zephyr is uh also to support uh H uh function uh ISO 26262. Uh uh some uh documents.
+Documentation is you can check this link and this very more deep dive to how to get HCL certification open source community. And the next is unified HMS.
+So uh this uh top size is uh totational uh big uh ECU. So in this means uh uh some ECU have uh uh uh display and uh uh
+electric mirror each two ECU. But uh uh SDB new so uh architecture is uh one of uh very big uh ECU. So in this means uh one ECU supports uh merge display and uh electric mirror. So
+In this case, uh uh if uh without unified HTMI too difficult handling the output uh display control, but uh unified uh HTML I uh using the disc uh easy to uh configuration and uh output the control
+Uh display site uh some application uh imaged. And this technology, uh battery GPU technology based and very uh simple uh software diagram uh so in this means uh very easy to adapt to auto-share ECU, maybe.
+And next is uh Buisamo IP. Buisam IP is uh uh uh COPESA. Uh COPESA is uh uh another uh open source community. And uh Buisamo IP is uh BMW developed uh ECU communication protocol.
+So I think uh uh Honda and another OEM are using uh this uh Bruce MIP protocol, very easy to uh set up and using to uh communication to uh e Ethernet-based uh ECU communications.
+And the next is uh uh direct log and trace systems. So, this is uh very very important because uh uh if uh we using the hypervisor solution and uh using the uh very different uh virtual machine and different operating system, so in this means
+If happened to performance and very critical software bugs happen to some virtual machines. So in this case, if operating system different is log system is different, for example, Linux can.
+Is a systemd and D message, and another kernel is very different supporting log systems. So, in this case, too difficult debugging. But DLT have adopted many open
+Operating system layers support plugins. So, in this means, DLT demo correction to many different OS logging system and correct to generate one log file systems. So, in this means, we
+very easy to analyze the different virtual machine and virtual uh software development. And uh another is uh verified boot. So uh uh as you know uh automotive industry uh very uh
+New regulation and the requirement is secure boot and some security solutions. So in this means a verified boot is a very important point one of solutions. But in Android, automotive always supports the book.
+Verified boot. So b this is verified boot is uh very uh quick boot time. So this is uh uh one of a very good solution to our site. And the next is uh uh Ethernet Mac security. So as you know uh uh
+Central ECU have uh uh connection to uh many uh Ethernet ports. For example, thirty two Ethernet port connects to uh uh central ECU and uh some if uh some uh security hole happen to uh uh
+Area issue and another ECU. So in this case, not a good impact to our site. So Internet Max security is mandatory to next SDB and ED architectures. So this is
+Open source space uh one of uh good uh Mac security solutions. And the next is uh uh generic kernel imager, GKI. So current Android support uh uh GKI. Uh GKI means uh uh AOSP.
+provide uh uh Linux kernel binary image. So in this means uh uh if uh vendor and the TR1 company uh create uh new and modification to Linux kernel. So, uh, uh, uh, uh, uh
+So in this means GKI is a binary image. So we using the loadable module site and using the KMY. So in so this project is a very good reason because four or five years ago
+Many SOC vendor uh uh Linux candle, many customization. So in this means uh very upgrade uh Linux candle version, but uh this GKI project is uh uh AOSP uh binary list. So in this means uh uh many SOC vendor uh
+In-house uh kernel patches uh already uh perceived. So this is uh no fragmentation Linux kernel imaged. So this is uh a very good uh uh AOSP one of uh uh success stories. And the next is uh software uh.
+updates. So uh as you know uh if uh SDB uh new vehicle uh every day software update so in this case uh uh software updates uh images uh very high traffic to uh
+Internet uh communications. So uh this is uh A B software update and uh support uh Delta so uh software update uh d uh based on uh BSD. So this is uh very good uh uh one of uh uh
+uh optimize uh uh OTA solutions. And finally, uh I go back to Ice BOM topics. So currently uh our SBOM is uh uh generate uh uh not automatically uh same
+Automatically and modification to some S1 part. But uh we have uh not uh some uh component uh issue happen uh and open source community uh will fix the a S1 part. So for example, uh Yoct
+Latest uh uh master branch support uh SPDX three dot oh. This is uh very uh good uh news to uh our site. And finally, uh last maybe last week uh Agile announced uh SDB reference platform because uh I
+I quick explained many open source solutions, but too difficult integration to test and develop to many OEM and TR1 companies. So, AGL will try to integrate
+Uh many uh open source components uh integrate uh this uh uh this approach. And uh this is uh uh overview uh AGL reference uh software architecture uh Sodeb. So s this Sodev support uh
+Uh uh bar dial, uh type one base uh hypervisor and uh DOM0 is uh uh we choose uh Zephyr and DOMD is uh uh this part depends on BSP, uh SOC band BSP and uh display part uh supports uh
+unified HMI. And uh some uh HI function uh is uh this part. So this part uh support uh Zephyr. So this is uh uh uh no no very uh overview but uh it's a very simple software architecture.
+And this is uh uh one of uh STB reference platform POC. Uh this is uh is uh Lunas uh Arduka 83 uh hardware depends on some part but uh this is uh uh gen high power.
+Android and Linux Linux kernel instrument cluster. And this POC is already pushed GitHub. So very easy to using the this same software to your site just to
+check to uh this uh URL. Okay, uh this is uh uh conclusion. So I think uh uh SDB is uh many many challenging uh uh topics to uh the solved uh many issues.
+So it is impossible to achieve alone. Only one web and only one TL1 company. And however, the open source community, some key components already fixed some issues.
+So in this means that we need to move together with the open source community. So I think Sodebu AGL SDB reference platform is one of very good base platforms to next our STV.
+uh software development. Okay, uh so so I have sorry I I have some additional information. So first is uh uh Elisa uh Elisa is uh enabling uh Linux safety applications and uh uh Elisa uh workshop the borobocas uh learned
+Uh this uh May. So please look at uh this uh documentation. Uh many companies uh how to uh support uh H function and uh uh SDB. Uh some uh topics uh sort of uh open source community. This is a very
+A good discussion to this workshop. And next is July 9th to 10 in Berlin, AJ have all member meeting. So this is a very good communicate direct communication face-to-face in Germany. So if
+You can interest the AGL, so please join this event. And finally, in September 15 and 7th, then summit in Sano the AMD office. So this is one of a very
+Good then develop to communicate direct communication to then summit. Okay, thank you for many long time this presentation to today. So let's build the future together. That's all my presentation.
+Thank you very much. So, if any questions, so I'm very sorry to add this. Yes, please.
+Um so just looking at your SDV cabin, I'm curious if you guys have a dialogue about third-party application developers, opening up uh applications for your um for your cockpit and for your customers to experience in the car.
+That were developed by a third party. So, sorry, today is my presentation with third-party application part, but as you know, JASPA is engineered.
+Japan, automotive industry organization have common API. Common API is easy to access to vehicle data and many
+OEMs, if many OEMs support this common big data API, so in this case very easy to develop third-party application to some OEMs. But sorry, this is my presentation.
+Presentation without this part. But the next AJLM in Belluri, my bar manager, is a quick presentation just for topics. Yeah, thank you. Yes?
+Yes, thank you. I remember the picture you had with respect to the hardware and software diagram you envisioned for the SDV, where you had the Renaissance H3 mentioned, and then also the mapping.
+Of the safety levels you had on another slide. My question would be: with respect to new upcoming hardware, I mean, the H3 is already quite old. Do you see also a shift to certain safety workloads, not also on the performance core? And how would that influence your software diagram?
+Uh s sorry, uh your question is uh uh Renaissance H three is uh already quite old as you know, and there is new upcoming automotive grid hardware as uh for example the Renaissance V four H or also and so yes, so the Renaissance H three is already graded.
+quite old, and there's other upcoming automotive grade hardware, for example the Rendersas V four H or other SOCs from Qualcomm for example, that also would support from a hardware perspective safety workloads up to ACLB on the performance side. Would this influence your software diagram for the SDV in the future, yes or no?
+Basically, that's the question. So I think current Luna SOC supports batter IO interface. So in this means Lunas launch a new
+SOC, for example, X5H is uh uh same software running on uh battery uh interface uh uh top side. But uh bottom side is uh uh some part uh depends on uh SOC spe specific hardware. So in this case uh uh
+Lunisa provides some delay, launch the new SOC BSPs. So sorry, I I can't uh catch more details of the uh, uh, uh, uh, uh
+But I have no time to this stream. So if any question are please outside and please contact me. Yeah, thank you to attention to today's my presentation. Thank you very much.

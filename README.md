@@ -6410,6 +6410,18 @@ Anna Trikalinou (Microsoft)
 
 [Acronyms](./acronym.md): CPU NVIDIA GPU SmartNIC UEFI smartNIC DRAM NIC SMART ABI IDE TCP AMD REST SIG TLS
 
+Yuichi Kusakabe (Honda Motor Co., Ltd.)
+
+<a id="544"></a>
+
+2025/07/02 How_To_Accelerate_Software_Defined_Vehicle_SDV_With_OSS_-_Yuichi_Kusakabe,_Honda_Motor
+
+[YouTube](https://www.youtube.com/watch?v=6ri1ANaLCgI)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/544)
+
+[Acronyms](./acronym.md): OSS AOSP SPDX IVI OEM API CPU GPU OpenChain ISO ARM REST SOC SoC
+
 Sumit Garg (Qualcomm)
 
 <a id="530"></a>
@@ -6873,7 +6885,6 @@ Debendra Das Sharma and Mahesh Natu (Intel)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/451)
 
 [Acronyms](./acronym.md): CXL CRC PCI FEC FLIT CPU MEM CXL.io CXL.mem DDR SLD DRAM FIT RAS ATS DLP DMA GPU HDM IDE
-
 
 ### Open Compute Project
 
