@@ -7080,6 +7080,18 @@ Kash Johal (YorChip)
 
 [Acronyms](./acronym.md): OCP PHY ARM UCIE UCIe NDA SPEC TSMC
 
+Krishna Doddapaneni (AMD)
+
+<a id="545"></a>
+
+2025/10/23 Building_the_Future_of_AI_Data_Centers_with_Open_Systems_presented_by_AMD
+
+[YouTube](https://www.youtube.com/watch?v=tq93d4no2fw)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/545)
+
+[Acronyms](./acronym.md): GPU PCIe NIC RDMA OCP AMD UEC UAL TCP DMA NVMe TCO OEM SDK HPC CAPEX
+
 Seungmin Woo (Georgia Institute of Technology), David Ratchkov (Anemoi Software Inc), and Jawad Nasrullah (Palo Alto Electron)
 
 <a id="429"></a>
