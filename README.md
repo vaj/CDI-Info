@@ -7128,6 +7128,18 @@ Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 [Acronyms](./acronym.md): API CXL CMS GPU PyTorch TensorFlow RDMA SRAM UALink ARM AWS CPU CUDA HBM P2P PIM
 
+Siamak Tavallaei (Samsung), Brian Pan (H3 Platform), Han Deok Lee (Samsung), Taehoon Lee (Red Hat) and Sumit Puri (Liqid)
+
+<a id="548"></a>
+
+2025/10/23 End_to_End_Management_of_a_CXL_enabled_Datacenter_Memory_Fabric
+
+[YouTube](https://www.youtube.com/watch?v=Z0h3TwZiXzI)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/548)
+
+[Acronyms](./acronym.md): CXL CPU DRAM AMD BIOS NVMe API CMS CSP DDR RDMA CMM DCM DVSEC InfiniBand NUMA OCP OEM PCI POC
+
 Abe Garcia (Meta)
 
 <a id="440"></a>
