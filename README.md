@@ -7116,6 +7116,18 @@ Jianping Jiang (Xconn), Gaurav Agarwal (Marvell), Anil Godbole (Intel) and Xinju
 
 [Acronyms](./acronym.md): CXL CPU RDMA NUMA DRAM GPU SAP TCO DDR4 RAID AMD ARM BAR CMS CSP DDR DDR5 FIT HBM
 
+Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
+
+<a id="547"></a>
+
+2025/10/23 Emerging_Software_Patterns_for_Programming_New_Memory_Devices_and_Interfaces
+
+[YouTube](https://www.youtube.com/watch?v=yHCAbU11IXM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/547)
+
+[Acronyms](./acronym.md): API CXL CMS GPU PyTorch TensorFlow RDMA SRAM UALink ARM AWS CPU CUDA HBM P2P PIM
+
 Abe Garcia (Meta)
 
 <a id="440"></a>
