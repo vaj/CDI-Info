@@ -1,0 +1,48 @@
+Next_Gen_AI_HPC_Server_Performance_with_CXL3_1_Tiered_Memory_and_MRDIMM_solution
+
+Okay, everyone. We have our next speaker ready to go. We have David from Montage Technology that's going to talk a little bit about application server performance with CXL 3.1. Okay, thank you. Good afternoon, gentlemen and ladies.
+I'm here to talk about not engineering so in depth. It's more architecture, high level, talking about technology. And just like Samsung Jenny Sun, he talked about heterogeneous memory subsystem. This is also talking about
+Heterogene subsystem using in AI. And for the past two hours, you heard about KVCACH. KVCache is a key term, it's a buzzword for AI. Not only today, this year, for next decade, you will hear KVCache.
+again and again. And most of us are hardware companies here. And how the in the past two hours you hear from SSC companies, SSD IC company, SSD module company and talk about KVCash.
+How the KV cache can load it to SSD. This is one way. The other way is how the KV cache can load it to CXL memory. And I try to mix KV cache loading into CXL memory.
+And MRDIN, Gen2. MRDIN is a new memory module. It's using the same DRAM, but with a different data buffer and the controller, memory controller. Before MRDIN, right now it's so the most popular is D2M.
+The R DIN speed is 6400, but MRD Gen 2 is a 1.2, 12.8 giga transaction per second. It's double the R Day.
+you are using. But the DRAM, they use the same. So the cost wise and power consumption wise, it's about the same. But the performance is double. Uh again the C uh CXL memory, there's a five years talking about CXL memory from gen one to gen two.
+Today I'm don co I'm going to talk about Gen 3. Gen 3, the interconnect is PCIe Gen 6. It's the double performance, the bandwidth of the CXL 2.1. And also PCIe Gen 6 is double performance.
+Performance double bandwidth of this PCIe Gen5. Okay, let's uh review some background. This is a data center use case by Workload. We have storage demand applications, and today I'm going to focus on memory demand.
+demand applications. That's a zoom in. Memory demand applications, they are memory intensive applications. It runs on IMDB in memory data server and DRM server, LM server and HPC server.
+So, I can say that AI application equals to memory intensive application server. But from here, I'm sorry, from here you can tell memory intensive application servers is not only AI application server, it covers
+IMDB server, DORM server as well. Okay. There's a challenge to next generation memory intensive application servers. The first one is HBM. The HBM, the availability, TCO,
+and supply scalability. These factors are slowing down the AI server deployment and growth. This is uh Jensen Huang. He said I quote from his uh saying uh in uh Computex this year.
+And the second issue is memory subsistence scalability. Before CXL memory, the memory ha and CPU link coupled tightly is not scalable. But after CXL memory hierarchy comes,
+And it's a scalable. Okay, so expendable on demand and scalability, actually that's a main topic. Keep in mind. On demand, is your hardware, is your server, a subsystem, memory subsystem, is on demand?
+Expandable? Is it scalable? Okay. And the third one, the most important, everybody agrees, the trend for the AI server, the need for bigger memory, capacity, and faster performance. This is a no-way go back. Okay.
+So, this is another background I want to share with you. GPU memory domain and CPU memory domain. HBM lives in GPU memory domain. And we have a CPU memory. That's a traditional local memory. Then the green green column, which is
+CXL memory, tier memory. So talking about the capacity, because the third one, previous page, we mentioned about memory, talking about memory-intensive application server. They need bigger memory, faster memory. So capacity-wise, HBC.
+hit the capacity limitation. And CPU memory is a moderate four terabyte. But if you're talking about CXL, 3.1 tier memory, it can be greater than 20 terabyte. I'm talking about 20 terabyte, it's a terabyte level.
+And cost. But most important is scalability. Why scalability? Unlike a HBN GPU bundle as a package, it's a vendor login. It's not it's a there's a stranded memory issue.
+And you have an over-provision issue. So, talking about TCO, and you spend KPEX in advance, maybe you use the capacity two years later. It's not scalable. Yesterday, I went to Costco, the full section. Wow, lots of
+Delicious foods. But the the question of the Costco is it's still a big bundle. It's not on your demand. If your family has only two persons like me, myself and my wife, yeah, Costco quality, food quality.
+Delicious, very good, but it's a bundle, it's not on demand. This recall: there's a wise man say, the more you buy, the more you'll save, but not for me. So, on demand and scalability is key. The more you buy, the more you'll save. The Costco guy is.
+not for every consumer. So there is a McDonough, there is a Safeway, different market segment. So today I'm going to say to talk about different market segment, different users, they want on demand by procurement.
+And by deployment, not by vendors, not just like a Costco. They sell your big pack. Okay, we work with Samsung, but also Hynex, MyQuang. Today we have a presentation, and you can see exhibits, our presentation.
+They're uh rocky uh it's a rack scale AI server tier memory with a sensor on CND. Okay, this is a full technology stack. In the exhibit, we demonstrate not only the underlying hardware, not only underlying hardware module.
+But with our the other partner called H3 Platform, they provide total solution. I'm going to talk about show you uh more detail later. So this is uh total technology stack. Okay, this is another point of view. The full stack, full technology stack.
+Covering infrastructure as a service, platform as a service, software as a service. Let me introduce you the project like Tahoe. This is a project like Tahoe. You can consider a project like Tahoe is an ecosystem initiative, partnership initiative. If you
+are interesting in project like Tahoe. The goal of the project like Tahoe is finding the proof of value, POV. It's not POC. For six of memory, for MRD, for KV cache, there's a bunch of proof of concept already.
+But the industry we need proof of value. The proof of value, who is the target audience for proof of value? And from my point of view, CFOs. The CFOs from CSP companies because they need a value.
+Rather than engineering benefit, engineering concept. So today, and the Lake Tahoe, we focus on proof of value, co-promotion together for the ecosystem, not only sexual memory, but also MRD industry. Okay, this is a
+about Mountage technology. We are very famous in server DIM. We are memory buffer and memory controller company. We are the middleman between DRAM and CPU. And here you can see we have uh just bunch of memory which is uh
+CXL pooling solution. We are IC control companies. And we have MRD, Gen 2, RCD, which is controller and data buffers. So, and also CXL expansion IC solutions. Not only memory companies.
+company but also oh this is uh R Dean solution MR Dean solution CXL uh memory solution but we are also high speed interconnect IC design company I can say so far we are the Mountage is the only one
+only company, IC design company, who has both memory technology and high-speed interconnect connect technology. KV cache, talk out talk about KV cache. You can put KV cache in GPU memory domain.
+or CPU memory domain, or on top of the host interface module, there's a junction just bunch of flash or in SSD. The purpose, the role of the high-speed interconnect is to link uh
+CPU memory dom CPU memory, GPU memory, and SSD with KV cache data flow as faster as possible. This is our mission and vision and mission. Okay. And again, the demo we'll cover in Samsung Booth will
+Cover MRD Gen2, CXL memory extension technology, and CXL memory pooling technology. Also, PCIe Gen5 retimer. Okay, talk about memory. If you are from uh if you are not familiar with MRD, this is a MRD.
+Gen 2. We have data buffers, we have controllers. This is MRD. Why MRD in Gen 2? Bandwidth, capacity, especially fast better performance for KV cache. Okay, let me move forward faster. The use case
+Of a sexual memory. There's a three way to use a sexual memory. One is CPU direct attach with AIC. The other one is a CPU direct attached with an E3 module, CNN. The other one is just a bunch of memory. Okay, this is an AIC solution. AIC solution is a very simple thing.
+Solution you can directly attach to CPU is a bore, AIC bore, and you can apply what whatever DIMS you like. For example, DDR4, DDR5, RDIN, MRDIN. Scalable, on demand. Okay, this is another type of CPU direct attachment.
+attached with a CNM. And this is uh just a bunch of memory red scale memory pooling solution. Here, this is our Ponders solution. You can see in um Samsung Booth as well, it's a chassis solution.
+And the total is uh twenty-four uh s uh E3 uh module. Each one Samsung can deliver CXL3.1 one terabyte, which means this chassis can have uh twenty-four terabyte capacity.
+Okay, and let's move faster. Um okay call to action. Join Lake Tahoe initiative, participate Lake Tahoe Workgroup and GPIO. This is a barcode. If you are highly
+interest in. We welcome everyone. Scan the barcode. This is a questionnaire. Leave your email address and your interest. And this is like Tahoe. Thank you. Thank you very much.
