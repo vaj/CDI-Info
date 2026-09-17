@@ -7176,6 +7176,18 @@ Sumit Puri (Liqid) and Ajay Joshi (Micron)
 
 [Acronyms](./acronym.md): FAMFS CXL DRAM NVMe RAM DAX DMA FAST FIT GPU MEM OCP RDMA SLA YOLE
 
+Siamak Tavallaei (Samsung) and Millind Mittal (MemWize)
+
+<a id="554"></a>
+
+2025/10/23 Memory_technology_optimized_for_at_scale_AI_systems_Bandwidth,_Capacity,_and_Connectivity
+
+[YouTube](https://www.youtube.com/watch?v=yWPCWRUJ2_I)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/554)
+
+[Acronyms](./acronym.md): CPU CXL GPU DDR HBM NVIDIA DMA HPM OCP AMD DRAM FAST GDDR LLM LPDDR META MPI NAND
+
 Mohamad El-Batal (Seagate) and Hongjian Fan (Seagate)
 
 <a id="551"></a>
