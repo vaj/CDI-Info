@@ -7116,6 +7116,18 @@ Jianping Jiang (Xconn), Gaurav Agarwal (Marvell), Anil Godbole (Intel) and Xinju
 
 [Acronyms](./acronym.md): CXL CPU RDMA NUMA DRAM GPU SAP TCO DDR4 RAID AMD ARM BAR CMS CSP DDR DDR5 FIT HBM
 
+Howard Borchew (Marvell), Gaurav Agarwal (Marvell) and Jayjeet Chakraborty (Marvell)
+
+<a id="555"></a>
+
+2025/10/23 Efficient_AI_Serving_at_Scale_Processing_Near_Memory_Acceleration_for_LLMs_and_Vector_Search
+
+[YouTube](https://www.youtube.com/watch?v=vmKxYi4iPgY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/555)
+
+[Acronyms](./acronym.md): CXL ARM LLC CPU DDR5 GPU KNN META Neoverse PCI REST DMA DRAM ECC FAST NVIDIA PCIE PCIe
+
 Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 <a id="547"></a>
