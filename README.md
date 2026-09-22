@@ -7104,7 +7104,7 @@ Seungmin Woo (Georgia Institute of Technology), David Ratchkov (Anemoi Software 
 
 [Acronyms](./acronym.md): CPU HBM SRAM UCIE UCIe HPM JEDEC REST DRAM EDA PCB PCIE PCIe PDF POC PoC RISC
 
-Jianping Jiang (Xconn), Gaurav Agarwal (Marvell), Anil Godbole (Intel) and Xinjun Yang (Alibaba)
+Howard Borchew (Marvell), Gaurav Agarwal (Marvell) and Jayjeet Chakraborty (Marvell)
 
 <a id="546"></a>
 
@@ -7116,7 +7116,19 @@ Jianping Jiang (Xconn), Gaurav Agarwal (Marvell), Anil Godbole (Intel) and Xinju
 
 [Acronyms](./acronym.md): CXL CPU RDMA NUMA DRAM GPU SAP TCO DDR4 RAID AMD ARM BAR CMS CSP DDR DDR5 FIT HBM
 
-Howard Borchew (Marvell), Gaurav Agarwal (Marvell) and Jayjeet Chakraborty (Marvell)
+Madhavan Ravi (Meta) and Jesse Koh (Meta)
+
+<a id="559"></a>
+
+2025/10/23 Deploying_and_scaling_QLC_Flash_at_Meta
+
+[YouTube](https://www.youtube.com/watch?v=_gyyISQBZhE)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/559)
+
+[Acronyms](./acronym.md): API BMC CPU EDSFF FIT GPU META NAND NIC NVMe OCP OEM RAID RAS SMART SPEC SSD TLC
+
+Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 <a id="555"></a>
 
@@ -7128,7 +7140,7 @@ Howard Borchew (Marvell), Gaurav Agarwal (Marvell) and Jayjeet Chakraborty (Marv
 
 [Acronyms](./acronym.md): CXL ARM LLC CPU DDR5 GPU KNN META Neoverse PCI REST DMA DRAM ECC FAST NVIDIA PCIE PCIe
 
-Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
+Siamak Tavallaei (Samsung), Brian Pan (H3 Platform), Han Deok Lee (Samsung), Taehoon Lee (Red Hat) and Sumit Puri (Liqid)
 
 <a id="547"></a>
 
@@ -7140,7 +7152,7 @@ Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 [Acronyms](./acronym.md): API CXL CMS GPU PyTorch TensorFlow RDMA SRAM UALink ARM AWS CPU CUDA HBM P2P PIM
 
-Siamak Tavallaei (Samsung), Brian Pan (H3 Platform), Han Deok Lee (Samsung), Taehoon Lee (Red Hat) and Sumit Puri (Liqid)
+Nilesh Shah (ZeroPoint Technologies) and Navneet Rao (Altera)
 
 <a id="548"></a>
 
@@ -7152,7 +7164,7 @@ Siamak Tavallaei (Samsung), Brian Pan (H3 Platform), Han Deok Lee (Samsung), Tae
 
 [Acronyms](./acronym.md): CXL CPU DRAM AMD BIOS NVMe API CMS CSP DDR RDMA CMM DCM DVSEC InfiniBand NUMA OCP OEM PCI POC
 
-Nilesh Shah (ZeroPoint Technologies) and Navneet Rao (Altera)
+Khurram Malik (Marvell) and Jinin So (Samsung Electronics)
 
 <a id="549"></a>
 
@@ -7164,7 +7176,7 @@ Nilesh Shah (ZeroPoint Technologies) and Navneet Rao (Altera)
 
 [Acronyms](./acronym.md): TCO CXL GPU CMS FPGA CPU OCP AMD DDR4 DDR DDR5 DIMM DRAM FAST MLC PCIE PCIe SNIA
 
-Khurram Malik (Marvell) and Jinin So (Samsung Electronics)
+Tim Amundsen (ScaleFlux) and Matt Bromage (Arm)
 
 <a id="557"></a>
 
@@ -7176,7 +7188,7 @@ Khurram Malik (Marvell) and Jinin So (Samsung Electronics)
 
 [Acronyms](./acronym.md): ARM CXL CPU IOPS NAND NVMe OCP PCIE PCIe SOC SoC SSD ScaleFlux SPEC FIT MMU TSMC
 
-Tim Amundsen (ScaleFlux) and Matt Bromage (Arm)
+Sumit Puri (Liqid) and Ajay Joshi (Micron)
 
 <a id="553"></a>
 
@@ -7188,7 +7200,7 @@ Tim Amundsen (ScaleFlux) and Matt Bromage (Arm)
 
 [Acronyms](./acronym.md): CPU GPU CXL DRAM OCP ARM FAST HPM LLM PCIE PCIe DDR5 DNA HPC KNN LZ4 PCI POC
 
-Sumit Puri (Liqid) and Ajay Joshi (Micron)
+Siamak Tavallaei (Samsung), Samir Rajadnya (Microsoft), Manoj Wadekar (Meta), Durgesh Srivastava (DataraAI), and Brian Hirano (XCENA)
 
 <a id="558"></a>
 
@@ -7200,7 +7212,7 @@ Sumit Puri (Liqid) and Ajay Joshi (Micron)
 
 [Acronyms](./acronym.md): CXL CPU GPU PCI DDR HBM NUMA NVIDIA HPC TCO RDMA CMS NVLink UALink META LPDDR CUDA RAG FAST SPEC
 
-Siamak Tavallaei (Samsung), Samir Rajadnya (Microsoft), Manoj Wadekar (Meta), Durgesh Srivastava (DataraAI), and Brian Hirano (XCENA)
+Siamak Tavallaei (Samsung) and Millind Mittal (MemWize)
 
 <a id="550"></a>
 
@@ -7212,7 +7224,7 @@ Siamak Tavallaei (Samsung), Samir Rajadnya (Microsoft), Manoj Wadekar (Meta), Du
 
 [Acronyms](./acronym.md): FAMFS CXL DRAM NVMe RAM DAX DMA FAST FIT GPU MEM OCP RDMA SLA YOLE
 
-Siamak Tavallaei (Samsung) and Millind Mittal (MemWize)
+Mohamad El-Batal (Seagate) and Hongjian Fan (Seagate)
 
 <a id="554"></a>
 
@@ -7224,7 +7236,7 @@ Siamak Tavallaei (Samsung) and Millind Mittal (MemWize)
 
 [Acronyms](./acronym.md): CPU CXL GPU DDR HBM NVIDIA DMA HPM OCP AMD DRAM FAST GDDR LLM LPDDR META MPI NAND
 
-Mohamad El-Batal (Seagate) and Hongjian Fan (Seagate)
+David Zhuo (Montage Technology)
 
 <a id="551"></a>
 
@@ -7236,7 +7248,7 @@ Mohamad El-Batal (Seagate) and Hongjian Fan (Seagate)
 
 [Acronyms](./acronym.md): TCO ASIC CXL DDR4 CFM CMS DRAM BMC CPU FPGA API CTO DDR DDR5 FAST
 
-David Zhuo (Montage Technology)
+Ta-Yu Wu (Meta) and Ehsan Ardestani (Meta)
 
 <a id="556"></a>
 
@@ -7248,7 +7260,7 @@ David Zhuo (Montage Technology)
 
 [Acronyms](./acronym.md): AI API CPU GPU IO IOPS META NVMe OCP OS SLA SLC SSD TCO TLC
 
-Ta-Yu Wu (Meta) and Ehsan Ardestani (Meta)
+Abe Garcia (Meta)
 
 <a id="552"></a>
 
@@ -7260,7 +7272,7 @@ Ta-Yu Wu (Meta) and Ehsan Ardestani (Meta)
 
 [Acronyms](./acronym.md): CXL CPU GPU SSD AIC PCIE PCIe DRAM HBM TCO CSP DDR4 DDR5 FAST HPC POC PoC RCD
 
-Abe Garcia (Meta)
+Dave Garcia (Meta)
 
 <a id="440"></a>
 
