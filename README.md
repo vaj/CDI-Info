@@ -7188,6 +7188,18 @@ Tim Amundsen (ScaleFlux) and Matt Bromage (Arm)
 
 [Acronyms](./acronym.md): ARM CXL CPU IOPS NAND NVMe OCP PCIE PCIe SOC SoC SSD ScaleFlux SPEC FIT MMU TSMC
 
+Lingjun Wu (Meta) and Parvez Shaikh (Meta)
+
+<a id="560"></a>
+
+2025/10/23 Evolution_of_Ethernet_based_switch_platforms_and_fabrics_to_meet_Metas_AI_training_clusters_s
+
+[YouTube](https://www.youtube.com/watch?v=ELtoxc4g9JI)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/560)
+
+[Acronyms](./acronym.md): ASIC BMC CPU DMA GPU META NIC NVIDIA OCP PCB RDMA SCM SDK SSD
+
 Sumit Puri (Liqid) and Ajay Joshi (Micron)
 
 <a id="553"></a>
