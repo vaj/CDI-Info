@@ -7248,6 +7248,18 @@ Siamak Tavallaei (Samsung) and Millind Mittal (MemWize)
 
 [Acronyms](./acronym.md): FAMFS CXL DRAM NVMe RAM DAX DMA FAST FIT GPU MEM OCP RDMA SLA YOLE
 
+Eriko Nurvitadhi (MangoBoost)
+
+<a id="562"></a>
+
+2025/10/23 MangoBoost_Full_Stack_AI_Infrastructure_Solutions_MLPerf_Inference,_Training,_Storage_Case_St
+
+[YouTube](https://www.youtube.com/watch?v=PSmqZvLcyCo)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/562)
+
+[Acronyms](./acronym.md): GPU NVMe TCP AMD DPU CPU LLM NVIDIA UEC BAR FAST FIT FPGA NIC OpenAI RAG RDMA SMART
+
 Mohamad El-Batal (Seagate) and Hongjian Fan (Seagate)
 
 <a id="554"></a>
