@@ -352,6 +352,7 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [CXL Consortium](#cxl-consortium-8)
   - [2026Q3](#2026q3)
     - [SNIA](#snia-6)
+    - [Open Compute Project](#open-compute-project-5)
     - [CXL Consortium](#cxl-consortium-9)
     - [The Linux Foundation](#the-linux-foundation-3)
 
@@ -8133,6 +8134,20 @@ Kalyan Gunda (Dell) and Masoud Noori (Seagate)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/505)
 
 [Acronyms](./acronym.md): AI GPU NVMe CPU SSD API SNIA RDMA IO NVIDIA DRAM HBM
+
+### Open Compute Project
+
+Wai Chung Ngai (AMD)
+
+<a id="563"></a>
+
+2026/09/17 Building Open and Scalable AI Infrastructure with AMD and OCP
+
+[YouTube](https://www.youtube.com/watch?v=8XYghpqOv8c)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/563)
+
+[Acronyms](./acronym.md): GPU OCP AMD CPU FIT NIC PCIE PCIe API FAST HPM META TCO TSMC UBB
 
 ### CXL Consortium
 
