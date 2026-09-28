@@ -8161,6 +8161,18 @@ Ryan Yue (Astera Labs)
 
 [Acronyms](./acronym.md): LPO DSP PCIE PCIe SIG PCI PCB CPU GPU LABS ACS AOC MSA NIC NRZ OCP SPEC
 
+Caleb Shetland (Astera Labs) and Janny Au (Insyde Software)
+
+<a id="565"></a>
+
+2026/09/17 From Hyperscaler Requirements to Open Standards_ Delivering AI Fabric RAS Through COSMOS and OpenBMC
+
+[YouTube](https://www.youtube.com/watch?v=E6d5DQC07BE)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/565)
+
+[Acronyms](./acronym.md): PCIE PCIe OCP RAS API LABS BMC GPU JSON OpenBMC PCI DCSCM AER CPU OEM REST SPEC
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
