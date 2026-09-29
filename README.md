@@ -8173,6 +8173,18 @@ Caleb Shetland (Astera Labs) and Janny Au (Insyde Software)
 
 [Acronyms](./acronym.md): PCIE PCIe OCP RAS API LABS BMC GPU JSON OpenBMC PCI DCSCM AER CPU OEM REST SPEC
 
+Matt Holdrege (Microchip), Helia Naeimi (Astera Labs), Michael Lee (Synopsys), and Kurtis Bowman (UALink Consortium)
+
+<a id="566"></a>
+
+2026/09/17 Panel - Powering AI at Scale_ Inside the UALink Ecosystem
+
+[YouTube](https://www.youtube.com/watch?v=NHWQJIski0E)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/566)
+
+[Acronyms](./acronym.md): SPEC UALink UEC OCP PCIE PCIe LABS AMD AWS CPU CXL FAST GPU IBM META SAS SATA SSD UAL UCIE
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
