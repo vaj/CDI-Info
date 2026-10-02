@@ -8209,6 +8209,18 @@ Rajat Agarwal (Intel) and Danny Volkind (Intel)
 
 [Acronyms](./acronym.md): CPU GPU OCP DDR DDR5 DRAM HBM LLM LPDDR OLAP SAS TCO
 
+Richard Pitwon (Seagate)
+
+<a id="569"></a>
+
+2026/09/17 Pushing the Boundaries of Storage and Memory with Light
+
+[YouTube](https://www.youtube.com/watch?v=tQXKFbCNmIA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/569)
+
+[Acronyms](./acronym.md): PCIE PCIe CPO ARM CXL DSP FAST InfiniBand NVIDIA NVMe OCP OFC PCI
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
