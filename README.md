@@ -8197,6 +8197,18 @@ Dirk Blevins (Intel) and Robert Hormuth (AMD)
 
 [Acronyms](./acronym.md): AMD GPU PCIE PCIe OEM HPM PCI SPEC NVIDIA ODM OAM UBB NIC SMART DGX MHS NVLink NVMe OCP OSC
 
+Rajat Agarwal (Intel) and Danny Volkind (Intel)
+
+<a id="568"></a>
+
+2026/09/17 Architecting AI-Ready Servers_ System Architecture and Memory Trade-offs
+
+[YouTube](https://www.youtube.com/watch?v=ksA57r1rCDY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/568)
+
+[Acronyms](./acronym.md): CPU GPU OCP DDR DDR5 DRAM HBM LLM LPDDR OLAP SAS TCO
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
