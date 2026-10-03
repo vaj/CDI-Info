@@ -8221,6 +8221,18 @@ Richard Pitwon (Seagate)
 
 [Acronyms](./acronym.md): PCIE PCIe CPO ARM CXL DSP FAST InfiniBand NVIDIA NVMe OCP OFC PCI
 
+Matt Holdrege (Microchip)
+
+<a id="570"></a>
+
+2026/09/16 AI Fabric Architecture Options_ PCIe, ESUN, Copper, and Co-Packaged Optics
+
+[YouTube](https://www.youtube.com/watch?v=V1vUe3kFxaA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/570)
+
+[Acronyms](./acronym.md): PCIE PCIe OCP PCI CPO SAN CXL FIT GPU IEEE PAM4 SAS SATA SIG SSD TSMC UEC
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
