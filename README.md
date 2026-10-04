@@ -8233,6 +8233,18 @@ Matt Holdrege (Microchip)
 
 [Acronyms](./acronym.md): PCIE PCIe OCP PCI CPO SAN CXL FIT GPU IEEE PAM4 SAS SATA SIG SSD TSMC UEC
 
+Kurtis Bowman (AMD) and J Metz (AMD)
+
+<a id="571"></a>
+
+2026/09/16 Beyond 1.0_ UEC and UALink AI Networking
+
+[YouTube](https://www.youtube.com/watch?v=xGzAPKGWkTc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/571)
+
+[Acronyms](./acronym.md): GPU UEC CXL HBM CPU FIT OCP SPEC BAR DDR HPC HPM IEEE NVMe PCIE PCIe
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
