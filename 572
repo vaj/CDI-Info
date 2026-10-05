@@ -1,0 +1,43 @@
+Smart Memory Fabrics for Data-Centric AI Serving at Scale
+
+Good afternoon. Thanks for joining this session. My name is Gauravagrawal. I'm a solutions architect at Marvell. I'm talking about Marvell's smart memory fabric that provides much needed data services
+To the AI accelerators or XPUs as we call them. Now, just to set the context, the memory-constrained XPUs struggle in serving AI workloads with scale.
+Data sets as they face the memory wall. And the memory wall becomes worse with long sequences, highly dimensional vectors, and sparse data. Now, to break the wall, you can spill over into external memory. You can spill the data over into some external memory.
+host CPU attached memory, NVMe SSDs, or storage behind RDMA. But there are performance challenges with those solutions. And we are addressing those using our smart memory fabric.
+As we shall see. So, as shown in this foil, the memory fabric provides high-performance data path to XPUs using two mechanisms: either PCIe peer-to-peer using high-performance data.
+DMA engines on the downstream structural memory devices or the state-of-the-art ultra-IO transfer that allows the XPUs to continue to speak PCIe because they can't speak CIE.
+Excel, but then the smart C Excel can seamlessly convert it to C Excel memory transactions. So as a result, you get high performance data path between the X PUs and the memory devices.
+On top of it, the structured up memory devices on the fabric can do significant computation, process the data right where it's stored, and as a result, they are able to provide data as a service to the XPUs.
+which significantly reduces the latency and alleviates the pressure on the bandwidth needs, as we shall see in subsequent foils. Okay, a closer look at the structera A.
+4 DDR channels for up to 200 gigabyte per second of memory bandwidth with each device. Server-class compute, near terabytes of DRAM, with top-class SIMD vector engines.
+Compression for efficiency and encryption for security, and of course, much-needed high-performance DMA engines. Now, here is a practical example of a scalable solution. Your typical dual socket system.
+It's been scaled up to 10 terabytes of memory at 2.4 terabyte per second of the overall memory bandwidth in the system. Yeah, that's right. That's 2.4 terabyte per second. And you get additional 128 server class cores.
+With class-leading vector processing engines. And all of this at a modest power increase. I mean, this is a serious horsepower. So let's look at some real-world applications getting benefit.
+Okay. Here is your generative AI pipeline. Its performance largely depends upon two major data services. The vector database, which is essential
+for RAG and KVCache for pre-fill caching of key value objects. These are the AI data objects that are needed by the XPU during inferencing in a very timely way.
+And our smart memory fabric treats these AI data objects as first-class citizen. It can search the right items of interest among billions of items and serve those to XPUs via AI.
+Now when you look at the impact of caching, it's clearly worth it because in absence of cached K V objects, the X P U must recompute.
+Which is resource-intensive and time-consuming, as seen in this chart. You get huge savings by avoiding recomputation and speed up of the response time, and then on top of
+There's significant cost benefit. Now, the typical practice is to offload the KV cache to host CPU memory. Why? Because that's the option that's been there from
+Day one. Not necessarily that's the best option. There are major limitations in the solution. One, the memory is shared among all the consumers in the system. There could be several XPUs.
+competing for the capacity and the available bandwidth among themselves, along with all the load which is being processed on the CPU. As a result, it's hard to get predictable performance.
+And on top of it, all these devices hang off of the same root complex in the socket. And as a result, the root port, the PCI root port becomes the bottleneck. So the bandwidth, the bandwidth gets divided.
+Divided across all the consumers. And that's what's being addressed in the Smart Memory Fabric solution, which is shown on the right. Leave the CPU attached memory dedicated to the CPU load.
+And you get dedicated capacity and bandwidth on the fabric itself. And Muhammad touched upon an important aspect, which is shared memory. You want to use the memory very effectively. So when the memory is
+On the fabric, you're maintaining single copy, saving on retransmissions that are otherwise inevitable. You don't even need to do any complex request scheduling based on the locality of the data because the
+Data is available to everyone in the cluster. Okay, in the interest of time, I won't explain this chart in detail, but just to highlight that the heart of the solution being
+Twin DMA engine design. So, how do we get the peer-to-peer transfer? DMA push is preferred because it prevents XPUs from stalling. And so, GPUs already
+Come with DMA engines. And the memory devices have strong DMA engines. So you are able to do the push in both directions. And here are
+some initial test results. These results show the performance benefits for a multi-turn LLM serving scenario. Significantly high throughput and lower response time.
+Here's a quick demo of the KV cache service offloaded to our smart memory fabric in action. On the left-hand side, you have GPU without any structura, whereas on the right-hand side, you have the memory fabric. The performance benefit is very clear.
+And similarly, here's the solution for vector database service, which is needed for RAG. It's been offloaded to the smart memory fabric.
+Notice it's a familiar Kubernetes cluster where each Structera device shows up as a Kubernetes node. And you are able to deploy any Kubernetes distributed processing application, in this case, Milvas Vector Database.
+Which is the most popular vector database, deployed sort of like as a cluster in a box, where vector search and the data, both data and the compute, been offloaded to the memory fabric.
+One key point to highlight over here, in that system design, the amount of data that has to be transferred across the fabric get reduced. On the left hand side,
+The search is being performed on the host CPU. So for every batch, it has to pull three point eight gigabytes of data, of vector data, from the database. On the other hand, in addition to the data being sitting in the fabric,
+You are offloading the search function to the device, and as a result, only the results are being returned by the fabric, because the search is being performed within the fabric.
+The reduction of data that has to be moved is 60x. Yeah, that's right, that's 60 times. And you get linear scalability too. So you get the flexibility to compose systems that are matched to your load.
+Okay, so I'm sure you must have found me rushed because of the time constraint. If these topics are of your interest, you are welcome and encouraged to participate in the community.
+Where a lot of cool work is getting done. The OCP Composable Memory System sub-project is dedicated to address the memory needs of key workloads, including AI workloads. Consider participating there.
+And be part of the vibrant community and make a positive impact. Thank you. Thank you. Very impressive presentation. Thank you. I set up the ball for you and you took it to a field goal.
+Thank you so much for your attention.

@@ -8245,6 +8245,18 @@ Kurtis Bowman (AMD) and J Metz (AMD)
 
 [Acronyms](./acronym.md): GPU UEC CXL HBM CPU FIT OCP SPEC BAR DDR HPC HPM IEEE NVMe PCIE PCIe
 
+Gaurav Agarwal (Marvell) and Basavaraja M S (Marvell)
+
+<a id="572"></a>
+
+2026/09/15 Smart Memory Fabrics for Data-Centric AI Serving at Scale
+
+[YouTube](https://www.youtube.com/watch?v=5nPhQUgGH5A)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/572)
+
+[Acronyms](./acronym.md): SMART CPU DMA PCIE PCIe RAG DDR DRAM GPU LLM NVMe OCP PCI RDMA SIMD XPU
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
