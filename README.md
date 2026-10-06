@@ -8257,6 +8257,18 @@ Gaurav Agarwal (Marvell) and Basavaraja M S (Marvell)
 
 [Acronyms](./acronym.md): SMART CPU DMA PCIE PCIe RAG DDR DRAM GPU LLM NVMe OCP PCI RDMA SIMD XPU
 
+Ryuichi Fujimoto (Kioxia)
+
+<a id="573"></a>
+
+2026/09/15 Feasibility Studies on Optical Solid-State Drives and Memory for AI Datacenters
+
+[YouTube](https://www.youtube.com/watch?v=Udoeh1erayc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/573)
+
+[Acronyms](./acronym.md): SSD NVMe PCIE PCIe CPO OCP CHI CPU NIC PCI
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)

@@ -1,0 +1,39 @@
+Feasibility Studies on Optical Solid-State Drives and Memory for AI Datacenters
+
+Good afternoon everyone. My name is Lyuj Fizimoto from Kyokshia. Today I would like to talk about SolitoState Drive with optical PCI interface. We call it Optical SSD.
+Okay. Uh this is the outline of my talk. First, I provide the background of our optical SSD development. Next, uh I will show you some uh development results of optical SSD.
+SSD. Finally, I show I will show you uh our future work. Uh this slide shows m our motivation for the optical SSD memory development. Uh this figure shows uh data trend of PC.
+As you know, data rate of PCIe is doubled every three years and unfortunately communication distance becomes shorter as data rate is
+increased. It is one of the issues for uh future uh PCIe, I think. Uh this this figure show uh future disaggregated network or flexible combination of computing resources.
+Uh each computing resource is uh connected to the other uh computing resources uh using this fabric switch. But uh relatively long distance communication is needed uh such as over ten meter uh with uh
+is needed for this disaggregated network. So I think optical communication is needed for future disaggregated network with high speed interface.
+Photograph shows our prototype of optical SSD using PCI5. This is Kyokia's commercial SSD with electrical interface. And we have developed this bridgeboard and an optical energy mode.
+is mounted on this bridgeboard. And this is a optical fiber, March mode optical fiber. That electronical signal from SSD is converted to optical signal using this optical engine.
+Also, the optical signals from optical fiber is converted to electrical signal using this optical engine. This slide shows measured results of optical and electrical sensors.
+electrical SSDs. Uh optical SSD is connected to the host using another bridge board for the host and electrical SSD is installed in that host. Measured sequential
+read, sequential light, chi uh landam read, landam light, or optical and electrical SSDs are shown here. Optical SSDs achieves uh almost the same uh measured result as uh electrical SSDs.
+It is indicated it indicated that the optical SSDs far from host using optical fiber achieves the almost the same performance as electrical SSD.
+Main advantage of the optical SSD. This slide shows another measured result using another test configuration using OCS optical circuit switch. Two optical
+Optical SSDs are connected to the host via optical circuit switch. This table shows measured results of this performance.
+Uh as shown in this table, um optical SSDs achieve almost the same uh measured result as a electrical SSD. It indicates um optical SSDs and optical SSD.
+circuit switch. Combination of the optical SSDs and optical circuit switch is very good. And this photograph shows live demonstration at Interlop Tokyo 2000.
+26 held in last June. This is optical circuit switch and these are optical SSDs. And the host is placed behind
+30 meters and 10 meters optical fibers are used for this demonstration. And this slide shows estimation results of power consumption of NOVME over fabric and optical SS.
+Uh long uh long di long distance communication can be realized by using uh n NVMe over fabric. But uh NVMe over over fabric needs CPU, LDMA NIC,
+and optical engine. So a large power consumption of 0.73 watts per gigabs is required for NVMe over fabric. In the case of optical SSD, relatively small power consumption
+consumption of 0.22 watts per gigabps is achieved by its small and simple configuration. This slide shows major results of new optical engine module or P.
+Palm hole wave home with clear eye opening and good bit error rate is observed. Now we are developing our new optical SSDs using this uh optical engine hope.
+From this slide, I present our future work. We are developing not only optical SSDs, but also optical memory module.
+Current optical SSDs are used uh u u current optical SSD uses uh optical engine on the ridgeboard. However, um for the mass production of the optical
+Optical SSD and optical memory module, we plan to include optical engine into the SSD and memory module. And this slide shows future implementation.
+of optical engine. For optical SSDs, we plan to use near package optics NPO like this figure. Optical engine is placed very near to SSD.
+SSD controller. It is because SSD use only quality of PCIe, so very high-density implementation techniques such as co-package optics, CPO, is not
+needed for the uh optical SSDs. Low low cost implement implementation is very very important for the optical SSD. On the other hand, uh CPO technique is planned to use whole
+optical memory module. It is because we plan to use many uh lengths of interface between memory controller and optical engine in this case. Yes, it is a a call to action.
+As mentioned uh earlier, uh optical SSD achieves both long long distance communication and high speed data rate. But uh concrete usage model of the optical SSDs
+have not yet been established. This is uh uh one uh usage model example. We call it optical shared local storage OSLS using uh optical circuit switch.
+Uh very raw training data. Yes. Questions? Can you take a question? Are you planning to make a proposal for a project at OCP with that? Yes, yes, yes. My draft is a very important question.
+Libyaing, and I have a comment to propose some action to the OCP projects. Yeah, I think it is good to get everybody's opinions about this from a systems perspective, right? So I encourage you to propose.
+That either to the server group or to the storage group and see what the reaction would be so that you find the field of collaboration with others. Thank you. Okay.
+And very large data, large training data is required for the future physical AI, including video. So such a large data is stored in the multiple SSD, like this. And processors can't choose
+A wonderful SSD using optical circuit switch. And chosen SSD works with very high performance and low power consumption. Thank you very much.
