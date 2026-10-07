@@ -8269,6 +8269,18 @@ Ryuichi Fujimoto (Kioxia)
 
 [Acronyms](./acronym.md): SSD NVMe PCIE PCIe CPO OCP CHI CPU NIC PCI
 
+J Metz (AMD)
+
+<a id="574"></a>
+
+2026/09/15 SNIA StorageAI and OCP Ecosystem
+
+[YouTube](https://www.youtube.com/watch?v=PCpvQfeheNE)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/574)
+
+[Acronyms](./acronym.md): OCP GPU CPU IEEE SFF DPU FAST PCIE PCIe SSD CAPEX EDSFF HPM JEDEC NVM NVMe SNIA SNP TCG UEC
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
