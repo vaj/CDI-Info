@@ -8281,6 +8281,18 @@ J Metz (AMD)
 
 [Acronyms](./acronym.md): OCP GPU CPU IEEE SFF DPU FAST PCIE PCIe SSD CAPEX EDSFF HPM JEDEC NVM NVMe SNIA SNP TCG UEC
 
+Erich Haratsch (Marvell)
+
+<a id="575"></a>
+
+2026/09/15 Silicon-Driven Storage_ SSD Controllers, Storage Accelerators, and DPUs Powering the AI Data Center
+
+[YouTube](https://www.youtube.com/watch?v=NTZCnl5bPes)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/575)
+
+[Acronyms](./acronym.md): SSD DPU NVMe DRAM CPU NIC PCI RDMA NAND OCP PCIE PCIe TCP GPU IOPS PDF TLC
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
