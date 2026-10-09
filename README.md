@@ -8111,6 +8111,18 @@ Jinin So, Wonjae Lee, Hojin Nam and Han Deok Lee (Samsung)
 
 ### SNIA
 
+Cameron Brett (KIOXIA), Jonmichael Hands (Solidigm) and Nader Salessi (Independent)
+
+<a id="576"></a>
+
+2026/08/27 A New Approach to Performance-Based Storage TCO
+
+[YouTube](https://www.youtube.com/watch?v=r8Rm8sAWILY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/576)
+
+[Acronyms](./acronym.md): TCO SSD CPU OPEX CAPEX SIG GPU SNIA DRAM BAR LinkedIn NIC NVM PDF REST SPEC
+
 Jim Handy (Objective Analysis) and Tom Coughlin (Coughlin Associates)
 
 <a id="526"></a>
