@@ -7153,6 +7153,18 @@ Madhavan Ravi (Meta) and Jesse Koh (Meta)
 
 [Acronyms](./acronym.md): API BMC CPU EDSFF FIT GPU META NAND NIC NVMe OCP OEM RAID RAS SMART SPEC SSD TLC
 
+Matt Roman (Celestica), Jonmichael Hands (Farm GPU) and Marc Austin (Hedgehog)
+
+<a id="580"></a>
+
+2025/10/23 Design,_Build_and_Test_an_OCP_AI_Network_with_Industry_Leading_Performance
+
+[YouTube](https://www.youtube.com/watch?v=6QbqHdZGqRc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/580)
+
+[Acronyms](./acronym.md): OCP GPU NVIDIA BIOS NIC InfiniBand RDMA ACS CEO CUDA IOMMU MPI PCIE PCIe SSD CPU EDSFF FAST MAC
+
 Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 <a id="555"></a>
