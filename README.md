@@ -7177,6 +7177,18 @@ Tareq Bustami (Celestica) and Hasan Siraj (Broadcom)
 
 [Acronyms](./acronym.md): OCP GPU NIC CPU GPT META PCB CPO RDMA UEC BAR BMC FAST FIT NVIDIA PCI SCM TPU XPU
 
+Amber Huffman (Google)
+
+<a id="582"></a>
+
+2025/10/23 Driving_the_Open_Data_Center_Ecosystem_presented_by_Google
+
+[YouTube](https://www.youtube.com/watch?v=IZiFj7PZOjM)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/582)
+
+[Acronyms](./acronym.md): OCP CPU GPU TPU META SPEC SSD FAST NVIDIA UEC AMD DIMM FIT LABS NIC NVM SDK
+
 Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 <a id="555"></a>
