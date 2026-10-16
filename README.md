@@ -7189,6 +7189,18 @@ Amber Huffman (Google)
 
 [Acronyms](./acronym.md): OCP CPU GPU TPU META SPEC SSD FAST NVIDIA UEC AMD DIMM FIT LABS NIC NVM SDK
 
+Dirk Blevins (Intel), David Heinrich (HPE), Greg Sellman (AMD), Xinxin Wang (H3C) and Rob Nance (Jabil)
+
+<a id="583"></a>
+
+2025/10/23 Edge_MHS___The_foundation_of_the_full_spec_has_arrived___Understanding_the_Details
+
+[YouTube](https://www.youtube.com/watch?v=aCabJf6ETco)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/583)
+
+[Acronyms](./acronym.md): DCMHS DCSCM MHS HPM SPEC OCP FRU NIC AMD CPU DCM FIT FPGA HPE JSON PCI PCIE PCIe
+
 Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 <a id="555"></a>
