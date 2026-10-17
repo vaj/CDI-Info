@@ -7201,6 +7201,18 @@ Dirk Blevins (Intel), David Heinrich (HPE), Greg Sellman (AMD), Xinxin Wang (H3C
 
 [Acronyms](./acronym.md): DCMHS DCSCM MHS HPM SPEC OCP FRU NIC AMD CPU DCM FIT FPGA HPE JSON PCI PCIE PCIe
 
+Sean Lim (Auras)
+
+<a id="584"></a>
+
+2025/10/23 Embracing_AI_Infrastructure_and_Advanced_Thermal_Solutions_presented_by_Auras
+
+[YouTube](https://www.youtube.com/watch?v=ATUrx57zQA4)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/584)
+
+[Acronyms](./acronym.md): GPU CPU FAST AMD ARM BAR DDR HPC LABS NVIDIA SIG SSD
+
 Pankaj Mehra (Elephance Memory) and Gaurav Agarwal (Marvell)
 
 <a id="555"></a>
