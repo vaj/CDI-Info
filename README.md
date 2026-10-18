@@ -7333,6 +7333,18 @@ Siamak Tavallaei (Samsung) and Millind Mittal (MemWize)
 
 [Acronyms](./acronym.md): FAMFS CXL DRAM NVMe RAM DAX DMA FAST FIT GPU MEM OCP RDMA SLA YOLE
 
+Ace Stryker (Solidigm), Hardeep Singh (Solidigm) and Jonathan Ballon (Iceotope)
+
+<a id="585"></a>
+
+2025/10/23 Liquid_Cooling_SSDs_Isnt_Easy__Challenges,_Innovations,_and_the_Need_for_New_Standards_presen
+
+[YouTube](https://www.youtube.com/watch?v=gZ0c1gziMeA)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/585)
+
+[Acronyms](./acronym.md): SSD GPU OCP SPEC CPU PCB CEO CTO DRAM FAST META NAND PCI PCIE PCIe REST SMART SOC SoC
+
 Eriko Nurvitadhi (MangoBoost)
 
 <a id="562"></a>
