@@ -7369,6 +7369,18 @@ Mohamad El-Batal (Seagate) and Hongjian Fan (Seagate)
 
 [Acronyms](./acronym.md): CPU CXL GPU DDR HBM NVIDIA DMA HPM OCP AMD DRAM FAST GDDR LLM LPDDR META MPI NAND
 
+Tim Lambert (Dell) and Ravi Bingy (AMD)
+
+<a id="586"></a>
+
+2025/10/23 MHS_DC_SCM_2_x_and_3_0_Workstreams___Current_Developments_and_Whats_Ahead
+
+[YouTube](https://www.youtube.com/watch?v=nMrRvkokWmU)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/586)
+
+[Acronyms](./acronym.md): BMC HPM SPEC I2C USB MCTP PCIE PCIe CPU FPGA GPU FIT FRU I3C IPMI OCP OSS AMD CLA DCSCI
+
 David Zhuo (Montage Technology)
 
 <a id="551"></a>
