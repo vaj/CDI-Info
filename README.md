@@ -355,6 +355,8 @@ The copyright of each transcribed text belongs to the respective YouTube channel
     - [Open Compute Project](#open-compute-project-5)
     - [CXL Consortium](#cxl-consortium-9)
     - [The Linux Foundation](#the-linux-foundation-3)
+  - [2026Q4](#2026q4)
+    - [CXL Consortium](#cxl-consortium-10)
 
 ## 2017
 
@@ -8524,3 +8526,19 @@ Kapil Mehta (Cisco)
 [Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/502)
 
 [Acronyms](./acronym.md): AI GPU OCP UEC RDMA NIC CPU NVIDIA IP HPC InfiniBand NVLink TCP ECN IBM
+
+## 2026Q4
+
+### CXL Consortium
+
+Skyler Windh (Micron)
+
+<a id="589"></a>
+
+2026/10/22 KV Cache Scaling using Dynamo and CXL Shared Memory
+
+[YouTube](https://www.youtube.com/watch?v=cGTqLDHrcgs)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/589)
+
+[Acronyms](./acronym.md): CXL GPU LLM DRAM DMA CUDA FAM PCIE PCIe MEM CPU NVIDIA OCP SSD KV
