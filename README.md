@@ -8463,6 +8463,18 @@ Erich Haratsch (Marvell)
 
 [Acronyms](./acronym.md): SSD DPU NVMe DRAM CPU NIC PCI RDMA NAND OCP PCIE PCIe TCP GPU IOPS PDF TLC
 
+Hardik Shah (Microsoft)
+
+<a id="591"></a>
+
+2026/09/17 A Modular PCIe Cassette Architecture for Scalable AI Systems
+
+[YouTube](https://www.youtube.com/watch?v=J1aYu4dvXUY)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/591)
+
+[Acronyms](./acronym.md): PCIe PCI GPU FPGA SSD HPC AI OCP SKU PWM
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
