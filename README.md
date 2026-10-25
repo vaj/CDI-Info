@@ -8475,6 +8475,18 @@ Hardik Shah (Microsoft)
 
 [Acronyms](./acronym.md): PCIe PCI GPU FPGA SSD HPC AI OCP SKU PWM
 
+Jeffrey Kung (Astera Labs)
+
+<a id="592"></a>
+
+2026/09/17 Breaking the PCIe Barrier Enabling Scalable AI Infrastructure with Retimers and Active Electrical Cables
+
+[YouTube](https://www.youtube.com/watch?v=01Cece4NsVc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/592)
+
+[Acronyms](./acronym.md): PCIe PCI OCP PCB SIG MHS GPU AI
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
