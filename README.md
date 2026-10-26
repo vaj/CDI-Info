@@ -8487,6 +8487,18 @@ Jeffrey Kung (Astera Labs)
 
 [Acronyms](./acronym.md): PCIe PCI OCP PCB SIG MHS GPU AI
 
+Scott Lee (Google)
+
+<a id="593"></a>
+
+2026/09/17 PCIe Gen6 System Design and Validation Strategy with non Standard Connector and Cable Linkage
+
+[YouTube](https://www.youtube.com/watch?v=LUFz-yeHcO4)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/593)
+
+[Acronyms](./acronym.md): PCIe PCI SIG PCB DOE MCIO SPEC OCP AI GPU
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
