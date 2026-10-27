@@ -8499,6 +8499,18 @@ Scott Lee (Google)
 
 [Acronyms](./acronym.md): PCIe PCI SIG PCB DOE MCIO SPEC OCP AI GPU
 
+Thomas Su (Intel) and Brian Ho (Intel)
+
+<a id="594"></a>
+
+2026/09/17 Ensuring PCIe Compliance for OCP Extension Cards Electrical Design and Validation Aligned with CEM Specifications
+
+[YouTube](https://www.youtube.com/watch?v=7SZJpCzYIo8)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/594)
+
+[Acronyms](./acronym.md): PCIe PCI OCP SIG PCB DOE HPM SPEC CPU CEM AI
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
