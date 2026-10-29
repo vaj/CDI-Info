@@ -8523,6 +8523,18 @@ Chiew Yee Ho (Intel) and Robert Chen (Intel)
 
 [Acronyms](./acronym.md): PCIe PCI OCP CPU NRZ SPEC DCM DC-MHS AI GPU
 
+Caleb Shetland (Astera Labs) and Helia Naeimi (Astera Labs)
+
+<a id="596"></a>
+
+2026/09/16 From Training to Tokens Revolutionizing AI Inference with In-Network Compute via PCIe 6.0 to UALink 2.0
+
+[YouTube](https://www.youtube.com/watch?v=-Y3LIfb2Yjs)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/596)
+
+[Acronyms](./acronym.md): PCIe PCI GPU OCP HPM FIT UALink AI INC
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
