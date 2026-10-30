@@ -8535,6 +8535,18 @@ Caleb Shetland (Astera Labs) and Helia Naeimi (Astera Labs)
 
 [Acronyms](./acronym.md): PCIe PCI GPU OCP HPM FIT UALink AI INC
 
+Jacky Hsu (TE Connectivity) and Michelle Ku (TE Connectivity)
+
+<a id="597"></a>
+
+2026/09/15 Power. Speed. Scale. Enabling AI Infrastructure with PCIe Gen 7 Gen 8 and High-Voltage Connectivity
+
+[YouTube](https://www.youtube.com/watch?v=Kwd5epTX9wc)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/597)
+
+[Acronyms](./acronym.md): PCIe PCI GPU OCP PCB PAM4 MHS BAR TEE FIT AI
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
