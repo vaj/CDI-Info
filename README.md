@@ -8547,6 +8547,18 @@ Jacky Hsu (TE Connectivity) and Michelle Ku (TE Connectivity)
 
 [Acronyms](./acronym.md): PCIe PCI GPU OCP PCB PAM4 MHS BAR TEE FIT AI
 
+Xiaojing Zhang (NTT DOCOMO BUSINESS)
+
+<a id="598"></a>
+
+2026/09/17 Remote GPU over APN Enabling Secure and Sustainable AI Training with Disaggregated Storage and Compute
+
+[YouTube](https://www.youtube.com/watch?v=dJAyMKRsAQQ)
+
+[Text](https://raw.githubusercontent.com/vaj/CDI-Info/main/598)
+
+[Acronyms](./acronym.md): GPU RDMA TCP POC PoC CAPEX NFS APN AI OCP
+
 ### CXL Consortium
 
 Neha Gholkar (Meta) and Hasan Al Maruf (Meta)
